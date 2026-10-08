@@ -1,0 +1,22 @@
+axis,code,label
+domain,D1,Formal theorem proving & autoformalization
+domain,D2,Logical & deductive reasoning
+domain,D3,Program synthesis & structured-data reasoning
+domain,D4,Symbolic regression & scientific discovery
+domain,D5,Embodied planning & agents
+domain,D6,Vision-language & multimodal reasoning
+domain,D7,"Language modelling, knowledge & data synthesis"
+architecture,A1,"Translate-and-solve (LM to formal language, external engine)"
+architecture,A2,Verifier-in-the-loop (formal feedback refines LM output)
+architecture,A3,Symbolic guidance or constraints on the LM
+architecture,A4,"LM-induced symbolic artifacts (rules, programs, concepts, modules)"
+architecture,A5,"Symbolic-to-neural transfer (distillation, pre-training, data synthesis)"
+architecture,A6,Evaluation with a symbolic oracle
+architecture,A7,LM/VLM as perceptual or verbal interface to a symbolic core
+formalism,F1,"Logic (FOL, ASP, Prolog, constraints)"
+formalism,F2,"Proof assistants (Lean, Isabelle)"
+formalism,F3,Programs & DSLs
+formalism,F4,Symbolic expressions
+formalism,F5,"Knowledge graphs, rules & scene graphs"
+formalism,F6,Planning & temporal logic
+formalism,F7,"Other (automata, static analysis, solvers)"

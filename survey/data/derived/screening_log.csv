@@ -1,0 +1,392 @@
+record_id,venue,year,title,stage,decision,reason,lm_filter_hit,title_reviewed,added_by_title_review,evidence
+0,ICML,2020,"Neuro-Symbolic Visual Reasoning: Disentangling ""Visual"" from ""Reasoning""",screening,excluded,no language-model component evident in title or abstract,no,yes,,
+1,ICML,2020,"Closed Loop Neural-Symbolic Learning via Integrating Neural Perception, Grammar Parsing, and Symbolic Reasoning",screening,excluded,no language-model component evident in title or abstract,no,yes,,
+2,ICML,2020,Generating Programmatic Referring Expressions via Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+3,ICML,2020,Temporal Logic Point Processes,screening,excluded,no language-model component evident in title or abstract,no,,,
+4,ICML,2021,A large-scale benchmark for few-shot program induction and synthesis,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+5,ICML,2021,An Integer Linear Programming Framework for Mining Constraints from Data,screening,excluded,no language-model component evident in title or abstract,no,,,
+6,ICML,2021,Discovering symbolic policies with deep reinforcement learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+7,ICML,2021,Latent Programmer: Discrete Latent Codes for Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+8,ICML,2021,Leveraging Language to Learn Program Abstractions and Search Heuristics,screening,excluded,no language-model component evident in title or abstract,no,,,
+9,ICML,2021,Neural Symbolic Regression that Scales,screening,excluded,no language-model component evident in title or abstract,no,,,
+10,ICML,2022,Deep symbolic regression for recurrence prediction,screening,excluded,no language-model component evident in title or abstract,no,,,
+11,ICML,2022,Neural-Symbolic Models for Logical Queries on Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,,,
+12,ICML,2022,Neuro-Symbolic Hierarchical Rule Induction,screening,excluded,no language-model component evident in title or abstract,no,,,
+13,ICML,2022,Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval,included,included,,yes,,,abstract and first two pages of local PDF
+14,ICML,2022,Parametric Visual Program Induction with Function Modularization,screening,excluded,no language-model component evident in title or abstract,no,,,
+15,ICML,2023,Controllable Neural Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+16,ICML,2023,Deep Generative Symbolic Regression with Monte-Carlo-Tree-Search,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+17,ICML,2023,Eventual Discounting Temporal Logic Counterfactual Experience Replay,screening,excluded,no language-model component evident in title or abstract,no,,,
+18,ICML,2023,Interpretable Neural-Symbolic Concept Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+19,ICML,2023,Neuro-Symbolic Continual Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+20,ICML,2023,Parallel Neurosymbolic Integration with Concordia,screening,excluded,no language-model component evident in title or abstract,no,,,
+21,ICML,2024,Ambiguity-Aware Abductive Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+22,ICML,2024,Amortizing Pragmatic Program Synthesis with Rankings,screening,excluded,no language-model component evident in title or abstract,no,,,
+23,ICML,2024,Analysis for Abductive Learning and Neural-Symbolic Reasoning Shortcuts,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+24,ICML,2024,Convex and Bilevel Optimization for Neural-Symbolic Inference and Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+25,ICML,2024,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,included,included,,yes,,,abstract and first two pages of local PDF
+26,ICML,2024,Federated Neuro-Symbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+27,ICML,2024,Neuro-Symbolic Temporal Point Processes,screening,excluded,no language-model component evident in title or abstract,no,,,
+28,ICML,2024,On the Hardness of Probabilistic Neurosymbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+29,ICML,2024,On the Independence Assumption in Neurosymbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+30,ICML,2024,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,included,included,,yes,,,abstract and first two pages of local PDF
+31,ICML,2024,Subgoal-based Demonstration Learning for Formal Theorem Proving,included,included,,yes,,,abstract and first two pages of local PDF
+32,ICML,2024,Temporal Logic Specification-Conditioned Decision Transformer for Offline Safe Reinforcement Learning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+33,ICML,2025,Ab Initio Nonparametric Variable Selection for Scalable Symbolic Regression with Large p,screening,excluded,no language-model component evident in title or abstract,no,,,
+34,ICML,2025,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,included,included,,yes,,,abstract and first two pages of local PDF
+35,ICML,2025,DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+36,ICML,2025,Is Complex Query Answering Really Complex?,screening,excluded,no language-model component evident in title or abstract,no,,,
+37,ICML,2025,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,included,included,,yes,,,abstract and first two pages of local PDF
+38,ICML,2025,Neurosymbolic World Models for Sequential Decision Making,screening,excluded,no language-model component evident in title or abstract,no,,,
+39,ICML,2025,Pareto-Optimal Fronts for Benchmarking Symbolic Regression Algorithms,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+40,ICML,2025,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,included,included,,yes,,,abstract and first two pages of local PDF
+41,ICML,2025,Regret-Free Reinforcement Learning for Temporal Logic Specifications,screening,excluded,no language-model component evident in title or abstract,no,,,
+42,ICML,2025,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,included,included,,yes,,,abstract and first two pages of local PDF
+43,ICML,2025,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,included,included,,yes,,,abstract and first two pages of local PDF
+44,ICML,2025,TeLoGraF: Temporal Logic Planning via Graph-encoded Flow Matching,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+45,ICML,2025,Verification Learning: Make Unsupervised Neuro-Symbolic System Feasible,screening,excluded,no language-model component evident in title or abstract,no,,,
+46,ICML,2025,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+47,ICML,2026,A Deep Learning Model of Mental Rotation Informed by Interactive VR Experiments,screening,excluded,no language-model component evident in title or abstract,no,,,
+48,ICML,2026,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,included,included,,yes,,,abstract and first two pages of local PDF
+49,ICML,2026,A Minimal Agent for Automated Theorem Proving,included,included,,yes,,,abstract and first two pages of local PDF
+50,ICML,2026,Breaking the Simplification Bottleneck in Amortized Neural Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+51,ICML,2026,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",included,included,,yes,,,abstract and first two pages of local PDF
+52,ICML,2026,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,included,included,,yes,,,abstract and first two pages of local PDF
+53,ICML,2026,DisjunctiveNet: Neural Symbolic Learning via Differentiable Convexified Optimization Layers,screening,excluded,no language-model component evident in title or abstract,no,,,
+54,ICML,2026,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,included,included,,yes,,,abstract and first two pages of local PDF
+55,ICML,2026,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,included,included,,yes,,,abstract and first two pages of local PDF
+56,ICML,2026,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,included,included,,yes,,,abstract and first two pages of local PDF
+57,ICML,2026,Geodesic Flow Matching for Denoising High-Dimensional Structured Representations,screening,excluded,no language-model component evident in title or abstract,no,,,
+58,ICML,2026,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,included,included,,yes,,,abstract and first two pages of local PDF
+59,ICML,2026,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,included,included,,yes,,,abstract and first two pages of local PDF
+60,ICML,2026,Sonar-TS: Search-Then-Verify Natural Language Querying for Time Series Databases,screening,excluded,no language-model component evident in title or abstract,no,,,
+61,NeurIPS,2020,Compositional Generalization via Neural-Symbolic Stack Machines,screening,excluded,no language-model component evident in title or abstract,no,,,
+62,NeurIPS,2020,Learning abstract structure for drawing by efficient motor program induction,screening,excluded,no language-model component evident in title or abstract,no,,,
+63,NeurIPS,2020,AI Feynman 2.0: Pareto-optimal symbolic regression exploiting graph modularity,screening,excluded,no language-model component evident in title or abstract,no,,,
+64,NeurIPS,2020,Learning Differentiable Programs with Admissible Neural Heuristics,screening,excluded,no language-model component evident in title or abstract,no,,,
+65,NeurIPS,2020,Neurosymbolic Reinforcement Learning with Formally Verified Exploration,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+66,NeurIPS,2020,Multi-Plane Program Induction with 3D Box Priors,screening,excluded,no language-model component evident in title or abstract,no,,,
+67,NeurIPS,2020,Learning Compositional Rules via Neural Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+68,NeurIPS,2020,Generative Neurosymbolic Machines,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+69,NeurIPS,2020,Program Synthesis with Pragmatic Communication,eligibility,excluded,E1: no language model (pragmatic program synthesis with recursive reasoning models),yes,,,abstract and first two pages of local PDF
+70,NeurIPS,2020,Neurosymbolic Transformers for Multi-Agent Communication,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+71,NeurIPS,2020,"Synthesize, Execute and Debug: Learning to Repair for Neural Program Synthesis",screening,excluded,no language-model component evident in title or abstract,no,,,
+72,NeurIPS,2020,Beta Embeddings for Multi-Hop Logical Reasoning in Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+73,NeurIPS,2020,PLANS: Neuro-Symbolic Program Learning from Videos,screening,excluded,no language-model component evident in title or abstract,no,,,
+74,NeurIPS,2021,Learning to Combine Per-Example Solutions for Neural Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+75,NeurIPS,2021,SQALER: Scaling Question Answering by Decoupling Multi-Hop and Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+76,NeurIPS,2021,Latent Execution for Neural Program Synthesis Beyond Domain-Specific Languages,screening,excluded,no language-model component evident in title or abstract,no,,,
+77,NeurIPS,2021,Symbolic Regression via Deep Reinforcement Learning Enhanced Genetic Programming Seeding,screening,excluded,no language-model component evident in title or abstract,no,,,
+78,NeurIPS,2021,Scallop: From Probabilistic Deductive Databases to Scalable Differentiable Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+79,NeurIPS,2021,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",included,included,,no,yes,yes,abstract and first two pages of local PDF
+80,NeurIPS,2021,Fast Abductive Learning by Similarity-based Consistency Optimization,screening,excluded,no language-model component evident in title or abstract,no,,,
+81,NeurIPS,2021,Open Rule Induction,included,included,,yes,,,abstract and first two pages of local PDF
+82,NeurIPS,2021,Program Synthesis Guided Reinforcement Learning for Partially Observed Environments,screening,excluded,no language-model component evident in title or abstract,no,,,
+83,NeurIPS,2022,Neural-Symbolic Entangled Framework for Complex Query Answering,screening,excluded,no language-model component evident in title or abstract,no,,,
+84,NeurIPS,2022,Deep Differentiable Logic Gate Networks,screening,excluded,no language-model component evident in title or abstract,no,,,
+85,NeurIPS,2022,VAEL: Bridging Variational Autoencoders and Probabilistic Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+86,NeurIPS,2022,CoNSoLe: Convex Neural Symbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+87,NeurIPS,2022,ZeroC: A Neuro-Symbolic Model for Zero-shot Concept Recognition and Acquisition at Inference Time,screening,excluded,no language-model component evident in title or abstract,no,,,
+88,NeurIPS,2022,End-to-end Symbolic Regression with Transformers,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+89,NeurIPS,2022,NS3: Neuro-symbolic Semantic Code Search,eligibility,excluded,E2: LM only as baseline (neural module network),yes,,,abstract and first two pages of local PDF
+90,NeurIPS,2022,Drawing out of Distribution with Neuro-Symbolic Generative Models,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+91,NeurIPS,2022,LogiGAN: Learning Logical Reasoning via Adversarial Pre-training,eligibility,excluded,"E3: ""Logical statements"" are found by text heuristics; generator and verifier are both neural, so no explicit symbolic component",yes,,,abstract and first two pages of local PDF
+92,NeurIPS,2022,HyperTree Proof Search for Neural Theorem Proving,included,included,,yes,,,abstract and main text of local PDF; pretraining corpus (arXiv LaTeX) confirmed in arXiv:2205.11491
+93,NeurIPS,2022,Semantic Probabilistic Layers for Neuro-Symbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+94,NeurIPS,2022,A Unified Framework for Deep Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+95,NeurIPS,2022,Improving Certified Robustness via Statistical Learning with Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+96,NeurIPS,2022,Neurosymbolic Deep Generative Models for Sequence Data with Relational Constraints,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+97,NeurIPS,2023,Enhancing Robot Program Synthesis Through Environmental Context,eligibility,excluded,E2: LM only background,yes,,,abstract and first two pages of local PDF
+98,NeurIPS,2023,Neuro-symbolic Learning Yielding Logical Constraints,screening,excluded,no language-model component evident in title or abstract,no,,,
+99,NeurIPS,2023,A-NeSI: A Scalable Approximate Method for Probabilistic Neurosymbolic Inference,screening,excluded,no language-model component evident in title or abstract,no,,,
+100,NeurIPS,2023,Adapting Neural Link Predictors for Data-Efficient Complex Query Answering,screening,excluded,no language-model component evident in title or abstract,no,,,
+101,NeurIPS,2023,Differentiable Neuro-Symbolic Reasoning on Large-Scale Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+102,NeurIPS,2023,Complex Query Answering on Eventuality Knowledge Graph with Implicit Logical Constraints,screening,excluded,no language-model component evident in title or abstract,no,,,
+103,NeurIPS,2023,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,included,included,,yes,,,abstract and first two pages of local PDF
+104,NeurIPS,2023,Efficient Symbolic Policy Learning with Differentiable Symbolic Expression,screening,excluded,no language-model component evident in title or abstract,no,,,
+105,NeurIPS,2023,Transformer-based Planning for Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+106,NeurIPS,2023,Human spatiotemporal pattern learning as probabilistic program synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+107,NeurIPS,2023,Soft-Unification in Deep Probabilistic Logic,screening,excluded,no language-model component evident in title or abstract,no,,,
+108,NeurIPS,2023,Discovering Intrinsic Spatial-Temporal Logic Rules to Explain Human Actions,screening,excluded,no language-model component evident in title or abstract,no,,,
+109,NeurIPS,2023,Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+110,NeurIPS,2024,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,included,included,,yes,,,abstract and first two pages of local PDF
+111,NeurIPS,2024,Interpret Your Decision: Logical Reasoning Regularization for Generalization in Visual Classification,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+112,NeurIPS,2024,Neuro-Symbolic Data Generation for Math Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+113,NeurIPS,2024,Symbolic Regression with a Learned Concept Library,included,included,,yes,,,abstract and first two pages of local PDF
+114,NeurIPS,2024,LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation,screening,excluded,no language-model component evident in title or abstract,no,,,
+115,NeurIPS,2024,A Neuro-Symbolic Benchmark Suite for Concept Quality and Reasoning Shortcuts,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+116,NeurIPS,2024,Convolutional Differentiable Logic Gate Networks,screening,excluded,no language-model component evident in title or abstract,no,,,
+117,NeurIPS,2025,Graph-based Symbolic Regression with Invariance and Constraint Encoding,screening,excluded,no language-model component evident in title or abstract,no,,,
+118,NeurIPS,2025,Skill-Driven Neurosymbolic State Abstractions,screening,excluded,no language-model component evident in title or abstract,no,,,
+119,NeurIPS,2025,Program Synthesis via Test-Time Transduction,included,included,,yes,,,abstract and first two pages of local PDF
+120,NeurIPS,2025,Improving Monte Carlo Tree Search for Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+121,NeurIPS,2025,Embeddings as Probabilistic Equivalence in Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+122,NeurIPS,2025,MuSLR: Multimodal Symbolic Logical Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+123,NeurIPS,2025,Model Reconciliation via Cost-Optimal Explanations in Probabilistic Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+124,NeurIPS,2025,Discovering Symbolic Partial Differential Equation by Abductive Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+125,NeurIPS,2025,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,included,included,,yes,,,abstract and first two pages of local PDF
+126,NeurIPS,2025,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,included,included,,yes,,,abstract and first two pages of local PDF
+127,NeurIPS,2025,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,included,included,,yes,,,abstract and first two pages of local PDF
+128,NeurIPS,2025,CTSketch: Compositional Tensor Sketching for Scalable Neurosymbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+129,NeurIPS,2025,A learnability analysis on neuro-symbolic learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+130,NeurIPS,2025,NeuSymEA: Neuro-symbolic Entity Alignment via Variational Inference,screening,excluded,no language-model component evident in title or abstract,no,,,
+131,NeurIPS,2025,Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks,screening,excluded,no language-model component evident in title or abstract,no,,,
+132,NeurIPS,2025,Neurosymbolic Diffusion Models,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+133,NeurIPS,2025,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,included,included,,yes,,,abstract and first two pages of local PDF
+134,NeurIPS,2025,Imbalances in Neurosymbolic Learning: Characterization and Mitigating Strategies,screening,excluded,no language-model component evident in title or abstract,no,,,
+135,NeurIPS,2025,Right for the Right Reasons: Avoiding Reasoning Shortcuts via Prototypical Neurosymbolic AI,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+136,NeurIPS,2025,Shortcuts and Identifiability in Concept-based Models from a Neuro-Symbolic Lens,screening,excluded,no language-model component evident in title or abstract,no,,,
+137,NeurIPS,2025,Curriculum Abductive Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+138,NeurIPS,2025,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+139,AAAI,2020,Structural Decompositions of Epistemic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+140,AAAI,2020,FastLAS: Scalable Inductive Logic Programming Incorporating Domain-Specific Optimisation Criteria,screening,excluded,no language-model component evident in title or abstract,no,,,
+141,AAAI,2020,Resilient Logic Programs: Answer Set Programs Challenged by Ontologies,screening,excluded,no language-model component evident in title or abstract,no,,,
+142,AAAI,2020,Forgetting to Learn Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+143,AAAI,2020,Differentiable Reasoning on Large Knowledge Bases and Natural Language,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+144,AAAI,2020,Just Add Functions: A Neural-Symbolic Language Model,included,included,,yes,,,abstract and first two pages of local PDF
+145,AAAI,2020,Beyond the Grounding Bottleneck: Datalog Techniques for Inference in Probabilistic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+146,AAAI,2021,Conversational Neuro-Symbolic Commonsense Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+147,AAAI,2021,Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,included,included,,yes,,,abstract and first two pages of local PDF
+148,AAAI,2021,Self-Supervised Self-Supervision by Combining Deep Learning and Probabilistic Logic,screening,excluded,no language-model component evident in title or abstract,no,,,
+149,AAAI,2021,A Scalable Reasoning and Learning Approach for Neural-Symbolic Stream Fusion,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+150,AAAI,2021,Differentiable Inductive Logic Programming for Structured Examples,screening,excluded,no language-model component evident in title or abstract,no,,,
+151,AAAI,2021,Neural-Symbolic Integration: A Compositional Perspective,screening,excluded,no language-model component evident in title or abstract,no,,,
+152,AAAI,2021,Constraint Logic Programming for Real-World Test Laboratory Scheduling,screening,excluded,no language-model component evident in title or abstract,no,,,
+153,AAAI,2021,Knowledge Refactoring for Inductive Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+154,AAAI,2021,Constraint-Driven Learning of Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+155,AAAI,2021,Neuro-Symbolic Techniques for Description Logic Reasoning (Student Abstract),screening,excluded,no language-model component evident in title or abstract,no,yes,,
+156,AAAI,2021,IBM Scenario Planning Advisor: A Neuro-Symbolic ERM Solution,screening,excluded,no language-model component evident in title or abstract,no,,,
+157,AAAI,2022,Axiomatization of Aggregates in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+158,AAAI,2022,Weakly Supervised Neural Symbolic Learning for Cognitive Tasks,screening,excluded,no language-model component evident in title or abstract,no,,,
+159,AAAI,2022,"Learning Logic Programs Though Divide, Constrain, and Conquer",screening,excluded,no language-model component evident in title or abstract,no,,,
+160,AAAI,2022,Scaling Neural Program Synthesis with Distribution-Based Search,eligibility,excluded,E2: LM only background,yes,,,abstract and first two pages of local PDF
+161,AAAI,2022,Neuro-Symbolic Inductive Logic Programming with Logical Neural Networks,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+162,AAAI,2022,Inference and Learning with Model Uncertainty in Probabilistic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+163,AAAI,2022,DeepStochLog: Neural Stochastic Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+164,AAAI,2022,Weakly Supervised Neuro-Symbolic Module Networks for Numerical Reasoning over Text,eligibility,excluded,E2: LM only baseline,yes,,,abstract and first two pages of local PDF
+165,AAAI,2023,PaTeCon: A Pattern-Based Temporal Constraint Mining Method for Conflict Detection on Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,,,
+166,AAAI,2023,Rule Induction in Knowledge Graphs Using Linear Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+167,AAAI,2023,NQE: N-ary Query Embedding for Complex Query Answering over Hyper-Relational Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,,,
+168,AAAI,2023,Online Symbolic Regression with Informative Query,screening,excluded,no language-model component evident in title or abstract,no,,,
+169,AAAI,2023,Learning Logic Programs by Discovering Where Not to Search,screening,excluded,no language-model component evident in title or abstract,no,,,
+170,AAAI,2023,Evaluating Epistemic Logic Programs via Answer Set Programming with Quantifiers,screening,excluded,no language-model component evident in title or abstract,no,,,
+171,AAAI,2023,Characterizing Structural Hardness of Logic Programs: What Makes Cycles and Reachability Hard for Treewidth?,screening,excluded,no language-model component evident in title or abstract,no,,,
+172,AAAI,2023,Relational Program Synthesis with Numerical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+173,AAAI,2023,Learning to Break Symmetries for Efficient Optimization in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+174,AAAI,2023,Neurosymbolic Reasoning and Learning with Restricted Boltzmann Machines,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+175,AAAI,2023,Learning Program Synthesis for Integer Sequences from Scratch,screening,excluded,no language-model component evident in title or abstract,no,,,
+176,AAAI,2023,Enabling Knowledge Refinement upon New Concepts in Abductive Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+177,AAAI,2023,Robust Neuro-Symbolic Goal and Plan Recognition,screening,excluded,no language-model component evident in title or abstract,no,,,
+178,AAAI,2023,Out-of-Distribution Generalization by Neural-Symbolic Joint Training,screening,excluded,no language-model component evident in title or abstract,no,,,
+179,AAAI,2023,Learning Logical Reasoning Using an Intelligent Tutoring System: A Hybrid Approach to Student Modeling,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+180,AAAI,2023,Modeling Strategies as Programs: How to Study Strategy Differences in Intelligent Systems with Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+181,AAAI,2024,Unveiling Implicit Deceptive Patterns in Multi-Modal Fake News via Neuro-Symbolic Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+182,AAAI,2024,On the Structural Hardness of Answer Set Programming: Can Structure Efficiently Confine the Power of Disjunctions?,screening,excluded,no language-model component evident in title or abstract,no,,,
+183,AAAI,2024,Learning MDL Logic Programs from Noisy Data,screening,excluded,no language-model component evident in title or abstract,no,,,
+184,AAAI,2024,A Unified View on Forgetting and Strong Equivalence Notions in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+185,AAAI,2024,Scalable Enumeration of Trap Spaces in Boolean Networks via Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+186,AAAI,2024,Symbolic Regression Enhanced Decision Trees for Classification Tasks,screening,excluded,no language-model component evident in title or abstract,no,,,
+187,AAAI,2024,Racing Control Variable Genetic Programming for Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+188,AAAI,2024,NESTER: An Adaptive Neurosymbolic Method for Causal Effect Estimation,screening,excluded,no language-model component evident in title or abstract,no,,,
+189,AAAI,2024,Deciphering Raw Data in Neuro-Symbolic Learning with Provable Guarantees,screening,excluded,no language-model component evident in title or abstract,no,,,
+190,AAAI,2024,TEILP: Time Prediction over Knowledge Graphs via Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+191,AAAI,2024,Safe Abductive Learning in the Presence of Inaccurate Rules,screening,excluded,no language-model component evident in title or abstract,no,,,
+192,AAAI,2024,Large Language Models Are Neurosymbolic Reasoners,included,included,,yes,,,abstract and first two pages of local PDF
+193,AAAI,2024,LR-XFL: Logical Reasoning-Based Explainable Federated Learning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+194,AAAI,2024,From Statistical Relational to Neuro-Symbolic Artificial Intelligence,screening,excluded,no language-model component evident in title or abstract,no,,,
+195,AAAI,2024,Program Synthesis with Best-First Bottom-Up Search (Abstract Reprint),screening,excluded,no language-model component evident in title or abstract,no,,,
+196,AAAI,2024,Learning Neuro-Symbolic Abstractions for Robot Planning and Learning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+197,AAAI,2024,Neuro-Symbolic Integration for Reasoning and Learning on Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+198,AAAI,2025,Progressive Self-Learning for Domain Adaptation on Symbolic Regression of Integer Sequences,screening,excluded,no language-model component evident in title or abstract,no,,,
+199,AAAI,2025,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,included,included,,yes,,,abstract and first two pages of local PDF
+200,AAAI,2025,Online Prompt Selection for Program Synthesis,eligibility,excluded,E3: LLMs and a symbolic solver are portfolio alternatives chosen per task; they do not interact (I3),yes,,,abstract and first two pages of local PDF
+201,AAAI,2025,Recursive Aggregates as Intensional Functions in Answer Set Programming: Semantics and Strong Equivalence,screening,excluded,no language-model component evident in title or abstract,no,,,
+202,AAAI,2025,Solving Epistemic Logic Programs Using Generate-and-Test with Propagation,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+203,AAAI,2025,Hybrid Reasoning About Relative Position and Orientation of Objects and Navigating Agents Using Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+204,AAAI,2025,Relational Neurosymbolic Markov Models,screening,excluded,no language-model component evident in title or abstract,no,,,
+205,AAAI,2025,Efficient Rectification of Neuro-Symbolic Reasoning Inconsistencies by Abductive Reflection,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+206,AAAI,2025,Dimension Reduction for Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+207,AAAI,2025,Discovering Symmetries of ODEs by Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+208,AAAI,2025,Eco Search: A No-delay Best-First Search Algorithm for Program Synthesis,eligibility,excluded,E2: LM only background,yes,,,abstract and first two pages of local PDF
+209,AAAI,2025,Enhancing SQL Query Generation with Neurosymbolic Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+210,AAAI,2025,Zero-Shot Conditioning of Score-Based Diffusion Models by Neuro-Symbolic Constraints,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+211,AAAI,2025,Noise-Resilient Symbolic Regression with Dynamic Gating Reinforcement Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+212,AAAI,2025,Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks,eligibility,excluded,"E3: The ""symbolic knowledge base"" stores natural-language knowledge retrieved like RAG, not a formal representation",yes,,,abstract and first two pages of local PDF
+213,AAAI,2025,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,included,included,,yes,,,abstract and first two pages of local PDF
+214,AAAI,2025,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,included,included,,yes,,,abstract and first two pages of local PDF
+215,AAAI,2025,Learning Logic Specifications for Policy Guidance in POMDPs: an Inductive Logic Programming Approach,screening,excluded,no language-model component evident in title or abstract,no,,,
+216,AAAI,2025,Neuro-Guided Graph Search for Symbolic Regression (Student Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+217,AAAI,2025,Neurosymbolic Reinforcement Learning: Playing MiniHack with Probabilistic Logic Shields,screening,excluded,no language-model component evident in title or abstract,no,,,
+218,AAAI,2026,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+219,AAAI,2026,Efficient Rule Induction by Ignoring Pointless Rules,screening,excluded,no language-model component evident in title or abstract,no,,,
+220,AAAI,2026,Symmetry Breaking for Inductive Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+221,AAAI,2026,Self-Supervised Inductive Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+222,AAAI,2026,"Delphi: A Neuro-Symbolic Framework for Individualized, Safe and Interpretable Treatment Recommendation",screening,excluded,no language-model component evident in title or abstract,no,,,
+223,AAAI,2026,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,included,included,,yes,,,abstract and first two pages of local PDF
+224,AAAI,2026,ProbLog4Fairness: A Neurosymbolic Approach to Modeling and Mitigating Bias,screening,excluded,no language-model component evident in title or abstract,no,,,
+225,AAAI,2026,DeepProofLog: Efficient Proving in Deep Stochastic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+226,AAAI,2026,Neuro-Symbolic Federated Learning over Heterogeneous Data-Views: A Structured Approach to Distributive EHR Modelling,screening,excluded,no language-model component evident in title or abstract,no,,,
+227,AAAI,2026,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,included,included,,yes,,,abstract and first two pages of local PDF
+228,AAAI,2026,Constraints-Guided Diffusion Reasoner for Neuro-Symbolic Learning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+229,AAAI,2026,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,included,included,,yes,,,abstract and first two pages of local PDF
+230,AAAI,2026,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,included,included,,yes,,,abstract and first two pages of local PDF
+231,AAAI,2026,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,included,included,,yes,,,abstract and first two pages of local PDF
+232,AAAI,2026,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,included,included,,yes,,,abstract and first two pages of local PDF
+233,AAAI,2026,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,included,included,,yes,,,abstract and first two pages of local PDF
+234,AAAI,2026,Post-Hoc Refinement for Multitask Symbolic Regression via Consensus-Accelerated Shapley Analysis,screening,excluded,no language-model component evident in title or abstract,no,,,
+235,AAAI,2026,Language Models and Logic Programs for Trustworthy Tax Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+236,AAAI,2026,Complex Reasoning over Vision and Language -Leveraging Neurosymbolic AI,eligibility,excluded,E4: invited-talk abstract,yes,,,abstract and first two pages of local PDF
+237,AAAI,2026,CausalTrace: A Neurosymbolic Causal Analysis Agent for Smart Manufacturing,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+238,AAAI,2026,"The Future Is Neuro-Symbolic: Where Has It Been, and Where Is It Going?",screening,excluded,no language-model component evident in title or abstract,no,,,
+239,AAAI,2026,Cylindrical Lattice Embedding for Program Induction,screening,excluded,no language-model component evident in title or abstract,no,,,
+240,IJCAI,2020,NeurASP: Embracing Neural Networks into Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+241,IJCAI,2020,Learning Large Logic Programs By Going Beyond Entailment,screening,excluded,no language-model component evident in title or abstract,no,,,
+242,IJCAI,2020,Learning Neural-Symbolic Descriptive Planning Models via Cube-Space Priors: The Voyage Home (to STRIPS),screening,excluded,no language-model component evident in title or abstract,no,,,
+243,IJCAI,2020,LogiQA: A Challenge Dataset for Machine Reading Comprehension with Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+244,IJCAI,2020,A Formal Approach for Cautious Reasoning in Answer Set Programming (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,yes,,
+245,IJCAI,2020,On the Splitting Property for Epistemic Logic Programs (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+246,IJCAI,2020,Turning 30: New Ideas in Inductive Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+247,IJCAI,2020,Graph Neural Networks Meet Neural-Symbolic Computing: A Survey and Perspective,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+248,IJCAI,2020,From Statistical Relational to Neuro-Symbolic Artificial Intelligence,identification,excluded,duplicate of record 194,,,,
+249,IJCAI,2020,Determining Inference Semantics for Disjunctive Logic Programs (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+250,IJCAI,2020,An Interactive Visualization Platform for Deep Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+251,IJCAI,2021,Abductive Learning with Ground Knowledge Base,screening,excluded,no language-model component evident in title or abstract,no,,,
+252,IJCAI,2021,Program Synthesis as Dependency Quantified Formula Modulo Theory,screening,excluded,no language-model component evident in title or abstract,no,,,
+253,IJCAI,2021,A Description Logic for Analogical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+254,IJCAI,2021,Lifting Symmetry Breaking Constraints with Inductive Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+255,IJCAI,2021,Compositional Neural Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+256,IJCAI,2021,A Rule Mining-based Advanced Persistent Threats Detection System,screening,excluded,no language-model component evident in title or abstract,no,,,
+257,IJCAI,2021,Defining the Semantics of Abstract Argumentation Frameworks through Logic Programs and Partial Stable Models (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+258,IJCAI,2022,Simulating Sets in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+259,IJCAI,2022,Search Space Expansion for Efficient Incremental Inductive Logic Programming from Streamed Data,screening,excluded,no language-model component evident in title or abstract,no,,,
+260,IJCAI,2022,Learning Higher-Order Logic Programs From Failures,screening,excluded,no language-model component evident in title or abstract,no,,,
+261,IJCAI,2022,Considering Constraint Monotonicity and Foundedness in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+262,IJCAI,2022,Learning First-Order Rules with Differentiable Logic Program Semantics,screening,excluded,no language-model component evident in title or abstract,no,,,
+263,IJCAI,2022,Neuro-Symbolic Verification of Deep Neural Networks,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+264,IJCAI,2022,Utilizing Treewidth for Quantitative Reasoning on Epistemic Logic Programs (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,yes,,
+265,IJCAI,2022,Complex Query Answering with Neural Link Predictors (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+266,IJCAI,2022,"Detect, Understand, Act: A Neuro-Symbolic Hierarchical Reinforcement Learning Framework (Extended Abstract)",screening,excluded,no language-model component evident in title or abstract,no,,,
+267,IJCAI,2022,Decomposition Methods for Solving Scheduling Problem Using Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+268,IJCAI,2022,Application of Neurosymbolic AI to Sequential Decision Making,screening,excluded,no language-model component evident in title or abstract,no,,,
+269,IJCAI,2022,A Model-Oriented Approach for Lifting Symmetry-Breaking Constraints in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+270,IJCAI,2022,Interactive Reinforcement Learning for Symbolic Regression from Multi-Format Human-Preference Feedbacks,screening,excluded,no language-model component evident in title or abstract,no,,,
+271,IJCAI,2023,Sequential Recommendation with Probabilistic Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+272,IJCAI,2023,Treewidth-Aware Complexity for Evaluating Epistemic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+273,IJCAI,2023,Neuro-Symbolic Learning of Answer Set Programs from Raw Data,screening,excluded,no language-model component evident in title or abstract,no,,,
+274,IJCAI,2023,Scalable Coupling of Deep Learning with Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+275,IJCAI,2023,Neuro-Symbolic Class Expression Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+276,IJCAI,2023,A Logic-based Approach to Contrastive Explainability for Neurosymbolic Visual Question Answering,screening,excluded,no language-model component evident in title or abstract,no,,,
+277,IJCAI,2023,Enabling Abductive Learning to Exploit Knowledge Graph,eligibility,excluded,E1: no LM (KG scale only),yes,,,abstract and first two pages of local PDF
+278,IJCAI,2023,Probabilistic Rule Induction from Event Sequences with Logical Summary Markov Models,screening,excluded,no language-model component evident in title or abstract,no,,,
+279,IJCAI,2023,Safe Reinforcement Learning via Probabilistic Logic Shields,screening,excluded,no language-model component evident in title or abstract,no,,,
+280,IJCAI,2023,Towards Formal Verification of Neuro-symbolic Multi-agent Systems,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+281,IJCAI,2023,Reliable Neuro-Symbolic Abstractions for Planning and Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+282,IJCAI,2024,Formal Verification of Parameterised Neural-symbolic Multi-agent Systems,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+283,IJCAI,2024,AMO-aware Aggregates in Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+284,IJCAI,2024,Epistemic Logic Programs: Non-Ground and Counting Complexity,screening,excluded,no language-model component evident in title or abstract,no,,,
+285,IJCAI,2024,Improved Encodings of Acyclicity for Translating Answer Set Programming into Integer Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+286,IJCAI,2024,Learning Logic Programs by Discovering Higher-Order Abstractions,screening,excluded,no language-model component evident in title or abstract,no,,,
+287,IJCAI,2024,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",included,included,,yes,,,abstract and first two pages of local PDF
+288,IJCAI,2024,Scaling Up Unbiased Search-based Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,,,
+289,IJCAI,2024,Vertical Symbolic Regression via Deep Policy Gradient,screening,excluded,no language-model component evident in title or abstract,no,,,
+290,IJCAI,2024,Capturing (Optimal) Relaxed Plans with Stable and Supported Models of Logic Programs (Extended Abstract),screening,excluded,no language-model component evident in title or abstract,no,,,
+291,IJCAI,2024,Hybrid planning for challenging construction problems: An Answer Set Programming approach (Abstract Reprint),screening,excluded,no language-model component evident in title or abstract,no,,,
+292,IJCAI,2024,A differentiable first-order rule learner for inductive logic programming (Abstract Reprint),screening,excluded,no language-model component evident in title or abstract,no,,,
+293,IJCAI,2024,NeuroSymbolic LLM for Mathematical Reasoning and Software Engineering,eligibility,excluded,E4: doctoral-consortium summary,yes,,,abstract and first two pages of local PDF
+294,IJCAI,2025,A Unifying Framework for Semiring-Based Constraint Logic Programming With Negation,screening,excluded,no language-model component evident in title or abstract,no,,,
+295,IJCAI,2025,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,included,included,,yes,,,abstract and first two pages of local PDF
+296,IJCAI,2025,Relational Decomposition for Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+297,IJCAI,2025,Approximation Fixpoint Theory as a Unifying Framework for Fuzzy Logic Programming Semantics,screening,excluded,no language-model component evident in title or abstract,no,,,
+298,IJCAI,2025,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,included,included,,yes,,,abstract and first two pages of local PDF
+299,IJCAI,2025,Witnesses for Answer Sets of Basic Logic Programs,screening,excluded,no language-model component evident in title or abstract,no,,,
+300,IJCAI,2025,Grounding Methods for Neural-Symbolic AI,screening,excluded,no language-model component evident in title or abstract,no,,,
+301,IJCAI,2025,A Neuro-Symbolic Framework for Sequence Classification with Relational and Temporal Knowledge,screening,excluded,no language-model component evident in title or abstract,no,,,
+302,IJCAI,2025,NeSyA: Neurosymbolic Automata,screening,excluded,no language-model component evident in title or abstract,no,,,
+303,IJCAI,2025,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,included,included,,yes,,,abstract and first two pages of local PDF
+304,IJCAI,2025,Curriculum Abductive Learning for Mitigating Reasoning Shortcuts,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+305,IJCAI,2025,Most Probable Explanation in Probabilistic Answer Set Programming,screening,excluded,no language-model component evident in title or abstract,no,,,
+306,IJCAI,2025,NSF-MAP: Neurosymbolic Multimodal Fusion for Robust and Interpretable Anomaly Prediction in Assembly Pipelines,screening,excluded,no language-model component evident in title or abstract,no,,,
+307,IJCAI,2025,Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+308,IJCAI,2025,Empowering LLMs with Logical Reasoning: A Comprehensive Survey,eligibility,excluded,E5: survey,yes,,,abstract and first two pages of local PDF
+309,IJCAI,2025,Neuro-Symbolic Artificial Intelligence: A Task-Directed Survey in the Black-Box Models Era,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+310,IJCAI,2025,Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,eligibility,excluded,E5: survey/overview,yes,,,abstract and first two pages of local PDF
+311,IJCAI,2025,Efficient Rectification of Neuro-Symbolic Reasoning Inconsistencies by Abductive Reflection (Extended Abstract),identification,excluded,duplicate of record 205,,,,
+312,IJCAI,2025,A Semantic Framework for Neurosymbolic Computation (Abstract Reprint),screening,excluded,no language-model component evident in title or abstract,no,,,
+313,IJCAI,2025,A Semantic Framework for Neurosymbolic Computation (Abstract Reprint),identification,excluded,duplicate of record 312,,,,
+314,IJCAI,2025,Enhancing the Logical Reasoning Abilities of Large Language Models,eligibility,excluded,E4: doctoral/extended research summary,yes,,,abstract and first two pages of local PDF
+315,TMLR,2022,Unsupervised Learning of Neurosymbolic Encoders,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+316,TMLR,2022,Symbolic Regression is NP-hard,screening,excluded,no language-model component evident in title or abstract,no,,,
+317,TMLR,2023,GSR: A Generalized Symbolic Regression Approach,screening,excluded,no language-model component evident in title or abstract,no,,,
+318,TMLR,2023,Sequential Query Encoding for Complex Query Answering on Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,,,
+319,TMLR,2023,Differentiable Logic Machines,screening,excluded,no language-model component evident in title or abstract,no,,,
+320,TMLR,2025,Robust Symbolic Regression for Dynamical System Identification,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+321,TMLR,2025,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,included,included,,yes,,,abstract and first two pages of local PDF
+322,TMLR,2026,Concept Flow Models: Anchoring Concept-Based Reasoning with Hierarchical Bottlenecks,eligibility,excluded,E2: VLM only as concept-embedding tool,yes,,,abstract and first two pages of local PDF
+323,TMLR,2026,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+324,TMLR,2026,Counting Still Counts: Understanding Neural Complex Query Answering Through Query Relaxation,screening,excluded,no language-model component evident in title or abstract,no,,,
+325,TMLR,2026,Semantic-Drive: Trustworthy and Efficient Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus,included,included,,yes,,,published abstract: https://arxiv.org/abs/2512.12012
+326,TMLR,2026,Automaton Distillation: Neuro-Symbolic Transfer Learning for Deep Reinforcement Learning,screening,excluded,no language-model component evident in title or abstract,no,,,
+327,TMLR,2026,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,included,included,,yes,,,abstract and first two pages of local PDF
+328,TMLR,2026,Towards Overcoming Reasoning Shortcuts in Neurosymbolic Learning via Efficient Generative Proxies,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+329,ICLR,2020,ReClor: A Reading Comprehension Dataset Requiring Logical Reasoning,eligibility,excluded,E3: dataset; no symbolic component,yes,,,abstract and first two pages of local PDF
+330,ICLR,2020,Guiding Program Synthesis by Learning to Generate Examples,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+331,ICLR,2020,Efficient Probabilistic Logic Reasoning with Graph Neural Networks,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+332,ICLR,2020,Neural Symbolic Reader: Scalable Integration of Distributed and Symbolic Representations for Reading Comprehension,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+333,ICLR,2020,Differentiable Reasoning over a Virtual Knowledge Base,eligibility,excluded,E2: pretrained encoder used only to embed mentions for a differentiable knowledge base,yes,,,abstract and first two pages of local PDF
+334,ICLR,2021,Deep symbolic regression: Recovering mathematical expressions from data via risk-seeking policy gradients,screening,excluded,no language-model component evident in title or abstract,no,,,
+335,ICLR,2021,Complex Query Answering with Neural Link Predictors,identification,excluded,duplicate of record 265,,,,
+336,ICLR,2021,BUSTLE: Bottom-Up Program Synthesis Through Learning-Guided Exploration,screening,excluded,no language-model component evident in title or abstract,no,,,
+337,ICLR,2021,Learning Task-General Representations with Generative Neuro-Symbolic Modeling,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+338,ICLR,2022,CrossBeam: Learning to Search in Bottom-Up Program Synthesis,screening,excluded,no language-model component evident in title or abstract,no,,,
+339,ICLR,2022,Neural Methods for Logical Reasoning over Knowledge Graphs,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+340,ICLR,2022,Neural Program Synthesis with Query,screening,excluded,no language-model component evident in title or abstract,no,,,
+341,ICLR,2022,Explaining Point Processes by Learning Interpretable Temporal Logic Rules,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+342,ICLR,2022,Safe Neurosymbolic Learning with Differentiable Symbolic Execution,screening,excluded,no language-model component evident in title or abstract,no,,,
+343,ICLR,2023,Learning where and when to reason in neuro-symbolic inference,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+344,ICLR,2023,Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning,eligibility,excluded,E3: Selection and inference steps are LLM calls over natural-language facts; no formal symbolic object,yes,,,abstract and first two pages of local PDF
+345,ICLR,2023,CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis,eligibility,excluded,E3: pure code LLM; no symbolic component,yes,,,abstract and first two pages of local PDF
+346,ICLR,2023,Neuro-Symbolic Procedural Planning with Commonsense Prompting,included,included,,yes,,,abstract and first two pages of local PDF
+347,ICLR,2023,Softened Symbol Grounding for Neuro-symbolic Systems,screening,excluded,no language-model component evident in title or abstract,no,,,
+348,ICLR,2023,Transformer-based model for symbolic regression via joint supervised learning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+349,ICLR,2023,Rethinking Symbolic Regression: Morphology and Adaptability in the Context of Evolutionary Algorithms,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+350,ICLR,2023,LogicDP: Creating Labels for Graph Data via Inductive Logic Programming,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+351,ICLR,2023,Weakly Supervised Knowledge Transfer with Probabilistic Logical Reasoning for Object Detection,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+352,ICLR,2023,Deep Generative Symbolic Regression,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+353,ICLR,2023,Multimodal Analogical Reasoning over Knowledge Graphs,eligibility,excluded,E3: LM is core (reason E2 was wrong) but the knowledge graph is only the link-prediction dataset; no interacting symbolic component,yes,,,abstract and first two pages of local PDF
+354,ICLR,2024,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,included,included,,yes,,,abstract and first two pages of local PDF
+355,ICLR,2024,LEGO-Prover: Neural Theorem Proving with Growing Libraries,included,included,,yes,,,abstract and first two pages of local PDF
+356,ICLR,2024,"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",eligibility,excluded,"E3: Generated programs are the action format; no verification, repair, search or selection loop (R2)",yes,,,abstract and first two pages of local PDF
+357,ICLR,2024,ODEFormer: Symbolic Regression of Dynamical Systems with Transformers,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+358,ICLR,2024,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,included,included,,yes,,,abstract and first two pages of local PDF (execution of unit tests provides the RL reward)
+359,ICLR,2024,Neural-Symbolic Recursive Machine for Systematic Generalization,screening,excluded,no language-model component evident in title or abstract,no,,,
+360,ICLR,2024,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,included,included,,yes,,,abstract and first two pages of local PDF
+361,ICLR,2024,LogicMP: A Neuro-symbolic Approach for Encoding First-order Logic Constraints,screening,excluded,no language-model component evident in title or abstract,no,,,
+362,ICLR,2024,Neurosymbolic Grounding for Compositional World Models,included,included,,yes,,,abstract and first two pages of local PDF
+363,ICLR,2024,Reinforcement Symbolic Regression Machine,screening,excluded,no language-model component evident in title or abstract,no,,,
+364,ICLR,2025,miniCTX: Neural Theorem Proving with (Long-)Contexts,included,included,,yes,,,abstract and first two pages of local PDF
+365,ICLR,2025,R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,included,included,,yes,,,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/a07e87ecfa8a651d62257571669b0150-Abstract-Conference.html
+366,ICLR,2025,VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,included,included,,yes,,,abstract and first two pages of local PDF
+367,ICLR,2025,RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression,eligibility,excluded,E1: sequence model (1-layer transformer) trained from scratch on expression trees during search; not a language model under I2,no,yes,yes,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/19a8e70828c01059631f913442ae31e6-Abstract-Conference.html; full paper read at the published PDF
+368,ICLR,2025,Diffusion On Syntax Trees For Program Synthesis,eligibility,excluded,E2: LM only background,yes,,,abstract and first two pages of local PDF
+369,ICLR,2025,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,included,included,,yes,,,abstract and first two pages of local PDF
+370,ICLR,2025,Logically Consistent Language Models via Neuro-Symbolic Integration,included,included,,yes,,,abstract and first two pages of local PDF
+371,ICLR,2025,CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,included,included,,no,yes,yes,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/69dbaf03f7f37a7ccad9ccc92875a44d-Abstract-Conference.html
+372,ICLR,2025,GeoILP: A Synthetic Dataset to Guide Large-Scale Rule Induction,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+373,ICLR,2025,ParFam - (Neural Guided) Symbolic Regression via Continuous Global Optimization,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+374,ICLR,2025,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,included,included,,yes,,,abstract and first two pages of local PDF
+375,ICLR,2025,INFER: A Neural-symbolic Model For Extrapolation Reasoning on Temporal Knowledge Graph,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+376,ICLR,2025,KinFormer: Generalizable Dynamical Symbolic Regression for Catalytic Organic Reaction Kinetics,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+377,ICLR,2025,Symbolic regression via MDLformer-guided search: from minimizing prediction error to minimizing description length,screening,excluded,no language-model component evident in title or abstract,no,,,
+378,ICLR,2025,KLay: Accelerating Arithmetic Circuits for Neurosymbolic AI,screening,excluded,no language-model component evident in title or abstract,no,,,
+379,ICLR,2025,LASER: A Neuro-Symbolic Framework for Learning Spatio-Temporal Scene Graphs with Weak Supervision,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+380,ICLR,2025,Differentiable Rule Induction from Raw Sequence Inputs,screening,excluded,no language-model component evident in title or abstract,no,,,
+381,ICLR,2025,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,included,included,,yes,,,abstract and first two pages of local PDF
+382,ICLR,2026,Neuro-Symbolic Decoding of Neural Activity,screening,excluded,no language-model component evident in title or abstract,no,,,
+383,ICLR,2026,MultiMat - Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models,screening,excluded,no language-model component evident in title or abstract,no,,,
+384,ICLR,2026,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,included,included,,yes,,,abstract and first two pages of local PDF
+385,TPAMI,2023,DeepLogic: Joint Learning of Neural Perception and Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+386,TPAMI,2023,Differentiable Logic Policy for Interpretable Deep Reinforcement Learning: A Study From an Optimization Perspective,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+387,TPAMI,2023,Discourse-Aware Graph Networks for Textual Logical Reasoning,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+388,TPAMI,2024,Integrating Neural-Symbolic Reasoning With Variational Causal Inference Network for Explanatory Visual Question Answering,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+389,TPAMI,2025,Towards Data-And Knowledge-Driven AI: A Survey on Neuro-Symbolic Computing,screening,excluded,no language-model component evident in title or abstract,no,yes,,
+390,TPAMI,2026,Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,included,included,,no,yes,yes,published abstract: https://api.openalex.org/works/doi:10.1109/TPAMI.2025.3642831

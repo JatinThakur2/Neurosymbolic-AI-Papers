@@ -1,0 +1,44 @@
+# Language-model families
+GPT-4 family (incl. GPT-4o, o1/o3)       (?i)\bGPT-?4(o|\.1|v)?\b|\bo1-(mini|preview)\b|\bo3(-mini)?\b
+GPT-3.5 / ChatGPT                        (?i)GPT-?3\.5|ChatGPT|text-davinci
+GPT-3 / Codex / GPT-2                    \bGPT-?[23](?![\.\d])|Codex\b
+Llama family                             (?i)\bllama[- ]?\d?|code ?llama
+Qwen family                              (?i)\bqwen
+DeepSeek family                          (?i)deepseek
+Mistral / Mixtral                        (?i)mistral|mixtral
+Claude                                   \bClaude\b
+Gemini / PaLM                            Gemini|PaLM\b|PaLM ?2
+Gemma                                    \bGemma
+Chinchilla / Gopher                      Chinchilla|Gopher
+T5 / CodeT5                              \b(Flan-?)?T5\b|CodeT5
+BERT / RoBERTa                           \bBERT\b|RoBERTa|DeBERTa
+InternLM                                 InternLM
+LLaVA / BLIP / CLIP                      LLaVA|BLIP-?2|InstructBLIP|\bCLIP\b
+
+# Symbolic engines
+Lean                                     \bLean ?4?\b
+Isabelle                                 Isabelle
+Coq                                      \bCoq\b
+Z3 / SMT solver                          \bZ3\b|\bSMT\b|cvc5
+Prover9 / FOL prover                     Prover9|\bVampire\b
+ASP (clingo)                             clingo|[Aa]nswer [Ss]et [Pp]rogram|\bASP\b
+Prolog                                   Prolog
+PDDL planner                             PDDL|Fast Downward
+SymPy / CAS                              SymPy|computer algebra
+Probabilistic logic (ProbLog, Scallop, MLN) ProbLog|Scallop|Markov logic
+
+# Benchmarks
+miniF2F                                  miniF2F
+ProofNet                                 ProofNet
+FOLIO                                    FOLIO
+ProofWriter                              ProofWriter
+PrOntoQA                                 (?i)prontoqa
+ARC (ARC-AGI or AI2-ARC)                 \bARC\b
+GSM8K                                    GSM8K
+MATH                                     \bMATH\b
+CLEVR                                    CLEVR
+GQA                                      \bGQA\b
+ALFWorld                                 ALFWorld
+VirtualHome                              VirtualHome
+SRBench / Feynman                        SRBench|Feynman
+Spider / BIRD                            \bSpider\b|\bBIRD\b

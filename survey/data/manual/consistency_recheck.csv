@@ -1,0 +1,5 @@
+title,initial_decision,final_decision,rule
+HyperTree Proof Search for Neural Theorem Proving,exclude (E2: LM not named in abstract),include,"R1: tactic model pretrained on arXiv LaTeX (math), verified in the paper (Sec. on model pretraining; arXiv:2205.11491)"
+B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,exclude (E3: RL fine-tuning of code LLM),include,R2: unit-test execution provides the training reward
+RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression,include,exclude (E1),R1: 1-layer transformer trained from scratch on expression trees during search
+Program Synthesis with Pragmatic Communication,exclude (E2),exclude (E1),reason code corrected: no language model is involved

@@ -1,0 +1,86 @@
+record_id,title,role,bibkey
+144,Just Add Functions: A Neural-Symbolic Language Model,included,demeter2020just
+240,NeurASP: Embracing Neural Networks into Answer Set Programming,related,yang2020neurasp
+247,Graph Neural Networks Meet Neural-Symbolic Computing: A Survey and Perspective,related,lamb2020graph
+248,From Statistical Relational to Neuro-Symbolic Artificial Intelligence,related,deraedt2020statistical
+78,Scallop: From Probabilistic Deductive Databases to Scalable Differentiable Reasoning,related,huang2021scallop
+79,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",included,nye2021improving
+81,Open Rule Induction,included,cui2021open
+147,Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,included,bosselut2021dynamic
+13,Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval,included,alon2022neuro
+92,HyperTree Proof Search for Neural Theorem Proving,included,lample2022hypertree
+99,A-NeSI: A Scalable Approximate Method for Probabilistic Neurosymbolic Inference,related,krieken2023nesi
+103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,included,gao2023lora
+109,Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts,related,marconato2023not
+346,Neuro-Symbolic Procedural Planning with Commonsense Prompting,included,lu2023neuro
+23,Analysis for Abductive Learning and Neural-Symbolic Reasoning Shortcuts,related,yang2024analysis
+25,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,included,luo2024end
+28,On the Hardness of Probabilistic Neurosymbolic Learning,related,maene2024hardness
+30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,included,fang2024stacksight
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,included,zhao2024subgoal
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,included,barke2024hysynth
+112,Neuro-Symbolic Data Generation for Math Reasoning,included,li2024neuro
+113,Symbolic Regression with a Learned Concept Library,included,grayeli2024symbolic
+192,Large Language Models Are Neurosymbolic Reasoners,included,fang2024large
+287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",included,weir2024nellie
+354,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,included,shi2024exedec
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,included,wang2024lego
+358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,included,yu2024b
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,included,chen2024genome
+362,Neurosymbolic Grounding for Compositional World Models,included,sehgal2024neurosymbolic
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,included,li2025dataflow
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,included,wang2025ma
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,included,liu2025proofaug
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,included,pourcel2025self
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,included,dong2025stp
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,included,lin2025zebralogic
+119,Program Synthesis via Test-Time Transduction,included,lee2025program
+122,MuSLR: Multimodal Symbolic Logical Reasoning,included,xu2025muslr
+125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,included,zhou2025wall
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,included,opedal2025language
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,included,ahn2025reliable
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,included,stein2025once
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,included,choi2025nesypr
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,included,kamali2025nesycoco
+209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,included,princis2025enhancing
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,included,ning2025gns
+214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,included,yin2025mdd
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,included,alviano2025integrating
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,included,raza2025instantiation
+303,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,included,shao2025breaking
+308,Empowering LLMs with Logical Reasoning: A Comprehensive Survey,related,cheng2025empowering
+309,Neuro-Symbolic Artificial Intelligence: A Task-Directed Survey in the Black-Box Models Era,related,delvecchio2025neuro
+310,Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,related,yang2025neuro
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,included,george2025leanprogress
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,included,hu2025minictx
+365,R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,included,kang2025r
+366,VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,included,liang2025visualpredicator
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,included,choi2025nesyc
+370,Logically Consistent Language Models via Neuro-Symbolic Integration,included,calanzone2025logically
+371,CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,included,yang2025carts
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,included,ryu2025divide
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,included,qi2025large
+389,Towards Data-And Knowledge-Driven AI: A Survey on Neuro-Symbolic Computing,related,wang2025data
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,included,xiong2026automated
+49,A Minimal Agent for Automated Theorem Proving,included,requena2026minimal
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",included,liu2026decompose
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,included,pang2026deliberate
+54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,included,mo2026distilling
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,included,ammanamanchi2026faults
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,included,zuo2026llm
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,included,saveliev2026influence
+59,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,included,shao2026lifting
+218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,included,shah2026neus
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,included,xu2026socrates
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,included,schrader2026solver
+229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,included,hu2026tapas
+230,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,included,sinha2026concept
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,included,li2026hypothesis
+232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,included,liang2026nestr
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,included,wang2026sheetbrain
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,included,jurayj2026language
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,included,qin2026don
+325,Semantic-Drive: Trustworthy and Efficient Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus,included,guillenperez2026semantic
+327,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,included,chen2026can
+384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,included,jiang2026egg
+390,Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,included,he2026unveiling

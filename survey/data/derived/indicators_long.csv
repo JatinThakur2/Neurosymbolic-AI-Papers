@@ -1,0 +1,373 @@
+record_id,title,group,entity,mentions,attributed
+25,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",4,yes
+25,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,lm,GPT-3.5 / ChatGPT,2,no
+30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,lm,GPT-3.5 / ChatGPT,10,yes
+30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,lm,Llama family,9,yes
+30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,lm,BERT / RoBERTa,2,no
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,lm,GPT-3.5 / ChatGPT,26,yes
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,engine,Lean,3,yes
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,engine,Isabelle,38,yes
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,engine,Z3 / SMT solver,2,no
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,engine,Prover9 / FOL prover,2,no
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,benchmark,miniF2F,40,yes
+31,Subgoal-based Demonstration Learning for Formal Theorem Proving,benchmark,MATH,1,no
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",10,yes
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,GPT-3.5 / ChatGPT,2,no
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,GPT-3 / Codex / GPT-2,1,no
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,Llama family,33,yes
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,T5 / CodeT5,8,yes
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,lm,BERT / RoBERTa,1,no
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,engine,ASP (clingo),1,no
+34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,engine,"Probabilistic logic (ProbLog, Scallop, MLN)",1,no
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,lm,Qwen family,2,no
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,lm,DeepSeek family,25,yes
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,lm,Gemini / PaLM,2,no
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,lm,InternLM,6,yes
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,engine,Lean,198,yes
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,engine,Isabelle,1,no
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,benchmark,ProofNet,3,yes
+37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,benchmark,MATH,3,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,lm,Llama family,1,no
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,lm,DeepSeek family,13,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,lm,InternLM,1,no
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,engine,Lean,16,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,engine,Isabelle,40,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,engine,Coq,7,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,engine,Z3 / SMT solver,4,yes
+40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,benchmark,miniF2F,34,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",11,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,lm,Qwen family,30,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,lm,Mistral / Mixtral,19,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,lm,Claude,8,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,lm,Gemini / PaLM,3,yes
+42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,benchmark,ARC (ARC-AGI or AI2-ARC),123,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,lm,Llama family,1,no
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,lm,DeepSeek family,21,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,lm,InternLM,4,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,engine,Lean,35,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,engine,Isabelle,34,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,benchmark,miniF2F,25,yes
+43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,benchmark,ProofNet,18,yes
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",70,yes
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,GPT-3.5 / ChatGPT,1,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Llama family,17,yes
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Qwen family,2,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,DeepSeek family,5,yes
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Mistral / Mixtral,2,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Claude,2,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Gemini / PaLM,2,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,lm,Gemma,1,no
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,engine,Z3 / SMT solver,26,yes
+46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,benchmark,MATH,1,no
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,lm,DeepSeek family,13,yes
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,lm,Gemini / PaLM,1,no
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,lm,InternLM,3,yes
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,engine,Lean,112,yes
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,engine,Isabelle,1,no
+48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,engine,SymPy / CAS,2,no
+49,A Minimal Agent for Automated Theorem Proving,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",3,yes
+49,A Minimal Agent for Automated Theorem Proving,lm,Qwen family,4,yes
+49,A Minimal Agent for Automated Theorem Proving,lm,DeepSeek family,15,yes
+49,A Minimal Agent for Automated Theorem Proving,lm,Claude,33,yes
+49,A Minimal Agent for Automated Theorem Proving,lm,Gemini / PaLM,26,yes
+49,A Minimal Agent for Automated Theorem Proving,lm,InternLM,2,no
+49,A Minimal Agent for Automated Theorem Proving,engine,Lean,51,yes
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",lm,Qwen family,11,yes
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",lm,DeepSeek family,4,yes
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",lm,Gemini / PaLM,2,no
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",engine,Lean,44,yes
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",engine,Isabelle,1,no
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",engine,Coq,1,no
+51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",benchmark,ProofNet,15,yes
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,lm,Llama family,13,yes
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,lm,Qwen family,21,yes
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,lm,Gemini / PaLM,1,no
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,engine,SymPy / CAS,2,no
+52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,benchmark,SRBench / Feynman,14,yes
+54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,lm,Qwen family,3,yes
+54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,lm,Claude,5,yes
+54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,lm,LLaVA / BLIP / CLIP,4,yes
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,lm,GPT-3.5 / ChatGPT,1,no
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,lm,DeepSeek family,16,yes
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,lm,Claude,2,no
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,lm,Gemini / PaLM,11,yes
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,engine,Lean,138,yes
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,engine,Isabelle,1,no
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,benchmark,miniF2F,30,yes
+55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,benchmark,ProofNet,22,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,lm,Qwen family,1,no
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,lm,DeepSeek family,14,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,lm,Gemini / PaLM,5,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,engine,Lean,70,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,engine,Isabelle,1,no
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,engine,Z3 / SMT solver,10,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,engine,SymPy / CAS,3,yes
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,benchmark,miniF2F,1,no
+56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,benchmark,ProofNet,1,no
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",72,yes
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,lm,Llama family,10,yes
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,lm,DeepSeek family,8,yes
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,engine,SymPy / CAS,1,no
+58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,benchmark,SRBench / Feynman,36,yes
+59,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+59,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,benchmark,ALFWorld,6,yes
+79,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",lm,GPT-3 / Codex / GPT-2,32,yes
+79,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",lm,BERT / RoBERTa,1,no
+79,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",engine,Z3 / SMT solver,1,no
+81,Open Rule Induction,lm,BERT / RoBERTa,2,no
+92,HyperTree Proof Search for Neural Theorem Proving,engine,Lean,24,yes
+92,HyperTree Proof Search for Neural Theorem Proving,engine,Isabelle,1,no
+92,HyperTree Proof Search for Neural Theorem Proving,engine,Coq,1,no
+92,HyperTree Proof Search for Neural Theorem Proving,engine,Prover9 / FOL prover,1,no
+92,HyperTree Proof Search for Neural Theorem Proving,benchmark,miniF2F,21,yes
+103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,lm,BERT / RoBERTa,1,no
+103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,lm,LLaVA / BLIP / CLIP,3,yes
+103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,benchmark,CLEVR,4,yes
+103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,benchmark,GQA,2,no
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",12,yes
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,lm,GPT-3.5 / ChatGPT,2,no
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,lm,DeepSeek family,3,yes
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,engine,PDDL planner,1,no
+110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,benchmark,ARC (ARC-AGI or AI2-ARC),8,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",31,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,GPT-3.5 / ChatGPT,5,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,GPT-3 / Codex / GPT-2,1,no
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,Llama family,27,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,Mistral / Mixtral,17,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,Gemini / PaLM,1,no
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,T5 / CodeT5,1,no
+112,Neuro-Symbolic Data Generation for Math Reasoning,lm,BERT / RoBERTa,1,no
+112,Neuro-Symbolic Data Generation for Math Reasoning,engine,Isabelle,1,no
+112,Neuro-Symbolic Data Generation for Math Reasoning,engine,Z3 / SMT solver,27,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,engine,SymPy / CAS,8,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,benchmark,GSM8K,31,yes
+112,Neuro-Symbolic Data Generation for Math Reasoning,benchmark,MATH,33,yes
+113,Symbolic Regression with a Learned Concept Library,lm,GPT-3.5 / ChatGPT,4,yes
+113,Symbolic Regression with a Learned Concept Library,lm,Llama family,15,yes
+113,Symbolic Regression with a Learned Concept Library,lm,Mistral / Mixtral,1,no
+113,Symbolic Regression with a Learned Concept Library,lm,Chinchilla / Gopher,12,yes
+113,Symbolic Regression with a Learned Concept Library,benchmark,SRBench / Feynman,39,yes
+119,Program Synthesis via Test-Time Transduction,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",8,yes
+119,Program Synthesis via Test-Time Transduction,lm,GPT-3 / Codex / GPT-2,1,no
+119,Program Synthesis via Test-Time Transduction,lm,Llama family,4,yes
+119,Program Synthesis via Test-Time Transduction,lm,DeepSeek family,2,no
+119,Program Synthesis via Test-Time Transduction,lm,Claude,2,no
+119,Program Synthesis via Test-Time Transduction,benchmark,ARC (ARC-AGI or AI2-ARC),16,yes
+122,MuSLR: Multimodal Symbolic Logical Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",30,yes
+122,MuSLR: Multimodal Symbolic Logical Reasoning,lm,Qwen family,5,yes
+122,MuSLR: Multimodal Symbolic Logical Reasoning,lm,Claude,8,yes
+122,MuSLR: Multimodal Symbolic Logical Reasoning,lm,T5 / CodeT5,1,no
+122,MuSLR: Multimodal Symbolic Logical Reasoning,lm,LLaVA / BLIP / CLIP,1,no
+122,MuSLR: Multimodal Symbolic Logical Reasoning,benchmark,FOLIO,1,no
+122,MuSLR: Multimodal Symbolic Logical Reasoning,benchmark,ProofWriter,1,no
+122,MuSLR: Multimodal Symbolic Logical Reasoning,benchmark,PrOntoQA,1,no
+125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,lm,GPT-3.5 / ChatGPT,1,no
+125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,engine,PDDL planner,1,no
+125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,benchmark,ALFWorld,27,yes
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,lm,Llama family,16,yes
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,lm,Qwen family,11,yes
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,lm,DeepSeek family,12,yes
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,engine,Lean,1,no
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,engine,Prolog,1,no
+126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,benchmark,GSM8K,1,no
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",7,yes
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,lm,Llama family,6,yes
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,lm,Qwen family,2,no
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,engine,Z3 / SMT solver,4,yes
+127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,engine,PDDL planner,8,yes
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",14,yes
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,lm,Qwen family,2,no
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,lm,Gemini / PaLM,24,yes
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,engine,Z3 / SMT solver,1,no
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,engine,PDDL planner,1,no
+133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,benchmark,CLEVR,8,yes
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,lm,Llama family,2,no
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,lm,Qwen family,1,no
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,lm,DeepSeek family,1,no
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,engine,PDDL planner,9,yes
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,benchmark,ALFWorld,10,yes
+138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,benchmark,VirtualHome,10,yes
+147,Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,lm,GPT-3 / Codex / GPT-2,11,yes
+147,Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,lm,BERT / RoBERTa,12,yes
+192,Large Language Models Are Neurosymbolic Reasoners,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",5,yes
+192,Large Language Models Are Neurosymbolic Reasoners,lm,GPT-3.5 / ChatGPT,5,yes
+192,Large Language Models Are Neurosymbolic Reasoners,lm,T5 / CodeT5,1,no
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,lm,GPT-3.5 / ChatGPT,1,no
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,lm,Llama family,1,no
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,lm,BERT / RoBERTa,2,no
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,lm,LLaVA / BLIP / CLIP,1,no
+199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,benchmark,CLEVR,46,yes
+209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",4,yes
+209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,lm,GPT-3.5 / ChatGPT,3,yes
+209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,lm,T5 / CodeT5,17,yes
+209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,benchmark,Spider / BIRD,13,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",24,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,GPT-3.5 / ChatGPT,2,no
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,Llama family,3,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,Qwen family,3,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,DeepSeek family,9,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,Gemini / PaLM,13,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,lm,LLaVA / BLIP / CLIP,33,yes
+213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,engine,SymPy / CAS,1,no
+214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",3,yes
+214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,lm,GPT-3.5 / ChatGPT,4,yes
+214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,lm,Llama family,3,yes
+214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,lm,Qwen family,1,no
+218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",6,yes
+218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,lm,Llama family,1,no
+218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,lm,Qwen family,13,yes
+218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,lm,LLaVA / BLIP / CLIP,4,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",14,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,lm,Llama family,3,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,lm,DeepSeek family,13,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,lm,Claude,17,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,engine,Prolog,37,yes
+223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,benchmark,FOLIO,3,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",6,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,lm,Llama family,22,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,lm,Qwen family,13,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,lm,DeepSeek family,8,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,engine,ASP (clingo),127,yes
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,engine,Prolog,1,no
+227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,engine,PDDL planner,3,yes
+229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,lm,Llama family,1,no
+229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,lm,Claude,1,no
+229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,engine,PDDL planner,2,no
+230,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+230,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,lm,GPT-3.5 / ChatGPT,1,no
+230,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,lm,LLaVA / BLIP / CLIP,23,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",11,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,lm,GPT-3.5 / ChatGPT,6,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,lm,DeepSeek family,22,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,engine,Z3 / SMT solver,4,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,engine,Prover9 / FOL prover,3,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,benchmark,FOLIO,12,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,benchmark,ProofWriter,12,yes
+231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,benchmark,PrOntoQA,11,yes
+232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",7,yes
+232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,lm,Qwen family,19,yes
+232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,lm,Gemini / PaLM,1,no
+232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,lm,T5 / CodeT5,3,yes
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",11,yes
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,lm,GPT-3.5 / ChatGPT,4,yes
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,lm,GPT-3 / Codex / GPT-2,2,no
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,lm,Qwen family,6,yes
+233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,lm,DeepSeek family,6,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",32,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,lm,Llama family,9,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,lm,Qwen family,10,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,lm,DeepSeek family,33,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,engine,Prolog,19,yes
+235,Language Models and Logic Programs for Trustworthy Tax Reasoning,benchmark,MATH,1,no
+287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",lm,T5 / CodeT5,3,yes
+287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",engine,Prolog,7,yes
+287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",engine,"Probabilistic logic (ProbLog, Scallop, MLN)",1,no
+287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",benchmark,ARC (ARC-AGI or AI2-ARC),3,yes
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,lm,GPT-3.5 / ChatGPT,5,yes
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,lm,Llama family,12,yes
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,lm,Gemini / PaLM,2,no
+295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,engine,ASP (clingo),57,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",6,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,lm,GPT-3.5 / ChatGPT,8,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,engine,Lean,1,no
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,engine,Isabelle,1,no
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,engine,Z3 / SMT solver,6,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,benchmark,FOLIO,5,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,benchmark,ProofWriter,6,yes
+298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,benchmark,PrOntoQA,4,yes
+303,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",23,yes
+303,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,lm,GPT-3.5 / ChatGPT,11,yes
+303,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,lm,DeepSeek family,20,yes
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,lm,Qwen family,4,yes
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,lm,DeepSeek family,9,yes
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,engine,Lean,31,yes
+321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,engine,Coq,3,yes
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",10,yes
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,lm,GPT-3.5 / ChatGPT,7,yes
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,lm,Llama family,9,yes
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,lm,Qwen family,13,yes
+323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,lm,Mistral / Mixtral,6,yes
+327,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",8,yes
+327,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,lm,Llama family,4,yes
+327,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,lm,Qwen family,11,yes
+346,Neuro-Symbolic Procedural Planning with Commonsense Prompting,lm,GPT-3 / Codex / GPT-2,46,yes
+346,Neuro-Symbolic Procedural Planning with Commonsense Prompting,lm,BERT / RoBERTa,11,yes
+346,Neuro-Symbolic Procedural Planning with Commonsense Prompting,benchmark,VirtualHome,2,no
+354,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,lm,Gemini / PaLM,2,no
+354,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,benchmark,CLEVR,1,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",6,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,GPT-3.5 / ChatGPT,18,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,GPT-3 / Codex / GPT-2,3,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,Llama family,2,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,Claude,1,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,lm,BERT / RoBERTa,2,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,engine,Lean,3,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,engine,Isabelle,29,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,engine,Coq,2,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,engine,Z3 / SMT solver,3,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,engine,Prover9 / FOL prover,1,no
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,benchmark,miniF2F,22,yes
+355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,benchmark,MATH,1,no
+358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,lm,GPT-3 / Codex / GPT-2,8,yes
+358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,lm,Llama family,2,no
+358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,lm,T5 / CodeT5,1,no
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",1,no
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,lm,GPT-3.5 / ChatGPT,3,yes
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,lm,GPT-3 / Codex / GPT-2,1,no
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,lm,BERT / RoBERTa,2,no
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,lm,LLaVA / BLIP / CLIP,2,no
+360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,benchmark,GQA,16,yes
+362,Neurosymbolic Grounding for Compositional World Models,lm,LLaVA / BLIP / CLIP,1,no
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",21,yes
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,lm,DeepSeek family,6,yes
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,engine,Lean,86,yes
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,engine,Isabelle,3,yes
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,engine,Coq,2,no
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,benchmark,miniF2F,21,yes
+364,miniCTX: Neural Theorem Proving with (Long-)Contexts,benchmark,ProofNet,2,no
+366,VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",29,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,lm,GPT-3.5 / ChatGPT,3,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,lm,Llama family,24,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,lm,Claude,7,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,engine,ASP (clingo),47,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,engine,PDDL planner,2,no
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,benchmark,ALFWorld,19,yes
+369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,benchmark,VirtualHome,12,yes
+370,Logically Consistent Language Models via Neuro-Symbolic Integration,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",2,no
+370,Logically Consistent Language Models via Neuro-Symbolic Integration,lm,GPT-3.5 / ChatGPT,2,no
+370,Logically Consistent Language Models via Neuro-Symbolic Integration,lm,Llama family,16,yes
+370,Logically Consistent Language Models via Neuro-Symbolic Integration,lm,BERT / RoBERTa,1,no
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",14,yes
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,lm,GPT-3.5 / ChatGPT,5,yes
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,engine,Z3 / SMT solver,4,yes
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,benchmark,FOLIO,7,yes
+374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,benchmark,ProofWriter,5,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,lm,"GPT-4 family (incl. GPT-4o, o1/o3)",17,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,lm,GPT-3.5 / ChatGPT,1,no
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,lm,Llama family,25,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,lm,Mistral / Mixtral,18,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,lm,Claude,7,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,engine,Lean,1,no
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,engine,Z3 / SMT solver,2,no
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,engine,Prover9 / FOL prover,7,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,engine,SymPy / CAS,1,no
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,benchmark,FOLIO,17,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,benchmark,ProofWriter,20,yes
+381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,benchmark,PrOntoQA,16,yes
+384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,lm,GPT-3.5 / ChatGPT,3,yes
+384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,lm,Mistral / Mixtral,2,no
+384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,engine,SymPy / CAS,1,no
+384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,benchmark,SRBench / Feynman,19,yes

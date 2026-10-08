@@ -1,0 +1,21 @@
+title,entity,used_in_study,note
+"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",ARC (abstraction),no,study uses AI2-ARC science questions; label conflated ARC-AGI with AI2-ARC (label renamed)
+Program Synthesis via Test-Time Transduction,ARC (abstraction),yes,
+From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,Gemini / PaLM,yes,
+miniCTX: Neural Theorem Proving with (Long-)Contexts,DeepSeek family,yes,
+Neuro-Symbolic Data Generation for Math Reasoning,SymPy / CAS,no,"passing mention (tool discussed as limited), not used"
+GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,GPT-4 family,yes,
+HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,ARC (abstraction),yes,
+Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,BERT / RoBERTa,yes,
+Enhancing SQL Query Generation with Neurosymbolic Reasoning,T5 / CodeT5,yes,
+GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,GPT-3.5 / ChatGPT,yes,
+NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,ASP (clingo),no,named only in the reference list (references not removed in this version)
+Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,Prover9 / FOL prover,yes,
+Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,GPT-4 family,yes,
+STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,miniF2F,yes,
+Neuro-Symbolic Data Generation for Math Reasoning,Mistral / Mixtral,yes,
+Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,DeepSeek family,yes,
+Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,ProofWriter,yes,
+Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks,GPT-3 / Codex / GPT-2,no,"pattern matched GPT-3.5 (regex defect, fixed)"
+Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,ALFWorld,yes,
+LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,GQA,no,named in a dataset comparison table only

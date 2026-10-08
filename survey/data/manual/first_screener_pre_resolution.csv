@@ -1,0 +1,98 @@
+title,venue,year,decision,reason_code,reason_text,evidence
+Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval,ICML,2022,include,,,abstract and first two pages of local PDF
+End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,ICML,2024,include,,,abstract and first two pages of local PDF
+StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,ICML,2024,include,,,abstract and first two pages of local PDF
+Subgoal-based Demonstration Learning for Formal Theorem Proving,ICML,2024,include,,,abstract and first two pages of local PDF
+Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,ICML,2025,include,,,abstract and first two pages of local PDF
+MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,ICML,2025,include,,,abstract and first two pages of local PDF
+ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,ICML,2025,include,,,abstract and first two pages of local PDF
+Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,ICML,2025,include,,,abstract and first two pages of local PDF
+STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,ICML,2025,include,,,abstract and first two pages of local PDF
+ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,ICML,2025,include,,,abstract and first two pages of local PDF
+Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,ICML,2026,include,,,abstract and first two pages of local PDF
+A Minimal Agent for Automated Theorem Proving,ICML,2026,include,,,abstract and first two pages of local PDF
+"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",ICML,2026,include,,,abstract and first two pages of local PDF
+Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,ICML,2026,include,,,abstract and first two pages of local PDF
+Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,ICML,2026,include,,,abstract and first two pages of local PDF
+Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,ICML,2026,include,,,abstract and first two pages of local PDF
+From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,ICML,2026,include,,,abstract and first two pages of local PDF
+Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,ICML,2026,include,,,abstract and first two pages of local PDF
+Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,ICML,2026,include,,,abstract and first two pages of local PDF
+Program Synthesis with Pragmatic Communication,NeurIPS,2020,exclude,E1,no language model (pragmatic program synthesis with recursive reasoning models),abstract and first two pages of local PDF
+"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",NeurIPS,2021,include,,,abstract and first two pages of local PDF
+Open Rule Induction,NeurIPS,2021,include,,,abstract and first two pages of local PDF
+NS3: Neuro-symbolic Semantic Code Search,NeurIPS,2022,exclude,E2,LM only as baseline (neural module network),abstract and first two pages of local PDF
+LogiGAN: Learning Logical Reasoning via Adversarial Pre-training,NeurIPS,2022,include,,,abstract and first two pages of local PDF
+HyperTree Proof Search for Neural Theorem Proving,NeurIPS,2022,include,,,abstract and main text of local PDF; pretraining corpus (arXiv LaTeX) confirmed in arXiv:2205.11491
+Enhancing Robot Program Synthesis Through Environmental Context,NeurIPS,2023,exclude,E2,LM only background,abstract and first two pages of local PDF
+LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,NeurIPS,2023,include,,,abstract and first two pages of local PDF
+HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,NeurIPS,2024,include,,,abstract and first two pages of local PDF
+Neuro-Symbolic Data Generation for Math Reasoning,NeurIPS,2024,include,,,abstract and first two pages of local PDF
+Symbolic Regression with a Learned Concept Library,NeurIPS,2024,include,,,abstract and first two pages of local PDF
+Program Synthesis via Test-Time Transduction,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+MuSLR: Multimodal Symbolic Logical Reasoning,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+Are Language Models Efficient Reasoners? A Perspective from Logic Programming,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+Once Upon an Input: Reasoning via Per-Instance Program Synthesis,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,NeurIPS,2025,include,,,abstract and first two pages of local PDF
+Just Add Functions: A Neural-Symbolic Language Model,AAAI,2020,include,,,abstract and first two pages of local PDF
+Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,AAAI,2021,include,,,abstract and first two pages of local PDF
+Scaling Neural Program Synthesis with Distribution-Based Search,AAAI,2022,exclude,E2,LM only background,abstract and first two pages of local PDF
+Weakly Supervised Neuro-Symbolic Module Networks for Numerical Reasoning over Text,AAAI,2022,exclude,E2,LM only baseline,abstract and first two pages of local PDF
+Large Language Models Are Neurosymbolic Reasoners,AAAI,2024,include,,,abstract and first two pages of local PDF
+NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,AAAI,2025,include,,,abstract and first two pages of local PDF
+Online Prompt Selection for Program Synthesis,AAAI,2025,exclude,E3,LLMs and a symbolic solver are portfolio alternatives chosen per task; they do not interact (I3),abstract and first two pages of local PDF
+Eco Search: A No-delay Best-First Search Algorithm for Program Synthesis,AAAI,2025,exclude,E2,LM only background,abstract and first two pages of local PDF
+Enhancing SQL Query Generation with Neurosymbolic Reasoning,AAAI,2025,include,,,abstract and first two pages of local PDF
+Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks,AAAI,2025,include,,,abstract and first two pages of local PDF
+GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,AAAI,2025,include,,,abstract and first two pages of local PDF
+MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,AAAI,2025,include,,,abstract and first two pages of local PDF
+NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,AAAI,2026,include,,,abstract and first two pages of local PDF
+Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,AAAI,2026,include,,,abstract and first two pages of local PDF
+A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,AAAI,2026,include,,,abstract and first two pages of local PDF
+Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,AAAI,2026,include,,,abstract and first two pages of local PDF
+Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,AAAI,2026,include,,,abstract and first two pages of local PDF
+From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,AAAI,2026,include,,,abstract and first two pages of local PDF
+NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,AAAI,2026,include,,,abstract and first two pages of local PDF
+SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,AAAI,2026,include,,,abstract and first two pages of local PDF
+Language Models and Logic Programs for Trustworthy Tax Reasoning,AAAI,2026,include,,,abstract and first two pages of local PDF
+Complex Reasoning over Vision and Language -Leveraging Neurosymbolic AI,AAAI,2026,exclude,E4,invited-talk abstract,abstract and first two pages of local PDF
+Enabling Abductive Learning to Exploit Knowledge Graph,IJCAI,2023,exclude,E1,no LM (KG scale only),abstract and first two pages of local PDF
+"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",IJCAI,2024,include,,,abstract and first two pages of local PDF
+NeuroSymbolic LLM for Mathematical Reasoning and Software Engineering,IJCAI,2024,exclude,E4,doctoral-consortium summary,abstract and first two pages of local PDF
+Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,IJCAI,2025,include,,,abstract and first two pages of local PDF
+Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,IJCAI,2025,include,,,abstract and first two pages of local PDF
+Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,IJCAI,2025,include,,,abstract and first two pages of local PDF
+Empowering LLMs with Logical Reasoning: A Comprehensive Survey,IJCAI,2025,exclude,E5,survey,abstract and first two pages of local PDF
+Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,IJCAI,2025,exclude,E5,survey/overview,abstract and first two pages of local PDF
+Enhancing the Logical Reasoning Abilities of Large Language Models,IJCAI,2025,exclude,E4,doctoral/extended research summary,abstract and first two pages of local PDF
+LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,TMLR,2025,include,,,abstract and first two pages of local PDF
+Concept Flow Models: Anchoring Concept-Based Reasoning with Hierarchical Bottlenecks,TMLR,2026,exclude,E2,VLM only as concept-embedding tool,abstract and first two pages of local PDF
+Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,TMLR,2026,include,,,abstract and first two pages of local PDF
+Semantic-Drive: Trustworthy and Efficient Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus,TMLR,2026,include,,,published abstract: https://arxiv.org/abs/2512.12012
+Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,TMLR,2026,include,,,abstract and first two pages of local PDF
+ReClor: A Reading Comprehension Dataset Requiring Logical Reasoning,ICLR,2020,exclude,E3,dataset; no symbolic component,abstract and first two pages of local PDF
+Differentiable Reasoning over a Virtual Knowledge Base,ICLR,2020,exclude,E2,pretrained encoder used only to embed mentions for a differentiable knowledge base,abstract and first two pages of local PDF
+Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning,ICLR,2023,include,,,abstract and first two pages of local PDF
+CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis,ICLR,2023,exclude,E3,pure code LLM; no symbolic component,abstract and first two pages of local PDF
+Neuro-Symbolic Procedural Planning with Commonsense Prompting,ICLR,2023,include,,,abstract and first two pages of local PDF
+Multimodal Analogical Reasoning over Knowledge Graphs,ICLR,2023,exclude,E2,LM only baseline,abstract and first two pages of local PDF
+ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,ICLR,2024,include,,,abstract and first two pages of local PDF
+LEGO-Prover: Neural Theorem Proving with Growing Libraries,ICLR,2024,include,,,abstract and first two pages of local PDF
+"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",ICLR,2024,exclude,E3,LLM web agent; no explicit symbolic component,abstract and first two pages of local PDF
+B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,ICLR,2024,include,,,abstract and first two pages of local PDF (execution of unit tests provides the RL reward)
+GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,ICLR,2024,include,,,abstract and first two pages of local PDF
+Neurosymbolic Grounding for Compositional World Models,ICLR,2024,include,,,abstract and first two pages of local PDF
+miniCTX: Neural Theorem Proving with (Long-)Contexts,ICLR,2025,include,,,abstract and first two pages of local PDF
+R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,ICLR,2025,include,,,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/a07e87ecfa8a651d62257571669b0150-Abstract-Conference.html
+VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,ICLR,2025,include,,,abstract and first two pages of local PDF
+RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression,ICLR,2025,exclude,E1,sequence model (1-layer transformer) trained from scratch on expression trees during search; not a language model under I2,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/19a8e70828c01059631f913442ae31e6-Abstract-Conference.html; full paper read at the published PDF
+Diffusion On Syntax Trees For Program Synthesis,ICLR,2025,exclude,E2,LM only background,abstract and first two pages of local PDF
+NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,ICLR,2025,include,,,abstract and first two pages of local PDF
+Logically Consistent Language Models via Neuro-Symbolic Integration,ICLR,2025,include,,,abstract and first two pages of local PDF
+CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,ICLR,2025,include,,,published abstract: https://proceedings.iclr.cc/paper_files/paper/2025/hash/69dbaf03f7f37a7ccad9ccc92875a44d-Abstract-Conference.html
+Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,ICLR,2025,include,,,abstract and first two pages of local PDF
+Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,ICLR,2025,include,,,abstract and first two pages of local PDF
+EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,ICLR,2026,include,,,abstract and first two pages of local PDF
+Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,TPAMI,2026,include,,,published abstract: https://api.openalex.org/works/doi:10.1109/TPAMI.2025.3642831
