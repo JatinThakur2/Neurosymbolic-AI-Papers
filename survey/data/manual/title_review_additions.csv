@@ -1,0 +1,5 @@
+title,venue,year,rationale
+"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",NeurIPS,2021,"Neural sequence models (GPT-3) paired with a symbolic consistency checker; missed by the LM-term filter because the abstract says ""neural sequence models"""
+RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression,ICLR,2025,No local PDF; title names retrieval-augmented generation for symbolic regression; published abstract confirms an online-trained language model
+CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,ICLR,2025,No local PDF; neural theorem proving with language-model tactic generation; published abstract confirms
+Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,TPAMI,2026,Paywalled TPAMI record; title names LVLMs; abstract (OpenAlex) confirms LVLM plus logic-rule latent model

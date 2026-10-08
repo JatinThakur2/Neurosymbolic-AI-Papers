@@ -1,0 +1,22 @@
+{
+  "identified": 391,
+  "with_local_pdf": 368,
+  "duplicates": 4,
+  "screened": 387,
+  "excluded_screening": 290,
+  "lm_filter_hits": 93,
+  "abstracts_extracted": 367,
+  "title_reviewed": 93,
+  "title_review_additions": 4,
+  "assessed": 97,
+  "excluded_eligibility": 24,
+  "exclusion_reasons": {
+    "E1": 3,
+    "E2": 8,
+    "E3": 8,
+    "E4": 3,
+    "E5": 2
+  },
+  "included": 73,
+  "included_from_published_abstract": 4
+}

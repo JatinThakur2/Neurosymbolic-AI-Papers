@@ -1,0 +1,31 @@
+% PRISMA 2020 flow diagram. All counts are \cnt macros from tables/numbers.tex.
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  box/.style={draw, rounded corners=1.5pt, align=left, text width=34mm, inner sep=3pt, minimum height=9mm},
+  side/.style={draw, rounded corners=1.5pt, align=left, text width=31mm, inner sep=3pt, fill=black!3},
+  inc/.style={box, draw=nsblue, fill=nsblue!8, line width=0.7pt},
+  stage/.style={fill=nsblue!75, text=white, font=\tiny\bfseries, minimum height=3.5mm, inner sep=1pt, rotate=90, anchor=center},
+  arr/.style={-{Stealth[length=1.5mm]}, line width=0.5pt}]
+\node[box] (id) {Records identified in the corpus\\ $n=\cnt{identified}$ (\cnt{withpdf} with PDF)\\ 7 venues, 2020--2026};
+\node[side, right=4mm of id] (dup) {Removed before screening:\\ duplicate records $n=\cnt{duplicates}$};
+\node[box, below=6mm of id] (scr) {Records screened\\ (title + abstract)\\ $n=\cnt{screened}$};
+\node[side, right=4mm of scr] (exs) {Excluded: no language-model\\ component evident\\ $n=\cnt{exclscreen}$};
+\node[box, below=16mm of scr] (ass) {Records assessed for eligibility\\ $n=\cnt{assessed}$\\ (\cnt{filterhits} filter hits + \cnt{titleadds} by title review)};
+\node[side, right=4mm of ass] (exe) {Excluded, with reasons:\\
+  E2 LM as baseline/encoder $n=\cnt{E2}$\\
+  E3 no symbolic component $n=\cnt{E3}$\\
+  E4 not a full paper $n=\cnt{E4}$\\
+  E5 secondary study $n=\cnt{E5}$\\
+  E1 no LM $n=\cnt{E1}$};
+\node[inc, below=10mm of ass] (inc) {\textbf{Studies included} $n=\cnt{included}$\\ full text available: \cnt{fulltext}\\ judged on published abstract: \cnt{pubabstract}};
+\draw[arr] (id) -- (scr); \draw[arr] (scr) -- (ass); \draw[arr] (ass) -- (inc);
+\draw[arr] (id) -- (dup); \draw[arr] (scr) -- (exs); \draw[arr] (ass) -- (exe);
+\node[stage, minimum width=12mm] at ($(id.west)+(-3.5mm,0)$) {Identification};
+\node[stage, minimum width=36mm] at ($($(scr.west)!0.5!(ass.west)$)+(-3.5mm,0)$) {Screening and eligibility};
+\node[stage, minimum width=13mm] at ($(inc.west)+(-3.5mm,0)$) {Included};
+\end{tikzpicture}
+\caption{PRISMA~2020 flow diagram of study selection.}
+\label{fig:prisma}
+\end{figure}

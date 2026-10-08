@@ -1,0 +1,98 @@
+title,venue,year,decision,reason_code,rationale
+LogiGAN: Learning Logical Reasoning via Adversarial Pre-training,NeurIPS,2022,exclude,E3,Generator and Verifier are both neural LMs; logic indicators are only text heuristics so no explicit symbolic component.
+STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,ICML,2025,include,,LLM prover generates conjectures and proofs that the Lean verifier checks and that supply the RL reward.
+A Minimal Agent for Automated Theorem Proving,ICML,2026,include,,LLM proposer writes Lean proofs and Lean compiler feedback drives iterative refinement.
+Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,ICML,2025,include,,LLM-generated programs are executed on ARC examples to drive evolutionary search refinement and fine-tuning data.
+MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,AAAI,2025,include,,LLM doctor/patient agents are controlled by a symbolic diagnosis tree that tracks topic state.
+Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,ICML,2026,include,,LLM proposes symbolic equations and analytical tools plus fitness feedback guide evolutionary search.
+End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,ICML,2024,include,,GPT-4 receives learned symbolic EQL policies as input and produces textual explanations (LLM is a secondary component).
+Diffusion On Syntax Trees For Program Synthesis,ICLR,2025,exclude,E1,Tree-diffusion model is trained from scratch on task-generated programs so it fails the language-model definition (R1).
+CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,ICLR,2025,include,,LM proposes tactics that are applied in the Lean proof environment under MCTS.
+From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,AAAI,2026,include,,LLM translates spans to FOL and reasons backward over mixed symbolic text with reflection (no external engine).
+From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,ICML,2026,include,,LLM conjectures feed SOS certificate solvers and Lean formalization.
+Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,IJCAI,2025,include,,LLM generates logical formalizations with instantiations verified by an SMT/logic solver.
+Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,AAAI,2026,include,,LLM synthesizes and refines modular symbolic programs that serve as the agent action space.
+Large Language Models Are Neurosymbolic Reasoners,AAAI,2024,include,,LLM agent selects actions and calls external symbolic modules such as calculators and navigators.
+Multimodal Analogical Reasoning over Knowledge Graphs,ICLR,2023,include,,Multimodal pre-trained Transformers are plugged into a framework using multimodal knowledge-graph structure mapping.
+StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,ICML,2024,include,,LLM decompilation is combined with program analysis that supplies stack-state structure to the prompts.
+GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,AAAI,2025,include,,MLLM parses geometry into symbolic clauses that a symbolic solver reasons over.
+miniCTX: Neural Theorem Proving with (Long-)Contexts,ICLR,2025,include,,LLM provers interact with Lean through a REPL receiving states and errors on miniCTX.
+CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis,ICLR,2023,exclude,E3,Code LLM evaluated only by running unit tests with no symbolic feedback into the method.
+Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,IJCAI,2025,exclude,E5,Survey of neuro-symbolic approaches for LLM reasoning.
+Program Synthesis with Pragmatic Communication,NeurIPS,2020,exclude,E1,Pragmatic program synthesizer with no language model.
+ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,ICML,2025,include,,LLM proof synthesis is combined with proof-assistant automation tools at multiple granularities.
+HyperTree Proof Search for Neural Theorem Proving,NeurIPS,2022,include,,Pretrained transformer LM proposes tactics for hypertree search checked in Metamath/Lean.
+Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,ICML,2026,include,,LLM prover guided by Wilf-Zeilberger symbolic proof plans and verified in Lean.
+Enabling Abductive Learning to Exploit Knowledge Graph,IJCAI,2023,exclude,E1,Abductive learning with a KG uses tabular/graph/image learners and no language model.
+Program Synthesis via Test-Time Transduction,NeurIPS,2025,include,,LLM predicts outputs to eliminate candidate programs whose execution outputs define the hypothesis class.
+NS3: Neuro-symbolic Semantic Code Search,NeurIPS,2022,exclude,E3,Neural module network with a query semantic-parse layout; no logic/solver/program execution and LM role unclear.
+Symbolic Regression with a Learned Concept Library,NeurIPS,2024,include,,LLM concept discovery guides genetic symbolic regression over equations.
+"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",ICLR,2024,include,,LLMs plan and generate executable Python actions whose execution results feed the next planning step and self-experience data.
+Just Add Functions: A Neural-Symbolic Language Model,AAAI,2020,include,,Neural LM is augmented with explicit symbolic functions (micro-models) that shape word probabilities.
+Logically Consistent Language Models via Neuro-Symbolic Integration,ICLR,2025,include,,Semantic-loss with logical constraints trains an LLM to be consistent with external facts and rules.
+Neuro-Symbolic Procedural Planning with Commonsense Prompting,ICLR,2023,include,,LLM prompts are built from commonsense KB rules via symbolic program executors.
+Online Prompt Selection for Program Synthesis,AAAI,2025,exclude,E3,Online bandit portfolio that only selects between a solver and LLM-prompt pairs (R3).
+Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,TPAMI,2026,include,,Title indicates a neuro-symbolic framework with large vision-language models (page unreadable due to rate limit; unverified).
+Neurosymbolic Grounding for Compositional World Models,ICLR,2024,exclude,E2,VLM only computes symbol attributes as a frozen annotator and the rules are neural modules.
+Neuro-Symbolic Data Generation for Math Reasoning,NeurIPS,2024,include,,LLM informalization combined with math solvers and symbolic MCMC to generate and validate problems for LLM fine-tuning.
+Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,NeurIPS,2025,include,,LLM-generated code is checked by symbolic verification and interactive validation code.
+ReClor: A Reading Comprehension Dataset Requiring Logical Reasoning,ICLR,2020,exclude,E3,Reading comprehension dataset with no symbolic component.
+Eco Search: A No-delay Best-First Search Algorithm for Program Synthesis,AAAI,2025,exclude,E1,Best-first search algorithm with no language model.
+Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,ICML,2026,include,,Symbolic program execution traces are distilled into a 3D MLLM as chain-of-thought training signal.
+B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,ICLR,2024,include,,RL for code LLM with unit-test execution used as training reward (R2).
+Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,TMLR,2026,include,,LLM converts queries to logical forms verified against a knowledge graph via retrieval and fed back to the prompt.
+Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,ICML,2025,include,,LM type inference guided by program dataflow analysis and a symbolic program interpreter.
+"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",NeurIPS,2021,include,,Neural sequence model candidates are accepted or rejected by a symbolic logical reasoning module.
+Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,ICML,2026,include,,Audit of Lean benchmarks using static checkers and LLM audit prompts plus LLM prover re-evaluation (benchmark-style).
+Open Rule Induction,NeurIPS,2021,include,,LMs induce open symbolic rules that are applied downstream for relation extraction.
+MuSLR: Multimodal Symbolic Logical Reasoning,NeurIPS,2025,include,,VLMs apply formal logical rules in a modular framework on a rule-grounded benchmark (no external engine).
+Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning,ICLR,2023,exclude,E3,Selection-Inference alternates LLM calls over natural-language facts with no explicit symbolic component.
+Language Models and Logic Programs for Trustworthy Tax Reasoning,AAAI,2026,include,,LLM translates tax law to logic programs executed by a symbolic solver.
+Enhancing the Logical Reasoning Abilities of Large Language Models,IJCAI,2025,exclude,E4,IJCAI Doctoral Consortium abstract.
+Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,TMLR,2026,include,,Fine-tuned VLM recognizes concepts that feed a compiled symbolic circuit executing task rules.
+Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,AAAI,2026,include,,LLMs generate facts verified and composed through Prolog rules to build fallacy benchmarks.
+Concept Flow Models: Anchoring Concept-Based Reasoning with Hierarchical Bottlenecks,TMLR,2026,exclude,E2,Pretrained VLM only used as frozen embedding/concept source for a learned decision tree.
+Enhancing Robot Program Synthesis Through Environmental Context,NeurIPS,2023,exclude,E1,Neural synthesizer trained from scratch on DSL programs rather than a language model.
+EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,ICLR,2026,include,,Equality-graph symbolic equivalence is fed into LLM prompts for symbolic regression.
+Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks,AAAI,2025,exclude,E3,Symbolic KB is a natural-language knowledge store retrieved like RAG rather than a formal symbolic component.
+Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,ICLR,2025,include,,LLMs and symbolic provers jointly generate and validate FOL reasoning problems.
+Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval,ICML,2022,include,,LM interpolates with a retrieval weighted finite automaton (authors call it neuro-symbolic).
+Semantic-Drive: Trustworthy and Efficient Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus,TMLR,2026,include,,VLM candidates are filtered by a rule-based deterministic verifier and detector-derived symbolic inventory.
+Once Upon an Input: Reasoning via Per-Instance Program Synthesis,NeurIPS,2025,include,,LLM generates and refines programs using structural execution feedback.
+Complex Reasoning over Vision and Language -Leveraging Neurosymbolic AI,AAAI,2026,exclude,E4,Invited-talk abstract.
+NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,ICLR,2025,include,,LLM hypotheses are validated through symbolic tools in a continual learning loop.
+Subgoal-based Demonstration Learning for Formal Theorem Proving,ICML,2024,include,,LLM proof search with Isabelle checking and subgoal-based demonstrations.
+Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,ICLR,2025,include,,LLM translates sentences to FOL checked by an SAT solver.
+SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,AAAI,2026,include,,LLM agents operate through a symbolic dataflow executing code over spreadsheets.
+RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression,ICLR,2025,exclude,E1,Neural model trained online on generated expressions without pre-training so it fails R1.
+LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,NeurIPS,2023,exclude,E3,Programmatic/description-logic dataset generation only and models evaluated on QA with no symbolic interaction.
+Weakly Supervised Neuro-Symbolic Module Networks for Numerical Reasoning over Text,AAAI,2022,exclude,E2,Program from a dependency parser executed by neural/symbolic modules and any BERT use appears to be only as an encoder.
+NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,AAAI,2026,include,,"LLM temporal reasoning with symbolic encoding, logical consistency verification and abductive reflection."
+VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,ICLR,2025,include,,LLM/VLM-proposed Python predicates define symbolic world models used by a planner.
+R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,ICLR,2025,include,,LLM guardrail category scores are combined by first-order rules in a Markov logic/probabilistic circuit.
+"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",IJCAI,2024,include,,LM-driven Prolog-style entailment tree inference engine.
+NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,AAAI,2025,include,,LLM generates symbolic concept compositions executed by a neuro-symbolic reasoner.
+ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,ICML,2025,exclude,E3,Benchmark from CSP puzzles using Z3 only for complexity/solutions with no interaction with the LLM.
+LEGO-Prover: Neural Theorem Proving with Growing Libraries,ICLR,2024,include,,LLM proof generation with a growing library of Isabelle-verified lemmas.
+Scaling Neural Program Synthesis with Distribution-Based Search,AAAI,2022,exclude,E1,Neural net predicting PCFG probabilities for DSL search is not a language model.
+Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,ICML,2026,include,,Foundation-model agents lift traces into logic-grounded programs.
+LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,TMLR,2025,include,,LM progress prediction guides best-first search with Lean.
+WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,NeurIPS,2025,include,,LLMs extract symbolic rules/KG/scene graphs encoded as code that regulate the agent.
+ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,ICLR,2024,include,,Execution-subgoal decomposition with program execution also applied to few-shot LLM prompting (LLM secondary).
+"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",ICML,2026,include,,LLM autoformalization restructured via operator trees with symbolic repair.
+GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,ICLR,2024,include,,LLM generates and reuses code modules executed in a neuro-symbolic visual pipeline.
+NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,NeurIPS,2025,include,,Symbolic planner plans are compiled into procedural representations used by LM agents.
+Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,ICML,2026,include,,LLM-driven equation search with influence feedback on symbolic terms.
+Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,IJCAI,2025,include,,LLM planning with symbolic verifier feedback for RL.
+HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,NeurIPS,2024,include,,LLM completions yield a PCFG surrogate that guides DSL program synthesis.
+Differentiable Reasoning over a Virtual Knowledge Base,ICLR,2020,exclude,E3,Differentiable text traversal with BERT encoder and no explicit symbolic component.
+Enhancing SQL Query Generation with Neurosymbolic Reasoning,AAAI,2025,include,,LM SQL generation guided by symbolic checks and backtracking.
+NeuroSymbolic LLM for Mathematical Reasoning and Software Engineering,IJCAI,2024,exclude,E4,IJCAI Doctoral Consortium abstract.
+Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,AAAI,2021,include,,Generative LM (COMET) builds symbolic knowledge graphs on demand that are reasoned over.
+A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,AAAI,2026,include,,ASP code generation by LLMs with solver-in-the-loop feedback.
+Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,IJCAI,2025,include,,LLM extracts facts used by ASP reasoning driven by YAML templates.
+Empowering LLMs with Logical Reasoning: A Comprehensive Survey,IJCAI,2025,exclude,E5,Survey of LLM logical reasoning.
+Are Language Models Efficient Reasoners? A Perspective from Logic Programming,NeurIPS,2025,include,,LM natural-language proofs are aligned with shortest proofs from executing logic programs.
+MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,ICML,2025,include,,LLM proof generation and error analysis with Lean feedback.
+Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,AAAI,2026,include,,VLM with LLM-induced symbolic rules in a multi-agent neurosymbolic framework.
+NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,AAAI,2026,include,,VLM verification of temporal-logic specifications for video QA.

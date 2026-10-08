@@ -1,0 +1,9 @@
+title,first_screener,second_screener_final,resolved_reason_code,resolution,resolved_toward
+LogiGAN: Learning Logical Reasoning via Adversarial Pre-training,include,exclude,E3,"""Logical statements"" are found by text heuristics; generator and verifier are both neural, so no explicit symbolic component",second
+Selection-Inference: Exploiting Large Language Models for Interpretable Logical Reasoning,include,exclude,E3,Selection and inference steps are LLM calls over natural-language facts; no formal symbolic object,second
+Neural-Symbolic Collaborative Distillation: Advancing Small Language Models for Complex Reasoning Tasks,include,exclude,E3,"The ""symbolic knowledge base"" stores natural-language knowledge retrieved like RAG, not a formal representation",second
+ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,include,include,,A6: Z3 generates the puzzles and certifies the answers the LLM is scored against (R3 clarified for evaluation studies),first
+LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,include,include,,A6: a description-logic reasoner generates questions and certifies answers for evaluated VL models (R3 clarified),first
+Neurosymbolic Grounding for Compositional World Models,include,include,,A7: CLIP supplies explicit symbolic attributes; rules fire on logical conditions over those symbols,first
+"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",exclude,exclude,E3,"Generated programs are the action format; no verification, repair, search or selection loop (R2)",first
+Multimodal Analogical Reasoning over Knowledge Graphs,exclude,exclude,E3,LM is core (reason E2 was wrong) but the knowledge graph is only the link-prediction dataset; no interacting symbolic component,neither (code corrected)

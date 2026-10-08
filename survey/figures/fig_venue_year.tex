@@ -1,0 +1,30 @@
+% Included studies by year and venue (data/derived/included_by_year_venue.csv), stacked counts.
+\begin{figure}[t]
+\centering
+\pgfplotstableread[col sep=comma]{data/derived/included_by_year_venue.csv}\venueyeartable
+\begin{tikzpicture}
+\begin{axis}[
+  width=\columnwidth, height=48mm,
+  ybar stacked, bar width=11pt,
+  ymin=0, ylabel={Included studies}, ylabel style={font=\scriptsize},
+  xtick=data, xticklabels from table={\venueyeartable}{year},
+  xticklabel style={font=\scriptsize}, yticklabel style={font=\scriptsize},
+  legend style={font=\tiny, at={(0.02,0.98)}, anchor=north west, draw=none, fill=white, fill opacity=0.8, text opacity=1},
+  legend cell align=left,
+  legend image code/.code={\draw[#1, draw=none] (0cm,-0.08cm) rectangle (0.22cm,0.12cm);},
+  axis lines*=left, ymajorgrids, grid style={black!10},
+  enlarge x limits=0.08,
+]
+\addplot[fill=nsblue] table[col sep=comma, x expr=\coordindex, y=AAAI] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsblue!70] table[col sep=comma, x expr=\coordindex, y=ICLR] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsblue!45] table[col sep=comma, x expr=\coordindex, y=ICML] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsblue!22] table[col sep=comma, x expr=\coordindex, y=IJCAI] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsgrey!85] table[col sep=comma, x expr=\coordindex, y=NeurIPS] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsgrey!50] table[col sep=comma, x expr=\coordindex, y=TMLR] {data/derived/included_by_year_venue.csv};
+\addplot[fill=nsgrey!22] table[col sep=comma, x expr=\coordindex, y=TPAMI] {data/derived/included_by_year_venue.csv};
+\legend{AAAI,ICLR,ICML,IJCAI,NeurIPS,TMLR,TPAMI}
+\end{axis}
+\end{tikzpicture}
+\caption{Included studies by publication year and venue.}
+\label{fig:venueyear}
+\end{figure}

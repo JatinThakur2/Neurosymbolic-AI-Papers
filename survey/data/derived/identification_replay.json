@@ -1,0 +1,14 @@
+{
+  "records": 391,
+  "flagged": 387,
+  "core": 149,
+  "adjacent": 238,
+  "included": 73,
+  "included_flagged": 73,
+  "unflagged": [
+    "A Deep Learning Model of Mental Rotation Informed by Interactive VR Experiments",
+    "Geodesic Flow Matching for Denoising High-Dimensional Structured Representations",
+    "Sonar-TS: Search-Then-Verify Natural Language Querying for Time Series Databases",
+    "Concept Flow Models: Anchoring Concept-Based Reasoning with Hierarchical Bottlenecks"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "studies_with_fulltext": 69,
+  "studies_with_lm_family": 57,
+  "studies_with_benchmark": 32,
+  "studies_with_engine": 27,
+  "proprietary_any": 45,
+  "open_any": 46,
+  "both": 34,
+  "open_only": 12,
+  "proprietary_only": 11,
+  "threshold": 3,
+  "attributed": {
+    "lm": {
+      "GPT-4 family (incl. GPT-4o, o1/o3)": 32,
+      "Llama family": 21,
+      "DeepSeek family": 21,
+      "GPT-3.5 / ChatGPT": 18,
+      "Qwen family": 16,
+      "Claude": 7,
+      "Gemini / PaLM": 6,
+      "LLaVA / BLIP / CLIP": 5,
+      "GPT-3 / Codex / GPT-2": 5,
+      "T5 / CodeT5": 4,
+      "Mistral / Mixtral": 4,
+      "InternLM": 3,
+      "BERT / RoBERTa": 2,
+      "Chinchilla / Gopher": 1
+    },
+    "engine": {
+      "Lean": 13,
+      "Z3 / SMT solver": 9,
+      "Isabelle": 5,
+      "PDDL planner": 3,
+      "Prolog": 3,
+      "ASP (clingo)": 3,
+      "Coq": 2,
+      "SymPy / CAS": 2,
+      "Prover9 / FOL prover": 2
+    },
+    "benchmark": {
+      "miniF2F": 7,
+      "FOLIO": 5,
+      "ProofNet": 4,
+      "ARC (ARC-AGI or AI2-ARC)": 4,
+      "SRBench / Feynman": 4,
+      "ALFWorld": 4,
+      "ProofWriter": 4,
+      "CLEVR": 3,
+      "PrOntoQA": 3,
+      "MATH": 2,
+      "VirtualHome": 2,
+      "GSM8K": 1,
+      "Spider / BIRD": 1,
+      "GQA": 1
+    }
+  },
+  "studies_without_attributed_lm_family": [
+    "Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval",
+    "Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks",
+    "Open Rule Induction",
+    "HyperTree Proof Search for Neural Theorem Proving",
+    "WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents",
+    "NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning",
+    "Just Add Functions: A Neural-Symbolic Language Model",
+    "NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization",
+    "Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments",
+    "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+    "Neurosymbolic Grounding for Compositional World Models",
+    "VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning"
+  ],
+  "spotcheck_n": 20,
+  "spotcheck_confirmed": 19
+}

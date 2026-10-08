@@ -1,0 +1,85 @@
+% Schematic of the seven integration architectures (A1--A7).
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  lab/.style={align=left, anchor=west, text width=33mm},
+  lm/.style={draw=nsblue, fill=nsblue!10, rounded corners=2pt, minimum height=6mm, minimum width=13mm, align=center, line width=0.6pt},
+  sym/.style={draw=A3c!80!black, fill=A3c!12, rounded corners=2pt, minimum height=6mm, minimum width=15mm, align=center, line width=0.6pt},
+  dat/.style={align=center, text=black!75, font=\tiny, inner sep=1pt},
+  arr/.style={-{Stealth[length=1.4mm]}, line width=0.5pt},
+  fb/.style={-{Stealth[length=1.4mm]}, line width=0.5pt, dashed, draw=A5c},
+  cnt/.style={anchor=east, font=\scriptsize\bfseries, text=nsblue}]
+\def\rowgap{11.5mm}
+\def\xs{41mm}
+% ---- A1
+\node[lab] (l1) at (0,0) {\textbf{A1}\enspace Translate-and-solve};
+\node[dat] (a1i) at (\xs,0) {problem\\(text)};
+\node[lm, right=5mm of a1i] (a1m) {LM};
+\node[dat, right=5mm of a1m] (a1f) {formal\\spec};
+\node[sym, right=5mm of a1f] (a1s) {solver /\\prover};
+\node[dat, right=5mm of a1s] (a1o) {answer};
+\draw[arr] (a1i)--(a1m); \draw[arr] (a1m)--(a1f); \draw[arr] (a1f)--(a1s); \draw[arr] (a1s)--(a1o);
+\node[cnt] at (16.3,0) {$n=\cnt{A1}$};
+% ---- A2
+\node[lab] (l2) at (0,-\rowgap) {\textbf{A2}\enspace Verifier-in-the-loop};
+\node[dat] (a2i) at (\xs,-\rowgap) {task};
+\node[lm, right=5mm of a2i] (a2m) {LM};
+\node[dat, right=5mm of a2m] (a2f) {candidate\\proof/code};
+\node[sym, right=5mm of a2f] (a2s) {checker};
+\node[dat, right=5mm of a2s] (a2o) {verified\\output};
+\draw[arr] (a2i)--(a2m); \draw[arr] (a2m)--(a2f); \draw[arr] (a2f)--(a2s); \draw[arr] (a2s)--(a2o);
+\draw[fb] (a2s.north) -- ++(0,2.2mm) -| node[pos=0.25, above, font=\tiny, text=A5c, inner sep=1pt] {verdict / error feedback} (a2m.north);
+\node[cnt] at (16.3,-\rowgap) {$n=\cnt{A2}$};
+% ---- A3
+\node[lab] (l3) at (0,-2*\rowgap) {\textbf{A3}\enspace Symbolic guidance\\\phantom{\textbf{A3}}\enspace or constraints};
+\node[dat] (a3i) at (\xs,-2*\rowgap) {task};
+\node[lm, right=5mm of a3i] (a3m) {LM};
+\node[dat, right=5mm of a3m] (a3o) {output};
+\node[sym, right=8mm of a3o] (a3s) {grammar, search,\\constraints, loss};
+\draw[arr] (a3i)--(a3m); \draw[arr] (a3m)--(a3o);
+\draw[arr, draw=A3c!80!black] (a3s.south) -- ++(0,-2.2mm) -| node[pos=0.25, below, font=\tiny, text=A3c!70!black, inner sep=1pt] {steers search, decoding or training} (a3m.south);
+\node[cnt] at (16.3,-2*\rowgap) {$n=\cnt{A3}$};
+% ---- A4
+\node[lab] (l4) at (0,-3*\rowgap) {\textbf{A4}\enspace LM-induced\\\phantom{\textbf{A4}}\enspace symbolic artifacts};
+\node[dat] (a4i) at (\xs,-3*\rowgap) {traces,\\data};
+\node[lm, right=5mm of a4i] (a4m) {LM};
+\node[dat, right=5mm of a4m] (a4f) {rules, programs,\\predicates};
+\node[sym, right=5mm of a4f] (a4s) {library /\\executor};
+\node[dat, right=5mm of a4s] (a4o) {reused across\\tasks};
+\draw[arr] (a4i)--(a4m); \draw[arr] (a4m)--(a4f); \draw[arr] (a4f)--(a4s); \draw[arr] (a4s)--(a4o);
+\node[cnt] at (16.3,-3*\rowgap) {$n=\cnt{A4}$};
+% ---- A5
+\node[lab] (l5) at (0,-4*\rowgap) {\textbf{A5}\enspace Symbolic-to-neural\\\phantom{\textbf{A5}}\enspace transfer};
+\node[sym] (a5s) at ($(\xs,-4*\rowgap)+(6mm,0)$) {symbolic\\procedure};
+\node[dat, right=5mm of a5s] (a5f) {training data,\\targets};
+\node[lm, right=5mm of a5f] (a5m) {LM};
+\node[dat, right=5mm of a5m] (a5o) {trained /\\distilled model};
+\draw[arr] (a5s)--(a5f); \draw[arr] (a5f)--(a5m); \draw[arr] (a5m)--(a5o);
+\node[cnt] at (16.3,-4*\rowgap) {$n=\cnt{A5}$};
+% ---- A6
+\node[lab] (l6) at (0,-5*\rowgap) {\textbf{A6}\enspace Evaluation with a\\\phantom{\textbf{A6}}\enspace symbolic oracle};
+\node[sym] (a6s) at ($(\xs,-5*\rowgap)+(6mm,0)$) {solver /\\generator};
+\node[dat, right=5mm of a6s] (a6f) {problems +\\gold answers};
+\node[lm, right=5mm of a6f] (a6m) {LM under\\test};
+\node[dat, right=5mm of a6m] (a6o) {scores,\\failure modes};
+\draw[arr] (a6s)--(a6f); \draw[arr] (a6f)--(a6m); \draw[arr] (a6m)--(a6o);
+\node[cnt] at (16.3,-5*\rowgap) {$n=\cnt{A6}$};
+% ---- A7
+\node[lab] (l7) at (0,-6*\rowgap) {\textbf{A7}\enspace LM as interface to\\\phantom{\textbf{A7}}\enspace a symbolic core};
+\node[dat] (a7i) at (\xs,-6*\rowgap) {image, video,\\text};
+\node[lm, right=5mm of a7i] (a7m) {LM / VLM};
+\node[dat, right=5mm of a7m] (a7f) {grounded\\symbols};
+\node[sym, right=5mm of a7f] (a7s) {symbolic\\core};
+\node[dat, right=5mm of a7s] (a7o) {decision,\\explanation};
+\draw[arr] (a7i)--(a7m); \draw[arr] (a7m)--(a7f); \draw[arr] (a7f)--(a7s); \draw[arr] (a7s)--(a7o);
+\node[cnt] at (16.3,-6*\rowgap) {$n=\cnt{A7}$};
+% legend
+\node[lm, minimum width=8mm, minimum height=4mm, font=\tiny] (k1) at (\xs,-6.8*\rowgap) {LM};
+\node[right=1mm of k1, font=\tiny] (k1t) {neural (language or vision-language model)};
+\node[sym, minimum width=8mm, minimum height=4mm, font=\tiny, right=4mm of k1t] (k2) {sym};
+\node[right=1mm of k2, font=\tiny] {symbolic component};
+\end{tikzpicture}
+\caption{The seven integration architectures identified in the \cnt{included} included studies, with the number of studies coded under each. Blue boxes are learned models; green boxes are symbolic components. Dashed arrows denote feedback from the symbolic component to the model.}
+\label{fig:architectures}
+\end{figure*}
