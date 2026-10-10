@@ -1,0 +1,113 @@
+rid,minif2f_reported,split,score_pct,attempts,proof_language,model,quote
+r0422d6a3,yes,unspecified,66.0,2100 queries,Isabelle,deepseek-math-7b-base (ProofAug),we achieve a cumulative pass rate of 66.0% after curation of the dataset (61.9% for the original version)
+r097b6972,no,,,,unspecified,,
+r0b58eee0,no,,,,unspecified,,
+r103820b4,no,,,,unspecified,,
+r11bcdfdc,yes,test,90.6,Pass@64,Isabelle,PSR-selected fine-tuning + dynamic feedback prompt optimization,the full framework improves performance to 90.6% Pass@64
+r1afc3d79,yes,unspecified,87,,Lean,"ProofOptimizer (proof-length reduction, not solve rate)","reducing proof length by 87% on miniF2F, 57% on PutnamBench"
+r1ead1843,no,,,,unspecified,,
+r209d7fc1,no,,,,unspecified,,
+r21c6b045,yes,unspecified,2.47,,Lean,"Alchemy-trained LLM (absolute gain, not solve rate)",our approach achieves a 2.47% absolute performance gain on the out-of-distribution miniF2F benchmark
+r2e3069a4,no,,,,unspecified,,
+r33e16ff8,no,,,,unspecified,,
+r3ab7ef65,no,,,,unspecified,,
+r40769616,no,,,,unspecified,,
+r4b908b19,no,,,,unspecified,,
+r50ca5848,no,,,,unspecified,,
+r5390b532,no,,,,unspecified,,
+r596cca2a,no,,,,unspecified,,
+r5ea0716f,no,,,,unspecified,,
+r62710d49,no,,,,unspecified,,
+r6890f25f,yes,test,96.7,Pass@128,Lean,"Herald Translator (statement formalization, not proving)",Herald translator achieves a 96.7\% accuracy (Pass@128) on formalizing statements in the miniF2F-test
+r6e19b6fe,no,,,,unspecified,,
+r6f24e47d,no,,,,unspecified,,
+r71e26edf,no,,,,unspecified,,
+r7345147b,no,,,,unspecified,,
+r752d0cbb,no,,,,unspecified,,
+r76367fff,no,,,,unspecified,,
+r785313e9,no,,,,unspecified,,
+r78a681e5,no,,,,unspecified,,
+r7d61d023,no,,,,unspecified,,
+r860cd506,no,,,,unspecified,,
+r90e3d0ed,no,,,,unspecified,,
+r96d78357,no,,,,unspecified,,
+r9972c5b6,no,,,,unspecified,,
+r9d3f97de,no,,,,unspecified,,
+r9eb18935,no,,,,unspecified,,
+r9ef2cbd8,no,,,,unspecified,,
+ra4657d5a,no,,,,unspecified,,
+ra86a93ca,yes,test,49.6,pass@l,unspecified,CARTS,CARTS consistently outperforms previous methods achieving a pass@l rate of 49.6\% on the miniF2F-test benchmark
+rb0ff4c85,yes,unspecified,5.1,,Isabelle,"POETRY (average improvement, not solve rate)",POETRY on miniF2F achieves an average proving success rate improvement of 5.1%
+rb425a47c,no,,,,unspecified,,
+rb5a2b99a,no,,,,unspecified,,
+rc8d2888b,yes,unspecified,2.05,,unspecified,"Hierarchical Attention (improvement, not solve rate)",our method improves proof success rates by 2.05% on miniF2F and 1.69% on ProofNet
+rcec7abc9,no,,,,unspecified,,
+rcefeacbc,yes,test,61.07,,Lean,MA-LoT,our framework achieves a **61.07%** accuracy rate on the Lean4 version of the MiniF2F-Test dataset
+rd16a5d6f,no,,,,unspecified,,
+rd3d4524a,no,,,,unspecified,,
+rd7bfffae,no,,,,unspecified,,
+rde2a3082,yes,test,69.8,pass@32,unspecified,EvolProver,MiniF2F-Test (69.8\% pass@32)
+rdfb101fb,no,,,,unspecified,,
+re1446fe9,no,,,,unspecified,,
+re5e49fe2,no,,,,unspecified,,
+re9ba9b68,no,,,,unspecified,,
+ree89803d,no,,,,unspecified,,
+rf127ea2d,yes,unspecified,34.0,,Isabelle,Magnushammer (premise selection),Magnushammer achieves $59.5\%$ (against $38.3\%$) and $34.0\%$ (against $20.9\%$) success rates
+rf5d7a12a,no,,,,unspecified,,
+rff5b35b6,yes,test,4.20,pass@32,Lean,Goedel-Prover-V2-8B / DeepSeek-Prover-V2-7B + GAR (avg relative improvement),achieve an average relative improvement in pass@32 of **4.20%** on MiniF2F-Test benchmark
+r07e1479f,yes,unspecified,35.2,,Isabelle,,"new state-of-the-art result on the MiniF2F theorem proving benchmark, improving the proof rate from~$29.6\%$ to~$35.2\%$"
+r0a754dc8,no,,,,unspecified,,
+r0e2c4e07,no,,,,unspecified,,
+r10e36dc2,no,,,,unspecified,,
+r12a103a9,yes,unspecified,80.7,,Lean,DSP+,"DSP+ solves 80.7%, 32.8%, and 24 out of 644 problems from miniF2F, ProofNet, and PutnamBench"
+r1e0f1102,no,,,,unspecified,,
+r2080cdd7,yes,test,33.61,,Lean,TheoremLlama,cumulative accuracies of 36.48% and 33.61% on MiniF2F-Valid and Test datasets respectively
+r218783b6,yes,test,72.95,,Lean,BFS-Prover,BFS-Prover achieves a state-of-the-art score of 72.95 on the MiniF2F test set
+r26b6774b,no,,,,unspecified,,
+r3334bd82,no,,,,unspecified,,
+r33ed8809,yes,unspecified,45.5,,unspecified,,the adoption of diffusion models for demonstration organization can lead to an additional enhancement in accuracy to 45.5%
+r3c7d5693,no,,,,unspecified,,
+r42e78a64,no,,,,unspecified,,
+r4e5a66e9,no,,,,unspecified,,
+r520c7235,yes,unspecified,90.4,pass@32,Lean,Goedel-Prover-V2-32B,"Goedel-Prover-V2-32B, achieves 88.1\% on MiniF2F at pass@32 in standard mode and 90.4\% in self-correction mode"
+r5877c953,yes,unspecified,70,,Lean,,Evaluating the full theorem proving pipeline on _miniF2F-v2_ leads to the best accuracy of 70%
+r5bbab863,no,,,,unspecified,,
+r6048741f,no,,,,unspecified,,
+r63158772,no,,,,unspecified,,
+r6baa099a,no,,,,unspecified,,
+r6ef82f88,no,,,,unspecified,,
+r71a25486,no,,,,unspecified,,
+r72fadfed,no,,,,unspecified,,
+r73af149f,no,,,,unspecified,,
+r75eaf601,no,,,,unspecified,,
+r764cc16d,no,,,,unspecified,,
+r787742b2,no,,,,unspecified,,
+r7b852e9f,no,,,,unspecified,,
+r8265ef4f,no,,,,unspecified,,
+r8e5e1408,no,,,,unspecified,,
+r96d2bfb9,no,,,,unspecified,,
+r97819a7d,yes,unspecified,6,,Lean,Mathesis-Autoformalizer,our autoformalizer improves pass rates by 45% on Gaokao-Formal and 6% on MiniF2F compared to state-of-the-art baselines
+r9a191058,no,,,,unspecified,,
+r9da32055,yes,test,62.7,pass@4,other,Claude Opus 4.6,the best model (Claude Opus 4.6) achieving 62.7% cumulative pass@4 on the full test set
+r9ec117bd,no,,,,unspecified,,
+ra1d40c28,no,,,,unspecified,,
+ra804bbd4,no,,,,unspecified,,
+rabf69c7a,yes,test,31.14,pass@32,Lean,ProofBridge,achieves +31.14% SC and +1.64% TC (pass@32) compared to the baseline Kimina-Prover-RL-1.7B
+rb1f7e919,yes,unspecified,99.2,,Lean,Hilbert,"achieving 99.2\% on miniF2F, 6.6\% points above the best publicly available method"
+rb51f1ace,no,,,,unspecified,,
+rb6819abd,yes,test,95.08,,unspecified,BFS-Prover-V2,BFS-Prover-V2 achieves 95.08% and 41.4% on the miniF2F and ProofNet test sets respectively
+rc9f8b9ed,no,,,,unspecified,,
+rcee8d9a3,no,,,,unspecified,,
+rd03c7afc,no,,,,unspecified,,
+rd2e57606,no,,,,unspecified,,
+rd45f1e27,no,,,,unspecified,,
+rd986a64e,no,,,,unspecified,,
+rdf0ed85b,no,,,,unspecified,,
+re13f719a,yes,unspecified,84.9,<100 samples,Lean,APOLLO,new state‑of‑the‑art accuracy of 84.9% among sub 8B‑parameter models (as of August 2025) while keeping the sampling budget below one hundred
+re2f26fb4,yes,test,50.0,,unspecified,LEGO-Prover,LEGO-Prover advances the state-of-the-art pass rate on miniF2F-valid (48.0\% to 57.0\%) and miniF2F-test (45.5\% to 50.0\%)
+re742c2dc,yes,test,65.0,pass@3200,Lean,STP,"state-of-the-art performance among whole-proof generation methods on miniF2F-test (65.0\%), ProofNet-test (23.9\%) and PutnamBench (8/644) with pass@3200"
+red448e3e,no,,,,unspecified,,
+ref1a4a16,no,,,,unspecified,,
+rf5164d7c,no,,,,unspecified,,
+rfd30bcab,no,,,,unspecified,,
+rfff81209,no,,,,unspecified,,

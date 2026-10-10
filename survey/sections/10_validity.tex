@@ -1,0 +1,22 @@
+\section{Threats to Validity}
+\label{sec:validity}
+
+\textbf{LLM-based reviewers.} Every screening and coding decision was made by LLM agents under a written protocol. Independent double assessment gave substantial agreement ($\kappa=\cnt{kappaunion}$ for screening, \cnt{kappaarch}--\cnt{kappaform} for coding), but two runs of related models can share errors, so agreement is evidence of rule clarity rather than of correctness.
+\ifhumancheck
+A human check of random 30\% samples gave $\kappa=\cnt{humscrkappa}$ against the final screening decisions and $\kappa=\cnt{humcodarch}$ for architecture coding, which bounds this risk.
+\else
+A human check of random 30\% samples has been prepared but not yet carried out, so the size of any shared bias is unknown.
+\fi
+Model versions were not recorded for every batch. All prompts and outputs are released, so the decisions can be audited and re-run.
+
+\textbf{Search recall.} Estimated recall is \cnt{recallpoint} (95\% interval \cnt{recalllo}--\cnt{recallhi}), so a substantial share of eligible studies is probably missing. The missed studies the audit found are spread across domains and architectures, so we have no evidence that they would change the proportions we report. But the audit found only \cnt{auditincl} eligible studies, so it cannot rule out differences. Recall may also differ by year.
+
+\textbf{Coverage.} Ten venues are covered, eight of them through Source B. AAAI 2020 and 2026, IJCAI 2025, TMLR and TPAMI are covered only by the title-keyword corpus, which under-represents them. NeurIPS 2026 and other late-2026 venues are absent. Work at other venues (CVPR, ICCV, CAV, IJCAR, ITP, Findings of ACL) and arXiv-only work is out of scope by design, so our conclusions describe these venues rather than the field as a whole.
+
+\textbf{Construct validity.} The boundary of ``language model'' and ``symbolic component'' is set by rules R1--R6. Different rules would change the included set. In particular, counting models trained from scratch on synthetic symbolic data, or code generation judged only by tests, would add many studies. Each study receives one primary code per axis, so secondary mechanisms are not counted. The A2/A4 boundary follows the order of the decision tree: libraries filtered by a checker are A2.
+
+\textbf{Abstract-level charting.} Codes, entities and faithfulness reporting come from titles and abstracts, with the full text consulted only in adjudication. Entity counts therefore describe reporting in abstracts, not usage; faithfulness reporting is a lower bound; and miniF2F results are headline numbers without controlled budgets.
+
+\textbf{Artifact estimate.} The web check covers a random sample of \cnt{artrandn} studies and the A7 census. \cnt{artrandunc} sampled studies remained unclear because the search budget ran out, and we did not test whether released code runs.
+
+\textbf{Reliability.} The pipeline is deterministic from the released decision files and the source commits; random draws use fixed seeds. The protocol was not registered in advance, and it was revised once after a pilot (Section~\ref{sec:method-changes}).

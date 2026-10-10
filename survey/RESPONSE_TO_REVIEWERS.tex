@@ -1,0 +1,145 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\input{tables/numbers.tex}
+\newenvironment{referee}{\par\medskip\noindent\begin{minipage}{\linewidth}\color{black!65}\itshape}{\end{minipage}\par\smallskip}
+\newcommand{\resp}{\noindent\textbf{Response.} }
+\newcommand{\where}[1]{\par\noindent\textbf{Where:} #1\par}
+\setlist{nosep,leftmargin=*}
+
+\title{Response to the Referee Report\\[2pt]\large ``Language Models Meet Symbolic Reasoning: A Scoping Review of Neurosymbolic Integration at Top-Tier AI and NLP Venues (2020--2026)''}
+\author{Jatin Thakur, Jaypee University of Information Technology (JUIT), Solan, India}
+\date{}
+
+\begin{document}
+\maketitle
+
+We thank the referee for a detailed and demanding report. We agree with the main criticisms, and the review has been rebuilt rather than patched. The changes in brief:
+\begin{itemize}
+  \item \textbf{A real search.} The corpus is now one of two sources. The titles and abstracts of all \cnt{sourceb} accepted papers at eight venues, NLP venues included, were searched. We snowballed from the included studies and audited the recall of the search. The included set grew from 73 to \cnt{included} studies.
+  \item \textbf{Honest description of who did what.} All misleading wording is removed. Screening and coding are now fully double, by independent LLM reviewers with adjudication, and every prompt is released. A blinded 30\% sample is prepared for human verification, and the paper switches automatically to report human--LLM agreement once it is filled in (see ``Open items'' below).
+  \item \textbf{A tighter taxonomy.} We use an ordered decision tree and add a check-strength attribute (exact/empirical/none). Every axis is double-coded and per-axis $\kappa$ is reported.
+  \item \textbf{Corrected statistics and softer claims.} We report bias-corrected Cram\'er's $V$, a permutation null and Wilson intervals, and a growth measure normalised by venue size together with a terminology control.
+  \item \textbf{Better RQ3 evidence.} Entity extraction is open-vocabulary, artifacts are verified on the web, faithfulness is coded, and there is a results-level analysis of miniF2F.
+\end{itemize}
+The reporting standard is now PRISMA-ScR, and the paper is retitled as a scoping review. Below, each referee point is quoted, followed by our response and its location in the revised manuscript.
+
+%=====================================================================
+\section*{Major weaknesses}
+
+\begin{referee}
+1. The corpus is your own title-keyword GitHub list, so recall is unknown and probably poor. [\ldots] PAL, SatLM, Binder, Draft-Sketch-Prove, LeanDojo, Thor, Autoformalization with LLMs, LLM-SR and Lean-STaR [\ldots] are not among the 73.
+\end{referee}
+\resp We agree; this was the most serious problem. We made four changes.
+\begin{enumerate}
+  \item \emph{Abstract-level search.} We added Source B: the accepted-paper metadata, with abstracts, of ICLR, ICML, NeurIPS, AAAI and IJCAI, plus the NLP venues ACL, EMNLP and NAACL. The data come from Paper Copilot and the ACL Anthology at fixed commits; \cnt{sourceb} papers in total. A record is retrieved when its title or abstract matches both a language-model block and a symbolic block. The query retrieved \cnt{queryhits} records, and with the curated corpus \cnt{union} records were screened.
+  \item \emph{Backward snowballing.} The reference lists of \cnt{snowseeds} included studies yielded \cnt{snowcand} new candidates and \cnt{snowincl} inclusions.
+  \item \emph{A quantified recall audit.} We drew a stratified random sample of \cnt{auditscreened} Source B records that the search did not retrieve. It gives an estimated recall of \cnt{recallpoint} (95\% interval \cnt{recalllo}--\cnt{recallhi}, Jeffreys posteriors) and added \cnt{auditincl} studies. We report this estimate openly and discuss what it implies in Section~X.
+  \item \emph{Known-item check.} All nine papers the referee named are now included, and Section~IV says so explicitly.
+\end{enumerate}
+The included set grew from 73 to \cnt{included} studies; 525 of them were found only by the abstract-level search. dblp is not used. Paper Copilot and the ACL Anthology provide abstracts, which dblp does not, and both are versioned and public, so the search can be re-run exactly.
+\where{Sections III-C--III-E, IV; Fig.~2; Table III; Appendix B (full query).}
+
+\begin{referee}
+2. The headline trend is likely a terminology artifact [\ldots] The 2020 figure is one paper out of 39.
+\end{referee}
+\resp Agreed, and tested directly. Inclusion no longer depends on the word: only \cnt{nesytitle} included studies (\cnt{nesytitlepct}\%) use ``neurosymbolic'' or ``neural-symbolic'' in the title, and \cnt{nesyany} (\cnt{nesyanypct}\%) anywhere in the title or abstract. Growth is no longer a share of a keyword corpus. It is now normalised by all accepted papers at venue-years with constant coverage. In the ICLR+ICML+NeurIPS+ACL+EMNLP panel, the rate rises from \cnt{pfive2020} per 1{,}000 accepted papers in 2020 to \cnt{pfive2025} in 2025, and the ICLR+ICML panel extends this to 2026. The 2020 cell now holds 6 studies rather than one, and 2020--2022 together hold \cnt{earlyn}. We also note that recall may differ by year and that the audit is too small to estimate it per year.
+\where{Section VIII (first paragraphs), Fig.~5, Section X.}
+
+\begin{referee}
+3. No human screened or coded anything. [\ldots] the abstract says ``manually verified'', the text says ``read by hand'', and Fig.~1 labels the files ``human decisions''. [\ldots] $\kappa=0.77$ between two Claude models is not reliability evidence.
+\end{referee}
+\resp Agreed on every count.
+\begin{itemize}
+  \item \emph{Wording.} ``Manually verified'', ``read by hand'' and ``human decisions'' are gone. The folder is renamed \texttt{data/decisions/}, and Fig.~1 now labels its files as decisions written by LLM reviewers.
+  \item \emph{Disclosure.} A new subsection (III-I) states that every screening, adjudication, coding, web-check and extraction decision was made by LLM agents. It names the vendor, says that model versions were not recorded for every batch, and identifies the two decisions made by the orchestrating assistant. All prompts are released verbatim (\texttt{docs/prompts/}).
+  \item \emph{What $\kappa$ means.} The paper now says explicitly that agreement between model runs measures how consistently the rules are applied, not human inter-rater reliability, and that correlated errors are possible (Sections III-I and X).
+  \item \emph{Human check.} The design the referee asked for is implemented. A simple random 30\% sample of screened records (751) and of included studies (198) is released as blinded sheets, and a script scores human--LLM agreement. The abstract, Section III-J and Section X switch automatically to report it. \textbf{The author has not yet filled these sheets.} The manuscript says so in a visible box, and it will not be submitted before this is done.
+\end{itemize}
+\where{Abstract; Sections III-I, III-J, X; Use of Generative AI statement; Fig.~1.}
+
+\begin{referee}
+4. The taxonomy [\ldots] is single-coded and the A2/A3 boundary is unstable. HyperTree Proof Search, CARTS and LeanProgress are coded A3 [\ldots]. A2 mixes exact verification with unit-test rewards and data-fit feedback [\ldots]. ``From guidance to verification'' rests on this boundary and on a pre-2024 sample of 8.
+\end{referee}
+\resp All three issues are addressed.
+\begin{itemize}
+  \item \emph{The A2/A3 boundary.} The architecture is now assigned by a decision tree applied in a fixed order (A6, A5, A1, A2, A4, A7, A3). If a proof assistant, solver or executor gives a verdict that selects, repairs, filters or rewards candidates, the study is A2, even when a learned value model guides the search. A3 is reserved for symbolic structure that steers generation without giving a verdict. HTPS, CARTS and LeanProgress are now A2 with exact checks.
+  \item \emph{Exact versus empirical checks.} A new check-strength attribute separates exact checks (sound formal verdicts) from empirical ones (tests, execution, data fit, simulator success). Of \cnt{A2} A2 studies, \cnt{A2exact} are exact and \cnt{A2empirical} empirical. The text no longer claims a strong guarantee for the category; it reports the split instead (Fig.~3, Table VIII, Section V). The A2 label is renamed ``checker-in-the-loop'', and the trend claim now refers to checking, with the share of exact checks reported separately.
+  \item \emph{Double coding and the period sample.} Every study is double-coded, and \cnt{adjcoding} disagreements were adjudicated. Per-axis $\kappa$ is \cnt{kappaarch} for architecture, \cnt{kappacheck} for check strength, \cnt{kappadom} for domain, \cnt{kappaform} for formalism and \cnt{kappafaith} for faithfulness reporting (Table VI). The pre-2024 sample now has \cnt{pretwentyfour} studies instead of 8, and the period shares carry Wilson 95\% intervals (Fig.~6).
+\end{itemize}
+\where{Section III-F, Table IV (codebook), Section V, Fig.~3, Table VI, Section VIII, Fig.~6.}
+
+\begin{referee}
+5. ``Depends strongly on the task'' is overstated. [\ldots] V is biased upward. [\ldots] Part of the association is definitional.
+\end{referee}
+\resp Agreed. We now report Cram\'er's $V=\cnt{Vall}$, Bergsma's bias-corrected $V=\cnt{Vcall}$ and the mean $V$ under a permutation null (\cnt{Vnullall}; \cnt{npermall} shuffles). The wording is ``moderately associated''. On the definitional concern, we repeat the analysis without D1 and D6, the two domains where the association could be built into the definitions. The result is unchanged (bias-corrected $V=\cnt{Vcsens}$). The text also states that the pilot's smaller sample overstated the association.
+\where{Section VI, Section III-H.}
+
+\begin{referee}
+6. The RQ3 indicators are weak proxies. [\ldots] ``Named $\geq$3 times'' is mention, not use [\ldots] a fixed 14-item dictionary [\ldots] precision of 19/20 [\ldots] the 54\% artifact rate counts links in PDF text. [\ldots] LaSR, HYSYNTH, ZebraLogic and CoSMoS [\ldots].
+\end{referee}
+\resp The three indicators are replaced.
+\begin{itemize}
+  \item \emph{Entities.} Two coders extracted, with an open vocabulary, the language models, engines and benchmarks named in each abstract. The paper reports their agreement (mean Jaccard \cnt{jaclm}, \cnt{jacengine} and \cnt{jacbenchmark}) and describes the counts as reporting in abstracts, not usage. The fragmentation claim now rests on this open vocabulary: \cnt{benchdistinct} distinct benchmarks, of which \cnt{benchsinglepct}\% are named by a single study. The dictionary-based indicator and its 19/20 precision check are no longer used, so the interval the referee requested no longer applies.
+  \item \emph{Artifacts.} Release is now checked on the web for a simple random sample of \cnt{artrandn} studies and for all A7 studies (a census). The estimate is \cnt{artrandrate}\% (95\% CI \cnt{artrandlo}--\cnt{artrandhi}), with bounds for the \cnt{artrandunc} studies that remained unclear. In the A7 census, \cnt{artasevenyes} of \cnt{artasevenn} studies release an artifact. On the four studies the referee named:
+  \begin{itemize}
+    \item LaSR, HYSYNTH and ZebraLogic were confirmed as released, with URLs in \texttt{data/decisions/webcheck/}.
+    \item CoSMoS (``Neurosymbolic Grounding for Compositional World Models'') is excluded under the revised eligibility rules (E3), so it no longer counts towards the A7 figure.
+  \end{itemize}
+  \item \emph{Faithfulness.} Formalisation faithfulness is now coded for every A1/A2 study in which the model writes formal statements (point 8).
+\end{itemize}
+\where{Section III-G, Section VII, Tables X and XI.}
+
+\begin{referee}
+7. Avoidable access gaps. [\ldots] CARTS, R2-Guard and Semantic-Drive are free on OpenReview or arXiv. Wang et al.\ is marked ``paywalled'' but has an arXiv version. ``dblp was unreachable'' will not be accepted.
+\end{referee}
+\resp
+\begin{itemize}
+  \item \emph{Charting basis.} All studies are now charted the same way, from title and abstract by two coders, which removes the uneven ``four from abstracts'' situation. Adjudicators could consult the full text. Screening adjudicators consulted web copies of 104 papers and local full text for 29 more. Coding adjudicators used web copies for 12 studies. The evidence column of every adjudication records what was used.
+  \item \emph{The three named studies.} CARTS is included and coded A2 with an exact check by both coders, so it needed no adjudication. R2-Guard is included as A7. Semantic-Drive is excluded (E3). Its pipeline consists of an open-vocabulary detector, a reasoning VLM and a consensus among neural judges, with no formal engine. The adjudicator's full-text fetch failed and the decision relied on the arXiv record. We therefore re-checked the arXiv abstract (2512.12012) for this response, and it confirms the decision.
+  \item \emph{Wang et al.} The survey was read from its arXiv version, and Table I describes it from that version.
+  \item \emph{dblp.} The sentence about dblp is removed; the search no longer uses dblp (point 1).
+\end{itemize}
+\where{Sections III-E, III-F, Table I, Section X.}
+
+\begin{referee}
+8. Thin synthesis for 73 papers. [\ldots] There is no results-level comparison (for example miniF2F pass rates). The top agenda item, formalization faithfulness, was never coded.
+\end{referee}
+\resp
+\begin{itemize}
+  \item \emph{Synthesis.} Section VI is now a narrative synthesis per domain. It describes the lineages within each domain, which architectures dominate, and where exact checks occur, all supported by counts.
+  \item \emph{miniF2F.} A new results-level analysis covers miniF2F: \cnt{mfreported} studies state a miniF2F number in the abstract, and \cnt{mfcomparable} state an absolute pass rate (Fig.~4). The best reported rate rises from \cnt{mfmax2022}\% in 2022 to \cnt{mfmax2026}\% in 2026. The text explains why these numbers are not a leaderboard: budgets, splits and audited defects differ.
+  \item \emph{Faithfulness.} It is now coded by both coders ($\kappa=\cnt{kappafaith}$). Only \cnt{faithyes} of \cnt{faithn} relevant studies report faithfulness in the abstract, and none of the \cnt{faithD7} mathematical-problem-solving studies does. This result now grounds challenge C1 and the agenda (Table XII).
+\end{itemize}
+\where{Sections VI, VII, IX; Fig.~4; Table XII.}
+
+%=====================================================================
+\section*{Minor issues}
+\begin{itemize}
+  \item \textbf{Resolution arithmetic.} The pilot's resolution procedure, with its 3+4+1 split, is replaced. Agreement on both decisions is final; every conflict and every \texttt{unsure} goes to an adjudicator, whose decision and evidence are recorded. The scripts stop if any record has a missing or superfluous adjudication (Section III-E, Table VI).
+  \item \textbf{Records excluded by regex alone.} There are none in the revision. Every record in the union was screened by two LLM screeners. Records not retrieved by the query are covered by the stratified recall audit, including a random sample from the stratum that matches neither query block (Section III-E).
+  \item \textbf{Reporting standard.} The paper now follows PRISMA-ScR~(Tricco et al., 2018) and the scoping-review framework of Arksey and O'Malley. Appendix A maps all 22 checklist items, and Fig.~2 is a PRISMA-ScR flow diagram.
+  \item \textbf{LSTM scope wording.} Rule R1 now defines ``language model'' explicitly, from LSTM language models to LLMs. The abstract says ``language models---from pretrained sequence models to LLMs''.
+  \item \textbf{Versioning.} Every source is pinned to a commit: corpus \texttt{9a42645}, Paper Copilot \texttt{9fcfd12} and ACL Anthology \texttt{73f3b3a}. \texttt{code/search/fetch\_sources.sh} retrieves exactly these (Section III-C, Appendix C).
+  \item \textbf{ICML 2026 ``to appear''.} The bibliography is regenerated from proceedings metadata, and ICML 2026 entries are cited as published proceedings.
+  \item \textbf{References.} Every background and method reference was checked against Crossref and corrected where needed: volume, issue, pages, author names and DOIs. Examples are Tricco 2018, Arksey \& O'Malley 2005, Bergsma 2013, Wilson 1927, Khraisha 2024, Kautz 2022, Garcez \& Lamb 2023, Trinh 2024, Petersen 2008 and Wohlin 2014. Study entries are generated from proceedings metadata with DOIs and pages where available.
+\end{itemize}
+
+%=====================================================================
+\section*{Venue}
+We accept the referee's assessment. The revision is journal length, and we will target a venue that publishes surveys and judges correctness: TMLR, IEEE Access, \emph{Artificial Intelligence Review} or the NeSy conference. Before submission we will check that venue's current policy on LLM-assisted reviewing.
+
+\section*{Open items, stated honestly}
+\begin{enumerate}
+  \item \textbf{The human verification sample has not yet been screened or coded by the author.} The materials and the scoring script are ready. Until it is done, the manuscript says so explicitly, and it will not be submitted before then.
+  \item Model versions of the LLM reviewers were not recorded for every batch. The paper reports this as a limitation.
+  \item Estimated search recall is \cnt{recallpoint} with a wide interval, so the review maps the retrievable literature at these venues rather than all of it. Section~X discusses this.
+\end{enumerate}
+
+\end{document}

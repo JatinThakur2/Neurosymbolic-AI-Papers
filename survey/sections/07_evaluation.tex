@@ -1,0 +1,31 @@
+\section{RQ3: Models, Engines, Benchmarks, Faithfulness and Reproducibility}
+\label{sec:evaluation}
+
+\begin{table}[t]
+\centering
+\caption{Language-model families, symbolic engines and benchmarks named in the abstracts of included studies (open-vocabulary extraction by two coders; a study counts if either coder listed it).}
+\label{tab:entities}
+\footnotesize
+\input{tables/tab_entities}
+\end{table}
+
+\textbf{What abstracts name.} Table~\ref{tab:entities} summarises the entities named in abstracts. The two coders agreed well on model families and benchmarks (mean Jaccard \cnt{jaclm} and \cnt{jacbenchmark}) and less well on engines (\cnt{jacengine}), so engine counts are approximate. Only \cnt{lmstudies} studies (\cnt{lmstudiespct}\%) name a model family in the abstract; the counts describe reporting in abstracts, not usage. Among them, GPT-4-family models are the most named (\cnt{lmGPT4}). Proprietary and open-weight families are used side by side: \cnt{lmprop} studies name a proprietary family and \cnt{lmopen} an open-weight one, while \cnt{lmproponly} name only proprietary families. The Python interpreter (\cnt{engPython}) and Lean (\cnt{engLean}) are the most named engines, which reflects the weight of program-aided reasoning and formal theorem proving.
+
+\textbf{Benchmarks are fragmented.} \cnt{benchstudies} studies name at least one benchmark in the abstract, and together they name \cnt{benchdistinct} distinct benchmarks. Of these, \cnt{benchsingle} (\cnt{benchsinglepct}\%) are named by a single study, and only \cnt{benchfiveplus} are named by five or more. miniF2F is the only benchmark named by more than 20 studies (\cnt{benchminif2f}). This conclusion no longer depends on a fixed dictionary, because the vocabulary is open. Abstracts under-report benchmarks, though, so the true overlap is somewhat higher.
+
+\input{figures/fig_minif2f}
+
+\textbf{A results-level view of the one shared benchmark.} Of \cnt{mfmention} D1 or miniF2F-mentioning studies, \cnt{mfreported} state a miniF2F number in the abstract and \cnt{mfcomparable} state an absolute pass rate (Fig.~\ref{fig:minif2f}). The best reported rate rises from \cnt{mfmax2022}\% in 2022~\cite{wu2022autoformalization} to \cnt{mfmax2025}\% in 2025~\cite{ospanov2025apollo} and \cnt{mfmax2026}\% in 2026~\cite{varambally2026hilbert}. These numbers are not a leaderboard. Sampling budgets range from a single attempt to thousands, splits and formal languages differ, and audits find mis-specified statements and evaluation loopholes in the benchmark itself~\cite{ospanov2025minif2f,ammanamanchi2026faults}. The figure shows two things: the most shared benchmark of the field is close to saturation, and results are reported in a way that prevents direct comparison.
+
+\textbf{Formalisation faithfulness is rarely reported.} For A1 and A2 studies whose model writes formal statements, correctness depends on whether the formal statement means what the problem says. Of \cnt{faithn} such studies, \cnt{faithyes} (\cnt{faithyespct}\%) report the accuracy or faithfulness of the formalisation separately from end-task accuracy in the abstract, \cnt{faithno} do not, and \cnt{faithunc} are unclear. Reporting is most common in D1 (\cnt{faithD1yes} of \cnt{faithD1}), where autoformalisation is itself a task~\cite{li2024autoformalize,liu2025rethinking,chen2026reform}. It is almost absent in logical reasoning (\cnt{faithD2yes} of \cnt{faithD2}) and mathematical problem solving (\cnt{faithD7yes} of \cnt{faithD7}), where translate-and-solve pipelines are common. This was coded from abstracts, so some studies report faithfulness only in the body; the figure is a lower bound on reporting, not on practice.
+
+\begin{table}[t]
+\centering
+\caption{Release of author code, models or data, verified on the web: a simple random sample of included studies by architecture, and a census of A7 studies.}
+\label{tab:artifacts}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\input{tables/tab_artifacts}
+\end{table}
+
+\textbf{Artifacts are usually released.} In the random sample of \cnt{artrandn} studies, \cnt{artrandyes} have an author-released code, model or data artifact, \cnt{artrandno} have none that could be found and \cnt{artrandunc} could not be determined (Table~\ref{tab:artifacts}). The estimated release rate is \cnt{artrandrate}\% (95\% CI \cnt{artrandlo}--\cnt{artrandhi}). It is \cnt{artrandknown}\% among determinable studies, and \cnt{artrandupper}\% if all unclear studies released. In the A7 census, \cnt{artasevenyes} of \cnt{artasevenn} studies release an artifact. Some groups of sampled studies are small, so per-architecture differences should not be over-read. The pilot estimated release from links in PDF text and reported a markedly lower rate, which shows how much that method under-counts.

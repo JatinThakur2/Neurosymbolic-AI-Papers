@@ -1,0 +1,18 @@
+rid,year,score,lang,attempts,split,name,arch
+r07e1479f,2022,35.2,Isabelle,n/s,unspecified,Autoformalization wi.,A2
+r2080cdd7,2024,33.61,Lean,n/s,test,TheoremLlama,A2
+rf127ea2d,2024,34.0,Isabelle,n/s,unspecified,Magnushammer,A2
+r33ed8809,2024,45.5,unspecified,n/s,unspecified,Subgoal,A2
+re2f26fb4,2024,50.0,unspecified,n/s,test,LEGO,A2
+ra86a93ca,2025,49.6,unspecified,pass@l,test,CARTS,A2
+rcefeacbc,2025,61.07,Lean,n/s,test,MA,A2
+re742c2dc,2025,65.0,Lean,pass@3200,test,STP,A2
+r0422d6a3,2025,66.0,Isabelle,2100 queries,unspecified,ProofAug,A2
+r218783b6,2025,72.95,Lean,n/s,test,BFS,A2
+r12a103a9,2025,80.7,Lean,n/s,unspecified,Reviving DSP for Adv.,A2
+re13f719a,2025,84.9,Lean,<100 samples,unspecified,APOLLO,A2
+rde2a3082,2026,69.8,unspecified,pass@32,test,EvolProver,A5
+r520c7235,2026,90.4,Lean,pass@32,unspecified,Goedel,A2
+r11bcdfdc,2026,90.6,Isabelle,Pass@64,test,Enhancing Neural The.,A2
+rb6819abd,2026,95.08,unspecified,n/s,test,Scaling up Multi,A2
+rb1f7e919,2026,99.2,Lean,n/s,unspecified,Hilbert,A2

@@ -1,0 +1,36 @@
+\section{Background and Related Surveys}
+\label{sec:background}
+
+\subsection{Neurosymbolic integration before language models}
+Neurosymbolic AI combines sub-symbolic learning with symbolic knowledge and inference~\cite{garcez2023neurosymbolic}. Kautz~\cite{kautz2022third} distinguishes integration types ranging from \emph{Neuro|Symbolic} pipelines, in which a neural front end feeds a symbolic reasoner, to \emph{Neuro$_\text{Symbolic}$} systems in which rules act as a training signal. De Raedt et al.~\cite{deraedt2020statistical} relate the field to statistical relational AI and classify systems by the type of logic, the treatment of symbols and the degree of integration. Representative systems of this period are probabilistic logic programs with neural predicates~\cite{manhaeve2018deepproblog,yang2020neurasp,huang2021scallop}, whose exact inference is provably hard~\cite{maene2024hardness} and motivates approximations~\cite{vankrieken2023nesi}. A recurring concern is \emph{reasoning shortcuts}: models that satisfy symbolic constraints for the wrong reasons~\cite{marconato2023neuro,yang2024analysis}.
+
+\subsection{Why language models change the design space}
+Pretrained language models bring three capabilities that earlier neurosymbolic systems lacked. They map unstructured problems to formal languages without task-specific training, enabling pipelines in which the model formalises and an engine solves~\cite{olausson2023linc,ye2023satlm,pan2023logiclm}. They generate long structured artifacts---programs, proofs, plans---that a symbolic system can execute or check, enabling generate-and-check loops~\cite{polu2020generative,jiang2023draft}. And they carry broad world knowledge, so symbolic components can be grounded in open-vocabulary concepts rather than a fixed predicate set~\cite{gupta2023visprog,suris2023vipergpt}. Each capability changes where the symbolic component sits and what it is trusted to do, which is what our architecture axis records.
+
+\subsection{Related surveys and the gap addressed here}
+Table~\ref{tab:related} compares this review with the closest secondary studies. Surveys that focus on language models and symbolic reasoning~\cite{yang2025neuro,cheng2025empowering,rani2025advancing} are narrative: they report neither a search protocol nor a study count, so their coverage cannot be audited. Yang et al.~\cite{yang2025neuro} organise methods into Symbolic$\rightarrow$LLM, LLM$\rightarrow$Symbolic and LLM+Symbolic perspectives; our architectures refine these (Section~\ref{sec:taxonomy-relations}). Systematic reviews of neurosymbolic AI exist~\cite{colelough2025neurosymbolic,delvecchio2025neuro}, but neither isolates the integration of language models, and broad surveys of neurosymbolic computing~\cite{wang2025data,lamb2020graph,deraedt2020statistical} predate or do not centre on the language-model era.
+
+Our review also uses LLMs as reviewers. Evaluations of GPT-4 for screening and data extraction report performance that varies with task and domain and recommend human oversight~\cite{khraisha2024can}. We therefore treat LLM-based screening as a design choice that must be disclosed, measured with independent double assessment, and checked by a human sample (Section~\ref{sec:method-ai}).
+
+\begin{table*}[t]
+\centering
+\caption{Positioning against related secondary studies. ``Protocol'' means the study reports its sources, eligibility criteria and study counts. LM = language model.}
+\label{tab:related}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l l c c X@{}}
+\toprule
+Study & Venue & Protocol & LM focus & Scope and organising principle \\
+\midrule
+De Raedt et al.~\cite{deraedt2020statistical} & IJCAI 2020 & -- & -- & Parallels between statistical relational and neurosymbolic AI; dimensions such as logic type and degree of integration \\
+Lamb et al.~\cite{lamb2020graph} & IJCAI 2020 & -- & -- & Graph neural networks as a neural-symbolic computing substrate \\
+Wang et al.~\cite{wang2025data} & TPAMI 2025 & -- & -- & Narrative survey of neuro-symbolic computing; organised by integration type, knowledge representation, knowledge embedding and functionality (read from the arXiv version) \\
+Delvecchio et al.~\cite{delvecchio2025neuro} & IJCAI 2025 & \checkmark & -- & Task-directed survey of neurosymbolic systems 2017--2024, collected via the DBLP SPARQL endpoint from leading venues \\
+Colelough and Regli~\cite{colelough2025neurosymbolic} & arXiv 2025 & \checkmark & -- & PRISMA review: 1{,}428 screened, 167 included (2020--2024); categories such as learning and inference, knowledge representation, explainability \\
+Cheng et al.~\cite{cheng2025empowering} & IJCAI 2025 & -- & \checkmark & Logical reasoning in LLMs (narrative) \\
+Yang et al.~\cite{yang2025neuro} & IJCAI 2025 & -- & \checkmark & Neurosymbolic methods for LLM reasoning: Symbolic$\rightarrow$LLM, LLM$\rightarrow$Symbolic, LLM+Symbolic \\
+Rani et al.~\cite{rani2025advancing} & arXiv 2025 & -- & \checkmark & Symbolic integration in LLMs: lifecycle stage, coupling, architecture, application \\
+\midrule
+\textbf{This review} & -- & \checkmark & \checkmark & PRISMA-ScR; \cnt{sourceb} abstracts searched + curated corpus + snowballing; recall audit; \cnt{included} studies (2020--2026); double-coded architecture, check strength, domain and formalism; executable replication package \\
+\bottomrule
+\end{tabularx}
+\end{table*}

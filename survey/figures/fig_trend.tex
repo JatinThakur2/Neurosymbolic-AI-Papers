@@ -1,24 +1,25 @@
-% Share of screened records that are included studies, by year (data/derived/share_by_year.csv).
+% Included studies per 1,000 accepted papers at venue-years fully covered by Source B.
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-  width=\columnwidth, height=46mm,
-  ybar, bar width=10pt, bar shift=0pt,
-  ymin=0, ymax=60, ytick={0,20,40,60},
-  ylabel={Included / screened (\%)}, ylabel style={font=\scriptsize},
-  symbolic x coords={2020,2021,2022,2023,2024,2025,2026},
-  xtick=data, xticklabel style={font=\scriptsize}, yticklabel style={font=\scriptsize},
+  width=\columnwidth, height=50mm,
+  xmin=2019.6, xmax=2026.4, ymin=0,
+  xtick={2020,2021,2022,2023,2024,2025,2026},
+  xticklabel style={font=\scriptsize, /pgf/number format/1000 sep={}},
+  yticklabel style={font=\scriptsize},
+  ylabel={Included per 1{,}000 accepted}, ylabel style={font=\scriptsize},
   axis lines*=left, ymajorgrids, grid style={black!10},
-  enlarge x limits=0.08,
+  legend style={font=\tiny, at={(0.02,0.98)}, anchor=north west, draw=none, fill=white, fill opacity=0.85, text opacity=1},
+  legend cell align=left,
 ]
-\addplot[fill=nsgrey!45, draw=none,
-  nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\%},
-  nodes near coords style={font=\tiny}]
-  table[col sep=comma, x=year, y=share] {data/derived/share_by_year.csv};
-\addplot[fill=nsblue, draw=none] coordinates {(2026,\cnt{share2026})};
+\addplot[nsblue, line width=1pt, mark=*, mark size=1.6pt]
+  table[col sep=comma, x=year, y=panel5_per1000, restrict x to domain=2020:2025] {data/derived/plot_growth.csv};
+\addplot[nsgrey, line width=0.8pt, dashed, mark=square*, mark size=1.4pt]
+  table[col sep=comma, x=year, y=panel2_per1000] {data/derived/plot_growth.csv};
+\legend{ICLR, ICML, NeurIPS, ACL, EMNLP (2020--25), ICLR and ICML (2020--26)}
 \end{axis}
 \end{tikzpicture}
-\caption{Language-model-plus-symbolic studies as a share of screened records per year. Denominators: \cnt{s2020}, \cnt{s2021}, \cnt{s2022}, \cnt{s2023}, \cnt{s2024}, \cnt{s2025} and \cnt{s2026} records for 2020--2026. The 2026 cohort (blue) is partial: NeurIPS~2026 has not taken place, and ICML/ICLR~2026 records are arXiv preprints.}
+\caption{Growth normalised by the number of accepted papers at the same venue-years (Source B). The five-venue panel rises from \cnt{pfive2020} per 1{,}000 accepted papers in 2020 to \cnt{pfive2025} in 2025; the ICLR+ICML panel reaches \cnt{ptwo2026} in 2026. Only \cnt{nesytitle} of the \cnt{included} included studies (\cnt{nesytitlepct}\%) use ``neurosymbolic'' or ``neural-symbolic'' in their title, so the trend is not driven by adoption of the term.}
 \label{fig:trend}
 \end{figure}

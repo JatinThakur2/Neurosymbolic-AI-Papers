@@ -1,0 +1,32 @@
+\section{Selection of Evidence}
+\label{sec:selection}
+
+\input{figures/fig_prisma}
+
+Figure~\ref{fig:prisma} shows the flow. The union of the two sources contained \cnt{union} records, of which \cnt{unionincl} were included. Snowballing added \cnt{snowincl} studies from \cnt{snowcand} candidates, and the recall audit added \cnt{auditincl}, for a total of \cnt{included} included studies. Of the studies included from the union, \cnt{unioninclsearchonly} were found only by the abstract-level search and \cnt{unioninclcorpusonly} only by the curated corpus. Neither source alone would have sufficed: Source A is a title-keyword collection, and Source B does not cover AAAI 2020 and 2026, IJCAI 2025, TMLR or TPAMI.
+
+\begin{table}[t]
+\centering
+\caption{Reasons for exclusion (union and snowball records). Each excluded record has the single most fundamental code.}
+\label{tab:exclusions}
+\footnotesize
+\input{tables/tab_exclusions}
+\end{table}
+
+\textbf{Exclusions.} The most frequent reason is E3, no interacting explicit symbolic component (Table~\ref{tab:exclusions}). The query is broad by design, so it retrieves many papers that use ``symbolic'', ``formal'' or ``program'' in a sense the protocol excludes: chain-of-thought prompting described as symbolic reasoning, retrieval of knowledge-graph triples, generic tool use, and code generation judged only by unit tests (rules R3--R6). E1 removes models trained from scratch on synthetic symbolic data and papers whose ``transformer'' is not a language model (R1).
+
+\begin{table}[t]
+\centering
+\caption{Agreement between independent LLM reviewers before adjudication. Screening agreement is over three categories (include, exclude, unsure).}
+\label{tab:agreement}
+\footnotesize
+\input{tables/tab_agreement}
+\end{table}
+
+\textbf{Agreement.} Table~\ref{tab:agreement} reports agreement between the two independent LLM screeners and between the two coders. On the union, the screeners agreed on \cnt{agreeunion}\% of records over three categories ($\kappa=\cnt{kappaunion}$). On include versus not include they agreed on \cnt{agreeunionincl}\% ($\kappa=\cnt{kappaunionincl}$). \cnt{unsureunion} records had at least one \texttt{unsure} decision; together with the conflicts, \cnt{adjunion} records went to adjudication, and \cnt{adjinclunion} of these were included. Coding agreement ranged from $\kappa=\cnt{kappafaith}$ for faithfulness reporting to $\kappa=\cnt{kappaform}$ for formalism, with $\kappa=\cnt{kappaarch}$ for architecture. As Section~\ref{sec:method-ai} explains, these figures measure the consistency of independent model runs under explicit rules, not human reliability.
+
+\textbf{Recall.} The audit found \cnt{auditlmx} eligible studies among \cnt{auditlmn} sampled records with language-model terms only, \cnt{auditsymx} among \cnt{auditsymn} with symbolic terms only, and \cnt{auditneix} among \cnt{auditnein} with neither. Scaled to the strata, this suggests that about \cnt{missedpoint} eligible studies in Source B were not retrieved (95\% interval \cnt{missedlo}--\cnt{missedhi}). Search recall is therefore estimated at \cnt{recallpoint}, with a 95\% interval of \cnt{recalllo}--\cnt{recallhi}. The lower bound is driven by the large neither stratum, where the sample found no eligible study. If that stratum is assumed to contain none, the interval narrows to \cnt{recallsenslo}--\cnt{recallsenshi}. The studies the audit found illustrate what the query misses: abstracts that describe a model-checker repair loop, an optimisation-modelling pipeline, interpreter-generated training targets or Prolog-generated training data without the query's symbolic vocabulary. We therefore read every count in this paper as a count of the \emph{retrievable} literature, which is a large but incomplete share. The proportions and associations we report are robust to missing studies only if the missed studies resemble the found ones. The audit gives no indication otherwise, but its sample is small.
+
+\textbf{Known-item check.} A reviewer of the pilot named nine studies that the pilot missed: PAL~\cite{gao2023pal}, SatLM~\cite{ye2023satlm}, Binder~\cite{cheng2023binding}, Draft-Sketch-Prove~\cite{jiang2023draft}, LeanDojo~\cite{yang2023leandojo}, Thor~\cite{jiang2022thor}, autoformalisation with LLMs~\cite{wu2022autoformalization}, LLM-SR~\cite{shojaee2025sr} and Lean-STaR~\cite{lin2025lean}. All nine were retrieved and included.
+
+\textbf{Venues and years.} ICLR (\cnt{ICLR} studies), ICML (\cnt{ICML}) and NeurIPS (\cnt{NeurIPS}) contribute most studies, followed by the NLP venues EMNLP (\cnt{EMNLP}), ACL (\cnt{ACL}) and NAACL (\cnt{NAACL}), and by AAAI (\cnt{AAAI}) and IJCAI (\cnt{IJCAI}). TMLR and TPAMI contribute \cnt{TMLR} and \cnt{TPAMI}, because they are covered only by the title-keyword corpus (Table~\ref{tab:sources}). By year, the included studies number \cnt{y2020} (2020), \cnt{y2021}, \cnt{y2022}, \cnt{y2023}, \cnt{y2024}, \cnt{y2025} and \cnt{y2026} (2026, partial). Section~\ref{sec:trends} normalises these counts.

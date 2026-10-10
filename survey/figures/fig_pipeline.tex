@@ -1,30 +1,33 @@
-% Review workflow: automated scripts (top) read versioned human decisions (bottom).
+% Review workflow (v2): sources, query, two LLM screeners, adjudication, snowballing,
+% recall audit, double coding, analyses. Orange = versioned decision files.
 \begin{figure*}[t]
 \centering
 \begin{tikzpicture}[
-  node distance=4mm and 2.6mm,
+  node distance=3.5mm and 2.4mm,
   font=\scriptsize,
-  stepbox/.style={draw=nsblue, fill=nsblue!8, rounded corners=2pt, align=center, minimum height=11mm, text width=17.5mm, line width=0.6pt},
-  ppsrc/.style={draw=nsgrey, fill=white, rounded corners=2pt, align=center, minimum height=11mm, text width=17mm},
-  ppman/.style={draw=A4c, fill=A4c!10, rounded corners=2pt, align=center, minimum height=8mm, text width=17.5mm, font=\tiny},
-  ppout/.style={draw=A3c, fill=A3c!10, rounded corners=2pt, align=center, minimum height=11mm, text width=17mm},
+  stepbox/.style={draw=nsblue, fill=nsblue!8, rounded corners=2pt, align=center, minimum height=11mm, text width=18mm, line width=0.6pt},
+  ppsrc/.style={draw=nsgrey, fill=white, rounded corners=2pt, align=center, minimum height=11mm, text width=18mm},
+  ppman/.style={draw=A4c, fill=A4c!10, rounded corners=2pt, align=center, minimum height=8mm, text width=18mm, font=\tiny},
+  ppout/.style={draw=A3c, fill=A3c!10, rounded corners=2pt, align=center, minimum height=11mm, text width=16mm},
   arr/.style={-{Stealth[length=1.6mm]}, line width=0.5pt, draw=black!70},
   marr/.style={-{Stealth[length=1.4mm]}, line width=0.5pt, draw=A4c, dashed}]
-\node[ppsrc] (repo) {Corpus\\README + PDFs\\(\cnt{identified} records)};
-\node[stepbox, right=of repo] (s1) {\textbf{s01} Parse\\records};
-\node[stepbox, right=of s1] (s2) {\textbf{s02} Extract text\\(\texttt{pdftotext})};
-\node[stepbox, right=of s2] (s3) {\textbf{s03} De-duplicate,\\LM filter,\\eligibility};
-\node[stepbox, right=of s3] (s4) {\textbf{s04} Join\\coding sheet};
-\node[stepbox, right=of s4] (s5) {\textbf{s05} Full-text\\indicators};
-\node[stepbox, right=of s5] (s7) {\textbf{s06--s07} BibTeX,\\macros, tables,\\plot data};
-\node[ppout, right=of s7] (paper) {This paper\\(all counts are\\generated)};
-\node[ppman, below=of s3] (m3) {title-review additions\\eligibility decisions};
-\node[ppman, below=of s4] (m4) {coding sheet\\codebook};
-\node[ppman, below=of s5] (m5) {artifact checks\\spot-check verdicts};
-\foreach \a/\b in {repo/s1,s1/s2,s2/s3,s3/s4,s4/s5,s5/s7,s7/paper} \draw[arr] (\a) -- (\b);
-\foreach \a/\b in {m3/s3,m4/s4,m5/s5} \draw[marr] (\a) -- (\b);
-\node[font=\tiny, text=A4c, anchor=west] at ($(m5.east)+(2mm,0)$) {human decisions (versioned CSV, read-only to scripts)};
+\node[ppsrc] (srcs) {Source A corpus\\+ Source B\\proceedings\\metadata};
+\node[stepbox, right=of srcs] (q) {Abstract-level\\query, merge\\(\texttt{search/})};
+\node[stepbox, right=of q] (s10) {Union screened\\by two LLM\\screeners (s10)};
+\node[stepbox, right=of s10] (sn) {Snowballing +\\recall audit\\(\texttt{search/})};
+\node[stepbox, right=of sn] (s11) {Selection,\\agreement,\\recall (s11)};
+\node[stepbox, right=of s11] (s12) {Two LLM coders,\\adjudication\\(s12)};
+\node[stepbox, right=of s12] (s13) {Analyses,\\BibTeX, LaTeX\\(s13--s15)};
+\node[ppout, right=of s13] (paper) {This paper\\(all counts\\generated)};
+\node[ppman, below=of s10] (m1) {screener A/B and\\adjudication files};
+\node[ppman, below=of sn] (m2) {snowball and audit\\decisions};
+\node[ppman, below=of s12] (m3) {coder A/B and\\adjudication files};
+\node[ppman, below=of s13] (m4) {web check, miniF2F\\extraction};
+\node[ppman, below=of s11, fill=A5c!10, draw=A5c] (h) {human-check sheets\\(author, pending)};
+\foreach \a/\b in {srcs/q,q/s10,s10/sn,sn/s11,s11/s12,s12/s13,s13/paper} \draw[arr] (\a) -- (\b);
+\foreach \a/\b in {m1/s10,m2/sn,m3/s12,m4/s13} \draw[marr] (\a) -- (\b);
+\draw[marr, draw=A5c] (h) -- (s11);
 \end{tikzpicture}
-\caption{Review workflow. Blue boxes are scripts in the replication package; orange boxes are versioned files of human decisions that the scripts read but never modify. Consistency checks in s03 and s04 stop the pipeline if a candidate lacks a decision or an included study lacks a code.}
+\caption{Review workflow. Blue boxes are scripts in the replication package; orange boxes are versioned decision files written by the independent LLM screeners, coders, adjudicators and web checkers (all prompts released), which the scripts read but never modify. The red box is the human-verification sample (Section~\ref{sec:method-human}). Consistency checks stop the pipeline if a record lacks a decision or an adjudication is missing or superfluous.}
 \label{fig:pipeline}
 \end{figure*}

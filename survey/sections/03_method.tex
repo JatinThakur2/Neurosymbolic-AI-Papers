@@ -1,0 +1,162 @@
+\section{Review Methodology}
+\label{sec:method}
+
+\subsection{Design and reporting standard}
+We conducted a scoping review in the sense of Arksey and O'Malley~\cite{arksey2005scoping}: the aim is to map the extent, range and nature of the evidence, not to estimate effects. Reporting follows PRISMA-ScR~\cite{tricco2018prisma}; Appendix~\ref{app:prisma} maps every checklist item to its location. Planning and conduct also follow the systematic-mapping guidance of software engineering~\cite{petersen2008systematic,kitchenham2007guidelines}. The protocol (version 2, released with the data) fixes the eligibility rules, the screening and adjudication procedure and the coding scheme. It was not registered in advance. It replaces a pilot version that searched only the curated corpus; Section~\ref{sec:method-changes} lists the differences. Figure~\ref{fig:pipeline} summarises the workflow.
+
+\input{figures/fig_pipeline}
+
+\subsection{Eligibility criteria}
+\label{sec:method-eligibility}
+A study is included when all of I1--I4 hold (Table~\ref{tab:criteria}). I1 restricts the population to archival research papers at ten venues: AAAI (technical track), IJCAI (main and special tracks), ICLR, ICML, NeurIPS (main and Datasets \& Benchmarks), ACL, EMNLP and NAACL (main conference), TMLR and IEEE TPAMI, 2020--2026. I2 and I3 together require that a language model and an explicit symbolic component \emph{interact}. Six rules make this boundary operational.
+\begin{itemize}
+  \item \emph{R1 (language model).} A neural sequence model trained or pretrained on natural-language, mathematical-text or source-code corpora, at any scale from LSTM language models to LLMs, or a vision-language model built on one. A sequence model trained only on task-generated symbolic data (for example, a transformer trained from scratch to emit expression trees) does not qualify.
+  \item \emph{R2 (interaction).} The output of one component is the input, constraint, verdict or training signal of the other. Portfolios that merely choose between a model and a solver do not qualify. Evaluation studies qualify when a symbolic system generates the problems or certifies the answers the model is scored against.
+  \item \emph{R3 (symbolic component).} A system that represents knowledge or computation in an explicit formal language and manipulates it by rule-governed procedures: solvers, provers and proof assistants, logic and answer-set programs, planners, model checkers, interpreters executing model-written programs, computer algebra, symbolic search, and grammars, automata or static analyses that constrain or check the model. Natural-language reasoning chains, text retrieval stores and neural modules without a formal representation do not qualify.
+  \item \emph{R4 (program and query generation).} For code generation evaluated by tests, text-to-SQL and knowledge-base question answering by query generation, executing the generated program does not by itself satisfy I3; an additional symbolic component (verifier, type or dataflow analysis, grammar-based checker, symbolic search) is required. When a program is the \emph{vehicle} for another task---mathematics, tables, puzzles, planning, robot control, visual reasoning---I3 is satisfied.
+  \item \emph{R5 (knowledge graphs).} A knowledge graph counts only when the method performs logical inference over it; retrieving triples into a prompt does not.
+  \item \emph{R6 (tool use).} Generic multi-tool frameworks do not satisfy I3 unless a specific formal engine under R3 is the object of the integration.
+\end{itemize}
+
+\begin{table}[t]
+\centering
+\caption{Eligibility criteria (protocol v2). Rules R1--R6 are given in the text.}
+\label{tab:criteria}
+\footnotesize
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+\toprule
+Code & Criterion \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Inclusion (all must hold)}} \\
+I1 & Archival research paper at one of the ten venues and tracks, 2020--2026 \\
+I2 & A language model (R1) is a core component or the evaluated subject \\
+I3 & An explicit symbolic component (R3) interacts with the model (R2, R4--R6) \\
+I4 & Primary research contribution \\
+\midrule
+\multicolumn{2}{@{}l}{\textit{Exclusion (single most fundamental code)}} \\
+E1 & No language model under R1 \\
+E2 & Language model only as background, baseline or frozen encoder \\
+E3 & No interacting explicit symbolic component (R2--R6) \\
+E4 & Not an archival research paper of an in-scope track \\
+E5 & Survey, overview or position paper without new evidence \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Information sources}
+\label{sec:method-sources}
+We used two sources (Table~\ref{tab:sources}).
+
+\textbf{Source A} is a curated, venue-organised corpus of \cnt{corpusrecords} neurosymbolic records~\cite{thakur2026repo} (commit \texttt{9a42645}), built by matching venue title lists against neurosymbolic and adjacent-field keywords. It is the only source for venue-years without machine-readable abstracts: AAAI 2020 and 2026, IJCAI 2025, TMLR and TPAMI. Because its records were selected by title, it cannot by itself support claims about recall.
+
+\textbf{Source B} is the accepted-paper metadata, with abstracts, of eight venues. It combines the Paper Copilot paper lists (commit \texttt{9fcfd12}, with the last plain-text versions of ICLR 2025 and 2026) and the ACL Anthology (commit \texttt{73f3b3a}) for ACL 2020, EMNLP 2020 and EMNLP 2025. Only accepted papers in archival research tracks are kept, which gives \cnt{sourceb} records. The author of this review curates Source A (see Competing Interests); Source B is independent of the author.
+
+\begin{table}[t]
+\centering
+\caption{Information sources and coverage. ``Source A only'' marks venue-years searched through the curated corpus alone.}
+\label{tab:sources}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\input{tables/tab_sources}
+\end{table}
+
+\subsection{Search}
+\label{sec:method-search}
+A Source B record is retrieved when its title or abstract matches both a language-model block and a symbolic block (Appendix~\ref{app:query}). The blocks are deliberately broad. The language-model block includes \emph{transformer}, \emph{seq2seq}, \emph{prompting} and \emph{code model}, so that pre-LLM work is not missed. The symbolic block includes solvers, provers, formal languages, planners, program synthesis, interpreters, DSLs and logical forms. The query retrieved \cnt{queryhits} records. Merged with the \cnt{corpusscreened} unique Source A records (\cnt{overlap} appear in both), this gives \cnt{union} records to screen. Matching on abstracts rather than titles is what removes the dependence on the word ``neurosymbolic'' that a title-keyword corpus has (Section~\ref{sec:trends}).
+
+\subsection{Selection of sources of evidence}
+\label{sec:method-selection}
+Every record was screened on title and abstract by two independent LLM screeners. Each saw only the protocol, its batch and a viewer, and was forbidden to open other project files or other screeners' outputs. Each screener returned \texttt{include}, \texttt{exclude} with a code, or \texttt{unsure}. When both said include, or both said exclude, that decision was final. Every other combination---any \texttt{unsure} or any conflict---went to an adjudicator. The adjudicator saw both decisions and rationales, could read the local full text or fetch the paper, and had to decide. The adjudicator could not answer \texttt{unsure}. Each adjudication records its evidence: abstract, local full text or a URL. All prompts are released.
+
+\textbf{Backward snowballing}~\cite{wohlin2014guidelines}. The reference lists of the \cnt{snowseeds} included studies with a local PDF were matched against all Source B records, not only search hits. A record cited by at least one of them and not already screened became a candidate. The \cnt{snowcand} candidates went through the same two-screener process.
+
+\textbf{Recall audit.} To estimate what the query missed, we stratified the Source B records that were neither retrieved nor snowball candidates by which query block they matched. The strata are language-model terms only ($N=\cnt{auditlmN}$), symbolic terms only ($N=\cnt{auditsymN}$) and neither ($N=\cnt{auditneiN}$). Random samples of \cnt{auditlmn}, \cnt{auditsymn} and \cnt{auditnein} records were screened by one LLM screener, and every non-exclusion was adjudicated. Let $N_h$, $n_h$ and $x_h$ be the stratum size, sample size and eligible count, and let $F$ be the number of eligible Source B studies found by the search and snowballing (\cnt{foundinb}). We estimate missed studies as $\hat M=\sum_h N_h x_h/n_h$ and recall as $F/(F+\hat M)$. The 95\% interval comes from $10^5$ Monte Carlo draws of independent Jeffreys posteriors $\mathrm{Beta}(x_h+\tfrac12, n_h-x_h+\tfrac12)$. Studies found by the audit are included as ``identified by other methods''.
+
+\subsection{Data charting}
+\label{sec:method-coding}
+Two independent LLM coders charted every included study from its title and abstract, under the same blinding rules. Every study on which they disagreed in any coded field was adjudicated; the adjudicator could consult the full text. Table~\ref{tab:codebook} gives the codebook.
+
+The \emph{architecture} code is assigned by a decision tree applied in a fixed order (A6, A5, A1, A2, A4, A7, A3), stopping at the first match. The order resolves the boundary that was unstable in the pilot. Whenever a proof assistant, solver or executor checks the model's outputs and its verdict selects, repairs, filters or rewards candidates, the study is A2, even when a learned value model guides a proof search. A3 is reserved for symbolic structure that steers generation but gives no verdict on the output. Because ``checking'' covers both sound formal verdicts and execution- or data-based tests, every study also receives a \emph{check strength}:
+\begin{itemize}
+  \item \texttt{exact}: a sound formal verdict on the final output, from a proof assistant, certificate checker or model checker;
+  \item \texttt{empirical}: a check that can pass wrong outputs, such as tests, execution results, fit to data or simulator success;
+  \item \texttt{none}: the symbolic component never checks the final output.
+\end{itemize}
+Coders also recorded the language models, symbolic engines and benchmarks named in the abstract (open vocabulary). For A1/A2 studies whose model writes formal statements, they recorded whether the abstract reports the faithfulness of the formalisation separately from end-task accuracy.
+
+\begin{table*}[t]
+\centering
+\caption{Codebook (protocol v2). Each study receives exactly one code per axis. The architecture decision tree is applied in the order A6, A5, A1, A2, A4, A7, A3.}
+\label{tab:codebook}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
+\toprule
+Code & Name & Decision rule \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Integration architecture (order of the decision tree)}} \\
+A6 & Symbolic-oracle evaluation & Main contribution is a benchmark or evaluation; a symbolic system generates the problems or certifies the answers. \\
+A5 & Symbolic-to-neural transfer & The symbolic component only creates training data, targets or a training signal offline; the deployed model runs without it. \\
+A1 & Translate-and-solve & The model writes a formal representation and the engine computes the answer, in a single pass without a checking loop. \\
+A2 & Checker-in-the-loop & A symbolic checker or executor returns verdicts or feedback that select, repair, filter or reward candidates at inference or in online training, including proof search checked step by step. \\
+A4 & LM-induced artifacts & The model writes rules, programs, predicates or modules that are stored and reused beyond a single query. \\
+A7 & LM as interface & A language or vision-language model grounds perception or verbalises output; a symbolic core makes the decision. \\
+A3 & Symbolic guidance & Symbolic structure steers search, decoding, retrieval, decomposition or the training loss and gives no verdict on the output. \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Task domain (main evaluation)}} \\
+D1 & Theorem proving \& autoformalisation & Proofs or statements in a proof assistant; formal software verification. \\
+D2 & Logical \& deductive reasoning & Natural-language or formal deduction, puzzles, constraint problems, consistency. \\
+D3 & Program synthesis \& structured data & Programming by example, code analysis, tables, spreadsheets, SQL where in scope. \\
+D4 & Symbolic regression \& discovery & Equation discovery and scientific hypothesis search. \\
+D5 & Embodied planning \& agents & Task planning, world models, agents acting in environments. \\
+D6 & Vision-language \& multimodal & Visual, video, 3D and multimodal reasoning. \\
+D7 & Mathematical problem solving & Word problems, competition and applied mathematics with programs or solvers (not formal proofs); optimisation modelling. \\
+D8 & Language, knowledge \& data & Language modelling, constrained generation, semantic parsing, knowledge construction, data synthesis, other NLP. \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Formalism (main symbolic representation)}} \\
+F1--F7 & & Logic; proof assistants and verification languages; general-purpose programs; symbolic mathematics; rules and knowledge or scene graphs; planning languages and temporal logic; DSLs, grammars, automata and static analysis (Table~\ref{tab:formalism}). \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\subsection{Further indicators}
+\label{sec:method-indicators}
+\textbf{Entities.} Model names were mapped to 14 families and engine names to 12 families with documented patterns; a study names a family if either coder listed a matching string. Benchmark names were normalised by case, punctuation and split suffixes (``miniF2F-test'' and ``MiniF2F'' coincide). We report agreement between the two coders' entity sets as mean Jaccard similarity.
+
+\textbf{Artifact release.} Because links in PDF text can under-count releases, artifact availability was checked on the web. LLM web checkers searched for an author-released repository, model or dataset for each study in a simple random sample of 150 included studies, and for every A7 study (a census, because A7 is small). Third-party re-implementations, empty repositories and promises of future release do not count. Studies whose check could not be completed are reported as unclear, and rates are given both with unclear studies counted as not released and among determinable studies only.
+
+\textbf{Reported results.} For every D1 study, and every other study whose abstract mentions miniF2F, an LLM extractor copied the miniF2F result stated in the abstract with the supporting quote. We verified each quote against the abstract programmatically. We then classified each result as an absolute pass rate or not (for example, a gain over a baseline, an autoformalisation accuracy or a variant benchmark); the classification is released.
+
+\subsection{Synthesis and statistics}
+\label{sec:method-synthesis}
+We report frequencies with Wilson 95\% intervals~\cite{wilson1927probable} and cross-tabulations, followed by a narrative synthesis per domain. Association between architecture and domain is measured by Cram\'er's $V$ with Bergsma's bias correction~\cite{bergsma2013bias}, tested by permutation ($10^4$ label shuffles), and accompanied by the mean $V$ under the permutation null. Growth is normalised by the number of accepted papers at the same venue-years in Source B, using two panels with constant venue coverage: ICLR, ICML, NeurIPS, ACL and EMNLP for 2020--2025, and ICLR and ICML for 2020--2026. As a terminology control, we count the included studies whose title, or title and abstract, contains ``neurosymbolic'' or ``neural-symbolic''. No quality appraisal of individual studies was performed; this is optional in PRISMA-ScR and outside the aims of a map.
+
+\subsection{LLM-based reviewers and their disclosure}
+\label{sec:method-ai}
+Screening, adjudication, coding, web checking and result extraction were carried out by instances of Anthropic's Claude models running as independent agents with tool access. Each received only the protocol, a written task prompt and its batch. Model versions were not recorded uniformly for every batch; this is a limitation we report. The protocol, the prompts and the analysis pipeline were drafted with an AI assistant, which also orchestrated the agents, made two adjudications itself (one audit screening decision and one coding dispute, both marked in the decision files) and helped draft this manuscript. The author is responsible for the protocol and prompts and is accountable for every decision.
+
+Two consequences follow. First, the agreement statistics we report measure the consistency of independent model runs under explicit rules, not human inter-rater reliability. Second, model reviewers may share systematic errors that two humans would not, so high agreement does not rule out a shared bias. Section~\ref{sec:method-human} describes the human check designed to measure this. Everything a reviewer saw and decided is released, so any decision can be audited and overturned, and re-running the pipeline propagates the change to every number in the paper.
+
+\subsection{Human verification sample}
+\label{sec:method-human}
+A simple random 30\% sample of the records screened by two LLM reviewers (751 records) and a 30\% sample of the included studies (198 studies) are released as blinded sheets, which show only title, venue, year, abstract and link. A script reports human--LLM agreement against the final decisions.
+\ifhumancheck
+The author screened the sample and coded the study sample independently of the LLM decisions. Agreement with the final screening decisions was \cnt{humscragree}\% ($\kappa=\cnt{humscrkappa}$); the human included \cnt{humscrhi} records the LLM pipeline excluded and excluded \cnt{humscrhe} it included. For coding, $\kappa$ was \cnt{humcodarch} (architecture), \cnt{humcodcheck} (check strength), \cnt{humcoddom} (domain) and \cnt{humcodform} (formalism).
+\else
+
+\pendingbox{The human verification has not yet been done. Fill \texttt{data/decisions/human\_check/screening\_sheet.csv} and \texttt{coding\_sheet.csv} independently, applying the protocol, then run \texttt{python code/run\_all.py}. This paragraph, the abstract and Section~\ref{sec:validity} switch automatically to report human--LLM agreement. Do not submit before this is done: several venues do not accept reviews screened only by AI.}
+\fi
+
+\subsection{Changes from the pilot}
+\label{sec:method-changes}
+A pilot version of this review screened only Source A, using a language-model regular expression with title review, with one LLM screener and one LLM coder plus a second blinded pass. This revision makes five changes:
+\begin{enumerate}
+  \item it adds Source B, the abstract-level query, NLP venues, snowballing and the recall audit;
+  \item all screening is double, with an adjudicator;
+  \item eligibility rules R4--R6 are added;
+  \item coding uses the ordered decision tree, the check-strength attribute and double coding;
+  \item fixed-dictionary full-text indicators are replaced by open-vocabulary extraction from abstracts and a web-verified artifact check.
+\end{enumerate}
+Of the \cnt{vone} studies included in the pilot, \cnt{vonekept} remain included. \cnt{vonedropped} are excluded under the stricter rules, mostly because their ``symbolic'' component is a neural module or retrieved text.
+
+\subsection{Tooling and reproducibility}
+The pipeline uses only the Python standard library and \texttt{pdftotext}. \texttt{code/search/fetch\_sources.sh} retrieves the three sources at the commits above, and \texttt{code/run\_all.py} rebuilds every derived file. The scripts check that every record has exactly the decisions the procedure requires: a missing or superfluous adjudication stops the run. Re-running the pipeline from the released decision files reproduces the search hits, the screened set, the snowball candidates, the audit sample and every number in this paper exactly. Appendix~\ref{app:replication} lists the files.

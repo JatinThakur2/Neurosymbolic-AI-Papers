@@ -1,0 +1,15 @@
+\section{Conclusion}
+\label{sec:conclusion}
+This scoping review mapped \cnt{included} studies that integrate language models with explicit symbolic components at ten top-tier AI and NLP venues. The search covered \cnt{sourceb} abstracts and its recall was audited. Normalised by venue size, the area grew about \cnt{growthratio}-fold between 2020 and 2025, and the growth is not an artefact of the word ``neurosymbolic''. Seven integration architectures describe the field. Architecture is moderately associated with task. Over time the field has shifted from symbolic guidance of generation towards designs in which a symbolic checker gives verdicts on model outputs, although most such checks are empirical rather than sound. The evidence points to concrete priorities: report and measure formalisation faithfulness; replace saturating, defect-prone benchmarks with audited, versioned suites; turn empirical checks into exact ones where possible; and share evaluations. We release every decision, prompt and script, so that this map can be audited, corrected and extended.
+
+\section*{Data and Code Availability}
+The replication package---decision files of all LLM reviewers and adjudicators, prompts, the human-verification sheets, derived data and the pipeline---is available at \url{https://github.com/JatinThakur2/Neurosymbolic-AI-Papers/tree/main/survey}. The supplementary document lists all \cnt{included} included studies with their codes.
+
+\section*{Use of Generative AI}
+LLM agents (Anthropic Claude) performed the screening, adjudication, coding, web checks and result extraction described in Section~\ref{sec:method-ai}. An AI assistant drafted the protocol, prompts and analysis code and assisted in writing this manuscript. The author is responsible for the content.
+
+\section*{Competing Interests}
+The author curates and maintains the Neurosymbolic-AI-Papers corpus~\cite{thakur2026repo}, which is Source A of this review. The author declares no other competing interests.
+
+\section*{Acknowledgment}
+This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors.

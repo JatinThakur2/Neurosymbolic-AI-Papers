@@ -1,0 +1,660 @@
+rid,architecture,check_strength,domain,formalism,lm_named,engine_named,benchmarks_named,faithfulness_reported,confidence,rationale
+r5019d570,A5,none,D3,F3,GPT-4o; CodeReasoner-7B,,CRUXEval; LiveCodeBench; REval; HumanEval; MBPP,n/a,medium,Execution traces from inserted print anchors supply step-level targets/rewards for GRPO training; deployed model predicts states without running an executor.
+r72fadfed,A2,exact,D1,F6,,NuSMV,,no,high,LLM agents write NuSMV models; model checker verifies temporal properties and counterexamples drive iterative repair until all properties hold.
+re8e105a9,A1,none,D7,F7,ChatGPT; Gemini; Nougat,Pyomo; BOBD,AutoOpt-11k,unclear,medium,"Fine-tuned LLM translates LaTeX formulation into Pyomo script; BOBD optimizer solves it in a single pass, no checking loop."
+r96e8617a,A3,none,D2,F5,,,LLM-ERL,n/a,low,"Event-relation logic rules are injected into prompting and used to synthesize fine-tuning data, steering LLM answers; no symbolic verdict on outputs."
+rbf1fa053,A2,empirical,D7,F3,Gemma-1.1-it-7B; Gemma-2-it-9B,code interpreter,GSM8K; MATH,n/a,medium,Interpreter feedback supplies trajectory-level preferences for iterative online preference training of tool-using math model.
+rc8d2888b,A3,exact,D1,F2,,,miniF2F; ProofNet,n/a,low,"Hierarchical proof structure regularises attention during training; no checker verdict used in method, proofs only scored by proof assistant."
+ra8b9906a,A2,empirical,D2,F1,GPT-4,symbolic solver,,no,high,Solver feedback drives iterative refinement loop of LLM-written logic programs.
+rb7db1232,A2,empirical,D3,F3,,MaxSAT,,n/a,high,"CEGIS loop: LLM synthesises missing code, test suite checks it and counterexamples feed repair."
+r24fa22be,A2,exact,D2,F1,BART; Llama3-70B; Gemini1.5-Flash; GPT-3.5-Turbo; Mixtral-46.7B,typed hyperresolution,,n/a,low,LLM integrated into resolution inference; logical framework verifies and repairs erroneous inference steps.
+r06172ea1,A6,empirical,D2,F4,,causal inference engine,CLadder,n/a,medium,Benchmark whose questions and ground-truth answers come from an oracle causal inference engine.
+rc7b38fa9,A2,empirical,D5,F6,,LTL automata,ALFWorld,n/a,medium,LTL-compiled automata give dense reward signals to LLM agent during online GRPO training.
+r49db4138,A3,none,D2,F1,,Prolog-style inference engine,,n/a,low,Prolog-like backward proof search structure steers neural generation and retrieval; no verdict on final answer.
+rd0e4be70,A1,none,D3,F3,,Python interpreter,FeTaQA; QTSumm,n/a,medium,"LLM writes Python programs per sub-question; execution computes outputs, answer grounded on them; no checking loop."
+r61c15866,A5,none,D2,F1,,DEL simulator,,n/a,medium,"DEL simulator generates training data for neural verifier; inference uses only the learned verifier, no symbolic component."
+r35dff64d,A6,exact,D2,F1,,SMT,INDUCTION,n/a,high,Benchmark where first-order formulas are checked exactly by evaluation and SMT.
+r605194c1,A2,empirical,D7,F3,o3; OpenAI-o3-mini; DeepSeek-R1; Claude-Opus-4.0-Thinking; Gemini-2.5-Pro,code interpreter,AIME24; AIME25; HMMT25,n/a,medium,Agentic RL interleaves generation with real-time code execution; execution feedback enables refinement and rewards training.
+rb911d2b6,A1,none,D8,F7,BERT; LSTM,program executor,DROP; MathQA,n/a,high,Reader and programmer generate DSL program that executor runs to produce answer; single pass.
+raa44c8be,A2,exact,D7,F2,,Lean,AIME; HARDMath2,no,high,Agent interleaves informal reasoning with intermediate Lean checking of formal proofs that guide reasoning.
+r40a7dd77,A6,empirical,D2,F1,ChatGPT; GPT-4; GPT-4o,,,n/a,medium,Evaluation built from propositional and predicate logic rules generating test cases; model answers scored against them.
+r31e46b7f,A6,empirical,D2,F1,o4-mini,SAT solver,SATBench,n/a,high,Benchmark puzzles generated from SAT formulas with solver-based validation and ground truth.
+r5ed1e5a9,A5,none,D2,F1,GPT-4o; o4-mini,theorem prover,,n/a,medium,Theorem-prover step checks build reward and training data offline; deployed 8B model reasons without prover.
+r690877a5,A2,exact,D5,F5,,logic tutor; safety ontology,,n/a,high,Deterministic logic tutor verifies plans against safety ontology and returns feedback for LLM plan repair.
+r764cc16d,A5,exact,D1,F2,Qwen3; Llama-3.1; Mistral; GPT-OSS-120B; GPT-5.2,program verifier,InvBench,n/a,medium,Verifier output curated into training data to fine-tune small models; no test-time symbolic overhead.
+rd562c497,A2,empirical,D3,F3,,Python interpreter,ARC; 1D-ARC; SyGuS,n/a,medium,"LLM hypotheses implemented as Python programs, executed on observed examples to verify and filter candidates."
+r6b396b60,A3,none,D8,F7,TULU2-7B; GPT4; GPT2-large,HMM; DFA,GSM,n/a,high,Deterministic finite automata constraints guide decoding via HMM; no verdict on output.
+r9bf8be45,A1,none,D2,F3,,code interpreter,BIG-Bench Hard,n/a,medium,"LM writes code the interpreter executes, with LM emulating undefined parts; single pass computation."
+r1bac9a05,A2,empirical,D4,F4,,analytical tools,LLM-SRBench,n/a,medium,"LLM proposes expressions, fit to data scores candidates inside evolutionary search with diagnostic tools."
+r7345147b,A6,exact,D1,F2,GPT; Claude; Gemini; DeepSeek; Qwen,Dafny,DafnyCOMP,n/a,high,Benchmark where LLM-written Dafny specifications are certified by the verifier.
+r0a0602e5,A6,empirical,D6,F1,,description logic reasoner,LoRA,n/a,medium,Dataset generated by programs with SROIQ description logic ground-truth answers for VQA evaluation.
+r7cba4758,A2,empirical,D7,F1,DeepSeek-V3; OpenAI-o3,optimization solver,,no,medium,Solver execution gives feasibility and solution-quality verdicts used as RL reward and to filter training data.
+r3fd20b0c,A1,none,D6,F1,,first-order logic executor,,no,medium,LLM writes logic-based program that a differentiable FOL executor runs; no checking loop.
+r3b85cca1,A2,exact,D7,F1,,,EquivaFormulation,no,low,LLM proposes variable mappings; verification stage checks feasibility and optimality preservation and accepts or rejects.
+r9d3f97de,A2,exact,D1,F2,STP-Lean; DeepSeek-Prover-V1.5,Lean,MiniF2F; ProofNet,n/a,high,Lean verdicts at outcome and tactic level provide rewards during online RL.
+r9f5f9d32,A3,none,D8,F7,,context-free grammar,FoodOrdering; APIMixSNIPS; APIMixATIS,n/a,high,Grammar dynamically pruned by entity extractor constrains decoding; no verdict on output.
+rf3eda214,A4,none,D6,F6,,A* search,,n/a,medium,"LLM induces reusable subroutines from successful toolpaths, stored and reused; A* search for novel subtasks."
+r795e38a8,A1,none,D7,F1,,,PMC,no,low,"LLM formalises variables and constraints in formal language to detect ill-defined problems; formal engine decides, no loop."
+raa75ebe1,A1,none,D7,F3,,,,n/a,low,Agents generate self-contained code solving routing problems; abstract describes no symbolic verdict loop.
+rd1cdf2d2,A1,none,D7,F3,Llama-2,Python interpreter,GSM8K; MATH,n/a,medium,"Fine-tuned model writes code executed by Python interpreter, results used in solution; no checker selection."
+r698b51ae,A4,empirical,D3,F3,CodeLlama-13B; GPT-3.5,Python interpreter,LOGO; Date reasoning; TextCraft; MATH; TabMWP,n/a,high,"LLM refactors programs into reusable function library, verified via execution and reused across queries."
+r41c683e1,A2,empirical,D3,F7,,simulation; symbolic oracle,,n/a,medium,"Closed-loop repair of generated testbenches using simulation feedback, plus graph-symbolic scheduling and oracle."
+r59be65bf,A2,empirical,D7,F3,,program executor,GSM8K; MathQA,n/a,medium,"Execution results label self-sampled programs as correct or partially correct, rewarding them during training."
+rd8418077,A2,empirical,D7,F3,,solver,,n/a,medium,LLM writes solver programs and self-debugs with execution errors; retrieval of constraints supports generation.
+rb66847eb,A1,none,D6,F3,GPT-4V,Python interpreter,ChartQA; Chart-to-Text; Chart-to-Table; OpenCQA; ChartX,n/a,medium,"Model trained to generate Python programs for numerical calculation, executed to give answers; no checking."
+ree311595,A2,empirical,D4,F1,GPT-3; PaLM,logical constraint verifier,Janus Kinase 2; Dopamine Receptor D2,n/a,medium,Generated molecules are verified against logical constraints; verdicts drive iterative constraint refinement.
+r26369457,A6,exact,D2,F1,,,ORLoopBench; ORDebug; ORBias,n/a,medium,Benchmark whose solver re-execution and IIS recomputation give verifiable feedback; main contribution is the evaluation suite.
+r97476a41,A1,none,D7,F1,,Prolog; code interpreter,GSM8K,no,high,LLM writes Prolog programs; external interpreter computes the answer in a single pass.
+r3d46fcbb,A2,exact,D3,F7,,,,n/a,medium,Validator verifies data-flow facts and checks path-condition satisfiability to filter false bug reports.
+rbd25dbcd,A2,empirical,D7,F1,,solver,,no,medium,"Solver execution verifies correctness and efficiency, used as GRPO reward in online training of the modelling LLM."
+rbb49cc85,A1,none,D7,F3,ChatGPT; gpt-3.5-turbo-0701,,,n/a,high,LLM writes programs in several languages; interpreters execute them and answers are aggregated; no checking loop.
+r1e0f1102,A2,exact,D1,F2,,,,n/a,high,"LLM generates tactics, proof system checks each step and accepts the proof, with symbolic tactics and pruning guiding search."
+r8c4ab443,A3,none,D8,F5,BERT-base; Codex,,,n/a,medium,Symbolic agent enumerates valid KB plans and constrains search; LM only scores candidates and gives no verdict.
+r73041e10,A3,none,D7,F3,,static analysis,GSM8K; MATH; HumanEval+; MBPP+,n/a,low,Static analysis decomposes the program into units for LLM judging and refinement; no symbolic verdict on output.
+rd6a28a29,A4,none,D7,F3,,,,n/a,medium,LLM writes executable geometric lemmas that are combined into reusable verification functions yielding certified bounds.
+ra8869ee2,A2,exact,D7,F2,,Lean 4,FormalStep,no,high,Steps are formalised in Lean 4 and proved; formal verdict identifies hallucinated steps.
+r24f1bc06,A2,exact,D2,F1,,weighted MaxSAT solver,,n/a,medium,"MaxSAT solver checks and revises clashing beliefs, and consistent beliefs are fed back as context."
+r56925bb2,A6,empirical,D7,F3,GPT-4o; Gemini-1.5-Pro,Python,FinanceMath,n/a,low,Benchmark with Python-program reference solutions; evaluates CoT and PoT; answers matched. Could be read as A1.
+r1cdd9f60,A1,none,D3,F3,,Pandas; Python,,n/a,medium,"LLM translates questions to Python programs executed on data frames, with custom APIs; single pass."
+r0422d6a3,A2,exact,D1,F2,deepseek-math-7b-base; Kimina-Prover-Preview-Distill-1.5B,Isabelle; Lean 4,miniF2F,n/a,high,Proof assistant and automation check model proof proposals inside tree search.
+rd45f1e27,A2,exact,D1,F2,,,miniF2F,n/a,medium,Backward-chaining proof search with step-wise formal proof checking; pseudo steps guide but prover verifies.
+r752d0cbb,A2,exact,D1,F2,,Lean,,n/a,low,Verifier filters sampled answers to define the target distribution in training; Lean checks proofs.
+r07e1479f,A4,exact,D1,F2,,Isabelle/HOL,MiniF2F,n/a,low,LLM autoformalises statements stored as training data for a prover; Isabelle checks proofs. No inference-time check stated.
+re9cc5a89,A1,none,D3,F3,gpt-35-turbo,Python,PyQTax; HiddenTables,n/a,low,Code-generating LLM writes programs run on hidden tables; an oracle evaluates; single pass execution.
+r16bb7249,A1,none,D2,F1,,symbolic solver,,no,medium,Solver runs backward chaining and calls LLM for missing facts/rules in logic; solver computes the answer.
+r42e78a64,A2,exact,D1,F2,GPT-4o,symbolic verifier,,n/a,high,Verifier separates correct from incorrect proofs for data selection and gives feedback for self-debugging.
+r0acddc1f,A1,none,D3,F3,,Pandas,CRT-QA,n/a,medium,ARC has the LLM write Pandas code that is executed; dataset is not symbolically generated.
+rf1024aef,A2,empirical,D5,F6,,Symbolic Execution Simulator,,n/a,medium,"Symbolic simulator validates and executes plans, and its feedback repairs plans and evolves the symbolic world."
+r162d22f6,A6,empirical,D4,F3,Gemini 3.0 Pro; GPT 5.2; Claude Opus 4.5; Grok 4.1,,SEDRAS,n/a,high,Evaluation framework with synthetic symbolic data distributions; generated code programmatically compared against ground truth.
+r5715c6fc,A2,exact,D2,F1,DeepSeek-R1-Distill-Qwen,SAT,Saturn-2.6k; AIME; LiveCodeBench,n/a,medium,Rule-based SAT verification rewards outputs during online RL; not offline data creation only.
+rd1889b16,A2,empirical,D5,F3,GPT-4; GPT-3.5,PDDL; Python,,n/a,medium,"Synthesised Python planner validated on training tasks; error feedback re-prompts the LLM. Program reused, so A4 is possible."
+rb6819abd,A2,exact,D1,F2,,,miniF2F; ProofNet,n/a,high,Step-level proof search where the prover checks each tactic; RL and expert iteration on verified proofs.
+rcde627a9,A7,none,D6,F6,,,,n/a,low,Abstract garbled; title suggests VLM grounds video propositions and a temporal-logic core selects segments.
+rf5d7a12a,A2,exact,D1,F2,,,,yes,medium,Auto-SEF feeds formal-language syntax errors back to the LLM for correction; formalisation quality is itself evaluated.
+r00510af9,A2,empirical,D2,F1,,constraint solver,IndusCP,no,medium,LLM writes CP models; guided self-correction uses solver feedback within Tree-of-Thoughts.
+r6f24e47d,A3,none,D1,F2,GPT-4; GPT-4V,SMT solvers; Lean,LeanEuclid; UniGeo,n/a,low,Solvers and provers fill diagram gaps so the LLM formalises text steps; no verdict loop described. Could be A6.
+r07214b1f,A3,empirical,D3,F7,,,,n/a,low,LLM completions train a PCFG surrogate that guides enumerative DSL synthesis; synthesizer checks against examples.
+r1afc3d79,A2,exact,D1,F2,,Lean,miniF2F; PutnamBench,n/a,high,"Lean verifies each simplification, providing reward in RL and verdicts in the iterative shortening workflow."
+r96f2cdc6,A2,empirical,D8,F3,,Python verifier,Cryptonite,no,medium,Verifier executes codified wordplay reasoning steps to prove or reject LLM-hypothesised answers.
+r790d4bfc,A4,none,D5,F6,,PDDL,,n/a,medium,"LLM/VLM extracts atomic PDDL domains stored in a unified domain, reused across tasks for planning."
+r47c448cd,A6,exact,D2,F1,,,LogiConBench,n/a,high,Benchmark with symbolically generated logical graphs and exact labels.
+rd2e57606,A6,exact,D1,F2,,Lean; ntp-toolkit,miniCTX; miniF2F,n/a,high,Benchmark of Lean theorems where the proof assistant certifies proofs.
+re9e1108c,A4,empirical,D6,F7,,program synthesis,,n/a,medium,"LLM and visual parsing support synthesis of DSL programs encoding preferences, which are stored and reused."
+r75eaf601,A2,exact,D1,F2,DeepSeek-Prover-V2-671B,,FormalMath-Lite,n/a,high,"Proof sketch subgoals are checked by the prover, and failures trigger sketch edits."
+r9813e5ff,A1,none,D2,F1,,automated theorem prover,GSM; LSAT; BoardgameQA,no,high,LLM writes declarative specification and a prover derives the answer in one pass.
+r2a248128,A4,empirical,D5,F5,,,Mars; ALFWorld,n/a,medium,"LLM extracts action rules, knowledge graphs and scene graphs into executable code reused as a world model."
+re876f978,A4,none,D5,F3,,,,n/a,medium,LM lifts interaction traces into logic-grounded programs stored as skills and reused across tasks.
+r96d2bfb9,A6,exact,D1,F2,,Rocq; Coq,HumanEval,n/a,high,Evaluation framework; Rocq proof obligations on trusted tests certify specification quality.
+r51721b5d,A6,empirical,D7,F3,,,,n/a,medium,Benchmark synthesis by altering problems in a symbolic representation; answers checked by matching.
+r10e36dc2,A2,exact,D1,F2,,Lean; Mathlib,ProofNet; FATE-X,yes,medium,Iterative Lean autoformalization with compilation and AriaScorer checks selecting and refining candidates; compile success reported separately.
+r42bb8e33,A3,none,D3,F7,T5,incremental parser,Spider; CoSQL,n/a,high,Incremental parsing rejects inadmissible tokens during decoding; constrains generation without verdict on final output.
+r1b894e95,A6,empirical,D7,F4,DeepSeek-R1; Qwen,"symbolic, numerical, graphical verifiers",OMEGA,n/a,high,Benchmark of programmatically generated problems with solutions verified by symbolic or numeric methods.
+r58786fe5,A7,none,D2,F1,,,PrOntoQA; Rail2Country; ProverQA; BeaverTails,n/a,medium,LM latent activations mapped to propositions; logical rules infer conclusions and steer behaviour; symbolic core decides.
+r16666d21,A6,empirical,D2,F1,,,ZebraLogic,n/a,high,Benchmark of logic grid puzzles derived from CSPs with solver-known solutions; evaluation focus.
+rae5718fd,A2,exact,D2,F1,,theorem prover,e-SNLI; QASC; WorldTree,yes,high,Theorem prover verifies autoformalised explanations and feedback drives iterative refinement; autoformalisation gains reported separately.
+r3d3c6a4d,A1,none,D3,F3,GPT-4o-mini,,WikiTQ,n/a,medium,"Adaptive reasoning has model write programs executed on tables; single pass, executor computes answer."
+rcbbfcff5,A2,empirical,D3,F3,,test cases,,n/a,high,LLM refines programs using failed-test feedback; Thompson sampling selects which program to refine.
+r73f1814f,A2,exact,D2,F1,,automated solvers,ProofWriter; LegalBench; BioASQ,no,high,CoT steps formalised to FOL and solver-verified; verdict used for self-reflection and as DPO reward.
+re0013edf,A1,none,D5,F6,GPT,,,yes,medium,LLM translates instructions into formal specifications then reasons and plans for PDE control; autoformalization evaluated separately.
+r00354623,A6,empirical,D3,F7,GPT-4V; Llama3-70B; Llama3-8B,XLogoOnline emulator,XLogoOnline,n/a,medium,Main contribution is a program synthesis benchmark with emulator-checked success; emulator also drives curriculum.
+r8e0eb62d,A4,none,D8,F5,,,IL-Bench,n/a,medium,LLM guides incremental construction of symbolic programs and rules that are stored and reused as interpretable knowledge.
+r78551d99,A5,none,D8,F3,,code execution,,n/a,high,Code execution used offline to verify and build training data; deployed model reasons in text without executor.
+rbecc6e76,A2,exact,D3,F7,,static analysis,,n/a,low,Constrained tree search with static correctness checks prunes invalid partial programs during inference.
+r30b97cdb,A3,none,D5,F6,,grammar,CW; GLTL; Navi,n/a,high,Grammar restricts valid output tokens at each step; steers decoding with no verdict on the final output.
+ra8538bd8,A2,empirical,D4,F4,,,,n/a,high,LLM proposes equation programs; data-fitting optimisation scores them and evolutionary search selects among candidates.
+r3ab7ef65,A5,none,D1,F2,Llama3.1-8B-Instruct,,,n/a,medium,Formal-language checks used offline in expert iteration to build parallel corpus; deployed translator runs alone.
+re0ae613c,A6,empirical,D2,F1,,SMT,,n/a,low,Systematic evaluation of SMT autoformalization and uncertainty; selective verification; evaluation is main contribution.
+r204738e7,A6,empirical,D8,F1,,theorem provers,WinoLogic; Winograd Schema Challenge,n/a,medium,Dataset built from knowledge formulas verified by theorem provers to evaluate language models.
+r610281c5,A2,exact,D2,F1,,theorem prover,,unclear,high,Theorem prover verifies autoformalised explanations and returns feedback for LLM refinement loop.
+r39d81df4,A4,none,D8,F5,,Monte Carlo Tree Search,,n/a,medium,LLM defines predicates; MCTS induces logic rules stored and injected into prompts for later queries.
+r13e19e17,A1,none,D5,F1,o1-preview,satisfiability solvers,TravelPlanner,no,medium,LLM formalises planning into constraints that sound satisfiability solvers solve; unsat core only explains failures.
+reb1208e1,A3,none,D3,F7,,static analysis,,n/a,medium,"Static analysis outputs condition generation during training and decoding; guidance only, no verdict on output."
+r932616a7,A2,empirical,D5,F1,,Markov Logic Network,,n/a,medium,FOL traffic rules in an MLN verify predicted driving actions from recognised attributes.
+r77508cf5,A2,empirical,D4,F4,,,,n/a,medium,Parameter fitting to data and LLM evaluation of candidate equations iteratively guide equation search.
+r97ae3996,A1,none,D7,F3,OpenAI-o1; DeepSeek-R1-Distill-Qwen-32B; DeepSeek-R1-Distill-Qwen-1.5B,Code Interpreter,,n/a,low,"Model writes code run by interpreter interleaved with reasoning; interpreter computes results, no checking verdict."
+rf03252fb,A4,none,D5,F3,,,ManiSkill2; MetaWorld; MuJoCo,n/a,low,LLM writes executable reward-function programs reused across RL training; no symbolic check of outputs.
+r7b852e9f,A1,exact,D1,F2,,,,yes,low,Pipeline formalises proof steps into machine-verifiable lemmas; faithfulness and syntactic correctness scored separately.
+r73af149f,A6,exact,D1,F2,,,FATE-H; FATE-X,n/a,high,Formal benchmark of algebra problems in a proof assistant certifying model proofs and formalisations.
+r7acba57d,A5,none,D5,F6,,symbolic planner,PDDLGym; VirtualHome; ALFWorld,n/a,high,"Symbolic planner generates plans offline, compiled into LM procedures; test-time inference without symbolic guidance."
+rcf40140f,A7,none,D8,F1,GPT; CLIP; SAM,Scallop,,n/a,medium,Foundation models act as relational plugins feeding a Scallop logic program that computes results.
+r0b495d33,A2,empirical,D4,F3,,,,n/a,medium,LLM-guided evolutionary loop mutates code and selects by task fitness from execution.
+r1e19fe7e,A1,none,D7,F3,,optimization solver,ComplexLP,no,medium,"LLM writes solver code; semantic anchor correction is LM-driven, solver executes to compute answer."
+r1ead1843,A2,exact,D1,F4,,Lean,,n/a,medium,"LLM proposes SOS conjecture, symbolic computation refines it, Lean certifies final proof."
+r11bcdfdc,A2,exact,D1,F2,,Isabelle,miniF2F,n/a,high,Isabelle verifier feedback iteratively guides proof generation and accepts final proof.
+rcee8d9a3,A2,empirical,D1,F2,,automated theorem provers,MATH; miniF2F,yes,medium,Provers detect equivalence among candidate formalizations to score and select best; consistency selection.
+r25a48355,A6,exact,D5,F6,GPT-4o,PDDL equivalence algorithm; PDDL planner,Planetarium,n/a,high,Benchmark with symbolic PDDL equivalence algorithm certifying generated PDDL against ground truth.
+r9da32055,A6,exact,D1,F2,Claude Opus 4.6,Dafny; SMT,miniF2F,n/a,high,Main contribution is a benchmark translation; Dafny verifier certifies LLM-generated proofs.
+r787742b2,A2,exact,D1,F2,,,,n/a,high,Iterative proof refinement with proof assistant feedback accepting final proof.
+ra804bbd4,A2,exact,D1,F2,,Lean,,n/a,high,Agent rewrites Lean proofs with error-correction from Lean; checker verdict drives repair.
+r61cc1d1e,A1,none,D8,F1,,,,no,medium,"LLM constructs argumentation frameworks; formal argumentation reasoning computes the decision, no iterative checking."
+rd7bfffae,A2,exact,D1,F2,,hammers; automated theorem provers,PISA; MiniF2F,n/a,high,LM proof search with ATP hammers and proof assistant verifying steps; checker accepts final proof.
+rcb83998b,A4,none,D6,F5,,fuzzy logic,,n/a,medium,LLM generates symbols and rules stored in a symbolic system reused across images; fuzzy logic reasoning.
+r13f57eb5,A2,empirical,D5,F6,,PDDL planners,,no,medium,GenVLM iteratively refines PDDL using execution comparison feedback; PDDL planner produces plans.
+r62710d49,A2,exact,D1,F2,,,PISA; Mathlib,n/a,high,LM-guided MCTS proof search where proof assistant checks each step and accepts proofs.
+raa091574,A2,empirical,D7,F1,,external solver,,no,medium,External solver outcome verification supplies reward for online co-evolutionary training of policy.
+r4795f41e,A6,empirical,D2,F1,,logic program,,n/a,medium,Evaluation framework; executing logic program yields shortest proofs against which LM proofs are aligned.
+rb0ff4c85,A2,exact,D1,F2,,Isabelle,miniF2F; PISA,n/a,high,Proof search in Isabelle with verifiable sketches checked by the prover.
+r661890dc,A1,none,D5,F3,Flan-U-PaLM; HTML-T5,Python,MiniWoB; Mind2Web,n/a,low,"LLM generates Python programs that act on websites; executed once, no checking loop."
+ree88c68b,A1,none,D5,F6,,OBTEA,,yes,high,LLM translates instructions into FOL goals; OBTEA algorithm computes behavior tree; goal accuracy reported.
+rc361829b,A2,empirical,D2,F3,Qwen2.5-32B-Enigmata; o3-mini-high; o1; DeepSeek R1; Seed1.5-Thinking,rule-based verifier,ENIGMATA-Eval; ARC-AGI; ARC-AGI 2; AIME; BeyondAIME; GPQA,n/a,low,"Rule-based puzzle verifiers provide RLVR rewards online; also benchmark, but training focus."
+rdf0ed85b,A2,exact,D1,F2,,symbolic execution; verification tool,LIG-MM+,no,high,Agentic refinement corrects invariant candidates through verification tool feedback.
+r0b0b3428,A1,none,D6,F3,ViperGPT; BLIP-2,,,n/a,medium,"Analysis of ViperGPT: LLM writes programs executed by modules; single pass, no checker."
+r5b626332,A1,none,D7,F3,O1-preview; GPT Code Interpreter,Code Interpreter; AutoGen,,n/a,low,LLM writes code executed to compute answers; study of steering code versus text.
+r9c943530,A2,empirical,D4,F4,,,,n/a,medium,"LLM-code feedback loop validates harvested formulas numerically, filtering candidates before symbolic unification."
+r9972c5b6,A2,exact,D1,F2,ReProver; GPT-4,Lean,LeanDojo Benchmark,n/a,medium,Retrieval-augmented prover with Lean checking proof steps; toolkit and benchmark also contributed.
+r6e19b6fe,A5,none,D1,F2,,Lean 4,Lean Workbook; IMO,n/a,medium,Lean-filtered synthetic data created offline to train translation models; deployed model runs without it.
+rf3eeee6b,A4,none,D5,F6,,,,n/a,medium,LLM proposes predicates and processes; learned symbolic world models are stored and reused for planning.
+r1d143354,A4,none,D5,F3,,,,n/a,medium,LLM synthesizes modular programs for logical primitives reused as action space across steps.
+rec5b4ed8,A2,empirical,D5,F6,,physics engine; solver,,no,medium,Solver with physics engine realises LLM predicates; feedback drives LLM refinement.
+r6baa099a,A6,exact,D1,F2,Gemini Flash,Lean,SorryDB,n/a,high,Benchmark of open Lean tasks; Lean certifies proofs.
+r8a268c2e,A2,empirical,D3,F3,FunSearch,,online bin packing,n/a,medium,Evolutionary search selects LLM-written heuristic code by evaluated performance.
+rd881ed06,A2,exact,D2,F1,,symbolic verifier,Game of 24; Game of 28; Game of 30,n/a,medium,"Symbolic verifier gives feedback on constraint satisfaction, updating value function for planning search."
+r5390b532,A2,exact,D1,F2,,Lean 4,PRIME,unclear,low,Operator-tree localisation and repair of autoformalised Lean statements; checker verdict presumed to drive repair.
+rb8e7c283,A2,empirical,D7,F3,,,,no,high,Coding agents execute and validate optimisation code with simulator-based validation loops and repair.
+r6f7a087b,A6,empirical,D7,F4,,symbolic formula equivalence matching,,n/a,high,Benchmark/evaluation; rule-based symbolic equivalence matching certifies step formulas.
+re65725d0,A3,none,D3,F7,,context-free grammar,,n/a,high,Grammar constrains diffusion LLM decoding; steers generation without verdict on output.
+r587a846d,A2,empirical,D3,F3,,,,n/a,medium,LLM evolves benchmark programs; evaluated landscape similarity and algorithm differentiation select candidates.
+re3a4cd40,A2,empirical,D3,F3,,,Playgol; MBPP+; 1D-ARC; MiniGrid,n/a,low,Candidate programs executed and eliminated when inconsistent with LLM-predicted outputs on test inputs.
+r40f32cd4,A1,none,D3,F3,gpt-4.1,Python,,n/a,low,Abstract truncated; LLM writes Python executed in sandbox over spreadsheets; no checking evident.
+r0e774100,A2,empirical,D7,F1,,(MI)LP solvers,NLP4LP,no,high,"Agent writes solver code, evaluates solutions and improves model and code from evaluations."
+re3733c0d,A3,none,D3,F7,,static analysis,,n/a,medium,Static analysis tracking virtual stack steers LLM chain-of-thought; no verdict on output.
+r9019a341,A4,none,D5,F3,,,,n/a,medium,LLM-generated executable latent reward code reused across RL training; LLM self-verification only.
+r3dfe2448,A5,none,D8,F5,,,,n/a,medium,Explanations parsed into logic rules supply regularisation signal in training; deployed model runs without them.
+rcab2cd44,A4,none,D5,F7,,reward machines,,n/a,medium,"LLM generates reward machines (automata) from language, stored and reused to specify RL objectives."
+rafb06f00,A2,empirical,D3,F3,,,,n/a,medium,Evolutionary program search selects by fitness with feedback-driven repair of executability.
+rd68cad81,A4,none,D5,F3,,,,n/a,low,Library of validated code skeletons retrieved and reused for policy synthesis; execution is vehicle.
+rdbefa82b,A5,none,D6,F7,,NS3D symbolic programs,,n/a,medium,Symbolic program traces used offline to distil reasoning into MLLM via CoT-SFT; deployed model runs without symbolic component.
+r0aeb4906,A6,empirical,D5,F6,,Rubik's Cube solver tools,CubeBench,n/a,medium,Benchmark whose Rubik's Cube simulator generates problems and certifies pass/fail; solver tools only diagnostic.
+r974a9133,A1,none,D6,F3,MeshLLM,Blender Python,,n/a,low,"Multimodal LLM writes Blender Python from point clouds; executing the script yields the shape, no checking loop."
+rf1dea116,A2,empirical,D8,F5,,temporal point process; GFlowNet,,n/a,low,Generated logic trees are scored by event-sequence likelihood in EM loop; fit to data selects and refines rules.
+r1048a4cd,A1,none,D2,F1,GPT-4; GPT-3.5; LLaMA2-7B; LLaMA2-13B; LogicLLaMA,FOL rule parsing,MALLS,yes,low,Models translate NL to FOL for downstream provers; dataset and translator contribution with no checking loop.
+r785313e9,A1,none,D7,F3,Llemma; Code Llama; Minerva,,MATH; Proof-Pile-2,no,low,"Pretrained math LM evaluated on tool use and formal proving without finetuning; model writes programs or proofs, no loop."
+rfb94d02e,A1,none,D7,F3,,,FinQA; ConvFinQA,n/a,medium,LLM writes program-of-thought for financial numerical reasoning; execution computes the answer in a single pass.
+r0b58eee0,A2,exact,D1,F2,,,miniF2F; ProofNet,n/a,high,"Stepwise tree search over tactics checked by proof assistant; learned critic and heuristics only guide, checker gives verdict."
+re33d530c,A6,empirical,D2,F3,Gemini-2.5-pro; Llama-3.3-70B; Qwen2.5-72B; GPT-5; GPT-5-mini; GPT-5-nano,,BeyondBench,n/a,high,Benchmark where algorithmic generators create problems with deterministically verified solutions; models scored by answer matching.
+r50af759f,A2,empirical,D4,F3,,,,n/a,low,"LLM evolves programs; evaluator feedback on candidates selects and drives the next generation, evolutionary loop."
+re5e49fe2,A2,exact,D1,F2,,Rocq,SL-VC,n/a,medium,SPLIT drives LLM proof synthesis checked by Rocq tactics; benchmark is co-contribution but framework is checker-in-loop.
+r3f6cb6bd,A5,none,D2,F1,,,FLD,n/a,high,Synthetic deduction corpus generated from formal logic rules used to train LMs offline; deployed models run without symbolic parts.
+refec56ac,A1,none,D6,F1,,differentiable logic reasoners,DeiVG,no,medium,"LLM translates prompt to FOL rules; differentiable logic reasoner over scene graphs computes the answer, no check loop."
+r33ed8809,A2,exact,D1,F2,,,miniF2F,n/a,medium,"LLM proof search with demonstration selection; proof assistant verifies each proof, subgoal demos only shape prompting."
+rf885caa8,A2,empirical,D7,F3,GPT-4 Code Interpreter; GPT-4; PaLM-2,Python code interpreter,MATH,n/a,high,Model executes code to self-verify answers and revises when verification is False; execution feedback repairs candidates.
+r520c7235,A2,exact,D1,F2,Goedel-Prover-V2-8B; Goedel-Prover-V2-32B; DeepSeek-Prover-V2-671B,Lean,MiniF2F; PutnamBench,n/a,high,"Lean verifies proofs; expert iteration, RL and compiler-feedback self-correction all use proof-assistant verdicts."
+r78dff49d,A1,none,D2,F1,,MaxSAT,,no,medium,"LM generates explanation tree with logical relations; satisfiability solver infers the answer, single pass without checking loop."
+rcec7abc9,A2,exact,D1,F2,DeepSeek-Prover-V1.5,Lean,miniF2F; ProofNet,n/a,high,Lean verification outcomes serve as online RL reward and drive MCTS over tactic states.
+r218783b6,A2,exact,D1,F2,,Lean4,MiniF2F,n/a,high,Best-first tree search over Lean4 tactics with compiler feedback; prover accepts proofs and errors inform DPO.
+rd4a9e13f,A4,empirical,D5,F6,,PDDL; motion planners,,n/a,medium,"LLM induces predicates and actions (PDDL domain) from demonstration, stored and reused for planning; simulation rollouts only support induction."
+rbb0b9d05,A2,exact,D7,F7,,symbolic executor; Theorem Precedence Graphs,FormalGeo7k,n/a,low,"Graph constraints prune LLM theorem prediction, but stepwise symbolic executor returns verdicts on each step; A3 plausible."
+r6ee04317,A6,exact,D2,F1,,,,n/a,high,Diagnostic 2-SAT benchmark from parameterised generators; formulas certify decision and assignment validity.
+r24171a33,A2,exact,D2,F1,,,,unclear,medium,Formal logic verification interleaved with generation gives step-level verdicts used as penalties in SFT and RL.
+r6b046c34,A1,none,D5,F6,,PDDL,MuSE,no,medium,LLM translates instructions into PDDL and planner produces the plan; single pass without verification loop.
+r89c22d33,A6,empirical,D2,F1,,symbolic solver,,n/a,medium,"Adversarial attack generator uses symbolic solver to guarantee consistency and labels; probes soft provers, with training use secondary."
+rabcc2a78,A2,empirical,D7,F3,,,,no,low,"LLM builds optimisation model; solver outputs and structure checks feed verification and correction, though verifier is LLM-based."
+r867b1f33,A1,none,D6,F3,,,,n/a,medium,"Fine-tuned VLM generates Python procedural-material programs from images; execution renders result, no checking loop."
+r71e26edf,A1,none,D1,F2,,,ConsistencyCheck,yes,low,"Model generates formal statements with self-assessed semantic reflection; no symbolic verdict stated, so single-pass formalisation."
+r1f40020b,A6,empirical,D7,F4,,,,n/a,medium,Study evaluates LLM biases on word problems generated by neuro-symbolic approach with symbolic control of problem features.
+r71a25486,A6,exact,D1,F2,,Isabelle/HOL,Def_Wiki; Def_ArXiv; miniF2F,n/a,medium,Main contribution is autoformalisation benchmark of definitions evaluated with Isabelle; proof-assistant refinement is secondary.
+r396c252d,A2,empirical,D3,F3,FunSearch; EOH,Gurobi; SCIP,,n/a,low,LLM evolves neighbourhood heuristics; MILP solver performance selects candidates. A4 plausible as heuristics are reused.
+rcddfd23f,A2,empirical,D3,F7,,,ARC,n/a,medium,Sampled programs are executed on ARC examples; execution results drive hindsight relabelling and replay-based training.
+r38244d6e,A6,empirical,D2,F1,Llama3.1-8B-Instruct,symbolic provers,ProverQA,n/a,medium,ProverGen uses symbolic provers to generate and certify FOL problems for the ProverQA benchmark; training data secondary.
+r125d996b,A2,exact,D5,F6,,Symbolic Validator,,n/a,medium,"Symbolic Validator checks plan correctness and detects failures against world states, triggering repair of LLM plans."
+r21c6b045,A5,none,D1,F2,,,Leandojo; miniF2F,n/a,high,Symbolic mutation of Mathlib theorems builds synthetic training data offline; the trained prover runs without it.
+r04ccb8d7,A3,none,D8,F1,GPT-2,MDD,,n/a,medium,"Multivalued decision diagram enumerates constrained sentences; GPT-2 only ranks candidates, so symbolic structure steers generation."
+r59c99f02,A2,empirical,D5,F7,,Karel DSL,Karel,n/a,medium,LLM-generated programs seed hill-climbing search scored by environment reward; execution feedback selects candidate programs.
+r0b63ce19,A5,none,D2,F1,DeBERTa-v3; GPT-4,TPTP,FOLIO,n/a,medium,Grammar-based generator and theorem provers create logic training data offline; small DeBERTa deployed without symbolic parts.
+r2e3069a4,A2,exact,D1,F2,LLaMA3-8B,Lean 4,,unclear,medium,"PPO rewards include Lean compile-check of generated statements, with learned reward models; verdict selects policy updates."
+r6465edfe,A6,exact,D2,F1,InstructGPT; GPT-3,,PrOntoQA,n/a,medium,Synthetic FOL world-model dataset where chain-of-thought is parsed into symbolic proofs for formal analysis of steps.
+r6759bc6d,A1,none,D7,F4,GPT-J 6B,symbolic solver,SVAMP,no,medium,"LM translates word problems to formal language; solver evaluates expression; RL reward from solver but single-pass computation, no checking loop."
+rc4d1bc76,A1,none,D3,F7,Llama-2; Mistral; GPT-4o,SQL engine,HiTab; MultiHiertt,no,medium,LM writes SQL/loop code transforming tables; executor computes relational output used for QA; single pass.
+r427dce68,A3,none,D8,F7,,regular expression; DFA constrained decoding,,n/a,high,Regex-constrained decoding steers generation of diffusion LLMs; no verdict on output.
+r209d7fc1,A2,exact,D1,F2,,Lean,,n/a,medium,Lean-checked proof search by retrieval-augmented prover; lifelong learning on top; proof assistant accepts final proofs.
+r26b6774b,A6,exact,D1,F2,,Lean; static checkers,,n/a,medium,Audit of Lean theorem-proving benchmarks; kernel-certified proofs and mechanical checkers certify defects; evaluation is main contribution.
+rb083b075,A2,empirical,D7,F3,DeepSeek-V3.2,Code Interpreter,,n/a,low,Agentic RL with interleaved code interpreter execution results fed back to model; execution feedback and reward; generic-tool flavour.
+r6890f25f,A5,none,D1,F2,InternLM2-Math-Plus-7B; TheoremLlama,Lean-jixia; Lean 4,miniF2F-test; Mathlib4,n/a,medium,Lean analyzer used offline to build aligned dataset and fine-tune translator; deployed translator runs without it.
+raef94006,A5,none,D7,F3,Mixtral; OpenMath-CodeLlama-70B,code interpreter,GSM8K; MATH,n/a,high,Interpreter-executed solutions synthesised offline into instruction-tuning data; deployed model trained on dataset.
+r2b00fd98,A1,none,D7,F1,,MCTS; symbolic pruning; optimization solver,,no,low,"LLM writes solver-ready optimisation models and solver computes; MCTS with symbolic pruning and LLM value, no solver verdict; A3 possible."
+r0690ffd9,A2,exact,D3,F7,,static analysis; verifier,,n/a,medium,Verifier-guided regeneration loop checks LLM register assignments and triggers regeneration; static analysis normalises input.
+rb797b231,A3,none,D2,F7,,grammar-constrained decoding,GSM-symbolic; FOLIO,n/a,high,Grammar rules steer decoding without a verdict on output content; constrained generation with reasoning-preserving rules.
+raa04f2fb,A2,empirical,D6,F3,,code executor,,n/a,low,"MLLM generates and executes image-processing/math code, results fed back; RL reward from answers; execution feedback in loop."
+r7c99d329,A4,empirical,D4,F4,,Fermat environment,,n/a,low,LLM evolutionary search writes interestingness-measure programs that are stored and reused; fitness from symbolic environment.
+rafe6d7af,A3,none,D3,F7,,schema rules; constrained decoding,,n/a,high,Schema rules from documentation constrain decoding; no verdict on output.
+rd16a5d6f,A6,exact,D1,F2,,Rust verifier; solver,VCoT-Bench,n/a,medium,Benchmark whose ground truth is solver reasoning lifted into verification steps; solver certifies answers.
+r633d08ff,A2,empirical,D7,F1,LLaMa3-8B,AMPL; optimization solver,NLP4LP; ComplexOR; NL4Opt,no,medium,Checker agent iteratively verifies via solver feedback; execution results reward and repair formulations; execution-based check.
+r2080cdd7,A2,exact,D1,F2,GPT-4; TheoremLlama,Lean 4,MiniF2F-Valid; MiniF2F-Test,n/a,high,Iterative proof writing with Lean4 checking and feedback; Lean accepts final proofs.
+r0c37875c,A2,empirical,D7,F3,GPT-4 Code Interpreter; MathCoder; ChatGPT-3.5; PaLM-2,code interpreter,MATH; GSM8K,n/a,low,"Interleaved reasoning, code and execution output continuing generation; execution feedback in loop rather than single pass."
+r59de26e5,A5,none,D2,F1,,logic rule-based backward deduction,,n/a,high,Symbolic rule-based deduction generates synthetic logical training data offline; deployed LLM runs without it.
+r35472553,A5,none,D6,F7,,symbolic geometry construction; verification,GeoCode,n/a,medium,Symbolic seed construction and verification synthesise multimodal geometry training data and plotting-code targets offline.
+rdabcbba2,A6,empirical,D6,F4,,symbolic equation generator,CircuitSense,n/a,medium,Benchmark whose problems and symbolic equation labels are auto-derived by a synthetic pipeline; answers matched.
+rfa8fe6c4,A2,exact,D8,F1,GPT-3; Macaw,constraint satisfaction layer,,n/a,low,Constraint satisfaction layer over LM predictions enforces commonsense constraints and selects consistent answers; benchmark also contributed.
+rc55bb913,A1,none,D7,F3,LLaMA; OpenAI models,Python interpreter,,no,medium,"Study of PAL: model writes Python programs, interpreter computes answers; no checking loop."
+r7cca0ca0,A1,none,D3,F7,GPT-4,CodeQL; static analysis,CWE-Bench-Java,no,medium,LLM infers taint specifications that CodeQL uses to compute vulnerabilities; LLM contextual filtering secondary.
+ref1417ae,A1,none,D3,F3,,code execution,,no,low,"Model writes executable code, deterministic execution computes answer; comparison study with intermediate interventions."
+ra79fa313,A2,empirical,D2,F1,,ASP solver,,unclear,medium,ASP solver feedback on LLM-generated programs selects data for solver-guided instruction tuning online; iterative solver-in-the-loop.
+r0e2c4e07,A6,exact,D1,F2,Claude Code; Codex CLI,,APE-Bench,n/a,medium,Benchmark and harness with compilation-based and semantic verification of proof engineering tasks; evaluation is the contribution.
+r051b0a1e,A5,none,D2,F1,LLaMA-3.1-70B,,FLD; BBH,n/a,high,Program-generated formal logic deduction samples used for additional training offline; deployed model runs without symbolic part.
+r7d61d023,A5,none,D1,F2,,Lean4; MCTS,miniF2F,n/a,medium,MCTS synthesises Lean4 theorem statements as offline SFT data; fine-tuned LLMs prove without synthesis.
+r0a754dc8,A2,exact,D1,F2,,Lean,miniF2F; LeanDojo,n/a,medium,Filters candidate tactics during Lean-checked proof search; proof environment gives verdicts on tactics and final proof.
+rab6cec2c,A4,none,D6,F5,,,,n/a,low,VLM agents mine visual concepts and generate logical rules stored and reused for symbolic reasoning; abstract truncated.
+rf1789243,A3,none,D8,F7,,English Resource Grammar parser,,n/a,low,Symbolic ERG parser substitutes high-uncertainty subgraphs of neural parse; symbolic structure steers prediction without verdict.
+r645b6f6a,A2,empirical,D6,F4,,symbolic solver; symbolic tool library,,n/a,low,"VLM builds executable IR with verification-based feedback, then symbolic solver derives expressions; feedback loop on IR."
+r571ed5d4,A3,none,D3,F7,,program analyzer,,n/a,medium,"Program analyzer results supplied as context to code models for completion; analysis steers input, gives no verdict."
+r263c8b5d,A1,none,D2,F1,,theory resolution logic reasoner,,no,low,LLM supplies axioms/parses for logical theory resolution that computes answers; repair of axioms noted; no checking loop.
+ra6f72f2f,A7,none,D7,F4,Llama 3; GPT 4o,OccamNet,,n/a,medium,LLM hidden states control symbolic arithmetic network that computes result; symbolic core decides.
+r6975c90e,A1,none,D2,F1,,Prolog; symbolic solver,SARA,unclear,medium,"LLM translates statutes and cases to logic programs, symbolic solver computes tax obligations; single pass."
+r8e5e1408,A6,exact,D1,F2,,Lean 4,FormalML,n/a,high,Lean 4 benchmark of subgoal completion where Lean certifies solutions; evaluation is main contribution.
+rb425a47c,A2,exact,D1,F2,Deepseek-Prover-V2-7B,Lean 4,,n/a,medium,Sub-proposition error feedback lets LLM correct Lean proofs during inference; Lean verifies.
+r1c87c85f,A1,none,D5,F6,,PDDL planner,,no,medium,LLM turns grounded instructions into PDDL problems that a planner solves; closed-loop sensing but no output checking.
+rb8c6568d,A3,none,D2,F5,,,,n/a,medium,Symbolic working memory grounds applicable rules each step to steer LLM rule application; no verdict on output.
+r3750b732,A2,exact,D2,F2,,Dafny; Z3,,no,medium,Dafny and Z3 verify agent compliance; iterative refinement uses verdicts to repair agent behaviour.
+r92b5842f,A6,empirical,D2,F1,,,MIPLIB-NL; MIPLIB 2017,n/a,medium,Benchmark of NL-to-optimization built from real MILPs with reference solver formulations; main contribution is evaluation.
+red16313f,A6,empirical,D3,F3,GPT-3; Codex,Python interpreter,P3 (Python Programming Puzzles),n/a,high,Benchmark where each puzzle's Python verifier certifies candidate solutions.
+r9a65906c,A4,empirical,D5,F3,,Python; planner,,n/a,low,LLM writes Python world model refined against experience and reused with a planner; refinement loop is secondary.
+r823909fa,A2,empirical,D2,F3,,MILP solvers; SAT solvers,,n/a,medium,Generated solver code is executed and scored; evolutionary refinement selects candidates by solver performance.
+r0a224728,A4,none,D5,F3,Gemini 2.5 Pro,MCTS; Python,,n/a,low,LLM writes Python game world model reused across all moves for MCTS; no stated checking loop.
+ree89803d,A2,exact,D1,F2,DeepSeek-V3; Goedel-Prover-V2,Lean 4; Wilf-Zeilberger method,LCI-Test; CombiBench; PutnamBench-Comb,n/a,medium,WZ sketches guide proving but Lean checks every subgoal and the final proof; verdict-checked proof search.
+r1a74778f,A1,none,D5,F7,,differentiable physics solver,,no,medium,LLM translates task descriptions into optimization objectives; physics solver computes the trajectory with no checking loop.
+r736ee6ed,A4,empirical,D5,F6,Claude-3.5,symbolic planners; PDDL,,n/a,medium,LLM infers action semantics from execution feedback; learned semantics are stored and reused by the planner.
+rf372919c,A5,none,D7,F3,,abstract syntax tree,,n/a,low,AST-based complexity score used offline to synthesize and filter code training data; no symbolic part at deployment.
+re13f719a,A2,exact,D1,F2,o3-mini; o4-mini; Goedel-Prover-SFT,Lean,miniF2F,n/a,high,"Lean compiler errors drive repair of failing sub-lemmas, then reverification, iterated."
+r7dc50255,A1,none,D7,F3,GPT-4; WizardMath-70B,computation libraries; symbolic solvers,MATH,n/a,low,"Model writes programs and calls solvers over multiple turns; tool results are inputs, not verdicts. Could be A2."
+r8ddec13a,A2,empirical,D7,F3,,external executors,,n/a,medium,Executor output and validity check on answers trigger switching between reasoning methods.
+r011d7456,A1,none,D2,F1,,probabilistic logic programming; Python,BLInD,no,low,"LLM maps problems to Python, algorithms or ProbLog and engine computes; dataset also contributed (A6 possible)."
+r9ef2cbd8,A2,exact,D7,F7,InternThinker-32B,symbolic engine,IMO geometry problems (2000-2024),n/a,high,"LLM proposes constructions, symbolic engine verifies and returns feedback over hundreds of rounds; RL on verified outcomes."
+r9fb81a0c,A2,empirical,D7,F1,Deepseek-V3,Prolog,MATH,no,low,Prolog execution gives binary reward in GRPO and filters programs for corpus; training-time executor reward.
+r7bd71a09,A7,none,D5,F6,,PDDL planners,Blocksworld; ALFWorld,n/a,low,Symbolic regression planner decides; LM supplies commonsense entailment and visual grounding of NL-PDDL specs.
+reaf641ba,A2,empirical,D3,F3,GPT-4,,ARC,n/a,medium,LLM-generated programs executed on examples and scored to guide function search; execution-based selection.
+rd92d8ed7,A6,empirical,D5,F6,,PDDL; deterministic planner,,n/a,medium,Systematic evaluation of LLM-as-PDDL-formalizer with a planner solving; evaluation is the contribution.
+r9f9a50fe,A2,empirical,D3,F7,,Xander,,no,medium,Symbolic checks on partial and complete SQL prune paths and trigger backtracking.
+rabf69c7a,A2,exact,D1,F2,GPT-5; Gemini-2.5; Kimina-Prover; DeepSeek-Prover; Kimina-Prover-RL-1.7B; all-MiniLM-L6-v2,Lean 4,miniF2F-Test-PF,yes,high,Iterative proof repair using Lean type checker and equivalence feedback; reports semantic and type correctness separately.
+r0ca252d5,A4,empirical,D5,F3,,,,n/a,low,Code models extract precondition code from demonstrations that is reused to filter actions; filter use makes A2 possible.
+rd986a64e,A6,exact,D1,F2,,Why3; Frama-C; Isabelle; Lean; Rocq,NTP4VC,n/a,high,Benchmark of verification conditions generated by Why3/Frama-C and certified by proof assistants.
+r860cd506,A2,exact,D1,F2,,Lean; Mathlib,MathlibLemma,no,medium,Pipeline formalizes and proves lemmas; Lean type-checks and verifies; benchmark is secondary.
+r217822ba,A1,none,D5,F7,BERT-LSTM,WebLang runtime,RUSS dataset,no,medium,"Model parses instructions into WebLang DSL, executed in web runtime; single pass."
+rfffad286,A4,empirical,D4,F4,,,,n/a,medium,LLM-augmented symbolic discovery yields group-level utility functions stored and reused for individual modelling.
+rd7cd4fb2,A2,empirical,D2,F1,,logical solvers,,unclear,medium,"Solver verifies model-generated instantiations of formalization, giving a verification signal on the model's output."
+rc28f5ba2,A2,exact,D3,F7,,verified lifting,,no,medium,LLM translates code to DSL and generates equivalence proofs checked by a verifier.
+re0a00f6d,A6,empirical,D6,F3,GPT-4o,Python programs,DynaMath,n/a,high,Benchmark whose Python seed programs generate question variants and their answers.
+r90234048,A2,empirical,D3,F3,,,ARC; APPS; HumanEval,n/a,medium,LLM-filled holes in code sketch are tested against input-output examples to accept or refine.
+ra1c2ff75,A6,empirical,D7,F3,,,BizBench,n/a,low,"Benchmark of financial QA via code generation, scored by execution and answer match."
+r70b0f3b6,A5,none,D7,F4,LLaMA-2; Mistral,math solvers,,n/a,high,Solvers and LLM generate and validate mutated math problems offline for fine-tuning data.
+rc6ef1832,A2,exact,D2,F1,GPT-4,sound external verifier,Game of 24; Graph Coloring; STRIPS planning,n/a,medium,Study of iterative prompting where a sound external verifier critiques GPT-4 solutions in a loop.
+r690964dc,A2,empirical,D4,F7,OpenAI o3,,,n/a,medium,Semantic constraints and diagnostic reliability checks trigger resampling of program components.
+r7b7ccf8c,A2,empirical,D2,F1,,SAT solver,,no,medium,SAT solver compares generated FOL translations and selects the most probable; solver-based verification of candidates.
+r9a5225bf,A4,empirical,D3,F7,DreamCoder,Stitch,,n/a,high,LLM synthesis combined with Stitch compression to build reusable program libraries across tasks.
+rb3299d36,A2,empirical,D2,F3,,Monte Carlo Tree Search,,n/a,low,LLM-evolved operator code is executed and scored to guide MCTS over design strategies.
+r75dc134e,A3,none,D8,F7,,Rocq,,n/a,low,Probabilistic language structures LLM flows to propagate uncertainty and steer inference scaling; no verdict on output.
+r5f46bb8d,A1,none,D6,F3,,Python,,no,medium,LLM translates queries into Python programs with soft logic; executor computes answer in a single pass.
+r54a42677,A2,exact,D7,F4,,symbolic solver; theorem database,Olympiad inequalities (437 problems),n/a,medium,LLM proposes theorem combinations; symbolic solver checks decomposition; search accepts proofs; theorem database growth secondary.
+rae33fe2f,A2,empirical,D3,F3,,Python interpreter,ARC-AGI,n/a,high,Candidate programs executed against examples; results select/refine in evolutionary search and reward hindsight fine-tuning.
+rf9b66245,A1,none,D6,F3,GPT-4o,Matplotlib; Turtle,,n/a,medium,"Model writes drawing code, executor renders image, model reads it; single pass, no checking loop."
+rc36311bf,A2,empirical,D2,F1,,optimization solver,,no,high,Solver generates simplified diagnostic queries whose results let the LLM verify and repair candidate formulations.
+r1556ed41,A5,none,D8,F1,,,,n/a,high,Symbolic loss over facts and rules used only in fine-tuning; deployed model runs without the symbolic component.
+rf9e4862e,A3,none,D3,F3,,program execution,RobustFill; DeepCoder,n/a,low,Execution of partial programs steers step-wise decomposition; no verdict on final output stated; could be A2.
+rb5a2b99a,A2,exact,D1,F2,Llama3-8B; Mistral-7B,Isabelle,Code2Inv; SV-COMP; FVELER,n/a,high,LLM generates Isabelle proof steps in an interactive environment where the prover checks and accepts proofs.
+r1ff1c19f,A3,none,D7,F7,Qwen 3 8B; Gemma 2 27B; Gemma 7B,SymPy,FinQA; MGSM-SymPy; MGSM; MuSR,n/a,low,"Typed probabilistic program with deterministic logic structures and trains LLM workflows; types constrain, no verdict stated."
+rab20f8f2,A2,empirical,D3,F3,GPT-4o; GPT-4o-mini,Hybrid Genetic Search (HGS),,n/a,medium,"Reward from compiling, executing and solver performance of generated crossover operators during RL fine-tuning."
+rb5398a81,A2,empirical,D7,F3,o1-preview,code interpreter,AIME,n/a,medium,Multi-turn real-time code execution inside RL rollouts; outcome reward from answer matching trains tool use.
+r0d87801a,A6,empirical,D2,F1,,optimization solvers,OPT-Engine,n/a,high,Main contribution is a benchmark with solver-generated problems and solver-certified answers.
+r34aac216,A2,empirical,D7,F3,Gemini-2.0-Flash,Python interpreter,Big Bench Extra Hard (BBEH),n/a,medium,Programs generated and refined iteratively from execution/structural feedback per instance.
+r5fbc1849,A7,none,D6,F1,,symbolic circuit,,n/a,high,VLM recognises concepts; compiled circuit executes rules and makes the decision.
+ref1a4a16,A2,exact,D1,F2,DeepSeek-Prover-V1.5-RL,,miniF2F-test,n/a,high,GRPO with perfect formal verifier reward on theorem proving; checker verdict rewards candidate proofs.
+r85fbfe3b,A1,none,D7,F3,,Python interpreter,,n/a,high,LLM writes reasoning programs in a single pass and interpreter computes answer; no checking loop.
+r0cfab9a4,A2,empirical,D2,F1,,solver,,no,medium,"Formalisation plus solver code, with self-correction from execution feedback; trained on formulations; could be read as A1."
+rb1f7e919,A2,exact,D1,F2,,Lean 4,miniF2F; PutnamBench,n/a,high,LLM proofs checked by Lean 4 verifier; verifier feedback drives refinement and decomposition.
+r722fd25d,A2,empirical,D2,F1,,formal inference engine,,unclear,medium,LLM induces logic theories and receives feedback from formal inference engine checking fit to examples.
+r4f8abb9a,A5,none,D5,F6,,,,n/a,medium,Self-written planning domains used offline to generate training data and RL rewards; deployed LLM plans without them.
+rc3671b2c,A2,empirical,D5,F3,,,Code World Models Benchmark (CWMB),n/a,high,"MCTS over code generation, fixing and improving using unit-test and trajectory feedback."
+rb4bb0607,A1,none,D6,F3,,Python,,n/a,medium,"LVLM writes Python programs executed to answer sub-questions; single-pass computation, LLM then judges."
+red448e3e,A6,exact,D1,F2,OpenAI o3,Lean,VERINA,n/a,high,"Benchmark of Lean code, specification and proof generation, with Lean-checked proofs and test suites."
+ra86a93ca,A2,exact,D1,F2,,,miniF2F-test,n/a,high,MCTS over LM-suggested tactics; proof assistant validates tactics and accepts complete proofs.
+r36bbb89f,A2,empirical,D4,F3,,,,n/a,low,Evolutionary search with LLM hypotheses selected by external validation; symbolic component only implied.
+r64780476,A2,empirical,D4,F3,,probabilistic programming,,n/a,low,"LM proposes probabilistic programs, fit to data and critique feed back to iterate in Box's Loop."
+rc17dc698,A6,empirical,D5,F6,,PDDL,EmbodyGuard; SAFEL,n/a,medium,Benchmark whose PDDL-grounded scenarios and plan validation supply the symbolic oracle.
+r3bc832b4,A3,none,D8,F7,,,,n/a,medium,Grammar-constrained sublanguage steers LM output toward valid meaning representations; no verdict on output.
+r0a572ee0,A2,empirical,D4,F4,,,LLM-SRBench,n/a,low,Data-fit residuals guide LLM equation refinement; reusable structure library is secondary.
+reba222b6,A7,none,D5,F5,GPT-4,,Atari,n/a,medium,Symbolic policy decides; GPT-4 verbalises explanations of policies and decisions.
+rcefeacbc,A2,exact,D1,F2,DeepSeek-V3; InternLM-Step-Prover; Godel-Prover,Lean4,miniF2F-test,n/a,high,LLM proofs checked by Lean4 verifier; error feedback drives correction.
+rbf2428aa,A6,empirical,D7,F4,,AST parser,ConvexBench,n/a,medium,Main contribution is a mechanically verifiable benchmark of symbolic convexity; agentic AST framework secondary.
+rffe62927,A4,empirical,D5,F5,,probabilistic rule circuits,ShieldAgent-Bench,n/a,low,LLM extracts safety rules into stored circuits reused across trajectories; verification of agent actions secondary.
+r8d84714f,A3,none,D8,F7,PLAID,regular expressions,,n/a,high,Regex-derived analytic score guides diffusion sampling toward valid syntax; no verdict on output.
+reeceb7b7,A2,empirical,D3,F3,,,,n/a,low,LLM best-response programs evaluated by execution against opponent pool; performance selects strategies.
+r30b45561,A1,none,D2,F6,ChatGPT-4; Claude 3 Opus; Gemini Ultra 1.0; o1-preview,action languages,,unclear,medium,"LLM translates text to action language and reasoner computes answers; human corrections, not automated loop."
+re9ba9b68,A6,exact,D1,F2,GPT-4,Lean,TRIGO,n/a,high,Benchmark of Lean-formalised trigonometric proof reduction with Lean checking.
+re0d57e54,A2,empirical,D8,F6,,symbolic reasoning module,,n/a,medium,Symbolic module accepts or rejects candidate generations for logical consistency.
+r9cba5b44,A6,empirical,D7,F4,,Computer Algebra Systems,ASyMOB,n/a,medium,Benchmark of symbolic math problems generated and validated by CAS.
+r37d6a8c5,A2,empirical,D2,F3,,symbolic interpreter,,n/a,medium,"LM proposes rules; task-specific symbolic interpreter filters them against observations, then LM refines."
+ra06c0609,A3,none,D8,F7,,,,n/a,high,Formal-language constraints steer decoding; no verdict on output.
+r85105581,A1,none,D5,F1,,,TravelPlanner; RealTravel,no,medium,LLM turns constraints/preferences into solver input; numerical solver computes plan; no iterative checking of model output.
+r7f1f3179,A3,none,D8,F7,,finite-state transducers,,n/a,medium,FST composed with LM reshapes output distribution at inference; symbolic structure gives no verdict on outputs.
+r2d285226,A2,empirical,D7,F3,,code interpreter,,n/a,high,Interpreter feedback drives self-correction at inference and rewards RL on step-level code calls.
+r34074b15,A2,exact,D2,F1,,logic solver,,no,high,Solver finds gaps and verifies added premises iteratively; verdicts select and filter LLM-generated premises.
+rb3e9d84c,A4,empirical,D8,F5,,,,n/a,medium,LLM and diffusion generate logic rules that are filtered and scored then stored in a rule base for TKG reasoning.
+r9faf5834,A2,empirical,D5,F6,Gemini-3-Pro-Preview; GPT-5.1,BC+,,no,high,BC+ programs pass syntactic and executability verification with feedback during decompose-and-verify generation.
+ra1d40c28,A5,exact,D1,F2,Llama 2-7B,Lean Prover,MUSTARDSAUCE,n/a,medium,Lean filters synthesized proofs offline into training data used to fine-tune a model that deploys without it.
+rc264b05c,A2,exact,D3,F3,GPT-4,symbolic solver,,n/a,medium,"Solver checks semantic equivalence of LM transpilation, using LM alignment and confidence to repair; verdict selects output."
+r7f0629ef,A1,none,D6,F1,,,ReaSCAN; CLEVR-CoGenT; CLEVR-SYN,no,medium,"LLM writes symbolic predicate representations executed by differentiable neural modules; single pass, no checking."
+r9e910ce8,A1,none,D3,F3,,Python interpreter,,n/a,high,LLM plans steps and writes Python; interpreter computes the numbers; no checking loop.
+r103820b4,A2,exact,D1,F2,,Verus,,n/a,high,Verifier failures yield validated counterexamples that guide LLM proof repair iteratively.
+r76367fff,A2,exact,D1,F2,TrialMaster,Lean,,n/a,high,LM tactics searched with Lean checking each step and accepting proofs; trained on failed search paths.
+r24638dca,A2,empirical,D5,F6,GPT-4,PDDL validators; PDDL planners,IPC domains; Household,no,medium,"LLM-written PDDL corrected via validator and human feedback, then sound planner plans; checker feedback repairs outputs."
+rf5164d7c,A2,exact,D1,F2,,,,unclear,medium,"LLM sketches formal proofs; automated prover fills subgoals and proof assistant accepts or rejects, selecting proofs."
+rde2a3082,A5,none,D1,F2,,AST-based augmentation,FormalMATH-Lite; MiniF2F-Test; Ineq-Comp-Seed; Ineq-Comp-Transformed,n/a,medium,AST-based symbolic transformations plus LLMs create augmented training data offline; the trained prover is deployed alone.
+r9ec117bd,A2,exact,D1,F2,ReProver,Lean,Lean Workbook Plus; Mathlib4,n/a,high,Progress predictor guides best-first search where Lean checks each tactic and accepts proofs.
+r4eeb12bc,A3,none,D2,F1,,,Sudoku; shortest-path,n/a,low,"Logical-constraint pseudo-semantic loss steers training, no verdict on outputs; A5 also plausible as offline training signal."
+r84c5c76d,A3,none,D3,F7,,static typing,ManyTypes4Py,n/a,medium,Dataflow structure decomposes type inference into a modular program steering LM calls; no verdict on final types.
+r5ea0716f,A2,exact,D1,F2,,Lean,,n/a,medium,"Transformer prover searches with Lean checking tactics; PACT co-training data is secondary, deployed system uses Lean."
+r36abe7f8,A3,none,D3,F7,,BNF grammar,SMCalFlow; Overnight; GeoQuery; PDDL planning; SMILES,n/a,medium,BNF grammar predicted then constrains generation; grammar steers output without verdict.
+radf94b79,A4,empirical,D5,F3,,,Pong; Montezuma's Revenge,n/a,medium,"LLMs synthesize programmatic experts forming a reusable world model, fit to observations and used by planner."
+rbd43d9dd,A1,none,D6,F3,,,COVR; GQA,n/a,high,LM writes Python composing visual models; execution yields answer in a single pass.
+r36baffd2,A2,empirical,D7,F3,Llama-3-8B; GPT-4o; o1; o1-preview; DeepSeek R1; Claude; Mistral; GPT-3.5,symbolic checker; self-answer checker,SymBench,n/a,medium,Fine-tuned steering model guides code/text generation with symbolic and self-answer checker feedback in multi-turn loop.
+r6f1f5bbd,A1,none,D2,F1,StarCoder+; GPT-3.5; GPT-4,first-order logic prover,FOLIO; ProofWriter,no,high,LLM parses premises into FOL and prover performs deduction; single pass.
+r443beac1,A2,empirical,D5,F5,,symbolic tools,ALFWorld; VirtualHome; Minecraft; RLBench,no,low,LLM hypotheses are validated contrastively by symbolic tools; A4 plausible since knowledge is stored and reused.
+r59c39e16,A1,none,D7,F3,Llama-3-8b; GPT-4,code solver,OptiBench; ReSocratic-29k,no,low,"LLMs write optimization formulation and code, solver computes answers; benchmark answers not certified by symbolic oracle, so not A6."
+ra0ff25e4,A5,none,D8,F7,T5,quasi-synchronous context-free grammar,,n/a,high,Induced grammar samples recombined examples to fine-tune T5 offline; deployed model runs without grammar.
+r33686293,A2,empirical,D4,F4,,symbolic term decomposition,,n/a,medium,Symbolic decomposition feedback on candidate equations drives refinement and test-time RL fine-tuning of the LLM.
+r71d4ad74,A2,empirical,D7,F3,,solver,,no,medium,"Verification and solver agents give feedback routed to revise formulations until feasible, iteratively."
+r7abb32ad,A6,empirical,D2,F1,,,QuestBench; Logic-Q; Planning-Q; GSM-Q; GSME-Q,n/a,medium,"Benchmark whose tasks are formalized as CSPs, with symbolic structure determining the correct question."
+r1bce7a6c,A1,none,D7,F7,,probabilistic programming system,,no,high,"Seq2seq maps word problem to declarative representation, probabilistic programming system executes it; single pass."
+rdd6ec86a,A6,empirical,D3,F7,,K semantics,PLSemanticsBench,n/a,medium,Benchmark pairing programs with formal semantics; fuzzer-generated programs and semantics provide the ground truth.
+r6048741f,A2,exact,D1,F2,LLaMA-3.1-70B,,HumanEval; MBPP,no,high,Verifier feedback drives tree-search refinement and filters candidates; verifier accepts final code.
+rdea26305,A2,empirical,D4,F4,,code interpreter,,n/a,medium,"Agent writes equation code, interpreter evaluates fit to data, and feedback refines equation; RL on same loop."
+r7145390a,A3,none,D4,F4,,equality graph,,n/a,medium,"E-graph equivalence prunes search, aggregates rewards and enriches prompts; steers search without verdict."
+rb3c57dd0,A6,empirical,D4,F4,,,LLM-SRBench; LSR-Transform; LSR-Synth,n/a,medium,"Benchmark whose problems come from symbolic transformations and synthetic equations, scored by symbolic accuracy."
+rbba59ac8,A4,none,D5,F6,,PDDL,,unclear,low,LLM generates action schema library reused for planning; validation module unclear; A1 or A2 plausible.
+r63158772,A6,exact,D1,F2,GPT-f; GPT-3,Metamath; Lean; Isabelle; HOL Light,miniF2F,n/a,high,Benchmark of formal problems verified by proof assistants across systems.
+re1446fe9,A3,none,D1,F2,GPT-4.1; DeepSeek-V3.1,,ProofNet; ConNF; MiniF2F-test,n/a,low,Decomposition and library retrieval steer autoformalization; no checker verdict described in abstract.
+r56e37560,A2,empirical,D3,F7,GPT-4o; Gemini; Qwen2-VL-2B-Instruct; Aya-Vision-8B,grammar-constraint verifier,,n/a,low,Grammar-constraint verifier filters trajectories into notebook and adds accuracy at inference.
+r4e5a66e9,A6,exact,D1,F2,,Dafny,VeriEquivBench,n/a,medium,Benchmark whose equivalence score formally verifies generated specs and code with a verifier.
+rd03c7afc,A2,exact,D1,F2,,Lean compiler,PutnamBench,n/a,high,Tree search over proofs repairs errors using compiler/verifier feedback; verifier gives verdict.
+r69c23c69,A1,none,D5,F1,GPT-4o; Claude 3.5 Sonnet; o1-preview,,,no,medium,LLM formulates planning problems as optimization/constraints and a solver computes the plan; no checking loop in abstract.
+r40247491,A1,none,D3,F3,GPT-3 Codex,SQL; Python interpreter,WikiTableQuestions; TabFact,n/a,high,Codex writes Binder programs (SQL/Python with LM API calls) and the executor computes answers; single pass.
+rfc590f9c,A6,exact,D2,F1,GPT-4,FOL inference engine,FOLIO,n/a,high,Benchmark with FOL annotations verified by an inference engine; evaluates LLMs on reasoning and NL-FOL translation.
+r4317b7f6,A2,empirical,D4,F4,,,Feynman equations,n/a,low,"LLM proposes hypotheses in evolutionary SR; fit to data selects them; concept library reused. A2 by tree order, A4 contender."
+r99a7d5e9,A2,empirical,D3,F3,,Python executor,,n/a,medium,Execution results of each generated line annotate and guide LLM policy/value search; executor feedback selects partial programs.
+raae0bc6d,A5,none,D3,F3,,Python interpreter,programming puzzles,n/a,medium,Interpreter filters self-generated problems/solutions to build fine-tuning data; deployed model runs without it.
+raccc7bc2,A2,empirical,D7,F4,,MCTS; solver,,no,low,LLM builds MDP operator graphs via MCTS using solver feedback and syntax checks to select candidates.
+rf127ea2d,A2,exact,D1,F2,,Isabelle; Sledgehammer,PISA; miniF2F,n/a,low,Transformer premise selection feeds a prover whose proof assistant verifies proofs; verdict selects; retrieval-centred so A3 contender.
+r06b8d03f,A2,exact,D3,F7,,Synopsys Design Compiler; Yosys,RTL-Rewriter,n/a,medium,LLM rewrites RTL; formal equivalence checks and tests verify/filter candidates; symbolic FSM module also present.
+r195e1eaa,A4,empirical,D5,F3,,,,n/a,medium,"LLM synthesises behavioural programs kept as a hypothesis space reused across observations, weighted by probabilistic inference."
+r2f322bd6,A6,exact,D8,F5,,,MolecularIQ,n/a,medium,Benchmark whose tasks are symbolically verifiable on molecular graphs; symbolic checks certify answers.
+ra4657d5a,A2,exact,D1,F2,,UCLID5; compiler,,n/a,medium,LLM code is repaired by compiler techniques into an intermediate language and target; checker verdict drives repair.
+re2f26fb4,A2,exact,D1,F2,,Isabelle,miniF2F,n/a,medium,Proof assistant verifies proofs and lemmas that enter the skill library; verdict selects. A4 library reuse is secondary.
+r0fb6ebec,A4,none,D5,F3,,,,n/a,low,Skills as executable code are stored and regrounded by localized refactoring with an sLM; no verdict described.
+r6f4e1362,A2,empirical,D5,F3,,,,n/a,medium,Programmatic policies evaluated in simulation select candidates in evolutionary search with visual behaviour feedback.
+r794f5551,A6,exact,D3,F7,,LLVM verifier; equivalence checking,CIRBench,n/a,high,"Benchmark with verifier, equivalence checking and performance measurement certifying LLM IR rewrites."
+rb304055a,A6,empirical,D7,F4,T5; GPT; GPT-4; LLaMa,,,n/a,medium,Symbolic engine generates derivation data and perturbations used to evaluate LLMs; evaluation-focused.
+r66ce1dcb,A2,exact,D7,F2,Mistral-7B; Llama-2-7B; Llama-3.1-8B,Lean,MultiArith; SVAMP; AQUA,no,low,"Lean prover verdicts judge formalised reasoning, refine autoformalisation and serve as RL reward; A5 contender."
+r2962fbdc,A5,none,D6,F6,,differentiable symbolic reasoner,OpenPVSG; 20BN; MUGEN,n/a,medium,LLM-extracted logical specs train an STSG generator via differentiable reasoner loss; deployed model runs without it.
+r3ff6a766,A5,none,D3,F7,,SQL executor,WikiSQL; WikiTableQuestions; SQA; TabFact,n/a,high,SQL executor creates synthetic query-output corpus for pretraining; deployed model runs without executor.
+r982a2b15,A6,empirical,D8,F7,Llama-3.1-70B; GPT-4o,,ToMi; ExploreToM,n/a,medium,A* search over a DSL generates theory-of-mind data for evaluation and training; symbolic generator supplies answers.
+rd23a2890,A1,none,D7,F3,Qwen-2.5; GPT-4o; R1-CI-14B,Code Interpreter,,n/a,low,"Model writes code and interpreter computes answers during reasoning; trained with SFT/RL on answer reward. Multi-turn, A2 contender."
+r97819a7d,A2,exact,D1,F2,DeepSeek-Prover-V2,Lean; LeanScorer,Gaokao-Formal; MiniF2F,yes,medium,"Autoformalizer trained with RL using syntactic, semantic and prover feedback as reward; checker verdicts reward candidates."
+r9521135b,A1,none,D5,F6,,lifted regression planner,,n/a,low,LLM infers affordances and objects supplied to a symbolic lifted-regression planner that computes plans; no checking loop.
+r5b61b37f,A2,empirical,D6,F3,,Python interpreter,,n/a,low,"Generated modules tested on few-shot cases; passing ones enter library. Test verdict selects, so A2 by tree; A4 reuse contender."
+rb51f1ace,A2,exact,D1,F2,,Lean 4 compiler,PutnamBench,yes,high,Lean 4 compiler plus semantic checker iteratively refine LLM autoformalisations; feedback repairs outputs.
+rdaf96b33,A2,exact,D7,F2,,Lean4,,no,high,Lean4 prover verifies proofs of translated statements and the verification selects among LLM answers.
+r2dc08068,A2,empirical,D5,F6,GPT-4,PDDL planner,,no,medium,LLM generates PDDL refined iteratively from environment feedback; feedback repairs candidates before planner solves.
+ra87e0258,A6,empirical,D7,F4,GPT-4; GPT-3.5; BERT,,,n/a,medium,Symbolic engine generates and perturbs derivations to evaluate Transformers; evaluation framework.
+rbaaacf5e,A5,none,D3,F7,GPT-4o; Llama3,,,n/a,medium,"Benchmark is curated; symbolic methods generate synthetic fine-tuning data, so training-data transfer."
+ra4243bf4,A6,exact,D5,F6,OpenAI o1,,ACPBench,n/a,high,Benchmark built from formal planning domains with provably correct solutions.
+rbc712825,A2,empirical,D7,F3,,MILP solver,,n/a,low,LLM-written branching program skeleton is scored by solver end-to-end performance feedback; parameters optimised on it.
+rfff81209,A6,exact,D1,F2,GPT-4,symbolic execution,LIG-MM; SV-COMP; SLING,no,low,"Titled benchmark for loop invariants verified by verifiers; LLM-SE framework with symbolic execution also proposed, A2 contender."
+rba31435a,A5,none,D8,F7,,,LOGICNLG; CONTLOG,n/a,medium,Logical forms executed on tables create pretraining pairs; deployed generator runs without symbolic component.
+rc9f8b9ed,A2,exact,D1,F2,,Lean,,n/a,high,Lean verifies sampled proofs; expert iteration trains on verified proofs and inference proofs are checked.
+r254fcd16,A6,exact,D2,F1,,,SmartyPat-Bench; COIG-CQIA,n/a,medium,Benchmark using logic-programming test oracles to certify logical reasoning; abstract garbled.
+rb2fb6f12,A4,none,D8,F5,,,,n/a,medium,"LLM extracts temporal logical rules, stored and updated, then applied to TKG reasoning."
+re3325cde,A2,empirical,D6,F3,,,,n/a,low,VLM generates executable code; environment executes and gives feedback that guides and rewards training.
+r55b5226e,A2,empirical,D4,F4,,MCTS; linear model influence scores,LLM-SRBench,n/a,medium,LLM proposes basis functions; fit to data (influence scores) prunes and selects candidates within MCTS.
+r9eb18935,A6,exact,D1,F2,,Lean 4,FormalMath500; MiniF2F-Solving; PutnamBench-Solving,n/a,medium,Framework plus benchmarks for formal problem-solving; Lean certifies answers and proofs; evaluation of provers is the main contribution.
+rb21543ad,A7,none,D8,F1,LlamaGuard; OpenAI Mod,Markov logic networks; probabilistic circuits,TwinSafety,n/a,medium,Neural guardrail probabilities feed an MLN/PC logical reasoning core which makes the final moderation decision.
+r37271d3d,A5,none,D6,F3,,visual programming,SCOPE-Train; SCOPE-Test,n/a,medium,Symbolic visual programs evolved offline to synthesize training and test data; curriculum training; deployed MLLM runs without programs.
+r3c7d5693,A6,empirical,D1,F6,Llama 3.3; T5; Llama 3,model checking; formal grammar,VERIFY,n/a,low,"Dataset where LTL formulas are enumerated and verified by model checking, grammar-mapped; used to benchmark NL-LTL translation."
+r42a18596,A2,empirical,D4,F3,,FunSearch,,n/a,medium,LLM-written programs evaluated by fit to behavioural data inside evolutionary loop; fit selects candidates.
+r5bbab863,A6,exact,D1,F2,gpt-4o; DeepSeek-R1,Coq; Lean4; Dafny; ACSL; TLA+,,n/a,medium,"Dataset and evaluation of LLMs on formal verification tasks across spec languages, checked by verifiers; also fine-tuning."
+r38c79cfe,A3,none,D8,F7,GPT-3,context-free grammars,BenchCLAMP,n/a,medium,Benchmark whose grammars constrain decoding to valid outputs; grammar steers generation without verdict on correctness.
+r10c2acd2,A1,none,D3,F7,,SQL,,no,medium,"LLM writes SQL for quantitative table questions and execution computes the answer, single pass, combined with textual reasoning."
+r96d78357,A6,exact,D1,F2,Goedel; STP; Kimina-7B; DeepSeek-Prover-V2-7B; DeepSeek-Prover-V2-671B,Lean,Ineq-Comp,n/a,high,Benchmark of inequality problems for Lean provers; proof assistant certifies proofs.
+refa20322,A1,none,D7,F3,Codex; PaLM,Python interpreter,GSM8K; BIG-Bench Hard,no,high,"LLM writes programs as reasoning steps; Python interpreter computes answer, single pass."
+r870ab859,A1,none,D2,F1,,,MultiLogicNMR,unclear,low,Benchmark plus neural-symbolic framework; assumed LLM formalises NMR problem and solver computes extensions; abstract vague.
+rabbf7a51,A2,empirical,D3,F3,,,,n/a,low,"LLM generates heuristics, evaluated by execution on COPs; performance selects within evolutionary search."
+r546f708d,A2,exact,D2,F2,,Lean,FOLIO; ProofWriter,no,medium,LLM formalises logic problems into Lean and proves or disproves; Lean checks proofs.
+re742c2dc,A2,exact,D1,F2,,Lean; Isabelle,LeanWorkbook; miniF2F-test; ProofNet-test; PutnamBench,no,high,Verifier-checked proofs reward conjecturer and prover during online self-play and expert iteration.
+r6b8e53de,A2,empirical,D5,F3,,,RLBench,n/a,medium,Symbolic verification and interactive validation during code generation give feedback that repairs code for embodied planning.
+r1d000af2,A2,empirical,D5,F3,,,,n/a,medium,Execution failures analysed to induce symbolic constraints that drive code refinement; execution feedback repairs candidates.
+raff04329,A2,empirical,D2,F1,Macaw; LXMERT,weighted MaxSAT solver,ConVQA,n/a,low,MaxSAT solver over factor graph selects consistent answers among sampled candidates; verdict selects outputs.
+rb8890cb3,A3,none,D8,F7,,Earley algorithm; Formatron,,n/a,high,Grammar-constrained decoding masks tokens during generation; steers decoding with no verdict on output.
+r600a1210,A7,none,D8,F3,,symbolic planner; code execution,OneCommon,n/a,medium,LLM converts utterances to code for grounding; a symbolic planner decides the response.
+recc9142e,A5,none,D5,F6,,A*,Maze Navigation; Blocksworld,n/a,medium,"LM fine-tuned on search traces from symbolic search; deployed planner runs without search, except optional neuro-symbolic variant."
+r10020723,A1,none,D2,F1,GPT-4o; gpt-4o-mini,Answer Set Programming,ASP Competitions-based dataset,unclear,low,"LLM extracts structure, ASP with knowledge base computes answer; no clear checking loop."
+r5ad3a437,A2,empirical,D2,F1,,formal solver,,n/a,low,"LLM supplies commonsense assumptions, solver samples proofs; solver verdicts used to aggregate conclusions."
+r9acdeee6,A2,empirical,D5,F3,,,MuJoCo; BabyAI; AndroidWorld,n/a,medium,LLM evolves reward code; fit to expert trajectories scores and selects candidates in evolutionary search.
+r026d5bf1,A5,none,D7,F3,LLaMA-1 13B,program interpreter,,n/a,low,"Programs allow automated error checking of synthetic distillation data; mainly offline data creation, though step-wise verifying beam search exists."
+r8a87bae4,A2,exact,D7,F2,Minerva; GPT,Isabelle,GSM8K; MATH; MultiArith,no,medium,"Autoformalised solutions checked in Isabelle for consistency; inconsistent solutions rejected, filtering candidates."
+r3cb07e7e,A1,none,D2,F1,Llama 3.1 70B,constraint solver,ZebraLogicBench,no,high,"LLM formalises puzzle into Logic.py DSL; constraint solver computes answer, single pass."
+r9a191058,A6,exact,D1,F2,,Lean,CLEVER,n/a,high,Benchmark for verified code generation where Lean type checker certifies outputs.
+r2fc3d9ee,A2,empirical,D2,F1,,logic solver,,no,medium,Iterative loop using logic solver feedback to add LLM commonsense facts; solver verdict guides search.
+rd3d4524a,A2,exact,D1,F2,,Verus,,n/a,high,Formal verification signals reward proposer and solver during online self-play training.
+r9a70e448,A1,none,D3,F7,,automated theorem prover; parsing library,,n/a,low,"LLM synthesises code calling parsers and prover for dataflow analysis; tools compute facts, no iterative loop; prover validates path feasibility."
+r51bd51a2,A2,empirical,D7,F1,,MCTS; optimization solver,,n/a,medium,"LLM formulations translated to solver code; solver outcome feedback guides MCTS, selecting formulations."
+r8e52c498,A1,none,D6,F4,Phi3-Vision; LLaVA-13B; GPT-4o; Gemini Ultra,symbolic solver,MathVista; MathVerse; GeoQA; GNS-260K,no,medium,"MLLM produces symbolic parsing and reasoning, then a symbolic solver computes answers; single pass."
+re0440fca,A2,empirical,D4,F4,,linear regression; genetic programming; symbolic regression; mixed-integer programming,RSR-Bench,n/a,low,LLM agents propose query functions; fit and verification against data select candidates among symbolic backends.
+r0185a5bf,A5,none,D8,F3,Qwen2.5-7B; DeepSeek-R1,,,n/a,medium,Programs synthesise Turing-machine-style CoT training data offline; deployed model runs without them.
+r04590057,A6,empirical,D7,F4,GPT5; Gemini; Claude; DeepSeek; Llama,,CMT-Benchmark,n/a,medium,Benchmark whose answers are machine-graded against ground truth using symbolic manipulation.
+r0483d3f4,A3,none,D8,F1,DPO,,,n/a,low,Symbolic programs characterise preference losses and guide derivation of new losses; no verdict on outputs.
+r04874549,A3,none,D2,F1,,,,n/a,low,"Logical decomposition, search routing and resolution with symbolic expressions steer reasoning; unclear if engine computes answer."
+r05566fe9,A1,none,D7,F3,GPT-4o,,MM-Bench; MCM/ICM,no,low,Agent formulates model and writes code that computes solution; no explicit checking loop described.
+r0743526e,A1,none,D2,F1,,,,no,low,"Agents translate to symbolic languages and engines compute; debate aggregates answers, no symbolic verdict loop."
+r097b6972,A6,exact,D1,F2,,,FormalBench,n/a,medium,Benchmark where formal verification tools certify LLM-synthesised program specifications.
+r09aef02b,A6,empirical,D3,F7,GPT-4,,RobustAPI,n/a,medium,Benchmark checking API misuse in generated code via static analysis-style detector.
+r0de13fa8,A1,none,D7,F4,,calculator,Calc-X,n/a,medium,Model emits calculator calls in chain-of-thought; symbolic system computes results; no checking.
+r0e37ebda,A2,empirical,D6,F5,,,Video-Holmes; CG-Bench-Reasoning; VRBench,n/a,medium,Symbolic TRT primitives verify reasoning claims and supply per-claim rewards during RL training.
+r0e853bba,A1,none,D7,F7,,,ConvFinQA,no,low,Dataset with executable programs; neural-symbolic methods generate programs executed to answer.
+r0eb1bc7b,A7,none,D7,F4,,,,n/a,low,"Hidden states encoded to neurosymbolic vectors, computed in symbolic vector space, decoded back; symbolic core computes."
+r108ca371,A6,empirical,D2,F1,,,QUITE,n/a,low,Main contribution a Bayesian reasoning dataset with logic-based probabilistic reference answers.
+r16bb57d2,A1,none,D7,F3,GPT-4o; CoR-Math-7B,,MATH,no,low,Model produces algorithmic and symbolic reasoning paradigms whose outputs are synthesised; no checking loop stated.
+r19ae4fa3,A6,empirical,D4,F4,,code interpreter,NewtonBench,n/a,high,Benchmark of law-discovery tasks generated from symbolic laws with simulated systems.
+r232e4111,A3,none,D8,F1,,SAT solver,,n/a,low,CNF satisfiability over circuits steers which nodes are forgotten or retained in fine-tuning.
+r23bd7ed5,A4,empirical,D5,F3,GPT4V,,TEACh; VisualWebArena; Ego4D,n/a,high,VLM writes abstracted programs stored in memory and reused as exemplars across tasks.
+r24aed30a,A5,none,D8,F5,,,COM2,n/a,medium,Logical queries sampled from a knowledge graph create training data; models run without the graph.
+r266b0bb7,A6,empirical,D3,F7,TAPAS; TAPEX; ChatGPT,SQL query engine,QATCH,n/a,high,SQL engine generates the test checklist and expected answers for evaluating models.
+r26e072cc,A6,empirical,D2,F6,,,TRAC,n/a,medium,Benchmark of generated action-and-change problems with computed answers.
+r296c3ace,A6,none,D5,F3,,,X-Bench,n/a,low,Evaluation framework with LLM-generated executable environments grounding deterministic state.
+r29af79f6,A1,none,D3,F3,,,Arcade; BIRD-SQL,no,medium,"Retrieval narrows table, LM writes program that executes to answer; no iterative check."
+r2a0a856e,A6,empirical,D3,F7,,,STD,n/a,low,Evaluation framework for natural-to-formal conversion with semi-automatic sample construction.
+r2a5a5c5f,A3,none,D8,F7,,linter,,n/a,low,"Controlled-language grammar structures prompts; linter checks prompts, not final output."
+r2e90c051,A5,none,D2,F1,RuleTakers,,,n/a,medium,Symbolic reasoner generates synthetic data to train transformers that reason without it at deployment.
+r3229e1d7,A6,empirical,D2,F1,,SAT,RuleTaker; NLSat,n/a,medium,Methodology for building hard SAT-grounded datasets used to evaluate transformers.
+r3334bd82,A5,none,D1,F2,,,,n/a,low,LM trained on formal mathematical formulas; no symbolic component used at inference.
+r3372249e,A1,none,D7,F3,Llama3-8B; DeepMath-7B; ChatGPT,,MathFunc; SciToolBench,no,low,Model retrieves and calls executable functions that compute results; no checking loop.
+r37bdfec4,A5,none,D8,F3,,,,n/a,medium,Source code and grammar descriptions used as fine-tuning data; model runs without any symbolic component.
+r38f94f66,A3,none,D8,F1,GPT-2; GPT-3,NeuroLogic Decoding,Gen-A-tomic,n/a,medium,NeuroLogic logical constraints steer decoding; no verdict on final output.
+r3b5fd577,A2,empirical,D8,F3,Qwen2.5-7B-Instruct; Llama 3.1 8B Instruct; OLMo 2 7B Instruct,verifier programs,FollowBench; InFoBench; Arena-Hard; WildChecklists,n/a,medium,Verifier programs score responses and contribute rewards during RL training.
+r3c2b28df,A7,none,D8,F7,GPT-4 Turbo,Genie Worksheet runtime,,n/a,medium,LLM parses input and verbalises output; algorithmic runtime enforcing declarative policy makes decisions.
+r3c7effab,A4,none,D8,F5,,,TACRED,n/a,medium,PLM-prompted rule generator produces rules stored in a rule set and reused for labelling.
+r3d84f159,A5,none,D8,F7,Symbol-LLM,,,n/a,low,Symbolic-family data collection used for tuning; deployed model runs without symbolic tools.
+r4014d545,A2,empirical,D5,F3,,,HumanoidBench; Isaac Lab,n/a,medium,LLM-written observation/action code is run in RL; performance racing selects candidates.
+r40dfc799,A3,none,D8,F4,,,,n/a,low,Mathematical and logical function encodings built into the language model as inductive bias; garbled abstract.
+r432f1077,A6,empirical,D2,F1,,,,n/a,low,Study generating satisfiability problems by complexity class to evaluate transformer language models.
+r44448bcd,A1,none,D3,F3,GPT3.5; GPT4,AmadeusGPT API,MABe 2022,no,medium,LLM writes code against an API that is executed to compute behaviour analysis.
+r44b969bf,A1,none,D7,F3,,,,no,low,Study of callable programs and tutor steps for arithmetic induction; model offloads computation.
+r44da8b7e,A3,none,D3,F7,,,GeoQuery; SCAN; CLOSURE,n/a,low,Span-tree CKY parsing structures how partial programs compose; no verdict on outputs.
+r476a6958,A2,empirical,D7,F7,,DROP numerical modules,DROP,n/a,low,Executes heuristic program via modules; answer-matching reward trains policy online; weak fit to checker-in-loop.
+r47d55f71,A3,none,D3,F7,,,TabFact,n/a,medium,Derived logical-form program structures the graph and module network; no verdict on output.
+r49c87408,A5,none,D8,F7,,,C4; CodeParrot; DeepMind-Math; Needle-in-a-haystack,n/a,medium,Formal-language procedural data generated offline for pretraining; deployed model runs without symbolic component.
+r4a85d8ca,A3,none,D2,F7,,,,n/a,medium,Causal graph and state machine constrain reasoning transitions; no verdict on final output.
+r50ca5848,A3,none,D1,F2,,Lean 4; Mathlib4,miniF2F; ProofNet; AdvancedMath,n/a,low,Retrieval of formal definitions steers autoformalization generation; abstract reports no checker verdict loop.
+r52f1e169,A5,none,D2,F1,RuleBERT,,,n/a,medium,Soft Horn rules used to create training data and loss; fine-tuned PLM deployed without rules.
+r5475f752,A3,none,D3,F7,,,Spider,n/a,medium,Grammar-based SQL decoder constrains generation; no verdict on output.
+r56ca0cde,A2,empirical,D2,F1,,SAT,,n/a,low,Recursive model trained on Boolean satisfiability; solver-checked reward assumed but abstract unclear.
+r56e47a0d,A7,none,D6,F5,LVLMs,,,n/a,low,No abstract; title suggests LVLM grounds multimodal cues with symbolic decision core.
+r57be21b8,A6,empirical,D6,F1,GPT-4.1,,MuSLR,n/a,medium,Benchmark of formal-logic-grounded multimodal reasoning; LogiCAM secondary.
+r59461901,A4,empirical,D5,F6,,,,n/a,medium,Model invents neuro-symbolic predicates and abstract world models stored and reused for planning.
+r5aaa7eac,A2,empirical,D2,F1,,,NYT crossword corpus,n/a,low,Constraint satisfaction solver selects among model candidate answers by crossing constraints; main contribution is benchmark.
+r5b26433b,A2,empirical,D7,F3,,,,n/a,medium,"Corrector iteratively revises outputs using execution or constraint feedback, trained online."
+r5c6500ee,A3,none,D8,F7,LLMs,game solver,,n/a,low,Game solver equilibrium-finding with verbalized constraints steers LLM strategies; no verdict on outputs.
+r5e58413d,A6,empirical,D2,F5,,external tools for oracle math and logic operations,RuleArena,n/a,low,Benchmark of rule-guided reasoning with programmatically computed answers; tool oracle used as comparison.
+r5f005528,A6,empirical,D2,F1,,,,n/a,medium,Logic-puzzle benchmark with verifiable reasoning graph pipeline; evaluation main contribution.
+r5f4af8c0,A6,empirical,D8,F5,,Wikidata; symbolic verification,KGQAGen-10k; WebQSP; CWQ,n/a,medium,Benchmark construction with symbolic verification over Wikidata certifying QA instances.
+r5f4be8d2,A6,empirical,D2,F5,,,Test of Time,n/a,low,Synthetic temporal-reasoning benchmark generated programmatically with known answers.
+r612064d5,A6,empirical,D2,F1,,,,n/a,low,Controlled syllogism dataset built from logical forms to evaluate LLMs.
+r62b662a5,A3,none,D8,F1,,constraint programming,RADNER sentences,n/a,low,Constraint programming generates sentences; LLM perplexity only curates; symbolic part steers generation.
+r62e620ca,A6,empirical,D5,F6,,,Embodied Agent Interface,n/a,medium,"Benchmark formalising embodied tasks with symbolic-style evaluation of goals, subgoals, transitions."
+r69f94571,A1,none,D3,F7,Codex; GPT-3,,Overnight; SMCalFlow,no,low,Model writes meaning representations in one pass; evaluation of parse; no iterative checking.
+r6caabb12,A7,none,D6,F1,LLMs; VLMs,,Bongard-OpenWorld,n/a,low,Benchmark paper; neuro-symbolic approach has VLM grounding and logic reasoning decision; benchmark lacks symbolic oracle.
+r6e462a44,A5,none,D6,F1,MLLM,,,n/a,medium,Logic-constrained propose-and-verify data engine builds training states offline; deployed world model runs without it.
+r6ef82f88,A1,none,D1,F2,,,,unclear,low,Transformer translates LaTeX to formal semantic representation in one pass; no iterative checking.
+r70688c50,A1,none,D2,F1,,,,no,low,Evaluation of models writing formal-language solutions that engines execute; engines compute answers.
+r72a1c5d7,A1,none,D8,F1,,,TIMEDIAL,n/a,low,LM induces temporal logic dependencies; logic validator derives answer; single pass.
+r72b731d9,A3,none,D8,F4,LLaMA; LLaMA-2,genetic programming,,n/a,low,Symbolic metrics from genetic programming steer pruning; no model-written artifacts or verdict on output.
+r7528f105,A3,none,D8,F5,,,,n/a,medium,Linearized query structure and operation steps steer PLM encoding; no engine verdict.
+r7767563b,A1,none,D3,F3,,SQL; Python,NLQTSBench,no,medium,Model generates SQL and Python programs which execute to compute answer; single pipeline.
+r77fe4b2c,A5,none,D8,F1,,,,n/a,low,Logic theory distilled into deep model via training; parallel framework mostly training signal.
+r7ab95a4e,A6,empirical,D7,F5,,,GSM-DC,n/a,medium,Benchmark built from symbolic reasoning graphs with controlled distractors; tree search is secondary.
+r7ce7b370,A6,empirical,D5,F3,,,Factorio Learning Environment,n/a,low,Environment benchmark where agents write executed Python programs; game engine scores success.
+r7dae1df3,A2,empirical,D3,F3,,,CLRS-DFS,n/a,low,"LLM edits code, execution evaluation selects architectures in evolutionary loop."
+r7dc6cf73,A6,empirical,D2,F1,,,CogniLoad,n/a,medium,Synthetic logic-puzzle benchmark generated programmatically with known answers.
+r7f2dec68,A3,none,D8,F7,,,,n/a,medium,Grammar constrains inference and trains with derivation structure; no verdict on output.
+r81ae1cde,A7,none,D2,F7,,LKH-3,,n/a,low,VLM visually picks subproblems; off-the-shelf solver makes the optimisation decision.
+r831587da,A2,empirical,D5,F3,,,,n/a,medium,Code plans validated against tool specifications and pre/postcondition checks select candidates.
+r832b7a75,A1,none,D5,F7,,GTO solver,,n/a,low,Tool-integrated reasoning: model queries external poker solver which computes actions.
+r86cfc988,A3,none,D3,F7,,,Overnight,n/a,medium,Grammar-constrained decoding to canonical utterances steers generation; no verdict on output.
+r89bf1f29,A1,none,D8,F7,,,,no,medium,Model writes SCATE code; executable library computes normalisation; no iterative check.
+r8e6dfc90,A7,none,D8,F7,Mistral-7B; GPT-4,,,n/a,medium,Analytics engine produces facts deciding content; LLM only verbalises them into reports.
+r8e7dfae3,A1,none,D8,F1,,linear programming solver,,n/a,low,LLM agents set up game; LP solver computes equilibrium strategies; no checking loop.
+r8ec44e70,A3,none,D8,F1,,,,n/a,medium,Relational constraints steer generation of sequences; no verdict on final output.
+r9029ce04,A3,none,D8,F7,T5; NQG-T5,,,n/a,low,Grammar-based parser combined with T5 as guidance/fallback; no checking of outputs.
+r90e3d0ed,A6,none,D1,F2,,,FormalRx-Test,n/a,low,Main contribution is diagnostic benchmark/framework for autoformalization errors; symbolic certification only implicit.
+r918e50a0,A3,none,D8,F5,,,ToMi,n/a,medium,Symbolic belief graphs steer decoding-time reasoning of off-the-shelf LMs; no verdict on output.
+r94d6a563,A3,none,D2,F1,,,,n/a,medium,Global constraints shape generated proof structure at inference; no external verdict on output.
+r952489b8,A5,none,D8,F1,,,,n/a,low,Probabilistic logic supplies labels offline to train neural network; deployed network runs alone.
+r9581f567,A6,empirical,D2,F1,,,Mystery-Zebra,n/a,medium,Benchmark of generated grid puzzles with known solutions scoring LLMs.
+r95cd948b,A1,none,D8,F1,Llama 2,linear programming solver,DialogSum,n/a,low,LLM reasoner outputs feed LP solver that computes insights; no checking loop.
+r9982fc50,A3,none,D7,F7,,CoNN,,n/a,low,Compiled rule modules embedded in transformer steer symbolic operations; no verdict.
+r99ad3bbf,A1,none,D7,F3,,,CausalPitfalls,no,low,"Code-assisted protocol: model writes executable analysis code, interpreter computes; benchmark is secondary."
+r9a62e4ca,A1,none,D3,F7,TaBERT,,WikiTableQuestions; Spider,no,low,Semantic parser with TaBERT encoder writes programs/SQL that are executed for answers.
+r9a9fad08,A5,none,D2,F1,ChatGPT; PaLM 2,,,n/a,medium,Equivalent logical formulas used offline to augment training data; deployed model runs without them.
+r9c6c0db2,A1,none,D3,F3,,,WikiTableQuestions,no,medium,LLM writes symbolic programs executed to answer table questions; aggregated with textual reasoning.
+r9d4e6c64,A3,none,D8,F5,,,,n/a,medium,Schema-based constrained decoding steers generation of triplets; gives no verdict.
+r9d8363e3,A2,empirical,D3,F5,Llama-3.1-8B; GPT-3.5-turbo,,GrailQA,no,medium,KB environment executes logical forms stepwise; feedback and reward models guide MCTS search.
+r9eac6196,A2,empirical,D3,F3,Codex; AlphaCode,Parsel,APPS; HumanEval,n/a,high,Tests select among combinations of generated function implementations.
+ra0652471,A6,empirical,D3,F7,,,,n/a,low,Evaluation of LLM invariant prediction against program-analysis invariants; main contribution is study.
+ra14b1953,A2,empirical,D2,F7,,,,no,medium,Symbolic environment executes model outputs; feedback used as reward in self-training.
+ra65cf286,A2,empirical,D3,F7,,,,n/a,medium,DSL mapper code executed; execution feedback drives iterative LLM optimisation.
+ra6a7aa23,A6,empirical,D2,F1,,,FrontierCO; DIMACS; TSPLib,n/a,medium,Benchmark comparing ML solvers including LLM agents against classical solvers on CO instances.
+ra71d911c,A7,none,D5,F6,,,ALFRED,n/a,medium,Language and perception models ground inputs; symbolic planner and POMDP decide actions.
+ra7dc92c7,A6,empirical,D8,F7,,,SLOG; COGS,n/a,low,Benchmark whose grammar-generated semantic parsing items score models by output match.
+ra905e9a3,A3,none,D5,F6,,,Robotouille Synchronous; Robotouille Asynchronous; ALFWorld,n/a,low,Symbolic transition lookahead projects action effects to guide LLM planner; no verdict on output.
+raaede5d8,A6,empirical,D3,F3,GPT-4; Code Llama 34B,,CRUXEval; HumanEval,n/a,medium,Benchmark whose ground truth comes from executing Python functions.
+rab5f1bcb,A2,empirical,D3,F3,Codex,,,n/a,low,LLM repair candidates ranked and checked with language tooling; abstract is brief on checker.
+raccec608,A2,empirical,D3,F3,Qwen3-32B; Qwen3-32B-FIRE,,,n/a,medium,Execution feedback in stateful sandbox serves as RL reward and error recovery signal.
+rae1abcaf,A6,exact,D2,F7,,,,n/a,medium,Evaluation metrics where DFA ground-truth world model certifies sequences from generative models.
+rafb9a6d1,A6,empirical,D6,F5,,,CLEVR; CLEVR_HYP,n/a,low,Dataset built on CLEVR scene programs; contribution is benchmark with baselines.
+rb0ba00fc,A2,empirical,D5,F3,Llama2; Mistral,Python interpreter,API-Bank,n/a,high,Python interpreter executes code actions and returns observations for self-debugging revisions.
+rb45a4969,A2,empirical,D3,F3,,Security Verifier,,n/a,medium,Security Verifier iteratively validates generated FHE code and returns feedback for correction.
+rb6b49ed9,A3,none,D8,F7,,Pasta-Lang interpreter,,n/a,medium,Annotation language and interpreter structure decoding for parallelism; no verdict on content.
+rbb57251a,A1,none,D6,F7,,,,no,low,LLM issues queries over symbolic video memory via tools; answers computed; MCTS reward not symbolic.
+rbe76e7da,A4,none,D8,F7,GPT-3.5; GPT-4o; Claude-3-Sonnet; Claude-3-Haiku; Llama-3-8B; Llama-3-70B,h4rm3l DSL,,n/a,low,Synthesised DSL attack programs stored as reusable dataset and composed; no symbolic check of outputs.
+rbea0e4b3,A2,empirical,D7,F3,Llama-3.2 1B; Llama-3.1 8B,code interpreter,MATH,n/a,medium,Code interpreter filters candidate solutions before sLM verification at test time.
+rc06bef66,A3,none,D8,F1,ChatGPT,,,n/a,medium,Logic rules applied softly steer training/inference; ChatGPT only augments data.
+rc21396bd,A6,empirical,D2,F5,,,COLD,n/a,medium,Benchmark of causal queries generated from causal-graph structure and inference engine.
+rc399552f,A3,none,D2,F1,GPT4-o; Gemini 1.5,,,n/a,medium,Constraint conditioning steers sampling distribution to satisfy constraints; no verdict step.
+rc3acba99,A2,empirical,D6,F7,,,GeoPerceive,n/a,low,NL-to-DSL translator scores outputs against DSL targets; scores reward online RL training of the VLM.
+rc45c3000,A6,empirical,D2,F1,BERT; RoBERTa; XLNet,,LogicNLI,n/a,medium,Benchmark whose FOL problems and labels are generated by logic rules; models scored against them.
+rc4b6bb13,A5,none,D5,F7,,,,n/a,low,Abstract gives little symbolic detail; foundation-model feedback yields preference labels that train reward offline. Weak symbolic component.
+rc5a546c3,A3,none,D5,F7,,,,n/a,low,DSL-based hierarchical representation structures what the LLM designers generate; no verdict on outputs.
+rc6f43b68,A5,none,D6,F7,,,GeoQA; UniGeo; Geometry3K; PGPS9k,n/a,low,Formal geometric symbol corpora used as pre-training targets; no symbolic engine at inference stated.
+rca8a5faa,A1,none,D7,F4,,,GSM perturbation benchmarks,unclear,medium,Model abstracts GSM problems into symbolic form; symbolic tools derive the answer in a single pass.
+rcc2d7391,A6,empirical,D2,F1,,,,n/a,low,Evaluation of Transformer generalisation on numerical SAT instances with solver-derived labels.
+rccac804b,A1,none,D3,F7,,,,no,medium,Pretrained LM parses to grammar-based logical forms executed on the KB to produce answers.
+rcf10398e,A1,none,D2,F3,,,G-REAL; GraCoRe; NLGraph,no,medium,Agents map text to structured graph and select an algorithm that computes the answer.
+rcf704d95,A6,none,D3,F7,GPT,,,n/a,low,Evaluation study comparing GPT models with program induction systems on algorithmic concepts; weak interaction.
+rd1ceb921,A1,none,D2,F1,,,,yes,medium,LLM translates NL to FOL via code; translation evaluated on NL-FOL task and downstream tasks.
+rd3fc62e4,A2,empirical,D8,F3,,Python,MMMC,n/a,medium,Coder auto-fixes from execution errors and VLM critic refines code edits; execution feedback repairs candidates.
+rd458d236,A3,none,D8,F7,,,,n/a,low,"Neurosymbolic compositional parser; symbolic composition constrains outputs to well-formed DRT, no verdict."
+rd682920a,A5,none,D3,F7,,,,n/a,high,SCFG generates synthetic question-SQL pairs used only for pre-training offline.
+rd7186c82,A7,none,D8,F3,,Dolphin; Scallop,,n/a,low,Neural components perceive inputs; symbolic Python program does the reasoning and decides.
+rd7f0e1f1,A6,empirical,D8,F3,o3,Python Code Interpreter,STARK,n/a,low,Benchmark of spatiotemporal tasks scored against computed answers; models may use a code interpreter.
+rd998a870,A4,empirical,D3,F7,,L*,RegexLib; KB13,n/a,low,"LLM acts as noisy oracle; algorithm learns a DFA artifact from its answers, with equivalence oracle."
+rdbc215a2,A2,empirical,D2,F1,GPT-4o; DeepSeek-R1,,,n/a,medium,"RL rewards from feasibility and optimality checks on outputs, online; solver demonstrations only for SFT."
+re1b34ce5,A6,empirical,D7,F7,,,GSM8K; GSM-Symbolic,n/a,high,Benchmark generated from symbolic templates; answers matched to template-derived ground truth.
+re1c272a1,A6,empirical,D2,F1,,,,n/a,medium,Benchmarks of propositional-logic queries over KGs with logically derived answers; consistency evaluation.
+re266a131,A2,exact,D2,F1,gpt-3.5-turbo; gpt-4o,HSphNN,,n/a,medium,"Sphere neural network provides sound syllogistic verdicts on ChatGPT decisions and explanations, used to prompt improvement."
+re39dd720,A3,none,D8,F5,,,,n/a,medium,Symbolic logic rules prune search over neural commonsense KB queries; no verdict on output.
+re3f61547,A6,empirical,D2,F1,,,,n/a,low,Empirical study on controlled language fragments with satisfiability-defined labels.
+re468fcaa,A3,none,D8,F1,,,,n/a,high,Logical lexical constraints and heuristics steer decoding; no verdict on the final output.
+re4ee31bb,A1,none,D3,F7,,,GrailQA; WebQuestionsSP,no,low,PLM generates logical forms (constrained decoding) executed on KB for answers; could be A3 given constrained decoding.
+re63439d4,A6,empirical,D5,F1,GPT-5.2,,WorldTravel; WorldTravel-Webscape,n/a,medium,Benchmark whose constraints are checked symbolically for plan feasibility.
+re7e46a6a,A6,empirical,D7,F3,,,,n/a,low,Dataset with executable program solutions used to evaluate models; benchmark contribution.
+re9e67d00,A3,none,D3,F7,Codex; PICARD; T5,,,n/a,medium,AST-based partial programs structure prediction sets; no verdict on generated program.
+rea458d73,A1,none,D3,F3,,Python; Nightjar,,no,low,Natural code interoperates with Python program state; LLM writes variables and Python executes.
+reb0ef720,A6,none,D4,F4,,,ACD Repo,n/a,low,"Dataset collection for conjecturing, generated computationally; benchmark contribution."
+ree2d9e8b,A2,empirical,D7,F3,,Python interpreter,,n/a,medium,MCTS with execution-based answer rewards trains value model and selects reasoning paths.
+rf01d288d,A7,none,D8,F7,,,,n/a,low,Symbolic causal model with do-calculus makes detection decision; LLM role minor.
+rf15138cf,A3,none,D5,F5,CLIP,,,n/a,low,Scene graphs ground MLLM agent perception; symbolic structure steers input with no verdict.
+rf1f728de,A5,none,D6,F5,,,Charades-STA; ActivityNet Captions,n/a,low,Logical rules from LM-generated relation graph form training loss only; deployed model runs without.
+rf6977fbc,A2,empirical,D4,F3,,,,n/a,medium,"LLM proposes code models, fit to data gives feedback that iteratively refines candidates."
+rf784c201,A3,none,D8,F5,,,,n/a,medium,KG-derived logical rules guide chains of edits; no verdict on outputs.
+rf7949d7b,A6,empirical,D8,F4,,,AtmosSci-Bench,n/a,medium,Benchmark with template-based MCQs and symbolic perturbation; answers match computed ground truth.
+rf7f17a35,A2,empirical,D2,F1,,,,n/a,low,Search over LLM candidate answers selects those consistent with grid constraints; thin abstract.
+rf81bf1d9,A5,none,D3,F7,BERT; T5; GPT2,,WikiSQL-TS; WikiTable-TS; WikiSQL; WikiTableQuestions,n/a,low,Logical forms drive generation of topic-specific training data offline; re-ranker is neural.
+rf93088a9,A1,none,D6,F3,,,,no,low,"LLM synthesises visual programs executed with vision tools; verifiers are neural, not symbolic."
+rf95295b4,A1,none,D7,F3,,Python interpreter; symbolic solver,MMLU,n/a,low,Compares CoT with LLM writing plan and symbolic solver/tool computing answer; single pass translate-and-solve.
+rfd30bcab,A2,exact,D1,F2,GPT-f,Metamath; Lean,miniF2F-curriculum; Metamath held-out set,n/a,high,Proof search where proof assistant verifies each step; online training from verified proofs.
+rd7c735fb,A4,empirical,D8,F3,,,,n/a,medium,"Meta agent writes agents as code, stored in archive and reused; evaluated by running them on tasks."
+r148485c2,A1,none,D8,F5,,Braid reasoner,ROC Story Cloze,n/a,low,Logical reasoner with dynamically generated rules and neural unification; engine computes answer without checking loop.
+r7df7f9a4,A3,none,D5,F6,GPT2; GPT3.5,MCTS,,n/a,low,LLM-induced world model and policy guide MCTS search; symbolic search gives no verdict on LLM output.
+r3c0238e9,A3,none,D8,F7,GPT2,hidden Markov model constraint,CommonGen,n/a,high,Tractable probabilistic model imposes lexical constraints on decoding; steers generation without verdict.
+ra2c0bf92,A2,empirical,D4,F3,,,circle packing; AIME; ALE-Bench,n/a,medium,"LLM proposes programs, executed and scored; evaluation selects parents in evolutionary loop."
+rcfb50a1a,A5,none,D5,F6,ChatGPT,VirtualHome simulator,,n/a,high,Simulator experiences generated offline to finetune LMs; deployed model runs without simulator.
+re961d8e7,A2,empirical,D3,F3,,,,n/a,low,LLM hypotheses (rules/programs) selected by fit to observations; abstract does not state execution explicitly.
+r0d1db21b,A2,empirical,D6,F7,Claude 3; GPT-4V; DeTikZify,TikZ compiler,DaTikZv2; SketchFig; MetaFig,n/a,medium,MCTS inference iteratively refines TikZ programs using compile and render feedback as reward.
+r6bbccaf3,A2,empirical,D6,F3,,,Nr3D,n/a,medium,LLM-generated spatial code is evaluated and optimised automatically in a pipeline; execution feedback repairs code.
+r6e8e4460,A2,empirical,D3,F3,,,,n/a,medium,"LLM writes feature code, executed and kept based on validation performance, iteratively."
+r5fa5fe64,A3,none,D8,F1,,,,n/a,low,"LM proposes NL hypotheses reweighed by Bayesian prior and likelihood; formal procedure ranks candidates, weak symbolic."
+r12a103a9,A2,exact,D1,F2,DeepSeek-Prover-V2-671B; Kimina-Prover-Preview-72B,Aesop,miniF2F; ProofNet; PutnamBench,no,high,Draft-sketch-prove with autoformalised subgoals; proof assistant and Aesop search verify proofs.
+r071b9de9,A1,none,D3,F7,,,MultiHiertt,n/a,low,MT2Net retrieves facts then generates symbolic reasoning program executed to compute answer; benchmark has no symbolic oracle.
+r5402cb8c,A2,empirical,D3,F5,,decision tree,,n/a,medium,"LLM generates feature rules, validation scores and decision-tree feedback drive iterative rule improvement."
+r40769616,A6,empirical,D1,F2,,operator trees; TransTED,EPLA; miniF2F; ProofNet,n/a,low,Main contribution is evaluation metric and benchmark for autoformalised statements using symbolic operator trees and provability labels.
+re2d8a330,A3,none,D5,F1,,,Atari,n/a,low,Neuro-symbolic RL policy blending logic and neural policies; no LM in abstract; symbolic rules shape policy.
+rbc584267,A1,none,D3,F7,,,HiTab,no,low,Hierarchy-aware logical form generated and executed over tables to compute answer; dataset is main contribution.
+rdf7ff99c,A5,none,D3,F7,BART,PCFG,GeoQuery; Spider,n/a,high,PCFG-sampled programs and BART utterances synthesise training data offline for parser.
+rec5b0aa1,A2,empirical,D5,F3,,,ALFWorld; MiniWoB++,n/a,medium,Code-style plans executed in environment; feedback refines plans in closed loop; skill discovery secondary.
+r6fb3f71a,A3,none,D3,F7,CodeT5,static analysis,,n/a,medium,Static analysis builds contexts for CodeT5 type prediction; no verdict on output.
+rcafa340f,A1,none,D2,F1,,NL2ASP; CNL2ASP; ASP,,unclear,high,"NMT translates NL to CNL then ASP code; ASP solver computes answers, single pass."
+rff5b35b6,A2,exact,D1,F2,Goedel-Prover-V2-8B; DeepSeek-Prover-V2-7B,Lean,MiniF2F-Test; ProofNet-Test,no,high,Online RL with Lean verification as reward; composer and solver trained adversarially.
+r1bc4b29c,A1,none,D7,F3,MAmmoTH; WizardMath; GPT-4,Python interpreter,MathInstruct; MATH,n/a,medium,Model writes program-of-thought; interpreter computes answer; instruction tuning data is hybrid.
+r4b908b19,A2,exact,D1,F4,,,,n/a,low,Algebraic inequality proof search with value model; symbolic reasoning verifies proofs and selects; LM role unclear.
+r9d99f611,A2,empirical,D4,F3,,,Warfarin pharmacokinetic dataset,n/a,medium,"LLM proposes dynamical-system models, validated by fit to data, iteratively refined."
+r1538bbd5,A2,empirical,D2,F1,,constraint reasoner,,n/a,medium,"Constraint reasoner minimises contradictions in belief graph, filtering and repairing answers."
+r44d73521,A3,none,D8,F1,,,,n/a,low,Benchmark of knowledge as constraints for learning; constraints guide models via loss or inference; no oracle.
+r1476b927,A1,none,D3,F3,,Python interpreter,ARC,n/a,medium,Inductive model writes Python programs executed to produce outputs; no explicit checking loop stated.
+r526acd74,A3,none,D8,F1,,,,n/a,medium,Predicate-logic lexical constraints steer beam search decoding; no verdict on final output.
+rf20ecae4,A6,empirical,D3,F3,,,SpreadsheetBench,n/a,medium,Benchmark where generated spreadsheet code is certified by executed test cases like online judge.
+r804cd20b,A6,empirical,D5,F6,,,Blocksworld,n/a,medium,Evaluation study on planning domains with programmatically generated problems and checkable plans.
+r2d498f4d,A6,empirical,D2,F1,,,,n/a,high,Synthetic programmable deduction dataset with controlled proof complexity; symbolic generation certifies answers.
+ra1fa04f4,A4,none,D3,F5,,,,n/a,medium,LLM writes feature rules once and reuses them at inference without further LLM calls.
+r12a060a4,A2,empirical,D8,F3,GPT-4o,MCTS,,n/a,medium,LLM edits code workflows; MCTS with execution feedback selects workflows.
+rf832bdef,A6,empirical,D7,F1,,,MathGAP,n/a,high,Data-generation framework creates problems and reasoning traces from specified proof trees for evaluation.
+r164e3a2d,A2,empirical,D4,F4,,simulation,,n/a,medium,LLM proposes equations or structures; simulation gives feedback and optimises parameters in bilevel loop.
+r8eded823,A1,none,D3,F3,,,,n/a,low,"LLMs write programs from examples that are executed; study of PBE ability, no iterative loop stated."
+rc1250f1e,A1,none,D6,F7,LLaMA; CLiMA; GPT-4; Claude 2,TikZ compiler,DaTikZ,n/a,medium,Model writes TikZ code compiled to graphics; single-pass translation without checking loop.
+re1993505,A1,none,D5,F3,,simulators,,n/a,medium,Model generates robot control code that is executed to act; no iterative checking loop described.
+r1612bafd,A2,empirical,D2,F5,,Monte Carlo inference,Zendo,n/a,low,"Proposed rules are scored against experiment outcomes, driving belief updates and revision; could be read as A4."
+r36b9fd34,A2,empirical,D3,F3,GPT-3.5; GPT-4; StableCode-3b,,HumanEval; MBPP; xCodeEval; MATH,n/a,medium,Execution behaviour of candidate functions determines consensus selection among candidates.
+r54c1186a,A1,none,D7,F7,,,UniGeo,n/a,low,Model generates program sequences for geometry problems that are executed to produce answers; benchmark co-contribution.
+r596cca2a,A6,exact,D1,F2,,,ProofNet; Con-NF,n/a,low,Main contributions are a prover-based equivalence metric and benchmark; also a retrieval autoformalizer.
+r8265ef4f,A6,exact,D1,F2,,Lean 4,ProofNet; ProofNet#; RLM25; ProofNetVerif,n/a,medium,Benchmarks and prover-grounded metric for evaluating autoformalization; evaluation is the main contribution.
+r6fbf3493,A6,empirical,D2,F1,,,R-GSM; GSM8K,n/a,low,Evaluation of premise-order effects on deductive and math benchmarks with ground-truth proofs; answer matching.
+rb5019997,A2,empirical,D5,F3,GPT-4,,,n/a,medium,Reward code candidates are evaluated by RL training outcomes and selected evolutionarily.
+r5877c953,A6,exact,D1,F2,,Lean,miniF2F; miniF2F-v2,n/a,high,Benchmark revision with verified formal statements and proofs; evaluates autoformalization plus proving pipeline.
+rdec717b7,A2,empirical,D3,F7,,,,n/a,low,"Discriminator verdicts select or correct candidates via re-ranking, iterative correction, tree search; text-to-SQL execution."
+r010070ef,A3,none,D7,F3,Codex; Llama-2,,GSM8K; AQuA; StrategyQA,n/a,low,Self-evaluation steers beam search decoding; no symbolic verdict on final output.
+r33e16ff8,A6,exact,D1,F2,,Lean 4; Isabelle; Coq,PutnamBench,n/a,high,Benchmark of formalized problems checked by proof assistants for evaluating theorem provers.
+rfcd51f39,A4,empirical,D5,F6,,,,n/a,low,"LLM hypothesizes abstract world model of subgoals, stored and reused by agent; verified by experience."
+r78a681e5,A2,exact,D1,F2,,,,no,high,LLM proposes program invariants and automated reasoners check them in a sound verification procedure.
+rac50ef23,A3,none,D8,F7,,,,n/a,medium,Finite state machines constrain structured output decoding; no verdict on output.
+rd6ab748e,A1,none,D7,F7,,,GeoQA; GeoQA+,n/a,medium,Model generates program tokens that are executed to solve geometry problems; single pass.
+rdfb101fb,A2,exact,D1,F2,,,miniF2F,n/a,high,Proof search checked by proof assistant interleaved with training on found proofs.
+rfaf1d4ce,A4,none,D5,F3,GPT4; Code Llama,,,n/a,low,LLM writes simulation task programs stored in a growing library and reused for policy training.
+rb24d901d,A2,empirical,D3,F3,code-davinci-002,,,n/a,high,Learned verifier uses execution results to rerank and prune sampled programs.
+re66c4b28,A6,empirical,D2,F1,BERT; T5,,,n/a,low,Study of learning logical reasoning on a space with exact logic-defined ground truth; evaluation-oriented.
+ra142c48f,A4,none,D8,F3,GPT-4; GPT-3.5,,Big-Bench,n/a,high,LLM writes Python utility tools that are cached and reused across later requests.

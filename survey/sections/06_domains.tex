@@ -1,0 +1,47 @@
+\section{RQ2: Domains, Formalisms and Their Association with Architecture}
+\label{sec:domains}
+
+\begin{table*}[t]
+\centering
+\caption{Task domain $\times$ integration architecture, with check strength (ex.\ = exact, emp.\ = empirical). Shading is proportional to the count.}
+\label{tab:domainarch}
+\footnotesize
+\input{tables/tab_domain_arch}
+\end{table*}
+
+Table~\ref{tab:domainarch} cross-tabulates domains and architectures. Architecture is moderately associated with domain: Cram\'er's $V=\cnt{Vall}$, bias-corrected $V=\cnt{Vcall}$~\cite{bergsma2013bias}, against a mean of \cnt{Vnullall} under the permutation null; no permuted table reached the observed $\chi^2$ in \cnt{npermall} shuffles ($p<0.001$). Part of an association like this could be definitional: theorem proving is defined by proof assistants, and vision-language studies might gravitate to perception interfaces. Excluding these two domains (D1 and D6) leaves the association unchanged (bias-corrected $V=\cnt{Vcsens}$, null mean \cnt{Vnullsens}). Formalism is, as expected, much more strongly tied to domain (bias-corrected $V=\cnt{Vcform}$). In the pilot, a smaller sample overstated the architecture--domain association; with \cnt{included} studies, ``moderate'' is the accurate description.
+
+\begin{table}[t]
+\centering
+\caption{Symbolic formalisms.}
+\label{tab:formalism}
+\footnotesize
+\input{tables/tab_formalism}
+\end{table}
+
+\subsection{Theorem proving and autoformalisation (D1, \cnt{D1} studies)}
+D1 is the domain of exact checking: \cnt{D1exact} of its \cnt{D1} studies receive a sound verdict, almost all from Lean or Isabelle. Checker-in-the-loop is the dominant architecture (\cnt{D1A2}). Its lineage runs from proof search with pretrained tactic models~\cite{han2022proof,lample2022hypertree,polu2023formal} through hammers and premise selection~\cite{jiang2022thor,mikua2024magnushammer} and retrieval-augmented provers~\cite{yang2023leandojo} to reinforcement learning from proof-assistant feedback~\cite{xin2025deepseek,lin2026goedel,xin2026scaling}. Recent work adds self-play conjecturing~\cite{dong2025stp,wilf2026propose}, growing lemma libraries~\cite{wang2024lego}, agentic repair~\cite{requena2026minimal,ospanov2025apollo} and recursive informal-to-formal decomposition~\cite{jiang2023draft,varambally2026hilbert}. Autoformalisation forms a second strand~\cite{wu2022autoformalization,li2024autoformalize,chen2026reform,cabral2026proofflow}, and formal software verification in Verus, Dafny and Isabelle a third~\cite{wu2024lemur,lin2024fvel,aggarwal2025alphaverus,chen2025automated}. D1 also has the most evaluation studies after D2 (\cnt{D1A6}), which increasingly test the benchmarks themselves~\cite{ospanov2025minif2f,ammanamanchi2026faults,poiroux2025reliable}. Section~\ref{sec:evaluation} shows what the shared benchmark reveals.
+
+\subsection{Logical and deductive reasoning (D2, \cnt{D2} studies)}
+D2 is the evaluation-heavy domain: \cnt{D2A6} of its studies are symbolic-oracle benchmarks. They use solvers, provers and logic programs to generate problems with certified answers at controlled difficulty~\cite{saparov2023language,lin2025zebralogic,qi2025large,wei2025satbench,xu2026socrates}, or to measure properties beyond accuracy such as efficiency~\cite{opedal2025language} and self-verification~\cite{stechly2025self}. Among methods, checker-in-the-loop designs (\cnt{D2A2}) outnumber translate-and-solve pipelines (\cnt{D2A1}). The translate-and-solve line formalises text into first-order logic, SAT or answer-set programs for an external engine~\cite{olausson2023linc,ye2023satlm,alviano2025integrating,jurayj2026language}. The checker line verifies or repairs the model's reasoning with a prover or solver~\cite{quan2024verification,ryu2025divide,feng2026vericot,schrader2026solver}. Synthetic logic corpora that train models to reason form a third line (A5, \cnt{D2A5})~\cite{clark2020transformers,morishita2024enhancing,wang2025logictree}. Checks in D2 are mostly empirical (\cnt{D2empirical}) rather than exact (\cnt{D2exact}), because the checker usually certifies consistency or the answer rather than the translation.
+
+\subsection{Program synthesis and structured data (D3, \cnt{D3} studies)}
+D3 spans three architectures. Execution-checked synthesis (A2, \cnt{D3A2}) covers programming by example, abstraction learning and LLM-driven algorithm or heuristic design~\cite{wang2024hypothesis,li2025combining,stengeleskin2024regal,liu2024evolution,ye2024reevo}. Translate-and-solve (\cnt{D3A1}) dominates table question answering~\cite{cheng2023binding,cao2023api,abhyankar2025h}. Symbolic guidance (\cnt{D3A3}) collects grammar-constrained decoding and static analysis~\cite{scholak2021picard,wang2023grammar,wei2023typet5,barke2024hysynth}. Exact checks are rare (\cnt{D3exact}) and come from verified transpilation and formal equivalence checking~\cite{bhatia2024verified,lee2024guess}.
+
+\subsection{Mathematical problem solving (D7, \cnt{D7} studies)}
+D7 is where program-aided reasoning lives. Translate-and-solve (\cnt{D7A1}) covers PAL-style programs~\cite{gao2023pal}, tool-integrated reasoning agents and their training data~\cite{gou2024tora,wang2024mathcoder,toshniwal2024openmathinstruct}, and optimisation modelling, in which the model writes a solver model~\cite{astorga2025autoformulation,yang2025optibench}. Checker-in-the-loop (\cnt{D7A2}) adds execution feedback and verification during training or inference~\cite{zhou2024solving,xiong2025building,feng2026retool}. It also adds formal checks of informal solutions: autoformalising a model's answer and verifying it in Lean~\cite{zhou2024don,yao2025fans,ospanov2026hermes}. Symbolic perturbation benchmarks show how brittle informal mathematical reasoning is~\cite{mirzadeh2025gsm,opedal2025mathgap}.
+
+\subsection{Embodied planning and agents (D5, \cnt{D5} studies)}
+D5 is the domain of reusable artifacts. A4 is more common here (\cnt{D5A4}) than in any other domain: models induce PDDL domains, predicates, programmatic world models and reward machines that agents reuse~\cite{tang2024worldcoder,liang2026exopredicator,liang2025visualpredicator,ye2025unidomain,castanyer2026arm}. Checker-in-the-loop (\cnt{D5A2}) uses planners, simulators and execution to validate plans or code-as-policies~\cite{silver2024generalized,mahdavi2024leveraging,ahn2025reliable}. Translate-and-solve (\cnt{D5A1}) hands formalised tasks to classical planners or solvers~\cite{hao2025planning,huang2025planning}. Exact checks are rare (\cnt{D5exact}), because success in an environment is an empirical signal.
+
+\subsection{Language, knowledge and data (D8, \cnt{D8} studies)}
+D8 is the stronghold of symbolic guidance (\cnt{D8A3}): constrained decoding with logic, grammars and automata~\cite{lu2021neurologic,zhang2023tractable,beurerkellner2024guiding,ahmed2025controllable,suresh2025dingo}, semantic parsing~\cite{shin2021constrained,herzig2021span} and language models augmented with symbolic functions~\cite{demeter2020just}. Data synthesis and consistency training against rules form the A5 group (\cnt{D8A5})~\cite{calanzone2025logically,li2025codeio,jiang2026procedural}.
+
+\subsection{Vision-language and multimodal (D6, \cnt{D6} studies)}
+D6 is spread across architectures. Translate-and-solve (\cnt{D6A1}) covers visual programming and program-based question answering~\cite{subramanian2023modular,hsu2023s,kamali2026neptune}. Generated modules are filtered by execution in A2 (\cnt{D6A2})~\cite{chen2024genome,belouadi2024detikzify}. Perception interfaces to a symbolic core make up A7 (\cnt{D6A7})~\cite{naik2025dolphin,chen2026vlms,he2026unveiling}, and logic benchmarks make up A6~\cite{gao2023lora,xu2025muslr}. Grounding open-vocabulary symbols is a recurring motivation~\cite{kamali2025nesycoco,sinha2026concept}. No D6 study has an exact check.
+
+\subsection{Symbolic regression and discovery (D4, \cnt{D4} studies)}
+In D4 the model acts as a proposal operator inside an evolutionary or agentic equation search, and fit to data is the check (\cnt{D4A2} A2 studies, all empirical)~\cite{shojaee2025sr,grayeli2024symbolic,xia2026sr,pang2026deliberate}. Symbolic equivalence and concept libraries make the search more efficient~\cite{jiang2026egg,grayeli2024symbolic}. Benchmarks are new and few~\cite{shojaee2025srbench,zheng2026newtonbench}. Rule R1 excludes transformer models trained from scratch on synthetic equations, which is why this large adjacent literature is not counted here.
+
+\subsection{Formalisms}
+General-purpose programs (F3, \cnt{F3}) and logic (F1, \cnt{F1}) are the most common representations, followed by DSLs, grammars and static analysis (F7, \cnt{F7}) and proof assistants (F2, \cnt{F2}); see Table~\ref{tab:formalism}. Formalism tracks domain closely: \cnt{D1F2} of the \cnt{D1} D1 studies use a proof assistant, \cnt{D2F1} of the \cnt{D2} D2 studies use logic, and planning languages are concentrated in D5 (\cnt{D5F6} of \cnt{F6} studies).

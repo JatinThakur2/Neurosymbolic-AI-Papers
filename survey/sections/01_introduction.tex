@@ -1,0 +1,29 @@
+\section{Introduction}
+\label{sec:intro}
+
+Neurosymbolic AI pursues systems that learn from data like neural networks and reason with explicit structure like symbolic programs~\cite{garcez2023neurosymbolic,kautz2022third,deraedt2020statistical}. For most of the last decade its flagship techniques were differentiable or probabilistic logics trained end to end with perception networks~\cite{manhaeve2018deepproblog,yang2020neurasp,huang2021scallop}. Pretrained language models changed the question. A model can now write the formal specification~\cite{wu2022autoformalization,olausson2023linc}, propose the next proof tactic~\cite{polu2020generative,yang2023leandojo} or generate a program~\cite{gao2023pal,cheng2023binding}, and an exact engine can then check, execute or solve what it wrote. The central design decision has moved from \emph{how to make logic differentiable} to \emph{how to divide labour between a pretrained model and an exact engine}.
+
+The literature on this division of labour is large and fast-moving but reported piecemeal. Recent surveys organise it narratively~\cite{yang2025neuro,cheng2025empowering,rani2025advancing}, and the most recent systematic review of neurosymbolic AI~\cite{colelough2025neurosymbolic} does not single out language models. Basic questions therefore lack evidence-based answers. Which integration patterns exist and how common are they? Does the pattern depend on the task? Which models, engines and benchmarks does the community use, and how often are results reproducible? Has the field shifted over time, or is the apparent growth an artefact of terminology?
+
+This paper answers these questions with a \emph{scoping review}~\cite{arksey2005scoping} reported according to PRISMA-ScR~\cite{tricco2018prisma}. A scoping review maps the extent and nature of a body of evidence rather than pooling effect sizes, which matches our aim. We define the population as work published at ten top-tier venues---AAAI, IJCAI, ICLR, ICML, NeurIPS, ACL, EMNLP, NAACL, TMLR and IEEE TPAMI---between 2020 and 2026, because these venues set the methodological agenda of both the machine-learning and the NLP communities and fix a quality floor. We include every study in which a language model and an explicit symbolic component \emph{interact}.
+
+\subsection{Research questions}
+\begin{itemize}
+  \item[\RQ{1}] \emph{Architectures.} What architectures connect language models to symbolic components, how often is each used, and what kind of check does the symbolic side provide?
+  \item[\RQ{2}] \emph{Tasks and formalisms.} Which task domains and formalisms do the architectures serve, and is architecture associated with domain?
+  \item[\RQ{3}] \emph{Evaluation and reproducibility.} Which models, engines and benchmarks are used, what do studies report about the faithfulness of formalisation, and how often are artifacts released?
+  \item[\RQ{4}] \emph{Trends.} How has the area changed from 2020 to 2026 once growth in the venues themselves is accounted for?
+\end{itemize}
+
+\subsection{Contributions}
+\begin{enumerate}
+  \item \textbf{A recall-audited evidence base.} An abstract-level search of \cnt{sourceb} accepted papers, combined with a curated corpus, backward snowballing and a stratified audit of non-retrieved records, yields \cnt{included} studies and a quantified estimate of search recall (Sections~\ref{sec:method}--\ref{sec:selection}).
+  \item \textbf{A transparent, double-coded taxonomy.} Seven integration architectures assigned by an ordered decision tree, a check-strength attribute, eight domains and seven formalisms, each coded twice independently with per-axis agreement (Sections~\ref{sec:taxonomy}--\ref{sec:domains}).
+  \item \textbf{Evidence on evaluation practice.} Open-vocabulary extraction of models, engines and benchmarks; coded reporting of formalisation faithfulness; a web-verified estimate of artifact release; and a results-level view of the most shared benchmark (Section~\ref{sec:evaluation}).
+  \item \textbf{Venue-normalised trends} with a terminology control (Section~\ref{sec:trends}) and a research agenda grounded in the coded evidence (Section~\ref{sec:challenges}).
+  \item \textbf{A replication package.} Every screening and coding decision, every prompt given to an LLM reviewer and a dependency-free pipeline that regenerates every number in this paper from public sources at fixed commits.
+\end{enumerate}
+
+We are explicit about one methodological choice throughout: screening and coding were performed by LLM-based reviewers under a fixed protocol, with independent double assessment and adjudication. Section~\ref{sec:method-ai} describes the arrangement and Section~\ref{sec:validity} its limits.
+
+Section~\ref{sec:background} positions the study. Section~\ref{sec:method} describes the protocol. Sections~\ref{sec:selection}--\ref{sec:trends} report results for \RQ{1}--\RQ{4}. Section~\ref{sec:challenges} sets out open challenges, Section~\ref{sec:validity} threats to validity, and Section~\ref{sec:conclusion} concludes.

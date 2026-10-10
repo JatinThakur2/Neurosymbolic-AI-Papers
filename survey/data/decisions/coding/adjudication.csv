@@ -1,0 +1,231 @@
+rid,architecture,check_strength,domain,formalism,faithfulness_reported,evidence,rationale
+r96e8617a,A2,empirical,D2,F1,n/a,web: https://aclanthology.org/2024.acl-long.512.pdf (adjudicated by the orchestrating assistant),"Full text: Prolog chaining builds training data and rule-based conflict detection checks and feeds back outputs at inference; consistency check, not correctness."
+r010070ef,A1,none,D7,F3,n/a,abstract,"Self-evaluation guiding beam search is neural, not symbolic; PAL-style programs executed by interpreter compute answer, so A1."
+r0185a5bf,A5,none,D8,F7,n/a,abstract,"Synthetic CoT imitates Turing machine execution traces; the representation is an automaton, hence F7."
+r026d5bf1,A1,none,D7,F3,n/a,abstract,"Deployed distilled model still emits programs executed for answers, so not A5; single-pass execution gives A1."
+r04590057,A6,empirical,D4,F4,n/a,abstract,Research-level condensed matter physics problems are scientific rather than mathematical word problems; D4.
+r04ccb8d7,A3,none,D8,F1,n/a,abstract,MDD is a constraint-programming structure for a combinatorial constraint model; F1 constraints.
+r0743526e,A1,none,D2,F1,unclear,abstract,Abstract stresses translation accuracy via debate but does not say whether formalisation accuracy is reported separately.
+r07e1479f,A2,exact,D1,F2,yes,abstract,Prover trained via Isabelle-checked proof search (expert iteration); 25.3% perfect formalisation rate reported separately.
+r0a224728,A2,empirical,D5,F6,n/a,web: https://arxiv.org/html/2510.04542v1,Full text: CWM refined with unit tests from trajectories until transition accuracy 1.0; executor verdicts repair code. Code world model is F6.
+r0c37875c,A1,none,D7,F3,n/a,abstract,"Execution results feed computations into reasoning, not verdicts that select or repair; A1, no check."
+r0ca252d5,A2,empirical,D5,F3,n/a,abstract,Executed precondition code filters policy-predicted actions; A2 precedes A4 in the tree.
+r0e853bba,A6,empirical,D3,F7,n/a,abstract,Main contribution is a dataset whose answers come from executing annotated programs; table-based financial QA is D3.
+r0eb1bc7b,A1,none,D7,F4,n/a,abstract,"Hidden states translated into neurosymbolic vectors where computation is done and decoded; single-pass translate-and-compute, A1 precedes A7."
+r1048a4cd,A5,none,D2,F1,n/a,abstract,FOL parsing/filtering builds training data offline; fine-tuned LogicLLaMA translates without a symbolic engine at inference.
+r10c2acd2,A1,none,D3,F7,n/a,abstract,"SQL for table extraction is executable query code, not a formalised statement; faithfulness n/a."
+r125d996b,A2,exact,D5,F6,n/a,abstract,"Symbolic Validator checks plans formally against a symbolic domain model, a sound verdict relative to the model."
+r12a060a4,A2,empirical,D8,F3,n/a,abstract,"Evaluation spans QA, code and math benchmarks, not embodied or agent environments; D8."
+r1476b927,A2,empirical,D3,F3,n/a,abstract,Inductive programs are sampled and kept only if they execute correctly on ARC training examples; execution filter.
+r148485c2,A7,none,D8,F5,n/a,abstract,Symbolic probabilistic reasoner controls proofs; neural models only supply fuzzy unification and missing rules on demand.
+r1538bbd5,A1,none,D2,F1,n/a,abstract,"LLM materialises belief graph; MaxSAT reasoner computes consistent assignment and answer in one pass. Beliefs are NL, so faithfulness n/a."
+r1612bafd,A2,empirical,D2,F5,n/a,abstract,Zendo-style rule induction is a logical inductive puzzle; D2 over scientific discovery.
+r16bb7249,A7,none,D2,F1,n/a,abstract,"SLD solver controls the proof and calls the LLM only to ground missing facts; symbolic core decides, A7."
+r195e1eaa,A2,empirical,D5,F3,n/a,abstract,LLM-written behavioural programs are executed and weighted by fit to observations; selection by data fit precedes A4.
+r1e19fe7e,A1,none,D7,F1,no,abstract,"Optimisation-modelling word problems fit D7; the main representation is an LP/MILP constraint model, F1."
+r232e4111,A5,none,D8,F1,n/a,abstract,SAT solution over circuit CNF offline sets fine-tuning targets; unlearned model runs without the solver.
+r23bd7ed5,A4,empirical,D5,F3,n/a,abstract,"Abstracted programs are validated by execution in the environment before entering memory; simulator success, empirical."
+r24171a33,A2,exact,D2,F1,unclear,abstract,Abstract does not say who formalises steps or whether formalisation accuracy is reported separately; unclear.
+r24638dca,A2,empirical,D5,F6,yes,abstract,Paper evaluates quality of GPT-4-generated PDDL domain models (errors per action) separately from planning success.
+r24f1bc06,A2,exact,D2,F1,n/a,abstract,MaxSAT gives formal consistency verdict over belief constraints; protocol lists consistency under D2.
+r24fa22be,A7,none,D2,F1,n/a,abstract,Resolution engine over the KB controls inference; small NLI LM only supplies entailment judgments inside theory resolution.
+r254fcd16,A6,empirical,D2,F1,n/a,abstract,Logic-program oracles produce reference answers matched against LLM outputs; answer matching is empirical.
+r26369457,A6,exact,D2,F1,n/a,abstract,Solver re-execution and IIS recomputation give a sound feasibility verdict on the repaired model.
+r263c8b5d,A1,none,D2,F1,unclear,abstract,Abstract silent on separately measured axiom or formalisation accuracy; reasoning correctness reported but unclear.
+r296c3ace,A6,empirical,D5,F3,n/a,abstract,"Executable code grounds deterministic environment state, so outcomes are simulator-based; empirical."
+r29af79f6,A1,none,D3,F3,n/a,abstract,"Model writes executable table-manipulation programs, not formal statements; faithfulness n/a."
+r2a0a856e,A6,empirical,D8,F7,n/a,abstract,"Natural-to-formal conversion with unfamiliar formal languages is a semantic-parsing NLP capability study, not program synthesis; D8."
+r2a248128,A2,empirical,D5,F5,n/a,abstract,Executable rule code predicts outcomes and corrects LLM-planned actions in the MPC loop; A2 precedes A4.
+r2b00fd98,A1,none,D7,F1,no,abstract,"Optimisation-modelling word problems treated as D7, consistent with related optimisation-modelling records."
+r2f322bd6,A6,empirical,D4,F5,n/a,abstract,"Answers compared to symbolically computed ground truth (answer matching); chemistry is scientific domain, D4."
+r2fc3d9ee,A2,exact,D2,F1,no,abstract,Logic solver proof gives a sound formal verdict on the final answer given the augmented theory.
+r30b45561,A1,none,D2,F6,unclear,abstract,"Human corrections to generated action-language programs hint at formalisation errors, but separate accuracy reporting is not stated."
+r3334bd82,A6,empirical,D1,F2,n/a,abstract,"Contribution is training task plus evaluation tasks on formal formulas; main scoring is answer matching, provability check secondary."
+r3372249e,A1,none,D7,F3,n/a,abstract,"Model calls Python tool functions, not formal statements; faithfulness n/a."
+r34aac216,A2,empirical,D2,F3,n/a,abstract,Most of 30 benchmarks are BBEH algorithmic and relational reasoning tasks; D2.
+r35472553,A5,none,D6,F7,n/a,web: https://arxiv.org/pdf/2602.18745,Full text: seeds are AlphaGeometry-style geometric predicates and plotting code is a JSON-like DSL; F7.
+r36baffd2,A2,empirical,D2,F3,n/a,abstract,"SymBench consists mainly of symbolic puzzles, planning and constraint tasks; D2."
+r36bbb89f,A2,empirical,D4,F3,n/a,abstract,Hypotheses in equation and algorithm discovery are mostly code-represented; F3 as main representation.
+r3750b732,A2,exact,D5,F2,no,abstract,"Evaluated objects are agent trajectories for safety, constraint adherence and deception; agent oversight is D5."
+r37d6a8c5,A2,empirical,D2,F3,n/a,abstract,"Textual rules executed via task-specific interpreters, largely as programs; model writes rules, not formal statements, so faithfulness n/a."
+r396c252d,A2,empirical,D2,F3,n/a,abstract,"Evaluation is large-scale MILP solving, a combinatorial constraint problem; D2."
+r39d81df4,A4,none,D8,F5,n/a,abstract,"Mined head-body logic rules from data form a rule base injected into prompts; rule representation, F5."
+r3b85cca1,A2,empirical,D7,F1,n/a,abstract,"Mapping checked by feasibility/optimality preservation on instances, which can pass wrong mappings; mappings are not formalisations of text."
+r3bc832b4,A3,none,D8,F7,n/a,abstract,"Semantic parsing to meaning representations is an NLP task, not program synthesis or structured-data QA."
+r3c0238e9,A3,none,D8,F1,n/a,abstract,Lexical constraints are propositional (CNF) keyword constraints whose probability the HMM computes; logic is the main representation.
+r3c7effab,A5,none,D8,F5,n/a,abstract,"Tree order: rules only label training data offline for the task model, which runs without them; A5 precedes A4."
+r40247491,A1,none,D3,F3,n/a,abstract,"Model writes executable programs, not formalisations or logical statements, so faithfulness is n/a."
+r40f32cd4,A2,empirical,D3,F3,n/a,abstract,"Agent iterates Python sandbox execution with result feedback and validation, which repairs candidates; execution check is empirical."
+r443beac1,A2,empirical,D5,F1,no,abstract,Hypotheses are logical rules validated by symbolic (logic-programming) tools; logic is the main formalism.
+r44448bcd,A1,none,D6,F3,n/a,abstract,"Evaluation is video/pose behaviour analysis with vision modules; model writes code, not formal statements, so faithfulness n/a."
+r44b969bf,A5,none,D7,F3,n/a,abstract,"Final method trains LMs on tutor-generated step demonstrations, deployed without tutor; callable programs are only a tested baseline."
+r44da8b7e,A3,none,D8,F7,n/a,abstract,"GeoQuery, SCAN, CLOSURE are compositional semantic-parsing tasks, an NLP domain rather than program synthesis."
+r476a6958,A1,none,D7,F7,n/a,abstract,"Model picks discrete program actions executed by symbolic modules to compute answers; answer-matching reward is gold supervision, not checker."
+r47c448cd,A6,exact,D2,F1,n/a,abstract,"Labels are all consistent label lists derived by logical enumeration, so scoring is a sound formal verdict."
+r49db4138,A3,none,D2,F1,n/a,abstract,"Prolog-style backward chaining steers LM decomposition and retrieval; LM generates reasoning content, not just grounding; no symbolic verdict."
+r51721b5d,A6,empirical,D7,F3,n/a,abstract,Main demonstrations centre on math (GSM8K) via Python symbolic representations; mixed benchmarks but math dominates.
+r51bd51a2,A2,empirical,D7,F1,no,abstract,"Model writes mathematical formulations, so faithfulness applies; formulation accuracy not reported separately in abstract."
+r52f1e169,A5,none,D2,F1,n/a,abstract,Soft Horn rules form probabilistic logic programs whose reasoner labels data; logic is the formalism.
+r5402cb8c,A2,empirical,D3,F3,n/a,abstract,"Generated feature rules are executed as code on tables; decision tree is feedback, not the main representation."
+r54c1186a,A1,none,D7,F7,n/a,abstract,Calculation and proving sequences are geometry DSL operator programs executed by an interpreter.
+r56ca0cde,A5,none,D2,F1,n/a,abstract,Model reasons recursively without a solver at inference; symbolic procedure plausibly only supplies SAT training traces.
+r56e37560,A2,empirical,D6,F7,n/a,abstract,VLM-based retrieval over 3D CAD assemblies is a multimodal task.
+r56e47a0d,A7,none,D6,F1,n/a,abstract,"No abstract; neuro-symbolic logic layer over LVLM-extracted cues assumed, logic retained as formalism."
+r58786fe5,A7,none,D2,F1,n/a,abstract,Latent activations are grounded into propositions; logical rules decide conclusions that steer output; A7 precedes A3.
+r59461901,A4,none,D5,F6,n/a,abstract,Invented predicates and world models are reused for planning; no symbolic check on final output.
+r59c39e16,A1,none,D7,F1,no,abstract,Main representation is the optimisation model (constraints) solved by a solver; code is only the vehicle.
+r5ad3a437,A2,exact,D2,F1,no,abstract,"Solver proves conclusions from LLM-supplied assumptions, accepting sampled proofs; proofs are formally checked; formalisation accuracy not reported."
+r5b61b37f,A2,empirical,D6,F3,n/a,abstract,Few-shot tests filter generated modules before library entry; tree puts A2 before A4.
+r5b626332,A1,none,D2,F3,n/a,abstract,"SymBench-style tasks mix math, logic, optimisation and search puzzles; D2 fits best."
+r5f46bb8d,A1,none,D6,F3,n/a,abstract,"Model writes Python programs, not formal statements; faithfulness not applicable."
+r5f4be8d2,A6,empirical,D2,F5,n/a,abstract,"Synthetic temporal data generated from random graph structures with temporal edge facts, not a temporal-logic formalism."
+r5fa5fe64,A2,empirical,D2,F3,n/a,abstract,NL hypotheses scored by likelihood on observed data (executed programs) and reweighted; data fit selects candidates.
+r600a1210,A1,none,D8,F3,n/a,abstract,"LLM translates utterances into executable code; execution plus planner computes the move; A1 precedes A7. Dialogue task, text-only LLM."
+r62b662a5,A3,none,D8,F1,n/a,abstract,"CP constraints generate the text; LLM only ranks by perplexity; not perception or verbalisation, so not A7."
+r633d08ff,A2,empirical,D7,F1,no,abstract,Optimisation-modelling word problems (NL4Opt etc.) solved via solver; closest to D7.
+r645b6f6a,A2,empirical,D6,F4,no,abstract,"VLM writes executable IR formalising schematic; formal statement, separate IR accuracy not reported in abstract."
+r66ce1dcb,A5,none,D7,F2,n/a,abstract,Lean judges synthetic training data and gives training feedback; evaluated model runs without prover.
+r690877a5,A2,exact,D5,F1,n/a,web: https://arxiv.org/html/2602.08373,"Safety ontology is OWL 2 DL with Pellet reasoner: description logic, F1."
+r698b51ae,A2,empirical,D3,F3,n/a,abstract,Execution verifies and filters refactored abstractions; tree order puts A2 before A4.
+r69f94571,A1,none,D3,F7,no,abstract,Semantic parsing into executable meaning representations and dataflow programs; structured-data family D3.
+r6bbccaf3,A2,empirical,D6,F3,n/a,abstract,"Generated spatial code evaluated and optimised automatically; evaluation verdict selects code, A2 before A4."
+r6e19b6fe,A5,none,D1,F2,n/a,abstract,Lean filters offline training data; deployed model output not checked; none typical for A5.
+r6e462a44,A5,none,D6,F6,n/a,abstract,Validation against clinical and temporal logic; temporal logic is F6.
+r6ef82f88,A6,empirical,D1,F4,n/a,abstract,"Main contribution task and dataset of LaTeX expression semantics; syntax/semantic-aware evaluation; no engine computes answers, so not A1."
+r6f24e47d,A6,exact,D1,F2,n/a,abstract,LeanEuclid benchmark evaluating GPT-4 with SMT-based automatic semantic equivalence checking of formalisations.
+r7145390a,A2,empirical,D4,F4,n/a,abstract,LLM-SR loop scores expressions by data fit selecting candidates; e-graph enriches that feedback.
+r71d4ad74,A2,empirical,D7,F1,no,abstract,Main representation is constraint/optimisation formulations solved by solvers; F1 as for optimisation modelling.
+r71e26edf,A2,exact,D1,F2,yes,web: https://arxiv.org/html/2510.24592,PBSO RL task reward requires Lean compiler pass; Lean verdict rewards candidates in online training; sem metric reported.
+r722fd25d,A6,empirical,D2,F1,n/a,abstract,Main contribution is graded evaluation methodology; formal engine scores induced theories; A6 first in tree.
+r72a1c5d7,A3,none,D8,F1,n/a,abstract,"Temporal logic induction modules structure LM reasoning, trained self-supervised; no formal engine computes answer from model-written formula."
+r72b731d9,A5,none,D8,F4,n/a,abstract,Symbolic metric search done offline; pruned LLM deployed without it.
+r764cc16d,A2,exact,D1,F2,no,abstract,"Deployed SLM invariants still checked by verifier at test time, so not A5; verifier verdict on outputs."
+r7767563b,A1,none,D3,F3,n/a,abstract,"Model writes SQL/Python programs, not formal statements or logical forms; faithfulness not applicable."
+r77fe4b2c,A3,none,D8,F1,n/a,abstract,"Logic theory shapes joint training and predictions of deep model; not purely offline distillation, so A3 over A5."
+r785313e9,A2,exact,D1,F2,n/a,abstract,Distinctive symbolic interaction is formal proving with Lean/Isabelle checking proofs; proof search checked by assistant is A2.
+r78a681e5,A2,exact,D1,F1,no,abstract,"Invariants are logical formulas checked by SMT/model-checker based verifiers on C programs, not a verification language; F1."
+r78dff49d,A1,none,D2,F1,n/a,abstract,"LM writes natural-language explanations, not formal statements; MAX-SAT relations from NLI, so faithfulness n/a."
+r7ab95a4e,A6,empirical,D7,F4,n/a,abstract,Reasoning graphs encode arithmetic dependencies between quantities; symbolic math expressions fit better than rule/knowledge graphs.
+r7b7ccf8c,A2,empirical,D2,F1,no,abstract,"SAT equivalence checks select translations by consistency, not correctness against the NL problem; can pass wrong formalisations, so empirical."
+r7b852e9f,A2,exact,D1,F2,yes,abstract,Lemma-wise formalisation checked by Lean compiler; step lemmas likely proved/accepted under assistant verdict; loop uncertain without full text.
+r7c99d329,A2,empirical,D4,F3,n/a,abstract,"LLM evolution writes Python interestingness programs; Fermat environment fitness selects candidates, so A2 precedes A4; F3."
+r7d61d023,A5,none,D1,F2,n/a,abstract,Lean-based synthesis is offline data creation; deployed prover's output not checked by method's symbolic component; protocol typical none.
+r7f0629ef,A1,none,D6,F1,no,abstract,LLM writes predicate-logic programs (first-order logic style) executed by differentiable predicates; logic over DSL.
+r804cd20b,A6,exact,D5,F6,n/a,abstract,"Blocksworld plans are validated by a sound plan validator, giving a formal verdict on final output."
+r81ae1cde,A7,none,D2,F1,n/a,abstract,Off-the-shelf TSP solver is combinatorial/constraint optimisation; closest to F1.
+r823909fa,A2,empirical,D2,F3,n/a,abstract,"Main evaluation is solving MILP and SAT combinatorial problems; code is vehicle, so D2 constraint problems."
+r832b7a75,A1,none,D5,F7,n/a,abstract,Model issues solver query with game state; external solver computes GTO action single-pass; A1 precedes A7 in tree.
+r86cfc988,A3,none,D3,F7,n/a,abstract,Overnight semantic parsing to executable KB queries belongs to structured-data query generation family; D3.
+r870ab859,A6,empirical,D2,F1,n/a,abstract,Synthesised NMR benchmark with solver-derived extensions is lead contribution; framework details unclear from abstract.
+r8c4ab443,A3,none,D3,F7,n/a,abstract,KBQA via S-expression query plans is structured-data query generation (D3); main representation is query DSL (F7).
+r8e7dfae3,A1,none,D8,F1,n/a,abstract,"LLM agents formulate game and call LP solver which computes equilibrium answer; single pass, A1 precedes A7."
+r8eded823,A6,empirical,D3,F3,n/a,abstract,"Main contribution is evaluation of LLMs on PBE; programs certified by execution on examples, empirical."
+r9029ce04,A3,none,D3,F7,n/a,abstract,"Semantic parsing to SQL/logical forms (GeoQuery, Spider) is structured-data domain; D3."
+r92b5842f,A6,empirical,D2,F1,n/a,abstract,Optimisation modelling of MILPs is constraint-problem domain rather than math word problems; D2.
+r94d6a563,A3,none,D2,F1,n/a,abstract,"Symbolic component is ILP global constraints over proof graphs; rules are natural language, so F1."
+r9521135b,A1,none,D5,F6,no,abstract,"LLM writes affordances as symbolic facts (formal statements); abstract reports no separate accuracy of them, so no."
+r95cd948b,A7,none,D8,F1,n/a,abstract,"LLM scores data against attributes; LP solver decides assignment and LLM verbalises insights; no formal representation written, so A7."
+r96f2cdc6,A2,empirical,D2,F3,no,abstract,Cryptic crossword clues are word puzzles; puzzles fall under D2.
+r99ad3bbf,A6,none,D3,F3,n/a,abstract,Main contribution is a benchmark; code-assisted protocol is one evaluation mode. Statistical data analysis fits D3; LLM-judge grading gives no symbolic check.
+r9a65906c,A4,empirical,D5,F6,n/a,abstract,Python program is a symbolic world model used with a planner; F6 names symbolic world models.
+r9a70e448,A1,none,D3,F7,no,abstract,"Core task is dataflow (static) analysis with parser-based extraction; model also writes Z3 path conditions, so faithfulness applies, not reported."
+r9c6c0db2,A1,none,D3,F3,n/a,abstract,"Model writes executable programs, not formal statements; faithfulness not applicable."
+r9c943530,A2,empirical,D4,F4,unclear,abstract,LLM formalises formulas from papers into code; extraction accuracy separately reported is not clear from abstract.
+r9d8363e3,A2,empirical,D3,F7,no,abstract,Logical forms are S-expression query DSL; KB itself not used for logical inference.
+r9d99f611,A2,empirical,D4,F4,n/a,abstract,Discovered artifacts are dynamical-system equations (ODE models); main representation symbolic expressions.
+r9ef2cbd8,A2,exact,D1,F7,n/a,abstract,Symbolic geometry engine verifies propositions as formal proofs; D7 excludes formal proofs.
+r9f9a50fe,A2,empirical,D3,F7,n/a,abstract,"SQL is the end product of text-to-SQL, not a formalisation scored separately; faithfulness not applicable."
+ra0652471,A5,none,D3,F7,n/a,abstract,"Model fine-tuned on dynamic-analysis invariants then predicts statically without the tool; method, not benchmark."
+ra0ff25e4,A5,none,D3,F7,n/a,abstract,Semantic parsing to executable meaning representations; coded D3 consistently with other semantic-parsing records.
+ra142c48f,A4,none,D2,F3,n/a,abstract,"Evaluated on Big-Bench reasoning puzzles (logical deduction, tracking, scheduling); D2."
+ra14b1953,A2,empirical,D8,F3,n/a,abstract,"General self-training framework across web-agent, math and logic domains; D8 data synthesis; programs mainly Python, faithfulness n/a."
+ra4243bf4,A6,empirical,D5,F6,n/a,abstract,Model answers scored by matching against planner-certified answers; answer matching is empirical.
+ra4657d5a,A2,exact,D1,F2,yes,abstract,"Target is UCLID5 formal verification language (D1, F2); semantic correctness reported separately from syntactic validity."
+ra6f72f2f,A1,none,D7,F4,n/a,abstract,"Single pass: LLM states select operation, OccamNet computes the answer; A1 precedes A7."
+ra79fa313,A2,empirical,D2,F1,no,abstract,Model writes ASP formalisations; separate formalisation faithfulness not evident from abstract.
+raa04f2fb,A1,none,D6,F3,n/a,abstract,Executed code computes image operations and calculations; no symbolic verdict selects or repairs; RL reward is answer-based.
+rab5f1bcb,A3,none,D3,F7,n/a,web: https://arxiv.org/pdf/2208.11640,"Compiler diagnostics only steer localization prompts; ranking by token log-probability, no compile check selects fixes."
+rabcc2a78,A2,empirical,D7,F1,no,abstract,Optimisation models are constraint formulations; F1 consistent with other optimisation-modelling records.
+raccc7bc2,A2,empirical,D7,F4,unclear,abstract,Formulation quality assessed but separate formalisation accuracy unclear from abstract.
+radf94b79,A4,empirical,D5,F6,n/a,abstract,Programmatic experts form a symbolic world model used by a planner; F6.
+rae1abcaf,A6,exact,D8,F7,n/a,abstract,DFA ground truth gives sound validity verdict on generated sequences; main framing is evaluating generative models' world models.
+raef94006,A1,none,D7,F3,n/a,abstract,"Trained models still use code interpreter at inference to compute answers, so A5 condition fails."
+raff04329,A7,none,D2,F1,n/a,abstract,"MaxSAT jointly decides answers from QA and NLI beliefs (symbolic core decides, no verdict on correctness); consistency evaluation fits D2."
+rb083b075,A1,none,D3,F3,n/a,abstract,Code interpreter computes graph results for agent; no verdict selecting or repairing outputs; graph structured-data reasoning.
+rb1f7e919,A2,exact,D1,F2,n/a,abstract,"Model writes proofs for given formal statements, not formalisations; faithfulness not applicable."
+rb3299d36,A2,empirical,D3,F3,n/a,abstract,"LLM synthesises heuristic operator code evaluated by execution; program synthesis of heuristics, D3."
+rb5a2b99a,A2,exact,D1,F2,n/a,abstract,LLM writes Isabelle proofs; code-to-Isabelle translation not by LLM formalisation; faithfulness n/a.
+rb7db1232,A2,empirical,D3,F1,n/a,abstract,"Distinctive symbolic component is MaxSAT fault localisation; tests alone would not qualify under R4, so F1."
+rb8890cb3,A3,none,D3,F7,n/a,abstract,"Evaluated on JSON, schema-constrained and semantic-parsing structured outputs; D3 structured data."
+rba31435a,A5,none,D3,F7,n/a,abstract,Table-to-text over tables with table logical forms; tables fall under D3.
+rbba59ac8,A1,none,D5,F6,unclear,abstract,"LLM writes PDDL schemas, planner computes plans; ranking is semantic not symbolic; A1 precedes A4. Full text unavailable (rate limited)."
+rbc712825,A2,empirical,D3,F3,n/a,abstract,"LLM discovers branching-policy programs scored by solver performance; heuristic program synthesis, D3."
+rbd25dbcd,A2,empirical,D7,F1,no,abstract,Natural-language optimisation modelling word problems solved via solver programs; D7.
+rbecc6e76,A3,none,D3,F7,n/a,abstract,"Static-correctness constraints prune during tree search, steering generation like grammar constraints; no verdict on final output."
+rc28f5ba2,A2,exact,D3,F2,no,abstract,"Equivalence proofs checked by a verifier are the key symbolic representation; formal verification language, F2."
+rc361829b,A2,empirical,D2,F1,n/a,abstract,"Rule-based verifiers check puzzle constraint satisfaction of model answers; puzzles as constraints, F1."
+rc36311bf,A2,empirical,D2,F1,no,abstract,"Abstract reports end accuracy and verification precision, not formulation faithfulness separately."
+rc399552f,A3,none,D8,F1,n/a,abstract,"General controllable LM generation; detoxification primary, Sudoku secondary; D8."
+rc4b6bb13,A7,none,D5,F1,n/a,web: https://arxiv.org/html/2509.15607v2,"Probabilistic Soft Logic fuses LLM/VLM judgements into preference labels; symbolic core decides; PSL weighted logic rules, F1."
+rc4d1bc76,A1,none,D3,F7,n/a,abstract,"Model writes SQL programs for table transformation, not formal statements; faithfulness n/a."
+rc55bb913,A1,none,D7,F3,n/a,abstract,"PAL Python programs, not formal statements; faithfulness n/a."
+rc5a546c3,A3,none,D4,F7,n/a,abstract,"Experimental protocol design for self-driving labs is scientific discovery, D4."
+rc6ef1832,A6,exact,D2,F1,n/a,abstract,Main contribution is an empirical evaluation where sound verifiers certify answers; A6 precedes A2.
+rc6f43b68,A1,none,D6,F7,n/a,abstract,"GeoX generates formalised solution programs executed by a solver; single pass, not only pretraining targets."
+rc8d2888b,A3,none,D1,F2,n/a,abstract,"Method is an attention regulariser; Lean checks only in evaluation, so no symbolic check in the method."
+rcafa340f,A1,none,D2,F1,unclear,abstract,"NL graph problem specifications to ASP; constraint/combinatorial problems, D2."
+rccac804b,A1,none,D8,F7,no,abstract,"Conversational QA over a large knowledge base is knowledge QA, D8."
+rcddfd23f,A2,empirical,D3,F7,n/a,abstract,CodeIt programs are written in an ARC domain-specific language of primitives; DSL fits F7 better than general Python.
+rcde627a9,A3,none,D6,F6,n/a,abstract,"Temporal-logic model checking selects video segments (steers retrieval); VLM gives final answer, so symbolic core does not decide."
+rcee8d9a3,A2,exact,D1,F2,yes,abstract,ATP-proved equivalence over type-checked Isabelle/Lean statements is a sound formal verdict used for selection.
+rcf10398e,A1,none,D3,F3,n/a,abstract,"Graph algorithm computation over structured graphs is structured data (D3); model writes graph data and code, not formal statements."
+rcf704d95,A6,empirical,D3,F7,n/a,abstract,Model outputs scored by matching against outputs of symbolic concept programs; answer matching is empirical.
+rd1889b16,A2,empirical,D5,F6,n/a,abstract,Programs validated against PDDL training tasks via plan validation; PDDL domains are the defining symbolic representation.
+rd23a2890,A1,none,D2,F3,n/a,abstract,"Interpreter computes intermediate results within reasoning; no verdict loop selecting or repairing outputs; 144 reasoning/planning tasks, D2."
+rd3d4524a,A2,exact,D1,F2,no,abstract,Proposer writes formal Verus specifications; no separate faithfulness measurement reported.
+rd3fc62e4,A2,empirical,D6,F3,n/a,abstract,"Output and evaluation are visual educational videos judged by VLMs; multimodal, D6."
+rd458d236,A1,none,D8,F7,yes,abstract,Neural parser predicts AM terms; algebra evaluation computes DRT (A1 precedes A3); parsing accuracy reports formalisation quality directly.
+rd68cad81,A1,none,D5,F3,n/a,abstract,Code LLM writes policy programs executed in environment; A1 precedes A4 in the tree; no checking loop.
+rd6a28a29,A2,empirical,D7,F3,n/a,web: https://arxiv.org/html/2601.22365v1,"Floating-point verification functions return bound results and bottleneck regions driving refinement; numerical, not formal, check; math problem solving."
+rd6ab748e,A1,none,D7,F7,n/a,abstract,"GeoQA programs are a domain-specific operator language, consistent with F7 for GeoQA-style programs."
+rd7186c82,A7,none,D6,F3,n/a,abstract,"Most benchmarks are image and video perception tasks feeding symbolic programs; multimodal, D6."
+rd7c735fb,A2,empirical,D8,F3,n/a,abstract,"Execution scores select agents into archive (A2 precedes A4); evaluation on reading comprehension, math, science QA, so D8."
+rd7f0e1f1,A6,empirical,D8,F3,n/a,abstract,"CPS spatiotemporal sensor reasoning fits no specific domain; not discovery, so catch-all D8."
+rd881ed06,A2,empirical,D2,F1,n/a,abstract,"Rule-based constraint-satisfaction verifier on puzzles is answer checking, not a formal certificate; empirical."
+rd998a870,A7,none,D3,F7,n/a,abstract,LLM serves as noisy membership oracle; symbolic L* learner builds the DFA and decides; LLM writes no artifact.
+rdf0ed85b,A2,exact,D1,F2,no,abstract,"Loop invariants checked by a program verifier; formal software verification languages, F2."
+re0013edf,A1,none,D4,F6,yes,abstract,"PDE control is applied scientific/engineering computation, not embodied agents; D4."
+re0ae613c,A1,none,D2,F1,unclear,abstract,"Solver computes answers from LLM SMT formalisations rather than certifying answers, so A6 does not apply; separate formalisation accuracy unclear."
+re0d57e54,A2,empirical,D8,F6,no,abstract,"Symbolic world model checks consistency of candidates; can pass wrong outputs, so empirical; model writes logical forms."
+re1b34ce5,A6,empirical,D7,F4,n/a,abstract,Templates instantiate symbolic mathematical expressions for questions and answers; F4.
+re2d8a330,A4,none,D5,F1,n/a,web: https://arxiv.org/html/2410.11689,GPT-4o generates FOL action and blending rules reused in the policy via differentiable forward reasoning.
+re4ee31bb,A1,none,D8,F7,no,abstract,"Large-KB question answering (GrailQA, WebQSP) is knowledge QA, D8."
+re961d8e7,A2,empirical,D3,F3,n/a,web: https://arxiv.org/html/2412.13422,"Benchmarks are List Functions, MiniARC, MBPP+, Playgol-str: programming by example; hypotheses executed as Python functions."
+re9cc5a89,A6,empirical,D3,F3,n/a,abstract,"Main contribution is evaluation game and dataset; Oracle executes generated code and judges answers, answer matching."
+rea458d73,A7,none,D3,F3,n/a,abstract,Python program holds state and control flow; LLM executes natural-language snippets inside it; no formal statements written.
+reb0ef720,A6,empirical,D4,F4,n/a,abstract,"Conjectures and synthesised programs judged against computed example data: fit to data, empirical."
+rec5b4ed8,A2,empirical,D5,F1,no,abstract,LLM writes spatial/physical predicates realised by a constraint solver; constraints are the main representation.
+ree2d9e8b,A1,none,D7,F3,n/a,web: https://arxiv.org/html/2405.03553v3,"Python interpreter used at training and inference, so not A5; interleaved code execution, neural value model selects; no symbolic verdict."
+ref1417ae,A6,empirical,D3,F3,n/a,abstract,Main contribution is controlled evaluation on a verifiable algorithmic benchmark; answers checked by matching.
+refa20322,A1,none,D7,F3,n/a,abstract,"Python programs are not formal statements, so faithfulness is n/a."
+rf01d288d,A7,none,D5,F7,n/a,abstract,Symbolic causal model with slicing and do-calculus makes the detection decision; LLM minor; evaluated on LLM agent trajectories.
+rf1024aef,A2,empirical,D5,F6,yes,abstract,Model builds symbolic world representation; completeness of symbolic world reported separately from plan success.
+rf1dea116,A2,empirical,D4,F5,no,abstract,"LLM-proposed logic rules fitted to event data by likelihood, akin to rule discovery; formalisation accuracy not reported separately."
+rf1f728de,A3,none,D6,F5,n/a,abstract,"Logical temporal rules act as training-loss constraints, which protocol lists under A3."
+rf372919c,A5,none,D7,F7,n/a,abstract,Symbolic component is AST and cyclomatic-complexity static analysis of code.
+rf3eeee6b,A4,empirical,D5,F6,n/a,abstract,LLM-proposed predicates and processes are accepted via Bayesian fit to data: empirical check.
+rf784c201,A5,none,D8,F5,n/a,abstract,KG-derived rules create chained edit targets offline; edited LLM runs without the rules.
+rf7949d7b,A6,empirical,D8,F4,n/a,abstract,"Science question-answering benchmark, not discovery of laws; fits knowledge/other NLP better than D4."
+rf81bf1d9,A1,none,D3,F7,no,abstract,"Deployed parser emits logical forms executed over tables; question generation is auxiliary, so not A5."
+rf832bdef,A6,empirical,D7,F1,n/a,abstract,Problems generated from logical forms and inference-rule proof trees; logic is the main representation.
+rf93088a9,A1,none,D6,F3,n/a,abstract,Programs are not formal statements; faithfulness n/a.
+rf95295b4,A1,none,D7,F3,no,abstract,Plans written for symbolic solvers include formal specifications; no separate formalisation accuracy reported.
+rf9b66245,A3,none,D6,F3,n/a,abstract,"Rendered image only aids the model's reasoning; the model, not the engine, computes the answer; no verdict."
+rf9e4862e,A2,empirical,D3,F7,n/a,abstract,"Step-wise execution feedback guides and filters synthesis; DSL programs (RobustFill, DeepCoder)."
+rfa8fe6c4,A2,exact,D8,F1,n/a,abstract,Main evaluation probes LM commonsense knowledge of everyday things; knowledge domain.
+rfb94d02e,A1,none,D7,F3,n/a,abstract,Financial numerical reasoning solved with program-of-thought; numeric problem solving dominates over table structure.
+rfc590f9c,A6,empirical,D2,F1,n/a,abstract,"Engine certifies gold labels; LLM outputs are judged by label matching, so empirical."
+rff5b35b6,A2,exact,D1,F2,n/a,abstract,"Prover writes Lean proofs for given formal statements; no NL formalisation, so faithfulness not applicable."
+rffe62927,A1,none,D5,F5,unclear,web: https://arxiv.org/html/2503.22738v2,"Inference: LLM assigns predicate values, MLN rule circuits compute verdict; no loop checking LLM output. A1 precedes A4. Extraction accuracy not visible."
+rfff81209,A6,exact,D1,F1,n/a,abstract,"Benchmark with verifier-certified invariants; invariants are separation-logic assertions, not proof-assistant code. Faithfulness n/a for A6."
+rfffad286,A2,empirical,D4,F4,n/a,abstract,Symbolic discovery of utility functions implies candidates selected by data fit; A2 precedes A4 in the tree.

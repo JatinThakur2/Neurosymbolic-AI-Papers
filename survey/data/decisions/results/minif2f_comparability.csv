@@ -1,0 +1,28 @@
+rid,title,comparable,reason
+r0422d6a3,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,yes,absolute miniF2F proving rate
+r11bcdfdc,Enhancing Neural Theorem Proving via High-Quality Proof Selection and Verifier Feedback,yes,absolute miniF2F proving rate
+r1afc3d79,ProofOptimizer: Training Language Models to Simplify Proofs without Human Demonstrations,no,"proof-length reduction, not a pass rate"
+r21c6b045,Alchemy: Amplifying Theorem-Proving Capability Through Symbolic Mutation,no,"reported as a gain, not a level"
+r6890f25f,Herald: A Natural Language Annotated Lean 4 Dataset,no,"autoformalization accuracy, not proving"
+ra86a93ca,CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,yes,absolute miniF2F proving rate
+rb0ff4c85,Proving Theorems Recursively,no,reported as a gain
+rc8d2888b,Hierarchical Attention Generates Better Proofs,no,reported as a gain
+rcefeacbc,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,yes,absolute miniF2F proving rate
+rde2a3082,EvolProver: Advancing Automated theorem proving by Evolving Formalized Problems via Symmetry and Difficulty,yes,absolute miniF2F proving rate
+rf127ea2d,Magnushammer: A Transformer-Based Approach to Premise Selection,yes,absolute miniF2F proving rate
+rff5b35b6,GAR: Generative Adversarial Reinforcement Learning for Formal Theorem Proving,no,relative improvement
+r07e1479f,Autoformalization with Large Language Models,yes,absolute miniF2F proving rate
+r12a103a9,Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models,yes,absolute miniF2F proving rate
+r2080cdd7,TheoremLlama: Transforming General-Purpose LLMs into Lean4 Experts,yes,absolute miniF2F proving rate
+r218783b6,BFS-Prover: Scalable Best-First Tree Search for LLM-based Automatic Theorem Proving,yes,absolute miniF2F proving rate
+r33ed8809,Subgoal-based Demonstration Learning for Formal Theorem Proving,yes,absolute miniF2F proving rate
+r520c7235,Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction,yes,absolute miniF2F proving rate
+r5877c953,miniF2F-Lean Revisited: Reviewing Limitations and Charting a Path Forward,no,corrected variant benchmark (miniF2F-v2)
+r97819a7d,Mathesis: Towards Formal Theorem Proving from Natural Languages,no,autoformalization gain
+r9da32055,miniF2F-Dafny: LLM-Guided Mathematical Theorem Proving via Auto-Active Verification,no,Dafny translation of the benchmark
+rabf69c7a,ProofBridge: Auto-Formalization of Natural Language Proofs in Lean via Joint Embeddings,no,autoformalization gain
+rb1f7e919,Hilbert: Recursively Building Formal Proofs with Informal Reasoning,yes,absolute miniF2F proving rate
+rb6819abd,Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers,yes,absolute miniF2F proving rate
+re13f719a,APOLLO: Automated LLM and Lean Collaboration for Advanced Formal Reasoning,yes,absolute miniF2F proving rate
+re2f26fb4,LEGO-Prover: Neural Theorem Proving with Growing Libraries,yes,absolute miniF2F proving rate
+re742c2dc,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,yes,absolute miniF2F proving rate
