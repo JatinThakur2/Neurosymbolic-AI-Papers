@@ -1,0 +1,49 @@
+rid,decision,code,evidence,rationale
+rd7c735fb,include,,abstract,"Meta agent writes Python agent programs executed and evaluated, archived and reused; programs as vehicle for agent design (R3 program search, R4)."
+rf87ae13f,exclude,E2,web: https://arxiv.org/pdf/2304.13826,Rule-based CCG parser yields executed program; only pretrained model is frozen CLIP encoder for grounding (E2).
+r148485c2,include,,web: https://arxiv.org/pdf/2011.13354,"BERT unification, T5 and GLUCOSE-tuned transformer generate rules consumed by Braid's logical prover with ILP proof selection."
+r7df7f9a4,include,,web: https://arxiv.org/pdf/2305.14078,LLM supplies belief prior and heuristic policy guiding MCTS planner over formal object-graph states with known deterministic transitions (R3 planner).
+r3c0238e9,include,,abstract,Lexical constraints (CNF) imposed on GPT-2 decoding via tractable HMM computation; NeuroLogic-style symbolic decoding guidance (A3).
+rcfb50a1a,include,,abstract,LMs finetuned on experiences gathered by MCTS goal-oriented planning in VirtualHome world model; planner-generated training data (A5).
+re961d8e7,include,,web: https://aclanthology.org/2025.naacl-long.429.pdf,"LLM hypotheses implemented as Python, executed and filtered against observations; programs are vehicle for inductive reasoning puzzles (R4)."
+r35d02797,exclude,E3,abstract,"E3 (R3): LLM serves as world model and agent; MCTS over natural-language states with LLM rewards, no formal engine."
+r5fa5fe64,include,,web: https://arxiv.org/pdf/2306.02797,Codex translates NL hypotheses into Python executed to compute Bayesian likelihood; program as vehicle for concept learning.
+r071b9de9,include,,abstract,MT2Net (pretrained encoder) generates arithmetic programs executed by symbolic reasoning module; vehicle for table-text numerical QA (R4).
+r5402cb8c,include,,web: https://arxiv.org/html/2406.08527v2,LLM feature rules translated to Python and executed; CART decision-tree rules and scores fed back iteratively (tabular vehicle).
+r40769616,include,,web: https://arxiv.org/html/2509.22246v2,"LLM autoformalizations scored by Lean-based metric (parsing, tactic equivalence search); symbolic system certifies LM outputs (A6)."
+re2d8a330,include,,web: https://arxiv.org/pdf/2410.11689,GPT-4o generates first-order logic policy rules and valuation code used by differentiable logic reasoner; LM-induced symbolic artifacts.
+rbc584267,include,,web: https://aclanthology.org/2022.acl-long.78.pdf,BERT-based NSM programmer generates hierarchy-aware logical forms executed by Lisp interpreter; vehicle for table QA (R4).
+reb133121,exclude,E3,abstract,"E3 (R4): code generation; token-level MCTS lookahead scored only by public test execution, no additional formal checker."
+rdf7ff99c,include,,abstract,"Explicit PCFG over SQL programs feeds pretrained BART to synthesise training data; grammar beyond execution (A5, R4)."
+rec5b0aa1,include,,abstract,LLM writes code-style plans executed in ALFWorld/MiniWoB++ with assertion feedback for refinement; agents acting through programs.
+re05f7ce2,exclude,E3,abstract,E3 (R3): Prolog concepts only inspire task decomposition and annotations; no symbolic engine interacts with the models.
+r8269b917,exclude,E1,abstract,E1 (R1): neural generator and prover trained from scratch on Metamath data; no language or code pretraining.
+r4b908b19,include,,web: https://arxiv.org/html/2406.14219,Llemma-7b value network guides symbolic inequality prover search; synthetic theorems from symbolic system train it (A2).
+r44d73521,include,,web: https://ojs.aaai.org/index.php/AAAI/article/view/26143/25915,Benchmark with BERT/RoBERTa models under logical constraints via Gurobi ILP inference and constraint losses.
+r1476b927,include,,web: https://arxiv.org/pdf/2411.02272,Llama3.1-8B fine-tuned to write Python programs executed and filtered on ARC training examples; puzzle vehicle (R4).
+rd50613fc,exclude,E2,web: https://arxiv.org/pdf/2010.03768,BUTLER uses only frozen DistilBERT embeddings; TextWorld PDDL engine interacts with a non-pretrained agent (E2).
+rf20ecae4,include,,abstract,Benchmark where LLM-written spreadsheet code is executed and certified against multiple test-case spreadsheets; table vehicle (A6).
+r804cd20b,include,,web: https://arxiv.org/pdf/2405.04776v3,Blocksworld PDDL instances; LLM plans translated to PDDL and certified by VAL validator; generated problems; evaluation with symbolic oracle (R2).
+r2d498f4d,include,,abstract,Programmatically generated deduction dataset with controlled rules and proof depth; symbolic generator produces problems and proofs LLMs are scored on (R2).
+ra1fa04f4,include,,web: https://arxiv.org/pdf/2404.09491,LLM writes Python functions executed on tabular data to build reusable rule features; program as vehicle for tables (R4).
+r12a060a4,include,,abstract,"LLM-written code workflows executed by interpreter; MCTS program search with execution feedback on math/QA tasks; reusable programs (R3, R4)."
+rec4ee81c,exclude,E1,web: https://arxiv.org/pdf/2302.11097,Text encoder pretrained from scratch only on PGPS9K task data; no language-corpus pretrained model (R1).
+r60377afa,exclude,E1,web: https://openreview.net/pdf?id=aUn1BAzo7q,Base parsers are grammar-constrained RNN and structured-attention models without pretraining on language corpora (R1).
+r8eded823,include,,abstract,LLMs synthesize programs from input-output examples; execution checks candidates and generates fine-tuning data; PBE not R4 NL-to-code family.
+rc0f0f911,exclude,E1,abstract,"Semantic parser is task-specific seq2seq trained on templated CLEVRER questions, not a pretrained language model (R1)."
+rc1250f1e,include,,abstract,Fine-tuned LLaMA/CLiMA write TikZ compiled to graphics; compiler errors drive resampling; program as vehicle for figure synthesis (R3).
+r1612bafd,include,,web: https://arxiv.org/pdf/2402.06025,GPT-3.5 translates LLM-proposed rules into code executed on Zendo scenes within Monte Carlo inference (R3 interpreter).
+r36b9fd34,include,,abstract,Evaluated on MATH via executed programs; functional consensus selects functions by execution behavior; program as vehicle for math (R4).
+r54c1186a,include,,web: https://aclanthology.org/2022.emnlp-main.218.pdf,VL-T5-based Geoformer generates geometry calculation programs evaluated by execution as in GeoQA; program vehicle for math (R4).
+r22bf155d,exclude,E3,abstract,E3 (R3): soft posterior constraints on latent states; no explicit formal symbolic component interacting with generator.
+r6fbf3493,include,,web: https://arxiv.org/pdf/2402.08939,"Logic problems adapted from SimpleLogic, synthetically generated definite-clause problems with ground-truth proofs; symbolic generator (R2 evaluation)."
+rdec717b7,include,,web: https://arxiv.org/pdf/2402.10890,"GSM8K solved via Python programs; execution results and executability checks feed discriminators in search (R4 vehicle, A2)."
+r010070ef,include,,web: https://arxiv.org/pdf/2305.00633,Uses PAL: LLM writes Python executed by interpreter for GSM8K/AQuA answers within guided beam search (R4 vehicle).
+r23cbbb91,exclude,E3,abstract,E3 (R4): grammar-synthesised utterance-program pairs train a database semantic parser; no additional checker or vehicle task.
+rfcd51f39,include,,abstract,LLM hypothesizes explicit subgoal dependency graph (abstract world model) used for planning and corrected by experience (R3 symbolic world model).
+r4bf5b14b,exclude,E3,abstract,E3 (R4): template-synthesised training data for database query parser; no additional symbolic checker interacting with model.
+rac50ef23,include,,abstract,Compressed finite-state machines constrain LM decoding to structured output; automaton constraining model (R3).
+r1a86943b,exclude,E1,web: https://arxiv.org/abs/2406.10368,Reasoning-shortcut benchmark for concept-based neural and NeSy classifiers; no language model involved (R1).
+rd6ab748e,include,,abstract,Geometry solver generates program tokens executed for GeoQA answers; program vehicle for math (R4); assumes pretrained text encoder.
+rfaf1d4ce,include,,abstract,"LLMs write simulation task programs executed in simulator, filtered by execution; program vehicle for robot control (R4)."
+re66c4b28,include,,abstract,Pretrained BERT/T5 trained on logic problems generated and labeled by symbolic procedure; symbolic data for LM reasoner (A5).

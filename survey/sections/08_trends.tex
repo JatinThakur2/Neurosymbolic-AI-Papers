@@ -1,0 +1,24 @@
+\section{RQ4: Trends}
+\label{sec:trends}
+
+\input{figures/fig_trend}
+
+\textbf{Growth that is not a terminology artefact.} The pilot reported growth as the share of a title-keyword corpus, which would also rise if recent authors were simply more likely to call their work ``neurosymbolic''. Two measures address this (Fig.~\ref{fig:trend}).
+
+First, growth is normalised by all accepted papers at venue-years with constant coverage. In the five-venue panel (ICLR, ICML, NeurIPS, ACL, EMNLP) included studies rise from \cnt{pfive2020} per 1{,}000 accepted papers in 2020 to \cnt{pfive2023} in 2023 and \cnt{pfive2025} in 2025. The denominators are \cnt{accfive2020} and \cnt{accfive2025} accepted papers. In the ICLR+ICML panel the rate reaches \cnt{ptwo2026} in 2026.
+
+Second, inclusion no longer depends on the term: only \cnt{nesytitle} included studies (\cnt{nesytitlepct}\%) use ``neurosymbolic'' or ``neural-symbolic'' in the title, and \cnt{nesyany} (\cnt{nesyanypct}\%) anywhere in title or abstract. The rise is therefore real growth of the area, a roughly \cnt{growthratio}-fold increase in relative share over five years. It is not adoption of a word.
+
+Two caveats apply. Search recall may differ by year if vocabulary changed; the audit is too small to estimate recall per year. The 2026 figures cover only the venues held by October 2026.
+
+\input{figures/fig_arch_period}
+
+\textbf{From guidance to checking.} The architecture mix shifted (Fig.~\ref{fig:archperiod}).
+\begin{itemize}
+  \item \emph{2020--2022} ($n=\cnt{earlyn}$; with 2023 the pre-2024 sample has \cnt{pretwentyfour} studies, against 8 in the pilot). Symbolic guidance (A3) accounts for \cnt{earlyAthree}\% of studies: constrained decoding, semantic parsing and logical decoding constraints~\cite{scholak2021picard,lu2021neurologic,shin2021constrained}.
+  \item \emph{2026.} Checker-in-the-loop designs (A2) account for \cnt{ysixAtwo}\% [95\% CI \cnt{ysixAtwolo}--\cnt{ysixAtwohi}], up from \cnt{earlyAtwo}\% [\cnt{earlyAtwolo}--\cnt{earlyAtwohi}]; A3 falls to \cnt{ysixAthree}\% [\cnt{ysixAthreelo}--\cnt{ysixAthreehi}]. The intervals for the first and last periods do not overlap.
+  \item \emph{Exact checks.} The share of studies whose symbolic side gives an exact verdict rises from \cnt{earlyexact}\% to \cnt{ysixexact}\% [\cnt{ysixexactlo}--\cnt{ysixexacthi}], driven by formal theorem proving and verified code generation.
+\end{itemize}
+Checking designs need a model capable of emitting well-formed formal artifacts, which is consistent with their timing. Translate-and-solve designs (A1) hold about a fifth of studies until 2025 (\cnt{yfiveAone}\%) and fall to \cnt{ysixAone}\% in 2026, consistent with single-pass formalisation giving way to checked loops.
+
+\textbf{Two communities that rarely meet.} Classical neurosymbolic themes rarely appear in the included set. Probabilistic logic programming, abductive learning, inductive logic programming and reasoning-shortcut analysis are well represented in the curated corpus~\cite{huang2021scallop,maene2024hardness,marconato2023neuro,yang2024analysis}. Yet few included studies use these semantics or diagnostics with language models; examples are neurosymbolic losses and tractable probabilistic models for constrained generation~\cite{ahmed2023pseudo,ahmed2025controllable,zhang2023tractable}. The language-model line has not yet adopted the classical line's tools for calibrated inference and for detecting satisfied-for-the-wrong-reason symbols.

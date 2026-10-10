@@ -1,1 +1,0 @@
-transformer|theorem|formal|lean|agent|code|prompt|pretrain|pre-train|generat|neural network|diffusion|embodied|robot|reasoning|survey|benchmark

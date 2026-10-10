@@ -22,15 +22,15 @@
 \draw[arr] (a1i)--(a1m); \draw[arr] (a1m)--(a1f); \draw[arr] (a1f)--(a1s); \draw[arr] (a1s)--(a1o);
 \node[cnt] at (16.3,0) {$n=\cnt{A1}$};
 % ---- A2
-\node[lab] (l2) at (0,-\rowgap) {\textbf{A2}\enspace Verifier-in-the-loop};
+\node[lab] (l2) at (0,-\rowgap) {\textbf{A2}\enspace Checker-in-the-loop};
 \node[dat] (a2i) at (\xs,-\rowgap) {task};
 \node[lm, right=5mm of a2i] (a2m) {LM};
 \node[dat, right=5mm of a2m] (a2f) {candidate\\proof/code};
-\node[sym, right=5mm of a2f] (a2s) {checker};
+\node[sym, right=5mm of a2f] (a2s) {checker /\\executor};
 \node[dat, right=5mm of a2s] (a2o) {verified\\output};
 \draw[arr] (a2i)--(a2m); \draw[arr] (a2m)--(a2f); \draw[arr] (a2f)--(a2s); \draw[arr] (a2s)--(a2o);
 \draw[fb] (a2s.north) -- ++(0,2.2mm) -| node[pos=0.25, above, font=\tiny, text=A5c, inner sep=1pt] {verdict / error feedback} (a2m.north);
-\node[cnt] at (16.3,-\rowgap) {$n=\cnt{A2}$};
+\node[cnt, align=right] at (16.3,-\rowgap) {$n=\cnt{A2}$\\[-1pt]{\tiny\cnt{A2exact} exact, \cnt{A2empirical} empirical}};
 % ---- A3
 \node[lab] (l3) at (0,-2*\rowgap) {\textbf{A3}\enspace Symbolic guidance\\\phantom{\textbf{A3}}\enspace or constraints};
 \node[dat] (a3i) at (\xs,-2*\rowgap) {task};
@@ -80,6 +80,6 @@
 \node[sym, minimum width=8mm, minimum height=4mm, font=\tiny, right=4mm of k1t] (k2) {sym};
 \node[right=1mm of k2, font=\tiny] {symbolic component};
 \end{tikzpicture}
-\caption{The seven integration architectures identified in the \cnt{included} included studies, with the number of studies coded under each. Blue boxes are learned models; green boxes are symbolic components. Dashed arrows denote feedback from the symbolic component to the model.}
+\caption{The seven integration architectures and the number of included studies coded under each ($n=\cnt{included}$). The codes are assigned by a decision tree applied in the order A6, A5, A1, A2, A4, A7, A3 (Table~\ref{tab:codebook}). For A2 the split by check strength is shown: an \emph{exact} check is a sound formal verdict (proof assistant, certificate, model checker); an \emph{empirical} check is execution, tests or data fit. Blue boxes are learned models, green boxes symbolic components; dashed arrows are feedback from the symbolic component.}
 \label{fig:architectures}
 \end{figure*}

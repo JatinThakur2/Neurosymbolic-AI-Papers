@@ -1,0 +1,76 @@
+\section{PRISMA-ScR Checklist}
+\label{app:prisma}
+Table~\ref{tab:prismachecklist} maps each of the 22 PRISMA-ScR items~\cite{tricco2018prisma} to the place where it is reported.
+
+\begin{table*}[t]
+\centering
+\caption{PRISMA-ScR checklist and where each item is reported.}
+\label{tab:prismachecklist}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}r l X@{}}
+\toprule
+\# & Item & Where reported / note \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Title and abstract}} \\
+1 & Title & Title (identifies the report as a scoping review) \\
+2 & Structured summary & Abstract (unstructured, as the IEEE format requires; it states objectives, sources, eligibility, counts, results and limitations) \\
+\multicolumn{3}{@{}l}{\textit{Introduction}} \\
+3 & Rationale & Sections~\ref{sec:intro} and \ref{sec:background}; Table~\ref{tab:related} \\
+4 & Objectives & Section~\ref{sec:intro} (\RQ{1}--\RQ{4}) \\
+\multicolumn{3}{@{}l}{\textit{Methods}} \\
+5 & Protocol and registration & Section~\ref{sec:method}; protocol v2 released in the replication package; not registered in advance; changes from the pilot in Section~\ref{sec:method-changes} \\
+6 & Eligibility criteria & Section~\ref{sec:method-eligibility}; Table~\ref{tab:criteria}; rules R1--R6 \\
+7 & Information sources & Section~\ref{sec:method-sources}; Table~\ref{tab:sources}; source commits in Appendix~\ref{app:replication} \\
+8 & Search & Section~\ref{sec:method-search}; full query in Appendix~\ref{app:query} \\
+9 & Selection of sources of evidence & Section~\ref{sec:method-selection} (double screening, adjudication, snowballing, recall audit); Sections~\ref{sec:method-ai} and \ref{sec:method-human} (LLM reviewers and human sample) \\
+10 & Data charting process & Section~\ref{sec:method-coding} (double coding with adjudication); Section~\ref{sec:method-indicators} \\
+11 & Data items & Table~\ref{tab:codebook}; Section~\ref{sec:method-indicators} \\
+12 & Critical appraisal of individual sources & Not performed (optional in PRISMA-ScR); Section~\ref{sec:method-synthesis} \\
+13 & Synthesis of results & Section~\ref{sec:method-synthesis} \\
+\multicolumn{3}{@{}l}{\textit{Results}} \\
+14 & Selection of sources of evidence & Fig.~\ref{fig:prisma}; Tables~\ref{tab:exclusions} and \ref{tab:agreement}; Section~\ref{sec:selection} \\
+15 & Characteristics of sources of evidence & Sections~\ref{sec:selection}--\ref{sec:domains}; per-study list in the supplementary document \\
+16 & Critical appraisal within sources & Not performed (item 12) \\
+17 & Results of individual sources & Supplementary document (domain, architecture, check strength and formalism per study); released \texttt{included\_studies.csv} \\
+18 & Synthesis of results & Sections~\ref{sec:taxonomy}--\ref{sec:trends} \\
+\multicolumn{3}{@{}l}{\textit{Discussion}} \\
+19 & Summary of evidence & Sections~\ref{sec:challenges} and \ref{sec:conclusion} \\
+20 & Limitations & Section~\ref{sec:validity} \\
+21 & Conclusions & Section~\ref{sec:conclusion} \\
+\multicolumn{3}{@{}l}{\textit{Funding}} \\
+22 & Funding & Acknowledgment (no specific funding); Competing Interests \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\section{Search Query}
+\label{app:query}
+The query is applied to the title and abstract of every Source B record, case-insensitively, as Python regular expressions (\texttt{code/search/query.py}). A record is retrieved when it matches at least one alternative of each block. The listings are exported from the code.
+
+\noindent\textbf{Language-model block:}
+\lstinputlisting{tables/query_lm.txt}
+
+\noindent\textbf{Symbolic block:}
+\lstinputlisting{tables/query_sym.txt}
+
+The recall audit (Section~\ref{sec:method-selection}) stratifies the records not retrieved by which of the two blocks they match.
+
+\section{Replication Package}
+\label{app:replication}
+\texttt{code/search/fetch\_sources.sh} retrieves the sources at fixed commits: the Neurosymbolic-AI-Papers corpus at \texttt{9a42645}, Paper Copilot \texttt{paperlists} at \texttt{9fcfd12} (ICLR 2025 and 2026 from blobs \texttt{d4c51fa} and \texttt{33f9884}) and the ACL Anthology at \texttt{73f3b3a}. Running \texttt{python code/run\_all.py --sources <dir>} then regenerates every derived file, table and macro in this paper. The package contains the following.
+\begin{itemize}
+  \item \texttt{data/decisions/}: every decision made by a reviewer, never written by the pipeline.
+  \begin{itemize}
+    \item \texttt{protocol\_v2.md}: the protocol.
+    \item \texttt{screening/}: both screeners' decisions on the union and the snowball candidates, all adjudications with their evidence, the audit sample and its decisions.
+    \item \texttt{coding/}: both coders' charting of all included studies and the adjudications.
+    \item \texttt{webcheck/}: the artifact web check with evidence URLs and its sampling design.
+    \item \texttt{results/}: the extracted miniF2F results with supporting quotes, and their comparability classification.
+    \item \texttt{human\_check/}: the blinded 30\% sheets for the human verification.
+    \item \texttt{v1\_pilot/}: the decisions of the pilot version, kept for comparison.
+  \end{itemize}
+  \item \texttt{docs/prompts/}: the task prompts given to the screeners, adjudicators, coders, web checkers and result extractor.
+  \item \texttt{data/derived/}: files generated by the pipeline, including \texttt{screening\_log.csv} (one row per record, with every decision), \texttt{included\_studies.csv}, \texttt{entities\_long.csv} and the JSON summaries and plot data.
+  \item \texttt{code/}: the search (\texttt{search/}) and the pipeline stages s10--s15, \texttt{human\_check.py} and \texttt{run\_all.py}.
+  \item \texttt{tables/}, \texttt{figures/}: generated \LaTeX{} fragments and the TikZ/pgfplots figure sources.
+\end{itemize}

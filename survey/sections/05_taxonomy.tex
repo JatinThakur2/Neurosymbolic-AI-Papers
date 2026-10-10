@@ -1,0 +1,49 @@
+\section{RQ1: Integration Architectures}
+\label{sec:taxonomy}
+
+\input{figures/fig_architectures}
+
+The \cnt{included} studies fall into seven architectures (Fig.~\ref{fig:architectures}). Checker-in-the-loop designs dominate (A2, \cnt{A2} studies, \cnt{A2pct}\%), followed by symbolic-oracle evaluations (A6, \cnt{A6}), translate-and-solve pipelines (A1, \cnt{A1}) and symbolic guidance (A3, \cnt{A3}). Symbolic-to-neural transfer (A5, \cnt{A5}), model-induced artifacts (A4, \cnt{A4}) and model-as-interface designs (A7, \cnt{A7}) are less common. Across all studies, the symbolic side gives an exact verdict on the final output in \cnt{exact} studies, an empirical check in \cnt{empirical}, and no check in \cnt{none}. The architectures differ in where trust is placed, which determines what a system can guarantee.
+
+\textbf{A2: Checker-in-the-loop (\cnt{A2}).} A checker or executor returns verdicts that select, repair, filter or reward model outputs. The category splits by check strength.
+\begin{itemize}
+  \item \emph{Exact} (\cnt{A2exact} studies). Here the proof assistant's acceptance is a guarantee relative to the formal statement. Typical approaches are proof search~\cite{lample2022hypertree,jiang2022thor,yang2023leandojo,xin2025bfs}, proof-assistant feedback for reinforcement learning~\cite{xin2025deepseek,dong2025stp,lin2026goedel}, and draft-and-prove pipelines~\cite{jiang2023draft,cao2025reviving,varambally2026hilbert}. Verification-aware code generation in Dafny or Verus~\cite{aggarwal2025alphaverus,yang2026exverus}, model-checking repair loops~\cite{agrawal2025specmas} and SAT-certified reasoning rewards~\cite{liu2025saturn} belong here too.
+  \item \emph{Empirical} (\cnt{A2empirical} studies). Here the check can pass a wrong output: execution feedback for code and programming by example~\cite{ni2023lever,wang2024hypothesis,lee2025program}, solver feedback in optimisation modelling~\cite{ahmaditeshnizi2024optimus,chen2025solver}, data fit in LLM-guided equation search~\cite{shojaee2025sr,grayeli2024symbolic}, and simulator or environment success in embodied agents~\cite{ma2024eureka,mahdavi2024leveraging}.
+\end{itemize}
+Because A2 thus mixes sound verification with tests and data fit, we report the two kinds separately and restrict statements about guarantees to exact checks.
+
+\textbf{A6: Symbolic-oracle evaluation (\cnt{A6}).} Benchmarks whose problems are generated, or whose answers are certified, by a symbolic system. Examples are solver-generated logic puzzles~\cite{lin2025zebralogic,wei2025satbench}, prover-checked first-order reasoning~\cite{qi2025large,han2024folio}, and planning benchmarks with formal validators~\cite{zuo2025planetarium,kokel2025acpbench}. Formal-mathematics and verification benchmarks~\cite{zheng2022minif2f,tsoukalas2024putnambench,hu2025minictx,ye2026verina} and symbolic perturbations of mathematical word problems~\cite{mirzadeh2025gsm} also belong here. Most A6 studies certify answers empirically (\cnt{A6empirical}), for example by answer matching against a generator. Only \cnt{A6exact} use a sound checker.
+
+\textbf{A1: Translate-and-solve (\cnt{A1}).} The model writes a formal representation once and an engine computes the answer, so correctness reduces to the faithfulness of the translation. Program-aided reasoning~\cite{gao2023pal,gou2024tora,wang2024mathcoder} and binding language models to symbolic languages~\cite{cheng2023binding} are the largest group. Others translate text to first-order logic or SAT~\cite{olausson2023linc,ye2023satlm,kesseli2025logic}, answer-set programs~\cite{alviano2025integrating,santana2024automatic}, planning languages~\cite{hao2025planning,huang2025planning} or optimisation models~\cite{astorga2025autoformulation,yang2025optibench}. By construction, A1 pipelines do not check the model's formalisation (all \cnt{A1none} are coded \texttt{none}), which is why reporting formalisation faithfulness matters (Section~\ref{sec:evaluation}).
+
+\textbf{A3: Symbolic guidance (\cnt{A3}).} Symbolic structure steers generation without judging it. Examples include constrained decoding with grammars and automata~\cite{scholak2021picard,wang2023grammar,beurerkellner2024guiding,banerjee2025crane}, logical decoding constraints~\cite{lu2021neurologic,lu2022neurologic,zhang2023tractable}, and static or dataflow analysis that guides code models~\cite{mukherjee2021neural,wei2023typet5,li2025dataflow}. Context-free surrogates of model proposals that guide enumerative synthesis~\cite{barke2024hysynth} and neurosymbolic training losses~\cite{ahmed2023pseudo} also belong here.
+
+\textbf{A5: Symbolic-to-neural transfer (\cnt{A5}).} Symbolic procedures generate training data or signal offline, and the model runs without them: synthetic logic corpora~\cite{clark2020transformers,morishita2023learning,morishita2024enhancing}, formal theorem--proof data~\cite{huang2024mustard,ying2024lean,wu2025alchemy}, solver-generated mathematics~\cite{li2024neuro}, interpreter-generated execution traces~\cite{li2025codeio,wang2026stepcodereasoner}, and consistency losses against a rule base~\cite{calanzone2025logically}.
+
+\textbf{A4: LM-induced artifacts (\cnt{A4}).} The model writes rules, programs, predicates or reward machines that are stored and reused, but no symbolic checker filters them; libraries that are filtered by tests or verification are A2 under the decision tree. Examples include programmatic world models~\cite{tang2024worldcoder,piriyakulkij2025poe}, invented predicates and planning domains for robots~\cite{liang2025visualpredicator,liang2026exopredicator,ye2025unidomain}, interpretable rule libraries~\cite{wang2025large,zhang2025ruag}, and reward functions or reward machines~\cite{xie2024text2reward,castanyer2026arm}.
+
+\textbf{A7: LM as interface (\cnt{A7}).} A language or vision-language model grounds perception or produces explanations, and a symbolic core decides. Examples include logic-rule latent models over vision-language judgements~\cite{he2026unveiling}, robustness of vision-language reasoning with a symbolic executor~\cite{chen2026vlms}, programmable neurosymbolic learning frameworks~\cite{naik2025dolphin}, and knowledge-enhanced logical guardrails~\cite{kang2025r2}.
+
+\subsection{Relation to existing integration taxonomies}
+\label{sec:taxonomy-relations}
+Table~\ref{tab:taxmap} relates the architectures to Kautz's integration types~\cite{kautz2022third} and to the perspectives of Yang et al.~\cite{yang2025neuro}. The correspondence is approximate, but it shows what the finer scheme adds. Kautz's Neuro|Symbolic pipeline covers A1, A4 and A7, which differ in what the symbolic side receives: a whole problem, a reusable artifact or grounded percepts. Yang et al.'s LLM+Symbolic perspective merges A2, where the symbolic side judges, with A3, where it only steers. The check-strength attribute adds a second distinction no earlier scheme records: whether that judgement is sound.
+
+\begin{table}[t]
+\centering
+\caption{Approximate correspondence with existing taxonomies.}
+\label{tab:taxmap}
+\footnotesize
+\begin{tabularx}{\columnwidth}{@{}l X X@{}}
+\toprule
+Ours & Kautz~\cite{kautz2022third} & Yang et al.~\cite{yang2025neuro} \\
+\midrule
+A1 & Neuro|Symbolic & LLM$\rightarrow$Symbolic \\
+A2 & Neuro|Symbolic with feedback & LLM+Symbolic \\
+A3 & Symbolic[Neuro] (search); Neuro$_\text{Symbolic}$ (loss) & LLM+Symbolic; Symbolic$\rightarrow$LLM \\
+A4 & Neuro|Symbolic & LLM$\rightarrow$Symbolic \\
+A5 & Neuro:Symbolic$\rightarrow$Neuro & Symbolic$\rightarrow$LLM \\
+A6 & -- (evaluation) & -- \\
+A7 & Neuro|Symbolic & LLM$\rightarrow$Symbolic \\
+\bottomrule
+\end{tabularx}
+\end{table}

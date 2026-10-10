@@ -1,0 +1,35 @@
+\section{Open Challenges and Research Agenda}
+\label{sec:challenges}
+
+Table~\ref{tab:agenda} links each challenge to the evidence in this review and to open research questions.
+
+\textbf{C1. Formalisation faithfulness.} Translate-and-solve (\cnt{A1}) and checker-in-the-loop (\cnt{A2}) studies move the main risk from reasoning to formalisation: a wrong formal statement yields a confident, checkable, wrong answer. Yet only \cnt{faithyes} of \cnt{faithn} studies whose model writes formal statements report faithfulness in the abstract. Reporting is almost absent in logical reasoning (\cnt{faithD2yes} of \cnt{faithD2}) and mathematical problem solving (\cnt{faithD7yes} of \cnt{faithD7}). Work that treats faithfulness as a measurable target exists in autoformalisation~\cite{li2024autoformalize,liu2025rethinking,poiroux2025reliable,cabral2026proofflow} and should be the norm wherever a model writes the formal statement.
+
+\textbf{C2. Benchmark validity and saturation.} miniF2F, the only benchmark shared by more than 20 studies, reaches a reported \cnt{mfmax}\% in 2026. Audits document defects and loopholes in it and in other Lean benchmarks~\cite{ospanov2025minif2f,ammanamanchi2026faults}. The field's most shared yardstick is close to saturation exactly when exact checking becomes the dominant design. Harder, versioned and audited suites~\cite{tsoukalas2024putnambench,hu2025minictx,jiang2026fate,letson2026sorrydb} need to replace it, together with reporting of sampling budgets.
+
+\textbf{C3. Comparability.} \cnt{benchsinglepct}\% of named benchmarks appear in a single study. Outside theorem proving, studies rarely share an evaluation, and results are reported with incompatible budgets and splits (Fig.~\ref{fig:minif2f}). A minimal reporting checklist would make the field cumulative. It should cover the model and version, the engine and version, formalisation accuracy, the number of checker or solver calls, sampling budget and cost.
+
+\textbf{C4. Exact versus empirical checking.} Most checker-in-the-loop studies (\cnt{A2empirical} of \cnt{A2}) rely on empirical checks---tests, execution, data fit, simulator success---that can pass wrong outputs. Outside formal mathematics and verified code, sound verdicts are rare (\cnt{D5exact} studies in planning, \cnt{D3exact} in program synthesis, none in vision). Turning empirical checks into exact ones is an open direction: plan validation against formal domain models, certified program equivalence, verified data transformations.
+
+\textbf{C5. Grounding open-vocabulary symbols.} In embodied and multimodal work, models now supply the predicates, concepts and domains that earlier systems fixed in advance~\cite{liang2025visualpredicator,ye2025unidomain,kamali2025nesycoco,sinha2026concept}. The classical literature shows that symbolic constraints can be satisfied for the wrong reasons~\cite{marconato2023neuro,yang2024analysis}. Whether model-supplied symbols suffer from the same shortcuts is untested in the included studies.
+
+\textbf{C6. Cost and the transfer of guarantees.} Checker loops multiply inference cost. Symbolic-to-neural transfer (\cnt{A5}) compiles symbolic procedures into models~\cite{choi2025nesypr,morishita2024enhancing}, but what survives of the guarantee after distillation is unmeasured. Systematic comparisons of accuracy, guarantee and cost across A1, A2 and A5 on shared tasks are missing.
+
+\begin{table*}[t]
+\centering
+\caption{Research agenda: challenges, supporting evidence from this review and open questions.}
+\label{tab:agenda}
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}l X X@{}}
+\toprule
+Challenge & Evidence in this review & Open research questions \\
+\midrule
+C1 Formalisation faithfulness & \cnt{faithyes} of \cnt{faithn} formalising studies report faithfulness; \cnt{faithD2yes}/\cnt{faithD2} in logical reasoning, \cnt{faithD7yes}/\cnt{faithD7} in mathematics & How can faithfulness be measured without gold formalisations? Can translation be verified (round-trip, equivalence, ensembles) as reliably as proofs? \\
+C2 Benchmark validity & miniF2F named by \cnt{benchminif2f} studies, best reported \cnt{mfmax}\%; documented benchmark defects & Which protocol keeps formal benchmarks correct as libraries evolve? How should sampling budgets be standardised? \\
+C3 Comparability & \cnt{benchdistinct} distinct benchmarks; \cnt{benchsinglepct}\% used by one study & Which shared, domain-specific suites and reporting checklists make results comparable across architectures? \\
+C4 Exact vs.\ empirical checks & \cnt{A2empirical} of \cnt{A2} A2 studies use empirical checks; no exact checks in vision & Where can tests and simulators be replaced by sound verdicts (plan validation, certified equivalence)? \\
+C5 Open-vocabulary grounding & Model-supplied predicates and domains in D5/D6; no shortcut analysis with language models & Do model-supplied symbols suffer from reasoning shortcuts? Can concept-quality diagnostics transfer? \\
+C6 Cost and guarantees & \cnt{A5} A5 studies; no shared cost reporting & What are the accuracy--guarantee--cost frontiers of A1, A2 and A5? What survives of a guarantee after distillation? \\
+\bottomrule
+\end{tabularx}
+\end{table*}

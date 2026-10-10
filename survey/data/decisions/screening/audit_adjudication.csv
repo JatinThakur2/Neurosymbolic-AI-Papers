@@ -1,0 +1,9 @@
+rid,decision,code,evidence,rationale
+r5019d570,include,,web: https://arxiv.org/pdf/2605.11922,"Python interpreter generates ground-truth runtime states as training targets/RL rewards for Qwen2.5-Coder reasoner; A5, code reasoning not R4 codegen."
+r72fadfed,include,,abstract,"LLM agents write NuSMV models; model checker counterexamples drive iterative repair (A2, exact check)."
+r3c45bf55,exclude,E3,web: https://icml.cc/virtual/2026/poster/63484,"E3 (R4): text-to-SQL; AST-subtree similarity to gold SQL is answer matching, not grammar-based checker, verifier or symbolic search."
+rd1d1b890,exclude,E1,web: https://arxiv.org/pdf/2305.08953,"No language model: NSPose uses predefined programs, no semantic parser from text; neural operators only."
+re8e105a9,include,,abstract,Fine-tuned LLM writes Pyomo optimisation models solved by BOBD optimisation solver; optimisation modelling vehicle under R4 (A1).
+r6817bab0,exclude,E1,web: https://aclanthology.org/2021.acl-short.22.pdf,Task-specific grammar-constrained LSTM parser trained on NLVR only; no pretrained language model or embeddings reported.
+r96e8617a,include,,web: https://aclanthology.org/2024.acl-long.512.pdf,Prolog chaining generates LLM-ERL fine-tuning data; rule-based conflict detection feeds constraints back to LLM / post-processes outputs.
+ra0dd1fe6,exclude,E1,abstract (adjudicated by the orchestrating assistant),"Scene-graph engine synthesises training data for text-to-image generators; these are not language models studied as reasoners (R1, A5 clause)."

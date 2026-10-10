@@ -1,86 +1,672 @@
-record_id,title,role,bibkey
-144,Just Add Functions: A Neural-Symbolic Language Model,included,demeter2020just
-240,NeurASP: Embracing Neural Networks into Answer Set Programming,related,yang2020neurasp
-247,Graph Neural Networks Meet Neural-Symbolic Computing: A Survey and Perspective,related,lamb2020graph
-248,From Statistical Relational to Neuro-Symbolic Artificial Intelligence,related,deraedt2020statistical
-78,Scallop: From Probabilistic Deductive Databases to Scalable Differentiable Reasoning,related,huang2021scallop
-79,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",included,nye2021improving
-81,Open Rule Induction,included,cui2021open
-147,Dynamic Neuro-Symbolic Knowledge Graph Construction for Zero-shot Commonsense Question Answering,included,bosselut2021dynamic
-13,Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval,included,alon2022neuro
-92,HyperTree Proof Search for Neural Theorem Proving,included,lample2022hypertree
-99,A-NeSI: A Scalable Approximate Method for Probabilistic Neurosymbolic Inference,related,krieken2023nesi
-103,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,included,gao2023lora
-109,Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts,related,marconato2023not
-346,Neuro-Symbolic Procedural Planning with Commonsense Prompting,included,lu2023neuro
-23,Analysis for Abductive Learning and Neural-Symbolic Reasoning Shortcuts,related,yang2024analysis
-25,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,included,luo2024end
-28,On the Hardness of Probabilistic Neurosymbolic Learning,related,maene2024hardness
-30,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,included,fang2024stacksight
-31,Subgoal-based Demonstration Learning for Formal Theorem Proving,included,zhao2024subgoal
-110,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,included,barke2024hysynth
-112,Neuro-Symbolic Data Generation for Math Reasoning,included,li2024neuro
-113,Symbolic Regression with a Learned Concept Library,included,grayeli2024symbolic
-192,Large Language Models Are Neurosymbolic Reasoners,included,fang2024large
-287,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",included,weir2024nellie
-354,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,included,shi2024exedec
-355,LEGO-Prover: Neural Theorem Proving with Growing Libraries,included,wang2024lego
-358,B-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis,included,yu2024b
-360,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,included,chen2024genome
-362,Neurosymbolic Grounding for Compositional World Models,included,sehgal2024neurosymbolic
-34,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,included,li2025dataflow
-37,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,included,wang2025ma
-40,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,included,liu2025proofaug
-42,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,included,pourcel2025self
-43,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,included,dong2025stp
-46,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,included,lin2025zebralogic
-119,Program Synthesis via Test-Time Transduction,included,lee2025program
-122,MuSLR: Multimodal Symbolic Logical Reasoning,included,xu2025muslr
-125,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,included,zhou2025wall
-126,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,included,opedal2025language
-127,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,included,ahn2025reliable
-133,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,included,stein2025once
-138,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,included,choi2025nesypr
-199,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,included,kamali2025nesycoco
-209,Enhancing SQL Query Generation with Neurosymbolic Reasoning,included,princis2025enhancing
-213,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,included,ning2025gns
-214,MDD-5k: A New Diagnostic Conversation Dataset for Mental Disorders Synthesized via Neuro-Symbolic LLM Agents,included,yin2025mdd
-295,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,included,alviano2025integrating
-298,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,included,raza2025instantiation
-303,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,included,shao2025breaking
-308,Empowering LLMs with Logical Reasoning: A Comprehensive Survey,related,cheng2025empowering
-309,Neuro-Symbolic Artificial Intelligence: A Task-Directed Survey in the Black-Box Models Era,related,delvecchio2025neuro
-310,Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,related,yang2025neuro
-321,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,included,george2025leanprogress
-364,miniCTX: Neural Theorem Proving with (Long-)Contexts,included,hu2025minictx
-365,R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,included,kang2025r
-366,VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,included,liang2025visualpredicator
-369,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,included,choi2025nesyc
-370,Logically Consistent Language Models via Neuro-Symbolic Integration,included,calanzone2025logically
-371,CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,included,yang2025carts
-374,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,included,ryu2025divide
-381,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,included,qi2025large
-389,Towards Data-And Knowledge-Driven AI: A Survey on Neuro-Symbolic Computing,related,wang2025data
-48,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,included,xiong2026automated
-49,A Minimal Agent for Automated Theorem Proving,included,requena2026minimal
-51,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",included,liu2026decompose
-52,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,included,pang2026deliberate
-54,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,included,mo2026distilling
-55,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,included,ammanamanchi2026faults
-56,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,included,zuo2026llm
-58,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,included,saveliev2026influence
-59,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,included,shao2026lifting
-218,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,included,shah2026neus
-223,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,included,xu2026socrates
-227,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,included,schrader2026solver
-229,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,included,hu2026tapas
-230,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,included,sinha2026concept
-231,From Hypothesis to Premises: LLM-based Backward Logical Reasoning with Selective Symbolic Translation,included,li2026hypothesis
-232,NeSTR: A Neuro-Symbolic Abductive Framework for Temporal Reasoning in Large Language Models,included,liang2026nestr
-233,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,included,wang2026sheetbrain
-235,Language Models and Logic Programs for Trustworthy Tax Reasoning,included,jurayj2026language
-323,Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning,included,qin2026don
-325,Semantic-Drive: Trustworthy and Efficient Long-Tail Data Curation via Open-Vocabulary Grounding and Neuro-Symbolic VLM Consensus,included,guillenperez2026semantic
-327,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,included,chen2026can
-384,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,included,jiang2026egg
-390,Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,included,he2026unveiling
+rid,bibkey,role,title,venue,year
+corpus248,deraedt2020statistical,related,From Statistical Relational to Neuro-Symbolic Artificial Intelligence,IJCAI,2020
+r5e9c080e,lamb2020graph,related,Graph Neural Networks Meet Neural-Symbolic Computing: A Survey and Perspective,IJCAI,2020
+r40dfc799,demeter2020just,included,Just Add Functions: A Neural-Symbolic Language Model,AAAI,2020
+r47d55f71,zhong2020logicalfactchecker,included,LogicalFactChecker: Leveraging Logical Operations for Fact Checking with Graph Module Network,ACL,2020
+r6ae2f5c0,yang2020neurasp,related,NeurASP: Embracing Neural Networks into Answer Set Programming,IJCAI,2020
+rb911d2b6,chen2020neural,included,Neural Symbolic Reader: Scalable Integration of Distributed and Symbolic Representations for Reading Comprehension,ICLR,2020
+r94d6a563,saha2020prover,included,PRover: Proof Generation for Interpretable Reasoning over Rules,EMNLP,2020
+r9a62e4ca,yin2020tabert,included,TaBERT: Pretraining for Joint Understanding of Textual and Tabular Data,ACL,2020
+r2e90c051,clark2020transformers,included,Transformers as Soft Reasoners over Language,IJCAI,2020
+r24f1bc06,kassner2021beliefbank,included,BeliefBank: Adding Memory to a Pre-Trained Language Model for a Systematic Notion of Belief,EMNLP,2021
+rafb9a6d1,sampat2021clevr,included,CLEVR_HYP: A Challenge Dataset and Baselines for Visual Question Answering with Hypothetical Actions over Images,NAACL,2021
+r9029ce04,shaw2021compositional,included,Compositional Generalization and Natural Language Variation: Can a Semantic Parsing Approach Handle Both?,ACL,2021
+r3bc832b4,shin2021constrained,included,Constrained Language Models Yield Few-Shot Semantic Parsers,EMNLP,2021
+re39dd720,arabshahi2021conversational,included,Conversational Multi-Hop Reasoning with Neural Commonsense Knowledge and Symbolic Logic Rules,EMNLP,2021
+rc45c3000,tian2021diagnosing,included,Diagnosing the First-Order Logical Reasoning Ability Through LogicNLI,EMNLP,2021
+r6ef82f88,muller2021disambiguating,included,Disambiguating Symbolic Expressions in Informal Documents,ICLR,2021
+rd682920a,yu2021grappa,included,GraPPa: Grammar-Augmented Pre-Training for Table Semantic Parsing,ICLR,2021
+r217822ba,xu2021grounding,included,Grounding Open-Domain Instructions to Automate Web Support Tasks,NAACL,2021
+re7e46a6a,kalyan2021much,included,How much coffee was consumed during EMNLP 2019? Fermi Problems: A New Reasoning Challenge for AI,EMNLP,2021
+re0d57e54,nye2021improving,included,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",NeurIPS,2021
+rdf7ff99c,wang2021learning,included,Learning to Synthesize Data for Semantic Parsing,NAACL,2021
+r1bce7a6c,suster2021mapping,included,Mapping probability word problems to executable representations,EMNLP,2021
+r3334bd82,rabe2021mathematical,included,Mathematical Reasoning via Self-supervised Skip-tree Training,ICLR,2021
+reb1208e1,mukherjee2021neural,included,Neural Program Generation Modulo Static Analysis,NeurIPS,2021
+r526acd74,lu2021neurologic,included,NeuroLogic Decoding: (Un)supervised Neural Text Generation with Predicate Logic Constraints,NAACL,2021
+r42bb8e33,scholak2021picard,included,PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models,EMNLP,2021
+red16313f,schuster2021programming,included,Programming Puzzles,NeurIPS,2021
+r3dfe2448,yao2021refining,included,Refining Language Models with Compositional Explanations,NeurIPS,2021
+r52f1e169,saeed2021rulebert,included,RuleBERT: Teaching Soft Rules to Pre-Trained Language Models,EMNLP,2021
+ra56eb8a3,huang2021scallop,related,Scallop: From Probabilistic Deductive Databases to Scalable Differentiable Reasoning,NeurIPS,2021
+r952489b8,lang2021self,included,Self-Supervised Self-Supervision by Combining Deep Learning and Probabilistic Logic,AAAI,2021
+r5475f752,chen2021shadowgnn,included,ShadowGNN: Graph Projection Neural Network for Text-to-SQL Parser,NAACL,2021
+r44da8b7e,herzig2021span,included,Span-based Semantic Parsing for Compositional Generalization,ACL,2021
+rcf704d95,jaimovitchlopez2021think,included,"Think Big, Teach Small: Do Language Models Distil Occam’s Razor?",NeurIPS,2021
+rf81bf1d9,chemmengath2021topic,included,Topic Transferable Table Question Answering,EMNLP,2021
+r204738e7,he2021winologic,included,WinoLogic: A Zero-Shot Logic-based Diagnostic Dataset for Winograd Schema Challenge,EMNLP,2021
+r07e1479f,wu2022autoformalization,included,Autoformalization with Large Language Models,NeurIPS,2022
+r148485c2,kalyanpur2022braid,included,Braid: Weaving Symbolic and Neural Knowledge into Coherent Logical Explanations,AAAI,2022
+re3f61547,schlegel2022transformers,included,Can Transformers Reason in Fragments of Natural Language?,EMNLP,2022
+r0e853bba,chen2022convfinqa,included,ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering,EMNLP,2022
+r5aaa7eac,kulshreshtha2022down,included,Down and Across: Introducing Crossword-Solving as a New NLP Benchmark,ACL,2022
+raff04329,mitchell2022enhancing,included,Enhancing Self-Consistency and Performance of Pre-Trained Language Models through Natural Language Inference,EMNLP,2022
+r69f94571,shin2022few,included,Few-Shot Semantic Parsing with Language Models Trained on Code,NAACL,2022
+r9d4e6c64,josifoski2022genie,included,GenIE: Generative Information Extraction,NAACL,2022
+rbc584267,cheng2022hitab,included,HiTab: A Hierarchical Table Dataset for Question Answering and Natural Language Generation,ACL,2022
+r7f2dec68,wang2022hierarchical,included,Hierarchical Phrase-Based Sequence-to-Sequence Learning,EMNLP,2022
+rfd30bcab,lample2022hypertree,included,HyperTree Proof Search for Neural Theorem Proving,NeurIPS,2022
+ra0ff25e4,qiu2022improving,included,Improving Compositional Generalization with Latent Structure and Data Augmentation,NAACL,2022
+rccac804b,li2022kafsp,included,KaFSP: Knowledge-Aware Fuzzy Semantic Parsing for Conversational Question Answering over a Large-Scale Knowledge Base,ACL,2022
+r89c22d33,gaskell2022logically,included,Logically Consistent Adversarial Attacks for Soft Theorem Provers,IJCAI,2022
+r78dff49d,jung2022maieutic,included,Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations,EMNLP,2022
+r071b9de9,zhao2022multihiertt,included,MultiHiertt: Numerical Reasoning over Multi Hierarchical Tabular and Textual Data,ACL,2022
+rf1789243,lin2022neural,included,Neural-Symbolic Inference for Robust Autoregressive Graph Parsing via Compositional Uncertainty Quantification,EMNLP,2022
+re468fcaa,lu2022neurologic,included,NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics,NAACL,2022
+r8ec44e70,young2022neurosymbolic,included,Neurosymbolic Deep Generative Models for Sequence Data with Relational Constraints,NeurIPS,2022
+rba31435a,liu2022plog,included,PLOG: Table-to-Logic Pretraining for Logical Table-to-Text Generation,EMNLP,2022
+r5ea0716f,han2022proof,included,Proof Artifact Co-Training for Theorem Proving with Language Models,ICLR,2022
+r3229e1d7,richardson2022pushing,included,Pushing the Limits of Rule Reasoning in Transformers through Natural Language Satisfiability,AAAI,2022
+r3ff6a766,liu2022tapex,included,TAPEX: Table Pre-training via Learning a Neural SQL Executor,ICLR,2022
+re4ee31bb,shu2022tiara,included,TIARA: Multi-grained Retrieval for Robust Question Answering over Large Knowledge Base,EMNLP,2022
+rd7bfffae,jiang2022thor,included,Thor: Wielding Hammers to Integrate Language Models and Automated Theorem Provers,NeurIPS,2022
+r86cfc988,rongali2022training,included,Training Naturalized Semantic Parsers with Very Little Data,IJCAI,2022
+r54c1186a,chen2022unigeo,included,UniGeo: Unifying Geometry Logical Reasoning via Reformulating Mathematical Expression,EMNLP,2022
+r476a6958,saha2022weakly,included,Weakly Supervised Neuro-Symbolic Module Networks for Numerical Reasoning over Text,AAAI,2022
+r63158772,zheng2022minif2f,included,miniF2F: a cross-system benchmark for formal Olympiad-level mathematics,ICLR,2022
+r4eeb12bc,ahmed2023pseudo,included,A Pseudo-Semantic Loss for Autoregressive Models with Logical Constraints,NeurIPS,2023
+r95111202,vankrieken2023nesi,related,A-NeSI: A Scalable Approximate Method for Probabilistic Neurosymbolic Inference,NeurIPS,2023
+r90234048,huang2023anpl,included,ANPL: Towards Natural Programming with Interactive Decomposition,NeurIPS,2023
+r1cdd9f60,cao2023api,included,API-Assisted Code Generation for Question Answering on Varied Table Structures,EMNLP,2023
+rec5b0aa1,sun2023adaplanner,included,AdaPlanner: Adaptive Planning from Feedback with Language Models,NeurIPS,2023
+r44448bcd,ye2023amadeusgpt,included,AmadeusGPT: a natural language interface for interactive animal behavioral analysis,NeurIPS,2023
+r0b0b3428,khandelwal2023analyzing,included,Analyzing Modular Approaches for Visual Question Decomposition,EMNLP,2023
+r38c79cfe,roy2023benchclamp,included,BenchCLAMP: A Benchmark for Evaluating Language Models on Syntactic and Semantic Parsing,NeurIPS,2023
+r571ed5d4,pei2023better,included,Better Context Makes Better Code Language Models: A Case Study on Function Call Argument Completion,AAAI,2023
+r40247491,cheng2023binding,included,Binding Language Models in Symbolic Languages,ICLR,2023
+r06172ea1,jin2023cladder,included,CLadder: Assessing Causal Reasoning in Language Models,NeurIPS,2023
+r0acddc1f,zhang2023crt,included,CRT-QA: A Dataset of Complex Reasoning Question Answering over Tabular Data,EMNLP,2023
+r0de13fa8,kadlcik2023calc,included,Calc-X and Calcformers: Empowering Arithmetical Chain-of-Thought through Interaction with Symbolic Systems,EMNLP,2023
+ra0652471,pei2023large,included,Can Large Language Models Reason about Program Invariants?,ICML,2023
+r04ccb8d7,bonlarron2023constraints,included,Constraints First: A New MDD-based Model to Generate Sentences Under Constraints,IJCAI,2023
+r62710d49,wang2023dt,included,DT-Solver: Automated Theorem Proving with Dynamic-Tree Sampling Guided by Proof-level Value Function,ACL,2023
+r1a74778f,huang2023diffvl,included,DiffVL: Scaling Up Soft Body Manipulation using Vision-Language Driven Differentiable Physics,NeurIPS,2023
+rfcd51f39,nottingham2023embodied,included,Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling,ICML,2023
+rfa8fe6c4,gu2023language,included,Do language models have coherent mental models of everyday things?,ACL,2023
+r8c4ab443,gu2023don,included,"Don’t Generate, Discriminate: A Proposal for Grounding Language Models to Real-World Environments",ACL,2023
+rf5164d7c,jiang2023draft,included,"Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs",ICLR,2023
+ra71d911c,liu2023egocentric,included,Egocentric Planning for Scalable Embodied Task Achievement,NeurIPS,2023
+r26e072cc,he2023exploring,included,Exploring the Capacity of Pretrained Language Models for Reasoning about Actions and Change,ACL,2023
+rdfb101fb,polu2023formal,included,Formal Mathematics Statement Curriculum Learning,ICLR,2023
+r44d73521,faghihi2023gluecons,included,GLUECons: A Generic Benchmark for Learning under Constraints,AAAI,2023
+r5b26433b,welleck2023generating,included,Generating Sequences by Learning to Self-Correct,ICLR,2023
+r36abe7f8,wang2023grammar,included,Grammar Prompting for Domain-Specific Language Generation with Large Language Models,NeurIPS,2023
+re9cc5a89,watson2023hiddentables,included,HiddenTables and PyQTax: A Cooperative Game and Dataset For TableQA to Ensure Scale and Data Privacy Across a Myriad of Taxonomies,EMNLP,2023
+r5fa5fe64,ellis2023human,included,Human-like Few-Shot Learning via Bayesian Reasoning over Natural Language,NeurIPS,2023
+r38f94f66,bhagavatula2023i2d2,included,I2D2: Inductive Knowledge Distillation with NeuroLogic and Self-Imitation,ACL,2023
+r3c7effab,lu2023kice,included,KICE: A Knowledge Consolidation and Expansion Framework for Relation Extraction,AAAI,2023
+rb24d901d,ni2023lever,included,LEVER: Learning to Verify Language-to-Code Generation with Execution,ICML,2023
+r6f1f5bbd,olausson2023linc,included,LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers,EMNLP,2023
+r6465edfe,saparov2023language,included,Language Models Are Greedy Reasoners: A Systematic Formal Analysis of Chain-of-Thought,ICLR,2023
+raae0bc6d,haluptzok2023language,included,Language Models Can Teach Themselves to Program Better,ICLR,2023
+rcfb50a1a,xiang2023language,included,Language Models Meet World Models: Embodied Experiences Enhance Language Models,NeurIPS,2023
+r1538bbd5,kassner2023language,included,Language Models with Rationality,EMNLP,2023
+r7df7f9a4,zhao2023large,included,Large Language Models as Commonsense Knowledge for Large-Scale Task Planning,NeurIPS,2023
+r6e8e4460,hollmann2023large,included,Large Language Models for Automated Data Science: Introducing CAAFE for Context-Aware Automated Feature Engineering,NeurIPS,2023
+r9972c5b6,yang2023leandojo,included,LeanDojo: Theorem Proving with Retrieval-Augmented Language Models,NeurIPS,2023
+r3f6cb6bd,morishita2023learning,included,Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic,ICML,2023
+r59be65bf,ni2023learning,included,Learning Math Reasoning from Self-Sampled Correct and Partially-Correct Solutions,ICLR,2023
+r24638dca,guan2023leveraging,included,Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning,NeurIPS,2023
+r44b969bf,qian2023limitations,included,Limitations of Language Models in Arithmetic and Symbolic Induction,ACL,2023
+r0a0602e5,gao2023lora,included,LoRA: A Logical Reasoning Augmented Dataset for Visual Question Answering,NeurIPS,2023
+rc06bef66,han2023log,included,Log-FGAER: Logic-Guided Fine-Grained Address Entity Recognition from Multi-Turn Spoken Dialogue,EMNLP,2023
+r918e50a0,sclar2023minding,included,Minding Language Models’ (Lack of) Theory of Mind: A Plug-and-Play Multi-Character Belief Tracker,ACL,2023
+rbd43d9dd,subramanian2023modular,included,Modular Visual Question Answering via Code Generation,ACL,2023
+rd611b91b,marconato2023neuro,related,Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts,NeurIPS,2023
+re66c4b28,zhang2023paradox,included,On the Paradox of Learning to Reason from Data,IJCAI,2023
+re9e67d00,khakhar2023pac,included,PAC Prediction Sets for Large Language Models of Code,ICML,2023
+refa20322,gao2023pal,included,PAL: Program-aided Language Models,ICML,2023
+r77fe4b2c,feldstein2023parallel,included,Parallel Neurosymbolic Integration with Concordia,ICML,2023
+r9eac6196,zelikman2023parsel,included,Parsel🐍: Algorithmic Reasoning with Language Models by Composing Decompositions,NeurIPS,2023
+r8ddec13a,liu2023plan,included,"Plan, Verify and Switch: Integrated Reasoning with Diverse X-of-Thoughts",EMNLP,2023
+r266b0bb7,papicchio2023qatch,included,QATCH: Benchmarking SQL-centric tasks with Table Representation Learning Models on Your Data,NeurIPS,2023
+r7528f105,wang2023query,included,Query Structure Modeling for Inductive Logical Reasoning Over Knowledge Graphs,ACL,2023
+rab5f1bcb,joshi2023repair,included,Repair Is Nearly Generation: Multilingual Program Repair with LLMs,AAAI,2023
+ra7dc92c7,li2023slog,included,SLOG: A Structural Generalization Benchmark for Semantic Parsing,EMNLP,2023
+r9813e5ff,ye2023satlm,included,SatLM: Satisfiability-Aided Language Models Using Declarative Prompting,NeurIPS,2023
+r010070ef,xie2023self,included,Self-Evaluation Guided Beam Search for Reasoning,NeurIPS,2023
+r72a1c5d7,cai2023self,included,Self-Supervised Logic Induction for Explainable Fuzzy Temporal Commonsense Reasoning,AAAI,2023
+rcb83998b,wu2023symbol,included,Symbol-LLM: Leverage Language Models for Symbolic System in Visual Human Activity Reasoning,NeurIPS,2023
+r600a1210,chiu2023symbolic,included,Symbolic Planning and Code Generation for Grounded Dialogue,EMNLP,2023
+re9ba9b68,xiong2023trigo,included,TRIGO: Benchmarking Formal Mathematical Proof Reduction for Generative Language Models,EMNLP,2023
+r2d498f4d,saparov2023testing,included,Testing the General Deductive Reasoning Capacity of Large Language Models Using OOD Examples,NeurIPS,2023
+r3c0238e9,zhang2023tractable,included,Tractable Control for Autoregressive Language Generation,ICML,2023
+r6fb3f71a,wei2023typet5,included,TypeT5: Seq2seq Type Inference using Static Analysis,ICLR,2023
+r3fd20b0c,hsu2023s,included,What’s Left? Concept Grounding with Logic-Enhanced Foundation Models,NeurIPS,2023
+r661890dc,gur2024real,included,"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",ICLR,2024
+ra87e0258,meadows2024symbolic,included,A Symbolic Framework for Evaluating Mathematical Reasoning and Generalisation with Transformers,NAACL,2024
+r6b396b60,zhang2024adaptable,included,Adaptable Logical Control for Large Language Models,NeurIPS,2024
+ree2d9e8b,chen2024alphamath,included,AlphaMath Almost Zero: Process Supervision without Process,NeurIPS,2024
+rf2b9e2a1,yang2024analysis,related,Analysis for Abductive Learning and Neural-Symbolic Reasoning Shortcuts,ICML,2024
+r97476a41,yang2024arithmetic,included,Arithmetic Reasoning with LLM: Prolog Generation & Permutation,NAACL,2024
+rcee8d9a3,li2024autoformalize,included,Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency,NeurIPS,2024
+r6f24e47d,murphy2024autoformalizing,included,Autoformalizing Euclidean Geometry,ICML,2024
+rc1250f1e,belouadi2024automatikz,included,AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ,ICLR,2024
+r64780476,li2024automated,included,Automated Statistical Model Discovery with Language Models,ICML,2024
+rd45f1e27,he2024bc,included,BC-Prover: Backward Chaining Prover for Formal Theorem Proving,EMNLP,2024
+rbaaacf5e,padurean2024benchmarking,included,Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming,NeurIPS,2024
+ra1c2ff75,krumdick2024bizbench,included,BizBench: A Quantitative Reasoning Benchmark for Business and Finance,ACL,2024
+r6caabb12,wu2024bongard,included,Bongard-OpenWorld: Few-Shot Reasoning for Free-form Visual Concepts in the Real World,ICLR,2024
+rc21396bd,joshi2024cold,included,COLD: Causal reasOning in cLosed Daily activities,NeurIPS,2024
+raaede5d8,gu2024cruxeval,included,"CRUXEval: A Benchmark for Code Reasoning, Understanding and Execution",ICML,2024
+r09aef02b,zhong2024replace,included,Can LLM Replace Stack Overflow? A Study on Robustness and Reliability of Large Language Model Code Generation,AAAI,2024
+r9bf8be45,li2024chain,included,Chain of Code: Reasoning with a Language Model-Augmented Code Emulator,ICML,2024
+r804cd20b,stechly2024chain,included,Chain of Thoughtlessness? An Analysis of CoT in Planning,NeurIPS,2024
+r0ca252d5,logeswaran2024code,included,Code Models are Zero-shot Precondition Reasoners,NAACL,2024
+rcbbfcff5,tang2024code,included,Code Repair with LLMs gives an Exploration-Exploitation Tradeoff,NeurIPS,2024
+rcddfd23f,butt2024codeit,included,CodeIt: Self-Improving Language Models with Prioritized Hindsight Replay,ICML,2024
+r24aed30a,fang2024complex,included,Complex Reasoning over Logical Queries on Commonsense Knowledge Graphs,ACL,2024
+rf5d7a12a,zhang2024consistent,included,Consistent Autoformalization for Constructing Mathematical Libraries,EMNLP,2024
+r9d99f611,holt2024data,included,Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models,NeurIPS,2024
+r0d1db21b,belouadi2024detikzify,included,DeTikZify: Synthesizing Graphics Programs for Scientific Figures and Sketches with TikZ,NeurIPS,2024
+refec56ac,shindo2024deisam,included,DeiSAM: Segment Anything with Deictic Prompting,NeurIPS,2024
+r36b9fd34,chen2024divide,included,Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation,NeurIPS,2024
+r1f40020b,opedal2024language,included,Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?,ICML,2024
+rafe6d7af,pimparkhede2024doccgen,included,DocCGen: Document-based Controlled Code Generation,EMNLP,2024
+r1612bafd,piriyakulkij2024doing,included,Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning,NeurIPS,2024
+r8a87bae4,zhou2024don,included,Don't Trust: Verify -- Grounding LLM Quantitative Reasoning with Autoformalization,ICLR,2024
+rbb57251a,yang2024doraemongpt,included,DoraemonGPT: Toward Understanding Dynamic Scenes with Large Language Models (Exemplified as A Video Agent),ICML,2024
+r62e620ca,li2024embodied,included,Embodied Agent Interface: Benchmarking LLMs for Embodied Decision Making,NeurIPS,2024
+r85fbfe3b,ranaldi2024empowering,included,Empowering Multi-step Reasoning across Languages via Program-Aided Language Models,EMNLP,2024
+reba222b6,luo2024end,included,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,ICML,2024
+r051b0a1e,morishita2024enhancing,included,Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus,NeurIPS,2024
+rb5019997,ma2024eureka,included,Eureka: Human-Level Reward Design via Coding Large Language Models,ICLR,2024
+rae1abcaf,vafa2024evaluating,included,Evaluating the World Model Implicit in a Generative Model,NeurIPS,2024
+r8a268c2e,liu2024evolution,included,Evolution of Heuristics: Towards Efficient Automatic Algorithm Design Using Large Language Model,ICML,2024
+rf9e4862e,shi2024exedec,included,ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis,ICLR,2024
+rb0ba00fc,wang2024executable,included,Executable Code Actions Elicit Better LLM Agents,ICML,2024
+rf1f728de,xu2024exploiting,included,Exploiting Intrinsic Multilateral Logical Rules for Weakly Supervised Natural Language Video Localization,ACL,2024
+rfc590f9c,han2024folio,included,FOLIO: Natural Language Reasoning with First-Order Logic,EMNLP,2024
+rb5a2b99a,lin2024fvel,included,FVEL: Interactive Formal Verification Environment with Large Language Models via Theorem Proving,NeurIPS,2024
+r56925bb2,zhao2024financemath,included,FinanceMATH: Knowledge-Intensive Math Reasoning in Finance Domains,ACL,2024
+r6759bc6d,dutta2024frugal,included,Frugal LMs Trained to Invoke Symbolic Solvers Achieve Parameter-Efficient Arithmetic Reasoning,AAAI,2024
+r5b61b37f,chen2024genome,included,GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules,ICLR,2024
+rfaf1d4ce,wang2024gensim,included,GenSim: Generating Robotic Simulation Tasks via Large Language Models,ICLR,2024
+rd1889b16,silver2024generalized,included,Generalized Planning in PDDL Domains with Pretrained Large Language Models,AAAI,2024
+rc3671b2c,dainese2024generating,included,Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search,NeurIPS,2024
+ree311595,brahmavar2024generating,included,Generating Novel Leads for Drug Discovery Using LLMs with Logical Feedback,AAAI,2024
+rc264b05c,lee2024guess,included,Guess & Sketch: Language Model Guided Transpilation,ICLR,2024
+ra06c0609,beurerkellner2024guiding,included,"Guiding LLMs The Right Way: Fast, Non-Invasive Constrained Generation",ICML,2024
+r07214b1f,barke2024hysynth,included,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,NeurIPS,2024
+r1048a4cd,yang2024harnessing,included,Harnessing the Power of Large Language Models for Natural Language to First-Order Logic Translation,ACL,2024
+rd562c497,wang2024hypothesis,included,Hypothesis Search: Inductive Reasoning with Language Models,ICLR,2024
+r96e8617a,chen2024improving,included,Improving Large Language Models in Event Relation Logical Prediction,ACL,2024
+ree88c68b,chen2024integrating,included,Integrating Intent Understanding and Optimal Behavior Planning for Behavior Tree Generation from Human Instructions,IJCAI,2024
+r62b662a5,bonlarron2024intertwining,included,Intertwining CP and NLP: The Generation of Unreasonably Constrained Sentences,IJCAI,2024
+r8eded823,li2024programming,included,Is Programming by Example Solved by LLMs?,NeurIPS,2024
+re2f26fb4,wang2024lego,included,LEGO-Prover: Neural Theorem Proving with Growing Libraries,ICLR,2024
+r9a5225bf,grand2024lilo,included,LILO: Learning Interpretable Libraries by Compressing and Documenting Code,ICLR,2024
+r164e3a2d,ma2024simulation,included,LLM and Simulation as Bilevel Optimizers: A New Paradigm to Advance Physical Scientific Discovery,ICML,2024
+r9a70e448,wang2024llmdfa,included,LLMDFA: Analyzing Dataflow in Code with Large Language Models,NeurIPS,2024
+ra1fa04f4,han2024large,included,Large Language Models Can Automatically Engineer Features for Few-Shot Tabular Learning,ICML,2024
+ra142c48f,cai2024large,included,Large Language Models as Tool Makers,ICLR,2024
+rb2fb6f12,wang2024large,included,Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning,NeurIPS,2024
+rf1dea116,song2024latent,included,Latent Logic Tree Extraction for Event Sequence Explanation from LLMs,ICML,2024
+r6e19b6fe,ying2024lean,included,Lean Workbook: A large-scale Lean problem set formalized from natural language math problems,NeurIPS,2024
+r546f708d,jiang2024leanreasoner,included,LeanReasoner: Boosting Complex Logical Reasoning with Lean,NAACL,2024
+r76367fff,an2024learn,included,Learn from Failure: Fine-tuning LLMs with Trial-and-Error Data for Intuitionistic Propositional Logic Proving,ACL,2024
+rd6ab748e,xiao2024learning,included,Learning to Solve Geometry Problems via Simulating Human Dual-Reasoning Process,IJCAI,2024
+r78a681e5,wu2024lemur,included,Lemur: Integrating Large Language Models in Automated Program Verification,ICLR,2024
+r2dc08068,mahdavi2024leveraging,included,Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models,NeurIPS,2024
+r785313e9,azerbayev2024llemma,included,Llemma: An Open Language Model for Mathematics,ICLR,2024
+r40a7dd77,wan2024logicasker,included,LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models,EMNLP,2024
+r1bc4b29c,yue2024mammoth,included,MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning,ICLR,2024
+ra1d40c28,huang2024mustard,included,MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data,ICLR,2024
+rf127ea2d,mikua2024magnushammer,included,Magnushammer: A Transformer-Based Approach to Premise Selection,ICLR,2024
+r9982fc50,weng2024mastering,included,Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks,ICLR,2024
+r0c37875c,wang2024mathcoder,included,MathCoder: Seamless Code Integration in LLMs for Enhanced Mathematical Reasoning,ICLR,2024
+rd1cdf2d2,yin2024mumath,included,MuMath-Code: Combining Tool-Use Large Language Models with Multi-perspective Data Augmentation for Mathematical Reasoning,EMNLP,2024
+r49db4138,weir2024nellie,included,"NELLIE: A Neuro-Symbolic Inference Engine for Grounded, Compositional, and Explainable Reasoning",IJCAI,2024
+r432f1077,madusanka2024natural,included,Natural Language Satisfiability: Exploring the Problem Distribution and Evaluating Transformer-based Language Models,ACL,2024
+r70b0f3b6,li2024neuro,included,Neuro-Symbolic Data Generation for Math Reasoning,NeurIPS,2024
+ra6f72f2f,dugan2024occamllm,included,OccamLLM: Fast and Exact Language Model Arithmetic in a Single Step,NeurIPS,2024
+r47ab0e89,maene2024hardness,related,On the Hardness of Probabilistic Neurosymbolic Learning,ICML,2024
+raef94006,toshniwal2024openmathinstruct,included,OpenMathInstruct-1: A 1.8 Million Math Instruction Tuning Dataset,NeurIPS,2024
+r0e774100,ahmaditeshnizi2024optimus,included,OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models,ICML,2024
+r5402cb8c,nam2024optimized,included,Optimized Feature Generation for Tabular Data via LLMs with Decision Tree Reasoning,NeurIPS,2024
+r026d5bf1,zhu2024pad,included,PaD: Program-aided Distillation Can Teach Small Models Reasoning Better than Chain-of-thought Fine-tuning,NAACL,2024
+r9a9fad08,xu2024pathreasoner,included,PathReasoner: Modeling Reasoning Path with Equivalent Extension for Logical Question Answering,ACL,2024
+rb4bb0607,sahu2024pelican,included,Pelican: Correcting Hallucination in Vision-LLMs via Claim Decomposition and Program of Thought Verification,EMNLP,2024
+r37d6a8c5,qiu2024phenomenal,included,Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement,ICLR,2024
+r6fbf3493,chen2024premise,included,Premise Order Matters in Reasoning with Large Language Models,ICML,2024
+rc55bb913,kabra2024program,included,Program-Aided Reasoners (Better) Know What They Know,NAACL,2024
+r4b908b19,wei2024proving,included,Proving Olympiad Algebraic Inequalities without Human Demonstrations,NeurIPS,2024
+rb0ff4c85,wang2024proving,included,Proving Theorems Recursively,NeurIPS,2024
+r72b731d9,dong2024pruner,included,Pruner-Zero: Evolving Symbolic Pruning Metric From Scratch for Large Language Models,ICML,2024
+r33e16ff8,tsoukalas2024putnambench,included,PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition,NeurIPS,2024
+rbb49cc85,luo2024python,included,Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts,EMNLP,2024
+r108ca371,schrader2024quite,included,QUITE: Quantifying Uncertainty in Natural Language Text in Bayesian Reasoning Scenarios,EMNLP,2024
+r95cd948b,murahari2024qualeval,included,QualEval: Qualitative Evaluation for Model Improvement,NAACL,2024
+rabbf7a51,ye2024reevo,included,ReEvo: Large Language Models as Hyper-Heuristics with Reflective Evolution,NeurIPS,2024
+r698b51ae,stengeleskin2024regal,included,ReGAL: Refactoring Programs to Discover Generalizable Abstractions,ICML,2024
+rcf40140f,li2024relational,included,Relational Programming with Foundational Models,AAAI,2024
+r9c6c0db2,liu2024rethinking,included,Rethinking Tabular Data Understanding with Large Language Models,NAACL,2024
+re1993505,mu2024robocodex,included,RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis,ICML,2024
+rac50ef23,zheng2024sglang,included,SGLang: Efficient Execution of Structured Language Model Programs,NeurIPS,2024
+r8e6dfc90,sterbentz2024satyrn,included,Satyrn: A Platform for Analytics Augmented Generation,EMNLP,2024
+r0b63ce19,sileo2024scaling,included,Scaling Synthetic Logical Reasoning Datasets with Context-Sensitive Declarative Grammars,EMNLP,2024
+r3372249e,ma2024sciagent,included,SciAgent: Tool-augmented Language Models for Scientific Reasoning,EMNLP,2024
+rd458d236,yang2024scope,included,Scope-enhanced Compositional Semantic Parsing for DRT,EMNLP,2024
+rf885caa8,zhou2024solving,included,Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification,ICLR,2024
+rf20ecae4,ma2024spreadsheetbench,included,SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation,NeurIPS,2024
+re3733c0d,fang2024stacksight,included,StackSight: Unveiling WebAssembly through Large Language Models and Neurosymbolic Chain-of-Thought Decompilation,ICML,2024
+r33ed8809,zhao2024subgoal,included,Subgoal-based Demonstration Learning for Formal Theorem Proving,ICML,2024
+r3d84f159,xu2024symbol,included,Symbol-LLM: Towards Foundational Symbol-centric Interface For Large Language Models,ACL,2024
+r4317b7f6,grayeli2024symbolic,included,Symbolic Regression with a Learned Concept Library,NeurIPS,2024
+rb8c6568d,wang2024symbolic,included,Symbolic Working Memory Enhances Language Models for Complex Rule Application,EMNLP,2024
+ra4657d5a,mora2024synthetic,included,Synthetic Programming Elicitation for Text-to-Code in Very Low-Resource Programming and Formal Languages,NeurIPS,2024
+rd0e4be70,zhao2024tapera,included,TaPERA: Enhancing Faithfulness and Interpretability in Long-Form Table QA by Content Planning and Execution-based Reasoning,ACL,2024
+r29af79f6,chen2024tablerag,included,TableRAG: Million-Token Table Understanding with Language Models,NeurIPS,2024
+rf03252fb,xie2024text2reward,included,Text2Reward: Reward Shaping with Language Models for Reinforcement Learning,ICLR,2024
+r2080cdd7,wang2024theoremllama,included,TheoremLlama: Transforming General-Purpose LLMs into Lean4 Experts,EMNLP,2024
+rb66847eb,zhang2024tinychart,included,TinyChart: Efficient Chart Understanding with Program-of-Thoughts Learning and Visual Token Merging,EMNLP,2024
+r7dc50255,gou2024tora,included,ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving,ICLR,2024
+rcafa340f,santana2024automatic,included,Towards Automatic Composition of ASP Programs from Natural Language Specifications,IJCAI,2024
+rfff81209,liu2024general,included,Towards General Loop Invariant Generation: A Benchmark of Programs with Memory Manipulation,NeurIPS,2024
+r23bd7ed5,sarch2024vlm,included,VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought,NeurIPS,2024
+r263c8b5d,toroghi2024verifiable,included,"Verifiable, Debuggable, and Repairable Commonsense Logical Reasoning via LLM-based Theory Resolution",EMNLP,2024
+r610281c5,quan2024verification,included,Verification and Refinement of Natural Language Explanations through LLM-Symbolic Theorem Proving,EMNLP,2024
+rc28f5ba2,bhatia2024verified,included,Verified Code Transpilation with LLMs,NeurIPS,2024
+rf372919c,bi2024program,included,When Do Program-of-Thought Works for Reasoning?,AAAI,2024
+rdec717b7,chen2024tree,included,When is Tree Search Useful for LLM Planning? It Depends on the Discriminator,ACL,2024
+rf9b66245,menon2024whiteboard,included,Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities,EMNLP,2024
+r9a65906c,tang2024worldcoder,included,"WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment",NeurIPS,2024
+r823909fa,li2025texttt,included,$\texttt{STRCMP}$: Integrating Graph Structural Priors with Language Models for Combinatorial Optimization,NeurIPS,2025
+r0a754dc8,lamont2025d,included,3D-Prover: Diversity Driven Theorem Proving With Determinantal Point Processes,NeurIPS,2025
+r96f2cdc6,andrews2025reasoning,included,A Reasoning-Based Approach to Cryptic Crossword Clue Solving,ICML,2025
+r89bf1f29,su2025semantic,included,A Semantic Parsing Framework for End-to-End Time Normalization,NeurIPS,2025
+ra4243bf4,kokel2025acpbench,included,"ACPBench: Reasoning About Action, Change, and Planning",AAAI,2025
+r12a060a4,zhang2025aflow,included,AFlow: Automating Agentic Workflow Generation,ICLR,2025
+re13f719a,ospanov2025apollo,included,APOLLO: Automated LLM and Lean Collaboration for Advanced Formal Reasoning,NeurIPS,2025
+r3ab7ef65,liu2025atlas,included,"ATLAS: Autoformalizing Theorems through Lifting, Augmentation, and Synthesis of Data",NeurIPS,2025
+r9e910ce8,wang2025accurate,included,Accurate and Regret-Aware Numerical Problem Solver for Tabular Question Answering,AAAI,2025
+r21c6b045,wu2025alchemy,included,Alchemy: Amplifying Theorem-Proving Capability Through Symbolic Mutation,ICLR,2025
+r6048741f,aggarwal2025alphaverus,included,AlphaVerus: Bootstrapping Formally Verified Code Generation through Self-Improving Translation and Treefinement,ICML,2025
+r4795f41e,opedal2025language,included,Are Language Models Efficient Reasoners? A Perspective from Logic Programming,NeurIPS,2025
+r61cc1d1e,freedman2025argumentative,included,Argumentative Large Language Models for Explainable and Contestable Claim Verification,AAAI,2025
+r04874549,xu2025aristotle,included,Aristotle: Mastering Logical Reasoning with A Logic-Complete Decompose-Search-Resolve Framework,ACL,2025
+rf7949d7b,li2025atmossci,included,AtmosSci-Bench: Evaluating the Recent Advance of Large Language Model for Atmospheric Science,NeurIPS,2025
+re8e105a9,sinha2025autoopt,included,AutoOpt: A Dataset and a Unified Framework for Automating Optimization Problem Solving,NeurIPS,2025
+r71a25486,zhang2025autoformalization,included,Autoformalization in the Wild: Assessing LLMs on Real-World Mathematical Definitions,EMNLP,2025
+r2b00fd98,astorga2025autoformulation,included,Autoformulation of Mathematical Optimization Models Using LLMs,ICML,2025
+rd7c735fb,hu2025automated,included,Automated Design of Agentic Systems,ICLR,2025
+r42e78a64,chen2025automated,included,Automated Proof Generation for Rust Code via Self-Evolution,ICLR,2025
+r218783b6,xin2025bfs,included,BFS-Prover: Scalable Best-First Tree Search for LLM-based Automatic Theorem Proving,ACL,2025
+rd7f0e1f1,quan2025benchmarking,included,Benchmarking Spatiotemporal Reasoning in LLMs and Reasoning Models: Capabilities and Challenges,NeurIPS,2025
+re2d8a330,shindo2025blendrl,included,BlendRL: A Framework for Merging Symbolic and Neural Policy Learning,ICLR,2025
+rd881ed06,shao2025breaking,included,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,IJCAI,2025
+rbf1fa053,xiong2025building,included,Building Math Agents with Multi-Turn Iterative Preference Learning,ICLR,2025
+ra86a93ca,yang2025carts,included,CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search,ICLR,2025
+r9a191058,thakur2025clever,included,CLEVER: A Curated Benchmark for Formally Verified Code Generation,NeurIPS,2025
+rb797b231,banerjee2025crane,included,CRANE: Reasoning with constrained LLM generation,ICML,2025
+r097b6972,lecong2025reason,included,Can LLMs Reason About Program Semantics? A Comprehensive Evaluation of LLMs on Formal Specification Inference,ACL,2025
+r16bb57d2,yu2025chain,included,Chain-of-Reasoning: Towards Unified Mathematical Reasoning in Large Language Models via a Multi-Paradigm Perspective,ACL,2025
+rf784c201,dong2025chainedit,included,ChainEdit: Propagating Ripple Effects in LLM Knowledge Editing through Logical Rule-Guided Chains,ACL,2025
+r3b5fd577,viswanathan2025checklists,included,Checklists Are Better Than Reward Models For Aligning Language Models,NeurIPS,2025
+r78551d99,li2025codeio,included,CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction,ICML,2025
+r36baffd2,chen2025codesteer,included,CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance,ICML,2025
+r1476b927,li2025combining,included,Combining Induction and Transduction for Abstract Reasoning,ICLR,2025
+reaf641ba,singhal2025conceptsearch,included,ConceptSearch: Towards Efficient Program Search Using LLMs for Abstraction and Reasoning Corpus (ARC),AAAI,2025
+r00510af9,shi2025constraintllm,included,ConstraintLLM: A Neuro-Symbolic Framework for Industrial-Level Constraint Programming,EMNLP,2025
+rc399552f,ahmed2025controllable,included,Controllable Generation via Locally Constrained Resampling,ICLR,2025
+r3c2b28df,joshi2025controllable,included,Controllable and Reliable Knowledge-Intensive Task-Oriented Conversational Agents with Declarative Genie Worksheets,ACL,2025
+rb304055a,meadows2025controlling,included,Controlling Equational Reasoning in Large Language Models with Prompt Interventions,AAAI,2025
+rb7db1232,orvalho2025counterexample,included,Counterexample Guided Program Repair Using Zero-Shot Learning and MaxSAT-based Fault Localization,AAAI,2025
+r37271d3d,gao2025counterfactual,included,Counterfactual Evolution of Multimodal Datasets via Visual Programming,NeurIPS,2025
+r61c15866,wu2025del,included,DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic,EMNLP,2025
+r427dce68,suresh2025dingo,included,DINGO: Constrained Inference for Diffusion LLMs,NeurIPS,2025
+rd7186c82,naik2025dolphin,included,DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning,ICML,2025
+rd8418077,jiang2025droc,included,DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints,ICLR,2025
+r84c5c76d,li2025dataflow,included,Dataflow-Guided Neuro-Symbolic Language Models for Type Inference,ICML,2025
+rcec7abc9,xin2025deepseek,included,DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search,ICLR,2025
+r5f4af8c0,zhang2025diagnosing,included,Diagnosing and Addressing Pitfalls in KG-RAG Datasets: Toward More Reliable Benchmarking,NeurIPS,2025
+r42a18596,castro2025discovering,included,Discovering Symbolic Cognitive Models from Human and Animal Behavior,ICML,2025
+r7b7ccf8c,ryu2025divide,included,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,ICLR,2025
+r70688c50,jiang2025large,included,Do Large Language Models excel in Complex Logical Reasoning with Formal Language?,EMNLP,2025
+re0a00f6d,zou2025dynamath,included,DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models,ICLR,2025
+rf15138cf,huang2025esca,included,ESCA: Contextualizing Embodied Agents via Scene-Graph Generation,NeurIPS,2025
+rb8890cb3,sun2025earley,included,Earley-Driven Dynamic Pruning for Efficient Structured Decoding,ICML,2025
+ra5b22f5f,cheng2025empowering,related,Empowering LLMs with Logical Reasoning: A Comprehensive Survey,IJCAI,2025
+r9f9a50fe,princis2025enhancing,included,Enhancing SQL Query Generation with Neurosymbolic Reasoning,AAAI,2025
+rc361829b,chen2025enigmata,included,Enigmata: Scaling Logical Reasoning in Large Language Models with Synthetic Verifiable Puzzles,NeurIPS,2025
+r3b85cca1,zhai2025equivamap,included,EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations,ICML,2025
+r99a7d5e9,verbruggen2025execution,included,Execution-guided within-prompt search for programming-by-example,ICLR,2025
+r982a2b15,sclar2025explore,included,Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning,ICLR,2025
+rdaf96b33,yao2025fans,included,FANS: Formal Answer Selection for LLM Natural Language Math Reasoning Using Lean4,EMNLP,2025
+r7ce7b370,hopkins2025factorio,included,Factorio Learning Environment,NeurIPS,2025
+rae5718fd,quan2025faithful,included,Faithful and Robust LLM-Driven Theorem Proving for NLI Explanations,ACL,2025
+rd1ceb921,liu2025few,included,Few-Shot Natural Language to First-Order Logic Translation via Code Generation,NAACL,2025
+r9c943530,raz2025euler,included,From Euler to AI: Unifying Formulas for Mathematical Constants,NeurIPS,2025
+r5bbab863,cao2025informal,included,From Informal to Formal – Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs,ACL,2025
+r6b046c34,vyas2025swarm,included,From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle,ICLR,2025
+r8e52c498,ning2025gns,included,GNS: Solving Plane Geometry Problems by Neural-Symbolic Reasoning with Multi-Modal LLMs,AAAI,2025
+re1b34ce5,mirzadeh2025gsm,included,GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models,ICLR,2025
+rf6977fbc,rmus2025generating,included,Generating Computational Cognitive models using Large Language Models,NeurIPS,2025
+re961d8e7,lee2025generating,included,Generating Diverse Hypotheses for Inductive Reasoning,NAACL,2025
+rc6f43b68,xia2025geox,included,GeoX: Geometric Problem Solving Through Unified Formalized Vision-Language Pre-training,ICLR,2025
+r9f5f9d32,trifan2025grammar,included,Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI,EMNLP,2025
+r30b97cdb,english2025grammar,included,Grammar-Forced Translation of Natural Language to Temporal Logic using LLMs,ICML,2025
+re0ae613c,ganguly2025grammars,included,Grammars of Formal Uncertainty: When to Trust LLMs in Automated Reasoning Tasks,NeurIPS,2025
+r10c2acd2,abhyankar2025h,included,H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables,NAACL,2025
+r6890f25f,gao2025herald,included,Herald: A Natural Language Annotated Lean 4 Dataset,ICLR,2025
+rc8d2888b,chen2025hierarchical,included,Hierarchical Attention Generates Better Proofs,ACL,2025
+r125d996b,petruzzellis2025hierarchical,included,Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification,ICML,2025
+rc5a546c3,shi2025hierarchically,included,Hierarchically Encapsulated Representation for Protocol Design in Self-Driving Labs,ICLR,2025
+r7ab95a4e,yang2025reasoning,included,How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark,EMNLP,2025
+r7cca0ca0,li2025iris,included,IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities,ICLR,2025
+ra804bbd4,ahuja2025improver,included,ImProver: Agent-Based Automated Proof Optimization,ICLR,2025
+ra65cf286,wei2025improving,included,Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces,ICML,2025
+r0eb1bc7b,dhanraj2025improving,included,Improving Rule-based Reasoning in LLMs using Neurosymbolic Representations,EMNLP,2025
+r722fd25d,desouza2025inductive,included,Inductive Learning of Logical Theories with LLMs: A Expressivity-graded Analysis,AAAI,2025
+r96d78357,zhao2025ineq,included,Ineq-Comp: Benchmarking Human-Intuitive Compositional Reasoning in Automated Theorem Proving of Inequalities,NeurIPS,2025
+r54a42677,li2025ineqsearch,included,IneqSearch: Hybrid Reasoning for Olympiad Inequality Proofs,NeurIPS,2025
+rd7cd4fb2,raza2025instantiation,included,Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers,IJCAI,2025
+r1d000af2,chi2025instructflow,included,InstructFlow: Adaptive Symbolic Constraint-Guided Code Generation for Long-Horizon Planning,NeurIPS,2025
+r1c87c85f,wang2025instruction,included,Instruction-Augmented Long-Horizon Planning: Embedding Grounding Mechanisms in Embodied Mobile Manipulation,AAAI,2025
+r10020723,alviano2025integrating,included,Integrating Answer Set Programming and Large Language Models for Enhanced Structured Representation of Complex Knowledge in Natural Language,IJCAI,2025
+ra14b1953,xu2025interactive,included,Interactive Evolution: A Neural-Symbolic Self-Training Framework For Large Language Models,ACL,2025
+r2a0a856e,xu2025investigating,included,Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion,NAACL,2025
+r9d8363e3,luo2025kbqa,included,KBQA-o1: Agentic Knowledge Base Question Answering with Monte Carlo Tree Search,ICML,2025
+r2962fbdc,huang2025laser,included,LASER: A Neuro-Symbolic Framework for Learning Spatio-Temporal Scene Graphs with Weak Supervision,ICLR,2025
+r30b45561,ishay2025al,included,LLM+AL: Bridging Large Language Models and Action Languages for Complex Reasoning About Actions,AAAI,2025
+rb3e9d84c,chen2025dr,included,LLM-DR: A Novel LLM-Aided Diffusion Model for Rule Generation on Temporal Knowledge Graphs,AAAI,2025
+ra8538bd8,shojaee2025sr,included,LLM-SR: Scientific Equation Discovery via Programming with Large Language Models,ICLR,2025
+rb3c57dd0,shojaee2025srbench,included,LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models,ICML,2025
+r24fa22be,toroghi2025based,included,LLM-based Typed Hyperresolution for Commonsense Reasoning with Knowledge Bases,ICLR,2025
+r0cfab9a4,jiang2025llmopt,included,LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch,ICLR,2025
+r736ee6ed,zhu2025language,included,Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback,NAACL,2025
+rf7f17a35,saha2025language,included,Language Models are Crossword Solvers,NAACL,2025
+r6bbccaf3,mi2025language,included,Language-to-Space Programming for Training-Free 3D Visual Grounding,EMNLP,2025
+r396c252d,ye2025large,included,Large Language Model-driven Large Neighborhood Search for Large-Scale MILP Problems,ICML,2025
+r13e19e17,hao2025large,included,Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools,NAACL,2025
+r38244d6e,qi2025large,included,Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation,ICLR,2025
+r8e0eb62d,wang2025large,included,Large Language Models are Interpretable Learners,ICLR,2025
+rdbc215a2,jiang2025largeb,included,Large Language Models as End-to-end Combinatorial Optimization Solvers,NeurIPS,2025
+r9019a341,qu2025latent,included,Latent Reward: LLM-Empowered Credit Assignment in Episodic Reinforcement Learning,AAAI,2025
+rc9f8b9ed,lin2025lean,included,Lean-STaR: Learning to Interleave Thinking and Proving,ICLR,2025
+r209d7fc1,kumarappan2025leanagent,included,LeanAgent: Lifelong Learning for Formal Theorem Proving,ICLR,2025
+r9ec117bd,george2025leanprogress,included,LeanProgress: Guiding Search for Neural Theorem Proving via Proof Progress Prediction,TMLR,2025
+r7c99d329,tsoukalas2025learning,included,Learning Interestingness in Automated Mathematical Theory Formation,NeurIPS,2025
+rb6b49ed9,jin2025learning,included,Learning to Keep a Promise: Scaling Language Model Decoding Parallelism with Learned Asynchronous Decoding,ICML,2025
+r9581f567,beyer2025lexical,included,Lexical Recall or Logical Reasoning: Probing the Limits of Reasoning Abilities in Large Language Models,ACL,2025
+r3cb07e7e,kesseli2025logic,included,Logic.py: Bridging the Gap between LLMs and Constraint Solvers,NeurIPS,2025
+r59de26e5,wang2025logictree,included,LogicTree: Improving Complex Reasoning of LLMs via Instantiated Multi-step Synthetic Logical Data,NeurIPS,2025
+re1c272a1,ghosh2025logical,included,Logical Consistency of Large Language Models in Fact-Checking,ICLR,2025
+r612064d5,wang2025logical,included,Logical forms complement probability in understanding language model (and human) performance,ACL,2025
+r1556ed41,calanzone2025logically,included,Logically Consistent Language Models via Neuro-Symbolic Integration,ICLR,2025
+rcf10398e,yuan2025ma,included,MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications,EMNLP,2025
+rcefeacbc,wang2025ma,included,MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving,ICML,2025
+r05566fe9,liu2025mm,included,MM-Agent: LLM as Agents for Real-world Mathematical Modeling Problem,NeurIPS,2025
+r0b58eee0,liang2025mps,included,MPS-Prover: Advancing Stepwise Theorem Proving by Multi-Perspective Search and Data Curation,NeurIPS,2025
+r633d08ff,xie2025murka,included,MURKA: Multi-Reward Reinforcement Learning with Knowledge Alignment for Optimization Tasks,NeurIPS,2025
+reb0ef720,chau2025machine,included,Machine Learning meets Algebraic Combinatorics: A Suite of Datasets Capturing Research-level Conjecturing Ability in Pure Mathematics,ICML,2025
+rf832bdef,opedal2025mathgap,included,MathGAP: Out-of-Distribution Evaluation on Problems with Arbitrarily Complex Proofs,ICLR,2025
+r974a9133,dai2025meshcoder,included,MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds,NeurIPS,2025
+r57be21b8,xu2025muslr,included,MuSLR: Multimodal Symbolic Logical Reasoning,NeurIPS,2025
+r870ab859,xiu2025multilogicnmr,included,MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions,EMNLP,2025
+r2e3069a4,fang2025nl2lean,included,NL2Lean: Translating Natural Language into Lean 4 through Multi-Aspect Reinforcement Learning,EMNLP,2025
+r443beac1,choi2025nesyc,included,NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains,ICLR,2025
+r7f0629ef,kamali2025nesycoco,included,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,AAAI,2025
+r7acba57d,choi2025nesypr,included,NeSyPr: Neurosymbolic Proceduralization For Efficient Embodied Reasoning,NeurIPS,2025
+re266a131,dong2025neural,included,Neural Reasoning for Sure Through Constructing Explainable Models,AAAI,2025
+r0232a9a8,delvecchio2025neuro,related,Neuro-Symbolic Artificial Intelligence: A Task-Directed Survey in the Black-Box Models Era,IJCAI,2025
+r21d9df38,yang2025neuro,related,Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models,IJCAI,2025
+r1b894e95,sun2025omega,included,"OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization",NeurIPS,2025
+rd92d8ed7,huang2025limit,included,On the Limit of Language Models as Planning Formalizers,ACL,2025
+rc6ef1832,stechly2025self,included,On the self-verification limitations of large language models on reasoning and planning tasks,ICLR,2025
+r34aac216,stein2025once,included,Once Upon an Input: Reasoning via Per-Instance Program Synthesis,NeurIPS,2025
+r9521135b,liu2025open,included,Open-World Planning via Lifted Regression with LLM-Inferred Affordances for Embodied Agents,ACL,2025
+r59c39e16,yang2025optibench,included,OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling,ICLR,2025
+re0013edf,soroco2025pde,included,PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs,ICML,2025
+rc4b6bb13,wang2025primt,included,PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models,NeurIPS,2025
+r85105581,shao2025personal,included,Personal Travel Solver: A Preference-Driven LLM-Solver System for Travel Planning,ACL,2025
+rfffad286,zhao2025personalized,included,Personalized Decision Modeling: Utility Optimization or Textualized-Symbolic Reasoning,NeurIPS,2025
+r25a48355,zuo2025planetarium,included,Planetarium: A Rigorous Benchmark for Translating Text to Structured Planning Languages,NAACL,2025
+r69c23c69,hao2025planning,included,Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming,ICLR,2025
+rbba59ac8,huang2025planning,included,Planning in the Dark: LLM-Symbolic Planning Pipeline Without Experts,AAAI,2025
+radf94b79,piriyakulkij2025poe,included,PoE-World: Compositional World Modeling with Products of Programmatic Experts,NeurIPS,2025
+r9fb81a0c,chen2025predicate,included,Predicate-Guided Generation for Mathematical Reasoning,EMNLP,2025
+r00354623,wen2025program,included,Program Synthesis Benchmark for Visual Programming in XLogoOnline Environment,ACL,2025
+re3a4cd40,lee2025program,included,Program Synthesis via Test-Time Transduction,NeurIPS,2025
+rfb94d02e,khatuya2025program,included,Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval,EMNLP,2025
+r0422d6a3,liu2025proofaug,included,ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis,ICML,2025
+r1e0f1102,li2025proving,included,Proving Olympiad Inequalities by Synergizing LLMs and Symbolic Reasoning,ICLR,2025
+r7d61d023,wang2025qdtsynth,included,QDTSynth: Quality-Driven Formal Theorem Synthesis for Enhancing Proving Performance of LLMs,ACL,2025
+r7abb32ad,li2025questbench,included,QuestBench: Can LLMs ask the right question to acquire information in reasoning tasks?,NeurIPS,2025
+rb21543ad,kang2025r2,included,R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,ICLR,2025
+r51721b5d,xu2025re,included,RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation,ICML,2025
+r011d7456,nafar2025reasoning,included,Reasoning over Uncertain Text by Generative Large Language Models,AAAI,2025
+r73041e10,li2025reasoning,included,Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment,ICML,2025
+rc4d1bc76,dong2025relationalcoder,included,RelationalCoder: Rethinking Complex Tables via Programmatic Relational Transformation,ACL,2025
+r8265ef4f,poiroux2025reliable,included,Reliable Evaluation and Benchmarks for Statement Autoformalization,EMNLP,2025
+r3d46fcbb,guo2025repoaudit,included,RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing,ICML,2025
+r596cca2a,liu2025rethinking,included,Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach,ICLR,2025
+r12a103a9,cao2025reviving,included,Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models,NeurIPS,2025
+ref1a4a16,he2025rewarding,included,Rewarding the Unlikely: Lifting GRPO Beyond Distribution Sharpening,EMNLP,2025
+r39d81df4,zhang2025ruag,included,RuAG: Learned-rule-augmented Generation for Large Language Models,ICLR,2025
+r5e58413d,zhou2025rulearena,included,RuleArena: A Benchmark for Rule-Guided Reasoning with LLMs in Real-World Scenarios,ACL,2025
+r31e46b7f,wei2025satbench,included,SATBench: Benchmarking LLMs’ Logical Reasoning via Automated Puzzle Generation from SAT Formulas,EMNLP,2025
+r5715c6fc,liu2025saturn,included,SATURN: SAT-based Reinforcement Learning to Unleash LLMs Reasoning,NeurIPS,2025
+re742c2dc,dong2025stp,included,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,ICML,2025
+re9e1108c,modak2025synapse,included,SYNAPSE: SYmbolic Neural-Aided Preference Synthesis Engine,AAAI,2025
+ra8869ee2,liu2025safe,included,Safe: Enhancing Mathematical Reasoning in Large Language Models via Retrospective Step-aware Formal Verification,ACL,2025
+r932616a7,zhang2025safeauto,included,SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models,ICML,2025
+rae33fe2f,pourcel2025self,included,Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI,ICML,2025
+rffe62927,chen2025shieldagent,included,ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning,ICML,2025
+r7cba4758,chen2025solver,included,Solver-Informed RL: Grounding Large Language Models for Authentic Optimization Modeling,NeurIPS,2025
+r51bd51a2,li2025solverllm,included,SolverLLM: Leveraging Test-Time Scaling for Optimization Problem via LLM-Guided Search,NeurIPS,2025
+r72fadfed,agrawal2025specmas,included,SpecMAS: A Multi-Agent System for Self-Verifying System Generation via Formal Model Checking,NeurIPS,2025
+r5b626332,chen2025steering,included,Steering Large Language Models between Code Execution and Textual Reasoning,ICLR,2025
+rc17dc698,son2025subtle,included,"Subtle Risks, Critical Failures: A Framework for Diagnosing Physical Safety of LLMs for Embodied Decision Making",EMNLP,2025
+r16bb7249,lee2025symba,included,SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning,NAACL,2025
+r06b8d03f,wang2025symrtlo,included,SymRTLO: Enhancing RTL Code Optimization with LLMs and Neuron-Inspired Symbolic Reasoning,NeurIPS,2025
+r59c99f02,liu2025synthesizing,included,Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search,ICLR,2025
+recc9142e,saha2025system,included,System 1.x: Learning to Balance Fast and Slow Planning with Language Models,ICLR,2025
+r97ae3996,li2025teaching,included,Teaching Language Models to Reason with Tools,NeurIPS,2025
+r5f4be8d2,fatemi2025test,included,Test of Time: A Benchmark for Evaluating LLMs on Temporal Reasoning,ICLR,2025
+r66ce1dcb,leang2025theorem,included,Theorem Prover as a Judge for Synthetic Data Generation,ACL,2025
+rf95295b4,sprague2025cot,included,To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning,ICLR,2025
+rb425a47c,cao2025advanced,included,Towards Advanced Mathematical Reasoning for LLMs via First-Order Logic Theorem Proving,EMNLP,2025
+rd7d2bb04,wang2025data,related,Towards Data-And Knowledge-Driven AI: A Survey on Neuro-Symbolic Computing,TPAMI,2025
+r6b8e53de,ahn2025reliable,included,Towards Reliable Code-as-Policies: A Neuro-Symbolic Framework for Embodied Task Planning,NeurIPS,2025
+r0483d3f4,richardson2025understanding,included,Understanding the Logic of Direct Preference Alignment through Logic,ICML,2025
+r790d4bfc,ye2025unidomain,included,UniDomain: Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning,NeurIPS,2025
+rcc2d7391,madusanka2025unravelling,included,Unravelling the Logic: Investigating the Generalisation of Transformers in Numerical Satisfiability Problems,ACL,2025
+r795e38a8,tian2025vcsearch,included,VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning,EMNLP,2025
+r867b1f33,li2025vlmaterial,included,VLMaterial: Procedural Material Generation with Large Vision-Language Models,ICLR,2025
+r0690ffd9,jin2025verilocc,included,VeriLocc: End-to-End Cross-Architecture Register Allocation via LLM,EMNLP,2025
+r59461901,liang2025visualpredicator,included,VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning,ICLR,2025
+r2a248128,zhou2025wall,included,WALL-E: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents,NeurIPS,2025
+r2a5a5c5f,xing2025prompt,included,"When Prompt Engineering Meets Software Engineering: CNL-P as Natural and Robust ""APIs'' for Human-AI Interaction",ICLR,2025
+r16666d21,lin2025zebralogic,included,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,ICML,2025
+rbe76e7da,doumbouya2025h4rm3l,included,h4rm3l: A Language for Composable Jailbreak Attack Synthesis,ICLR,2025
+rd2e57606,hu2025minictx,included,miniCTX: Neural Theorem Proving with (Long-)Contexts,ICLR,2025
+r5877c953,ospanov2025minif2f,included,miniF2F-Lean Revisited: Reviewing Limitations and Charting a Path Forward,NeurIPS,2025
+rafb06f00,chen2026dept,included,$A_2$DEPT: Large Language Model–Driven Automated Algorithm Design via Evolutionary Program Trees,ICML,2026
+r2fc3d9ee,cotnareanu2026balanced,included,A Balanced Neuro-Symbolic Approach for Commonsense Abductive Logic,ICLR,2026
+r787742b2,requena2026minimal,included,A Minimal Agent for Automated Theorem Proving,ICML,2026
+ra79fa313,schrader2026solver,included,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,AAAI,2026
+r0e2c4e07,xin2026ape,included,APE-Bench: Evaluating Automated Proof Engineering for Formal Math Libraries,ICML,2026
+rcab2cd44,castanyer2026arm,included,ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning,ICLR,2026
+r40769616,liu2026assess,included,ASSESS: A Semantic and Structural Evaluation Framework for Statement Similarity,ICLR,2026
+r9cba5b44,shalyt2026asymob,included,ASyMOB: Algebraic Symbolic Mathematical Operations Benchmark,ICML,2026
+r5ad3a437,cotnareanu2026abductive,included,Abductive Reasoning with Probabilistic Commonsense,ICML,2026
+rca8a5faa,gao2026abstral,included,AbstRaL: Augmenting LLMs' Reasoning by Reinforcing Abstract Thinking,ICLR,2026
+r9ef2cbd8,zhao2026achieving,included,Achieving Expert-Level Agent from Foundation Model via Complexity Curriculum Reinforcement Learning with Synthetic Data,ICLR,2026
+r58786fe5,helff2026activationreasoning,included,ActivationReasoning: Logical Reasoning in Latent Activation Spaces,ICLR,2026
+r831587da,winston2026agent,included,Agent JIT Compilation for Latency-Optimizing Web Agent Planning and Scheduling,ICML,2026
+r605194c1,luo2026agentmath,included,AgentMath: Empowering Mathematical Reasoning for Large Language Models via Tool-Augmented Agent,ICLR,2026
+re3325cde,zeng2026agentic,included,Agentic Jigsaw Interaction Learning for Enhancing Visual Perception and Reasoning in Vision-Language Models,ICLR,2026
+raa75ebe1,zhang2026agentic,included,An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems,ICLR,2026
+r41c683e1,liu2026analogverifier,included,AnalogVerifier: A Neuro-Symbolic Framework for Analog Circuit Verification,ICML,2026
+r10e36dc2,wang2026aria,included,Aria: an Agent for Retrieval and Iterative Auto-Formalization via Dependency Graph,ICLR,2026
+r296c3ace,li2026autocontrol,included,AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation,ICML,2026
+r645b6f6a,xiao2026autovsr,included,AutoVSR: Automatic Visual-to-Symbolic Reasoning for Symbolic Expression Generation from Circuit Schematic,ICML,2026
+ree89803d,xiong2026automated,included,Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs,ICML,2026
+r50ca5848,lu2026automated,included,Automated Formalization via Conceptual Retrieval-Augmented LLMs,ICLR,2026
+r9eb18935,liu2026theorem,included,"Beyond Theorem Proving: Formulation, Framework and Benchmark for Formal Problem-Solving",ICML,2026
+re33d530c,srivastava2026beyondbench,included,BeyondBench: Benchmark-Free Evaluation of Reasoning in Language Models,ICLR,2026
+r794f5551,yang2026cirbench,included,CIRBench: Evaluating Large Language Models as LLVM IR Optimizers,ICML,2026
+r232e4111,chen2026clue,included,CLUE: Conflict-guided Localization for LLM Unlearning Framework,ICLR,2026
+r04590057,pan2026cmt,included,CMT-Benchmark: A Benchmark for Condensed Matter Theory Built by Expert Researchers,ICLR,2026
+rd16a5d6f,xie2026reason,included,Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench: Evaluating via Verification Chain of Thought,ICML,2026
+r5fbc1849,chen2026vlms,included,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,TMLR,2026
+rf01d288d,mothukuri2026causal,included,Causal Detection of Multi-Step LLM Agent Attacks,ICML,2026
+rdabcbba2,akbari2026circuitsense,included,CircuitSense: A Hierarchical Circuit System Benchmark Bridging Visual Comprehension and Symbolic Reasoning in Engineering Design Process,ICLR,2026
+r0a224728,lehrach2026code,included,Code World Models for General Game Playing,ICLR,2026
+rd3fc62e4,chen2026code2video,included,Code2Video: A Code-centric Paradigm for Educational Video Creation,ICML,2026
+r7dc6cf73,kaiser2026cogniload,included,"CogniLoad: A Synthetic Natural Language Reasoning Benchmark With Tunable Length, Intrinsic Difficulty, and Distractor Density",ICLR,2026
+rd03c7afc,li2026compile,included,Compile to Compress: Boosting Formal Theorem Provers by Compiler Outputs,ICML,2026
+rab6cec2c,sinha2026concept,included,Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models,AAAI,2026
+re65725d0,mundler2026constrained,included,Constrained Decoding of Diffusion LLMs with Context-Free Grammars,ICLR,2026
+r92b5842f,li2026constructing,included,Constructing Industrial-Scale Optimization Modeling Benchmark,ICML,2026
+r8d84714f,kim2026continuous,included,Continuous Diffusion Models Can Obey Formal Syntax,ICML,2026
+rbf2428aa,liu2026convexbench,included,ConvexBench: Can LLMs Recognize Convex Functions?,ICML,2026
+r0aeb4906,gao2026cubebench,included,"CubeBench: Diagnosing Interactive, Long-Horizon Physical Intelligence under Partial Observations",ICLR,2026
+re1446fe9,zhang2026drift,included,"DRIFT: Decompose, Retrieve, Illustrate, then Formalize Theorems",ICLR,2026
+r33686293,behzadifar2026decaevolve,included,"DecAEvolve: Decompose, Adapt, and Evolve for Effective LLM-based Scientific Equation Discovery",ICML,2026
+r9faf5834,jiang2026decover,included,DecoVer: A Decompose-and-Verify Neuro-Symbolic Framework for Embodied Task Planning with BC+,ICML,2026
+r5390b532,liu2026decompose,included,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",ICML,2026
+r1bac9a05,pang2026deliberate,included,Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs,ICML,2026
+r50af759f,jiang2026deltaevolve,included,DeltaEvolve: Accelerating Scientific Discovery through Momentum-Driven Evolution,ICML,2026
+r4014d545,yoon2026designing,included,Designing Observation and Action Models for Efficient Reinforcement Learning with LLMs,ICML,2026
+r77508cf5,song2026discovering,included,Discovering Ordinary Differential Equations with LLM-Based Qualitative and Quantitative Evaluation,ICML,2026
+rdbefa82b,mo2026distilling,included,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,ICML,2026
+r7145390a,jiang2026egg,included,EGG-SR - Embedding Symbolic Equivalence into Symbolic Regression via Equality Graph,ICLR,2026
+r75eaf601,xiao2026editable,included,Editable Proof Sketch for Automated Theorem Proving,ICML,2026
+r0fb6ebec,choi2026efficient,included,Efficient Skill Grounding via Code Refactoring with Small Language Models,ICML,2026
+ra905e9a3,li2026embodied,included,Embodied Task Planning via Graph-Informed Action Generation with Large Language Models,ICML,2026
+r71d4ad74,zhou2026engiagent,included,EngiAgent: Fully Connected Coordination of LLM Agents for Solving Open-ended Engineering Problems with Feasible Solutions,ICML,2026
+r0743526e,yang2026enhancing,included,Enhancing Complex Symbolic Logical Rea­soning of Large Language Models via Sparse Multi-Agent Debate,ICLR,2026
+rc3acba99,yu2026enhancing,included,Enhancing Geometric Perception in VLMs via Translator-Guided Reinforcement Learning,ICLR,2026
+r11bcdfdc,zhu2026enhancing,included,Enhancing Neural Theorem Proving via High-Quality Proof Selection and Verifier Feedback,ICML,2026
+r56e37560,liu2026error,included,"Error Notebook-Guided, Training-Free Part Retrieval in 3D CAD Assemblies via Vision-Language Models",ICLR,2026
+r6ee04317,essebbani2026evaluating,included,Evaluating Robustness of Reasoning Models on Parameterized Logical Problems,ICML,2026
+rde2a3082,tian2026evolprover,included,EvolProver: Advancing Automated theorem proving by Evolving Formalized Problems via Symmetry and Difficulty,ICLR,2026
+r587a846d,wang2026evolution,included,Evolution of Benchmark: Black-Box Optimization Benchmark Design through Large Language Model,ICML,2026
+rb3299d36,qiu2026evolving,included,Evolving Interdependent Operators with Large Language Models for Multi-Objective Combinatorial Optimization,ICML,2026
+r103820b4,yang2026exverus,included,ExVerus: Verus Proof Repair via Counterexample Reasoning,ICML,2026
+rf3eeee6b,liang2026exopredicator,included,ExoPredicator: Learning Abstract Models of Dynamic Worlds for Robot Planning,ICLR,2026
+r73af149f,jiang2026fate,included,FATE: A Formal Benchmark Series for Frontier Algebra of Multiple Difficulty Levels,ICLR,2026
+rb45a4969,kumar2026fhe,included,FHE-Coder: Secure Agentic Code Generation for Fully Homomorphic Encryption,ICLR,2026
+raccec608,ma2026fire,included,FIRE: Learning to Navigate and Act on Real-World Files via Stateful Reinforcement Learning,ICML,2026
+rf3eda214,gupta2026fasta,included,FaSTA*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient Multi-turn Image Editing,ICLR,2026
+r26b6774b,ammanamanchi2026faults,included,Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving,ICML,2026
+r3750b732,zhou2026formaljudge,included,FormalJudge: A Neuro-Symbolic Paradigm for Agentic Oversight,ICML,2026
+r8e5e1408,yang2026formalml,included,FormalML: A Benchmark for Evaluating Formal Subgoal Completion in Machine Learning Theory,ICLR,2026
+r90e3d0ed,wang2026formalrx,included,FormalRx: Rectify and eXamine Semantic Failures in Autoformalization,ICML,2026
+r1ead1843,zuo2026generated,included,From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates,ICML,2026
+ra6a7aa23,feng2026frontierco,included,FrontierCO: Real-World and Large-Scale Evaluation of Machine Learning Solvers for Combinatorial Optimization,ICLR,2026
+rd68cad81,chun2026functional,included,Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents,ICML,2026
+rff5b35b6,wang2026gar,included,GAR: Generative Adversarial Reinforcement Learning for Formal Theorem Proving,ICLR,2026
+rc7b38fa9,yan2026glare,included,GLARE: Scalable Neuro-Symbolic Reward Shaping for LLM Agents via Group-Level Automata,ICML,2026
+r9acdeee6,sapora2026grace,included,GRACE: A Language Model Framework for Explainable Inverse Reinforcement Learning,ICLR,2026
+rb083b075,guo2026grasp,included,GRASP: Graph Reasoning via Agentic Solving and Probing of LLMs,ICML,2026
+reeceb7b7,ke2026game,included,Game-Theoretic Co-Evolution for LLM-Based Heuristic Discovery,ICML,2026
+r520c7235,lin2026goedel,included,Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction,ICLR,2026
+r4a85d8ca,luo2026graph,included,Graph of States: Solving Abductive Tasks with Large Language Models,ICML,2026
+r690877a5,wu2026grounding,included,Grounding Generative Planners in Verifiable Logic: A Hybrid Architecture for Trustworthy Embodied AI,ICLR,2026
+raa44c8be,ospanov2026hermes,included,HERMES: Towards Efficient and Verifiable Mathematical Reasoning in LLMs,ICML,2026
+rb1f7e919,varambally2026hilbert,included,Hilbert: Recursively Building Formal Proofs with Informal Reasoning,ICLR,2026
+r832b7a75,lin2026far,included,How Far Are LLMs from Professional Poker Players? Revisiting Game-Theoretic Reasoning with Agentic Tool Use,ICLR,2026
+r96d2bfb9,yang2026powerful,included,How Powerful are LLMs in Generating Formal Program Specifications?,ICML,2026
+r35dff64d,batzoglou2026induction,included,INDUCTION: Finite-Structure Concept Synthesis in First-Order Logic,ICML,2026
+r99ad3bbf,du2026ice,included,Ice Cream Doesn’t Cause Drowning: Benchmarking LLMs Against Statistical Pitfalls in Causal Inference,ICLR,2026
+r55b5226e,saveliev2026influence,included,Influence-Guided Symbolic Regression: Scientific Discovery via LLM-Driven Equation Search with Granular Feedback,ICML,2026
+ref1417ae,tong2026code,included,Is Code Better Than Language for Algorithmic Reasoning?,ICML,2026
+r0b495d33,sadikov2026guided,included,LLM-Guided Evolutionary Program Synthesis for Quasi-Monte Carlo Design,ICLR,2026
+rbc712825,hou2026llm4branch,included,LLM4Branch: Large Language Model for Discovering Efficient Branching Policies of Integer Programs,ICML,2026
+rdd6ec86a,thimmaiah2026lean,included,"LLMs Lean on Priors, Not Programming Language Semantics",ICML,2026
+r6975c90e,jurayj2026language,included,Language Models and Logic Programs for Trustworthy Tax Reasoning,AAAI,2026
+re0440fca,erata2026learning,included,Learning Randomized Reductions,ICML,2026
+re876f978,shao2026lifting,included,Lifting Traces to Logic: Programmatic Skill Induction with Neuro-Symbolic Learning for Long-Horizon Agentic Tasks,ICML,2026
+rb51f1ace,shi2026loc,included,LoC-Decomp: LLM Autoformalization via Logical Concept Decomposition and Iterative Feedback Correction,ICLR,2026
+r7345147b,xu2026local,included,Local Success Does Not Compose: Benchmarking Large Language Models for Compositional Formal Verification,ICLR,2026
+r47c448cd,chen2026logiconbench,included,LogiConBench: Benchmarking Logical Consistencies of LLMs,ICLR,2026
+r5ed1e5a9,xu2026logicreward,included,LogicReward: Incentivizing LLM Reasoning via Step-Wise Logical Supervision,ICLR,2026
+ra8b9906a,tian2026logicsage,included,LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement,ICML,2026
+rdf0ed85b,chen2026malice,included,MALICE: Memory-aware Loop Invariants Generation on Symbolic Execution Traces,ICML,2026
+r97819a7d,xuejun2026mathesis,included,Mathesis: Towards Formal Theorem Proving from Natural Languages,ICLR,2026
+r860cd506,liu2026mathliblemma,included,MathlibLemma: Folklore Lemma Generation and Benchmark for Formal Mathematics,ICML,2026
+r195e1eaa,jha2026modeling,included,Modeling Others' Minds as Code,ICLR,2026
+r2f322bd6,bartmann2026moleculariq,included,MolecularIQ: Characterizing Chemical Reasoning Capabilities Through Symbolic Verification on Molecular Graphs,ICLR,2026
+rbecc6e76,belouadi2026multimat,included,MultiMat - Multimodal Program Synthesis for Procedural Materials using Large Multimodal Models,ICLR,2026
+r6f4e1362,hu2026multimodal,included,Multimodal LLM-assisted Evolutionary Search for Programmatic Control Policies,ICLR,2026
+rb8e7c283,song2026nemo,included,NEMO: Execution-Aware Optimization Modeling via Autonomous Coding Agents,ICML,2026
+r7bd71a09,liu2026natural,included,Natural Language PDDL (NL-PDDL) for Open-world Goal-oriented Commonsense Regression Planning in Embodied AI,ICLR,2026
+r5f46bb8d,kamali2026neptune,included,NePTune: A Neuro-Pythonic Framework for Tunable Compositional Reasoning on Vision-Language,ICLR,2026
+rcde627a9,shah2026neus,included,NeuS-QA: Grounding Long-Form Video Understanding in Temporal Logic and Neuro-Symbolic Reasoning,AAAI,2026
+rd986a64e,xu2026neural,included,Neural Theorem Proving for Verification Conditions: A Real-World Benchmark,ICLR,2026
+r19ae4fa3,zheng2026newtonbench,included,NewtonBench: Benchmarking Generalizable Scientific Law Discovery in LLM Agents,ICLR,2026
+rf93088a9,marsili2026no,included,"No Labels, No Problem: Training Visual Reasoners with Multimodal Verifiers",ICLR,2026
+rbb0b9d05,zhao2026non,included,Non-Parametric Structural Priors for Geometry Theorem Prediction,ICML,2026
+r764cc16d,pinto2026invariants,included,Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs,ICML,2026
+r0d87801a,chen2026opt,included,OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling,ICML,2026
+r6e462a44,yan2026orbit,included,ORBIT: A Prognostic World Model for Ocular Reasoning Based on Imagined Trajectories,ICML,2026
+r26369457,ao2026orloopbench,included,ORLoopBench: Solver-in-the-Loop Benchmarks for Self-Correction and Behavioral Rationality in Operations Research,ICML,2026
+rd4a9e13f,huang2026one,included,One Demo Is All It Takes: Planning Domain Derivation with LLMs from A Single Demonstration,ICLR,2026
+r34074b15,mo2026open,included,Open-World LLM Logical Reasoning,ICML,2026
+raccc7bc2,baillet2026operator,included,Operator Theory-Driven Autoformulation of MDPs for Control of Queueing Systems,ICLR,2026
+rabcc2a78,liu2026opt,included,Opt-Verifier: Unleashing the Power of LLMs for Optimization Modeling via Dual-Side Verification,ICML,2026
+r75dc134e,mandel2026ppdl,included,PPDL: LLM-Based Flows as Probabilistic Programs,ICML,2026
+r6f7a087b,zhao2026prism,included,PRISM-Physics: Causal DAG-Based Process Evaluation for Physics Reasoning,ICLR,2026
+rec5b4ed8,wang2026physcensis,included,PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement,ICLR,2026
+r49c87408,jiang2026procedural,included,Procedural Pretraining: Warming Up Language Models with Abstract Data,ICML,2026
+r9d3f97de,kim2026process,included,Process-Verified Reinforcement Learning for Theorem Proving via Lean,ICLR,2026
+r37bdfec4,cook2026programming,included,Programming by Backprop: Learning Behaviour from Symbolic Descriptions,ICLR,2026
+rabf69c7a,jana2026proofbridge,included,ProofBridge: Auto-Formalization of Natural Language Proofs in Lean via Joint Embeddings,ICLR,2026
+r7b852e9f,cabral2026proofflow,included,ProofFlow: A Dependency Graph Approach to Faithful Proof Autoformalization,ICLR,2026
+r1afc3d79,gu2026proofoptimizer,included,ProofOptimizer: Training Language Models to Simplify Proofs without Human Demonstrations,ICLR,2026
+rd3d4524a,wilf2026propose,included,"Propose, Solve, Verify: Self-Play Through Formal Verification",ICML,2026
+r24171a33,cao2026pushing,included,Pushing the Boundaries of Natural Reasoning: Interleaved Bonus from Formal-Logic Verification,ICML,2026
+rd23a2890,chen2026r1,included,R1-Code-Interpreter: LLMs Reason with Code via Supervised and Multi-stage Reinforcement Learning,ICLR,2026
+r71e26edf,chen2026reform,included,ReForm: Reflective Autoformalization with Prospective Bounded Sequence Optimization,ICLR,2026
+rb5398a81,feng2026retool,included,ReTool: Reinforcement Learning for Strategic Tool Use in LLMs,ICLR,2026
+r5f005528,berdoz2026reasoning,included,Reasoning Structure of Large Language Models,ICML,2026
+r56ca0cde,yang2026recursive,included,Recursive Models for Long-Horizon Reasoning,ICML,2026
+r690964dc,kanda2026refinestat,included,RefineStat: Efficient Exploration for Probabilistic Program Synthesis,ICLR,2026
+rab20f8f2,zhu2026refining,included,Refining Hybrid Genetic Search for CVRP via Reinforcement Learning-Finetuned LLM,ICLR,2026
+r0a572ee0,li2026robust,included,Robust Equation Structure learning with Adaptive Refinement,ICLR,2026
+r1e19fe7e,zhang2026sac,included,SAC-Opt: Semantic Anchors for Iterative Correction in Optimization Modeling,ICML,2026
+rf1024aef,zhan2026scope,included,SCOPE: Evolving Symbolic World for Planning in Open-Ended Environments,ICML,2026
+r162d22f6,carlsson2026sedras,included,SEDRAS: Symbolically Evaluated Deep Research And Science,ICML,2026
+re5e49fe2,wang2026sl,included,SL-VC: A Benchmark and Automated Framework for Separation Logic Verification Condition Proving,ICML,2026
+rdea26305,xia2026sr,included,SR-Scientist: Scientific Equation Discovery With Agentic AI,ICLR,2026
+r8e7dfae3,nguyen2026safety,included,Safety Game: Inference-Time Alignment of Black-Box LLMs via Constrained Optimization,ICML,2026
+rb6819abd,xin2026scaling,included,Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers,ICML,2026
+r4f8abb9a,huang2026self,included,Self-CriTeach: LLM Self-Teaching and Self-Critiquing for Improving Robotic Planning via Automated Domain Generation,ICML,2026
+rea458d73,cheng2026sharing,included,Sharing State Between Prompts and Programs,ICLR,2026
+r40f32cd4,wang2026sheetbrain,included,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,AAAI,2026
+ra2c0bf92,lange2026shinkaevolve,included,ShinkaEvolve: Towards Open-Ended and Sample-Efficient Program Evolution,ICLR,2026
+r13f57eb5,hao2026simulation,included,Simulation to Rules: A Dual-VLM Framework for Formal Visual Planning,ICLR,2026
+r254fcd16,xu2026socrates,included,Socrates or Smartypants: Testing Logic Reasoning Capabilities of Large Language Models with Logic Programming-Based Test Oracles,AAAI,2026
+r7767563b,tan2026sonar,included,Sonar-TS: Search-Then-Verify Natural Language Querying for Time Series Databases,ICML,2026
+r6baa099a,letson2026sorrydb,included,SorryDB: Can AI Provers Complete Real-World Lean Theorems?,ICML,2026
+r5019d570,wang2026stepcodereasoner,included,StepCodeReasoner: Aligning Code Reasoning with Stepwise Execution Traces via Reinforcement Learning,ICML,2026
+raa091574,zhou2026steporlm,included,StepORLM: A Self-Evolving Framework With Generative Process Supervision For Operations Research Language Models,ICLR,2026
+rbd25dbcd,zhao2026strategy,included,Strategy-Aware Optimization Modeling with Reasoning LLMs,ICML,2026
+r7dae1df3,liu2026structured,included,Structured Progressive Knowledge Activation for LLM-Driven Neural Architecture Search,ICML,2026
+r35472553,lin2026synthesizing,included,Synthesizing Multimodal Geometry Datasets from Scratch and Enabling Visual Alignment via Plotting Code,ICML,2026
+rbea0e4b3,kang2026t1,included,T1: Tool-integrated Verification for Test-time Compute Scaling in Small Language Models,ICLR,2026
+r2d285226,chang2026thor,included,THOR: Tool-Integrated Hierarchical Optimization via RL for Mathematical Reasoning,ICLR,2026
+r3d3c6a4d,cao2026tablemaster,included,TableMaster: A Recipe to Advance Table Understanding with Language Models,ICLR,2026
+r1d143354,hu2026tapas,included,Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments,AAAI,2026
+r0185a5bf,hua2026imitation,included,The Imitation Game: Turing Machine Imitator is Length Generalizable Reasoner,ICLR,2026
+raa04f2fb,zhang2026thyme,included,Thyme: Think Beyond Images,ICLR,2026
+r36bbb89f,wang2026diverse,included,Towards Diverse Scientific Hypothesis Search with Large Language Models,ICML,2026
+rd998a870,chen2026persistent,included,Towards Persistent Noise-Tolerant Active Learning of Regular Languages with Class Query,ICLR,2026
+rd6a28a29,ke2026solving,included,Towards Solving the Gilbert-Pollak Conjecture via Large Language Models,ICML,2026
+r7f1f3179,snaebjarnarson2026transducing,included,Transducing Language Models,ICLR,2026
+r1ff1c19f,lin2026type,included,Type-Compliant Adaptation Cascades,ICLR,2026
+r56e47a0d,he2026unveiling,included,Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,TPAMI,2026
+r3c7d5693,quansah2026verify,included,VERIFY: A Novel Multi-Domain Dataset Grounding LTL in Contextual Natural Language via Provable Intermediate Logic,ICLR,2026
+red448e3e,ye2026verina,included,VERINA: Benchmarking Verifiable Code Generation,ICLR,2026
+r5c6500ee,li2026verbalized,included,Verbalized Bayesian Persuasion,ICML,2026
+r73f1814f,feng2026vericot,included,VeriCoT: Neuro-symbolic Chain-of-Thought Validation via Logical Consistency Checks,ICLR,2026
+r4e5a66e9,zeng2026veriequivbench,included,VeriEquivBench: An Equivalence Score for Ground-Truth-Free Evaluation of Formally Verifiable Code,ICLR,2026
+rc36311bf,rahman2026verisimpl,included,VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification,ICML,2026
+r81ae1cde,yin2026vitsp,included,ViTSP: A Vision Language Models Guided Framework for Large-Scale Traveling Salesman Problems,ICLR,2026
+r0e37ebda,cao2026videotrace,included,VideoTrace-R1: Long Video-based Retrieval-Augmented Generation via Reinforcement Learning,ICML,2026
+r752d0cbb,kruszewski2026whatever,included,"Whatever Remains Must Be True: Filtering Drives Reasoning in LLMs, Shaping Diversity",ICLR,2026
+re63439d4,wang2026worldtravel,included,WorldTravel: A Realistic Multimodal Travel-Planning Benchmark with Tightly Coupled Constraints,ICML,2026
+r9da32055,baksys2026minif2f,included,miniF2F-Dafny: LLM-Guided Mathematical Theorem Proving via Auto-Active Verification,ICML,2026

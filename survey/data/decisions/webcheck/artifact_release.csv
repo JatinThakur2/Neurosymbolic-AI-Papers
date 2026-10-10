@@ -1,0 +1,170 @@
+rid,title,stratum,released,artifact_type,url,note,pass_
+r918e50a0,Minding Language Models’ (Lack of) Theory of Mind: A Plug-and-Play Multi-Character Belief Tracker,random,yes,code;data,https://github.com/msclar/symbolictom,repo for SymbolicToM paper; code and data.zip,first
+ra1d40c28,MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data,random,yes,code;data,https://github.com/Eleanor-H/MUSTARD,linked from arXiv abstract; data on Google Drive,first
+r476a6958,Weakly Supervised Neuro-Symbolic Module Networks for Numerical Reasoning over Text,random,no,none,,paper says code to be open-sourced on acceptance; none found,first
+re1446fe9,"DRIFT: Decompose, Retrieve, Illustrate, then Formalize Theorems",random,unclear,code;model,https://github.com/huawei-noah/DRIFT,paper footnote cites repo and HF model; repo page failed to load,first
+reeceb7b7,Game-Theoretic Co-Evolution for LLM-Based Heuristic Discovery,random,unclear,none,,OpenReview blocked; web search budget exhausted; not verified,second
+r790d4bfc,UniDomain: Pretraining a Unified PDDL Domain from Real-World Demonstrations for Generalizable Robot Task Planning,random,yes,code;data,https://github.com/RoboticSJTU/UniDomain,project page links repo and HF dataset,first
+r6f24e47d,Autoformalizing Euclidean Geometry,random,yes,code;data,https://github.com/loganrjmurphy/LeanEuclid,linked from arXiv abstract,first
+rb45a4969,FHE-Coder: Secure Agentic Code Generation for Fully Homomorphic Encryption,random,unclear,none,https://fhe-coder.github.io/,project page is only a dashboard; no repo found,first
+rd881ed06,Breaking the Self-Evaluation Barrier: Reinforced Neuro-Symbolic Planning with Large Language Models,random,no,none,,no code link in IJCAI paper; none found,first
+r59de26e5,LogicTree: Improving Complex Reasoning of LLMs via Instantiated Multi-step Synthetic Logical Data,random,no,none,,no code link on NeurIPS/OpenReview pages found,first
+rea458d73,Sharing State Between Prompts and Programs,random,yes,code,https://github.com/psg-mit/nightjarpy,repo linked in paper intro,first
+ra1fa04f4,Large Language Models Can Automatically Engineer Features for Few-Shot Tabular Learning,random,yes,code,https://github.com/Sungwon-Han/FeatLLM,linked in paper; README says ICML 2024 code,first
+rc264b05c,Guess & Sketch: Language Model Guided Transpilation,random,yes,data;model,https://huggingface.co/datasets/celinelee/paired_arm_risc,paper shares dataset and models on HuggingFace,first
+r0aeb4906,"CubeBench: Diagnosing Interactive, Long-Horizon Physical Intelligence under Partial Observations",random,yes,code,https://github.com/Princeton-AI2-Lab/CubeBench,linked from project page; repo has code,first
+re742c2dc,STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving,random,yes,code,https://github.com/kfdong/STP,official implementation repo (README description),first
+rdbefa82b,Distilling Neuro-Symbolic Programs into 3D Multi-modal LLMs,random,yes,code;model,https://github.com/oceanflowlab/APEIRIA,repo and HF checkpoint OpenApeiria; minor TODO,first
+r9019a341,Latent Reward: LLM-Empowered Credit Assignment in Episodic Reinforcement Learning,random,yes,code,https://github.com/thu-rllab/LaRe,footnote in paper; repo has code,first
+r6e8e4460,Large Language Models for Automated Data Science: Introducing CAAFE for Context-Aware Automated Feature Engineering,random,yes,code,https://github.com/automl/CAAFE,official CAAFE repo by the paper's authors,first
+r5f4af8c0,Diagnosing and Addressing Pitfalls in KG-RAG Datasets: Toward More Reliable Benchmarking,random,yes,code;data,https://github.com/liangliang6v6/KGQAGen,paper footnote; plus HF dataset KGQAGen-10k,first
+r3c2b28df,Controllable and Reliable Knowledge-Intensive Task-Oriented Conversational Agents with Declarative Genie Worksheets,random,yes,code,https://github.com/stanford-oval/genie-worksheets,linked in paper; repo has code,first
+rcfb50a1a,Language Models Meet World Models: Embodied Experiences Enhance Language Models,random,yes,code,https://github.com/szxiangjn/world-model-for-language-model,official code README for the paper,first
+r3b5fd577,Checklists Are Better Than Reward Models For Aligning Language Models,random,yes,code,https://github.com/viswavi/RLCF,repo README cites the paper,first
+rbb49cc85,Python is Not Always the Best Choice: Embracing Multilingual Program of Thoughts,random,yes,code,https://github.com/Luowaterbi/MultiPoT,repo in github field; non-empty,first
+r3bc832b4,Constrained Language Models Yield Few-Shot Semantic Parsers,random,yes,code,https://github.com/microsoft/semantic_parsing_with_constrained_lm,linked in paper; repo archived but available,first
+re468fcaa,NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics,random,yes,code,https://github.com/GXimingLu/a_star_neurologic,official repo per README,first
+r9bf8be45,Chain of Code: Reasoning with a Language Model-Augmented Code Emulator,random,yes,code,https://colab.research.google.com/drive/1_i9-LeAZyWoYNt0Oejej-JU0xhHahVFj?usp=sharing,project page Code link is Colab notebook; no repo,first
+r3c0238e9,Tractable Control for Autoregressive Language Generation,random,yes,code,https://github.com/UCLA-StarAI/GeLaTo,footnote in paper; source code README,first
+r11bcdfdc,Enhancing Neural Theorem Proving via High-Quality Proof Selection and Verifier Feedback,random,unclear,none,,OpenReview blocked; web search exhausted; abstract mentions dataset release,second
+r3334bd82,Mathematical Reasoning via Self-supervised Skip-tree Training,random,no,none,,no code or data release statement found in paper,first
+ra8869ee2,Safe: Enhancing Mathematical Reasoning in Large Language Models via Retrospective Step-aware Formal Verification,random,yes,code;data,https://github.com/liuchengwucn/Safe,footnote in paper; repo has code and datasets,first
+r148485c2,Braid: Weaving Symbolic and Neural Knowledge into Coherent Logical Explanations,A7_census,no,none,,no code link found on AAAI page; not located elsewhere,first
+r5fbc1849,Can VLMs Reason Robustly? A Neuro-Symbolic Investigation,A7_census,unclear,none,,paper not located; web search budget exhausted,second
+raff04329,Enhancing Self-Consistency and Performance of Pre-Trained Language Models through Natural Language Inference,A7_census,yes,code,https://github.com/eric-mitchell/concord,ConCoRD repo; project website links code,first
+reba222b6,End-to-End Neuro-Symbolic Reinforcement Learning with Textual Explanations,A7_census,yes,code,https://github.com/ins-rl/insight,project page links repo with code,first
+r610281c5,Verification and Refinement of Natural Language Explanations through LLM-Symbolic Theorem Proving,random,yes,code+data,https://github.com/neuro-symbolic-ai/explanation_refinement,"repo non-empty, README names paper",first
+r85105581,Personal Travel Solver: A Preference-Driven LLM-Solver System for Travel Planning,random,yes,data,https://github.com/cliftclift/PTS,abstract links repo; README shows RealTravel dataset; code unconfirmed,first
+r4317b7f6,Symbolic Regression with a Learned Concept Library,random,yes,code,https://github.com/trishullab/LibraryAugmentedSymbolicRegression.jl,"LaSR repo by same lab, links arXiv paper",first
+rcec7abc9,DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search,random,yes,code+model,https://github.com/deepseek-ai/DeepSeek-Prover-V1.5,official repo with HF models,first
+r44b969bf,Limitations of Language Models in Arithmetic and Symbolic Induction,random,no,none,,no code link in paper; none found,first
+r2d285226,THOR: Tool-Integrated Hierarchical Optimization via RL for Mathematical Reasoning,random,yes,code,https://github.com/JingMog/THOR,"linked from abstract; non-empty, RL training README TODO",first
+r7f2dec68,Hierarchical Phrase-Based Sequence-to-Sequence Learning,random,yes,code,https://github.com/berlino/btg-seq2seq,"repo non-empty, README names paper",first
+r9da32055,miniF2F-Dafny: LLM-Guided Mathematical Theorem Proving via Auto-Active Verification,random,yes,code+data,https://github.com/dafny-lang/miniF2F,linked from abstract; benchmark and eval infrastructure,first
+r0e774100,OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models,random,yes,code,https://github.com/teshnizi/optimus,official repo by authors; also WQPu/OptiMUS,first
+r1b894e95,"OMEGA: Can LLMs Reason Outside the Box in Math? Evaluating Exploratory, Compositional, and Transformative Generalization",random,yes,code+data,https://github.com/sunblaze-ucb/math_ood,linked from paper; generators and problem sets,first
+ra8b9906a,LogicSAGE: Neuro-Symbolic Reasoning with Socratic-Guided Enhancement,random,no,none,,no code link on ICML/OpenReview page; none found,first
+rabf69c7a,ProofBridge: Auto-Formalization of Natural Language Proofs in Lean via Joint Embeddings,random,unclear,none,,paper says releases miniF2F-Test-PF but no URL found,first
+rc1250f1e,AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ,random,yes,code+data+model,https://github.com/potamides/AutomaTikZ,"framework, weights, datasets per paper",first
+rd458d236,Scope-enhanced Compositional Semantic Parsing for DRT,random,yes,code,https://github.com/xiulinyang/compositional_drs_parsing,"repo non-empty, README names paper",first
+raa75ebe1,An Agentic Framework with LLMs for Solving Complex Vehicle Routing Problems,random,yes,code+data,https://github.com/ZHANG-NI/AFL,linked in paper; non-empty repo,first
+r5ad3a437,Abductive Reasoning with Probabilistic Commonsense,random,yes,code,https://github.com/networkslab/PACS,linked from paper footnote; repo not README-verified,first
+r6465edfe,Language Models Are Greedy Reasoners: A Systematic Formal Analysis of Chain-of-Thought,random,yes,code+data,https://github.com/asaparov/prontoqa,README lists paper; code and data,first
+r12a103a9,Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models,random,yes,code,https://github.com/microsoft/DSP-Plus,linked from paper; non-empty,first
+r6caabb12,Bongard-OpenWorld: Few-Shot Reasoning for Free-form Visual Concepts in the Real World,random,yes,code,https://github.com/joyjayng/Bongard-OpenWorld,official code per README; linked from HF paper page,first
+rd23a2890,R1-Code-Interpreter: LLMs Reason with Code via Supervised and Multi-stage Reinforcement Learning,random,yes,code+data+model,https://github.com/yongchao98/R1-Code-Interpreter,linked from paper; HF models and dataset,first
+re266a131,Neural Reasoning for Sure Through Constructing Explainable Models,random,yes,code,https://github.com/gnodisnait/hsphnn,"repo non-empty, README names paper",first
+r690877a5,Grounding Generative Planners in Verifiable Logic: A Hybrid Architecture for Trustworthy Embodied AI,random,yes,code,https://github.com/Sn0wm1an/VIRF,"linked in abstract; single commit, README has placeholders",first
+ra14b1953,Interactive Evolution: A Neural-Symbolic Self-Training Framework For Large Language Models,random,yes,code+model,https://github.com/xufangzhi/ENVISIONS,README names paper; HF Symbol-LLM models,first
+r39d81df4,RuAG: Learned-rule-augmented Generation for Large Language Models,random,yes,code,https://github.com/microsoft/RuAG,linked on paper first page; non-empty,first
+r0e37ebda,VideoTrace-R1: Long Video-based Retrieval-Augmented Generation via Reinforcement Learning,random,no,none,,"no code link on ICML, PMLR pages; none found",first
+rb2fb6f12,Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning,random,yes,code,https://github.com/jiapuwang/LLM-DA,linked in paper footnote; official implementation,first
+r546f708d,LeanReasoner: Boosting Complex Logical Reasoning with Lean,random,yes,code,https://github.com/Some-random/theorem-proving-reasoning,"repo non-empty, names LeanReasoner",first
+r78a681e5,Lemur: Integrating Large Language Models in Automated Program Verification,random,yes,code,https://github.com/ai-ar-research/Lemur-program-verification,linked in paper footnote; non-empty,first
+r5fa5fe64,Human-like Few-Shot Learning via Bayesian Reasoning over Natural Language,random,yes,code+data,https://github.com/ellisk42/humanlike_fewshot_learning,README names paper; code and data,first
+r9a65906c,"WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment",random,yes,code,https://github.com/haotang1995/WorldCoder,repo by first author names paper; not linked from paper,first
+r16bb7249,SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning,A7_census,yes,code+data,https://github.com/lbox-kr/symba,linked in paper footnote; non-empty,first
+r7bd71a09,Natural Language PDDL (NL-PDDL) for Open-world Goal-oriented Commonsense Regression Planning in Embodied AI,A7_census,unclear,none,,no repo found; ICLR supplemental zip unchecked,first
+rb21543ad,R2-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning,A7_census,yes,code+data,https://github.com/kangmintong/R-2-Guard,linked in paper; official ICLR 2025 repo,first
+rf01d288d,Causal Detection of Multi-Step LLM Agent Attacks,A7_census,yes,code,https://github.com/decentralizedsciencelab/CausalTrace,linked from ICML page; non-empty,first
+r0fb6ebec,Efficient Skill Grounding via Code Refactoring with Small Language Models,random,no,none,,code only in supplementary; no public link found,first
+r95cd948b,QualEval: Qualitative Evaluation for Model Improvement,random,yes,code,https://github.com/vmurahari3/QualEval,linked in paper footnote,first
+r9f9a50fe,Enhancing SQL Query Generation with Neurosymbolic Reasoning,random,yes,code,https://github.com/henrijsprincis/Xander,"authors' repo, non-empty, README refers to paper",first
+r785313e9,Llemma: An Open Language Model for Mathematics,random,yes,code+data+model,https://github.com/EleutherAI/math-lm,repo links llemma_7b and Proof-Pile-2 on HF,first
+r5390b532,"Decompose, Structure, and Repair: A Neuro-Symbolic Framework for Autoformalization via Operator Trees",random,yes,code+data,https://github.com/XiaoyangLiu-sjtu/DSR,linked from arXiv abstract; official implementation,first
+r24f1bc06,BeliefBank: Adding Memory to a Pre-Trained Language Model for a Systematic Notion of Belief,random,yes,data,https://allenai.org/data/beliefbank,dataset link in paper; no code link,first
+r9faf5834,DecoVer: A Decompose-and-Verify Neuro-Symbolic Framework for Embodied Task Planning with BC+,random,no,none,,no artifact found on ICML page or search,first
+r38c79cfe,BenchCLAMP: A Benchmark for Evaluating Language Models on Syntactic and Semantic Parsing,random,yes,code+data,https://github.com/microsoft/semantic_parsing_with_constrained_lm,linked in paper introduction,first
+rd998a870,Towards Persistent Noise-Tolerant Active Learning of Regular Languages with Class Query,random,yes,code+data,https://github.com/lkwargs/CAPAL,reproducibility statement; non-empty repo,first
+re0d57e54,"Improving Coherence and Consistency in Neural Sequence Models with Dual-System, Neuro-Symbolic Reasoning",random,no,none,,paper links only CLUTRR dataset; no own code link,first
+rd03c7afc,Compile to Compress: Boosting Formal Theorem Provers by Compiler Outputs,random,no,none,,no code link in paper or ICML page,first
+r26e072cc,Exploring the Capacity of Pretrained Language Models for Reasoning about Actions and Change,random,yes,code+data,https://github.com/sysulic/trac,dataset link in paper; repo has code-and-datasets,first
+rd7f0e1f1,Benchmarking Spatiotemporal Reasoning in LLMs and Reasoning Models: Capabilities and Challenges,random,yes,code+data,https://github.com/nesl/STARK_Benchmark/,also HF dataset prquan/STARK_10k,first
+r204738e7,WinoLogic: A Zero-Shot Logic-based Diagnostic Dataset for Winograd Schema Challenge,random,yes,code+data,https://aclanthology.org/attachments/2021.emnlp-main.307.Software.zip,ACL Anthology software attachment; no GitHub found,first
+rc36311bf,VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification,random,unclear,code,https://github.com/suabar/VeriSimple,official repo but only README visible,first
+r50ca5848,Automated Formalization via Conceptual Retrieval-Augmented LLMs,random,yes,code+data,https://github.com/kahvia0526/CRAMF,linked in reproducibility statement,first
+r1e0f1102,Proving Olympiad Inequalities by Synergizing LLMs and Symbolic Reasoning,random,yes,code+data,https://github.com/Lizn-zn/NeqLIPS,linked in paper; official code,first
+r0b63ce19,Scaling Synthetic Logical Reasoning Datasets with Context-Sensitive Declarative Grammars,random,yes,code+data,https://github.com/sileod/gramforge,paper footnote code and HF data; repo cites paper,first
+r0e853bba,ConvFinQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering,random,yes,code+data,https://github.com/czyssrs/ConvFinQA,"authors' repo, data and code",first
+r2f322bd6,MolecularIQ: Characterizing Chemical Reasoning Capabilities Through Symbolic Verification on Molecular Graphs,random,yes,code+data,https://github.com/ml-jku/moleculariq,linked in paper; leaderboard on HF,first
+r5ed1e5a9,LogicReward: Incentivizing LLM Reasoning via Step-Wise Logical Supervision,random,yes,code+data+model,https://github.com/Aiden0526/Logic-Reward,project page links repo and HF models,first
+re0013edf,PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs,random,yes,code+data+model,https://github.com/delta-lab-ai/pde-controller,project page; HF dataset too,first
+rc9f8b9ed,Lean-STaR: Learning to Interleave Thinking and Proving,random,yes,code+data+model,https://github.com/Lagooon/LeanSTaR,"project page links code, HF model and data",first
+rfd30bcab,HyperTree Proof Search for Neural Theorem Proving,random,no,none,,no code release found; only third-party benchmark repos cited,first
+rbd43d9dd,Modular Visual Question Answering via Code Generation,random,yes,code+data,https://github.com/sanjayss34/codevqa,"authors' repo, non-empty",first
+rca8a5faa,AbstRaL: Augmenting LLMs' Reasoning by Reinforcing Abstract Thinking,random,no,none,,"no code link in paper, Apple page or ICLR page",first
+re7e46a6a,How much coffee was consumed during EMNLP 2019? Fermi Problems: A New Reasoning Challenge for AI,random,yes,code+data,https://github.com/allenai/fermi,paper links dataset; allenai repo with data and eval code,first
+r932616a7,SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models,random,yes,code+model,https://github.com/AI-secure/SafeAuto,non-empty repo with HF models; not linked in paper,first
+r61cc1d1e,Argumentative Large Language Models for Explainable and Contestable Claim Verification,random,yes,code+data,https://github.com/CLArg-group/argumentative-llms,given github verified non-empty,first
+rd4a9e13f,One Demo Is All It Takes: Planning Domain Derivation with LLMs from A Single Demonstration,random,no,none,,no code link in paper or ICLR page,first
+r24fa22be,LLM-based Typed Hyperresolution for Commonsense Reasoning with Knowledge Bases,A7_census,no,none,,first pass: README-only placeholder repo; could not re-fetch,second
+r81ae1cde,ViTSP: A Vision Language Models Guided Framework for Large-Scale Traveling Salesman Problems,A7_census,unclear,code,https://github.itap.purdue.edu/uSMART/ViTSP_ICLR2026,code on Purdue enterprise GitHub; not publicly verifiable,first
+rc4b6bb13,PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models,A7_census,yes,code,https://github.com/primt25/PRIMT,linked from project page; non-empty,first
+r07214b1f,HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis,referee_named,yes,code,https://github.com/shraddhabarke/hysynth,author repo; README cites NeurIPS HYSYNTH paper; full code,second
+r6baa099a,SorryDB: Can AI Provers Complete Real-World Lean Theorems?,random,yes,code+data,https://github.com/SorryDB/SorryDB,"linked from paper conclusion; populated, includes SorryDB_2601 data",first
+r69f94571,Few-Shot Semantic Parsing with Language Models Trained on Code,random,no,none,,no release link in paper or arXiv page,first
+rb425a47c,Towards Advanced Mathematical Reasoning for LLMs via First-Order Logic Theorem Proving,random,yes,code,https://github.com/chuxuecao/dream-fol-prover,linked in paper abstract footnote; populated,first
+r85fbfe3b,Empowering Multi-step Reasoning across Languages via Program-Aided Language Models,random,no,none,,no code link in paper; none found,first
+r8eded823,Is Programming by Example Solved by LLMs?,random,no,none,,checklist says no code/data open access; no repo found,first
+r1612bafd,Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning,random,no,none,,no authors' release link in paper; none found,first
+r78551d99,CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction,random,yes,code+data+model,https://github.com/hkust-nlp/CodeIO,"linked in arXiv abstract; populated, HF models",first
+r9fb81a0c,Predicate-Guided Generation for Mathematical Reasoning,random,yes,code+data,https://github.com/Tinyyhope/Prolog-MATH,linked in paper abstract footnote; populated,first
+ra905e9a3,Embodied Task Planning via Graph-Informed Action Generation with Large Language Models,random,no,none,,no code link on arXiv/ICML page; OpenReview unreadable,first
+r8a87bae4,Don't Trust: Verify -- Grounding LLM Quantitative Reasoning with Autoformalization,random,yes,code,https://github.com/jinpz/dtv,official repo per README; populated,first
+r596cca2a,Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach,random,yes,code+data+model,https://github.com/Purewhite2019/rethinking_autoformalization,"official repo; code, benchmarks, HF retrievers",first
+r7dc6cf73,"CogniLoad: A Synthetic Natural Language Reasoning Benchmark With Tunable Length, Intrinsic Difficulty, and Distractor Density",random,yes,code+data,https://huggingface.co/datasets/cogniloadteam/cogniload,HF dataset linked in paper; code only anonymized 4open mirror,first
+r72fadfed,SpecMAS: A Multi-Agent System for Self-Verifying System Generation via Formal Model Checking,random,unclear,none,https://github.com/Idsl-group/SpecMAS,NeurIPS page links repo but not in org listing; unverified,first
+ra804bbd4,ImProver: Agent-Based Automated Proof Optimization,random,yes,code+data,https://github.com/riyazahuja/ImProver,linked in paper footnote; populated,first
+re1c272a1,Logical Consistency of Large Language Models in Fact-Checking,random,yes,code+data,https://github.com/bishwamittra/llm_logical_consistency,linked in paper footnote; populated,first
+ra79fa313,A Solver-in-the-Loop Framework for Improving LLMs on Answer Set Programming for Logic Puzzle Solving,random,yes,code+data,https://github.com/boschresearch/solver-in-the-loop-llm-asp,abstract short link redirects to repo; populated,first
+rf3eda214,FaSTA*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient Multi-turn Image Editing,random,yes,code,https://github.com/tianyi-lab/FaSTAR,linked as Project on arXiv; populated,first
+rd2e57606,miniCTX: Neural Theorem Proving with (Long-)Contexts,random,yes,code+data+model,https://cmu-l3.github.io/minictx,"project page links ntp-toolkit, eval code, HF data",first
+r00510af9,ConstraintLLM: A Neuro-Symbolic Framework for Industrial-Level Constraint Programming,random,yes,code+data,https://github.com/william4s/ConstraintLLM,linked in abstract; populated,first
+re5e49fe2,SL-VC: A Benchmark and Automated Framework for Separation Logic Verification Condition Proving,random,unclear,none,,OpenReview/ICML pages show no code link; could not read forum,first
+ra06c0609,"Guiding LLMs The Right Way: Fast, Non-Invasive Constrained Generation",random,no,none,https://github.com/eth-sri/domino,eth-sri/domino repo confirmed empty,second
+ree311595,Generating Novel Leads for Drug Discovery Using LLMs with Logical Feedback,random,no,none,,paper says code accompanies but no link; none found,first
+rf20ecae4,SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation,random,yes,code+data,https://github.com/RUCKBReasoning/SpreadsheetBench,populated; full benchmark data released,first
+r011d7456,Reasoning over Uncertain Text by Generative Large Language Models,random,yes,code+data,https://github.com/HLR/BLInD,given github field verified; populated,first
+r5f4be8d2,Test of Time: A Benchmark for Evaluating LLMs on Temporal Reasoning,random,yes,data,https://huggingface.co/datasets/baharef/ToT,HF dataset linked in paper; code only promised,first
+r8ec44e70,Neurosymbolic Deep Generative Models for Sequence Data with Relational Constraints,random,no,none,,no authors' release in paper; none found,first
+ra4657d5a,Synthetic Programming Elicitation for Text-to-Code in Very Low-Resource Programming and Formal Languages,random,yes,code,https://github.com/FedericoAureliano/eudoxus,Eudoxus prototype linked in paper footnote; now archived,first
+ra1c2ff75,BizBench: A Quantitative Reasoning Benchmark for Business and Finance,random,yes,data,https://huggingface.co/datasets/kensho/bizbench,HF dataset linked in paper; no code repo,first
+rdbc215a2,Large Language Models as End-to-end Combinatorial Optimization Solvers,random,unclear,none,,"not verified; OpenReview unreadable, search budget exhausted",first
+rf1f728de,Exploiting Intrinsic Multilateral Logical Rules for Weakly Supervised Natural Language Video Localization,random,no,none,,"paper only cites base-model repos, none own",first
+r56e47a0d,Unveiling Fine-Grained Deceptive Patterns in Multimodal Fake News: An Explainable Neuro-Symbolic Framework With LVLMs,A7_census,unclear,none,,not searched; search budget exhausted,first
+r8e6dfc90,Satyrn: A Platform for Analytics Augmented Generation,A7_census,yes,code,https://github.com/nu-c3lab/satyrn,footnote repo; given nu-c3lab/satyrn6360 field unreachable,first
+rcf40140f,Relational Programming with Foundational Models,A7_census,unclear,none,https://github.com/scallop-lang/scallop,Scallop repo tagged foundation-models; Vieira plugin code not verifiable; search exhausted,second
+r16666d21,ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning,referee_named,yes,data;code,https://huggingface.co/spaces/WildEval/ZebraLogic,HF space linked in paper; Space errors; ZeroEval repo supports,first
+r867b1f33,VLMaterial: Procedural Material Generation with Large Vision-Language Models,random,yes,code,https://github.com/mit-gfx/VLMaterial,found via search; authors' MIT GFX repo,first
+rf81bf1d9,Topic Transferable Table Question Answering,random,no,none,https://github.com/IBM/T3QA,"repo only template scaffolding, no code",first
+r010070ef,Self-Evaluation Guided Beam Search for Reasoning,random,yes,code,https://github.com/YuxiXie/SelfEval-Guided-Decoding,linked from project page; repo non-empty,first
+rafe6d7af,DocCGen: Document-based Controlled Code Generation,random,yes,code+data,https://github.com/sameerp30/Structured-generation,"first author's repo; not named DocCGen, matches pipeline",first
+r764cc16d,Not All Invariants Are Equal: Curating Training Data to Accelerate Program Verification with SLMs,random,yes,code,https://github.com/idopinto/wonda,repo says accepted to ICML 2026,first
+r218783b6,BFS-Prover: Scalable Best-First Tree Search for LLM-based Automatic Theorem Proving,random,yes,model,https://huggingface.co/ByteDance-Seed/BFS-Prover-V1-7B,ByteDance Seed released model weights on HF,first
+r1556ed41,Logically Consistent Language Models via Neuro-Symbolic Integration,random,yes,code,https://github.com/ddidacus/logically-consistent-lms,official repo for ICLR 2025 paper,first
+re0ae613c,Grammars of Formal Uncertainty: When to Trust LLMs in Automated Reasoning Tasks,random,yes,code,https://github.com/DebarghaG/grammars-formal-uncertainty,official NeurIPS 2025 repo,first
+r4b908b19,Proving Olympiad Algebraic Inequalities without Human Demonstrations,random,yes,code,https://github.com/lizn-zn/neqlips,"NeqLIPS repo; found via search, not fully verified",first
+r7b7ccf8c,Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning,random,yes,code,https://github.com/Hyun-Ryu/clover,official code for ICLR 2025 paper,first
+rd7bfffae,Thor: Wielding Hammers to Integrate Language Models and Automated Theorem Provers,random,no,none,,no repo found; paper gives no code link,first
+r051b0a1e,Enhancing Reasoning Capabilities of LLMs via Principled Synthetic Logic Corpus,random,yes,code+data+model,https://github.com/hitachi-nlp/FLD,"paper states corpus, code, model released",first
+r40f32cd4,SheetBrain: A Neuro-Symbolic Agent for Accurate Reasoning over Complex and Large Spreadsheets,random,yes,code,https://github.com/microsoft/SheetBrain,linked in abstract; repo has code,first
+r3f6cb6bd,Learning Deductive Reasoning from Synthetic Corpus based on Formal Logic,random,yes,code+data,https://github.com/hitachi-nlp/FLD,paper links FLD corpus and code,first
+r6f4e1362,Multimodal LLM-assisted Evolutionary Search for Programmatic Control Policies,random,yes,code,https://github.com/QingL2000/MLES,linked in abstract; repo not opened,first
+rf372919c,When Do Program-of-Thought Works for Reasoning?,random,yes,code,https://github.com/zjunlp/EasyInstruct,arXiv links EasyInstruct; README has CodeSelector/CIRS for this paper,second
+r6f7a087b,PRISM-Physics: Causal DAG-Based Process Evaluation for Physics Reasoning,random,yes,code+data,https://github.com/Open-PRISM/PRISM-Physics-Code,from project page; HF dataset also,first
+r3dfe2448,Refining Language Models with Compositional Explanations,random,yes,code,https://github.com/INK-USC/expl-refinement,repo states code for the paper,first
+r5b26433b,Generating Sequences by Learning to Self-Correct,random,no,none,,no code on arXiv or Welleck homepage; poster only,second
+r0de13fa8,Calc-X and Calcformers: Empowering Arithmetical Chain-of-Thought through Interaction with Symbolic Systems,random,yes,code+data+model,https://github.com/prompteus/calc-x,repo and HF Calc-X datasets/Calcformer models,first
+r3750b732,FormalJudge: A Neuro-Symbolic Paradigm for Agentic Oversight,random,yes,code,https://github.com/htlou/FormalJudge,repo partial; two benchmarks coming soon,first
+r0743526e,Enhancing Complex Symbolic Logical Rea­soning of Large Language Models via Sparse Multi-Agent Debate,random,unclear,none,,OpenReview blocked; web search budget exhausted; not verified,second
+r04ccb8d7,Constraints First: A New MDD-based Model to Generate Sentences Under Constraints,random,no,none,,paper says code available upon request,first
+r40769616,ASSESS: A Semantic and Structural Evaluation Framework for Statement Similarity,random,yes,code,https://github.com/XiaoyangLiu-sjtu/ASSESS,official implementation per README,first
+refec56ac,DeiSAM: Segment Anything with Deictic Prompting,random,yes,code,https://github.com/ml-research/deictic-segment-anything,found via search; not opened,first
+r2e90c051,Transformers as Soft Reasoners over Language,random,yes,code+data,https://github.com/allenai/ruletaker,AllenAI dataset and generator code,first
+r56e37560,"Error Notebook-Guided, Training-Free Part Retrieval in 3D CAD Assemblies via Vision-Language Models",random,no,none,,code only in OpenReview supplementary; no public link found,first
+rd16a5d6f,Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench: Evaluating via Verification Chain of Thought,random,yes,code+data,https://github.com/HIPREL-Group/VCoT-Bench,linked in paper; repo non-empty,first
+r7f0629ef,NeSyCoCo: A Neuro-Symbolic Concept Composer for Compositional Generalization,random,yes,code,https://github.com/HLR/NeSyCoCo,given repo non-empty; README does not cite paper,first
+rcab2cd44,ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning,random,no,none,,arXiv v3 abstract and PDF contain no code link,second
+r58786fe5,ActivationReasoning: Logical Reasoning in Latent Activation Spaces,A7_census,yes,code,https://github.com/ml-research/ActivationReasoning,README cites paper; non-empty,first
+ra71d911c,Egocentric Planning for Scalable Embodied Task Achievement,A7_census,no,none,,"no code in NeurIPS page, paper or supplement; Muise code page lacks it",second
+rd7186c82,DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning,A7_census,yes,code,https://github.com/Dolphin-NeSy/Dolphin,repo links Dolphin arXiv paper; non-empty,first

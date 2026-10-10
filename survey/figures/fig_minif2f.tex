@@ -1,0 +1,24 @@
+% miniF2F pass rates reported in abstracts of included studies (data/derived/plot_minif2f.csv).
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=\columnwidth, height=52mm,
+  xmin=2021.6, xmax=2026.5, ymin=20, ymax=105,
+  xtick={2022,2023,2024,2025,2026},
+  xticklabel style={font=\scriptsize, /pgf/number format/1000 sep={}},
+  yticklabel style={font=\scriptsize},
+  ylabel={Reported miniF2F pass rate (\%)}, ylabel style={font=\scriptsize},
+  axis lines*=left, ymajorgrids, grid style={black!10},
+  legend style={font=\tiny, at={(0.02,0.98)}, anchor=north west, draw=none, fill=white, fill opacity=0.85, text opacity=1},
+  legend cell align=left,
+  scatter/classes={Lean={mark=*, nsblue}, Isabelle={mark=triangle*, A4c}, unspecified={mark=square*, nsgrey}},
+]
+\addplot[scatter, only marks, scatter src=explicit symbolic, mark size=2pt]
+  table[col sep=comma, x expr={\thisrow{year}+0.09*(mod(\coordindex,5)-2)}, y=score, meta=lang] {data/derived/plot_minif2f.csv};
+\legend{Lean, Isabelle, not stated}
+\end{axis}
+\end{tikzpicture}
+\caption{Headline miniF2F results stated in the abstracts of included studies (\cnt{mfcomparable} absolute pass rates; \cnt{mfreported} abstracts give a miniF2F number, the rest are gains or variant benchmarks). The best reported rate rises from \cnt{mfmax2022}\% (2022) to \cnt{mfmax2026}\% (2026). Points are not directly comparable: sampling budgets range from pass@1 to thousands of attempts, and splits and formal languages differ. Horizontal jitter separates points within a year.}
+\label{fig:minif2f}
+\end{figure}

@@ -8,10 +8,12 @@ import re
 
 PROJECT = Path(__file__).resolve().parent.parent
 DATA = PROJECT / "data"
-MANUAL = DATA / "manual"      # human decisions (versioned, never overwritten)
+DECISIONS = DATA / "decisions"  # screening/coding/web-check decisions (versioned; scripts never write here)
+MANUAL = DECISIONS / "v1_pilot"  # decisions of the superseded v1 pilot (code/v1_pilot)
 DERIVED = DATA / "derived"    # everything the scripts regenerate
 TABLES = PROJECT / "tables"   # LaTeX fragments \input by the paper
-WORK = PROJECT / "work"       # extracted PDF text (large, not shipped)
+WORK = PROJECT / "work"       # large intermediate files (PDF text, source database); not shipped
+SEED = 20261010               # seed for all v2 random draws not fixed elsewhere
 
 VENUE_NAMES = {
     "AAAI": "Proc. AAAI Conference on Artificial Intelligence",
@@ -112,3 +114,46 @@ CLASSICAL_THEMES = {
     "symbolic regression": r"symbolic regression",
     "inductive logic programming": r"inductive logic programming|\bILP\b",
 }
+
+
+# ---------------------------------------------------------------------------
+# v2: normalisation of entities named in abstracts (coded by two LLM coders).
+# A study "names" a family when either coder listed a matching string.
+# ---------------------------------------------------------------------------
+LM_FAMILY_V2 = {
+    "GPT-4 family": r"gpt-?4|gpt-?4o|\bo[134](-mini|-preview)?\b|openai[- ]o[134]|gpt-?5",
+    "GPT-3/3.5, ChatGPT, Codex": r"gpt-?3|chatgpt|codex|text-davinci|instructgpt|\bgpt\b$",
+    "GPT-2 and earlier": r"gpt-?2|gpt-?1\b",
+    "Llama family": r"llama|vicuna|alpaca",
+    "DeepSeek family": r"deepseek",
+    "Qwen family": r"qwen",
+    "Mistral/Mixtral": r"mistral|mixtral",
+    "Claude": r"claude",
+    "Gemini/PaLM/Bard": r"gemini|palm|bard|minerva|flan-u-palm",
+    "Gemma": r"gemma",
+    "T5 family": r"\bt5\b|flan-t5|codet5|byt5",
+    "BERT family": r"bert|roberta|deberta|electra",
+    "Specialised provers": r"prover|kimina|goedel|internlm.*(step|math)|lean-?star|theoremllama",
+    "Vision-language (LLaVA, CLIP, BLIP, ...)": r"llava|clip|blip|gpt-?4v|vision|vlm|qwen-?vl|internvl",
+}
+ENGINE_FAMILY_V2 = {
+    "Lean": r"\blean|mathlib|leandojo",
+    "Isabelle": r"isabelle|sledgehammer|\bpisa\b",
+    "Coq/Rocq": r"\bcoq\b|\brocq\b",
+    "Dafny/Verus/Why3/F*": r"dafny|verus|why3|\bf\*|frama|boogie",
+    "Python interpreter/executor": r"python|code interpreter|interpreter|executor|pandas|sandbox",
+    "SAT/SMT (Z3, cvc5)": r"\bz3\b|\bsmt\b|\bsat\b|cvc|maxsat|satisfiab",
+    "Logic programming (Prolog, ASP, Datalog)": r"prolog|answer set|\basp\b|clingo|datalog|scallop|problog",
+    "Planners (PDDL)": r"pddl|planner|fast downward",
+    "Model checkers / temporal logic": r"nusmv|model check|\bltl\b|temporal logic|spin\b|prism",
+    "Optimisation solvers (LP/MILP/CP)": r"\blp\b|milp|linear program|gurobi|cplex|pyomo|or-tools|minizinc|constraint program|optimi[sz]ation solver",
+    "Computer algebra (SymPy, Mathematica)": r"sympy|mathematica|computer algebra|wolfram|\bcas\b",
+    "Theorem provers (FOL)": r"prover9|vampire|\be prover|first-order prover|theorem prover",
+}
+
+def norm_benchmark(name: str) -> str:
+    """Canonical benchmark key: case/punctuation-insensitive; split suffixes dropped."""
+    k = name.lower()
+    k = re.sub(r"\(.*?\)", "", k)
+    k = re.sub(r"[-_ ]?(test|valid|validation|dev|train)(\s*set)?$", "", k.strip())
+    return re.sub(r"[^a-z0-9+]", "", k)

@@ -1,31 +1,39 @@
-% PRISMA 2020 flow diagram. All counts are \cnt macros from tables/numbers.tex.
-\begin{figure}[t]
+% PRISMA-ScR flow diagram (identification via databases and via other methods).
+\begin{figure*}[t]
 \centering
 \begin{tikzpicture}[
   font=\scriptsize,
-  box/.style={draw, rounded corners=1.5pt, align=left, text width=34mm, inner sep=3pt, minimum height=9mm},
-  side/.style={draw, rounded corners=1.5pt, align=left, text width=31mm, inner sep=3pt, fill=black!3},
+  box/.style={draw, rounded corners=1.5pt, align=left, text width=40mm, inner sep=3pt, minimum height=9mm},
+  side/.style={draw, rounded corners=1.5pt, align=left, text width=38mm, inner sep=3pt, fill=black!3},
+  oth/.style={draw, rounded corners=1.5pt, align=left, text width=40mm, inner sep=3pt, fill=nsblue!4},
   inc/.style={box, draw=nsblue, fill=nsblue!8, line width=0.7pt},
   stage/.style={fill=nsblue!75, text=white, font=\tiny\bfseries, minimum height=3.5mm, inner sep=1pt, rotate=90, anchor=center},
   arr/.style={-{Stealth[length=1.5mm]}, line width=0.5pt}]
-\node[box] (id) {Records identified in the corpus\\ $n=\cnt{identified}$ (\cnt{withpdf} with PDF)\\ 7 venues, 2020--2026};
-\node[side, right=4mm of id] (dup) {Removed before screening:\\ duplicate records $n=\cnt{duplicates}$};
-\node[box, below=6mm of id] (scr) {Records screened\\ (title + abstract)\\ $n=\cnt{screened}$};
-\node[side, right=4mm of scr] (exs) {Excluded: no language-model\\ component evident\\ $n=\cnt{exclscreen}$};
-\node[box, below=16mm of scr] (ass) {Records assessed for eligibility\\ $n=\cnt{assessed}$\\ (\cnt{filterhits} filter hits + \cnt{titleadds} by title review)};
-\node[side, right=4mm of ass] (exe) {Excluded, with reasons:\\
-  E2 LM as baseline/encoder $n=\cnt{E2}$\\
-  E3 no symbolic component $n=\cnt{E3}$\\
-  E4 not a full paper $n=\cnt{E4}$\\
-  E5 secondary study $n=\cnt{E5}$\\
-  E1 no LM $n=\cnt{E1}$};
-\node[inc, below=10mm of ass] (inc) {\textbf{Studies included} $n=\cnt{included}$\\ full text available: \cnt{fulltext}\\ judged on published abstract: \cnt{pubabstract}};
-\draw[arr] (id) -- (scr); \draw[arr] (scr) -- (ass); \draw[arr] (ass) -- (inc);
-\draw[arr] (id) -- (dup); \draw[arr] (scr) -- (exs); \draw[arr] (ass) -- (exe);
-\node[stage, minimum width=12mm] at ($(id.west)+(-3.5mm,0)$) {Identification};
-\node[stage, minimum width=36mm] at ($($(scr.west)!0.5!(ass.west)$)+(-3.5mm,0)$) {Screening and eligibility};
-\node[stage, minimum width=13mm] at ($(inc.west)+(-3.5mm,0)$) {Included};
+% identification via databases
+\node[box] (srcA) {\textbf{Source A} curated corpus~\cite{thakur2026repo}\\ $n=\cnt{corpusrecords}$ records\\ 7 venues, title keywords, 2020--2026};
+\node[box, right=6mm of srcA] (srcB) {\textbf{Source B} proceedings metadata\\ $n=\cnt{sourceb}$ accepted papers with abstracts\\ abstract-level query: $n=\cnt{queryhits}$ retrieved};
+\node[side, right=6mm of srcB] (dup) {Removed before screening:\\ duplicates in Source A $n=\cnt{corpusdup}$\\ in both sources (merged) $n=\cnt{overlap}$};
+\node[box, below=7mm of $(srcA.south)!0.5!(srcB.south)$] (union) {\textbf{Records screened} (title + abstract)\\ $n=\cnt{union}$, two independent LLM screeners;\\ \cnt{adjunion} sent to adjudication};
+\node[side, right=6mm of union, xshift=20mm] (ex) {Excluded $n=\cnt{unionexcl}$\\ (reasons pooled with snowballing:\\ E1 \cnt{exclE1}, E2 \cnt{exclE2}, E3 \cnt{exclE3},\\ E4 \cnt{exclE4}, E5 \cnt{exclE5})};
+\node[box, below=7mm of union] (inu) {Included from databases\\ $n=\cnt{unionincl}$};
+% other methods
+\node[oth, below=7mm of srcA, xshift=-46mm] (snow) {\textbf{Backward snowballing}\\ references of \cnt{snowseeds} included studies\\ candidates screened $n=\cnt{snowcand}$\\ (two LLM screeners; \cnt{adjsnow} adjudicated)};
+\node[oth, below=4mm of snow] (aud) {\textbf{Recall audit} of non-retrieved\\ Source B records (stratified)\\ screened $n=\cnt{auditscreened}$};
+\node[oth, below=4mm of aud] (oi) {Included from other methods\\ snowball $n=\cnt{snowincl}$, audit $n=\cnt{auditincl}$};
+\node[inc, below=8mm of inu] (all) {\textbf{Studies included in the review}\\ $n=\cnt{included}$, double-coded by two LLM coders;\\ \cnt{adjcoding} adjudicated};
+\draw[arr] (srcA.south) -- ++(0,-2mm) -| ([xshift=-6mm]union.north);
+\draw[arr] (srcB.south) -- ++(0,-2mm) -| ([xshift=6mm]union.north);
+\draw[arr] (srcB) -- (dup);
+\draw[arr] (union) -- (ex);
+\draw[arr] (union) -- (inu);
+\draw[arr] (inu) -- (all);
+\draw[arr] (snow) -- (aud);
+\draw[arr] (aud) -- (oi);
+\draw[arr] (oi.east) -| ([xshift=-8mm]all.north);
+\node[stage, minimum width=12mm] at ($(srcA.west)+(-3.5mm,0)$) {Identification};
+\node[stage, minimum width=24mm] at ($($(union.west)!0.5!(inu.west)$)+(-3.5mm,0)$) {Screening};
+\node[stage, minimum width=12mm] at ($(all.west)+(-3.5mm,0)$) {Included};
 \end{tikzpicture}
-\caption{PRISMA~2020 flow diagram of study selection.}
+\caption{PRISMA-ScR flow of evidence sources. Source A is the curated corpus (title-keyword collection); Source B is the accepted-paper metadata of eight venues, searched on title and abstract. All screening and coding decisions were made by LLM-based reviewers under protocol v2 (Section~\ref{sec:method-ai}).}
 \label{fig:prisma}
-\end{figure}
+\end{figure*}

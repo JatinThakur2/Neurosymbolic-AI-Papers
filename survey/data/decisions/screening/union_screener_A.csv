@@ -1,0 +1,2131 @@
+rid,decision,code,rationale
+ra92bae31,exclude,E3,E3 (R4) code generation RL judged only by unit-test execution
+r571ed5d4,include,,Pretrained code LMs given program-analyzer (static analysis) outputs during inference and training
+r6cf828c3,exclude,E3,"E3 (R3) differentiable stack in linear attention is neural, no formal component"
+r6dddd31c,exclude,E3,E3 (R3) multilingual topic classification dataset; no symbolic component
+r40e29741,unsure,,LLM guides mode-family task structure; unclear whether explicit symbolic planner/automaton interacts
+r960c637c,exclude,E3,E3 (R3) TaPas avoids logical forms; end-to-end neural table QA
+r1d000af2,include,,LLM generates robot control code with execution feedback and induced symbolic constraints; code as vehicle
+r3d21472f,unsure,,Parse trees from syntactic parser encoded into BERT/XLNet; unclear if parser counts as symbolic
+rd2bae43b,exclude,E3,"E3 (R3) LLM-invented 'symbolic' languages interpreted by LLMs, no formal engine"
+re1b34ce5,unsure,,Benchmark from symbolic templates; unclear if template generator counts as symbolic oracle under R2
+rc17dc698,include,,PDDL-grounded benchmark evaluating LLM embodied plans; symbolic oracle evaluation
+re508b9e8,exclude,E1,E1 (R1) seq2seq trained from scratch on generated symbolic math data
+rc75d88a2,exclude,E3,E3 (R3) pretraining data selection via n-gram importance resampling
+r2dd4d475,exclude,E3,"E3 (R3) self-play RL with LLM verifier, no formal component"
+r208562e3,exclude,E3,E3 (R6) generic large-scale API tool use
+r6a6af55a,exclude,E3,E3 (R3) learned neural process verifier
+r7abb32ad,include,,"Benchmark built from CSP, logic and PDDL problems with formally determined missing variable"
+rf1789243,include,,Pretrained seq2seq parser combined at subgraph level with ERG grammar-based symbolic parser
+r5f2d1226,exclude,E3,E3 (R3) ensemble of LM judges and reward models as verifiers
+r1c87c85f,include,,LLM translates instructions into PDDL problems for planning
+rd053c7a3,exclude,E3,E3 (R3) RL with generic answer-verifier feedback; no formal symbolic system
+r570f847a,exclude,E1,E1 pure constraint logic programming semantics; no language model
+r1b0ce285,exclude,E3,E3 (R3) LLM abductive persona inference in natural language
+rd73ef55d,exclude,E3,E3 (R3) LLM-generated text and CLIP for video anomaly detection
+r3229e1d7,unsure,,NL satisfiability problems from SAT sampling; unclear whether transformers are pretrained LMs
+r352a031c,exclude,E3,E3 (R3) analysis of reversal curse in LLMs; no symbolic component
+rb0ab7d12,exclude,E1,E1 (R1) transformer trained only on algorithmic tasks; not a pretrained LM
+r604fdd1b,exclude,E3,E3 (R3) refinement benchmark with checklist evaluation; no formal component
+rb0ff4c85,include,,LM proof search in Isabelle with recursive verifiable sketches
+r8fb12801,exclude,E1,E1 differentiable logic gate networks; no language model
+r80f3a879,exclude,E3,E3 (R4) few-shot selection for semantic parsing; no additional symbolic component
+ra5b22f5f,exclude,E5,E5 survey of LLM logical reasoning
+rb5a98d1b,exclude,E3,E3 (R3) LLM-as-judge probabilistic scoring; no symbolic component
+rc59d6388,exclude,E3,E3 (R6) generic clinical tool-use agent
+r6ef82f88,unsure,,Pretrained LM translates LaTeX to formal semantics; unclear whether formal checker interacts
+r00994310,exclude,E3,E3 (R3) theoretical analysis of in-context computation; no symbolic component
+r2215b0bb,exclude,E5,E5 survey of LLM puzzle solving
+rdffe7d50,exclude,E3,E3 (R3) LLM pruning metric; no symbolic component
+rbe76e7da,include,,DSL program synthesis of jailbreak attacks executed against target LLMs; LLM feedback guides search
+rd5f496ae,exclude,E3,E3 (R3) LLM simulates logic-program execution without external solver
+r95cd948b,include,,LLM reasoner outputs fed to a linear programming solver to derive evaluation insights
+r1bc9d1c6,exclude,E3,E3 (R3) LLM verbal uncertainty evaluation; no symbolic component
+rf2630819,exclude,E3,E3 (R4) LM code generation judged by validation and timing only
+rd5775c1a,exclude,E3,E3 (R4) ICL semantic parsing to Python; no additional symbolic checker
+r4e12dde5,exclude,E3,E3 (R3) mechanistic interpretability theory; no symbolic component interacting with LM
+r1aa581a2,exclude,E3,E3 (R3) CoT compression into latent tokens; no formal system
+ree311595,include,,LLM generation verified against logical constraints refined by logical generalisation (logical feedback)
+re28a1cf4,unsure,,Neural module network over query semantic layout; unclear if layout parser is symbolic or LM core
+r7823b874,exclude,E3,E3 (R3) small LM decomposes for black-box solver LM; no formal component
+r9eac6196,include,,Code LLM implementations combined via search over hierarchical decompositions; also robotic planning (R4 search)
+r9acc0184,exclude,E3,E3 (R4) KBQA logical form generation with KB retrieval; no logical inference
+rf5d7a12a,include,,LLM autoformalisation with syntax-error feedback from formal language checker
+rd52fad38,exclude,E1,E1 inductive logic programming without any language model
+r9bacb299,exclude,E1,"E1 identifiability theory for self-supervised models; LM not core, no symbolic part"
+r3b573c9a,exclude,E3,E3 (R6) multi-agent routing over generic agents and tools
+rae33fe2f,include,,LLM-guided evolutionary program search for ARC puzzles with execution on examples
+r9d40c65e,exclude,E3,E3 (R3) icon-based game play with LMs; no formal component
+rb666e729,exclude,E3,"E3 (R3) parallel generation engine; interpreter only controls decoding, not formal reasoning"
+rd7e9952d,exclude,E1,E1 (R1) theory of one-layer transformers trained on synthetic path-finding
+r3e6e12e3,exclude,E3,E3 (R3) LLM pipeline serving infrastructure; no formal reasoning component
+rec99318c,exclude,E5,E5 survey of compound AI system optimization
+r24fa22be,include,,LLM integrated into resolution inference (theory resolution) over axiomatic knowledge base
+rd986a64e,include,,"Benchmark of verification conditions from Why3/Frama-C proved by LLMs in Isabelle, Lean, Rocq"
+r5927805d,exclude,E1,E1 (R1) Karel synthesizer and debugger trained only on task programs
+r80719739,exclude,E1,E1 neuro-symbolic perception learning theory; no language model
+r974a9133,include,,Multimodal LLM writes Blender Python executed to reconstruct 3D shapes; program as vehicle
+r80638221,exclude,E3,E3 (R3) pretraining example design theory; no symbolic component
+r477a2e3c,exclude,E3,E3 (R6) security assessment of GPTs knowledge-file leakage; generic tools
+re4b0fb0d,exclude,E3,E3 (R3) LLM self-verification study; no formal checker
+r7528f105,include,,"PLM answers KG queries with logical operators (projection, intersection, union) per R5"
+r6cf5690e,exclude,E1,"E1 (R1) tree diffusion model trained on DSL programs, no language pretraining"
+r1d50ce59,exclude,E3,E3 (R6) generic tool-use agent robustness
+r0027b0c4,exclude,E1,"E1 ILP heuristics for POMDP solvers, no LM; also abstract reprint"
+r564ab549,exclude,E3,E3 (R3) CoT distillation to small LMs; no formal component
+rf07ed281,exclude,E1,E1 probabilistic answer set programming; no language model
+r2e096713,exclude,E3,E3 (R3) MLLM RL with counterfactual rewards; causal graph is not a formal engine
+rcbb1a1e3,exclude,E3,E3 (R4) text-to-SQL transformer optimisation; no additional symbolic component
+rb5794419,exclude,E1,E1 multi-task ILP; no language model
+r6c7f62a6,exclude,E3,E3 (R3) LLM routing and cascading; no symbolic component
+re32e8426,exclude,E3,"E3 (R3) agentic search data synthesis; constraints informal, no solver"
+raa4c96b8,exclude,E3,E3 (R4) KBQA program induction over KBs; no additional symbolic component
+r3df560a5,exclude,E1,E1 ILP for ASP symmetry-breaking constraints; no language model
+re8fd9de3,exclude,E3,E3 (R3) analysis of RLVR outcome rewards and reasoning faithfulness; no formal engine focus
+r35e0ea38,exclude,E1,E1 ILP lifting ASP symmetry-breaking constraints; no language model
+rcdf319ff,exclude,E1,E1 (R1) transformer pretrained only on symbolic music tokens
+r30857558,exclude,E3,E3 (R3) fallacy templates annotation; LMs evaluated without formal component
+r9ac0769b,exclude,E3,E3 (R3) LLM-built narrative coherence graph with free-form questions
+rfdaeccd5,exclude,E3,E3 (R3) instruction-tuned LLMs for data preprocessing
+rfdabd5d5,exclude,E3,E3 (R3) RL with outcome verifier and self-explanations; no formal component
+r5f005528,unsure,,Logic puzzle benchmark with verifiable reasoning graphs; unclear if solver generates or certifies answers
+r36abe7f8,include,,"LLM predicts BNF grammar and decodes under grammar constraints; DSL, PDDL, SMILES generation"
+raa75ebe1,include,,LLM agents write executed code to solve vehicle routing optimisation; program as vehicle
+r9d3f97de,include,,RL for Lean theorem proving with tactic-level proof-assistant feedback
+rc7aeefca,exclude,E3,E3 (R3) BERT seq2seq dialogue state tracking; no symbolic component
+r36bbb89f,include,,LLM-driven evolutionary hypothesis search incl. equation and algorithm discovery
+r77f29dbb,exclude,E3,E3 (R3) retrieval algorithm for LLM unlearning
+r04a9bf84,exclude,E1,E1 approximation theory for probabilistic transformers; no language model
+rcac07553,exclude,E3,E3 (R3) statistical estimator for LLM surrogate labels
+r04749625,exclude,E1,E1 theory of knowledge representation formalisms; no language model
+ra50f9a35,exclude,E3,E3 (R3) PLM heuristic-analytic reasoning in natural language
+rb66847eb,include,,MLLM generates executed Python programs (PoT) for chart question answering; program as vehicle
+ree8a6e56,exclude,E3,E3 (R3) LLM-curated VLM benchmark with LLM judges; no formal system
+rb6a5c446,unsure,,LLM 'neurosymbolic' relational database synthesis; abstract does not name the symbolic component
+r9cba5b44,include,,Symbolic math benchmark with CAS-validated perturbations; evaluates LLM and hybrid LLM-CAS
+r066c5c6f,exclude,E3,E3 (R3) bandit-based LLM evaluation efficiency
+r767f481e,unsure,,Selective FOL translation with backward reasoning; unclear whether a solver executes the logic
+rccc5354d,exclude,E3,E3 (R3) LLM selection-inference in natural language
+rb89145e8,exclude,E3,E3 (R3) probing LLM morphosyntactic knowledge; no symbolic component
+rf885caa8,include,,GPT-4 Code Interpreter executes code and self-verifies for math word problems
+rcf618660,exclude,E3,E3 (R3) theory of length generalisation; no symbolic component
+r8d02ccf6,exclude,E3,E3 (R3) count-based intrinsic rewards for LLM RL
+rbc73ae34,exclude,E3,E3 (R3) text-to-temporal-graph with LLM CoT reasoning; no formal engine
+r1816cb2e,exclude,E1,E1 (R1) RNN policy trained from scratch for symbolic regression seeding
+rb911d2b6,include,,BERT reader with programmer generating executed programs for DROP and MathQA
+rb7db1232,include,,LLM program repair with MaxSAT-based fault localisation in CEGIS loop
+r932616a7,include,,MLLM driving actions verified by FOL traffic rules in Markov Logic Network
+re507c9da,exclude,E1,E1 symbolic regression decision trees; no language model
+rf36238cb,exclude,E3,E3 (R3) constrained decoding verified by LLM and reward functions; no formal checker
+rabcc2a78,include,,LLM optimisation modelling with solver-based solution verification; R4 vehicle task
+re4438e79,exclude,E3,E3 (R3) chemistry pretraining corpus; no symbolic component interacting
+r7145d22d,exclude,E3,E3 (R3) probing PLM knowledge for inference; no symbolic system interacts
+ra893f164,exclude,E3,E3 (R3) game-theoretic analysis of LLM jailbreaks
+r752d0cbb,include,,LLM RL with verifier filtering evaluated on Lean theorem proving
+r05b07ff3,exclude,E3,E3 (R3) generation degradation diagnostics; no symbolic component
+red13ac0c,exclude,E3,E3 (R3) LLM agent natural-language policy reflection in card games
+r3dfe2448,include,,Human explanations parsed into executable logic rules that regularise PLM training
+r34a7d1db,exclude,E1,E1 (R1) neural-guided MCTS symbolic regression without language model
+rb5cb129a,exclude,E3,E3 (R3) theory of synthetic data curation for LLMs
+re6490e42,exclude,E1,E1 inductive logic programming; no language model
+r40b86abf,exclude,E1,"E1 disjunctive logic program semantics, no LM; also extended abstract"
+r7b7ef1ba,exclude,E1,E1 perception plus grammar reasoning trained from scratch; no language model
+r1048a4cd,include,,LLM NL-to-FOL translation with FOL parser filtering of generated rules
+r17fcadd3,unsure,,"Neurosymbolic causal agent in industrial copilot; LM role, symbolic part and track unclear"
+r38fd5faf,exclude,E1,E1 verified neurosymbolic RL policies; no language model
+r100552f4,exclude,E3,E3 (R3) MCTS over natural-language reasoning with LM discriminator
+rf969ac0c,exclude,E3,E3 (R3) creative problem-solving benchmark; no formal component
+rfe57f2c7,exclude,E3,E3 (R3) consistency regularisation for transformers; no symbolic component
+r76c04ab4,exclude,E3,E3 (R3) test-time compute with learned process reward models
+r90d164f3,exclude,E3,E3 (R3) LLM-orchestrated evolutionary search with physics simulation; no formal language
+r0004dd62,exclude,E3,E3 (R3) LLM length generalisation with scratchpads; no symbolic engine
+r618a4474,exclude,E1,E1 (R1) differentiable tree machine trained from scratch; no pretrained LM
+ra5fbc278,exclude,E3,E3 (R3) reference-model steering for CLIP training
+r484dfb45,exclude,E3,E3 (R3) CoT demonstration harmonisation; no formal symbolic system.
+r511f7598,exclude,E1,Symbolic policy learning for RL; no language model.
+r4c69122b,exclude,E3,E3 (R3) theoretical CoT search analysis; verifier/reward model not a formal system.
+rda42a057,exclude,E1,ILP-based program synthesis; no language model.
+r2be4f494,exclude,E1,E1 (R1) SR transformer pretrained only on synthetic equations; MCTS decoding.
+r8d830702,exclude,E3,E3 (R3) symbolic KB is stored textual knowledge for retrieval; no formal reasoning engine.
+r26ec5abd,exclude,E3,E3 (R4) KBQA query generation with execution feedback only.
+rc2ecb6c6,exclude,E1,MCTS symbolic regression; no language model.
+r5fd0a7c2,exclude,E3,E3 (R4) SQL dialogue-state tracking is text-to-SQL family; execution only.
+rdedd5f0f,exclude,E1,E1 (R1) neural program synthesizer trained from scratch on task episodes.
+r0edfcf35,exclude,E1,Interactive RL symbolic regression platform; no language model.
+rab20f8f2,include,,RL-finetuned LLM writes crossover operator code executed in HGS solver; program search for CVRP.
+raf55373f,exclude,E3,E3 (R4) text-to-Elasticsearch query generation benchmark; execution only.
+r23d29c25,exclude,E3,E3 (R3) dialogue summarization tricks; no symbolic component.
+rc6de6a96,exclude,E1,E1 (R1) RNN trained from scratch for symbolic regression; no pretraining.
+r8d5819a3,exclude,E1,Neural graphical-model learning for Sudoku/protein design; no language model.
+r8ec44e70,unsure,,Constraint solver with sequence generative models; unclear whether text model is a pretrained LM.
+r8cb10c55,exclude,E3,E3 (R4) test generation/code repair benchmark judged by execution of tests.
+r045b383b,exclude,E3,E3 (R3) ChatGPT paraphrasing for coreference dataset; no symbolic component.
+r7dc50255,include,,LLM interleaves reasoning with program execution and symbolic solvers for math problems.
+rd4e37e81,exclude,E1,Axiomatic architecture design framework; no language model as core component.
+rc9a2fd23,exclude,E3,E3 (R3) symbolic knowledge distillation is textual commonsense; no formal system.
+rdedfc4d7,exclude,E3,E3 (R3) reversible transformer architecture; no symbolic component.
+r7de9967b,exclude,E1,Medical vision self-supervised models; no language model.
+r443beac1,include,,LLM-generated hypotheses validated by symbolic tools for embodied task knowledge.
+r63b932cf,exclude,E1,E1 (R1) transformers trained from scratch on synthetic Dyck language.
+rfe9b5534,exclude,E3,E3 (R3) curated MLLM logical reasoning benchmark; no symbolic oracle.
+re897b9fe,exclude,E1,E1 (R1) transformers trained from scratch on synthetic recurrences.
+ra195b629,exclude,E1,E1 (R1) decision transformer on RL trajectories; not a language model.
+r05566fe9,unsure,,LLM agent for math modeling with computational solving stage; unclear if executor/solver interacts.
+re9cc5a89,include,,Code-generating LLM for table QA; oracle executes generated code.
+rfd60f61d,exclude,E3,E3 (R3) LLM steganography and probing; no symbolic component.
+rf8fa7a83,exclude,E1,E1 (R1) task-trained interpretable transformers compiled to programs; no pretrained LM.
+rbd25dbcd,include,,LLM optimization modeling with solver-verified data and solver-based RL rewards.
+r72a1c5d7,unsure,,Temporal logic induction modules with LM; unclear if validator is formal or neural.
+r564e6dd7,exclude,E3,E3 (R3) cross-lingual CoT prompting; no formal system.
+r7ee175e7,exclude,E3,E3 (R3) self-consuming training dynamics; no symbolic component.
+r3b5fd577,unsure,,Checklist rewards partly from verifier programs; unclear if executed programs are substantive symbolic component.
+r0104bcea,exclude,E3,E3 (R3) formal-language vs NL analysis; no symbolic engine interacts.
+r4014d545,unsure,,"LLM designs observation/action models, likely code run in simulator; abstract does not confirm."
+r3954f733,exclude,E3,E3 (R3) Bayesian aggregation of LLM factors; no formal logic or solver.
+r022ea118,exclude,E3,E3 (R3) abductive NLI/NLG dataset; no symbolic component.
+rd2e57606,include,,Lean theorem-proving benchmark; LLM provers checked by Lean.
+rac839eb9,exclude,E3,E3 (R3) tournament-graph aggregation of LLM rankings; not formal symbolic reasoning.
+r16bb57d2,unsure,,Multi-paradigm math reasoning incl. symbolic/theorem proving; unclear if prover or executor used.
+rad318e3d,exclude,E1,Pragmatic program synthesis ranking; no language model.
+r552b93d3,exclude,E3,E3 (R3) circuit stability interpretability; no symbolic component.
+rdbf39981,exclude,E3,E3 (R3) RL from text feedback; no specific formal engine.
+r5393defe,exclude,E3,E3 (R3) natural-language rules weighted by logistic regression; no formal engine.
+rc55bb913,include,,Program-aided LLM reasoning; generated Python executed; calibration study.
+r4317b7f6,include,,LLM-guided symbolic regression with evolutionary search (LaSR).
+rfb211be2,exclude,E3,E3 (R6) human question decomposition; calculator is generic tool.
+re6ed0263,exclude,E3,E3 (R3) quasi-symbolic CoT without external solver.
+r1fe0e119,exclude,E3,E3 (R3) distributional preference learning for RLHF; no symbolic component.
+r9a62e4ca,unsure,,Table-text pretrained LM used in semantic parsers; unclear if program execution role counts beyond R4.
+r8590f020,exclude,E3,E3 (R2) theoretical RNN LM expressivity; no interacting symbolic component.
+rf8b2da15,exclude,E1,E1 (R1) transformer trained from scratch on CSP instances.
+rb425a47c,include,,LLM FOL theorem proving in Lean 4 with error feedback.
+r296c3ace,unsure,,LLM-synthesized executable code environments for safety eval; unclear if counts as symbolic interaction.
+rd3fc62e4,include,,LLM writes executable Python rendering code for video creation; execution and auto-fix loop.
+r619d07c4,exclude,E4,Doctoral consortium dissertation abstract.
+r6ddc6f47,exclude,E3,E3 (R3) multi-persona prompting; no formal system.
+r9e8ff684,exclude,E3,E3 (R3) value principle alignment; no symbolic component.
+rcd4fa50f,exclude,E3,E3 (R3) multi-LLM beam search with perplexity consensus; no formal verifier.
+rf777b69c,exclude,E3,E3 (R3) adapter transformers for norm violation classification; no formal system.
+r0073b99e,exclude,E3,E3 (R3) information emergence metric; no symbolic component.
+r91e198be,exclude,E3,E3 (R3) uncertainty for seq2seq graph parsing; no formal engine interacts.
+r138f4360,exclude,E1,ILP rule induction; no language model.
+r038d2e5d,exclude,E1,Epistemic logic program complexity; no language model.
+rd817fe24,exclude,E1,Diffusion models with logical constraints; no language model.
+r59c39e16,include,,LLMs formulate optimization problems and call code solver; benchmark and data synthesis.
+rd562c497,include,,LLM hypotheses implemented as Python programs verified on ARC examples.
+rceedfe4e,exclude,E3,E3 (R3) RL-bootstrapped rationales; no formal symbolic component.
+r125d99be,exclude,E1,Vision transformer complexity limits; no language model.
+rcd6c86e4,unsure,,MWP-BERT equation solver; unclear whether equation execution constitutes interacting symbolic component.
+rd8b8cfa3,exclude,E1,Weight sign compression across architectures; no language model as core.
+r122d7124,exclude,E1,E1 (R1) length generalization theory with transformers on formal languages.
+r90e3d0ed,unsure,,Autoformalization diagnostic LLM; unclear whether proof assistant checks are involved.
+r58f8cc23,exclude,E3,E3 (R3) RLVR answer-matching rewards; no formal system.
+race84247,exclude,E3,"E3 (R4) cross-lingual semantic parsing benchmark (SQL, logical forms)."
+r66f0afcf,exclude,E3,E3 (R3) MLLM task generation and MLLM verifiers; no formal system.
+rc9ac2e50,exclude,E3,E3 (R3) retrieved chemical rules guide LLM; docking scores; no formal engine.
+r7fb89d62,exclude,E3,E3 (R6) red-teaming agent with generic tools and sandbox.
+rd3bcd9aa,exclude,E3,E3 (R3) model merging via task arithmetic; no symbolic component.
+rbcf356de,exclude,E1,Visual in-context learners trained from scratch; no language model.
+r0ac2564b,exclude,E3,E3 (R4) semantic parsing encoder evaluated by exact match; no formal checker.
+r6e19b6fe,include,,LLM autoformalization into Lean 4 with filtering and searched proofs.
+r75dc134e,include,,Probabilistic programming language for LLM flows; Rocq theorem-proving agent case study.
+r622f7dfd,exclude,E3,E3 (R4) async RL for code generation judged by Pass@1.
+r77fe4b2c,unsure,,Logic theory with deep network in NLP; unclear whether deep model is a pretrained LM.
+r97ae3996,include,,Reasoning models trained to use code interpreter for math problems.
+r62ae3f9d,exclude,E3,E3 (R2) rule-based solver only a separate baseline; no interaction.
+r790d4bfc,include,,Learned PDDL domain for LLM/VLM-based robot task planning with symbolic planner.
+r8c6cdcfe,exclude,E3,E3 (R4) test-case synthesis for code generation verifiers.
+r56dea4bf,exclude,E1,Genetic programming symbolic regression; no language model.
+r4cbb6522,exclude,E3,E3 (R3) LM architecture recall study; no symbolic component.
+re1446fe9,include,,LLM autoformalization into Lean with Mathlib retrieval; Lean-based BEq evaluation.
+r9c5143ac,exclude,E3,E3 (R2) theoretical RNN LM to PFSA equivalence; no interaction.
+r93944168,exclude,E3,E3 (R3) theory of RL in fine-tuning; no symbolic component.
+recadb3a1,unsure,,LLM prompting for combinatorial problems; unclear whether subtasks are executed as code.
+rc55ca690,unsure,,Seq2Seq MWP equation solvers; unclear if LM pretrained and if equation execution counts.
+r7e32dff3,exclude,E3,E3 (R3) medical LM benchmark; no symbolic component.
+r44d63576,exclude,E1,Flow matching for vector symbolic representations; no language model.
+ra9ad2c33,exclude,E3,E3 (R5) ontology/database-augmented LLM evaluation; retrieval only.
+r5b626332,include,,"Steering LLMs to write and execute code for math, logic, optimization tasks."
+r7e7ee6a4,exclude,E1,E1 (R1) transformers trained on synthetic processes; representation analysis.
+r3c7d5693,include,,LTL dataset generated via model checking and formal grammar; LLM verbalises; models evaluated.
+r78551d99,include,,Code I/O prediction training; predictions verified by re-executing code for revision.
+rd8dd6933,exclude,E3,E3 (R3) safe RLHF with Lagrangian; no symbolic component.
+r70a8dfd2,exclude,E1,Bi-level optimization for meta-learning; no language model.
+rf021c9a1,unsure,,"No abstract; title suggests classical symbolic regression, LM involvement unknown."
+r63f4ff78,exclude,E3,E3 (R3) backdoor attacks on instruction tuning; no symbolic component.
+r1325c2e8,exclude,E3,E3 (R3) pairwise-statistic reranking of generations; no formal checker.
+rba565fad,exclude,E3,E3 (R3) least-to-most prompting; no formal system.
+rb1456c48,exclude,E1,NeuPSL learning optimization; no language model indicated.
+r338a5f83,exclude,E5,Conceptual design framework/taxonomy for anthropomorphism; position paper.
+rbecbeb7d,exclude,E4,Extended abstract on ASP cautious reasoning; also no LM.
+rddacb1b3,exclude,E3,E3 (R3) posterior-regularization mutual exclusion; no formal symbolic system.
+r70636bd9,exclude,E3,E3 (R3) reward-hacking detection via verifier pass rates; no formal system.
+rf6d9f3c4,exclude,E3,E3 (R4) CUDA code generation judged by execution and profiling.
+rda034d5d,exclude,E3,E3 (R3) preference optimization framed as constraints; no solver.
+ra68d21e0,exclude,E3,E3 (R4) text-to-SQL tokenization techniques.
+r4d4f93a6,exclude,E3,E3 (R3) text-to-video jailbreak prompt optimization; no symbolic component.
+r5b1f2e9c,exclude,E1,Diffusion facial restoration; no language model.
+r30ae19d4,exclude,E3,E3 (R3) natural-language multi-hop reasoning steps; no formal engine.
+r472ce08b,exclude,E3,E3 (R4) text-to-query data augmentation.
+ra933b5f5,exclude,E3,E3 (R3) superficial alignment knowledge analysis; no symbolic component.
+re17f6d11,exclude,E1,Epistemic logic program complexity; no language model.
+r580cd59e,exclude,E3,"E3 (R3) Cherokee MT dataset; SMT only compared, no interaction."
+rc264b05c,include,,LM transpilation with symbolic solver resolving semantic equivalence.
+r62b662a5,unsure,,CP generates constrained sentences; LLM only perplexity curation; unclear if LM is core.
+rcd4a3c9d,exclude,E3,E3 (R3) symbolic music representation with GLM pretraining; no formal engine.
+r3982e461,exclude,E1,HRR self-attention for malware/LRA; not a language model.
+ra9ab1ab0,unsure,,Syntax/pylint checks filter pretraining data; unclear if static analysis interaction counts under R4.
+r765fe51f,exclude,E1,DSL program synthesis for causal estimation; no language model.
+r2080cdd7,include,,"LLM trained for Lean 4 proof writing, iterative proof checking."
+r86cfc988,include,,Pretrained seq2seq semantic parsers with grammar-constrained decoding (R4 additional component).
+r8565c0d2,exclude,E3,E3 (R6) LLM agentic workflow with VLM tools; no formal engine.
+r108ca371,unsure,,Bayesian reasoning dataset; logic-based neuro-symbolic models compared; unclear if LM parses to logic.
+r22fe04c2,exclude,E1,E1 (R1) NMT model trained on generated sequence-formula data.
+rfb722225,exclude,E1,Music-to-dance seq2seq; no language model.
+r7c99d329,include,,LLM-based evolutionary synthesis of interestingness programs in symbolic theory-formation environment.
+rfff81209,include,,LLM coordinated with symbolic execution to generate loop invariants for program verification.
+rf293fa46,exclude,E3,E3 (R3) natural-language rules-of-thumb and neural models; no formal system.
+r9f5f9d32,include,,Small LMs with iterative context-free-grammar-constrained decoding for API semantic parsing.
+r2e90c051,unsure,,Pretrained transformers on synthetic rulebases; unclear if a formal reasoner labels data (R2 training signal).
+red60672f,exclude,E3,E3 (R4) scientific code generation benchmark judged by execution and metrics only.
+r47d55f71,unsure,,BERT-based; derived logical-form program structures neural modules; unclear whether symbolic parsing/execution interacts.
+r974f14dd,exclude,E1,Neural KG query answering versus query relaxation; no language model.
+rcd85a7ff,exclude,E3,E3 (R3) theoretical expressivity of CoT language models; no symbolic component interacts.
+rab765cc1,exclude,E1,Answer set programming complexity theory; no language model.
+rc10d9f09,exclude,E1,E1 (R1) transformer trained only on symbolic music data; no language pretraining.
+ra0100b23,exclude,E3,E3 (R3) LLM-as-judge reliability via item response theory; no formal system.
+rafe6d7af,include,,Code generation with decoding constrained by schema/grammar rules (R4 additional constraint component).
+r0e853bba,unsure,,Dataset paper; neural-symbolic program-execution methods evaluated but their role unclear from abstract.
+r9635f994,exclude,E3,E3 (R3) LM feature extraction plus sequential pattern mining; no formal system.
+rbf18e65c,exclude,E1,SAT cardinality-constraint encodings; no language model.
+r09aef02b,unsure,,LLM code API-misuse evaluation; unclear whether a static-analysis checker certifies outputs.
+re33d530c,include,,"Algorithmic generators create problems and deterministically verify LLM answers, incl. CSPs (R2 evaluation)."
+r3560ddac,exclude,E3,E3 (R3) generator with neural verifiers over reasoning paths; no formal component.
+r2e3069a4,include,,LLM translates NL to Lean 4 with compile-checking reward in RL.
+r46354763,exclude,E3,"E3 (R3) 'symbolic features' are linguistic IE features, not a formal system."
+r7eeca505,exclude,E3,E3 (R3) consistency rewards compare model's own answers; no explicit formal system.
+r6e9171fd,exclude,E1,Neural PDE solver; no language model.
+r4cf3197d,exclude,E1,Search-based symbolic regression without any language model.
+r051b0a1e,include,,LLMs trained on program-generated formal logic deduction corpus (symbolic-to-neural transfer).
+rb16863cf,exclude,E1,Probabilistic logic programming inference with Datalog; no language model.
+r5c775ba4,exclude,E3,E3 (R3) neural prover-verifier games; no explicit formal system interacts.
+re690933b,exclude,E3,E3 (R6) generic LLM optimizer with numeric/text feedback; no specific formal engine integrated.
+r9c098ec5,exclude,E3,E3 (R3) attention mechanism paper; symbolic regression only a probing analysis.
+r1bce7a6c,include,,Pretrained-representation seq2seq maps probability problems to declarative programs executed by probabilistic programming system.
+r9d7ccdaa,exclude,E3,E3 (R3) 'symbolic' CoT distillation is natural-language rationales only.
+r71e26edf,include,,LLM autoformalization into machine-verifiable formal statements; verifier-checked statements satisfy R4.
+r8a268c2e,include,,LLM-guided evolutionary program search generating executable heuristics.
+r4f489952,exclude,E3,E3 (R3) LLM-extracted textual action-object knowledge; no formal reasoning engine.
+rc0ab9323,exclude,E3,E3 (R3) circuit hypothesis testing in LLMs; no symbolic component.
+rfffad286,include,,LLM-augmented symbolic discovery of utility functions (LLM-guided symbolic regression).
+rd682920a,include,,Synchronous CFG generates synthetic question-SQL data to pretrain LM (grammar beyond execution).
+r2972eb1b,exclude,E1,Neurosymbolic MDP state abstractions; no language model.
+r0c67f18b,exclude,E3,E3 (R3) machine-generated text detection benchmark; no symbolic component.
+r4bfaee4e,exclude,E1,E1 (R1) transformers trained from scratch on synthetic algebra sequences.
+r94d5a29d,exclude,E1,Motor program induction model of human drawing; no language model.
+r945bbd29,exclude,E1,Resilient logic programs with ontologies; no language model.
+r8d04563f,exclude,E5,Position paper on LLM guardrails without new evidence.
+r3a986646,exclude,E3,E3 (R6) search-engine agents with RAG self-play; generic tool use.
+rb0dfbe81,exclude,E3,E3 (R5) KG random-walk paths explain LM reasoning; no logical inference engine.
+recc637f2,exclude,E3,E3 (R3) VLM outputs logical forms but no symbolic engine manipulates them.
+r5c2491c7,exclude,E1,E1 (R1) linear transformers trained on formal-language recognition tasks; no LM pretraining.
+rba9c5b56,exclude,E3,E3 (R3) verifier-free adversarial IRL with neural critic.
+r7acba57d,include,,Symbolic planner plans compiled into procedures integrated into LM inference; PDDLGym evaluation.
+rd69446cb,exclude,E3,E3 (R3) prompt-echo analysis of reasoning models; no symbolic component.
+r0ec1e91c,exclude,E3,E3 (R3) LLM 'symbolic plans' are language subgoals; no formal planner.
+rd719f709,exclude,E1,Differentiable logic machine for ILP/RL; no language model.
+r1ceb7576,exclude,E3,E3 (R3) 'symbolic learning' operates on natural-language prompts; no formal system.
+r89f9ae91,exclude,E3,"E3 (R6) generic tool-interactive critiquing (search, interpreter, APIs)."
+r42bb8e33,include,,Text-to-SQL with incremental parser constraining decoding (R4 grammar-based checker).
+r932e78ab,unsure,,Neural QCFG with grammar constraints; unclear whether this non-pretrained grammar model counts as LM (R1).
+r9019a341,include,,LLM writes executable reward code over symbolic objects for RL credit assignment.
+r5163e87e,exclude,E1,Graph representation learning; no language model.
+rbcce1526,exclude,E3,E3 (R3) code/graph representations are training data only; no symbolic engine interacts.
+r23bd7ed5,unsure,,VLM abstracts trajectories into programs; unclear whether an interpreter executes them.
+re505d0ba,exclude,E3,E3 (R4) code LLM evaluated by unit tests only.
+raad22b70,exclude,E3,E3 (R3) visual misinformation QA dataset; no symbolic component.
+r950d0ec9,exclude,E3,E3 (R3) document-tree MapReduce over LLM rationales; no formal system.
+r5ea0716f,include,,Transformer LM tactic prediction in Lean proof assistant with co-training on proof terms.
+r003cfa04,exclude,E3,E3 (R3) music LLM generating symbolic notes; no formal system.
+r459915b4,exclude,E3,E3 (R4) code generation with search and test-based refinement only.
+r0976db89,exclude,E3,E3 (R3) video generation taxonomy and VLM evaluator; no formal system.
+r4a1ca353,exclude,E3,E3 (R3) diffusion vs autoregressive models on puzzles; no symbolic component interacts.
+ra556b0bb,exclude,E1,Abductive learning with non-language neural networks.
+r28844098,exclude,E1,Neural perception with logical constraint learning; no language model.
+rcc145ade,exclude,E3,E3 (R6) search-augmented LLM self-play; generic retrieval tool.
+r011d7456,include,,LLM maps probabilistic problems to Python and probabilistic logic programs that are executed.
+r34074b15,include,,LLM translates to symbolic representations; logic solver identifies gaps and verifies premises.
+r5c574abb,exclude,E3,E3 (R3) heuristic detection of logical statements and neural verifier; no formal system.
+r63f4da55,exclude,E1,Description logic analogical reasoning; no language model.
+r0764d956,exclude,E4,"Extended abstract (non-archival); also neural link predictors, no language model."
+r8f379c15,exclude,E3,E3 (R3) learned process verifier via tree preference learning; no formal system.
+rc6cbb867,exclude,E3,E3 (R3) multi-agent LLM debate with statistical stopping; no formal system.
+r75f0d334,exclude,E1,Physics neuro-symbolic surrogate modelling; no language model.
+r466cca79,exclude,E3,E3 (R3) LLM pretraining via model growth; no symbolic component.
+ra4cec28e,exclude,E1,E1 (R1) Transformers/LSTMs trained from scratch on synthetic semantic-parsing data.
+rc05df02f,exclude,E3,E3 (R4) KBQA generating KoPL logical forms; execution plus RAG grounding only.
+r24dbf120,exclude,E1,Neurosymbolic encoders for trajectory data; no language model.
+refa20322,include,,LLM writes programs executed by Python interpreter for math and symbolic reasoning.
+r0ec197bd,exclude,E3,E3 (R3) RL/distribution matching with classifier constraints; no formal system.
+rf9e4862e,include,,Execution-guided PBE synthesis; LLM ExeDec-style prompting evaluated with stepwise program execution.
+r189a64fa,exclude,E1,Neural operator for circuit simulation; no language model.
+rdc9752e0,exclude,E1,ILP dataset built with deduction engine; no language model evaluated.
+r99a24673,exclude,E3,E3 (R3) LLM hypothesis generation with philosophical confirmation theory; no formal engine.
+rddad8c99,exclude,E3,E3 (R2) integer CSP solver only tunes GPU kernels; no interaction with model outputs.
+rfc9bd43f,exclude,E3,E3 (R3) retrieval-augmented LM with neural verifier; retrieval is not symbolic.
+rc139a616,exclude,E3,E3 (R3) LLM steganographic collusion study; no symbolic component.
+rd97bb1c9,exclude,E1,E1 (R1) transformer trained on generated VRP instances; no language model.
+r42e78a64,include,,LLM generates Rust proofs checked by symbolic verifier; verifier feedback for self-debugging.
+r284ff552,exclude,E3,E3 (R3) activation steering method; no symbolic component.
+r6ee04317,include,,Parameterized 2-SAT generators create problems and certify satisfiability for LLM evaluation.
+r21f43884,exclude,E4,Abstract reprint of journal article; also bottom-up search without language model.
+rc7b38fa9,include,,LTL formulas compiled into automata provide reward shaping for LLM agents.
+r9a65906c,include,,LLM writes Python world model checked against planner via logical constraint.
+r2604247f,exclude,E3,E3 (R3) theory of diffusion LM parallel sampling; no symbolic component.
+r0a224728,include,,LLM writes executable game world model used by MCTS planner.
+r60cd81ea,unsure,,Transformer plus 'symbolic module' for action chains; unclear if LM pretrained or module formal.
+r385e1ace,exclude,E3,E3 (R6) generic tool-use mixture (code interpreter and search).
+rdf0ed85b,include,,LLM invariant generation grounded in symbolic execution traces with verifier feedback.
+r77318a9c,exclude,E3,E3 (R3) cryptographic impossibility theory of LLM filtering; no symbolic component interacts.
+rda378ebc,exclude,E4,"Extended abstract (non-archival); logic programs for relaxed planning, no language model."
+r364c5260,exclude,E3,E3 (R3) RLVR answer checkers with reward models; no explicit formal system.
+r2fb36f20,exclude,E5,Survey of LLM knowledge boundaries.
+rc6b88a2b,exclude,E3,"E3 (R3) music transformer GAN; symbolic music is data, not a formal system."
+r3d022f65,unsure,,Subtree-substitution augmentation for semantic parsing; unclear if model is LM and augmentation formal.
+r51244963,exclude,E1,Neural network formal verification; no language model.
+re61190b2,exclude,E3,E3 (R4) LLM prompting generates SPARQL parses for CFQ; no additional symbolic component.
+r37d6a8c5,include,,LM proposes rules; task-specific symbolic interpreter filters and applies hypotheses.
+r49bb458b,exclude,E1,E1 (R1) sequence encoders trained only on linearized KG queries.
+rcf704d95,unsure,,GPT models vs program induction on teaching sets; unclear if symbolic teacher generates problems.
+r224803bf,exclude,E3,E3 (R3) hypergraph-recovery theory of pretraining; no symbolic component.
+r5e2d4860,exclude,E3,E3 (R3) data selection via collaborative filtering; no symbolic component.
+r0d89d7e6,exclude,E3,E3 (R6) LLM API-call generation with retriever; generic tool use.
+r33686293,include,,LLM evolutionary equation discovery with symbolic term decomposition feedback (LLM-guided symbolic regression).
+r75fb254e,exclude,E3,E3 (R3) analysis of LLM decoding methods; no symbolic component.
+rb7177d7a,exclude,E3,E3 (R3) LLM multi-agent consensus study; no formal system.
+r3570ee52,exclude,E1,GNN variational inference for Markov logic networks; no language model.
+rb420e332,exclude,E1,Diffusion models for image inverse problems; no language model.
+rffc9bb87,exclude,E3,E3 (R2) bandit portfolio choosing between LLMs and symbolic synthesis solvers.
+rfc625545,exclude,E1,Generative object-centric image model; no language model.
+r76df3734,exclude,E4,"Invited talk abstract, not an archival research paper."
+rbfbe8d46,unsure,,Black-box hidden-function benchmark; unclear whether symbolic programs generate or certify answers.
+r8110d309,exclude,E3,E3 (R3) LLM addition probing with remapped symbols; no formal system interacts.
+rf89b7573,exclude,E1,Temporal point process rule induction; no language model.
+r739e3bdb,exclude,E3,E3 (R3) template NLI probe of adjective semantics; no symbolic component.
+rab0ce2a3,exclude,E3,E3 (R3) LLM event causality identification; no formal system.
+r56925bb2,include,,Finance math benchmark evaluating Program-of-Thought with executed Python (program as vehicle).
+ra6ce84c0,exclude,E3,E3 (R3) context-enhanced learning theory and experiments; no symbolic component.
+r289407db,exclude,E3,E3 (R3) energy-based differentiable constrained decoding; no formal system.
+rd881ed06,include,,LLM planning with symbolic verifier giving constraint-satisfaction feedback.
+re71dbdd6,exclude,E1,Model checking neural-symbolic multi-agent systems; no language model.
+r11b819f1,exclude,E3,E3 (R3) multimodal process reward model data selection; no symbolic component.
+raaac8c6d,exclude,E3,E3 (R3) reflective visual generation with learned rewards; no formal system.
+r250bb54c,exclude,E1,E1 (R1) neural search policy trained from scratch for program synthesis.
+r4f23d101,exclude,E3,E3 (R3) LLM serving KV caching; no symbolic component.
+rccff7628,exclude,E3,E3 (R3) RLHF with macro actions; no formal system.
+r485d6a67,exclude,E4,"Extended abstract (non-archival); argumentation via logic programs, no language model."
+r753a9426,exclude,E3,E3 (R3) embedding-space search with verifier-guided Bayesian optimisation; no formal system.
+rd92d8ed7,include,,LLM generates full PDDL domain/problem solved by classical planner.
+rde167ed8,exclude,E4,"Doctoral-consortium style abstract ('Prior Work by Applicant', ongoing work); also no language model."
+re747643f,exclude,E1,Selective knowledge distillation for classification; no language model.
+r0ff95e60,unsure,,Robot DSL program synthesis with environment context; unclear if model is a pretrained LM.
+rfdce8a05,exclude,E3,E3 (R3) BERT distillation for MWP representations; no formal engine interacts.
+r53d19d19,exclude,E3,E3 (R3) conformal prediction sets for LM sampling; no symbolic component.
+r830d891d,exclude,E3,E3 (R3) jailbreak via 'symbolic encoding' obfuscation; no formal system.
+r6f1f5bbd,include,,LLM translates to FOL; external theorem prover performs deduction.
+rb467eaf7,exclude,E3,E3 (R3) conversational SEO benchmark; no symbolic component.
+r6890f25f,include,,Lean 4 autoformalization translator and dataset built with Lean analyzer.
+r9faf5834,include,,LLM generates BC+ action-language programs with syntactic/executable verification for planning.
+r03b01480,exclude,E2,Social-choice metric subset selection; LLMs only as evaluation context.
+raec03516,exclude,E3,E3 (R3) lifelong few-shot prompt tuning of T5; no symbolic component.
+r9f8c975c,exclude,E3,E3 (R3) biomedical LM pretraining; no symbolic component.
+rd784659b,exclude,E1,E1 (R1) LMs trained only on PFSA-generated formal language data.
+rc3591edc,exclude,E3,E3 (R3) quantity extraction framework; no symbolic engine.
+r24171a33,include,,Formal logic verification interleaved with LLM reasoning for SFT and RL.
+r988bcc55,exclude,E3,E3 (R3) privacy-policy NLU benchmark; no symbolic component.
+r84270501,exclude,E3,"E3 (R4) code generation; AST only restructures targets, no checker or verifier."
+rf1024aef,include,,VLM with classical planner and symbolic world refinement via symbolic validation.
+rabaccab6,exclude,E3,E3 (R3) quotation-aware attention modules; no symbolic component.
+rd1249174,exclude,E1,Video diffusion virtual try-on; no language model core.
+r25186a6d,exclude,E1,"Neural KG query encoders, not language models; provers only build dataset."
+r282c687e,exclude,E3,E3 (R3) economic evaluation of LMs; no symbolic component.
+r10c2acd2,include,,LLM generates SQL executed for table QA alongside textual reasoning.
+r38c79cfe,include,,Grammar-constrained decoding of LMs for semantic and syntactic parsing benchmark.
+rfc454eee,exclude,E3,E3 (R3) theoretical analysis of hallucination; no symbolic component.
+r54b650e0,exclude,E3,E3 (R3) neural virtual-KB traversal via retrieval; no formal inference.
+r07045d12,exclude,E1,E1 (R1) conditional transformer for symbolic regression trained on task data.
+r81316185,unsure,,Seq2seq with learned lexicon rules; unclear if LM under R1 and lexicon symbolic.
+r7a6c5c0e,exclude,E1,HTN planning landmark generation; no language model.
+rddfda8b8,exclude,E1,E1 (R1) SSM expressivity theory; models trained on formal languages only.
+r1d137896,exclude,E3,E3 (R3) semi-supervised NLI with LLM pseudo-labels; no symbolic component.
+red16313f,include,,Programming puzzles verified by executing Python verifier; Codex/GPT-3 solvers evaluated.
+r917833cd,exclude,E3,E3 (R3) theoretical hallucination characterization; no symbolic component.
+r96ddf0f5,exclude,E3,E3 (R3) MLLM-conditioned video diffusion; no symbolic component.
+r37a506d6,exclude,E1,E1 (R1) transformer trained from scratch on intersection numbers.
+ree89803d,include,,WZ symbolic proof sketches in Lean 4 discharged by LLM prover.
+reb48193f,exclude,E3,E3 (R4) KBQA logical forms with execution feedback only.
+r98f0bff6,exclude,E3,E3 (R3) commonsense plausibility model; no symbolic component.
+r720f7195,exclude,E3,E3 (R3) LLM explanations as GNN features; no symbolic component.
+r8105b797,exclude,E3,E3 (R4) semantic parsing with intermediate supervision; no executor or checker.
+r3b1df8d8,exclude,E3,E3 (R3) verifier-free RL for LMs; no symbolic component.
+rdbefa82b,include,,Neuro-symbolic program traces distilled into 3D MLLM via SFT and RL.
+r0e37ebda,unsure,,Symbolic per-claim reward from structured temporal index; unclear if formal checker.
+r9127f3df,exclude,E3,E3 (R3) study of LLM inference modes; no formal engine described.
+r496c2cda,exclude,E2,Offline combinatorial bandits; LLM caching only an application.
+r103820b4,include,,LLM Verus proof repair with verifier counterexamples.
+rcd42aa26,exclude,E1,E1 (R1) transformers trained from scratch on synthetic mixture data.
+rcf44289c,exclude,E3,E3 (R3) LLM black-box optimization on synthetic functions; no formal engine.
+r22fdfdd6,exclude,E1,Theoretical hard-attention expressivity vs LTL; no trained language model.
+r4a9bbadb,exclude,E1,E1 (R1) models trained on synthetic LTL/propositional data.
+r690877a5,include,,LLM planner repaired by deterministic logic tutor over formal safety ontology.
+r4ea2113a,exclude,E3,E3 (R3) spelling correction with LLM verifier; no symbolic component.
+rcbbfcff5,include,,LLM program refinement incl. loop invariant synthesis and ARC puzzles with checks.
+r75cab387,exclude,E1,Abductive learning with perception model; no language model.
+r2a2dfef3,exclude,E3,E3 (R3) test-time scaling with neural verifiers; no symbolic component.
+r9eb18935,include,,Formal problem-solving framework in Lean 4 with provers.
+r4c5ba12f,exclude,E3,E3 (R3) multi-agent RL post-training with verifier scores; no formal engine.
+r04590057,unsure,,Benchmark graded with symbolic operator manipulation; unclear if counts as certifying oracle.
+r86dc6b91,exclude,E3,E3 (R5) KB facts injected via adapters; no logical inference.
+r403a28d4,exclude,E3,E3 (R3) prediction consistency in tabular LLMs; no symbolic component.
+rcc2d7391,unsure,,Transformers on numerical satisfiability; unclear if pretrained LM or trained from scratch.
+rde0251a9,exclude,E3,E3 (R3) theoretical alignment framework; no symbolic component.
+r8d84714f,include,,Regular-expression constraints guide diffusion LM sampling.
+r785313e9,include,,Math LM evaluated on formal theorem proving with proof assistant and tool use.
+rcc2a0118,exclude,E3,E3 (R5) LLM KG traversal agent; no logical inference.
+r466e9ccd,exclude,E3,E3 (R4) text-to-SQL error correction; no additional symbolic checker.
+rd8d04fea,exclude,E3,E3 (R3) theory of curriculum post-training; no symbolic component.
+r1a628504,exclude,E3,E3 (R3) RAG dataset inference via watermarks; no symbolic component.
+r93a0e162,exclude,E1,Differentiable program search with neural heuristics; no language model.
+r013837d8,exclude,E3,E3 (R3) least-privilege LM interventions; no symbolic component.
+rd379daa6,exclude,E3,E3 (R3) training data identification statistics; no symbolic component.
+rff3c0026,exclude,E3,E3 (R3) theory of compositional generalization under RL; no formal engine.
+r3916cbf6,exclude,E1,Disentanglement theory with VAE on images; no language model.
+rc72cfcf8,exclude,E1,Answer set programming with set terms; no language model.
+rf952ec1e,exclude,E1,Spatial-temporal logic rule learning for trajectories; no language model.
+ra28b235f,exclude,E1,Neural routing solver; no language model.
+raae0bc6d,include,,LM self-generated programming puzzles filtered by Python interpreter for fine-tuning.
+r3d22fb48,exclude,E3,E3 (R3) curiosity bonus for RLVR; answer-matching rewards only.
+r97819a7d,include,,RL autoformalizer with Lean syntactic and prover feedback.
+r54bfa88e,exclude,E1,Theory relating fibring logics and networks; no language model trained or used.
+rc54214ee,exclude,E3,E3 (R3) category-theoretic representation alignment; no symbolic component.
+r117e6376,exclude,E3,E3 (R3) event argument extraction decoder; no symbolic component.
+rfbf1f536,exclude,E3,E3 (R3) epistemology of LLM knowledge; no symbolic component.
+rcb075df0,exclude,E1,E1 (R1) neural-symbolic machine trained from scratch on task data.
+r91ee75d3,unsure,,SWE-bench patching agent; abstract silent on the formal verification attempts.
+raa04f2fb,include,,MLLM writes and executes code for image manipulation and computation.
+r91bb1f43,exclude,E3,E3 (R3) interpretability of VLM binding mechanisms; no formal system.
+r75b70244,unsure,,Transformer with discrete program primitives; unclear if pretrained LM.
+r0ddf6adc,exclude,E1,Best-first program search algorithm; no language model.
+r6a96fae4,exclude,E1,E1 (R1) neural controller trained from scratch on SCAN-style task data.
+r06b8d03f,include,,"LLM RTL rewriting with AST templates, FSM symbolic module, formal equivalence checks."
+r0c37875c,include,,LLM generates and executes code for math problem solving.
+r11bcdfdc,include,,Isabelle theorem proving with verifier feedback.
+raccec608,unsure,,File reasoning agent with stateful execution; unclear if code execution or generic tools.
+r9bf8be45,include,,LM writes code executed by interpreter with LM emulation fallback.
+r8ab5b661,exclude,E1,Theoretical analysis of softmax attention; no language model.
+r96ffbb61,exclude,E3,E3 (R3) synthetic long-context fine-tuning analysis; no formal engine.
+rf3eda214,include,,LLM subtask planning with A* toolpath search and LLM-induced reusable subroutines.
+rd7f0e1f1,unsure,,Benchmark allows Python interpreter answering mode; unclear if symbolic part central.
+rd1ce6c5f,exclude,E3,E3 (R3) neural logic reasoner without explicit formal engine.
+r6ebaf72c,exclude,E1,Neuro-symbolic continual learning with perception networks; no language model.
+re9e67d00,unsure,,AST-based partial-program prediction sets for code LMs; unclear if counts beyond R4.
+raf3082d4,exclude,E3,E3 (R3) RLVR self-verification with outcome answer matching only.
+r787742b2,include,,Agentic LLM theorem prover with iterative proof refinement against proof assistant.
+rc62f7a8a,exclude,E1,Exhaustive symbolic regression benchmark fronts; no language model.
+r6f24e47d,include,,LLM autoformalization of geometry in Lean with SMT solvers.
+r9cf49b6a,exclude,E3,E3 (R3) verifier-free variational RL; no symbolic component.
+r12c78c45,exclude,E3,E3 (R3) LLM-based answer verifier; no formal engine.
+r5aaa7eac,unsure,,Crossword benchmark with constraint-satisfaction baseline; unclear if it uses LM candidates.
+rf142f1a9,exclude,E3,E3 (R3) fractal analysis of language; no symbolic component.
+r955cd3ab,exclude,E3,E3 (R4) test-case generation benchmark; execution only.
+r008d1b91,exclude,E1,Positional encodings for directed graph networks; no language model.
+r40247491,include,,Codex parses input to SQL/Python with LM API calls; executed for table QA.
+rf4b251a8,exclude,E3,E3 (R3) speculative decoding; no symbolic component.
+r4c283733,exclude,E1,"Logical characterization of transformers; theory, no trained language model."
+rc5147d58,unsure,,Table verification transformer; unclear what 'symbolic reasoning' combination involves.
+r726a58c8,exclude,E3,E3 (R3) neural verifier trims reasoning; no symbolic component.
+r6432301a,exclude,E3,E3 (R3) time-series reasoning model; no symbolic component.
+r2a0a856e,unsure,,LLM natural-to-formal conversion study; unclear if formal system builds or checks tasks.
+r8b5e4046,exclude,E1,E1 (R1) math LM trained only on expression-tree walks.
+rb2fb6f12,include,,LLM extracts temporal logical rules applied for TKG reasoning.
+ra3393948,exclude,E1,Neurosymbolic diffusion predictors with perception; no language model.
+r0fb6ebec,include,,Small LM refactors executable code skills for robot control.
+rf1c7d7ab,exclude,E3,E3 (R5) commonsense KG used to train knowledge models; no logical inference.
+r077ec1c0,exclude,E3,E3 (R3) CoT learnability theory; no symbolic component.
+r8b90511a,exclude,E4,"Extended abstract, sister-conference best papers track; also no language model."
+rd998a870,unsure,,Noisy DFA learning motivated by LLM oracles; unclear if LLM actually used.
+r1ed450f4,exclude,E3,E3 (R3) token budget planning for reasoning; no symbolic component.
+re71fe0ca,exclude,E1,"Neuro-symbolic learning with SMT; perception networks, no language model."
+r832e01c5,exclude,E3,E3 (R5) temporal KGQA with knowledge support; no logical inference.
+r21a5176d,exclude,E3,E3 (R3) black-box attack on image-to-text models; no symbolic component.
+r8968b2e4,exclude,E3,E3 (R3) embedding geometry analysis via concept lattices; no formal engine interacts.
+raa091574,include,,OR modeling LLM trained with external solver verification feedback.
+r5b50c5f4,exclude,E3,E3 (R3) geometric regulation of decoding; no symbolic component.
+rb5605206,exclude,E3,E3 (R4) code generation benchmark evaluated by AST match.
+re03bc5e5,exclude,E3,E3 (R3) prior-based data filtering; no symbolic component.
+r5afb162b,exclude,E3,E3 (R3) MLLM structured output drives neural geometry modules; no formal engine.
+rbcc862a5,exclude,E3,E3 (R4) semantic parsing scaling study; no symbolic component interacts.
+r37bdfec4,exclude,E3,E3 (R3) LLMs learn from code/grammar descriptions as text; no engine.
+rac2efc1f,exclude,E3,E3 (R3) data-quality scaling laws; no symbolic component.
+rb95c1e18,exclude,E3,E3 (R3) probing BERT against UD trees; no symbolic engine interacts with model
+r6c1400d1,exclude,E3,E3 (R3) data pruning for fact memorization; no symbolic component
+ref1a4a16,include,,GRPO training of LLM prover with formal theorem-proving verifier reward (miniF2F)
+ref6d0708,exclude,E3,E3 (R3) compute-constrained data selection for finetuning; no symbolic component
+r69c23c69,include,,LLM formalizes planning problems as optimization programs solved by solver
+r582724a7,exclude,E1,Constraint ASP scheduling with clingcon; no language model
+ra65cf286,include,,LLM-guided program search over mapper DSL with execution feedback
+re3bca06f,exclude,E1,Neuro-symbolic mental rotation model; no language model
+r8c4ab443,include,,"Pangu: symbolic agent incrementally builds valid KBQA plans, LM scores candidates (search over partial programs)"
+r1ff1c19f,include,,"Typed probabilistic programs combining LLMs and deterministic logic; type compliance, SymPy execution"
+r6e462a44,unsure,,MLLM biomarkers verified against clinical/temporal logic; unclear if formal checker and LM role
+rea4c05a1,exclude,E3,E3 (R3) stepwise correction with neural process-supervised verifier
+rd458d236,unsure,,Compositional grammar-based DRT parser; unclear whether pretrained LM is core
+r63158772,include,,Formal benchmark across Metamath/Lean/Isabelle with GPT-f prover; proof checker certifies
+r59565d6a,exclude,E3,"E3 (R3) constraint satisfaction IR benchmark; verification is data matching, no formal solver"
+rd16a5d6f,include,,Benchmark from solver-level Rust verification reasoning evaluating LLMs; verifier generates ground truth
+rb2f97702,exclude,E3,E3 (R3) multi-path CoT with role templates; no formal system
+r0b63ce19,include,,Grammar-generated FOL problems with TPTP prover labels train DeBERTa models
+re65725d0,include,,CFG-constrained decoding for diffusion LLMs
+re1a89810,exclude,E3,E3 (R5) LM extracts triples for scene graph training; no logical inference
+r8ed1497f,exclude,E3,E3 (R5) KGQA retrieving triples for LLM debate; no logical inference
+r4eeb12bc,include,,Pseudo-semantic loss enforces logical constraints on autoregressive models incl. LLM detoxification
+r90afdd01,exclude,E3,E3 (R3) slang benchmark for LLMs; no symbolic component
+r427dce68,include,,Regex-constrained decoding (automata) for diffusion LLMs
+rba31435a,include,,Pretrained LM trained on executable table logical forms collected automatically
+r247a4294,exclude,E3,E3 (R3) BoN-aware finetuning with learned verifier; no formal system
+r97408e79,exclude,E1,Diffusion-transformer image editing; no language model under R1
+r7c526838,exclude,E3,E3 (R3) LLM benchmark on converse relations; no symbolic engine interacts
+raec3e540,exclude,E1,Differentiable logic gate networks on CIFAR; no language model
+r37271d3d,include,,Symbolic visual programs executed to generate verifiable multimodal data for MLLMs
+rbd43d9dd,include,,LM writes Python programs executed for visual question answering
+r68f17ee7,exclude,E3,E3 (R3) theory of verifier-based vs verifier-free scaling; outcome rewards only
+r764cc16d,include,,Verifier-curated loop invariants finetune SLMs for program verification
+raa710e21,exclude,E1,Differentiable tree machine trained from scratch on synthetic tasks; no LM
+re2f26fb4,include,,LLM theorem proving with verified lemma library in Isabelle
+rdc0bfe89,exclude,E3,E3 (R3) MCTS distillation data for reasoning; no formal system
+r5ad3a437,include,,LLM supplies commonsense assumptions to formal solver sampling proofs
+r96d78357,include,,Lean inequality benchmark evaluating LLM provers; proof assistant certifies
+r3a65b2e9,exclude,E3,E3 (R3) instruction-tuning benchmark; no symbolic component
+r75eaf601,include,,Editable proof sketches refined with formal prover verification
+r82d03ac2,exclude,E1,Theoretical length generalization of automata/C-RASP; no language model
+ra0ff25e4,include,,Induced QCFG samples recombined examples to finetune T5 for semantic parsing
+r0619afba,exclude,E3,E3 (R3) study of LLM generative verifiers; no formal checker
+r5925c5ac,exclude,E3,E3 (R3) logical representation verified via RAG only; no formal reasoner
+r66ce1dcb,include,,Lean theorem prover judges autoformalised LLM reasoning; RL from prover feedback
+rdbd61962,exclude,E3,E3 (R3) positional vs symbolic attention heads analysis; no formal system
+r330aff46,exclude,E3,E3 (R3) energy-based transformers; learned verifier only
+r969e8264,exclude,E1,Neural VRP solver; no language model
+r883280c0,exclude,E1,Neural query model for symbolic regression; no language model
+recb9b54a,exclude,E3,E3 (R5) cognitive knowledge graph for LLM generation; no logical inference
+r4e18b61c,exclude,E3,E3 (R3) set learning for generative IE; no symbolic component
+rae5718fd,include,,LLM autoformalisation with theorem prover feedback for NLI explanations
+r7f2dec68,include,,Synchronous grammar parser with CKY constrains pretrained seq2seq decoding
+ra5a23b5b,exclude,E3,E3 (R3) domain certification via model-based bounds; no formal engine
+r5822d838,exclude,E3,E3 (R4) competitive code generation judged by execution and tests only
+r5c4eceee,exclude,E4,Abstract reprint of journal article; also no language model
+rbce8c53f,exclude,E3,E3 (R3) neural X-ray report generation; interpreter is neural
+r831587da,include,,LLM compiles web tasks into executable code plans validated against tool pre/postcondition specs
+rd7bfffae,include,,Language model integrated with ATP hammers in Isabelle
+rf93088a9,unsure,,Visual reasoner trained with LLM/VLM verifiers; unclear if programs executed symbolically
+rbea0e4b3,include,,Code interpreter executes model-written checks to filter candidates on MATH
+r1d143354,include,,LLM synthesizes symbolic programs as executable actions for programmatic agents
+re9d41d07,exclude,E3,E3 (R3) sparse-matrix PEFT; no symbolic component
+ref6573ea,exclude,E3,E3 (R3) verifier-free reasoning training; no formal system
+rbb49cc85,include,,Program-of-Thoughts in multiple languages executed for math reasoning
+rb2e93d10,exclude,E3,E3 (R3) controlled decoding with learned prefix scorer
+r25663004,exclude,E1,SSL for PDEs; no language model
+rb6819abd,include,,"LLM step-prover with Lean, RL and tree search"
+rf078ab18,exclude,E1,E1 (R1) neural PBE synthesis trained from scratch; no pretrained LM
+r88d5b93d,exclude,E3,E3 (R4) website code generation judged by tests and agent/VLM judges
+r8225b63d,exclude,E3,E3 (R3) skill-based expert routing called symbolic; no formal system
+ra87e0258,include,,Symbolic engine generates perturbed derivations to evaluate GPT and BERT
+rc3264691,exclude,E1,Neuro-symbolic KG entity alignment; no language model
+r344092b3,exclude,E3,E3 (R3) selective differential privacy for LLMs; no symbolic component
+rfbc4d74f,exclude,E1,E1 (R1) clause-scoring transformer trained from scratch inside E prover
+ra648a835,unsure,,Neuro-symbolic VideoQA with symbolic reasoning; unclear whether language model is core
+r470994f7,exclude,E3,E3 (R3) commonsense knowledge models for premise generation; no formal system
+r70688c50,unsure,,LLM logical reasoning with formal languages; unclear whether solvers/interpreters execute outputs
+r95111202,exclude,E1,Approximate probabilistic neurosymbolic inference; no language model
+rbe4b9637,exclude,E3,E3 (R3) theory of LM pretraining for classification; no symbolic component
+r2370df18,exclude,E1,Higher-order ILP; no language model
+r7bce50a7,exclude,E3,E3 (R5) KG retrieval augmentation for LLM KGQA
+rcde627a9,include,,Temporal-logic grounding and neuro-symbolic verification for VLM long-video QA
+r75e6ffb3,exclude,E3,E3 (R3) graph-based semantic parser; no symbolic component interacts
+r432c9734,exclude,E2,Preference learning theory; language models only as motivating background
+rbd5bc711,exclude,E1,E1 (R1) transformer pretrained only on synthetic equations
+rd8418077,include,,LLM generates solver programs for complex VRPs with self-debugging
+r4521045f,exclude,E3,E3 (R3) logical reasoning reading-comprehension dataset; no formal system
+r618adb2f,exclude,E3,E3 (R3) neural structured LM span labelling; no explicit formal engine
+ra8008d0f,exclude,E3,E3 (R3) preference optimization for LLM recommendation
+re8100ecb,exclude,E1,Referential game agents; no language model
+r92b5842f,include,,Benchmark of NL-to-MILP formulations evaluated with solver-executable code
+r0f55dd97,exclude,E3,E3 (R6) contamination in generic tool-augmented LLM agents
+r3fd57ddc,exclude,E3,E3 (R3) LLM feedback-loop lock-in study; no symbolic component
+rdabcbba2,include,,Synthetic circuit benchmark with auto-derived symbolic equation labels evaluating MLLMs
+r3747164b,exclude,E3,E3 (R3) reading-time modelling with multimodal LMs; no symbolic component
+rb450d758,exclude,E3,E3 (R3) adapters for multilingual NMT
+r4795f41e,include,,Logic programs execute shortest proofs to evaluate LM reasoning efficiency
+rcf10398e,include,,LLM agents map text graphs to structured form; graph algorithms solve
+r1afc3d79,include,,LM trained to simplify Lean proofs with Lean verification signal
+r5475f752,unsure,,Text-to-SQL with grammar-constrained decoder; unclear whether pretrained LM used
+r5ab6b5ee,exclude,E3,E3 (R3) self-consistent error detection with LLM probes
+r44448bcd,include,,LLM writes code against analysis API executed for animal behavior analysis
+rfccee29f,exclude,E1,ASP aggregate axiomatization; no language model
+r83faae25,exclude,E3,E3 (R6) generic LLM agent benchmark with action verifiers
+r8e45280d,exclude,E1,ASP to integer programming translation; no language model
+r9b5451ca,exclude,E3,E3 (R3) numerical samplers for discrete diffusion models
+rc4c69fcd,exclude,E1,E1 (R1) transformer trained from scratch on LTL solver data
+r8429a2aa,exclude,E1,E1 (R1) networks trained from scratch as formal language recognizers
+r6c4348cd,exclude,E3,E3 (R3) learned data augmentation explicitly without symbolic structure
+ree7ce8fd,exclude,E1,E1 (R1) program-guided transformer trained on task data; neural execution only
+rdea26305,include,,LLM agent discovers equations via code interpreter evaluation
+r9e0730f9,exclude,E1,Epistemic logic programs via quantified ASP; no language model
+r9972c5b6,include,,Retrieval-augmented LLM prover interacting with Lean
+rc9f8b9ed,include,,LM interleaves thoughts and tactics; expert iteration verified by Lean
+r210c6bf6,exclude,E1,Theory of transformer sensitivity on formal functions; no language model
+r32ecd81f,exclude,E3,E3 (R3) training data influence estimation
+rca015955,exclude,E3,E3 (R4) retrieval of ICL exemplars for semantic parsing; no additional symbolic component
+r0a572ee0,include,,LLM-guided symbolic regression with structure library
+r76367fff,include,,LLM tactic prover learns from failures; proofs checked in Lean
+r8154d08c,unsure,,Tree decoder generates math expressions; unclear whether a pretrained language model is used
+r0743526e,unsure,,Multi-agent symbolic translation debate; unclear whether a solver executes translations
+rb1f7e919,include,,Informal and prover LLMs with Lean verifier feedback
+r33780dab,exclude,E1,Neuro-symbolic sequence classification on images; no language model
+rb4bb0607,include,,Program-of-Thought Python composing visual tools verifies LVLM claims
+r5178d827,exclude,E3,E3 (R4) code generation RL with unit-test rewards only
+r6265fed4,exclude,E1,ILP system FastLAS; no language model
+rb304055a,include,,Symbolic engine generates derivation data to evaluate LLM equational reasoning
+r673a0351,exclude,E1,ILP system Brute; no language model
+r29774f26,exclude,E3,E3 (R3) retriever portfolios for RAG
+r78db997a,exclude,E2,Rule-guided active inference; LLMs only as baselines
+rc15b65f7,exclude,E5,Survey of VideoQA
+rd74631d5,unsure,,Verifier-assisted constrained generation; unclear whether verifier is a formal constraint checker
+r1a79eaf4,exclude,E3,E3 (R3) conformal prediction for LLM claims
+rb0b6b695,exclude,E3,E3 (R3) BERT attention head analysis
+rc9b7bc33,exclude,E3,E3 (R3) linguistic steganography; symbolic space means lexical substitution
+r7dc6cf73,unsure,,Synthetic logic puzzle benchmark; unclear whether a symbolic generator certifies answers
+rcab2cd44,include,,Foundation models generate reward machines (automata) for RL
+r531e8125,exclude,E3,E3 (R3) VLM math-image benchmark; no symbolic component
+r0422d6a3,include,,LLM proofs augmented with Isabelle/Lean automation and verification
+r24b2590f,exclude,E1,Neuro-symbolic visual Sudoku; no language model
+r789b5f43,exclude,E1,PDE operator discovery; no language model
+r4a9bfbdf,exclude,E3,E3 (R3) LLM synthetic data augmentation for domain adaptation; no symbolic component.
+rf01d288d,unsure,,"Causal model, do-calculus and slicing over LLM agent traces; unclear if this counts as symbolic checker (R3)."
+rc4cbd36c,exclude,E3,E3 (R3) distilling LM soft labels into topic models; no symbolic component.
+r35fc00fe,exclude,E3,E3 (R3) seq2seq data augmentation for translation and parsing; no symbolic engine.
+r7cca0ca0,include,,LLM infers taint specifications used by CodeQL static analysis for vulnerability detection.
+r71d2af4f,exclude,E1,E1 (R1) transformer pretrained only on synthetic ODE data to recover symbolic equations.
+rbc2658df,exclude,E1,Recursive neural networks trained from scratch on ListOps/LRA; no language model.
+r390a7bce,exclude,E1,E1 (R1) transformers trained from scratch on formal languages.
+rd4a9e13f,include,,"LLM induces PDDL predicates and actions, integrated with symbolic and motion planners."
+r1c6c6bbe,exclude,E3,E3 (R3) zero-shot ChatGPT evaluation on NLP tasks; no symbolic component.
+r308ec7c1,exclude,E1,Query network for Karel/list program synthesis; no pretrained language model.
+r5fb8a173,exclude,E3,E3 (R3) LLM retrieval-based legal interpretation; no formal system.
+rd7d2bb04,exclude,E5,Survey on neuro-symbolic computing.
+rbc14f306,exclude,E3,E3 (R3) diffusion LLM parallel decoding speedup; no symbolic component.
+rb2774b93,exclude,E3,E3 (R3) semantic parse hints inserted into prompts; no formal manipulation.
+rdf833f43,exclude,E3,E3 (R3) speculative decoding for video LLMs; no symbolic component.
+r69f94571,unsure,,Codex semantic parsing to meaning representations; unclear if grammar-constrained decoding beyond execution (R4).
+r204738e7,include,,Theorem-prover-verified knowledge formulas generate diagnostic problems for evaluating LMs (A6).
+r65c4e1e0,exclude,E3,E3 (R3) GPT-4 used to build speech translation corpus; no symbolic component.
+r0709ab04,exclude,E3,E3 (R3) RL self-evolution for math reasoning; no formal system.
+r71558271,unsure,,DreamCoder program search guided by language annotations; unclear whether a language model under R1 is involved.
+rde2a3082,include,,LLM Lean prover trained on AST- and LLM-evolved formal problems; proofs checked.
+r381b6791,exclude,E1,Music transformer trained on music scores; not a language model under R1.
+r116fe73c,exclude,E1,E1 (R1) expressivity theory; transformers trained from scratch on synthetic tasks.
+r0015aad3,exclude,E3,E3 (R4) pretraining for conversational text-to-SQL/SPARQL; no additional symbolic checker.
+rb5398a81,include,,"LLM interleaves code executed by interpreter for math reasoning, trained with RL."
+r2038bc7c,exclude,E3,E3 (R3) SCM framing for LLM counterfactual data augmentation; no symbolic engine.
+rb9040f09,exclude,E3,E3 (R4) KBQA logical-form generation via code-style in-context learning; execution only.
+rf127ea2d,include,,Transformer premise selection combined with LM prover in Isabelle; proofs checked.
+rd0a11141,exclude,E1,Audio and score transformer for music error detection; no language model.
+r63b3a72a,unsure,,"No abstract; neural-symbolic explanatory VQA, language model role and symbolic component unclear."
+rffe62927,include,,Policy rules extracted into probabilistic rule circuits; formal verification of agent actions.
+r40f32cd4,include,,LLM agent with symbolic dataflow and Python execution for spreadsheet QA.
+r2d322f93,exclude,E1,Query-embedding transformer trained on KG queries; no language model.
+r57449d55,exclude,E1,Music tokenization for transformers trained on music only; no language model under R1.
+rb4d24d4c,exclude,E3,E3 (R5) concept-graph LLM experts for counterfactual medical fine-tuning; no logical inference.
+r1556ed41,include,,Neuro-symbolic loss enforces consistency with facts and logical rules during LLM fine-tuning.
+ref5af9ad,exclude,E3,E3 (R5) KG encoded into LM representations; no logical inference.
+ref1417ae,include,,"LLM writes code executed for algorithmic reasoning tasks, compared with NL reasoning."
+r4137b7f1,exclude,E3,E3 (R3) EBM-based controlled generation with pointwise constraints; no formal symbolic engine.
+rc7e724b2,exclude,E3,E3 (R3) position roadmap on pluralistic alignment; no symbolic component.
+r8eda6f50,exclude,E3,E3 (R3) theory of capability certification from finite tests; no interacting symbolic component.
+r8606a98f,exclude,E5,Survey of inductive logic programming.
+re25ee25a,exclude,E3,E3 (R3) UMR annotations added to GPT-4 prompts; no formal manipulation.
+r2d49a7ce,exclude,E1,Time-series forecasting transformer; no language model.
+re0ae613c,include,,LLM SMT autoformalization checked by solver; PCFG uncertainty for selective verification.
+r90525e78,exclude,E3,E3 (R4) test-case generation for code generation verification; tests only.
+rbf2428aa,include,,Mechanically verifiable convexity benchmark; external AST parser in agentic LLM framework.
+r3bf9ca05,exclude,E1,Probing binding in vision transformers; no language model.
+r0bf00d16,exclude,E1,Theory of forgetting in answer set programming; no language model.
+re6a49f94,exclude,E1,E1 (R1) program synthesizer trained from scratch on random C programs.
+r55d6220c,exclude,E3,E3 (R3) neural process reward model for web agents.
+r7ab95a4e,include,,Symbolic reasoning graphs generate problems and answers for evaluating LLMs (A6).
+r8741e31c,exclude,E1,Abductive learning with perception network and knowledge base; no language model.
+rf9de16ad,exclude,E3,E3 (R3) causal front-door adjustment guiding LLM prompting for TableQA; no symbolic engine.
+rd611b91b,exclude,E1,Analysis of NeSy reasoning shortcuts; no language model.
+ra60917a9,unsure,,Aligns Alpaca representations to symbolic causal algorithm via DAS; unclear if this satisfies R2/R3.
+r3faeeb4e,exclude,E2,Unsupervised visual concept learner; GPT-4 only an optional external knowledge source.
+r30b97cdb,include,,LM translates NL to temporal logic with grammar-forced decoding.
+r2ba68a90,exclude,E1,E1 (R1) transformer oracle trained on polynomial data for computer algebra.
+ra71d911c,unsure,,Symbolic planner with existing NLP models on ALFRED; unclear whether a pretrained LM is core.
+rabf69c7a,include,,Lean 4 autoformalization of theorems and proofs with type-checker repair feedback.
+r2fc3d9ee,include,,Logic solver feedback drives LLM commonsense assumption search.
+rbe8d9598,exclude,E1,Rectified flow diffusion editing; no language model.
+rb4ed24a2,exclude,E1,GNN and k-NN Coq provers; transformer appears only as baseline.
+r3372249e,unsure,,Tool-augmented LLM using Python function toolsets for science; generic tool use versus code execution unclear (R6).
+rba707098,exclude,E1,Transformer HPO policy for PSRO game solving; no language model.
+r39065a5c,exclude,E3,E3 (R3) PAC-Bayesian theory of in-context learning.
+rd8cfdcdd,exclude,E3,E3 (R3) RL token reweighting; logic puzzles but no formal component.
+r488e89d1,exclude,E1,Normalized-cut image segmentation; no language model.
+re97f676c,exclude,E1,Neural-symbolic rule extraction without a language model.
+rb84f36b0,exclude,E3,E3 (R4) multi-agent visualization code generation with execution feedback only.
+r850fe40b,exclude,E3,E3 (R3) GPT-2 generated answers with semantic similarity for commonsense QA.
+ref419946,exclude,E1,Abductive learning with ground knowledge base; no language model.
+r40657a09,exclude,E3,E3 (R3) refusal-aware instruction tuning; no symbolic component.
+r1f2d6850,exclude,E3,"E3 (R3) SQL and vector retrieval for RAG; retrieval store, not symbolic reasoning."
+r5c6500ee,unsure,,LLM combined with game solver for equilibrium finding; unclear if solver counts as symbolic (R3).
+r3f6cb6bd,include,,Formal-logic deduction rules generate training corpus for LMs (A5).
+rdb78b962,unsure,,"Dataset paper; LPA executes LISP-like programs, but language model role in LPA unclear."
+re5e49fe2,include,,LLM proof synthesis in Rocq for separation-logic verification conditions.
+r6465edfe,include,,FOL world model generates questions; CoT parsed into symbolic proofs (A6).
+r933c1e2b,exclude,E3,E3 (R3) LLM-generated cultural norm annotations; no formal system.
+ra8538bd8,include,,LLM proposes equation programs refined by evolutionary search and parameter fitting (symbolic regression).
+r36f1d79f,exclude,E3,E3 (R3) document packing for LM pretraining.
+r3fba0a7b,exclude,E3,E3 (R3) probing syntax in LLM activations; no interacting symbolic component.
+r1283e2a2,exclude,E3,E3 (R3) MLLM with learned verifier; no symbolic component.
+r8ae8a0c5,exclude,E1,Diffusion dataset distillation; no language model.
+rff070d42,exclude,E3,E3 (R3) simulator for evaluating LLM agents; no formal engine.
+rcf7fa557,exclude,E1,Intelligent tutoring system with Bayesian network; no language model.
+r2e37afd6,exclude,E1,Differentiable logic gate networks for images; no language model.
+ra79fa313,include,,ASP solver-in-the-loop instruction tuning of LLMs for logic puzzles.
+rf8485a1d,exclude,E3,E3 (R3) music pretraining on ABC notation; no formal symbolic engine.
+r0aa6b3c9,exclude,E3,E3 (R3) position on inductive biases; no interacting symbolic component.
+r4921e7bd,exclude,E1,Differentiable symbolic execution for neurosymbolic programs; no language model.
+red448e3e,include,,"Lean benchmark for LLM code, specification and proof generation; proofs checked."
+r97af3e08,exclude,E3,E3 (R4) LLM-generated Python programming puzzles checked only by execution.
+r32f29629,exclude,E3,E3 (R3) information-theoretic evaluation of chain-of-thought.
+ra8869ee2,include,,LLM reasoning steps formalized in Lean 4 and proved to detect hallucinations.
+ree36fda7,exclude,E1,Human pose estimation with conformal prediction; no language model.
+r5326bd7e,exclude,E1,E1 (R1) CoT expressiveness theory; transformers trained on synthetic tasks.
+re2c287cd,exclude,E3,E3 (R3) analysis of compositional generalization in seq2seq parsers.
+rb1588304,unsure,,MLN constraint layer for neural nets including text tasks; unclear whether a language model is used.
+rf8d13a97,exclude,E3,E3 (R3) seq2seq architecture for compositional generalization; no symbolic engine.
+r710cabbe,exclude,E3,E3 (R3) VLM grading handwritten math; no formal checker.
+r4309e30b,exclude,E1,Theoretical SSM expressiveness via temporal logic; no language model.
+ra59abec6,exclude,E1,Transformer opponent modeling trained on game data; no language model.
+r48f51f1e,exclude,E4,Doctoral-consortium-style research plan listing research questions and proposed work.
+rae29dfde,unsure,,T5 trained as symbolic reasoning engine; unclear whether a symbolic simulator generates data.
+r1f40020b,include,,Neuro-symbolic generator of word problems for evaluating LLM biases (A6).
+r58bc1adf,exclude,E1,E1 (R1) transformers trained from scratch on symbolic Raven tasks.
+r4d83ba20,exclude,E3,E3 (R3) visual embedding distillation for MLLMs.
+r8a5419f7,exclude,E3,E3 (R3) retrieval and citation verification for text generation.
+rfdfb1ba2,exclude,E3,E3 (R3) preference arena for LLM spreadsheet generation; no formal checker.
+rea897be0,exclude,E3,E3 (R3) temperature scaling objectives for language models.
+r81c7e2e7,exclude,E1,Neural language interpreter trained end-to-end; no pretrained language model.
+r50ca5848,unsure,,Retrieval-augmented Lean autoformalization; abstract unclear whether Lean checks outputs.
+r31736845,exclude,E1,E1 (R1) transformer symbolic regression trained from scratch.
+rc5a1dc41,exclude,E1,E1 (R1) models trained from scratch on formal languages.
+r6baa099a,include,,Lean benchmark evaluating LLM provers; Lean certifies proofs (A6).
+rb07e5086,exclude,E3,E3 (R3) LLM with doubly robust learner for treatment effects.
+r651ee5ee,exclude,E1,Transformer RL policy for MILP separator configuration; no language model.
+r2874bc5b,exclude,E4,Doctoral consortium research summary ('my research').
+rd7186c82,unsure,,Neurosymbolic Python framework with text tasks; unclear whether a language model is used.
+r09fcbf9c,exclude,E3,E3 (R4) GPU kernel code generation with tool feedback; execution and tests only.
+r7007812f,exclude,E3,E3 (R3) MLLM music score QA benchmark; no formal system.
+raaede5d8,unsure,,"Code execution reasoning benchmark; interpreter certifies answers, unclear if A6 applies or R4 excludes."
+r2b8654f7,exclude,E3,E3 (R3) modular transformers reasoning over natural-language rules.
+r221866a5,exclude,E3,E3 (R3) skeleton tokens fed to LLM for emotion recognition.
+r111e0979,exclude,E2,PLM used for node feature enrichment in subgraph link prediction; no logical inference.
+rc6b4460b,exclude,E1,Ultrasound CT dataset; no language model.
+r894cfcc0,exclude,E3,E3 (R3) VLM-labelled attributes with neural attention rules; no explicit rule engine.
+r69c3e888,exclude,E3,E3 (R3) LLMs as fact verifiers; no symbolic component.
+r5450a955,exclude,E3,E3 (R3) value generalization benchmark for LLMs.
+r0e91e0c4,exclude,E3,E3 (R3) out-of-context reasoning analysis; no symbolic component.
+r8a00ca7e,exclude,E1,Spiking graph neural networks; no language model.
+r2e18ebce,exclude,E3,E3 (R3) AMR parse features for AI-text detection; no formal reasoning engine.
+r5067eaaf,exclude,E3,E3 (R3) LLM peer-review evaluation.
+rea110828,exclude,E3,E3 (R3) natural-language entailment tree search for video QA.
+r28119010,exclude,E3,E3 (R3) kNN memory for LMs; Isabelle used only as corpus.
+rc391f513,exclude,E1,VAE with probabilistic logic programming; no language model.
+rd9545a8c,exclude,E1,Latent program network trained from scratch; no language model.
+rf03252fb,include,,LLM writes executable reward programs used for RL robot control.
+r949e7f4d,exclude,E1,No language model evident; neural latent model with logic-rule weak supervision for fake news.
+rfd5d5c88,exclude,E3,E3 (R3) small LM trained for hypothesis generation; no formal symbolic component.
+r15c8fd01,exclude,E1,Neural link predictors for KG complex queries; no language model.
+r84c98d09,exclude,E1,"(R1) model starts randomly initialized, trained only on self-generated formal data; no language pretraining."
+r7b852e9f,include,,LLM proof autoformalization into machine-verifiable code with syntactic correctness checking.
+r30e9f014,exclude,E1,Pure answer-set programming theory; no language model.
+rc45837a2,exclude,E3,E3 (R3) event-centric LM pretraining; no symbolic component.
+ra7c7bae1,exclude,E1,Neuro-symbolic stroke generative model; no language model.
+r464cdf4f,exclude,E5,Survey of statistical relational and neuro-symbolic AI.
+r7aefd042,exclude,E1,Logical neural networks for rule induction; no language model.
+r7d61d023,include,,LLMs fine-tuned on synthesized Lean4 theorems for formal theorem proving.
+r9e5817b1,exclude,E3,E3 (R3) LLM 'symbolic representations' are informal; no formal system.
+r0e878ef2,exclude,E1,KG query embeddings for logical queries; no language model.
+r3b29ea62,exclude,E3,"E3 (R3) prompt compression theory; linear program is analysis, not an interacting component."
+rc7cfa2fb,exclude,E1,(R1) hierarchical transformers trained from scratch on synthetic LTL-circuit pairs.
+r7dc1ad87,exclude,E3,E3 (R3) latent thought communication among LLM agents; no symbolic component.
+r97476a41,include,,"LLM generates Prolog programs for GSM8K, executed by Prolog interpreter."
+rc21396bd,unsure,,Causal-graph framework generates LLM queries; unclear whether it counts as a formal symbolic generator.
+rf3929986,exclude,E1,Transformer neural processes for Bayesian optimisation; no language model.
+r8fb798ea,exclude,E3,E3 (R5) LM with KB fact-memory retrieval; no logical inference.
+rd2c82474,exclude,E1,Autoregressive molecular sampler; no language model.
+r3d84f159,unsure,,LLM tuned on symbolic-form data; unclear whether any formal engine interacts.
+re1c272a1,include,,Benchmark of propositional-logic queries over KGs with logically derived answers; LLM evaluation and fine-tuning.
+rc3acba99,unsure,,VLM RL with DSL-level rewards from synthetic DSL engine; unclear if DSL scoring is formal.
+r60ae29b6,exclude,E3,E3 (R3) math RL/SFT with binary answer verifier; no formal symbolic component.
+r7073ddd5,exclude,E3,E3 (R3) LLM simulates pseudocode execution itself; no external interpreter.
+r7487e69b,exclude,E3,E3 (R3) collaborative speculative decoding among LLMs; no symbolic component.
+r2f8b77ca,exclude,E3,E3 (R3) digit-bias analysis in LLMs; no symbolic component.
+ra224e7f6,exclude,E1,Vision transformer theory; no language model.
+r3ff6a766,include,,LM pretrained to mimic SQL executor on executed synthetic queries; table QA as vehicle.
+r2e431c8d,exclude,E1,(R1) policy learned from scratch without human data for integer-sequence program synthesis.
+rf9872fe7,exclude,E3,E3 (R3) neural generative visual verifier; no formal component.
+rc69de041,exclude,E1,Time-series foundation model with synthetic symbolic expressions; no language model evident.
+r678beae5,exclude,E2,LLM used only as text encoder for diffusion transformer; no symbolic component.
+r795e38a8,include,,LLM formalizes math problems with variable-constraint search to detect missing or contradictory conditions.
+r610281c5,include,,LLM autoformalises explanations; theorem prover verifies validity and returns feedback.
+rd44ff5e6,exclude,E3,E3 (R3) LM question generation with RL; no formal symbolic component evident.
+rc1276efc,exclude,E3,E3 (R3) CoT distillation and RLVR answer rewards; no formal engine interacts.
+rc07479bb,exclude,E1,Differential-privacy policy optimization theory; no language model studied.
+r21e2883f,unsure,,Symbolic solubility model with LLM post-hoc explanations; unclear whether LLM is a core component.
+r8571f511,unsure,,LLM agents with incident-response DSL and synthesized guardrail rules; unclear if a formal rule engine.
+r5e6bc4c1,exclude,E4,Doctoral consortium paper.
+rc06bef66,unsure,,Soft logic-rule constraint plus ChatGPT augmentation; unclear whether a pretrained LM is core.
+rd07e29d0,exclude,E1,ILP with SMT solvers; no language model.
+r9eb2d185,exclude,E1,Relational GNN planning policies; no language model.
+r421cdce7,unsure,,KGQA with logical reasoning over KGs; language-model role not stated.
+r13f57eb5,include,,VLMs generate PDDL domain and problem files solved by PDDL planner.
+r3f68fbbf,exclude,E4,Doctoral-consortium style research statement with research questions.
+r1e0f1102,include,,LLM rewriting tactics combined with symbolic tools in formal inequality proof search.
+r5ba46fdc,exclude,E3,E3 (R3) multi-agent LLM evaluation of math ability; no symbolic component.
+rde88f790,unsure,,Neuro-symbolic program execution for fMRI QA; unclear whether a pretrained LM is used.
+rcd494dc9,exclude,E1,Differentiable probabilistic logic with soft unification; no language model.
+r8f81b285,exclude,E3,E3 (R6) agentic workflow design via primitive sequences; no formal engine.
+r5958f48f,exclude,E3,E3 (R3) reverse CoT generation with skeletons; no formal symbolic component.
+ra7369185,exclude,E3,E3 (R3) statistical testing of LLM APIs; no symbolic component.
+r633d08ff,include,,LLM writes AMPL optimisation models; solver feedback checks and refines solutions.
+r46d881a1,exclude,E1,"(R1) policy network trained for DSL program search, no language pretraining."
+r5948912e,exclude,E3,E3 (R3) LLM interlocutor-awareness evaluation; no symbolic component.
+r6b6fc70b,exclude,E3,E3 (R3) in-context generation theory and experiments; no symbolic component.
+r30b45561,include,,LLM parses problems into action language; automated reasoner computes answers.
+r135113cb,exclude,E1,Neural operator for PDEs; no language model.
+raf3f24b3,exclude,E1,(R1) transformers trained only on synthetic ELIZA conversations plus theory; no pretrained LM.
+rde81de3e,exclude,E3,E3 (R3) learned process verifiers; no formal symbolic component.
+rc5991dee,exclude,E3,E3 (R3) probing mBERT syntax; no interacting symbolic component.
+r73041e10,include,,LLM programs for math decomposed by static analysis; iterative unit-level judging and refinement.
+r79ec07b8,exclude,E3,E3 (R4) semantic-parsing data augmentation; no additional symbolic checker.
+rcdea27b6,exclude,E3,E3 (R6) LLM agent builds Docker environments via generic execution and unit tests.
+ra06c0609,include,,Constrained decoding enforcing formal grammar constraints on LLM generation.
+r600a1210,include,,LLM converts utterances to executable code; symbolic planner selects responses.
+r2d285226,include,,"LLM writes code executed by interpreter for math reasoning, with RL and tool feedback."
+rf0d219ec,exclude,E3,E3 (R3) NMT adaptive training; no symbolic component.
+r1cc284ac,exclude,E1,Search-based symbolic regression for ODE symmetries; no language model.
+rd55e4709,exclude,E3,E3 (R3) controlled generation by combining LMs; no symbolic component.
+ra9dd7564,exclude,E3,E3 (R3) theoretical bandwidth model of LLM reasoning; no interacting symbolic component.
+r108c5338,exclude,E1,(R1) RNN trained from scratch to generate symbolic policies.
+r9e910ce8,include,,LLM plans; Python interpreter executes numerical calculations for table QA.
+rc43d0c64,exclude,E1,Neural operator study; no language model.
+rcaac27f8,exclude,E1,RBMs encoding propositional logic; no language model.
+r99ad3bbf,unsure,,Causal-inference benchmark; code-execution protocol present but LLM-judge grading; I3 unclear.
+r3acbe6f6,exclude,E1,Greedy neural theorem provers; text encoder not a pretrained language model.
+r331657f4,exclude,E3,E3 (R3) reward-model generalization analysis; no symbolic component.
+r5ed1e5a9,include,,Theorem prover enforces step-level logical correctness as reward for LLM training.
+r59be65bf,include,,LM-generated math programs executed; execution results and states guide self-sampled learning.
+rb5cb6203,unsure,,Semantic retrieval for Lean/Mathlib; unclear whether prover-checked proving experiments are central.
+rc36311bf,include,,LLM optimization formulations verified via solver-generated simplified diagnostic queries.
+r48124c71,exclude,E3,E3 (R3) attention supervision from alignments in semantic parsing; no formal component interacts.
+ra905e9a3,unsure,,LLM embodied planner with symbolic transition-logic lookahead; unclear if a formal world model.
+r0e98ad5b,exclude,E3,E3 (R3) audio reasoning benchmark; no symbolic component.
+rf1dea116,include,,LLM prior over logic-rule trees scored by logic-based temporal point-process likelihood.
+r40593b02,exclude,E4,Doctoral-consortium style research summary.
+r600daeba,exclude,E3,E3 (R3) theory of imperfect verifiers in test-time scaling; no formal component.
+r6bcc8fb7,exclude,E1,Learning plus planning for goal recognition; no language model evident.
+re876f978,include,,"Foundation model induces logic-grounded programs from traces, executed and reused as skills."
+r0b2d9a64,exclude,E1,"No abstract; title indicates neural perception with logical reasoning, no language model."
+r9fc30c8d,exclude,E3,E3 (R4) KBQA relation linking with AMR input; no logical inference component.
+r6b7fa60f,exclude,E1,Fuzzy logic programming semantics; no language model.
+rba26f579,exclude,E3,E3 (R3) backdoor CoT attack; no symbolic component.
+r9c943530,include,,LLM harvests formulas validated by code feedback loop and symbolic unification algorithm.
+r40a7dd77,include,,Logic-rule-based test cases generated to evaluate and improve LLM reasoning.
+r3d66fe7d,exclude,E1,Neurosymbolic automata with neural perception; no language model.
+r73f1814f,include,,CoT steps formalized in first-order logic and verified by automated solvers.
+rde70aaf5,exclude,E3,E3 (R3) LLM future-word prediction for simultaneous MT; no symbolic component.
+r0e169559,exclude,E3,E3 (R3) sparsity-mask training method; no symbolic component.
+r0e71ba0c,exclude,E1,Theoretical transformer succinctness; no trained language model.
+r125d996b,include,,LLM hierarchical planner with symbolic validator checking formal correctness.
+rab6cec2c,include,,VLM agents mine concepts and rules; symbolic rule reasoning produces decisions.
+rbecc6e76,include,,Multimodal models synthesize material programs with constrained tree search ensuring static correctness.
+rdca56e1b,exclude,E3,E3 (R3) clustering probes of BERT syntax; no symbolic component.
+rc25237a1,exclude,E3,E3 (R4) code generation judged by tests only.
+r546f708d,include,,LLM formalizes logical reasoning problems as Lean theorems and proves them.
+r3c5bc20d,exclude,E3,E3 (R6) deep-search agents with verifiers; generic tool use.
+rcf5ec446,exclude,E1,Optimal transport methods; no language model.
+r5445a377,exclude,E1,KG query embeddings; no language model.
+r5796966c,exclude,E3,E3 (R3) batching via graph k-cut for commonsense integration; no formal reasoning component.
+rf6977fbc,include,,"LLM proposes cognitive-model programs, fitted to data and iteratively refined (program search)."
+rabbf7a51,include,,LLM-generated heuristic code evolved and evaluated by execution on combinatorial problems.
+r6af4565d,exclude,E3,E3 (R3) MLLM gesture comprehension evaluation; no symbolic component.
+ra24274a9,exclude,E1,Seq2seq music transcription and rendering; no language model.
+r31c0f73a,exclude,E3,E3 (R3) neural detectors and VLMs for editing evaluation; no formal component.
+r8b22ec95,exclude,E1,(R1) policy network trained from scratch for grammar-based symbolic regression.
+r97afc697,exclude,E3,E3 (R6) multimodal agent generic tool use with AI verifier.
+r0ca04c14,exclude,E1,Neurosymbolic multimodal anomaly prediction; no language model evident.
+r0acddc1f,include,,Table QA benchmark; LLM writes Pandas code executed for table reasoning.
+rd44a8695,unsure,,Code refinement via property checks and minimal counterexamples; unclear if beyond testing (R4).
+r09bd6359,exclude,E3,E3 (R3) bounding-box rule rewards for visual verifier; no formal system.
+rb50d6cf7,exclude,E3,E3 (R3) coreset selection for instruction tuning; no symbolic component.
+re60672c1,exclude,E3,E3 (R3) neural DRTS semantic parser with GAT; no formal component interacting.
+rb5189d21,exclude,E1,Neural-symbolic KG query answering with embeddings; no language model.
+rec5b4ed8,include,,LLM proposes spatial/physical predicates; solver with physics engine realizes them and returns feedback.
+rcb2b0749,exclude,E1,Temporal constraint mining on KGs; no language model.
+r451688b9,exclude,E1,Projection-head geometry in self-supervised learning; no language model.
+recf16696,exclude,E3,E3 (R3) statistical debiasing of LLM annotations; no symbolic component.
+rcb83998b,include,,LLM-generated symbols and rules applied via fuzzy-logic reasoning for activity understanding.
+rea458d73,include,,LLM natural code reads and writes state of executing Python programs.
+r4584fb79,exclude,E3,E3 (R3) verifier-free RL for LLM reasoning; no symbolic component.
+r7bd71a09,include,,Regression planning over NL-PDDL with LLM commonsense entailment.
+r52f1e169,unsure,,PLM learns soft Horn-rule reasoning; unclear whether a logic reasoner generated labels.
+re03763e8,exclude,E1,Generative neuro-symbolic handwriting model; no language model.
+rc45c3000,unsure,,FOL reasoning benchmark for LMs; unclear whether a symbolic system generated or certified problems.
+r9029ce04,unsure,,Grammar-based parser combined with T5; possibly a fallback portfolio (R2).
+r5a270d01,exclude,E1,Incremental ILP for answer-set programs; no language model.
+r9797cd20,exclude,E3,E3 (R3) weak-to-strong generalization theory; no interacting symbolic component.
+r1e5acde3,exclude,E1,Vision transformer for semantic segmentation; no language model.
+r9aae201e,exclude,E3,"E3 (R3) SVG generation dataset; structured output only, no symbolic engine interacting with the model."
+rc3671b2c,include,,"LLM writes Python code world models, executed and used for planning; program as vehicle for planning."
+rf7f17a35,unsure,,LLMs solve crosswords with grid search algorithm; unclear whether search is a formal constraint solver.
+r85021fd2,exclude,E1,E1 (R1) diagnostic dataset; transformers trained from scratch on synthetic symbolic function compositions.
+r21c6b045,include,,"Symbolic mutation of Mathlib theorems trains LLM provers, evaluated with Lean on LeanDojo and miniF2F."
+rfde537e1,exclude,E3,E3 (R4) research code generation benchmark judged by unit tests and human feedback.
+r6759bc6d,include,,LM translates word problems to formal language; symbolic solver computes answer and provides RL signal.
+r24f1bc06,include,,PTLM beliefs revised by weighted MaxSAT solver; feedback loop to the model.
+rc3a9ff29,exclude,E3,E3 (R3) linear representation geometry of LLMs; no symbolic component.
+r5f4af8c0,unsure,,KGQA benchmark built via LLM generation plus symbolic verification on Wikidata; unclear if beyond query execution.
+r2e1d9f82,exclude,E1,Program synthesis via DQBF solving; no language model.
+r1d50e2ad,exclude,E1,GNN with fuzzy logic for KG queries; no language model.
+r95362e34,exclude,E3,"E3 (R3) differentiable stack inside transformer is neural, not an explicit symbolic component."
+ra5733aaf,exclude,E3,E3 (R3) diffusion language model distillation; no symbolic component.
+ree9e7e5b,exclude,E1,Few-shot program induction benchmark; no language model mentioned.
+r9ef2cbd8,include,,LLM geometry agent proposes constructions verified by a symbolic geometry engine with feedback.
+r698b51ae,include,,"LLM refactors programs into reusable library verified by execution; programs vehicle for LOGO, math, TextCraft."
+rbb57251a,unsure,,LLM video agent with symbolic memory queried by tools; unclear whether formal queries or generic tools.
+r13054549,exclude,E3,E3 (R3) learned neural feasibility/payoff heuristics with search over LLM actions; no formal planner.
+r75ee0663,exclude,E1,Image segmentation transformer; no language model.
+ra6a7aa23,unsure,,CO solver benchmark including LLM agents among many ML solvers; LM centrality and symbolic interaction unclear.
+r26178a1e,exclude,E1,Genomic DNA foundation models not trained on language or code; no symbolic component.
+r9e92e539,exclude,E3,E3 (R3) LLM post-training quantization; no symbolic component.
+rf38f7cf8,exclude,E3,E3 (R5) KG triples converted to QA pretraining data; no logical inference over KG.
+rd590d116,exclude,E1,ILP symmetry breaking in ASP; no language model.
+r9dc697fa,exclude,E3,E3 (R3) social bias neuron attribution in PLMs; no symbolic component.
+r1ead1843,include,,LLM proposes SOS decompositions refined symbolically and certified in Lean.
+r0a754dc8,include,,"Tactic filtering for proving LLMs in Lean search, evaluated on miniF2F and LeanDojo."
+r85a658a9,exclude,E3,E3 (R3) seq2seq task-oriented parsing as QA; no symbolic engine interacting.
+rc4b6bb13,unsure,,Neuro-symbolic fusion of VLM/LLM feedback for PbRL; nature of symbolic part unclear from abstract.
+r8700b195,exclude,E3,E3 (R3) theory of RAG token fusion; retrieval of text is not symbolic.
+r2e082842,exclude,E3,E3 (R3) neural seq2seq with latent permutation alignments; no explicit symbolic component.
+r61c15866,include,,DEL simulator generates training data for verifier scoring LLM belief traces; symbolic training signal.
+r872977a7,unsure,,FOL rule framework for argument mining with fine-tuned and prompted LMs; unclear if rules executed symbolically.
+r77508cf5,include,,LLM-guided symbolic regression search for ODE discovery with parameter optimisation.
+r924cd85d,exclude,E3,E3 (R3) theoretical expressivity of latent LMs via automata; no interacting symbolic component.
+r554a6243,exclude,E1,Complexity of epistemic logic programs; no language model.
+r3edd3fe3,unsure,,"Neuro-symbolic temporal reasoning for LLMs; abstract truncated, unclear whether a formal engine is used."
+r4d3a75b8,exclude,E1,LTL-guided RL experience replay; no language model.
+rb6af0edb,exclude,E1,Vision network plus rule-based program synthesizer; no language model.
+r278d8dc0,exclude,E3,E3 (R3) evolved LLM coordinator delegating roles; no symbolic component.
+rcb5ffd70,exclude,E3,E3 (R3) diffusion LM remasking at inference; no symbolic component.
+r5dd1e99f,exclude,E3,E3 (R4) text-to-SQL annotation via executing candidate programs on distinguishing inputs.
+raf56ac18,exclude,E3,E3 (R3) model editing by adding neurons; no symbolic component.
+r9dd9b338,exclude,E3,E3 (R3) parametric knowledge transfer across LLMs; no symbolic component.
+r0979a7d6,exclude,E1,Graph hypernetwork producing network weights; no language model.
+rc3075e97,unsure,,"No abstract; neurosymbolic reasoning shortcuts, unclear whether a language model is involved."
+re25047c7,unsure,,Verilog LLM with discriminators targeting synthesis and SAT runtime; unclear whether EDA/SAT tools interact.
+rbad6a227,exclude,E3,E3 (R4) KBQA logical form generation with execution only.
+r98c2fcde,exclude,E1,Molecular property graph transformer; no language model.
+rc8a72918,unsure,,LM game evaluations compared with humans and symbolic game agents; unclear if symbolic agents certify answers.
+r8e145f94,exclude,E3,E3 (R3) AMR/event graphs encoded neurally into summarizer; no rule-governed symbolic manipulation.
+r79f2106d,exclude,E3,E3 (R3) BERT subject-verb agreement analysis; no symbolic component.
+r4c348450,exclude,E3,E3 (R3) unified MLLM with self CoT verification; no symbolic component.
+rfa8fe6c4,include,,LM part-relation predictions corrected by constraint satisfaction layer (MaxSAT-style) enforcing commonsense constraints.
+r982285cf,exclude,E3,"E3 (R3) text-to-triple information extraction; output structure only, no symbolic reasoning."
+r82ac6056,exclude,E1,Diffusion image editing guidance; no language model core.
+re8244bdb,exclude,E3,E3 (R3) memory traces in network parameters; no symbolic component.
+r09a36c12,exclude,E1,Weakly supervised neural-symbolic learning with generic neural networks; no language model mentioned.
+rf7a7ad2f,exclude,E3,E3 (R3) transformer VAE regulariser; no symbolic component.
+rb2f4b62f,exclude,E3,E3 (R3) LLM paratext generation for MT; no symbolic component.
+r62710d49,include,,LM-guided proof search with Isabelle and Lean on PISA and Mathlib.
+r466467b7,exclude,E3,E3 (R3) speculative decoding with semantic verifier; no symbolic component.
+rb494e527,exclude,E3,E3 (R3) LLMs reason about drawing code without execution; no symbolic engine.
+r5f4be8d2,unsure,,Synthetic temporal reasoning benchmark; unclear whether a formal symbolic generator certifies answers.
+r41d61106,exclude,E3,E3 (R4) continual text-to-SQL with SQL-syntax-guided data reconstruction; no additional checker.
+r918e50a0,unsure,,Explicit belief-state graphs tracked algorithmically for LM ToM; unclear if more than structured retrieval.
+r5f46bb8d,include,,LLM translates queries into executable Python with soft logic over VLM outputs for visual reasoning.
+re7452360,exclude,E3,E3 (R3) AI-text boundary detection; no symbolic component.
+r941db94d,exclude,E3,E3 (R3) test-time alignment via textual MPC; no symbolic component.
+rf7f451ef,exclude,E3,E3 (R3) seq2seq QA-based semantic parsing; no symbolic engine.
+ra6f72f2f,include,,LLM hidden states control OccamNet symbolic arithmetic model to compute exact results.
+raf9861ea,exclude,E1,Differentiable ILP rule induction; no language model.
+rd295e6d8,exclude,E3,"E3 (R5) KG context construction for LLM QA; retrieval, no logical inference."
+r4a52d8eb,exclude,E3,E3 (R3) FP4 quantization-aware training; no symbolic component.
+r99a7d5e9,include,,LLM programming-by-example search guided by executing each code line; PBE outside R4 families.
+raa44c8be,include,,LLM agent interleaves informal reasoning with Lean-verified proof steps.
+r84c5c76d,include,,LM type inference combined with dataflow-based program and static typing.
+r31b3ed02,exclude,E3,E3 (R3) memory-efficient optimizers for LLM training; no symbolic component.
+r19a0c047,exclude,E3,E3 (R6) search-enhanced RL for retrieval agents; generic tool use.
+r477d0341,exclude,E1,Abductive learning with KG rules; no language model.
+r9c24f30b,exclude,E3,E3 (R3) CoT RL sampling allocation; no symbolic component.
+re34a2935,exclude,E3,E3 (R3) speculative sampling acceptance; no symbolic component.
+rc25f07af,exclude,E3,E3 (R5) ontology used as external knowledge for fine-tuning; no logical inference.
+rc5a546c3,unsure,,DSL protocol representations complementing LLMs; unclear how LLM interacts with symbolic representation.
+r6f4958ed,exclude,E3,E3 (R3) open rules mined from LMs as text patterns; no formal rule engine.
+r7f431f5e,exclude,E3,E3 (R3) speculative decoding judge verifier; no symbolic component.
+r4a857631,exclude,E3,E3 (R3) ICL dynamics with binary sequences; no interacting symbolic component.
+rf13e113d,exclude,E1,E1 (R1) theoretical expressivity of hard-attention transformers; no pretrained language model.
+reb0ef720,unsure,,Algebraic combinatorics datasets; LLM program synthesis mentioned but centrality and execution unclear.
+r3f263bb9,exclude,E1,Link prediction embedding; no language model.
+r79dfb7df,exclude,E1,Neurosymbolic Markov models with logic constraints; no language model.
+r941497dd,exclude,E3,E3 (R3) seq2seq AMR parsing and generation; no symbolic engine interacting.
+r62a05db5,exclude,E1,E1 (R1) theoretical length generalization of transformers on synthetic tasks.
+r1342f435,exclude,E1,Abductive learning with FOL KB for PDE discovery; no language model.
+rdbd8d356,exclude,E1,Least-squares sketching; no language model.
+rb82fccda,exclude,E3,E3 (R6) LLM web agent observation/action alignment; generic tool use.
+r0a0602e5,include,,VQA benchmark generated with SROIQ description logic reasoning; evaluates VLMs against symbolic answers.
+rbe4262f6,exclude,E1,"E1 (R1) neural mutation model pretrained on synthetic SR data, no language pretraining."
+r9f9a50fe,include,,Text-to-SQL with symbolic checks on partial queries and backtracking search; additional symbolic component.
+r0de13fa8,unsure,,"Calculator-using LMs; R6 lists calculators as generic, but sole symbolic-system integration may qualify."
+r1fdb9590,exclude,E3,E3 (R3) neural answer verifier model; no symbolic component.
+rc5c00562,exclude,E3,E3 (R5) commonsense knowledge generation trained on KG triples; no logical inference.
+rd0e64585,exclude,E3,E3 (R3) self-play prompt evolution for RL; no symbolic component.
+r48a6acec,exclude,E3,"E3 (R3) LLM reasons in NL, code, truth-table modalities; no external formal engine stated."
+rfd4423a8,exclude,E3,E3 (R3) retrieval-augmented seq2seq semantic parsing; no symbolic engine.
+r56ca0cde,unsure,,Recursive self-invoking model evaluated on SAT; unclear whether a solver supplies training signal or checks.
+rbd9f890c,exclude,E3,E3 (R3) VLM GUI grounding with neural verifier; no symbolic component.
+rf3b4c936,exclude,E3,E3 (R3) adversarial attacks on LLMs; no symbolic component.
+rc2d1d86f,exclude,E3,E3 (R3) attention-based RAG poisoning defense; no symbolic component.
+r8d446cbd,unsure,,Logical rules distilled for LM relation extraction; unclear if rules are applied by a symbolic reasoner.
+re61ad6fd,exclude,E1,Graph transformer for node representation; no language model.
+r3ce56f9c,exclude,E3,E3 (R3) feature attribution study of LLM planning agents; no symbolic component.
+r21d9df38,exclude,E5,Survey of neuro-symbolic approaches for LLM reasoning.
+r95294228,exclude,E3,E3 (R3) FrameNet-conditioned generation with filtering; no symbolic engine.
+r867b1f33,include,,VLM generates executable Python procedural material programs from images; program as vehicle for graphics task.
+ra7ea45ba,exclude,E3,E3 (R4) text-to-SQL benchmark judged by execution accuracy only.
+r2f322bd6,include,,Chemistry reasoning benchmark with symbolically verified answers on molecular graphs; symbolic oracle evaluation.
+r7d95ac4c,exclude,E3,E3 (R3) RL diversity smoothing for LLM reasoning; no symbolic component.
+r6b046c34,include,,LLM-based planning system with PDDL formal backbone for multi-model action plans.
+r0bf34dd8,exclude,E1,Neural stochastic logic programs; no language model.
+r51e341c3,exclude,E3,E3 (R3) LLM candidates scored by multimodal neural models; no symbolic component.
+r2fbe1213,exclude,E3,E3 (R3) self-evolving challenger-solver LLMs; no symbolic component.
+rd7d0eaf3,exclude,E1,Prototypical neurosymbolic perception models; no language model.
+r05a73ac3,exclude,E3,E3 (R3) LLM abductive cause suggestion with event retrieval and neural scoring; no formal system.
+r485ab6d5,unsure,,Flowchart converted to symbolic graph queried by agent; unclear if rule-governed inference beyond retrieval.
+r40cb653d,unsure,,FOL constraints guide pointer network over BERT chunks; unclear if BERT is core or frozen encoder.
+ra5fbdc8c,exclude,E1,Unsupervised NeSy verification learning on perception tasks; no language model.
+rbb4aa2a7,exclude,E3,E3 (R3) rejection sampling for lexical/sentiment constraints; no formal symbolic engine.
+r2b3ae332,exclude,E1,Aerodynamics surrogate transformer; no language model.
+ra8e488a9,exclude,E1,Transformer stability for RL tasks; no language model.
+r82f1c15c,exclude,E3,E3 (R3) LLM prompt search scored by another LLM; no symbolic component.
+r8fb5e5de,exclude,E1,E1 (R1) MDLformer trained on synthetic data guides symbolic regression; no language pretraining.
+re0ddd9e6,exclude,E3,E3 (R3) pluralism benchmark for LLMs; no symbolic component.
+r8c0917d1,exclude,E2,Logical summary Markov models; LLMs only in brief exploratory study.
+rcec7abc9,include,,LLM prover trained with Lean verification reward and MCTS over Lean tactic states.
+r1a74778f,include,,LLMs translate task descriptions into optimisation objectives solved by differentiable physics solver.
+rf5164d7c,include,,LLM informal proofs mapped to formal sketches guiding Isabelle automated prover.
+r7a5234ed,exclude,E3,E3 (R4) code API evolution benchmark judged by test cases.
+r19c12f88,exclude,E3,E3 (R3) LLM multi-agent SRE with state machine orchestration; no formal engine.
+r7769ee5c,exclude,E3,E3 (R3) step-level neural verifier test-time scaling; no symbolic component.
+reb912740,unsure,,Automaton from NL task descriptions; unclear whether a pretrained language model does the translation.
+r0aaf8b9f,exclude,E1,Neural PDE operator; no language model.
+r5962a993,exclude,E1,Temporal logic point processes; no language model.
+r50e30cb5,exclude,E3,E3 (R3) theory of self-improvement with model as its own verifier; no symbolic component.
+re3de6449,exclude,E3,E3 (R4) code generation with unit-test feedback and neural critic only.
+rb818d542,exclude,E1,Efficient sequence architecture; no language model with symbolic component.
+r64780476,include,,LM proposes probabilistic programs which are fit and critiqued; LM-guided program search.
+rf7c7e961,exclude,E1,Foundation inference model for SDEs on synthetic data; not a language model.
+r78d3daac,unsure,,MLLM layout generation with rule-based reflection; unclear if rule checker is a formal symbolic component.
+reab407f4,exclude,E1,Transformer on gene expression; no language model.
+r6006e4f0,exclude,E3,E3 (R4) research code generation benchmark judged by tests.
+r96f2cdc6,include,,LLM proposes wordplay as Python; verifier executes codified reasoning steps to prove answers.
+rc6f43b68,unsure,,Geometry MLLM generates verifiable solutions; unclear whether a symbolic solver executes them.
+r476a6958,unsure,,Neuro-symbolic module network with symbolic modules; unclear whether a pretrained LM is core.
+r96d2bfb9,include,,LLM-generated specifications evaluated via Rocq proof obligations.
+r2a248128,include,,LLM extracts rules into executable code world model regulating LLM agent.
+r41ba9eef,exclude,E3,E3 (R3) LLM feedback incorporation study; feedback is natural language.
+rb21004f6,exclude,E3,E3 (R4) ICL exemplar retrieval for semantic parsing; no additional symbolic component.
+r26e072cc,unsure,,RAC benchmark for LMs; unclear whether problems are generated or certified by a formal system.
+r36baffd2,include,,"LLM guided to generate code executed for symbolic tasks, with symbolic checkers."
+re778b2e0,exclude,E3,"E3 (R3) knowledge editing for MoE LLMs; numeric solver only, no symbolic component."
+r4b7946d5,exclude,E1,Graph transformer for multi-robot scheduling; no language model.
+r45c5f4aa,exclude,E3,E3 (R3) lexical prompt optimisation; no symbolic component.
+rd0e8b89f,exclude,E3,E3 (R6) generic agentic tool-use framework with RL planner.
+ra7dc92c7,unsure,,Semantic parsing benchmark extending COGS; unclear whether grammar-generated data counts as symbolic generator.
+r9a191058,include,,Verified code generation benchmark; LLM outputs checked by Lean type checker.
+rb9d316d7,exclude,E1,Neural PDE solver transformer; no language model.
+r16666d21,include,,LLMs evaluated on logic grid puzzles generated from constraint satisfaction problems.
+rbff059e2,exclude,E3,E3 (R3) causal estimation with BERT text adjustment; no symbolic component.
+r7dae1df3,include,,LLM-guided architecture program search; code edits executed and evaluated in evolutionary loop.
+rf7949d7b,unsure,,Template-based problems with symbolic perturbation; unclear whether symbolic system computes the answers.
+r90996447,unsure,,Set-theoretic formalisation drives data synthesis; unclear if a rule-governed engine interacts beyond retrieval tools.
+rfd7643a0,exclude,E1,Graph state space models; no language model.
+red0fa4fc,exclude,E2,"Generic data pruning; LLM instruction tuning only one application, no symbolic component."
+r4e66ea36,unsure,,Horn-logic formalisation of LLM rule-following; unclear whether logic system generates or certifies LLM evaluations.
+rfb34b81f,exclude,E3,E3 (R3) weak/strong verification policies; no formal symbolic system.
+r12b1cdb7,exclude,E3,E3 (R3) private ensemble sampling for LLMs; no symbolic component.
+r998a8507,exclude,E1,Chess transformer on game data; no language pretraining.
+r1607cd46,exclude,E5,Survey of rational language agents.
+r63f94fba,exclude,E3,E3 (R3) sparse autoencoder interpretability; no symbolic component.
+r178bfc01,exclude,E3,E3 (R3) explanation sufficiency metric for free-text LLM explanations; no symbolic component.
+rbaaacf5e,include,,Visual-programming benchmark; symbolic methods generate synthetic fine-tuning data for LLMs.
+r2e534032,exclude,E1,E1 (R1) transformer trained from scratch on synthetic symbolic regression data.
+rf5f2c7a5,unsure,,LLM data-driven discovery benchmark with code execution; unclear whether a symbolic system certifies answers.
+r9ce12a00,unsure,,Autoformalization alignment via neural scoring; unclear whether proof assistant checks statements.
+r9b9a5771,exclude,E3,E3 (R3) LLM unlearning relearning attacks; no symbolic component.
+r5113acc5,exclude,E3,E3 (R3) conformal control over natural-language reasoning graphs; no formal system.
+r2406e580,exclude,E1,ASP contrastive explanations for neurosymbolic VQA; no language model described.
+rf72c901b,exclude,E3,E3 (R4) BERT-based spreadsheet formula prediction judged by accuracy; no additional symbolic component.
+r870ab859,include,,Non-monotonic reasoning benchmark synthesised with extensions; neural-symbolic LLM framework.
+r3e0c120c,exclude,E1,Modular vision architecture; no language model.
+re96dfe7c,exclude,E3,E3 (R3) guardrail safety dataset; no symbolic component.
+ra195740a,exclude,E3,E3 (R3) seq2seq poll question generation; no symbolic component.
+r3b75df72,exclude,E1,Logic-rule stream reasoning over vision DNNs; no language model.
+r3737222c,exclude,E3,E3 (R4) zero-shot semantic parsing via PLM retrieval; no additional symbolic checker.
+r36f73b5d,exclude,E1,Graph neural recipe recommendation; no language model.
+rb51f1ace,include,,LLM autoformalization refined iteratively with Lean 4 compiler feedback.
+r91c9bf90,exclude,E3,E3 (R5) ConceptNet subgraph compression fed to generator; no logical inference.
+rbe4c861d,exclude,E3,E3 (R3) teacher selection for distillation; no symbolic component.
+rbba59ac8,include,,LLM generates action schemas for symbolic planner pipeline with validation.
+rf3eeee6b,include,,LLM proposals plus Bayesian inference learn symbolic world models used for robot planning.
+rb8e7c283,include,,Coding agents translate NL decision problems into executable optimization models run by solvers.
+r90bfb121,exclude,E1,Neural PDE solver architecture; no language model.
+r0fe259dc,exclude,E1,Rectified-flow image inversion; no language model with symbolic component.
+r5def80b9,exclude,E3,E3 (R3) flow-matching PEFT for vision-language models; no symbolic component.
+r8e5e1408,include,,Lean 4 subgoal completion benchmark evaluating LLM provers with proof checking.
+rbe9c58da,exclude,E3,E3 (R3) human-evaluated natural-language proofs; no formal checker interacts.
+r2e9c9c5a,exclude,E1,E1 (R1) transformers trained from scratch for Groebner basis computation.
+r75995bd8,exclude,E3,E3 (R3) statistical online algorithm for human-AI collaboration constraints; no formal engine.
+r9d8363e3,unsure,,E3 (R4) KBQA logical forms with MCTS; unclear whether MCTS counts as symbolic search over partial programs.
+r49d8b32a,exclude,E2,Grounding benchmark; pretrained LM only one evaluated component among RL architectures.
+r2963f0dc,exclude,E1,E1 (R1) transformers constructed or trained from scratch on SAT traces.
+rd1678421,unsure,,Neuro-symbolic proposition tree summarised by LLM; unclear whether tree is a formal symbolic component.
+r01774962,exclude,E3,E3 (R3) diffusion generation of multi-agent communication graphs; no symbolic component.
+r057ad30e,exclude,E3,E3 (R3) DPP-based ICL exemplar selection; no symbolic component.
+r94d6a563,include,,RoBERTa-based prover generates proof graphs under global constraints at inference over synthetic rule-bases.
+rc5962846,exclude,E5,Position paper on formal mathematical reasoning.
+rbb479417,exclude,E3,E3 (R4) text-to-SQL with rationales and neural reward model; execution only.
+r218783b6,include,,LLM best-first proof search in Lean4 with compiler feedback.
+rb1e0a894,exclude,E3,E3 (R3) GFlowNet training for LLM recommenders; no symbolic component.
+rce7bfcca,exclude,E3,E3 (R3) LLM brainteaser reasoning in natural language; no solver or formal checker.
+rb93df969,exclude,E3,E3 (R3) statistical risk certification over claim graphs; no formal symbolic engine.
+r29054d4d,exclude,E3,E3 (R3) personalised reward models for LLMs; no symbolic component.
+r1a6e7d28,exclude,E3,E3 (R3) twisted SMC with neural verifier for math reasoning; no symbolic component.
+r6f4e1362,include,,MLLM generates programmatic control policies executed and refined via evolutionary search.
+r9eb7b4b1,exclude,E1,Inductive logic programming refactoring with constraint optimisation; no language model.
+ra0652471,unsure,,Code LMs fine-tuned for invariants; unclear whether dynamic analysis tool provides training targets or checks.
+r4a85d8ca,include,,Causal graph and state machine govern valid LLM reasoning transitions for abduction.
+r816d3492,exclude,E3,E3 (R4) code generation evaluated by augmented test cases only.
+r6b9cf11c,exclude,E1,E1 (R1) neural LMs trained only on samples from regular languages.
+r38b71c5c,exclude,E1,E1 (R1) sequence models trained from scratch on synthetic counting tasks.
+ra353bd63,exclude,E3,E3 (R6) security benchmark for generic tool-using LLM agents.
+rd34a21c4,exclude,E3,E3 (R3) LLM self-evaluation for rationale verification; no symbolic component.
+rf040ea1d,exclude,E3,E3 (R4) ICL for task-oriented semantic parsing; no additional symbolic component.
+rde7bd71e,exclude,E3,E3 (R3) verification of synthesized data against model collapse; no formal symbolic component.
+r7f1f3179,include,,Pretrained language models composed with finite-state transducers via exact marginalisation algorithms.
+r4d3bfabe,exclude,E1,Policy network with enumerative program search; no pretrained language model.
+r73adb2a3,exclude,E3,E3 (R3) MLLM punchline benchmark with chain-of-question prompting; no symbolic component.
+r36f53e62,unsure,,Chemical reasoning benchmark with modular operations; unclear whether a cheminformatics engine certifies answers.
+r865c406c,exclude,E1,ILP lifting symmetry-breaking constraints for ASP; no language model.
+r1700e41b,exclude,E3,E3 (R3) verifier-guided tree search with neural verifiers and state merging; no symbolic component.
+rcda2748d,exclude,E3,E3 (R3) submodular augmentation selection for safety alignment; no symbolic component.
+ra5528368,exclude,E1,Video face restoration transformer; no language model.
+r9600d994,exclude,E3,E3 (R3) experience replay for LLM RL post-training; no symbolic component.
+r2c22b50b,exclude,E3,E3 (R3) LLM frame-semantic argument extraction; no symbolic component.
+re1d7e81f,exclude,E1,E1 (R1) transformer trained from scratch for symbolic regression of ODEs.
+r604cf899,unsure,,E-graph generated training data for expression embeddings; unclear whether models are pretrained language models.
+r8564413c,exclude,E3,E3 (R3) sequence architecture design framework; no symbolic component.
+rde63691e,exclude,E1,GPU optimal transport solver; no language model.
+rd2f23a4b,exclude,E3,E3 (R3) implication implemented via activation steering vectors; no explicit formal engine.
+r3c7effab,include,,PLM generates labeling rules applied by rule-based patterns for relation extraction self-training.
+r04ff260a,unsure,,MLLM seizure benchmark; two-stage neuro-symbolic framework unclear whether formal symbolic component involved.
+r4643bcf5,exclude,E3,E3 (R3) political discourse classification with LLMs; no symbolic component.
+r11687899,exclude,E3,E3 (R3) VLM binding mechanisms study; no symbolic component.
+rf1d31f9a,unsure,,"No abstract; title suggests neuro-symbolic VLM consensus, nature of symbolic part unclear."
+r50af759f,include,,LLM-driven evolutionary program search with evaluation feedback for scientific discovery.
+r295223a8,exclude,E1,ILP-based data programming for graphs; no language model.
+r2eb86813,exclude,E1,Graph transformer mesh movement; no language model.
+ra5e3dbfa,exclude,E3,E3 (R3) multi-agent RL diagnosis with LLM-as-judge rewards; no symbolic component.
+r2eec4edf,exclude,E4,Extended abstract in sister-conference track; also no language model.
+reba222b6,include,,GPT-4 verbalises learned symbolic policies; LM as interface to symbolic core.
+rb534e2be,exclude,E4,Abstract reprint of journal paper; also ASP planning without language model.
+r5e9c080e,exclude,E5,Survey of GNNs and neural-symbolic computing.
+rb8a9574c,exclude,E1,Seq2seq transformer trained on symbolic music; no language model.
+r8483f6a9,exclude,E3,E3 (R3) many-shot ICL example optimisation; no symbolic component.
+rde61d5ac,exclude,E3,E3 (R3) RL unmasking policies for diffusion LMs; no symbolic component.
+rdaf96b33,include,,"LLM answers translated to Lean4, proved and verified by Lean compiler for selection."
+r9c2689f6,exclude,E3,E3 (R3) consequence-based LLM evaluation of math solutions; no formal checker.
+r0b495d33,include,,LLM-guided evolutionary program synthesis with fitness evaluation for QMC design.
+rc1af2d4a,exclude,E1,Convex symbolic equation learning; no language model.
+r4f8abb9a,include,,LLM writes planning domains used by planners for plan generation and structured rewards.
+r2252b759,exclude,E1,Diffusion image model RL; no language model with symbolic component.
+r428860a4,exclude,E3,E3 (R3) online RLHF reward modelling; no symbolic component.
+r6048741f,include,,LLM generates Verus-verified code with verifier-guided tree search.
+ree2d9e8b,unsure,,MCTS with value model for math; abstract unclear whether code execution or symbolic checks involved.
+ra8b9906a,include,,LLM writes logic programs refined iteratively with symbolic solver feedback.
+r7f0629ef,include,,LLM generates symbolic programs executed via compositional neural predicate modules.
+rd1cdf2d2,include,,LLM generates code executed by Python interpreter for math reasoning.
+rf750793e,exclude,E1,Neural logic programming framework; no language model.
+rb0ba00fc,include,,LLM agent actions as Python code executed by interpreter with multi-turn feedback.
+r19ae4fa3,unsure,,Law-discovery benchmark with simulated systems; unclear whether symbolic engine generates or certifies answers.
+r612064d5,unsure,,Syllogism dataset from logical forms; unclear whether a formal system generates or certifies items.
+rd9801b2b,exclude,E1,Transformer/Mamba trained from scratch on controlled synthetic compositional tasks (R1).
+r8ddec13a,include,,LLM switches CoT/PoT; external executors check answers for math reasoning.
+rcefeacbc,include,,LLM proof generation interacting with Lean4 verifier for correction.
+r00d3f3b0,exclude,E3,E3 (R3) math robustness benchmark; no formal symbolic component.
+rb5bb26ed,exclude,E3,E3 (R3) multilingual transfer analysis; no symbolic component.
+r78dff49d,include,,LM explanation tree solved as satisfiability (MAX-SAT) problem.
+r4cc98e4e,exclude,E3,"E3 (R3) gradient-based controlled decoding; soft constraints, no formal system."
+r1d114617,exclude,E3,E3 (R3) sequence tagging with PLM; no symbolic component.
+r7577a470,exclude,E1,Complexity proof on symbolic regression; no language model.
+r15d19f71,exclude,E5,Survey of human-model cooperation.
+r1bac9a05,include,,LLM-guided evolutionary symbolic regression.
+rd15dd6df,exclude,E1,PFNs trained only on synthetic causal data; no language model.
+rec8e9ead,exclude,E3,E3 (R3) RL algorithm for LLMs; rewards from answer matching only.
+r59c99f02,include,,LLM-guided program search over Karel DSL with hill climbing.
+re9120f09,exclude,E3,E3 (R3) sparse BERT retrieval representations; no symbolic component.
+r9813e5ff,include,,LLM writes declarative spec solved by automated theorem prover (SAT/SMT).
+r11fadc80,exclude,E3,E3 (R3) LLM text normalisation for event clustering.
+r2b24fff3,exclude,E4,Doctoral consortium thesis abstract on KG completion.
+r491da533,exclude,E3,E3 (R4) code LLM trained with execution reasoning; judged by tests.
+r063f6ea8,exclude,E3,E3 (R3) ChatGPT math evaluated by human experts; no formal checker.
+r5064818c,exclude,E3,E3 (R3) LLM forecasting agent; 'symbolic' lessons are natural-language strategies.
+r96e64b94,exclude,E1,Transformers trained on synthetic regression ICL tasks; no pretraining.
+r5830059a,exclude,E1,Differentiable MILP constraint layers; no language model.
+r661890dc,include,,LLM generates Python programs executed to act on websites (program as vehicle).
+r44c74e1d,exclude,E3,E3 (R3) LLM structural pruning.
+r26b6774b,include,,Audit of Lean prover benchmarks with static checkers; LLM prover scores re-evaluated.
+ra67f2e30,exclude,E1,ILP constraint mining; no language model.
+r9a5225bf,include,,LLM program synthesis plus Stitch symbolic compression for library learning.
+rc38a15e9,exclude,E1,Image editing with flow-matching transformer; no language model core.
+r3dc62368,exclude,E1,Networks meta-trained on formal languages only (R1).
+rc0ac9ee7,unsure,,Programmatic verifiers check instruction adherence as training signal; unclear if formal checker.
+r83065999,exclude,E3,E3 (R3) reward model bias analysis.
+ra86a93ca,include,,LLM tactic generation with tree search for formal theorem proving on miniF2F.
+r6d4be999,exclude,E3,E3 (R4) code LLM for infilling/synthesis; no extra symbolic component.
+re13f719a,include,,LLM proof repair loop with Lean compiler and automated solvers.
+r33ed8809,include,,LLM formal theorem proving on miniF2F with proof checking.
+rd66c399d,exclude,E3,E3 (R3) LLM routing via stochastic optimisation.
+r2a5a5c5f,unsure,,Controlled NL prompt grammar with static-analysis linter on LLM-converted prompts; role unclear.
+r8e0eb62d,include,,LLM modules composed into symbolic decision-rule programs via LLM-guided search.
+r0adaedfa,exclude,E1,Diffusion transformer acceleration; no language model.
+r3b85cca1,include,,"LLM finds variable mappings for optimisation formulations, with formal verification stage."
+re4ee31bb,unsure,,KBQA logical forms with constrained decoding; unclear if grammar-based checker beyond execution (R4).
+rb115ab85,unsure,,Neural programs with black-box programs/LLM calls; LM-symbolic interaction unclear.
+r7492ebec,exclude,E1,Rule mining for APT detection; no language model.
+r28ff8a32,exclude,E3,E3 (R3) RL with natural-language critic feedback.
+r7e5a154b,exclude,E1,Seq2seq transformers trained from scratch on synthetic Lyapunov data (R1).
+ra6d63b20,exclude,E3,E3 (R3) IRT analysis of human vs AI QA.
+r4a25f909,exclude,E3,E3 (R3) Korean linguistic competence benchmark.
+r263c8b5d,include,,LLM commonsense integrated into theory-resolution logical inference.
+r29af79f6,unsure,,Table RAG retrieval; unclear whether LM program execution is part of method.
+rc145093a,exclude,E3,E3 (R3) poisoning attack on MLLM recommenders.
+r396c252d,include,,LLM evolves LNS heuristics for MILP solving (program search with solver).
+r1988e092,exclude,E2,Logical neural network rules; BERT only one feature encoder.
+r742697c9,unsure,,VLMs generate mxGraph XML judged by rendering success; vehicle vs R4 unclear.
+ra1d40c28,include,,LLM-generated theorems and proofs filtered by Lean prover.
+r501e27a7,exclude,E3,E3 (R5) logical forms only prompt inputs for question generation; no inference.
+rd771430f,exclude,E3,E3 (R3) CoT compression.
+r1705ece0,exclude,E3,E3 (R3) temporal language modelling.
+rc28f5ba2,include,,LLM transpilation with generated functional-equivalence proofs verified.
+rac828d88,exclude,E3,E3 (R3) structured reasoning graph with lightweight verifier; no formal system evident.
+r0f3b0d58,exclude,E3,E3 (R3) academic writing style transfer with RL.
+r775346c3,exclude,E3,E3 (R3) neural interpreter-inspired model; no explicit symbolic component.
+rfc884eb4,exclude,E3,"E3 (R3) natural-language proofs; constrained decoding on references, no formal checker."
+r88dde740,exclude,E1,Theoretical expressivity of transformer encoders; no language model.
+r3ca42546,exclude,E3,E3 (R3) multimodal reasoning benchmark.
+r0d3b23fb,exclude,E3,E3 (R3) LLM Minesweeper evaluation; no solver or formal oracle stated.
+r16796311,exclude,E3,E3 (R3) RL pretraining objective.
+r75c31d56,exclude,E3,E3 (R3) abductive explanation generation.
+r1ddb9ec3,exclude,E3,E3 (R3) LLM quantization via ADMM.
+r31e46b7f,include,,Benchmark puzzles generated from SAT formulas with solver checks (symbolic oracle).
+r9720fbda,exclude,E3,E3 (R3) LLM fusion with synthetic data.
+r655a61ea,exclude,E3,E3 (R4) KBQA logical forms refined only by execution feedback.
+r07e1479f,include,,LLM autoformalization into Isabelle/HOL; improves neural prover.
+ra0a9b085,exclude,E3,E3 (R3) GRPO variant with answer-based rewards.
+r3cb07e7e,include,,LLM formalises puzzles in Logic.py DSL solved by constraint solver.
+r9ec117bd,include,,Proof progress prediction guiding Lean best-first search with ReProver.
+rda6e4f0d,exclude,E3,E3 (R3) probing BERT/ELMo for syntax.
+r48f277e2,exclude,E3,E3 (R3) LM pipeline programming/compilation; no formal reasoning engine.
+r3c2b28df,include,,LLM parses dialogue into declarative worksheet executed by symbolic runtime.
+rd93155ec,exclude,E3,E3 (R3) procedural supervision via question decomposition.
+r53c1cc78,exclude,E3,E3 (R6) travel-planning agent benchmark with generic tools.
+ra85df7f1,exclude,E3,E3 (R3) sparse universal transformer architecture.
+rcf40140f,include,,Foundation models combined with Scallop logic programs.
+r5a47f8f2,exclude,E3,E3 (R3) MIDI dataset; LM only crawls metadata.
+r6146e094,exclude,E3,E3 (R3) seq2seq text-to-table; no formal component.
+r49ff701e,exclude,E3,E3 (R3) context modification benchmark.
+rd1889b16,include,,"GPT-4 synthesises generalized planners for PDDL domains, validated and debugged."
+r58fc0f8f,exclude,E3,E3 (R3) VLM multi-agent temporal prediction.
+r56e4f944,exclude,E3,E3 (R3) transformer architecture redesign.
+rd23a2890,include,,LLM trained to write code executed by interpreter for reasoning/planning tasks.
+re266a131,unsure,,Sphere neural network checks ChatGPT syllogisms; unclear if counts as symbolic component.
+r091486e7,exclude,E3,E3 (R3) theory of linear representations in LLMs.
+r44b969bf,unsure,,LM limitations in arithmetic; tests LMs with callable programs; role of executor unclear.
+r61cc1d1e,include,,LLMs build argumentation frameworks evaluated with formal semantics.
+rfd01968a,exclude,E3,E3 (R3) non-autoregressive transformer learning analysis.
+r0232a9a8,exclude,E5,Survey of neuro-symbolic AI.
+rb8890cb3,include,,CFG Earley-based constrained decoding of LLM outputs.
+r9827a8ef,unsure,,Autoformalization dataset; unclear if proof assistant checks outputs.
+ra24750ca,unsure,,Neuro-symbolic Prolog commonsense reasoning; unclear whether pretrained LM involved.
+rbfcf36ca,unsure,,LP solver edits DNN gradients incl. LLMs; LLM may be only an evaluation target.
+r4d7484d8,exclude,E1,Learnability theory of NeSy; no language model.
+rc02916e6,exclude,E3,E3 (R3) neural logic operators without formal representation.
+rd31920a9,exclude,E3,E3 (R3) phrase representations for NMT.
+rc22f8aaa,exclude,E3,E3 (R3) information-theoretic analysis of evidence ordering.
+r38244d6e,include,,LLM plus symbolic prover generates FOL reasoning dataset.
+r7b42b423,exclude,E1,ASP spatial reasoning; no language model.
+r8f930a97,exclude,E3,E3 (R3) semantic calibration of LLMs.
+r5e58413d,exclude,E3,E3 (R3) natural-language rule-following benchmark; no formal system.
+r9d720c2d,exclude,E1,Pathology image transformer; no language model.
+raccc7bc2,include,,"LLM autoformulation of MDPs with MCTS, solver feedback and syntax checks."
+r2b77a998,exclude,E3,E3 (R3) VLLM alignment via vision encoder feedback.
+rf72406c5,exclude,E3,E3 (R3) logical reading comprehension dataset.
+r0af6c168,exclude,E3,E3 (R4) ML engineering code agents rewarded by execution performance.
+rc399552f,include,,Constrained resampling of LM outputs under logical constraints.
+r4d6505d0,exclude,E1,Models trained only on symbolic music tokens (R1).
+r97a093e6,exclude,E5,Position paper on LLMs and formal methods.
+rb76074e8,exclude,E3,E3 (R3) interpretability of entity binding.
+r7fc40e1a,exclude,E3,E3 (R3) MoE safety expert analysis.
+r1b894e95,include,,Programmatically generated math problems verified symbolically; LLM evaluation.
+r4db66810,exclude,E3,E3 (R3) attention-bias efficiency.
+r0e4d1928,exclude,E1,Formal-language theory of hard-attention transformers; no language model.
+rcad3ce74,exclude,E3,E3 (R3) persona in-context learning.
+radf94b79,include,,LLM-synthesised programmatic world models used in model-based planning.
+r0e86b87d,exclude,E1,Expressivity theory of transformers; no language model.
+r68b272b0,exclude,E3,E3 (R3) LLM-annotated instruction data; no formal checker stated.
+r2ec0c9bd,exclude,E1,Program synthesis guided RL; generative world model not a language model.
+ra1c2ff75,include,,Financial QA via LLM program synthesis executed (program as vehicle).
+r3334bd82,unsure,,LM trained on formal math formulas; provability checks of conjectures unclear; R1 borderline.
+r4d1c2b57,exclude,E3,E3 (R3) budget allocation theory; verifier unspecified.
+rbb0b9d05,include,,LLM theorem prediction with stepwise symbolic executor on FormalGeo.
+raeb8bd38,exclude,E1,Visual program induction with neural modules; no language model.
+rb083b075,include,,LLM uses code interpreter as deterministic solver for graph reasoning.
+r08a64d40,exclude,E3,E3 (R3) decomposition model pretraining.
+r0d54bc38,exclude,E3,E3 (R4) semantic parsing ICL example selection; no extra checker.
+r3eb8d2c4,exclude,E1,Mamba theory on synthetic data; no language model.
+r5545ea7e,exclude,E1,Theorem-proving benchmark; agents trained from scratch (R1).
+r93faf40c,exclude,E3,"E3 (R3) discourse graph networks; neural, no formal engine."
+r432a4a54,exclude,E1,Diffusion transformer caching; no language model.
+rb5a2b99a,include,,LLM theorem proving in Isabelle for formal code verification.
+ra46339b0,exclude,E3,E3 (R3) CoT DAG evaluation metric; no formal checker.
+r74addc1f,exclude,E3,E3 (R3) mBERT with syntax auxiliary loss; no formal engine.
+r7c221f5f,exclude,E3,E3 (R3) representation steering theory.
+r70994614,exclude,E3,E3 (R3) semantic-cache attack on LLMs; no formal symbolic component
+r805b0321,exclude,E3,E3 (R3) LVLM diagram comprehension evaluation; no symbolic system
+r24d4a65d,exclude,E3,E3 (R6) code generation with LLM critics and generic tools
+rfc590f9c,include,,FOL dataset verified by inference engine; LMs evaluated incl. NL-FOL translation
+r15c069c8,exclude,E1,Multitask genetic programming symbolic regression; no language model
+r3fd20b0c,include,,LLM writes FOL-based programs executed by differentiable logic executor
+r0690ffd9,include,,Fine-tuned LLM with static analysis and verifier-guided regeneration loop
+r2b00fd98,include,,LLM+MCTS writes solver-ready optimisation models with symbolic pruning
+r5715c6fc,include,,SAT problems with rule-based verification as RL reward for LLMs
+r418cd399,exclude,E1,Transformer trained from scratch on observations; not a pretrained LM
+rf08f13ad,exclude,E1,Neurosymbolic FSM world models; no language model
+rab5f1bcb,exclude,E3,E3 (R4) Codex program repair; no additional symbolic checker in abstract
+r645b6f6a,include,,VLM builds executable IR; symbolic solver derives circuit expressions
+r57be21b8,unsure,,VLM logic benchmark; unclear whether formal engine generates/certifies or LogiCAM uses solver
+rea14fd64,exclude,E1,E1 (R1) LMs trained only on generated formal-language corpora
+r15ece068,exclude,E1,Temporal logic rule learning for point processes; no language model
+r84aa40d5,exclude,E3,E3 (R5) LLM factual knowledge benchmark derived from KGs
+r6ae2f5c0,exclude,E1,NeurASP: neural nets with ASP; no language model
+rdf6cf409,exclude,E1,Logic-based GNN explanations; no language model
+ra8f66792,exclude,E3,E3 (R4) visualization code generation judged by execution only
+r7e081b80,exclude,E3,E3 (R3) natural-language proofs; no formal checker
+r06172ea1,include,,Oracle causal inference engine generates questions and certifies answers for LLM evaluation
+rcfee02eb,exclude,E3,E3 (R4) semantic parsing by exact match; no executor or checker
+r24a9fcf3,exclude,E1,Latplan learns PDDL from images; no language model
+rca8a5faa,unsure,,RL abstraction for GSM linked to symbolic tools; unclear if solver computes answers
+r0f00899f,exclude,E3,E3 (R3) LLM low-rank compression; no symbolic component
+r88f72d9e,exclude,E3,E3 (R4) code generation evaluated by exact match/BLEU
+rdf776e96,exclude,E1,fMRI core-set selection; no language model
+rf9b66245,include,,MLLM writes Matplotlib/Turtle code executed to render images for visual reasoning
+r28a9c672,exclude,E1,Neuro-symbolic federated EHR learning; no language model
+r95dad37f,exclude,E3,E3 (R3) differential privacy for next-token prediction
+r0cd73c6c,exclude,E1,GNN flow matching for STL planning; no language model
+r982a2b15,include,,A* search over DSL generates ToM problems and answers for LLM eval/training
+r57204693,exclude,E3,E3 (R3) uncertainty estimation incl. BERT; no symbolic component
+r29f3bc3e,exclude,E3,E3 (R3) reasoning-graph rewards over NL steps; no formal system
+re294f9b0,exclude,E3,E3 (R4) RLVR with runtime/judge feedback for code; no additional checker
+r940cee5d,exclude,E1,E1 (R1) transformer expressivity theory; trained on formal languages only
+r7619897d,unsure,,Seq2seq parsing with LP permutation solver; unclear pretrained LM use
+r00d06497,exclude,E3,E3 (R3) LLM matching-market evaluation; no symbolic checker described
+r212b0145,exclude,E3,E3 (R3) symbolic knowledge means LLM-generated text corpus
+r7ccd09b9,exclude,E3,E3 (R3) interpretability of transformer features
+r0f4f4e42,exclude,E3,E3 (R6) agentic problem synthesis with generic tool use
+r73e34309,exclude,E3,E3 (R3) LLM semantic divergence audit
+re16a639b,exclude,E3,E3 (R3) NLI plus RSA pragmatics; no formal engine
+rae5b1465,exclude,E3,E3 (R3) synthetic CoT demonstrations; NL reasoning only
+r181c9e74,unsure,,Transformers generate NL proofs; unclear pretraining and whether proofs checked symbolically
+rcece127d,exclude,E3,E3 (R3) diffusion LM decoding with uncertainty verifier
+rf3ed3b41,exclude,E3,E3 (R6) generic LLM agent graph optimisation
+re63439d4,unsure,,Travel-planning benchmark with executable constraints; unclear if symbolic checker certifies plans
+r2ceae981,exclude,E1,Abductive learning with perception models; no language model
+r190c5083,exclude,E3,E3 (R5) COMET-generated commonsense graphs; no logical inference
+ra56eb8a3,exclude,E1,Scallop differentiable deductive DB; no language model
+ree876775,exclude,E1,Curriculum abductive learning; no language model
+rbc809763,exclude,E4,Abstract reprint of journal paper (journal track); also no LM
+r266b0bb7,include,,SQL engine generates tests and answers for evaluating TRL models incl. ChatGPT
+r3c786286,exclude,E1,Differentiable FOL for VQA; no language model evident
+rc0129447,exclude,E3,E3 (R3) rule-following fine-tuning for length generalization; no formal engine
+r26369457,include,,Solver-in-the-loop LP/MILP repair with IIS feedback and solver-verified RL
+ra4243bf4,include,,Planning benchmark synthesized from formal PDDL domains with provably correct answers
+r5c946533,exclude,E1,Pragmatic program synthesizer; no language model
+rc31a6b89,exclude,E1,Differentiable ILP from raw data; no language model
+r7ce7b370,unsure,,LLM agents in Factorio; unclear if model-written programs executed as abstract states
+r6975c90e,include,,LLMs integrated with symbolic solver for tax computation
+reeceb7b7,include,,LLM-based program search for heuristics evaluated on combinatorial instances
+r2d748fd9,exclude,E3,E3 (R3) RL optimisation stability for LLM reasoning
+r72553992,exclude,E3,E3 (R3) GPT-generated exercises for distillation; no symbolic component
+re9a46c79,exclude,E1,E1 (R1) amortized SR transformer trained on synthetic expressions
+r877b75a5,exclude,E1,E1 (R1) transformers trained from scratch on n-gram LMs
+r8bec5c12,exclude,E3,E3 (R4) multi-agent code generation judged by unit tests
+r7245ae32,exclude,E3,E3 (R3) adversarial training of PLMs
+r79df541a,exclude,E3,E3 (R4) KBQA logical forms executed; no additional symbolic checker
+rc46e3506,exclude,E3,E3 (R3) probabilistic circuits as neural draft heads; no formal reasoning
+rbaa8340c,exclude,E1,E1 (R1) transformer trained from scratch via RL for Lyapunov functions
+r6769a4ad,unsure,,LLM agents under symbolic diagnosis-tree control; unclear if formal component
+radac97c6,exclude,E3,E3 (R3) sparse autoencoder ensembles on LM activations
+r5bfa8ee5,exclude,E3,E3 (R3) Winograd task formalization study
+recdfd4f6,exclude,E3,E3 (R3) LLM generates graph schemas; no formal engine
+rdbf47990,exclude,E3,E3 (R3) self-play critique game; NL reasoning only
+r9dde0329,exclude,E1,E1 (R1) transformer trained from scratch on synthetic programs
+r85fbfe3b,include,,Program-aided LM: generated programs executed for multilingual math reasoning
+r288427c1,exclude,E3,E3 (R3) code pretraining data ablation; no symbolic component interacts
+r823909fa,include,,LLM generates solver-specific algorithm code refined evolutionarily for MILP/SAT
+r52f7f956,exclude,E4,Doctoral consortium-style summary on ILP; also no LM
+rba94435a,exclude,E3,E3 (R3) RL image editing with MLLM verifier
+r2e46dd19,exclude,E3,E3 (R3) CLIP debiasing in RKHS
+r4ad16ba5,exclude,E3,E3 (R3) multi-agent LLM synthetic math data
+ra4bd9b4a,exclude,E1,ASP semantics theory; no language model
+r0b0b3428,include,,Analysis of ViperGPT: LLM-generated programs executed with modules for VQA
+rafb9a6d1,unsure,,CLEVR-based VQA dataset; unclear if pretrained LM baselines or symbolic generator role
+r3d3c6a4d,include,,Table QA with adaptive textual vs symbolic (program-executed) reasoning
+rbfaf2c6e,exclude,E3,E3 (R3) cryptographic backdoors in transformers
+rc7b6b4a1,exclude,E1,GFlowNet VRP solver; no language model
+rd9aa237d,exclude,E1,E1 (R1) seq2seq trained on synthetic integration data
+re9ba9b68,include,,Lean formal benchmark for generative LMs in proof reduction
+r4696fe24,exclude,E1,Theory of looped transformers recognizing CFLs; no pretrained LM
+r860cd506,include,,LLM pipeline mining lemmas with Lean-checked proofs
+re37d52af,unsure,,LLM planners with induced symbolic constraint library; unclear if formal rules
+r3ab7ef65,include,,LLM autoformalization into formal language; likely compiler-checked statements
+r0cfb1e7d,exclude,E3,E3 (R3) argument scheme annotation and PLM benchmarking
+r9e64a869,exclude,E1,Neural PDE operator; no language model
+r2db95609,exclude,E1,Neural-logic HOI detector; no language model
+r1395d3e6,exclude,E3,E3 (R3) design benchmark with simulators; no formal engine with LLM
+rbc6c867a,exclude,E3,E3 (R3) theory of test-time verification for LLMs
+r1d983901,exclude,E1,NeSy reasoning-shortcut benchmark; no language model
+r0483d3f4,unsure,,DPA losses formalized as symbolic programs; unclear if symbolic component interacts with LLM training
+r99306765,exclude,E1,E1 (R1) transformers trained from scratch on Sudoku solver traces
+r9a9fad08,unsure,,Logical-equivalence data extension for LM-based logical QA; unclear symbolic engine
+r08e46431,exclude,E3,E3 (R3) privacy guidance for LLM agents
+rd1ceb921,include,,LLM generates code that builds FOL formulas for NL-FOL translation
+r035b20cc,exclude,E3,E3 (R3) preference-oriented SFT
+rce4a39b7,exclude,E1,Arithmetic circuits acceleration; no language model
+ree7204d9,exclude,E1,Differentiable ILP; no language model
+r9c2aa18a,exclude,E3,E3 (R3) CAPTCHA benchmark for GUI agents
+r10e36dc2,include,,LLM agent autoformalization in Lean with compilation checks
+r5419be61,exclude,E3,E3 (R6) LLM generates multi-agent system code; generic orchestration
+r4adf999f,exclude,E1,Energy-based concept models; no language model
+rcddfd23f,include,,Pretrained LM samples DSL programs executed on ARC examples with hindsight relabeling
+r0a07cb6e,exclude,E3,E3 (R3) conformal filtering over deducibility graph; no formal checker
+rae870ef1,exclude,E1,ASP semantics theory; no language model
+r04874549,unsure,,LLM logical reasoning with resolver; unclear if resolution/search is a symbolic engine
+r10919f0c,exclude,E2,VLM used only as concept-embedding encoder for decision tree
+r5fbc1849,include,,VLM concept recognition with rules compiled into circuit executed exactly
+rb797b231,include,,Grammar-constrained LLM decoding
+r47c448cd,include,,Benchmark generated from symbolic logical graphs with computed consistent labels
+rcd7bf970,exclude,E1,Rule-based TKG reasoning with KG embeddings; no language model
+r432f1077,unsure,,Satisfiability problems for TLMs; unclear pretraining and solver role
+raaa512dc,exclude,E1,E1 (R1) transformers trained from scratch on KG queries
+rf97d2f2e,exclude,E1,FOL urban simulator NeSy benchmark; no language model evident
+r73af149f,include,,Formal Lean algebra benchmark for LLM provers
+r11e2a37f,exclude,E4,Interactive visualization platform for DSR (demo)
+r520c7235,include,,LLM prover with Lean verification and compiler-feedback self-correction
+r295191c5,exclude,E3,E3 (R3) textual entailment trees; no formal logic
+r83416409,exclude,E3,E3 (R3) theory of self-attention as Markov models
+r709f83c5,exclude,E3,E3 (R3) randomness in few-shot learning
+r8e52c498,include,,MLLM symbolic parsing of geometry with symbolic solver computing answers
+rd3b19dd0,exclude,E1,Embodied policy acceleration; no language model
+r323c42d5,exclude,E3,E3 (R3) synthetic multi-hop data for RL; no formal system
+r27f9e812,exclude,E1,Concept-based models theory; no language model
+r846fd142,exclude,E1,Vision transformers object binding; no language model
+rd6a28a29,include,,LLM writes lemma code; verification functions certify Steiner ratio bounds
+rd6ab4392,exclude,E3,E3 (R3) fully LLM-based symbolic CoT; no external solver
+r100910d6,exclude,E1,E1 (R1) neural symbolic regression trained on synthetic data
+r4f28c2fc,exclude,E3,E3 (R3) text-to-MIDI generation; MIDI output is not a formal engine interacting with the LM
+r1e19fe7e,include,,LLM writes optimization model/solver code executed by solver; optimisation modelling is vehicle task
+r62a910fc,exclude,E1,ASP scheduling decomposition with no language model; appears doctoral-consortium style
+rcd17164f,exclude,E3,E3 (R3) analysis of VLM visual counting; no symbolic component
+rc1424445,exclude,E3,E3 (R3) contrastive learning for seq2seq semantic parsing; no formal engine interacting
+r87a30964,exclude,E3,E3 (R3) logical-explanation benchmark; no symbolic system generates or certifies answers
+r75843d0b,exclude,E3,E3 (R4) KBQA via SPARQL semantic parsing; execution is only symbolic part
+rc8d2888b,include,,LLM formal theorem proving on miniF2F/ProofNet; proofs checked by proof assistant
+rffa9cdb9,exclude,E3,E3 (R3) synthetic-data RL for math with final-answer matching verifier only
+re39dd720,include,,Neural commonsense KB (COMET) queried under symbolic logic rules guiding multi-hop reasoning
+r16bb7249,include,,Symbolic SLD backward-chaining solver controls proof and calls LLM for facts
+r80f14a2d,exclude,E3,E3 (R4) LM code generation for knowledge tracing; no additional symbolic component
+r0d371cd2,exclude,E3,"E3 (R3) entailment graphs with learned world model; verification is neural, not formal"
+r24aed30a,include,,Multi-hop logical queries over CSKG generate training data for LMs (R5 logical operators)
+r76b75d00,exclude,E1,3D pose estimation with diffusion and conformal prediction; no language model
+r69799b22,exclude,E3,E3 (R3) probability mass analysis of LMs on multiple choice; no symbolic component
+ree88c68b,include,,LLM translates instructions to FOL goals; OBTEA planner builds behavior tree
+r7322f35b,exclude,E1,Decision transformer for offline safe RL; not a language model
+redc044ce,unsure,,Formal-language pre-pretraining; grammar-generated data as training signal may count as A5
+r40dfc799,include,,Neural LM augmented with explicit mathematical/logical functions in prediction
+r907c8507,exclude,E1,Epistemic logic program solver; no language model
+r8290203e,exclude,E3,E3 (R3) role-play fine-tuning with system prompts; no symbolic component
+rb6dc9fc4,exclude,E3,E3 (R3) evaluation of VLMs on visual equations; no symbolic engine involved
+r3af91a39,exclude,E3,E3 (R3) LLM annotation plus offline RL in gridworld; no formal engine
+ra276bb92,exclude,E1,Diffusion model for maze/Sudoku; no language model
+r2944e67b,exclude,E3,E3 (R3) data mixture optimisation for LM pretraining; no symbolic component
+r65bc48ad,exclude,E5,Survey of neurosymbolic AI in advanced air mobility
+r172774b5,exclude,E3,E3 (R3) LLM multi-agent communication scheme; no formal engine
+rb45a4969,unsure,,FHE code generation with automated security verifier; unclear if verifier is formal/static analysis
+r59c021e7,exclude,E3,E3 (R3) polling aggregation for truthfulness; no symbolic component
+r0ca252d5,include,,"Code LM extracts action preconditions as code, executed to constrain policy actions"
+ra34c27c6,exclude,E1,Post-training quantization of vision transformers; no language model
+r8d33291f,exclude,E3,E3 (R3) 'symbolic' knowledge distillation is textual; constrained decoding is neural
+r7345147b,include,,Benchmark of LLM-generated Dafny specifications checked by Dafny verifier
+rfdd25153,exclude,E1,Neural stochastic logic programming without a language model
+r49df9c1c,exclude,E3,E3 (R3) discriminator-guided MCTS decoding; constraints are neural classifiers
+r0fdabae4,exclude,E3,E3 (R3) optimizer for asynchronous LLM training; no symbolic component
+refec56ac,include,,LLM generates FOL rules; differentiable forward reasoner over scene graphs
+rcc9952d0,exclude,E3,E3 (R3) chain-of-thought watermarking; no symbolic component
+r0185a5bf,unsure,,Programs synthesise Turing-machine-trace CoT data for LLM training; possible A5 symbolic transfer
+r03b03d75,exclude,E1,Transformer trained from scratch on CAD sketch sequences; not a language model
+r71d4ad74,include,,LLM agents build mathematical formulations solved by solvers with feasibility verification
+r105e3901,unsure,,LLM programming-by-example with RL; unclear if anything beyond example execution is symbolic
+rcf91f16c,exclude,E3,E3 (R3) generative model-based answer verifier replaces rule-based check
+r6b6ea937,exclude,E3,E3 (R3) LLM compositionality analysis via computation graphs; no formal engine interacting
+r93cfcf12,exclude,E1,In-context learning of world models; no pretrained language model
+ra50f63ad,exclude,E3,E3 (R3) fragment-substitution data augmentation; no formal engine
+r56e47a0d,unsure,,"No abstract; neuro-symbolic framework with LVLMs for fake news, symbolic part unclear"
+r7b4be6dd,exclude,E3,E3 (R3) prompt injection on conversational search ranking
+r49cf76e9,exclude,E3,E3 (R3) structurally quantized embeddings in transformers; no formal component
+rb7148dc1,exclude,E2,VLMs used as feature encoders for statistical importance testing
+r25a48355,include,,Text-to-PDDL benchmark; PDDL equivalence algorithm certifies LLM outputs
+r51721b5d,include,,Symbolic intermediate representation used to generate problem variants for LLM evaluation
+r0b3c2f98,exclude,E3,E3 (R4) code generation RL rewarded only by unit tests
+r07891cc3,exclude,E3,E3 (R3) LLM agent tunes control algorithms; no formal engine
+r2838d61d,exclude,E3,E3 (R3) seq2seq structural generalization analysis; neurosymbolic models only compared
+rf803eae3,exclude,E3,E3 (R3) causal representation learning on LM activations
+r9b76c645,exclude,E1,Differentiable ILP without language model
+r7cba4758,include,,"LLM optimization modeling with solver-verified RL rewards (.lp feasibility, solution quality)"
+r12bde195,exclude,E3,E3 (R3) LLM-agent strategy prompting; no symbolic component
+r99b54a6b,exclude,E2,Sparse autoencoder method; LM activations only as data
+r3d6ec2cb,exclude,E3,E3 (R2) constraint optimisation schedules GPU serving; does not interact with model outputs
+r03413ace,exclude,E3,E3 (R3) outcome homogenization study; no symbolic component
+rbbde730a,exclude,E3,E3 (R3) public-health dataset and LLM evaluator; no formal engine
+r1fae0927,exclude,E3,E3 (R3) seq2seq graph semantic parsing as translation; no formal engine
+r8976824e,exclude,E3,E3 (R3) LLM-induced concept graph for diffusion concept erasure; no logical inference
+r43a31147,exclude,E3,E3 (R3) video-language agent with LoRA roles; no formal engine
+r88e29b16,exclude,E1,"E1 (R1) transformer trained only on synthetic DSL programs, probing study"
+rcf39a2af,exclude,E3,E3 (R3) VLM with retrieval database for classification; retrieval not symbolic
+re980621e,exclude,E3,E3 (R3) reasoning-skill benchmark for LMs; no symbolic component
+r7abaa3db,exclude,E3,E3 (R3) LLM self-healing ML agent; no formal engine
+r736ee6ed,include,,LLM infers action semantics for symbolic planner from execution feedback
+r8b799672,exclude,E1,Abductive learning knowledge refinement; no language model
+rabda190e,exclude,E3,E3 (R3) continual pretraining mixture scaling law
+r330bd1d5,exclude,E3,E3 (R3) mention flags for lexical constraints; no formal engine
+rbf1fa053,include,,LLM math agents with code-interpreter feedback in multi-turn preference learning
+r4ade9016,exclude,E1,Causal generative model with transformer on synthetic data; no language model
+r47f9325f,exclude,E3,E3 (R5) LLM decomposition with TKG retrieval; no logical inference engine
+rf372919c,include,,Program-of-thought math reasoning; AST/complexity static analysis filters training data
+r213a77db,exclude,E3,E3 (R5) WordNet hierarchy used only to probe LLM representations
+r430f00eb,exclude,E3,E3 (R3) context vs prior metrics for LMs
+rf738e222,exclude,E3,E3 (R4) code repair self-play verified only by unit tests
+r19277e6c,exclude,E1,Wavelet transformers for dynamical systems; no language model
+r3e793292,exclude,E3,E3 (R3) measurement theory for NLG metrics
+r5b61b37f,include,,LLM generates reusable visual modules/programs executed for VQA
+r381baff9,exclude,E1,Theory of attention as structural inference on toy problems; no language model
+r9d4e6c64,unsure,,Pretrained seq2seq IE with schema-constrained (trie) decoding; unclear if counts as grammar constraint
+r254fcd16,include,,Logic-programming-based test oracles evaluate LLM logical reasoning (A6)
+r44da8b7e,unsure,,Span-based parser with CKY over programs; unclear if pretrained LM is used
+r7b479a51,exclude,E3,E3 (R3) hybrid latent variable dialogue generation
+r5165b933,exclude,E1,E1 (R1) transformer over event sequences with deductive database; no language pretraining
+re5885673,exclude,E3,E3 (R3) visualizing LLM reasoning trajectories
+r8a87bae4,include,,LLM autoformalizes solutions into Isabelle; prover rejects inconsistent answers
+r217822ba,include,,BERT-LSTM parses instructions to WebLang DSL executed in web runtime
+r934f5b60,unsure,,Automated DSL design for procedures; unclear whether an LM is core to method
+rc2bdbc34,exclude,E3,E3 (R3) edge transformer architecture inspired by unification; no explicit symbolic component
+r9657d434,exclude,E3,E3 (R3) generative commonsense benchmark; no symbolic component
+r6462398d,exclude,E3,E3 (R3) neural step-aware verifier for reasoning
+r59461901,unsure,,Neuro-symbolic predicates for robot planning; abstract unclear whether VLM is core
+ra5f248c8,exclude,E3,E3 (R3) logicality-guided training data for physics reasoning; no formal engine
+rf6e8ea7e,exclude,E3,E3 (R3) LLM political stereotype alignment study
+r4e29601d,exclude,E3,E3 (R6) generic web-search agent with DAG execution
+r952489b8,unsure,,Deep probabilistic logic self-supervision; unclear whether neural model is a pretrained LM
+r3750b732,include,,LLM compiles intent to Dafny specs and Z3 checks agent compliance
+r5d3bfaa4,exclude,E1,E1 (R1) transformer trained only on music performances
+r0e2c4e07,include,,Benchmark for LLM agents on Lean library proof engineering with compilation verification
+re1203919,exclude,E1,Diffusion-based combinatorial optimisation; no language model
+rb2191634,exclude,E3,E3 (R3) transformer design for compositional generalization
+ree260afa,exclude,E1,E1 (R1) learned guide for bottom-up search is not a pretrained LM
+rc47a1574,exclude,E3,E3 (R3) PEFT-based access control for LLMs
+r5ad39dae,exclude,E3,E3 (R3) LLMs answer questions about graphics programs; programs only input text
+r805e84d2,exclude,E3,E3 (R3) applied-math benchmark checked against numerical answers only
+r742d5ebc,exclude,E3,E3 (R3) BERT math pretext tasks; no symbolic engine
+r51bd51a2,include,,LLM generates formulations and solver code via MCTS for optimization problems
+rce6f5ed2,exclude,E3,E3 (R4) KGQA via logical form generation and execution
+ra6fbe437,exclude,E1,Linear attention for vision transformers; no language model
+rced2706c,exclude,E3,E3 (R3) legal reasoning with neural process verifier
+rc62dc0b7,exclude,E2,6D pose tracking; VLM only optional semantic conditioning
+rae1abcaf,unsure,,DFA-based world-model metrics; unclear if evaluated models are pretrained LMs
+r16645ecc,unsure,,Logical consistency constraints regularize unsupervised verifier; unclear if formal symbolic component
+r53363f5d,exclude,E5,Position paper on LLM-Modulo frameworks without new evidence
+r55b5226e,include,,LLM-guided symbolic regression with MCTS equation search
+r7b121efe,exclude,E1,Theory of state-space duality; no language model
+r17f4b7ed,exclude,E1,E1 (R1) small transformers trained on algorithmic tasks decompiled to RASP
+r85fe8ed3,exclude,E3,E3 (R3) theory of LLM self-improvement dynamics
+rba8f727d,exclude,E3,E3 (R3) prompting for mixed-initiative dialogue
+r4681bd54,include,,LLMs generate executable drawing code rendered for spatial reasoning evaluation
+r8987fb79,exclude,E3,E3 (R3) RL with chain-of-action-thought; answer-based rewards only
+r46aeb1b8,exclude,E3,E3 (R4) code generation verified by LLM-generated brute-force oracle tests
+rda59b10f,exclude,E3,E3 (R3) zero-shot semantic parsing via QA decomposition
+r608e51d3,exclude,E1,Concept-based rule reasoner without language model
+r77d972a2,exclude,E3,E3 (R3) RLVR self-rewarding; verifier is answer matching
+rcee8d9a3,include,,Autoformalization candidates selected via ATP symbolic equivalence checking
+re726e057,exclude,E3,E3 (R3) LLM program of prompted modules; no formal engine
+raf2f9637,exclude,E1,Diffusion transformer layer caching; no language model
+r9982fc50,unsure,,Compiled neural networks encode rules inside LM; unclear if counts as explicit symbolic component
+r3b84c5fd,exclude,E1,Sequence model for MILP cut selection not language-pretrained
+r85105581,include,,LLM combined with numerical solvers for constraint-satisfying travel plans
+re626233e,exclude,E1,Diffusion reasoner for logical puzzles; no language model
+rb6b49ed9,unsure,,LLM emits Pasta-Lang annotations run by interpreter; unclear if interpreter counts as symbolic
+rfacdd75b,exclude,E1,Theory of minimal fixed-weight transformers emulating algorithms; no LM
+r2351fe1c,exclude,E3,E3 (R3) medical LVLM with region codebook tokens; no formal engine
+r35472553,include,,Symbolic seed construction and verification generate training data and plotting-code targets for VLMs.
+rc00997a9,exclude,E3,E3 (R3) inference-time detox/debias optimisation; no symbolic component.
+r738b0945,exclude,E3,E3 (R3) zero-shot chain-of-thought prompting; no formal system.
+r5c17b4f1,exclude,E3,E3 (R3) entity memory in LM; no symbolic component.
+rfbe99e0b,exclude,E3,E3 (R3) reusable agent skills from experience; no explicit formal system evident.
+rd7cd4fb2,include,,LLM generates formalizations verified by logical solver.
+r98a7b858,exclude,E3,E3 (R3) text revision via representation optimisation; no symbolic component.
+rcfd2687d,unsure,,LLM agent uses unspecified symbolic modules in text games; unclear if formal engine or generic tools.
+rdbc215a2,include,,LLM fine-tuned on domain-solver solutions with feasibility-aware RL reward; solver-to-neural transfer.
+r53ee5e88,exclude,E3,E3 (R4) text-to-SQL evaluation of in-context learning only.
+r72b731d9,unsure,,"Genetic programming searches symbolic pruning metrics evaluated on LLMs; LLM is object, not reasoner."
+rcd8aa8a4,unsure,,GPT-2 architecture learns DFS Sudoku solving; unclear if language-pretrained or trained from scratch.
+r162d22f6,include,,Benchmark: LLM theories converted to code executed against synthetic symbolic data distributions.
+r255e8cfa,unsure,,GPT-2 conditioned on gold linguistic graphs; formal representation but no rule-governed engine.
+r6b5e1f47,exclude,E3,E3 (R3) VLM personalization via RL; no symbolic component.
+r722fd25d,include,,LLM logic theory induction with feedback from formal inference engine (ILP setting).
+r4efa8a0f,exclude,E1,Graph neural network prompting; no language model.
+rf5537352,exclude,E1,E1 (R1) transformer trained from scratch on synthetic SOS polynomials.
+r9700dc20,exclude,E3,E3 (R3) table-to-text with PLMs; no explicit formal system in abstract.
+r0cfab9a4,include,,LLM formulates optimization problems and writes solver code that is executed.
+rafb06f00,include,,LLM-guided evolutionary program search for optimization heuristics with execution repair.
+r58fdba6d,exclude,E3,E3 (R5) TKG facts placed into ICL prompts; no logical inference.
+r04d9b097,exclude,E3,E3 (R3) neural dynamics model interfaced with LM; no formal engine.
+r074a30aa,exclude,E3,E3 (R3) information diffusion among LLMs; no symbolic component.
+racacaba1,exclude,E3,"E3 (R3) latent LQR control layer; numeric, not formal symbolic system."
+r0e774100,include,,"LLM formulates MILP models and writes solver code, debugged via evaluation."
+r62e620ca,unsure,,Embodied LLM benchmark with formalized goals; unclear whether symbolic simulator/checker certifies outputs.
+r55284085,exclude,E1,KG complex query answering benchmarks; no language model.
+r1c89e38b,exclude,E1,Theory of neurosymbolic independence assumption; no language model.
+r9c6c0db2,unsure,,Table QA with symbolic reasoning; unclear whether programs are executed by interpreter.
+r2fda3335,exclude,E1,Temporal KG logical reasoning; no language model.
+re3325cde,include,,VLM writes executable code acting in jigsaw environment with feedback; puzzle vehicle.
+r87f9237c,exclude,E3,E3 (R3) adversarially trained neural process reward models.
+rda746f7f,exclude,E1,"E1 (R1) program synthesizer trained on task-generated data, no LM pretraining."
+r6c791b66,exclude,E1,Deep Q-learning heuristic for class expression learning; no language model.
+r1815bd40,exclude,E1,E1 (R1) pretraining-free model trained online on symbolic trees.
+re3733c0d,include,,LLM decompilation guided by static analysis of WebAssembly stack.
+r690964dc,include,,Small LMs generate probabilistic programs with semantic constraint enforcement and diagnostic refinement.
+r127d8d6c,exclude,E3,E3 (R3) data selection for instruction tuning; no symbolic component.
+r8eecfb41,exclude,E3,E3 (R3) Twitter pretrained encoder; no symbolic component.
+r2492c7aa,exclude,E3,E3 (R3) scientific reasoning benchmark; no formal system.
+rb36e678f,exclude,E3,E3 (R3) LM reasoning over natural-language statements only.
+r7c21036f,exclude,E3,E3 (R3) representation-based exploration for RL; no formal system.
+r0558379c,exclude,E1,E1 (R1) symbolic regression hybrids; no natural-language/code pretrained LM.
+reaf641ba,include,,LLM-driven program search for ARC with executed programs scored.
+r7cb80f79,exclude,E3,E3 (R3) concept editing in LLMs; no symbolic component.
+re9e1108c,include,,LLMs with program synthesis of DSL programs for preference learning.
+r80735b74,exclude,E3,E3 (R3) fine-tuning method; no symbolic component.
+r52176d00,exclude,E3,E3 (R3) contrastive vision-language training; no symbolic component.
+rf40deb6f,exclude,E3,E3 (R3) multi-agent LLM verification; no formal system.
+r2dcd090b,exclude,E3,E3 (R3) probes LMs for semantic relations; KB/inference engine only proposed.
+ra7eab23c,exclude,E1,Adversarial defense for vision models; no language model.
+r7b7ccf8c,include,,LLM translates to FOL; SAT solver verifies and solves.
+rd3d4524a,include,,Self-play with Verus formal verification signals for verified code generation.
+rbba7d5d7,include,,LLM instruction tuning for FOL complex queries over KGs with logical operators (R5).
+ra14b1953,include,,Environment-guided self-training on symbolic language outputs; executed in environment.
+re0013edf,include,,LLM autoformalizes PDE control into formal specifications and programs.
+rb21543ad,include,,LLM guardrail probabilities fed into Markov logic network/probabilistic circuit with FOL rules.
+r0c28ee41,exclude,E1,Abductive learning with perception model; no language model.
+refef6481,exclude,E3,E3 (R3) geolocation privacy benchmark for MLLMs.
+r7af1830a,exclude,E3,E3 (R3) CoT training theory; no formal system.
+rb8c6568d,include,,LLM with symbolic working memory and symbolic rule grounding.
+r0b58eee0,include,,"LLM stepwise theorem prover with formal proof search (miniF2F, ProofNet)."
+r5bbab863,include,,"LLMs on formal specification/proof tasks in Coq, Lean4, Dafny, ACSL, TLA+."
+r04ccb8d7,include,,"MDD constraint solver generates sentences, GPT-2 ranks them."
+r2f8bc714,exclude,E3,E3 (R3) NLI performance prediction; no symbolic component.
+rf585a2cd,exclude,E3,E3 (R3) DRS parsing output only; no symbolic engine interacts.
+rc5609505,exclude,E3,E3 (R3) summarization rewriting; no symbolic component.
+r182ccedb,exclude,E1,E1 (R1) transformers trained from scratch on synthetic LTL/circuit data.
+rf4a7ac82,exclude,E4,Demo paper; also no language model.
+rc416a07f,exclude,E3,E3 (R4) text-to-SQL pretraining; no additional symbolic component.
+re3a4cd40,include,,LLM predictions eliminate executed program hypotheses; ARC and world-modelling vehicles.
+r43622738,exclude,E3,E3 (R3) reasoning-type prompting; no formal system.
+r2962fbdc,include,,LLM extracts logical specifications; differentiable symbolic reasoner trains scene-graph generator.
+rc65e4f5d,exclude,E3,E3 (R3) diffusion finetuning of LLMs; no symbolic component.
+rafdde022,exclude,E3,E3 (R3) meta-RL for test-time compute; no formal system.
+r5717952a,exclude,E3,E3 (R5) event graph knowledge as latent variable; no logical inference.
+r90234048,include,,LLM fills holes in Python sketches; ARC programs executed and composed.
+r9195d397,exclude,E1,Neural ASP learner on raw data; no language model.
+r964e6231,exclude,E3,E3 (R3) adaptive pretraining for logical reasoning; no formal system.
+r3e014611,exclude,E1,"E1 (R1) recurrent transformer trained on CSP data, no LM."
+r186815e7,exclude,E3,E3 (R3) probabilistic theory of agentic substructures.
+raef94006,include,,Code-interpreter solutions for math synthesized and executed to train LLMs.
+r807f57b0,exclude,E3,E3 (R3) interpretability of emergent symbolic mechanisms; no formal system.
+re0a00f6d,include,,Benchmark: Python seed programs generate question variants for VLMs (symbolic generator).
+rb1838ee5,exclude,E3,E3 (R3) latent symbol graph learned neurally; no rule-governed engine.
+r3bc832b4,include,,LM constrained decoding to canonical sublanguage mapped to meaning representations.
+r9aaa3660,exclude,E3,E3 (R3) symbolic knowledge distillation is text distillation; no formal system.
+r26118f7b,exclude,E3,E3 (R3) implied NLI dataset; no symbolic component.
+r276ebb66,exclude,E3,E3 (R5) SPARQL-derived plans guide KG retrieval; no logical inference.
+r3b5f0656,exclude,E1,E1 (R1) neural program synthesis models without language/code pretraining.
+r9521135b,include,,Lifted regression planner with LLM-inferred affordances.
+r39d81df4,include,,LLM-defined predicates with MCTS rule search induce FOL rules.
+r87b8dab2,exclude,E3,E3 (R3) prompting for diversity; no symbolic component.
+r89c22d33,include,,Symbolic solver generates logically consistent adversarial examples for LM soft provers.
+rf1807269,exclude,E3,E3 (R3) neural multimodal verifier; no formal system.
+rf81bf1d9,include,,BERT-based TableQA generating logical forms executed on tables with re-ranker.
+r59de26e5,include,,Rule-based backward deduction builds logic trees; LLM instantiates training data.
+rd62abfbe,exclude,E1,RL for LTL specifications; no language model.
+rf726b659,exclude,E3,E3 (R3) learned process verifiers with backtracking.
+r0c711734,exclude,E3,E3 (R3) RLVR training instability analysis.
+ra4bc0c07,exclude,E3,E3 (R3) sub-question generation; QDMR not executed.
+rf15138cf,unsure,,Scene-graph model trained via neurosymbolic pipeline grounds MLLM agents; symbolic role unclear.
+r0eb1bc7b,unsure,,Hidden states encoded into neurosymbolic (VSA) vectors; unclear if formal symbolic computation.
+rb9c6450b,exclude,E1,E1 (R1) probabilistic program-synthesis models; no language model.
+raddd9450,exclude,E1,Mesh transformer for physics; no language model.
+rb7364bdc,exclude,E3,E3 (R3) Monte Carlo pseudo-labels and PRM; no formal checker.
+r7f44f7e4,exclude,E3,E3 (R3) LLM knockout tournaments; no symbolic component.
+r2af46847,exclude,E3,E3 (R4) text-to-text structured knowledge grounding incl. SQL/KBQA.
+r52abc884,exclude,E3,E3 (R3) data mixing scaling study.
+rc49002c2,exclude,E3,E3 (R3) NTK view of fine-tuning.
+r01d5e73c,exclude,E1,Genetic programming symbolic regression; no language model.
+rd31c2245,exclude,E3,E3 (R3) semantic anomaly benchmark via LLM agents.
+r070b16b5,exclude,E1,E1 (R1) abduction transformer trained on meta-learning tasks; no LM.
+r5b26433b,include,,Corrector with feedback on mathematical program synthesis (executed programs) and constraints.
+r605194c1,include,,LLM math agent interleaving reasoning with code-interpreter execution in RL.
+r58786fe5,include,,Logical rules applied to propositions from LLM latent concepts to steer model.
+r03b9c153,exclude,E3,E3 (R3) LM fine-tuned with graph info for node features.
+rb52f1e83,exclude,E3,E3 (R3) multilingual MRC pretraining.
+r209d7fc1,include,,LLM lifelong learning for Lean theorem proving.
+rfd30bcab,unsure,,Transformer prover with Metamath/Lean checking; abstract does not state language pretraining.
+r036b1cd4,exclude,E1,"E1 (R1) transformer trained via RL for symbolic tokens, no LM pretraining."
+r2ae7b656,exclude,E1,Federated neuro-symbolic rule learning; no language model.
+r0637e0ec,exclude,E3,E3 (R4) text-to-SQL with syntax-based prompting; no checker.
+r1e16cf28,exclude,E3,E3 (R3) LLM evaluation dataset; no symbolic system generates or certifies.
+re0fff0df,exclude,E1,Equivariant vision transformer PDE solver; no language model.
+r4d4bf9d2,exclude,E3,E3 (R3) simple rule-based constraint validators for instruction following; no formal system.
+r0339c947,exclude,E1,E1 (R1) generative model pretrained on equations only.
+r246d6dda,unsure,,Symbolic program executors with commonsense KB prompting; unclear if logical inference or retrieval.
+r92ea7b9b,exclude,E3,E3 (R3) specification alignment via deliberation.
+r41c683e1,include,,"LLM testbench generation with symbolic scheduling, symbolic oracle and simulation repair."
+rc1d041f6,exclude,E1,E1 (R1) transformers on synthetic regression ICL tasks.
+rb13c27ce,exclude,E3,E3 (R3) LLM predictions in Bayesian optimization; no formal system.
+r1b8807a4,exclude,E3,E3 (R3) MCTS over NL reasoning strategies.
+rffcbbf58,exclude,E3,E3 (R3) knowledge-driven CoT web agent.
+r4e5a66e9,include,,Benchmark of LLM-generated Dafny code/specs with formal equivalence verification.
+rd68cad81,include,,CodeLLM synthesizes executable control-program policies for embodied agents.
+r1a8389f2,exclude,E3,E3 (R3) statistical analysis of repeated-sampling scaling; symbolic not studied.
+r220730b5,exclude,E3,E3 (R6) decomposed prompting with generic symbolic functions/retrieval.
+r3574e4d7,exclude,E3,E3 (R6) generic tool-integrated VLM reasoning; no specific formal engine.
+r05a64c1b,exclude,E5,Overview of own formal verification methods; no language model.
+r896a12ae,exclude,E3,E3 (R3) text-to-image diffusion with LLM encoder.
+rd45933d7,exclude,E1,E1 (R1) LMs trained from scratch on grammar-generated artificial languages; grammar only generates data
+rb6c66f35,unsure,,LLM-derived 'neurosymbolic' concept trees for VLMs; unclear whether trees are a formal rule-governed component
+r5f54e39c,exclude,E1,Probabilistic logic programs with embeddings; no language model
+r1a8fde2d,exclude,E3,E3 (R4) code instruction data verified only by execution results and self-consistency
+re6e07235,exclude,E1,Symbolic regression via MCTS and Q-learning; no language model
+r1b875835,exclude,E1,Tabular foundation model (TabPFN); not a language model
+r068ed08f,exclude,E1,Symbolic regression with neural fits; no language model
+r23926494,exclude,E3,E3 (R3) formal definition of deception in causal games; no symbolic engine interacting with LM
+r49db4138,include,,LM-guided Prolog-style proof search producing entailment trees
+r7756c89f,exclude,E3,E3 (R3) image-generation reasoning benchmark; no formal symbolic component
+r03663249,exclude,E3,E3 (R3) theory and experiments on alignment after updates; no symbolic component
+r35dff64d,include,,Benchmark: LLMs write FOL formulas checked by exact evaluation and SMT
+r42a18596,include,,FunSearch: LLM-guided evolutionary program search for cognitive models
+rc2a2ebf0,exclude,E3,E3 (R3) RLHF PPO variant; no symbolic component
+r9bab05b6,exclude,E3,E3 (R3) alignment module via importance sampling; no symbolic component
+rc6ef1832,include,,"GPT-4 with sound external verifiers for STRIPS planning, graph coloring, Game of 24"
+rddc65c2e,exclude,E3,"E3 (R3) pruning-mask solver; LLM only compressed subject, no formal component"
+r38f94f66,include,,NeuroLogic decoding enforces logical (CNF) lexical constraints on LM generation
+r28e6f13b,exclude,E4,Student abstract; also no language model
+r48af3155,exclude,E3,E3 (R3) generative LLM verifiers; neural only
+r2e6c27af,unsure,,"Multi-tool LLM (search, Python, Wolfram); generic tool use (R6) vs math program/CAS vehicle"
+r46601887,exclude,E3,E3 (R3) PAC theory of learned NL verifiers; no symbolic system interacting
+rac2ce639,exclude,E3,E3 (R3) backprop-based decoding for abductive generation; no symbolic component
+rf95295b4,unsure,,CoT meta-analysis; includes plan-then-symbolic-solver comparison; unclear if interaction is core
+rf20b2342,exclude,E3,E3 (R3) NER prompting with parser output as context; no formal engine
+r223a6b80,exclude,E3,E3 (R3) LLM-generated instruction dataset; no symbolic component
+r77c46ca6,unsure,,NL-FL hybrid math with formal-language reasoner; abstract does not state proof-assistant checking
+rb9ea518d,exclude,E3,E3 (R3) MLM agents solve flow subproblems with MARL; LP solver only baseline
+r05d907b5,exclude,E3,E3 (R3) audio LM decomposes edits executed by diffusion model; no formal engine
+rb3299d36,include,,LLM-based evolution of executable operator code with MCTS; LLM-guided program search
+r3994e30c,exclude,E3,E3 (R3) probing BERT across linguistic formalisms; no interacting symbolic system
+rfc5db383,exclude,E1,PDE transformer solver; no language model
+r99e05499,exclude,E3,E3 (R4) semantic parsing demonstration selection; program output only
+r7c3bf391,exclude,E1,Video action detection; no language model
+r828508cf,exclude,E1,Attention approximation evaluated on vision/image models; no LM or symbolic component
+re7e46a6a,unsure,,Fermi problems dataset with executable program solutions; unclear if LM outputs are executed
+r282a82b1,exclude,E3,E3 (R3) symbolic-form prompting executed by LLM itself; no external solver
+r1449baf0,exclude,E3,E3 (R3) critique and voting prompting for diversity
+r54a42677,include,,LLM agent with symbolic solver for inequality proof search
+r015db661,exclude,E5,Overview/position report on neuro-symbolic AI
+r9acdeee6,include,,LLM evolutionary search over executable reward code; LLM-guided program search
+r0fc3b57c,exclude,E3,E3 (R3) VLM rebus puzzle benchmark; no formal component
+r8e357fd9,exclude,E3,E3 (R3) analogy quality metric; no formal engine interacting with LLMs
+r2379eda8,exclude,E1,ProbLog bias modelling; no language model
+rc7bae31b,exclude,E1,Grounding methods for NeSy FOL reasoners; no language model
+rfbdae83f,exclude,E1,Semantic probabilistic layer for structured output; no language model
+rdef13eda,exclude,E3,E3 (R3) NL logical reasoning benchmark with CoT; no formal checker
+rf61cfc35,exclude,E1,ProbLog model reconciliation; no language model
+ra5c606e6,exclude,E1,Probabilistic logic shields for RL; no language model
+r6caabb12,unsure,,Benchmark plus neuro-symbolic LLM/VLM approach with logical reasoning; formality unclear
+r76b4b827,exclude,E3,E3 (R3) VLM visual abductive benchmark; no formal component
+r25e5f165,exclude,E3,E3 (R3) LLM watermarking; no symbolic component
+r967a9fa0,exclude,E3,E3 (R6) ReAct agent with multiple domain tools; generic tool use
+r1f5bef47,exclude,E1,Neural VRP solver; no language model
+rf064d0f5,exclude,E1,Neurosymbolic learning with perception nets and programs; no language model
+re53f2f9d,exclude,E3,E3 (R4) KBQA logical form generation via KB interaction
+ra687f33b,exclude,E1,E1 (R1) transformers trained from scratch in synthetic symbolic environment
+re6b333cd,unsure,,Symbolic-rule-guided LLM data search; unclear if rules are formally applied or just prompts
+rb3c57dd0,include,,Benchmark of LLM-guided symbolic equation discovery methods
+r46598b29,exclude,E1,Constraint layers in generic NNs; no language model
+r33606cb9,exclude,E3,E3 (R6) when-to-call generic tools decision
+r9ba65e20,exclude,E3,E3 (R3) preference optimization on reasoning traces
+r8754d392,exclude,E3,E3 (R3) parallel reasoning RL; no formal component
+r22179733,exclude,E1,Logical expressiveness of temporal GNNs; no language model
+r8923a60f,unsure,,Intermediate pretraining on rule-generated dependency-tree transformations; symbolic data generator may qualify
+rf6dfef5e,exclude,E1,Recommendation with probabilistic logic network; no language model
+r00603099,exclude,E3,E3 (R3) CSP framing for probing attention; no solver involved
+reafc04fc,exclude,E3,E3 (R3) visual imagination for LMs; no formal component
+r5b52ae18,exclude,E3,E3 (R3) LLM strategies in natural language for reward shaping
+rf5df46b7,unsure,,Self-proving models with verifier via interactive proof; unclear if models are pretrained LMs
+r9da32055,include,,LLMs generate Dafny proofs checked by auto-active verifier
+r3255711b,exclude,E3,E3 (R3) finetuned LLM judges; no symbolic component
+rf7e4b656,exclude,E1,Logical regularization for vision classifiers; no language model
+ra4f0b21d,exclude,E3,E3 (R5) taxonomy enrichment via LM classifier and Hearst patterns; no logical inference
+r89bf1f29,include,,LLMs generate executable SCATE code for time normalization; program is task vehicle
+r11acdde3,exclude,E3,E3 (R3) lifelong LoRA navigation agent; no formal component
+rbc712825,include,,LLM generates branching-policy programs evaluated inside MILP solver; program search
+re850c90e,exclude,E3,E3 (R3) LLM-as-judge for informal proofs
+rc94c934d,exclude,E3,E3 (R3) analogical reasoning mechanisms in transformers; no symbolic engine
+r9d067ebc,exclude,E1,E1 (R1) chess transformer trained from scratch via behavior cloning
+rccb58ae8,exclude,E3,E3 (R3) theory of critical windows in generation
+r4d8fe550,exclude,E3,E3 (R3) attention sharpening for graph tasks; no formal component
+r0d87801a,include,,Benchmark of LLM optimization modeling with solver-integrated reasoning
+rb22abc55,exclude,E3,E3 (R3) capacity bound and multi-call LLM QA framework
+r8fa576da,exclude,E3,E3 (R3) statistical hypothesis testing for factuality
+rea82cf6d,exclude,E3,E3 (R3) LLM rewriting prompts for diffusion; no formal component
+r832b7a75,unsure,,LLM with external game-theoretic poker solver; unclear if solver counts as R3 formal engine
+r3e635626,exclude,E1,Transformer policy with programmatic communication; no language model
+r35abb3a9,exclude,E3,E3 (R3) VLM active crop selection via Bayesian design
+rf68799ea,unsure,,STL-constrained decoding for transformer robot policies; unclear if policies are language-pretrained
+r57bfe2c0,exclude,E3,E3 (R3) visual priors from language pretraining
+r1d72c86b,exclude,E1,ASP treewidth reduction theory; no language model
+r30d6d8f1,exclude,E1,GNN foundation model for KG logical queries; no language model
+r6b303bb7,exclude,E3,E3 (R3) LLM frame identification with FrameNet; no formal engine
+r975ea06a,exclude,E3,E3 (R3) power sampling for LLM reasoning; verifier-free
+ra804bbd4,include,,LLM agent rewrites Lean proofs with Lean checking and error correction
+r794f5551,include,,Benchmark of LLMs on LLVM IR with verifier and equivalence checking
+re938d59b,exclude,E3,E3 (R5) multimodal KG analogical reasoning via embeddings; no logical inference
+rb00905de,exclude,E3,E3 (R3) hidden-state predictability metric; no symbolic component interacting
+ra53e81ee,exclude,E3,E3 (R5) KG construction via neural extraction; no logical inference
+rc6ea15c0,exclude,E3,E3 (R3) task interference in conversational LLMs
+r5eef3c4f,exclude,E3,E3 (R3) neural retrieval over semi-structured data benchmark
+rdfd057bb,exclude,E3,E3 (R3) vocabulary remapping for multilingual PLMs
+rb70ce6d4,exclude,E1,E1 (R1) transformer trained from scratch on SCAN
+r3545a619,exclude,E4,"Student abstract; GNN-guided symbolic regression, no LM"
+r5f48527c,exclude,E3,E3 (R3) image generation benchmark with human evaluation
+rd565f9ab,exclude,E1,Energy-based transformer design; no language model
+r00510af9,include,,LLM generates constraint programming models solved by CP solver with self-correction
+r026d5bf1,include,,Program-aided distillation; executed reasoning programs check synthetic math data
+re0440fca,include,,LLM agents propose functions within symbolic regression/MIP RSR discovery
+r1021c536,exclude,E3,E3 (R3) LSTM LMs with structural supervision from annotations; no symbolic engine
+r3c3d2f4a,exclude,E3,E3 (R4) text-to-SQL ambiguity benchmark
+r401af849,exclude,E1,Theory of softmax attention; no language model
+rb91cfc2f,exclude,E1,E1 (R1) models trained on DFA-generated formal languages; automata only make data
+r4e7a9511,exclude,E4,"Extended abstract, sister conference track; also no LM"
+r3d46fcbb,include,,LLM code auditing agent with data-flow analysis and path-condition satisfiability checking
+r7c3ef588,exclude,E3,E3 (R3) LLM corpus rating and editing
+r61b19132,exclude,E3,E3 (R3) neural process verifier for LLM
+rcd91bca6,exclude,E3,E3 (R3) video token compression for video LLMs
+r6b396b60,include,,LLM constrained by DFA logical constraints via HMM guidance
+ra9bb0d5f,exclude,E3,E3 (R4) CFQ semantic parsing scalability; query generation only
+ree3b647f,exclude,E3,E3 (R3) attention-head analysis for evidence identification
+r3f753cb7,unsure,,TPR seq2seq generating executable programs for math/Lisp; unclear if counts as LM
+r34927832,exclude,E1,RL symbolic regression; no language model
+r3cfacc32,exclude,E1,Diffusion transformer image editing; no language model
+r914bb6f2,exclude,E3,E3 (R4) seq2seq semantic parsing representation and dataset
+r4df7fe7a,exclude,E3,E3 (R4) image-to-slide code generation judged by execution and visual metrics
+rc3576004,exclude,E3,E3 (R3) algebraic expressivity theory of RNN LMs; no interacting symbolic system
+r8872b37c,exclude,E1,Human learning modelled by Bayesian program synthesis; no language model
+r7d4e14ff,exclude,E3,E3 (R3) synthetic dialogues and distillation for DST
+rc083f9c3,exclude,E3,"E3 (R3) pseudo-programs emulated by the LM, not executed by interpreter"
+ra83380ac,exclude,E1,ASP trap space enumeration; no language model
+rf1f728de,unsure,,LM generates temporal relation graph; logical rules train video model; interaction unclear
+r5390b532,include,,Neuro-symbolic Lean 4 autoformalization with operator trees and repair
+rd03c7afc,include,,Formal theorem prover refinement using compiler/verifier feedback
+rfee21fec,exclude,E1,"Fruit-fly network word embeddings; not an LM per R1, no symbolic"
+r524d4a9c,exclude,E3,E3 (R3) ODE-based BERT robustness
+rc33a9aef,exclude,E1,E1 (R1) transformers trained from scratch on formal language
+rd965a425,exclude,E3,E3 (R3) VLM predicts VQ tokens for garments; no formal engine
+re9cf25c6,exclude,E3,E3 (R4) code generation judged by generated tests
+r87f4502d,exclude,E3,E3 (R3) LLM pseudolabel distillation for parsing
+r7767563b,include,,LLM generates SQL and Python programs to verify time-series candidates; program vehicle
+rbc1841b2,exclude,E1,Physics transformer solver for multi-solid systems; no language model.
+r6da762b9,exclude,E3,E3 (R3) LLM free-text rationales distilled for coreference; no formal symbolic component.
+re3f61547,unsure,,LMs on satisfiability in controlled language fragments; unclear whether a solver generates or labels data.
+r587a846d,include,,LLM evolves benchmark programs that are executed and evaluated; LLM-guided program search.
+ra67f46f9,exclude,E3,E3 (R5) LLM constructs KG; no logical inference over the graph evident.
+rd5fcf0e1,exclude,E3,E3 (R3) MLP scouts bootstrap LLM via SFT/RL; no formal symbolic component.
+rcd5cad78,exclude,E1,KG embedding plus PSL rules; no language model.
+r9ed8c1fa,exclude,E3,E3 (R3) CoT prompt optimisation; 'symbolic reasoning' tasks only.
+r8e7dfae3,include,,LLM agents use linear programming solver at inference to compute safety equilibrium strategies.
+r737880a4,exclude,E3,E3 (R3) conformal risk control for LLM QA; no symbolic component.
+r890a825b,exclude,E3,E3 (R3) audio VAE with LLM flow matching; no symbolic component.
+r806da8f4,exclude,E3,E3 (R3) theory of learning from language feedback; no formal engine.
+re909137d,exclude,E3,E3 (R4) label smoothing for semantic parsing; no symbolic checker interacts.
+r8a0bd822,exclude,E3,E3 (R3) NER distillation; no symbolic component.
+rc361829b,include,,Puzzle generators and rule-based verifiers give RLVR rewards to LLM; symbolic checker as training signal.
+r6b8e53de,include,,LLM code-as-policies with explicit symbolic verification for embodied planning.
+recc9142e,include,,Fine-tuned LLM controller combined with symbolic A* System-2 planner variant.
+r13e19e17,include,,LLM formalises travel planning as SAT/SMT constraints solved by sound solvers.
+rb0ff0efa,exclude,E1,Complexity theory of transformer encoder satisfiability; no trained language model.
+r93adbdfa,exclude,E1,ILP refactoring via constraint optimisation; no language model.
+r3b96e5e2,exclude,E1,ASP aggregate propagation; no language model.
+ra4657d5a,include,,LLM code for UCLID5 repaired by compiler techniques into intermediate language; formal checker beyond tests.
+rfe2822a7,exclude,E3,E3 (R3) research math benchmark with answer matching; no formal checker.
+r1cdd9f60,include,,LLM writes Python executed on Pandas for table QA; program as vehicle.
+re468fcaa,include,,LM decoding constrained by logical (CNF) lexical constraints with A*-style lookahead.
+r007e32a2,exclude,E1,Conformal super-resolution for image generators; no language model.
+r8e6dfc90,unsure,,Analytics over databases produce facts for LLM; unclear if formal query engine or retrieval-like.
+r097b6972,unsure,,LLMs synthesize formal specifications; unclear whether a verifier checks consistency/completeness.
+ra26a1833,exclude,E3,E3 (R3) LVLM language bias regularisation; no symbolic component.
+rf569b954,exclude,E3,E3 (R3) pseudocode plans are not executed; no symbolic engine.
+r7a5df150,exclude,E3,E3 (R3) task-vector transport; no symbolic component.
+r80bde0c9,exclude,E3,E3 (R4) LLM data generation for semantic parsing/code with agreement verifier only.
+r1502cab7,exclude,E3,E3 (R3) MLLM diagram perception training; no formal engine.
+r0575dfab,exclude,E3,E3 (R3) A* over data subsets for MLLM training; not formal symbolic reasoning.
+r4a96d1bc,exclude,E1,E1 (R1) transformer trained from scratch on MAPF expert data.
+r7145390a,include,,Equality graphs integrated into LLM-based symbolic regression feedback.
+r6ccb0ee7,exclude,E3,E3 (R3) neural verifier for reading comprehension.
+r287e3e52,exclude,E3,E3 (R3) bidirectional LM decoding; no symbolic component.
+r5f5fc329,unsure,,Neurosymbolic dataset generation for LLM evaluation; unclear if a formal system generates/certifies problems.
+r59c59b72,exclude,E1,Logic-rule explainable federated learning; no language model.
+r07b3bce8,exclude,E1,Logic constraints in graph network for event relations; no language model mentioned.
+r933a80e5,exclude,E3,E3 (R3) speech-to-LaTeX transcription; no symbolic engine.
+rb3e9d84c,include,,LLM-constrained rule generation for rule-based temporal KG reasoning (R5 rule application).
+r9fb81a0c,include,,"LLM generates Prolog programs for math problems, executed; GRPO reward."
+r24b790a6,exclude,E1,Physics-informed neural operator; no language model.
+rf6a5ebb8,exclude,E1,MDL inductive logic programming; no language model.
+rd469e784,exclude,E3,E3 (R3) LLM generative verifier co-trained; no formal checker.
+r4b567af7,exclude,E1,Differentiable logic policy for deep RL; no language model indicated.
+rb950775a,exclude,E3,E3 (R4) text-to-SQL ambiguity benchmark generator; SQL execution only.
+r34aac216,include,,"LLM synthesizes and refines per-instance programs executed for reasoning, VQA, math tasks."
+r3d36d820,exclude,E1,E1 (R1) transformers trained from scratch on Boolean functions.
+r0aec0ba1,exclude,E3,E3 (R3) data selection by skills; no symbolic component.
+ra93681e8,exclude,E1,Probabilistic logic for object detection; no language model.
+rf093c913,exclude,E3,E3 (R3) neural value representation of LLMs.
+r385ad4d4,exclude,E3,E3 (R3) theory of best-of-N with reward models.
+rd45f1e27,include,,LLM backward chaining proof search in formal theorem proving on miniF2F.
+rc4f37e7d,exclude,E3,E3 (R3) theory of test-time scaling; no formal engine.
+r18dc5384,exclude,E3,E3 (R3) reward shaping for alignment.
+r71a25486,include,,LLM autoformalisation into Isabelle/HOL with proof assistant feedback.
+r70b0f3b6,include,,LLM informalisation plus math solvers generate verified training problems.
+rd6f7bd24,unsure,,Possibly demo/application paper; NLP model creation plus AI planning; LM role unclear.
+r81ae1cde,include,,VLM selects TSP subproblems solved by off-the-shelf optimisation solver.
+r8df4e7c5,exclude,E3,E3 (R3) GNN label propagation for POS tagging.
+r6f7a087b,include,,Rule-based symbolic formula equivalence certifies LLM physics answers; evaluation with symbolic oracle.
+re7db60e8,exclude,E1,LP rule induction for KGs; no language model.
+rd4899c4c,exclude,E3,E3 (R3) neural process verifier.
+r3a47e8f2,exclude,E3,E3 (R3) market-based VLM multi-agent coordination.
+r94be47aa,exclude,E3,E3 (R3) theory of process vs outcome supervision.
+r2dc08068,include,,LLM generates PDDL refined via environment feedback; automated planners solve.
+rcab1595d,exclude,E3,E3 (R3) filtering-based LLM ensemble for time series.
+r195e1eaa,include,,LLM synthesizes behavioural programs with probabilistic inference over program space.
+r082621ad,exclude,E1,Neuro-symbolic causal RL for treatment; no language model.
+r49c87408,unsure,,Formal-language procedural data pretrains LMs; unclear if trivial data generator counts as symbolic component.
+r6243d138,exclude,E3,E3 (R3) difficulty-adaptive prompting.
+r012b5e07,exclude,E3,E3 (R3) RLVR optimisation with generic verifier rewards.
+r987c93e7,exclude,E1,E1 (R1) transformer generating symbolic branching policies trained from scratch.
+rc0f433e0,exclude,E3,E3 (R3) active reasoning benchmark; no formal engine.
+rf784c201,include,,KB-derived logical rules guide chained LLM knowledge editing (R5 rule application).
+r620ba346,exclude,E3,E3 (R3) chain-of-thought prompting.
+r3e4f7427,exclude,E1,Approximation theory for Lipschitz transformers; no language model.
+r2c913662,exclude,E3,E3 (R3) LLM-driven benchmark construction; no formal engine.
+rfb94d02e,include,,Program-of-thought for financial numerical reasoning; executed programs.
+reb1208e1,include,,Code generator conditioned on static analysis tool calls; additional symbolic component (R4).
+r3c3a4208,exclude,E1,Self-supervised ILP in Prolog; no language model.
+raff04329,include,,Pretrained QA/NLI models combined via weighted MaxSAT solver.
+re0d57e54,include,,Neural sequence model generations checked by symbolic logical reasoning module.
+rc4d1bc76,include,,LLM writes SQL to transform tables for programmatic table QA.
+rd0e4be70,include,,LLM writes executed Python programs for long-form table QA.
+r150285be,exclude,E1,E1 (R1) GearFormer trained from scratch on synthetic DSL data.
+rae075976,exclude,E1,Image program induction; no language model.
+r3d03dc43,exclude,E1,"E1 (R1) formula embedding models trained on ITP data, no pretraining evident."
+rffc8cc9a,exclude,E3,E3 (R3) generative data augmentation for legal NLP.
+r51a21bcd,exclude,E1,Relational reasoning benchmark for neural models; no language model indicated.
+r82569c48,exclude,E1,Compositional neural-symbolic integration; no language model.
+r450cabc3,exclude,E3,"E3 (R3) automaton over retrieval datastore; retrieval store, not formal reasoning."
+r17f034ef,exclude,E3,E3 (R4) KBQA query synthesis for in-context demos; execution only.
+r806ba055,exclude,E3,E3 (R3) early-stopping self-consistency.
+r9fbeb898,exclude,E3,E3 (R3) MCMC sampling from base LLM.
+r01b3d7ab,exclude,E1,E1 (R1) SR transformer trained on synthetic data guides ParFam.
+r7c85e2bf,exclude,E3,E3 (R3) symbol-remapping abstract reasoning benchmark.
+rb38a0c0b,exclude,E3,E3 (R3) evaluation of concept explanations.
+r00354623,include,,LLMs synthesize visual programs; emulator verifies and drives curriculum; spatial planning vehicle.
+rccac804b,unsure,,Grammar-based fuzzy semantic parsing for KBQA with PLMs; unclear if grammar constrains LM decoding.
+rdd6ec86a,include,,LLMs evaluated against formal operational/K semantics execution; symbolic oracle certifies answers.
+rad53a8ae,exclude,E3,"E3 (R3) future constraints estimated by LLMs, no formal engine."
+rafab68fe,exclude,E3,E3 (R3) crypto benchmark graded by rubrics and flags.
+r1a95ce2a,exclude,E3,E3 (R3) early-exit self-speculative decoding.
+r3df0dda2,exclude,E1,Constrained flow models for molecules; no language model.
+rcc5d2fd6,exclude,E3,E3 (R3) triple-style evidence prompting; no formal engine.
+r2abbb605,exclude,E1,Neurosymbolic learning imbalances; no language model.
+r9581f567,unsure,,Generated grid puzzles for LLMs; unclear whether a solver generates or certifies puzzles.
+r68507971,exclude,E3,E3 (R3) LLM adversarial search for agentic system design.
+r47ead4aa,exclude,E1,Probabilistic logic programming; no language model.
+r323ac92a,exclude,E1,E1 (R1) data augmentation for sequence models trained only on task data.
+r07214b1f,include,,LLM completions train PCFG guiding symbolic program synthesis search.
+r9a70e448,include,,LLM synthesizes code invoking parsers and theorem prover for dataflow analysis.
+r16a95fd0,exclude,E1,E1 (R1) linear transformer trained on matrix completion tasks.
+r10020723,include,,LLMs extract structure combined with ASP knowledge base reasoning.
+ra9324f5c,exclude,E3,E3 (R3) learned input tags for domain LLMs.
+r001030ff,exclude,E3,E3 (R3) analysis of transformer norm growth; no interacting symbolic component.
+rb97099db,exclude,E3,E3 (R4) code efficiency benchmark judged by tests/execution.
+re30edb55,exclude,E3,E3 (R4) code generation with clarification questions.
+r24638dca,include,,LLM builds PDDL domain models with validator feedback; sound planners solve.
+r47ab0e89,exclude,E1,Gradient estimation for probabilistic neurosymbolic models with SAT; no language model.
+rd94e0d24,exclude,E3,E3 (R4) mid-training RL for code generation evaluated by tests.
+r56e37560,include,,Grammar-constraint verifier filters VLM reasoning trajectories for CAD part retrieval.
+r17d63070,exclude,E3,E3 (R3) self-play LLM diversity; no formal engine.
+r4446e9fd,exclude,E5,Survey of robotic language grounding.
+r5f5909fd,exclude,E1,Dimension reduction for symbolic regression; no language model.
+r5d80398b,exclude,E3,E3 (R3) NCE alignment of LMs.
+r5c59147d,exclude,E3,E3 (R3) society of LMs with neural verifier.
+re76c7e6d,exclude,E3,E3 (R4) non-autoregressive semantic parser; no symbolic checker.
+r0aeb4906,include,,Rubik's cube benchmark with symbolic state simulator and external solver tools for LLM agents.
+re742c2dc,include,,Self-play LLM conjecturing and proving verified by Lean and Isabelle.
+r232e4111,include,,SAT solver over CNF of LLM circuits decides nodes to unlearn.
+r9dc5ab1a,exclude,E3,E3 (R3) mBERT span prediction word alignment.
+rf2b9e2a1,exclude,E1,Theory of abductive learning shortcuts; no language model.
+r4683be78,exclude,E1,E1 (R1) seq2seq models trained from scratch on Isabelle proof data.
+r2bb705e4,exclude,E3,E3 (R3) Mesa layer with numerical conjugate-gradient solver; not symbolic.
+rd70d3759,exclude,E1,MLN reasoning with ML classifiers for certified robustness; no language model indicated.
+r60f0f84a,exclude,E3,E3 (R4) text-to-SQL encoder; no additional symbolic checker.
+r45a70f75,exclude,E1,Variable selection for symbolic regression; no language model.

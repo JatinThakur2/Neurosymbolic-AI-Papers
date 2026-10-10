@@ -1,0 +1,90 @@
+{
+  "corpus_records": 391,
+  "corpus_duplicates": 4,
+  "source_b_records": 82663,
+  "query_hits": 1825,
+  "overlap": 82,
+  "union": 2130,
+  "union_included": 596,
+  "union_excluded": 1534,
+  "union_included_in_corpus": 71,
+  "union_included_search_only": 525,
+  "union_included_corpus_only": 20,
+  "snowball_candidates": 374,
+  "snowball_included": 59,
+  "audit_screened": 400,
+  "audit_included": 4,
+  "audit_strata": {
+    "lm_only": {
+      "N": 26210,
+      "n": 200,
+      "x": 3
+    },
+    "sym_only": {
+      "N": 3166,
+      "n": 100,
+      "x": 1
+    },
+    "neither": {
+      "N": 50887,
+      "n": 100,
+      "x": 0
+    }
+  },
+  "included_total": 659,
+  "exclusion_reasons": {
+    "E1": 577,
+    "E2": 23,
+    "E3": 1197,
+    "E4": 27,
+    "E5": 25
+  },
+  "agreement": {
+    "union": {
+      "n": 2130,
+      "agree3": 0.9291079812206573,
+      "kappa3": 0.8502152256737707,
+      "agree_incl": 0.9666666666666667,
+      "kappa_incl": 0.9030155413699031,
+      "adjudicated": 279,
+      "included": 596,
+      "unsure_any": 275,
+      "adj_include": 162
+    },
+    "snowball": {
+      "n": 374,
+      "agree3": 0.9438502673796791,
+      "kappa3": 0.8154084798345398,
+      "agree_incl": 0.9705882352941176,
+      "kappa_incl": 0.7975991341139426,
+      "adjudicated": 48,
+      "included": 59,
+      "unsure_any": 45,
+      "adj_include": 35
+    }
+  },
+  "recall": {
+    "missed_point": 425,
+    "missed_median": 664,
+    "missed_lo": 214,
+    "missed_hi": 1859,
+    "recall_point": 0.6010461960349734,
+    "recall_median": 0.49095486646442604,
+    "recall_lo": 0.2560451671703724,
+    "recall_hi": 0.7496006179904245
+  },
+  "recall_without_neither": {
+    "missed_point": 425,
+    "missed_median": 462,
+    "missed_lo": 149,
+    "missed_hi": 1080,
+    "recall_point": 0.6010461960349734,
+    "recall_median": 0.580588680933634,
+    "recall_lo": 0.3720601897945837,
+    "recall_hi": 0.8107445841466014
+  },
+  "found_in_source_b": 640,
+  "v1_included": 73,
+  "v1_matched": 73,
+  "v1_kept": 61
+}
