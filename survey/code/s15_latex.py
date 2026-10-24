@@ -9,6 +9,7 @@ import json
 from collections import Counter
 
 from config import DERIVED, TABLES, WORK
+from s13_analysis import wilson
 from s14_bib import clean_text
 
 ARCH = {"A1": "Translate-and-solve", "A2": "Checker-in-the-loop", "A3": "Symbolic guidance",
@@ -30,6 +31,11 @@ VENUES = ["AAAI", "IJCAI", "ICLR", "ICML", "NeurIPS", "ACL", "EMNLP", "NAACL", "
 
 def fmt_int(n):
     return f"{n:,}"
+
+
+def fmt_rr(x):
+    """Rate ratios: one decimal below 10, integers above, thousands separators for very wide bounds."""
+    return f"{x:.1f}" if x < 10 else fmt_int(round(x))
 
 
 def pct(x, nd=0):
@@ -85,6 +91,41 @@ def main():
     rs = sel["recall_without_neither"]
     m.update(recallsenslo=f"{rs['recall_lo']:.2f}", recallsenshi=f"{rs['recall_hi']:.2f}",
              recallsensmedian=f"{rs['recall_median']:.2f}")
+
+    # ---- revision 2: search stage 2, double-screened audit, recall of the full search, accounting
+    if "recall_r2" in sel:
+        r2 = sel["recall_r2"]
+        m.update(recalltwo=f"{r2['recall_median']:.2f}", recalltwolo=f"{r2['recall_lo']:.2f}",
+                 recalltwohi=f"{r2['recall_hi']:.2f}", recalltwoplugin=f"{r2['recall_point']:.2f}",
+                 missedtwo=fmt_int(r2["missed_median"]), missedtwolo=fmt_int(r2["missed_lo"]),
+                 missedtwohi=fmt_int(r2["missed_hi"]), foundtwo=fmt_int(sel["found_in_source_b_r2"]))
+        rs2 = sel["recall_r2_without_neither"]
+        m.update(recalltwosens=f"{rs2['recall_median']:.2f}", recalltwosenslo=f"{rs2['recall_lo']:.2f}",
+                 recalltwosenshi=f"{rs2['recall_hi']:.2f}")
+        for h, v in sel["audit_strata_r2"].items():
+            tag = {"lm_only": "lm", "sym_only": "sym", "neither": "nei"}[h]
+            m[f"audtwo{tag}N"], m[f"audtwo{tag}n"], m[f"audtwo{tag}x"] = fmt_int(v["N"]), v["n"], v["x"]
+        m["auditretrieved"] = sel["audit_retrieved_by_augmented_query"]
+        st2 = sel["stage2"]
+        m.update(augmentedhits=fmt_int(st2["augmented_hits"]), newhits=st2["new_hits"],
+                 searchtwo=st2["screened_in_stage2"], searchtwoincl=sel["search2_included"])
+        a2 = sel["agreement"]["search2"]
+        m.update(kappasearchtwo=f"{a2['kappa3']:.2f}", agreesearchtwo=pct(a2["agree3"], 1),
+                 adjsearchtwo=a2["adjudicated"], adjinclsearchtwo=a2["adj_include"])
+        au = sel["agreement"]["audit"]
+        m.update(kappaaudit=f"{au['kappa3']:.2f}", agreeaudit=pct(au["agree3"], 1), adjaudit=au["adjudicated"])
+        for route, tag in (("union", "union"), ("snowball", "snow"), ("search2", "searchtwo")):
+            a_ = sel["agreement"][route]
+            m[f"kappanu{tag}"] = f"{a_['kappa3_wo_both_unsure']:.2f}"
+            m[f"bothunsure{tag}"] = a_["both_unsure"]
+        acct = sel["accounting"]
+        m.update(srcbrecords=fmt_int(acct["records"]), srcbaddedtwo=acct["r2_added"],
+                 srcbdup=acct["duplicate_title"], srcbcollision=acct["id_collision"],
+                 srcbinunion=fmt_int(acct["in_union"]), srcbsnow=acct["snowball_candidate"],
+                 srcbauditpop=fmt_int(acct["audit_population"]))
+        single = sum(sel["agreement"][r]["adj_include"] for r in ("union", "snowball", "search2"))
+        dbl = sum(sel["agreement"][r]["included"] for r in ("union", "snowball", "search2"))
+        m.update(singleadjincl=single, singleadjinclpct=pct(single / dbl))
 
     # ---- coding
     for f, tag in (("architecture", "arch"), ("check_strength", "check"), ("domain", "dom"),
@@ -167,9 +208,203 @@ def main():
     for name, c in ana["engine"]["counts"]:
         m["eng" + "".join(ch for ch in name.split(" ")[0] if ch.isalnum())] = c
 
+    # ---- revision 2: Source B composition, audit extension, known-item check
+    added = Counter()
+    for line in open(WORK / "search" / "source_b.jsonl", encoding="utf-8"):
+        rr = json.loads(line)
+        if rr.get("r2_added"):
+            added[rr["source"]] += 1
+    acct = sel["accounting"]
+    m.update(sourceb=fmt_int(acct["records"]), sourcebvtwo=fmt_int(acct["records"] - acct["r2_added"]),
+             sourcebtitles=fmt_int(sel["source_b_records"]), srcbaddaaai=added["paperlists"],
+             srcbaddanth=added["acl-anthology"])
+    if "audit_ext" in sel["agreement"]:
+        ae = sel["agreement"]["audit_ext"]
+        m.update(auditextn=ae["n"], auditextincl=ae["included"], kappaauditext=f"{ae['kappa3']:.2f}",
+                 agreeauditext=pct(ae["agree3"], 1), adjauditext=ae["adjudicated"])
+        for h, v in sel["audit_strata_r2"].items():
+            tag = {"lm_only": "lm", "sym_only": "sym", "neither": "nei"}[h]
+            m[f"audext{tag}n"] = v.get("n_ext", 0)
+            m[f"audvtwo{tag}n"] = v.get("n_v2", v["n"])
+    au_all = sel["audit_included"] + sel.get("audit_ext_included", 0)
+    m["auditinclall"] = au_all
+    m["otherincl"] = sel["snowball_included"] + au_all + sel.get("knownitem_included", 0)
+    m["searchtwoexcl"] = sel["search2_screened"] - sel["search2_included"]
+    m["auditall"] = sel["audit_screened"] + sel.get("audit_ext_screened", 0)
+    m["exclall"] = fmt_int(sum(sel["exclusion_reasons"].values()))
+    ki = sel.get("knownitem")
+    if ki:
+        p_, lo, hi = wilson(ki["found_by_search"], ki["eligible"])
+        m.update(kiref=ki["references"], kisrcb=ki["in_source_b"], kielig=ki["eligible"], kifound=ki["found_by_search"],
+                 kifoundpct=pct(p_), kifoundlo=pct(lo), kifoundhi=pct(hi), kinotsrcb=ki["references"] - ki["in_source_b"],
+                 kiscreened=sel["knownitem_screened"], kiincl=sel["knownitem_included"],
+                 kimissed=ki["eligible"] - ki["found_by_search"])
+
+    # ---- revision 2: sensitivity analyses (s16)
+    sp = DERIVED / "sensitivity.json"
+    if sp.exists():
+        se = json.loads(sp.read_text())
+        ptag2 = {"2020--2022": "early", "2023": "ythree", "2024": "yfour", "2025": "yfive", "2026": "ysix"}
+        for pname, ptag in (("P2_ICLR_ICML", "ptw"), ("P3_ICLR_ICML_NeurIPS", "pth"), ("all_venues", "pall")):
+            for per, v in se["panels"][pname].items():
+                t = ptag + ptag2[per]
+                m[f"{t}n"], m[f"{t}mn"] = v["all"]["n"], v["methods"]["n"]
+                for a in ("A1", "A2", "A3"):
+                    an = a.replace("1", "one").replace("2", "two").replace("3", "three")
+                    for grp, gt in (("all", ""), ("methods", "m")):
+                        p_, lo, hi = v[grp][a]
+                        m[f"{t}{gt}{an}"], m[f"{t}{gt}{an}lo"], m[f"{t}{gt}{an}hi"] = pct(p_), pct(lo), pct(hi)
+                p_, lo, hi = v["a2_exact_methods"]
+                m[f"{t}infexact"], m[f"{t}infexactlo"], m[f"{t}infexacthi"] = pct(p_), pct(lo), pct(hi)
+        for key, tag in (("rate_ratio_p5_2025_vs_2020", "rr"), ("rate_ratio_p5_2025_vs_2020_lm", "rrlm"),
+                         ("rate_ratio_p2_2026_vs_2020", "rrtw"), ("rate_ratio_p5_2025_vs_2021_22", "rrtt"),
+                         ("rate_ratio_p5_2025_vs_2021_22_lm", "rrttlm"), ("rate_ratio_p2_2026_vs_2021_22_lm", "rrtwlm")):
+            r_ = se[key]
+            m[f"{tag}"], m[f"{tag}lo"], m[f"{tag}hi"] = fmt_rr(r_['rr']), fmt_rr(r_['lo']), fmt_rr(r_['hi'])
+            m[f"{tag}kone"], m[f"{tag}ktwo"] = r_["k1"], r_["k2"]
+        for row in se["growth"]:
+            y = row["year"]
+            if row["p5"]["per1000_lm"] is not None and y != "2026":
+                m[f"pfivelm{y}"] = f"{row['p5']['per1000_lm']:.1f}"
+                m[f"lmshare{y}"] = pct(row["p5"]["lm_share_of_accepted"])
+            if row["p2"]["per1000_lm"] is not None:
+                m[f"ptwolm{y}"] = f"{row['p2']['per1000_lm']:.1f}"
+        dr = se["vocab_drift"]
+        shares = {y: v["share"][0] for y, v in dr.items() if v["n"]}
+        m["driftmin"], m["driftminyear"] = pct(min(shares.values())), min(shares, key=shares.get)
+        m["drifttwentyfive"], m["drifttwentysix"] = pct(shares["2025"]), pct(shares["2026"])
+        pa = se["program_aided"]
+        wo = pa["without_F3"]
+        m.update(Fthreen=pa["F3_n"], woFthreen=wo["n"], woFthreeVc=f"{wo['Vc']:.2f}",
+                 woFthreefaithyes=wo["faith_yes"], woFthreefaithn=wo["faith_n"],
+                 woFthreeAtwoemp=wo["A2_empirical"], woFthreeAtwo=wo["A2"])
+        incl_ = list(csv.DictReader(open(DERIVED / "included_studies.csv", encoding="utf-8")))
+        m.update(woFthreeAtwoexact=sum(1 for r in incl_ if r["formalism"] != "F3" and r["architecture"] == "A2"
+                                       and r["check_strength"] == "exact"),
+                 FthreeAtwoemp=sum(1 for r in incl_ if r["formalism"] == "F3" and r["architecture"] == "A2"
+                                   and r["check_strength"] == "empirical"))
+        for k_, t in (("early_A2", "earlyAtwo"), ("y26_A2", "ysixAtwo"), ("early_A3", "earlyAthree"), ("y26_A3", "ysixAthree")):
+            p_, lo, hi = wo[k_]
+            m[f"woFthree{t}"], m[f"woFthree{t}lo"], m[f"woFthree{t}hi"] = pct(p_), pct(lo), pct(hi)
+        for a, c in pa["F3_by_arch"].items():
+            m[f"Fthree{a}"] = c
+        for c_, v in pa["F3_by_check"].items():
+            m[f"Fthree{c_}"] = v
+        co = se["contribution"]
+        m.update(contribmethod=co["method"], contribbench=co["benchmark_or_evaluation"], Atwoexactinf=co["A2_exact"],
+                 Asixexact=co["A6_exact"], Afiveexact=co["A5_exact"])
+        lodo = se["assoc_leave_one_domain_out"]
+        m.update(lodomin=f"{min(lodo.values()):.2f}", lodomax=f"{max(lodo.values()):.2f}",
+                 Vcmethods=f"{se['assoc_methods_only']:.2f}")
+        m["classicaln"] = se["classical_semantics"]["n"]
+        m["athreenlp"], m["athreeall"] = se["nlp_share_A3"]["A3_in_nlp_venues"], se["nlp_share_A3"]["A3"]
+        sc = se.get("secondary")
+        if sc:
+            ct = sc["contribution"]
+            m.update(contribmethodtwo=ct.get("method", 0), contribbenchtwo=ct.get("benchmark", 0),
+                     contribanalysis=ct.get("analysis", 0),
+                     kappacontrib=f"{sc['contribution_agreement'][1]:.2f}", adjcontrib=sc["contribution_adjudicated"],
+                     mechkappamin=f"{min(v[1] for v in sc['mechanism_kappa'].values()):.2f}",
+                     mechkappamax=f"{max(v[1] for v in sc['mechanism_kappa'].values()):.2f}",
+                     mechmulti=sc["multi_mechanism_methods"], mechmultieither=sc["multi_mechanism_methods_either"],
+                     mechmultipct=pct(sc["multi_mechanism_methods"] / sc["methods_n"]),
+                     methodsn=sc["methods_n"], primaryinagreed=sc["primary_in_agreed_set"],
+                     primaryinagreedpct=pct(sc["primary_in_agreed_set"] / sc["methods_n"]),
+                     asixbench=sc["A6_by_contribution"].get("benchmark", 0),
+                     asixanalysis=sc["A6_by_contribution"].get("analysis", 0),
+                     asixmethod=sc["A6_by_contribution"].get("method", 0))
+            for i, (name, o) in enumerate(sc["orders"].items(), 1):
+                t = "ord" + "abcd"[i - 1]
+                g = o["agreed"]
+                for key, mk in (("P2_A2_early", "Atwoe"), ("P2_A2_2026", "Atwol"), ("P2_A3_early", "Athreee"),
+                                ("P2_A3_2026", "Athreel"), ("A2_early", "allAtwoe"), ("A2_2026", "allAtwol")):
+                    m[t + mk] = pct(g[key][0])
+                m[t + "same"] = g["same_as_primary"]
+                m[t + "A2"] = g["counts"].get("A2", 0)
+                m[t + "A3"] = g["counts"].get("A3", 0)
+            mp = sc["methods_by_period_P2"]
+            for per, tag in (("2020--2022", "early"), ("2026", "ysix")):
+                v = mp[per]["all"]
+                for a in ("A1", "A2", "A3"):
+                    an = a.replace("1", "one").replace("2", "two").replace("3", "three")
+                    p_, lo, hi = v[a]
+                    m[f"cmp{tag}{an}"], m[f"cmp{tag}{an}lo"], m[f"cmp{tag}{an}hi"] = pct(p_), pct(lo), pct(hi)
+                m[f"cmp{tag}n"] = v["n"]
+        af = se["audit_found"]
+        m.update(afn=af["n"], afAsix=af["arch"].get("A6", 0), afFthree=af["F3"],
+                 allAsixpct=pct(af["A6_share_all"]), allFthreepct=pct(af["F3_share_all"]))
+        eb = se["exact_by_period"]
+        m.update(benchexactearly=eb["2020--2022"]["benchmark_exact"], benchexactsix=eb["2026"]["benchmark_exact"])
+        f2 = lambda x: f"{x:.2f}"  # noqa: E731
+        for key, tag in (("all_A1", "trAone"), ("all_A2", "trAtwo"), ("all_A3", "trAthree"),
+                         ("all_inference_exact", "trexact"), ("methods_A1", "trmAone"), ("methods_A2", "trmAtwo"),
+                         ("methods_A3", "trmAthree"), ("methods_inference_exact", "trmexact")):
+            t_ = se["trend"][key]
+            m[tag], m[tag + "lo"], m[tag + "hi"] = f2(t_["or_per_year"]), f2(t_["lo"]), f2(t_["hi"])
+        r_ = se["rate_ratio_p5_2025_vs_2020_stable_vocab"]
+        m.update(rrst=fmt_rr(r_['rr']), rrstlo=fmt_rr(r_['lo']), rrsthi=fmt_rr(r_['hi']))
+        if sc:
+            o2 = [o["agreed"]["trend_A2"] for o in sc["orders"].values()]
+            o3 = [o["agreed"]["trend_A3"] for o in sc["orders"].values()]
+            m.update(ordtwomin=f2(min(t_["or_per_year"] for t_ in o2)), ordtwomax=f2(max(t_["or_per_year"] for t_ in o2)),
+                     ordtwolomin=f2(min(t_["lo"] for t_ in o2)),
+                     ordthreemin=f2(min(t_["or_per_year"] for t_ in o3)), ordthreemax=f2(max(t_["or_per_year"] for t_ in o3)),
+                     ordthreehimax=f2(max(t_["hi"] for t_ in o3)))
+            ys = [o["agreed"]["A2_2026"][0] for o in sc["orders"].values()]
+            m.update(ordtwosixmin=pct(min(ys)), ordtwosixmax=pct(max(ys)))
+            ys = [o["agreed"]["A3_2026"][0] for o in sc["orders"].values()]
+            m.update(ordthreesixmin=pct(min(ys)), ordthreesixmax=pct(max(ys)))
+            ys = [o["agreed"]["A3_early"][0] for o in sc["orders"].values()]
+            m.update(ordthreeearlymin=pct(min(ys)), ordthreeearlymax=pct(max(ys)))
+        fc = se.get("fulltext_check")
+        if fc:
+            p_, lo, hi = wilson(fc["faith_yes_fulltext"], fc["faith_relevant_fulltext"])
+            m.update(ftn=fc["n"], ftfull=fc["full_text"], ftcheckkappa=f"{fc['check_strength']['kappa']:.2f}",
+                     ftfaithkappa=f"{fc['faithfulness_reported']['kappa']:.2f}",
+                     ftAtwon=fc["check_A2"]["n"], ftAtwoagree=fc["check_A2"]["agree"],
+                     ftAonen=fc["check_A1"]["n"], ftAonenone=fc["check_A1"]["fulltext"].get("none", 0),
+                     ftAoneexec=fc["check_A1"]["n"] - fc["check_A1"]["fulltext"].get("none", 0),
+                     ftfaithrel=fc["faith_relevant_fulltext"], ftfaithyes=fc["faith_yes_fulltext"],
+                     ftfaithyespct=pct(p_), ftfaithyeslo=pct(lo), ftfaithyeshi=pct(hi),
+                     ftfaithabs=fc["faith_yes_abstract_among_relevant"])
+        hcf = se.get("human_confirmed")
+        if hcf:
+            p_, lo, hi = hcf["precision"]
+            m["precisioninv"] = max(2, round(1 / (1 - p_))) if p_ < 1 else "--"
+            m.update(precision=pct(p_), precisionlo=pct(lo), precisionhi=pct(hi),
+                     precisionn=hcf["sampled_included"], precisionk=hcf["confirmed"])
+            fc = hcf["findings_confirmed"]
+            m.update(hcn=fc["n"], hcAtwo=fc["arch"].get("A2", 0), hcVc=f"{fc['Vc']:.2f}",
+                     hcfaithyes=fc["faith_yes"], hcfaithn=fc["faith_n"])
+            for k_, t in (("early_A2", "earlyAtwo"), ("y26_A2", "ysixAtwo")):
+                if fc[k_]:
+                    m[f"hc{t}"] = pct(fc[k_][0])
+
+    ra = sel.get("recall_r2_without_assistant_decisions")
+    if ra:
+        m.update(recallassist=f"{ra['recall_median']:.2f}", recallassistlo=f"{ra['recall_lo']:.2f}",
+                 recallassisthi=f"{ra['recall_hi']:.2f}")
     # ---- human check
     hs, hc = hum.get("screening"), hum.get("coding")
     m["humandone"] = "1" if hum.get("complete") else "0"
+    if hs and "precision_adjudicated" in hs:
+        for tag, t in (("adjudicated", "adj"), ("agreed", "agr")):
+            v = hs[f"precision_{tag}"]
+            p_, lo, hi = wilson(v["confirmed"], v["n"]) if v["n"] else (0, 0, 0)
+            m.update({f"prec{t}n": v["n"], f"prec{t}k": v["confirmed"], f"prec{t}": pct(p_),
+                      f"prec{t}lo": pct(lo), f"prec{t}hi": pct(hi)})
+        rc = hs.get("rejected_codes", {})
+        m.update(rejEthree=rc.get("E3", 0), rejtotal=sum(rc.values()))
+    s2, c2 = hum.get("second_screening"), hum.get("second_coding")
+    m["seconddone"] = "1" if s2 and c2 else "0"
+    if s2:
+        m.update(secscrn=s2["n"], secscrkappa=f"{s2['kappa']:.2f}", secscragree=pct(s2["agree"], 1))
+    if c2:
+        m["seccodn"] = c2["n"]
+        for f, tag in (("architecture", "arch"), ("check_strength", "check"), ("domain", "dom"),
+                       ("formalism", "form"), ("faithfulness_reported", "faith")):
+            if f in c2:
+                m[f"seccod{tag}"] = f"{c2[f]['kappa']:.2f}"
     if hs:
         m.update(humscrn=hs["done"], humscrkappa=f"{hs['kappa']:.2f}", humscragree=pct(hs["agree"], 1),
                  humscrhi=hs["human_incl_llm_excl"], humscrhe=hs["human_excl_llm_incl"])
@@ -185,7 +420,8 @@ def main():
         lines.append(rf"\expandafter\def\csname cnt@{k}\endcsname{{{v}}}")
     lines += [r"\newcommand{\cnt}[1]{\@ifundefined{cnt@#1}{\textbf{??#1??}}{\csname cnt@#1\endcsname}}",
               r"\makeatother",
-              r"\newif\ifhumancheck " + (r"\humanchecktrue" if hum.get("complete") else r"\humancheckfalse")]
+              r"\newif\ifhumancheck " + (r"\humanchecktrue" if hum.get("complete") else r"\humancheckfalse"),
+              r"\newif\ifsecondrater " + (r"\secondratertrue" if m.get("seconddone") == "1" else r"\secondraterfalse")]
     (TABLES / "numbers.tex").write_text("\n".join(lines) + "\n")
 
     # ---- tables
@@ -222,18 +458,24 @@ def main():
     rows = [r"\begin{tabular}{@{}lp{0.68\columnwidth}r@{}}", r"\toprule", r"Code & Reason & $n$ \\", r"\midrule"]
     for c in sorted(sel["exclusion_reasons"], key=lambda c: -sel["exclusion_reasons"][c]):
         rows.append(rf"{c} & {REASON[c]} & {fmt_int(sel['exclusion_reasons'][c])} \\")
-    rows += [r"\midrule", rf"& Total excluded (union and snowball) & {m['excltotal']} \\", r"\bottomrule", r"\end{tabular}"]
+    rows += [r"\midrule", rf"& Total excluded & {m['excltotal']} \\", r"\bottomrule", r"\end{tabular}"]
     write("tab_exclusions.tex", rows)
 
-    rows = [r"\begin{tabular}{@{}lrrr@{}}", r"\toprule", r"Decision & $n$ & Agreement (\%) & $\kappa$ \\", r"\midrule",
-            r"\multicolumn{4}{@{}l}{\textit{Screening (include / exclude / unsure)}} \\",
-            rf"\quad Union records & {fmt_int(ag['union']['n'])} & {m['agreeunion']} & {m['kappaunion']} \\",
-            rf"\quad Snowball candidates & {ag['snowball']['n']} & {m['agreesnow']} & {m['kappasnow']} \\",
-            r"\multicolumn{4}{@{}l}{\textit{Coding of included studies}} \\"]
+    rows = [r"\begin{tabular}{@{}lrrrr@{}}", r"\toprule", r"Decision & $n$ & Agr.\ (\%) & $\kappa$ & $\kappa^{*}$ \\", r"\midrule",
+            r"\multicolumn{5}{@{}l}{\textit{Screening (include / exclude / unsure)}} \\"]
+    for route, lab in (("union", "Stage 1 (union)"), ("search2", "Stage 2"), ("snowball", "Snowball candidates")):
+        a = ag[route]
+        rows.append(rf"\quad {lab} & {fmt_int(a['n'])} & {pct(a['agree3'], 1)} & {a['kappa3']:.2f} & {a['kappa3_wo_both_unsure']:.2f} \\")
+    for route, lab in (("audit", "Recall audit"), ("audit_ext", "Audit extension")):
+        if route in ag:
+            a = ag[route]
+            rows.append(rf"\quad {lab} & {a['n']} & {pct(a['agree3'], 1)} & {a['kappa3']:.2f} & -- \\")
+    rows.append(r"\multicolumn{5}{@{}l}{\textit{Coding of included studies}} \\")
     for f, lab in (("architecture", "Architecture"), ("check_strength", "Check strength"), ("domain", "Domain"),
                    ("formalism", "Formalism"), ("faithfulness_reported", "Faithfulness reported")):
-        rows.append(rf"\quad {lab} & {n} & {pct(cod['agreement'][f]['agree'], 1)} & {cod['agreement'][f]['kappa']:.2f} \\")
-    rows += [r"\bottomrule", r"\end{tabular}"]
+        rows.append(rf"\quad {lab} & {n} & {pct(cod['agreement'][f]['agree'], 1)} & {cod['agreement'][f]['kappa']:.2f} & -- \\")
+    rows += [r"\bottomrule", r"\multicolumn{5}{@{}l}{\scriptsize $\kappa^{*}$: records that both screeners marked unsure removed.} \\",
+             r"\end{tabular}"]
     write("tab_agreement.tex", rows)
 
     doms = sorted(DOM, key=lambda d: -m.get(d, 0))
@@ -272,7 +514,8 @@ def main():
     rows += block(f"Language-model families ({m['lmstudies']} studies name one)", ana["lm"]["counts"], 9) + [r"\midrule"]
     rows += block(f"Symbolic engines ({m['enginestudies']} studies name one)",
                   [(k.replace("&", r"\&"), v) for k, v in ana["engine"]["counts"]], 9) + [r"\midrule"]
-    rows += block(f"Benchmarks ({m['benchstudies']} studies name one)", top_b, 9)
+    rows += block(f"Benchmarks named by $\\geq$5 studies ({m['benchstudies']} studies name one)",
+                  [x for x in top_b if x[1] >= 5], 50)
     rows += [r"\bottomrule", r"\end{tabular}"]
     write("tab_entities.tex", rows)
 
@@ -312,6 +555,8 @@ def main():
     spec.loader.exec_module(q)
     (TABLES / "query_lm.txt").write_text(q.LM_BLOCK + "\n")
     (TABLES / "query_sym.txt").write_text(q.SYMBOLIC_BLOCK + "\n")
+    (TABLES / "query_lm_add.txt").write_text(q.LM_BLOCK_ADD + "\n")
+    (TABLES / "query_sym_add.txt").write_text(q.SYMBOLIC_BLOCK_ADD + "\n")
     print(f"[s15] wrote {len(m)} macros and tables")
 
 

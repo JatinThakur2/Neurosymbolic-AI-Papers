@@ -21,3 +21,16 @@ saw only the protocol, its prompt, its batch and the viewer, never another revie
 
 The agents were instances of Anthropic Claude models; model versions were not recorded for every batch
 (see the paper, Sections III-I and X).
+
+## Revision 2 (second referee report)
+
+| File | Stage | Output files |
+|---|---|---|
+| `07_screener_revision2.md` | Screening of stage-2 records, the recall audit (second screener) and its extension, and the known-item records (the protocol path is `data/decisions/`) | `screening/search2_screener_{A,B}.csv`, `audit_screener_B.csv`, `audit_ext_screener_{A,B}.csv`, `knownitem_screener_{A,B}.csv` |
+| `02_screening_adjudicator.md` | Adjudication in revision 2 used the same prompt, with the protocol path updated | `screening/search2_adjudication.csv`, `audit_ext_adjudication.csv`, `knownitem_adjudication.csv` |
+| `03_coder.md`, `04_coding_adjudicator.md` | Coding of the studies included in revision 2 | appended to `coding/coder_{A,B}.csv`, `coding/adjudication.csv` |
+| `08_supplementary_coder.md` | Contribution type and all applicable mechanisms (two coders) | `coding/secondary_coder_{A,B}.csv` |
+| `09_contribution_adjudicator.md` | Adjudication of contribution-type disagreements | `coding/secondary_adjudication.csv` |
+| `10_fulltext_coder.md` | Full-text check of check strength and faithfulness reporting | `fulltext_check/fulltext_codes.csv` |
+
+Placeholders (`{BATCH}`, `{N}`, `{OUT}`, `{TAG}`) were filled per batch. Agents shared a scratchpad directory; from the second batch onwards prompts told them to use private file names, and every output was checked against its batch (row count, record order).

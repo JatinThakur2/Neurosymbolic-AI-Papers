@@ -20,7 +20,9 @@ from config import norm_title  # noqa: E402
 
 def concat(pattern, out, extra=None):
     rows, fields = [], None
-    for f in sorted(glob.glob(str(W / pattern))):
+    patterns = [pattern] if isinstance(pattern, str) else pattern
+    files = [f for p in patterns for f in sorted(glob.glob(str(W / p)))]
+    for f in files:
         with open(f, encoding="utf-8") as fh:
             rd = csv.DictReader(fh)
             fields = fields or rd.fieldnames

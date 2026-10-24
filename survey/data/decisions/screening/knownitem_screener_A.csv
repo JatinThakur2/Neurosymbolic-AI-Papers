@@ -1,0 +1,7 @@
+rid,decision,code,rationale
+r2bf5e844,exclude,E3,E3 (R3) LLM reasoning with premise prioritisation and memory; no formal system or solver.
+rd615e533,exclude,E3,E3 (R3) Probing LLMs on conditional/modal inference patterns; no symbolic system generates or certifies items per abstract.
+r5a1c91eb,exclude,E3,E3 (R3) Forecast consistency metric via logically related questions and arbitrage; no explicit formal system evident.
+rb784dedc,exclude,E3,E3 (R3) Self-supervised logic-enhanced training of LLMs; abstract names no explicit formal system or solver.
+rcddc76c4,include,,Logic rules augment data and give consistency regularizer training signal for RoBERTa QA models.
+rcfd664bd,exclude,E3,E3 (R3) behavioural consistency tests of ChatGPT; no explicit formal system or solver involved

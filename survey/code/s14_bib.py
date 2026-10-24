@@ -73,7 +73,8 @@ def clean_text(s):
         if ch in UNI:
             out.append(UNI[ch])
         elif ord(ch) < 128 or ch in LATIN1_OK:
-            out.append({"&": r"\&", "%": r"\%", "#": r"\#", "_": r"\_"}.get(ch, ch))
+            out.append({"&": r"\&", "%": r"\%", "#": r"\#", "_": r"\_", "^": r"\textasciicircum{}",
+                        "~": r"\textasciitilde{}"}.get(ch, ch))
         else:
             out.append(unicodedata.normalize("NFKD", ch).encode("ascii", "ignore").decode())
     return re.sub(r"\s+", " ", "".join(out)).strip()

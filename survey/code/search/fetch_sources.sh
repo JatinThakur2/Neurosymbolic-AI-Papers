@@ -14,10 +14,14 @@ git -C "$DEST/paperlists" checkout "$PAPERLISTS_COMMIT"
 git -C "$DEST/paperlists" show d4c51fa:iclr/iclr2025.json > "$DEST/paperlists/iclr/iclr2025.json"
 git -C "$DEST/paperlists" show 33f9884:iclr/iclr2026.json > "$DEST/paperlists/iclr/iclr2026.json"
 
-# ACL Anthology metadata (ACL 2020, EMNLP 2020 and EMNLP 2025 main volumes).
+# ACL Anthology metadata: ACL 2020, EMNLP 2020 and EMNLP 2025 main volumes (stage 1), and the main
+# volumes of ACL 2021-25, EMNLP 2021-24 and NAACL 2021-25 used to complete Source B (revision 2).
 ANTHOLOGY_COMMIT=73f3b3aa2f20b6dd71b75a8190c596258243bf5c
 git clone --filter=blob:none --no-checkout https://github.com/acl-org/acl-anthology "$DEST/acl-anthology"
-git -C "$DEST/acl-anthology" sparse-checkout set --no-cone /data/xml/2020.acl.xml /data/xml/2020.emnlp.xml /data/xml/2025.emnlp.xml
+git -C "$DEST/acl-anthology" sparse-checkout set --no-cone /data/xml/2020.acl.xml /data/xml/2020.emnlp.xml /data/xml/2025.emnlp.xml \
+  /data/xml/2021.acl.xml /data/xml/2022.acl.xml /data/xml/2023.acl.xml /data/xml/2024.acl.xml /data/xml/2025.acl.xml \
+  /data/xml/2021.emnlp.xml /data/xml/2022.emnlp.xml /data/xml/2023.emnlp.xml /data/xml/2024.emnlp.xml \
+  /data/xml/2021.naacl.xml /data/xml/2022.naacl.xml /data/xml/2024.naacl.xml /data/xml/2025.naacl.xml
 git -C "$DEST/acl-anthology" checkout "$ANTHOLOGY_COMMIT"
 
 # Curated corpus (Source A).

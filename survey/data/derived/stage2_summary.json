@@ -1,0 +1,11 @@
+{
+  "augmented_hits": 2511,
+  "v2_hits_within": 1829,
+  "new_hits": 682,
+  "r2_added_screened": 3,
+  "new_in_v2_union": 3,
+  "new_snowball_candidates": 24,
+  "new_in_audit_sample": 8,
+  "duplicate_titles": 0,
+  "screened_in_stage2": 651
+}

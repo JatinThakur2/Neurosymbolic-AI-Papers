@@ -1,0 +1,764 @@
+rid,contribution_type,mechanisms,rationale
+r1cdd9f60,method,A1,LLM writes Python over Pandas dataframes; interpreter computes answer.
+ra6a7aa23,benchmark,,Benchmark of CO solvers; abstract does not specify a symbolic mechanism in evaluated pipelines.
+rfcd51f39,method,A3;A4,"LLM-hypothesised abstract world model stored, verified by experience and steers exploration."
+re4ee31bb,method,A1;A3,Logical forms executed on KB; constrained decoding and schema retrieval steer generation.
+r15637e1e,method,A1;A4,Generated analysis code executed; successful trajectories stored in memory and reused.
+r2dc08068,method,A1;A2;A4,LLM writes PDDL for planner; environment feedback refines reusable domain file.
+r81ae1cde,method,A7,VLM selects subproblems from visualised instance; off-the-shelf solver optimises solution.
+rd458d236,method,A3,Compositional algebra and scope mechanism constrain neural parser to well-formed DRT.
+rd6ab748e,method,A1,Model generates program tokens executed by geometry solver.
+r2a0a856e,analysis,,Evaluation of LLM decomposition/composition in natural-to-formal conversion; no symbolic mechanism.
+ra71d911c,method,A1;A7,Perception and language models feed symbolic planner that decides actions.
+re0d57e54,method,A2,Symbolic reasoning module accepts or rejects neural candidate generations.
+re9e1108c,method,A2;A4,LLM-aided program synthesis learns reusable DSL preference programs checked on demonstrations.
+rb7fa09b7,method,A3,Grammar-constrained decoding masks tokens during generation.
+ra1c2ff75,benchmark,A1,Financial QA benchmark solved via program synthesis and execution.
+raf8e4e91,benchmark,A1,OPF modelling benchmark; LLMs write executable optimisation models solved by solver.
+rcde627a9,method,A3;A7,VLM grounds propositions; temporal-logic model checking retrieves relevant video segments.
+rdbefa82b,method,A5,Symbolic program traces distilled into MLLM chain-of-thought training.
+r04874549,method,A3,"Symbolic decomposition, search routing and resolution structure the LLM reasoning."
+r07214b1f,method,A3,LLM-derived surrogate grammar guides symbolic program synthesis search.
+r0185a5bf,method,A5,Programs synthesise Turing-machine-style CoT training data.
+r0690ffd9,method,A2;A3,Verifier-guided regeneration loop; static analysis normalises inputs.
+r16bb57d2,method,A1,Algorithmic and symbolic paradigms execute generated solutions.
+r108ca371,benchmark,A1,Bayesian reasoning dataset; logic-based models translate to probabilistic programs.
+r21c6b045,method,A2;A5,Symbolic mutation synthesises Lean training theorems; prover searches with Lean checking.
+r6b046c34,method,A1,LLM-based formal logic backbone uses PDDL planning to produce plans.
+ra2c0bf92,method,A2,Evolutionary program search with evaluator feedback selecting candidates.
+r6048741f,method,A2,Verifier feedback drives tree search refinement and filtering of Verus programs.
+rd562c497,method,A2,Hypothesis programs verified by executing on observed examples.
+rc8e2248d,benchmark,,Logic puzzle benchmark for LRMs; no symbolic mechanism in evaluated pipeline.
+r2080cdd7,method,A2;A5,NL-FL bootstrapped training data; iterative proof writing with Lean feedback.
+r24171a33,method,A2;A5,Formal logic verification feedback used in SFT data and policy optimisation.
+r055cb4be,method,A2;A4,LLM-generated heuristic optimisers evaluated and reused across downstream tasks.
+rbc584267,benchmark,A1,Hierarchical table dataset; hierarchy-aware logical forms executed for QA.
+r10020723,method,A1,LLM extracts structures; ASP knowledge base computes structured representation.
+r62710d49,method,A2,"Proof search with LM tactics checked by proof assistant, guided by value function."
+r427dce68,method,A3,Regex-constrained decoding for diffusion LLMs.
+re2a5ce52,method,A1,LM predicts natural logic operators; deterministic inference system yields verdict.
+re742c2dc,method,A2,Self-play conjecturing and proving with Lean/Isabelle verification as reward.
+rd68cad81,method,A1;A4,Library of validated code skeletons reused to synthesise executable policies.
+rbf2428aa,benchmark,A3,Convexity benchmark; proposed agent uses AST parser to steer decomposition.
+rd6a28a29,method,A1;A2;A4,LLM lemmas as code feed certified verification functions; refined via feedback.
+ree88c68b,method,A1,LLM writes FOL goals; OBTEA algorithm constructs behaviour tree.
+r8e6dfc90,method,A3;A7,Analytics engine computes facts that guide LLM report generation.
+r37df01f4,method,A2;A4,LLM heuristic code selected by planner evaluation and reused across domain tasks.
+re0440fca,method,A2,LLM-proposed query functions; symbolic backends learn and verify reductions.
+r66c4c1cf,method,A1,Query agent generates SQL executed against database.
+r9d99f611,method,A2,"LLM proposes dynamical models validated by fit to data, iteratively refined."
+r011d7456,method,A1,"Prompting maps problems to Python, probabilistic algorithms or ProbLog for computation."
+r9a65906c,method,A1;A2;A4,"LLM writes reusable world-model code checked against interactions, used by planner."
+re876f978,method,A4,Interaction traces lifted into reusable logic-grounded skill programs.
+r30b45561,method,A1,LLM writes action language program; solver computes answers.
+r0d87801a,benchmark,A1,Optimisation modelling benchmark evaluating solver-integrated reasoning pipelines.
+rb425a47c,method,A2,Sub-proposition error feedback from Lean drives proof correction.
+r612064d5,analysis,,Analysis of LLM logical reasoning behaviour; no symbolic mechanism.
+r0e2c4e07,benchmark,,Proof engineering benchmark; Lean verification only grades agents.
+rbd25dbcd,method,A1;A2;A5,"Solver-verified dataset, solver-based RL reward, formulations solved by solver."
+ra1406824,method,A2,LLM heuristic evolution with evaluation feedback.
+r9a191058,benchmark,,Verified code benchmark; Lean checking only grades outputs.
+r8c4ab443,method,A1;A3,"Symbolic agent enumerates valid plans, LM scores them; plans executed on KB."
+r73af149f,benchmark,,Formal algebra benchmark; Lean only grades provers.
+rd4a9e13f,method,A1;A2;A4,LLM induces reusable PDDL domains checked by simulation; planner computes plans.
+r5ad3a437,method,A1,LLM supplies commonsense assumptions; formal solver derives conclusions aggregated across samples.
+r917f522d,method,A1;A5,LLM writes spatial constraints solved into demonstrations used to train policies.
+r5f46bb8d,method,A1;A7,NL queries translated to Python programs over VLM perception outputs.
+r7b7ccf8c,method,A1;A2,FOL translation solved by SAT; SAT-based verification selects translations.
+r3af24b4d,method,A1,Generated SQL executed on databases.
+r989f4240,method,A2,Execution traces and feedback used by LLM optimiser to update parameters.
+r9eb18935,method,A2,Lean-based problem solving framework with forward derivation and backward verification.
+r8e5e63eb,method,A1;A5,Tree-structured data synthesis for RL; agent writes optimisation models for solver.
+r5c6500ee,method,A7,LLMs instantiate verbalised strategies; game solver computes equilibrium.
+r34aac216,method,A1;A2,Per-instance programs executed and refined with structural feedback.
+r3bc832b4,method,A1;A3,Constrained decoding to canonical sublanguage deterministically mapped to meaning representation.
+r7dc6cf73,benchmark,,Synthetic reasoning benchmark; no symbolic mechanism in evaluated pipeline.
+r752d0cbb,method,A2,Training target filters incorrect Lean proofs by verifier.
+rdea26305,method,A2,"Equation code evaluated on data; agent optimises from feedback, RL."
+r5b626332,analysis,A1,"Study of steering LLMs to code execution versus text, plus mitigations."
+re80c8fe2,method,A2,Coding agent interacts with Lean for verified proofs.
+r162d22f6,benchmark,,Inductive discovery benchmark; executable comparison only grades theories.
+r7528f105,method,A3,Linearised query structure and operation instructions steer PLM encoding.
+r49c87408,method,A5,Procedural data from formal languages used for pretraining.
+r633d08ff,method,A1;A2,AMPL formulations solved; solver feedback checker and execution reward in GRPO.
+rfaf1d4ce,method,A2;A4;A5,"LLM-written simulation tasks verified, stored in library, generate policy training data."
+r12b1939c,method,A1,Tool agent executes table operations for answer generation.
+re3733c0d,method,A3,Static analysis of stack states guides LLM decompilation.
+rfdd3e1a1,benchmark,,Planning benchmark; plan validator only grades LLM plans.
+r4eeb12bc,method,A3,Logical constraint pseudo-likelihood as training loss.
+r266b0bb7,benchmark,,SQL engine generates test checklists; no mechanism in evaluated models.
+reed5dbaa,method,A1,GPT orchestrates visual programs executed by vision modules.
+r9eac6196,method,A2,Decomposed function implementations searched and selected using tests.
+r11bcdfdc,method,A2,Isabelle verifier feedback guides proof generation at inference.
+r6ee04317,benchmark,,2-SAT diagnostic benchmark; no symbolic mechanism in evaluated pipeline.
+r51bd51a2,method,A1;A2,Formulations to solver code with MCTS using solver outcome feedback.
+r9d3f97de,method,A2,Lean tactic-level verification as RL reward.
+rb6819abd,method,A2,Expert iteration and tree search with Lean verification.
+r1ead1843,method,A1;A2,Symbolic computation refines LLM SOS conjecture; Lean certifies proof.
+r10e36dc2,method,A2;A3,Lean compilation and Mathlib-grounded checker; dependency-graph decomposition and retrieval.
+r3ff6a766,method,A5,Synthetic SQL execution corpus for pretraining neural executor.
+rfb94d02e,method,A1,Program-of-thought code executed for financial reasoning.
+r42bb8e33,method,A3,Incremental parsing rejects inadmissible tokens in decoding.
+r736ee6ed,method,A1;A2;A4,LLM infers reusable action semantics; planner plans; execution feedback updates.
+r4b908b19,method,A2;A5,Symbolic proof search guided by value model trained on generated theorems.
+r97ae3996,method,A1,Code interpreter integrated in reasoning; training data synthesised.
+r9bf8be45,method,A1,Interpreter executes code with LM emulating undefined parts.
+rcf10398e,method,A1,Text mapped to graph representations; selected algorithms executed.
+r9e910ce8,method,A1,LLM plans; Python interpreter performs numerical calculations.
+rf9e4862e,method,A3,Execution of subgoals informs step-by-step decomposed synthesis.
+rbc712825,method,A2;A4,"LLM program skeleton tuned by solver feedback, reused as branching policy."
+r99a7d5e9,method,A2,Line execution results guide within-prompt search until program satisfies examples.
+r3dfe2448,method,A5,Explanations parsed into logic rules that label training data for regularised refinement.
+rd3d4524a,method,A2,Formal verification signals drive self-play proposer and expert-iteration solver.
+rabf69c7a,method,A2,Iterative proof repair using Lean type checker feedback.
+r2e3069a4,method,A2,PPO with compile-check reward among dense rewards.
+r974a9133,method,A1,MLLM translates point clouds into executable Blender scripts.
+r09aef02b,benchmark,,API misuse benchmark; static checks only grade code.
+rc9f8b9ed,method,A2,Expert iteration on Lean-verified proofs.
+rdd704f79,analysis,A2,Explores LLM for planning model edits alongside combinatorial search validation.
+r8f982ce8,method,A5;A7,Temporal rules combine neural predictions; distant supervision data from text patterns.
+r13f57eb5,method,A1;A2;A4,VLM-generated reusable PDDL refined by comparing executions; planner solves.
+ra905e9a3,method,A3,Symbolic transition logic for bounded lookahead and structural retrieval.
+rb083b075,method,A1;A3,Code interpreter computes; neighbour retrieval probes graph structure.
+r23f447b9,benchmark,A2,Agentic benchmark where LLM heuristics are refined via execution feedback.
+r526acd74,method,A3,Predicate logic lexical constraints enforced during decoding.
+r6e8e4460,method,A2;A4,LLM feature code kept if evaluation improves; features reused by model.
+rec5b4ed8,method,A1;A2,"LLM proposes predicates realised by physics solver, solver feedback refines."
+ree311595,method,A2,"Generated molecules verified against logical constraints, feedback refines constraints."
+r07efbd27,method,A3,Finite-automata constraints build SMC proposals for decoding.
+r296c3ace,benchmark,,Risk evaluation framework; executable environments only constitute the test setting.
+rc5a546c3,method,A3,DSL hierarchical representation structures LLM protocol design.
+rb0ff4c85,method,A2,Recursive proof sketches verified by Isabelle.
+rf9b66245,method,A1,Model writes drawing code executed; rendered images returned for reasoning.
+rb8e7c283,method,A1;A2,Coding agents produce executable optimisation code with validation and repair loops.
+r1f40020b,analysis,,Cognitive bias study; neuro-symbolic generation only creates test problems.
+r520c7235,method,A2,"Expert iteration, RL and self-correction with Lean compiler feedback."
+r4fdcc1f8,method,,Spectral attention diagnostics; Lean only labels validity.
+ra406fbaf,benchmark,A1,Math benchmark with Python program solutions; model generates programs.
+r12a103a9,method,A2,Autoformalized sketches with rule masking; Aesop and step provers checked by Lean.
+r5aaa7eac,benchmark,A7,Crossword benchmark; constraint satisfaction solver combines QA model candidates.
+r59be65bf,method,A2,Self-sampled solutions checked by execution during training.
+r35472553,method,A5,Symbolic pipeline synthesises verified geometry data and plotting-code targets.
+rca8a5faa,method,A1,RL-learned abstractions connected to symbolic tools for solutions.
+rae1abcaf,analysis,,Evaluation metrics for implicit world models; no symbolic mechanism.
+re266a131,method,A2,Sphere neural reasoner checks ChatGPT syllogistic decisions and feeds back via prompts.
+r7dae1df3,method,A2,LLM architecture edits evaluated and selected in evolution.
+r1476b927,method,A1;A2;A5,Induction on synthetic program data; programs checked on examples and executed.
+r3334bd82,method,A5,Skip-tree training targets derived from formula tree structure.
+r571ed5d4,method,A3,Program analyzer retrieves non-local context for code completion.
+r661890dc,method,A1,Generated Python programs executed on websites.
+re3f61547,analysis,,Empirical study of transformers on logic fragments; no symbolic mechanism.
+raa75ebe1,method,A1,Agents generate executable code solving routing problems.
+r7dc50255,method,A1,Tool-integrated reasoning executes code and symbolic solvers.
+r7acba57d,method,A5,Symbolic planner plans compiled into procedures; no planner at test time.
+rbaaacf5e,benchmark,A5,Benchmark plus fine-tuning on symbolically generated synthetic data.
+r69f94571,analysis,A1,Codex semantic parsing to executable meaning representations.
+r04ccb8d7,method,A3,MDD enumerates constrained sentences; GPT-2 ranks them.
+r2e90c051,method,A5,Transformers trained on synthetically generated rule-reasoning data.
+raa04f2fb,method,A1,MLLM generates and executes image-processing and computation code.
+rf7949d7b,benchmark,,Atmospheric science benchmark; symbolic perturbation only generates problems.
+ra6f72f2f,method,A1,LLM hidden states control symbolic arithmetic network.
+r0de13fa8,method,A1,Calculator-using models offload arithmetic to symbolic system.
+r9f4e642a,benchmark,,TLA+ modelling benchmark; checkers only grade outputs.
+r698b51ae,method,A1;A2;A4,"Reusable function library learned via refactoring, verified by execution."
+rb3c57dd0,benchmark,A2,Equation discovery benchmark; evaluated LLM-SR methods use data-fit feedback.
+rc4867a9e,method,A3;A7,ILP allocates actions under feasibility constraints for LLM agents.
+r2a248128,method,A2;A4,"LLM-extracted executable rules stored, check and regulate agent actions."
+raff04329,method,A2,Weighted MaxSAT selects consistent answers among model candidates.
+rdaf96b33,method,A2,Lean verification of proofs selects LLM answers.
+re56481df,method,A1;A3,Plan-based templates and constrained infilling decode executable SQL.
+r218783b6,method,A2,Expert iteration and DPO with Lean compiler feedback in BFS.
+r97819a7d,method,A2,Autoformalizer RL with syntactic and prover feedback rewards.
+r4e5a66e9,benchmark,,Verifiable code benchmark; equivalence checking only grades outputs.
+rcee8d9a3,method,A2,ATP symbolic equivalence scores and selects formalisation candidates.
+r8a87bae4,method,A2,Isabelle autoformalization verification rejects inconsistent solutions.
+re66c4b28,analysis,A5,Study of BERT trained on generated logical reasoning data.
+r0eb1bc7b,method,A1,Hidden states encoded into neurosymbolic vectors for computation.
+r93d7b991,method,A1;A2,Database error signals detect and guide correction of SQL.
+r3ab7ef65,method,A5,Data generation framework using formal-structure augmentation for training translator.
+raccec608,method,A1,RL agents act through stateful file execution.
+r96d2bfb9,benchmark,,Rocq evaluation framework; proof obligations only grade specifications.
+r9019a341,method,A1;A4,"LLM-written reward code executed on symbolic states, reused in RL."
+r785313e9,method,A1;A2,Math LM evaluated with tool use and Lean proof search.
+r794f5551,benchmark,,IR benchmark; verifier and equivalence checks only grade.
+rbba59ac8,method,A1;A4,Action schema library feeds symbolic planner after ranking.
+r6caabb12,benchmark,A7,Visual reasoning benchmark; neuro-symbolic approach reasons logically over VLM outputs.
+r7dd3b9d1,method,A2,Rule-based analysis checks and repairs LLM-generated tests.
+r3c2b28df,method,A1;A7,LLM parses input to worksheet; runtime decides policy; LLM verbalises.
+r254fcd16,benchmark,,Fallacy benchmark; logic-programming oracles only test LLMs.
+r8eded823,analysis,,Empirical study of LLMs on PBE; no symbolic mechanism stated.
+r44448bcd,method,A1;A4,LLM writes code over analysis API executed by modules; new behavioural modules saved and reused.
+reb1208e1,method,A3,Static analyzer computes semantic relations that condition program generation during training and decoding.
+rec5b0aa1,method,A2;A4,Code-style plans executed; environment feedback triggers refinement; successful plans stored as reusable skills.
+rc55bb913,analysis,A1,Compares calibration of program-aided (interpreter-executed) reasoning against chain-of-thought.
+r50af759f,method,A2,LLM proposes candidate programs; evaluator feedback selects and drives evolutionary improvement.
+rf01d288d,method,A7,Agent traces mapped into structural causal models; do-calculus inference makes the detection decision.
+r5877c953,benchmark,A2,Corrected miniF2F benchmark; evaluated pipeline autoformalizes then proves with Lean checking proofs.
+rcf40140f,method,A7,Foundation models as relational plugins feeding a Scallop logic program that computes results.
+rdf7ff99c,method,A5,"PCFG samples programs, BART verbalizes them to synthesize training data for parsers."
+r31e46b7f,benchmark,,SAT-derived puzzle benchmark; solver only generates and validates problems; LLMs answer directly.
+r40dfc799,method,A3,Language model augmented with mathematical/logical function features that shape next-word prediction.
+rd7bfffae,method,A2;A3,LM proof search checked by Isabelle; hammers (ATPs) handle premise selection.
+r90234048,method,A2;A3,Sketch decomposes program into LLM-filled holes; input-output tests check and localize fixes.
+r5715c6fc,method,A2;A5,RL with rule-based SAT verification reward; SAT generator builds curriculum training tasks.
+r7cba4758,method,A1;A2;A5,LLM writes optimization models solved by solver; solver feedback rewards RL and filters training data.
+ra7dc92c7,benchmark,,Structural generalization semantic parsing dataset; evaluated parsers output logical forms without symbolic execution.
+r59de26e5,method,A5,"Rule-based backward deduction builds logic trees, instantiated by LLM, as offline training data."
+r722fd25d,analysis,A2;A4,Analyses LLM logic-theory induction with feedback from a formal inference engine on induced rules.
+r9a62e4ca,method,A1,Pretrained table encoder for semantic parsers whose generated queries/programs are executed on tables.
+r645b6f6a,method,A1;A2;A3;A7,VLM grounds circuit diagram into executable IR with rule retrieval and verification; symbolic solver derives expressions.
+r7d61d023,method,A5,MCTS-based Lean theorem synthesis with screening produces SFT data for provers.
+r0acddc1f,benchmark,A1,Table QA dataset is main contribution; proposed ARC method executes generated Pandas code.
+ra30b90aa,method,A1;A5,Solver-verified bidirectional synthesis yields training data; trained models write optimization models for solvers.
+r148485c2,method,A7,"Symbolic reasoner builds proofs, with neural unification and rule generation supplying soft knowledge."
+r8e5e1408,benchmark,,Lean subgoal-completion benchmark; Lean only grades evaluated provers' outputs.
+r73f1814f,method,A2;A5,"CoT steps autoformalized to FOL and solver-checked; verdicts drive self-reflection, SFT data and DPO rewards."
+ra8869ee2,method,A2,Each CoT step formalized in Lean 4 and proved to detect hallucinations and select answers.
+r47d55f71,method,A3,Derived logical-form program structures graph and module network for fact-checking classifier.
+r1556ed41,method,A3;A5,Neuro-symbolic loss over facts and rules fine-tunes LLM; deployed model runs without rules.
+rd881ed06,method,A2,Symbolic verifier feedback on constraint satisfaction trains value function guiding LLM planning.
+rd7cd4fb2,method,A1;A2,LLM formalizes problems for logical solver; solver-verified concrete instantiations give semantic self-verification.
+r443beac1,method,A2;A4,"LLM hypothesizes actionable knowledge, validated by symbolic tools, stored and refined across tasks."
+r209d7fc1,method,A2,"Lifelong-trained prover searches proofs checked by Lean, with curriculum and dynamic premise database."
+r5e58413d,benchmark,,"Rule-following benchmark; LLMs evaluated directly, symbolic tools only as oracle side experiment."
+r0422d6a3,method,A2,"Model proof proposals analysed and completed with Isabelle automation, proof assistant checks within tree search."
+r24f1bc06,method,A2;A3;A4,MaxSAT solver revises LM beliefs in persistent symbolic memory; stored beliefs fed back as context.
+rb3299d36,method,A2;A4,LLM-written operator code evaluated within MCTS; evolved operators reused inside MOEAs.
+r99577b6b,method,A4,LLM-generated planning programs stored and reused to produce candidate plans; learned selector chooses.
+r787742b2,method,A2;A3,"Agentic prover iteratively refines proofs from proof-assistant feedback, with library search."
+r0e774100,method,A1;A2,"LLM formulates MILP models and solver code; solver executes, with evaluation-driven debugging."
+r8e52c498,method,A1;A7,MLLM parses geometry diagrams and text into symbolic form; symbolic solver computes answers.
+r33686293,method,A2,Evaluation of LLM-proposed equations decomposed per symbolic term rewards test-time RL refinement.
+r3c0238e9,method,A3,Tractable HMM computes constraint probabilities that guide GPT-2 decoding toward lexical constraints.
+r6a442be7,method,A7,SQL-like query engine executes queries while LLMs evaluate natural-language conditions on unstructured items.
+r7f0629ef,method,A1,LLM generates symbolic program representations executed by differentiable predicate modules.
+rdd6ec86a,benchmark,,Benchmark probing LLM program-execution reasoning under formal semantics; LLMs answer directly.
+re9cc5a89,benchmark,A1,TableQA game and dataset where LLM writes code that an oracle executes on hidden tables.
+r4a85d8ca,method,A3,Causal graph and state machine constrain multi-agent abductive reasoning transitions and search.
+r6baa099a,benchmark,A2,"Lean task benchmark; evaluated agentic provers iterate with Lean feedback, Lean also grades."
+rf1dea116,method,A2;A4,LLM-proposed logic trees scored by temporal point process likelihood; extracted rules reused in model learning.
+r7145390a,method,A2;A3,"Equality graphs prune search, aggregate rewards and enrich evaluation feedback for LLM expression proposals."
+rafb9a6d1,benchmark,,Hypothetical-action VQA dataset; baseline solvers are neural VQA models.
+r44da8b7e,method,A3,Span-tree CKY parsing structures program composition during semantic parsing.
+r232e4111,method,A3;A5,SAT solving over CNF-encoded circuits decides which neurons get forget or retain fine-tuning.
+rabcc2a78,method,A1;A2,LLM writes optimization models solved by solver; structure- and solution-side verification drive correction.
+rccac804b,method,A1;A3,Parser generates logical forms with fuzzy operators executed over KB; KB triples aid disambiguation.
+rbf1fa053,method,A1,Multi-turn preference learning for tool-integrated reasoning with code interpreter executing generated code.
+r4014d545,method,A2;A4,LLM writes observation/action model code; racing over RL performance selects; chosen models reused in training.
+reaf641ba,method,A2,LLM-generated programs executed on ARC examples and scored to guide program search.
+r1bc4b29c,method,A1,Hybrid CoT/PoT instruction tuning; program-of-thought rationales executed by Python interpreter.
+rbea0e4b3,method,A2,Code interpreter and tools filter candidate solutions before small-LM verification at test time.
+r96e8617a,method,A3;A5,Event-relation logic injected via retrieved constraints and logic-synthesized fine-tuning data.
+r2f322bd6,benchmark,,Molecular reasoning benchmark; symbolic verification only grades LLM answers.
+r3f6cb6bd,method,A5,Formal-logic deduction rules generate synthetic corpus to train LMs offline.
+rd45f1e27,method,A2;A3,Backward chaining pseudo-steps decompose goals; proofsteps checked by interactive prover.
+rd92d8ed7,analysis,A1,Systematically evaluates LLMs generating full PDDL solved by classical planners.
+ree89803d,method,A2;A3,"WZ proof plans become Lean sketches; LLM prover discharges Lean-checked subgoals, Lean-verified bootstrapping."
+refec56ac,method,A1,LLM translates deictic prompts to FOL rules; differentiable forward reasoner infers targets on scene graphs.
+r50ca5848,method,A3,Retrieval of Mathlib concept definitions grounds LLM autoformalization.
+r1d143354,method,A4,LLM synthesizes and adapts modular programs for logical primitives reused by programmatic agents.
+re2d8a330,method,A4,Neuro-symbolic RL blending neural and logic-rule policies; symbolic policy rules reused across episodes.
+r56ca0cde,method,A3,"Model trained to recursively decompose reasoning into isolated subtask calls, evaluated on SAT."
+r6b396b60,method,A3,DFA-encoded logical constraints with HMM guide LLM decoding.
+r982a2b15,method,A5,A* search over a ToM DSL generates adversarial stories for evaluation and fine-tuning.
+rba31435a,method,A5,Automatically collected table-to-logical-form pairs pretrain model for table-to-text generation.
+rc21396bd,benchmark,,Causal-graph-generated daily-activity queries evaluate LLMs directly; symbolic part only creates and analyses queries.
+rab6cec2c,method,A4;A7,VLM mines visual concepts; generated symbolic rules reused by interpretable reasoner for decisions.
+r4f8abb9a,method,A2;A4;A5,LLM-written planning domains reused to generate plans for SFT data and as RL reward functions.
+r5f4af8c0,benchmark,A3,KGQA benchmark built with symbolic verification; evaluated KG-RAG systems retrieve over the knowledge graph.
+rf3eeee6b,method,A4,LLM-proposed symbolic predicates and causal processes learned into reusable world models for planning.
+r5ca89abb,method,A1;A3,Modeling-tree taxonomy search decomposes problems; LLM writes optimization models solved by solver.
+rf372919c,method,A1;A5,AST-based complexity score stratifies synthesized program-of-thought training data; programs executed.
+r59c39e16,method,A1,Optimization benchmark plus ReSocratic data synthesis; LLMs call code solvers for answers.
+r1e0f1102,method,A2;A3,Symbolic scaling tactics and goal pruning combined with LLM rewriting in prover-checked proof search.
+re3a4cd40,method,A2,Candidate programs executed on test inputs; inconsistent hypotheses eliminated using LLM-predicted outputs.
+r6890f25f,method,A5,Lean analyzer-augmented Mathlib NL-formal dataset trains autoformalization translator.
+rbb0b9d05,method,A2;A3,Theorem precedence graphs prune LLM theorem prediction; stepwise symbolic executor applies and checks theorems.
+rbb49cc85,method,A1,"Multilingual program-of-thought: generated programs executed, answers aggregated across languages."
+rfca3f53b,method,A1,LLM writes SQL executed over tables within iterative heterogeneous RAG pipeline.
+r58786fe5,method,A3;A7,SAE concepts mapped to propositions; logical rules infer structures and steer model activations.
+r2962fbdc,method,A3;A5,LLM-extracted logical specifications and differentiable reasoner supply training losses for scene-graph generator.
+r70b0f3b6,method,A5,Math solvers and projected MCMC validate mutated problems to create fine-tuning data.
+r9982fc50,method,A3,Compiled neural networks encoding explicit rules plugged into transformer to execute symbolic operations.
+r23bd7ed5,method,A4,VLM abstracts demonstrations into programs of thought stored in a memory library and retrieved.
+r40769616,method,,Tree-edit-distance metric and benchmark for autoformalization evaluation; no LM integration mechanism.
+r04590057,benchmark,,Expert condensed-matter benchmark; symbolic manipulation only grades LLM answers.
+r69c23c69,method,A1,LLM formulates planning problems as optimization programs solved by optimization solvers.
+rb8c6568d,method,A3,Symbolic working memory performs rule grounding by predicate matching; LLM implements selected rules.
+r918e50a0,method,A3,Symbolic belief graphs track characters' beliefs and retrieve relevant sentences for LM answering.
+r505e7df5,analysis,,Framework for evaluating compositional causal reasoning; LMs answer directly.
+r64780476,method,A2,"LM proposes probabilistic programs, fitted and scored, with critique feedback driving model revision."
+r546f708d,method,A1;A2,Problems formalized as Lean theorems and proved or disproved with Lean checking.
+r71a25486,benchmark,A2;A3,Definition autoformalization datasets; strategies include proof-assistant feedback refinement and library grounding.
+r8265ef4f,benchmark,,Autoformalization metric and benchmarks; symbolic equivalence only grades outputs.
+r37d6a8c5,analysis,A2;A4,Studies LM rule induction where symbolic interpreter filters proposed rules applied to new instances.
+r3750b732,method,A1;A2,LLM compiles intent into Dafny/Z3 specifications that prove compliance; verdicts drive iterative refinement.
+r0a0602e5,benchmark,,Description-logic VQA dataset generated by programs; evaluated VQA models answer directly.
+r5ed1e5a9,method,A5,Theorem-prover step-level logical rewards construct training data for an LLM.
+rb2fb6f12,method,A4,"LLM extracts temporal logical rules, dynamically updated and reused for TKG reasoning."
+r9cba5b44,benchmark,A1,Symbolic math benchmark; evaluated systems include code tools and hybrid LLM-CAS solving.
+r89bf1f29,method,A1;A5,LLMs generate executable SCATE code; code-validated synthetic data trains small code generators.
+re0a99963,method,A1;A2,"LRM writes and runs solver code, revising from outputs; corrected traces used for SFT and RL."
+r7ce7b370,benchmark,A2,Factorio environment where agents synthesize programs executed in-game with error feedback.
+r6975c90e,method,A1,LLM translates tax cases into logic programs; symbolic solver calculates obligations.
+r34f3b46a,method,A2;A4,LLM-generated heuristics evaluated in evolutionary search; best heuristics reused for optimization problems.
+r4317b7f6,method,A2,LLM-guided evolutionary symbolic regression with fitness evaluation and learned concept library.
+r46e18dd8,benchmark,,Temporal-database-built TSQA benchmark; symbolic DB only generates questions and grades.
+r92b5842f,benchmark,A1,Industrial MILP benchmark; evaluated systems translate natural language into solver-executable formulations.
+rb327ee1d,analysis,,Probes LMs on generalized quantifiers via auto-constructed model-checking datasets.
+r24fa22be,method,A7,Resolution-based logical reasoner over KB with LLM entailment model integrated into inference rule.
+r97476a41,method,A1,LLM generates Prolog predicates and formulas; Prolog interpreter computes arithmetic answers.
+rf832bdef,benchmark,,Proof-tree-specified problem generation evaluates LLMs answering directly.
+r06eea408,method,A1;A2,"DAG search over LLM formulations and heuristics, grounded by generated verification code and solver execution."
+r764cc16d,method,A2;A5,Verifier outputs curated via AST normalization into training data; fine-tuned SLM invariants checked by verifier.
+r6fb3f71a,method,A3,Static analysis constructs contexts guiding seq2seq type prediction with iterative decoding.
+r0e853bba,benchmark,A1,Conversational finance QA dataset; neural-symbolic baselines generate executable reasoning programs.
+r9029ce04,method,A3,"Hybrid NQG-T5: induced grammar-based parser used when it covers input, T5 fallback otherwise."
+r2b5b3cf1,method,A2;A4,FunSearch evolves code acquisition functions scored by evaluations; discovered functions reused on new problems.
+r1bce7a6c,method,A1,Seq2seq maps probability problems to declarative representation executed by probabilistic programming system.
+raaede5d8,benchmark,,Code execution reasoning benchmark; execution only creates ground truth for grading.
+r9a5225bf,method,A2;A4,LLM-guided synthesis checked on examples; Stitch compresses programs into documented reusable libraries.
+r16bb7249,method,A7,Symbolic SLD-resolution solver controls proof; LLM called only to supply missing facts.
+re0a00f6d,benchmark,,Program-generated visual math variants; VLMs evaluated directly.
+rdabcbba2,benchmark,,Synthetic circuit benchmark with auto-derived labels; MLLMs evaluated directly.
+reeceb7b7,method,A2;A4,Game-theoretic co-evolution of LLM-written solver and instance-generator programs evaluated and pooled.
+r52f1e169,method,A5,Soft Horn rule reasoning produces probabilistic labels to fine-tune PLM with revised loss.
+r164e3a2d,method,A2,LLM proposes hypotheses; differentiable simulations give observational feedback and optimize parameters.
+r35dff64d,benchmark,,First-order concept synthesis benchmark; exact evaluation and SMT only score model formulas.
+r3c7effab,method,A4;A5,PLM-generated rule set iteratively expanded and used to label data training relation extractor.
+r0b58eee0,method,A2;A3,Stepwise Lean proof search combining critic and heuristic rules for tactic selection.
+rc7b38fa9,method,A2,Trajectory events translated to LTL automata yielding dense rewards for GRPO training.
+rb21543ad,method,A7,Guardrail model category probabilities fed into logic-rule PGM that makes final moderation decision.
+r55b5226e,method,A2,LLM-generated basis terms fitted and influence-scored for pruning within MCTS search.
+rb7db1232,method,A2;A3,"MaxSAT fault localization yields sketches; LLM fills them, test-suite counterexamples drive CEGIS loop."
+rbd73b381,method,A2;A4,Niche-based LLM evolutionary search evaluates generated algorithms; discovered heuristics deployed for problems.
+r2a5a5c5f,method,A2;A3,Controlled-language prompt grammar structures LLM input; static-analysis linter checks LLM-converted prompts.
+rafe6d7af,method,A3,Documentation-derived schema rules constrain LLM decoding of structured DSL code.
+rc28f5ba2,method,A2,LLM transpiles programs and generates equivalence proofs checked by a verifier.
+r51721b5d,benchmark,,Symbolic problem-variation synthesis evaluates LLMs; symbolic layer only generates problems.
+r29af79f6,method,A1;A3,Schema and cell retrieval feed program-aided LM that executes table operations.
+r12a060a4,method,A2;A4,MCTS over code-represented workflows refined by execution feedback; optimized workflows reused across tasks.
+rac50ef23,method,A3,LM program runtime with compressed finite-state machines constraining structured output decoding.
+r0a224728,method,A1;A4,LLM synthesizes executable game world models reused by MCTS planners to choose moves.
+red2c2e6f,method,A1,Retrieved tables queried by LLM-generated SQL; execution results ground final answer.
+r9a70e448,method,A1,LLM synthesizes code invoking parsers and theorem prover to extract values and validate path feasibility.
+rf1f728de,method,A3;A5,LM-generated temporal relation graph yields logical rules used as training constraints for localization model.
+r3e8a03b3,method,A2;A3;A4,Entailment-graph state guides multi-agent heuristic generation; heuristics evaluated and reused.
+rd998a870,method,A7,L*-style DFA learner treats LLM as noisy membership teacher; symbolic learner builds automaton.
+r9f9a50fe,method,A2;A3,Symbolic checks on partial and full SQL queries guide LM search with backtracking.
+r37271d3d,method,A5,Visual programs evolved counterfactually to generate verifiable multimodal training and test data.
+r5402cb8c,method,A2;A4,LLM proposes feature-generation rules refined via decision-tree and validation feedback; rules reused.
+r103820b4,method,A2,Verus verifier failures yield validated counterexamples guiding LLM proof repair.
+r6f24e47d,method,A1,LLM autoformalizes textual geometry steps; SMT-based provers fill diagrammatic gaps.
+rdc7f8a05,analysis,A2;A7,"Evaluates LLM planning autonomously and as heuristic seed for sound planners, with verifier back-prompting."
+r0a572ee0,method,A2;A4,Boosting diagnostics guide LLM equation corrections; successful refinements stored as reusable code library.
+r9c6c0db2,analysis,A1,Studies textual versus executed symbolic table reasoning; aggregates both via mixed self-consistency.
+recb85cde,method,A7,LM scores parent-child pairs; maximum spanning tree optimization constructs the taxonomy.
+rf5d7a12a,method,A2;A3,Similarity retrieval guides autoformalization; syntax error feedback from checker drives auto-correction.
+r870ab859,method,A1,Multi-extension NMR dataset plus neural-symbolic framework delegating reasoning to symbolic solver.
+re1b34ce5,benchmark,,Template-generated GSM variants evaluate LLMs answering directly.
+rc4d1bc76,method,A1,"LLM generates SQL to transform tables into relational data, enabling executed symbolic QA."
+r7f1f3179,method,A3,Finite-state transducers composed with LM distributions to marginalize and condition outputs.
+re1c272a1,benchmark,A3,"KG-based logical fact-checking datasets; evaluated retrieval-augmented LLMs use KG contexts, plus SFT."
+r3e3ad72d,method,A1;A3,LLM-generated SQL executed to extract relevant sub-tables before LLM reasoning.
+r9da32055,benchmark,A1,Dafny miniF2F benchmark; LLM provides high-level proof guidance while SMT automation discharges details.
+r26e072cc,benchmark,,Textual reasoning-about-actions benchmark; transformers evaluated directly.
+re9ba9b68,benchmark,,Lean trigonometric reduction benchmark; Lean only grades generated proofs.
+rdfb101fb,method,A2,Expert iteration interleaves Lean-checked proof search with learning on verified proofs.
+re1993505,method,A1,Multimodal LLM decomposes instructions into object-centric units and generates executable robot control code.
+rf93088a9,method,A1,LLM decomposes spatial queries into programs calling vision specialists; trained with AI verifiers.
+r36baffd2,method,A1;A2,Guide model steers code versus text generation; symbolic and self-answer checkers verify outputs.
+rcfb50a1a,method,A5,"Simulator-generated embodied experiences fine-tune LMs, deployed without the simulator."
+rfa8fe6c4,benchmark,A2,Parts mental-model benchmark; constraint satisfaction layer repairs inconsistent LM predictions.
+rc36311bf,method,A1;A2,LLM formulates optimization models for solver; solver-generated simplified queries verify formulations.
+re0013edf,method,A1;A5,LLM autoformalizes PDE control instructions into specifications executed by solvers; synthetic training data.
+r59c99f02,method,A2;A4,LLM-initialized DSL policy programs improved by hill climbing on environment returns; programs reused as policies.
+rae5718fd,method,A2;A3,Theorem prover feedback iteratively refines autoformalized explanations; logical expressions guide proof sketches.
+re468fcaa,method,A3,Lookahead A*-style heuristics on logical constraint satisfaction guide LM decoding.
+r6e19b6fe,benchmark,A2;A5,Dataset; Lean compiler filters synthetic autoformalisations in iterative pipeline producing training data.
+rf20ecae4,benchmark,A1,Spreadsheet benchmark; evaluated LLMs write executable solutions run on test-case spreadsheets.
+r4d23bfab,benchmark,,Constrained planning benchmark; LLMs plan in natural language; symbolic only generates and grades.
+rd03c7afc,method,A2,Tree search refining proofs locally using Lean compiler/verifier feedback.
+r75dc134e,method,A2;A3,Probabilistic programming language structures LLM flows; Rocq prover agent checks proofs in case study.
+rcab2cd44,method,A3;A4,Foundation models build reward machines that decompose tasks and are reused to train RL agents.
+rd7c735fb,method,A4,"Meta agent programs new agents in code, stored in growing archive and reused."
+rf784c201,method,A3;A5,KG-derived logical rules generate chained edits used to update model knowledge.
+rb5ae1c3b,analysis,A1,"Controlled study of table representation; evaluates SQL-based, LLM and hybrid Table QA methods."
+rcefeacbc,method,A2,Lean4 verifier feedback drives proof correction in long chain-of-thought.
+r96f2cdc6,method,A2,LLM proposes answers and Python wordplay proofs; verifier accepts proven answers.
+r097b6972,benchmark,A2,Specification-inference benchmark; verifier-based self-repair prompts improve success.
+red16313f,benchmark,A2,Puzzle benchmark; solvers learn from own solutions verified by executing puzzle programs.
+r7767563b,method,A1,LLM generates SQL and Python programs that search and verify time-series windows.
+ra0ff25e4,method,A5,Induced grammar samples recombined examples to augment T5 fine-tuning data.
+r77fe4b2c,method,A3,"Probabilistic logic theory trained jointly with deep network, constraining learning and inference."
+r84c5c76d,method,A1;A3,Dataflow-based decomposition into executable program combining static typing with LM type predictions.
+r5b61b37f,method,A1;A2;A4,"LLM-generated modules tested on examples, stored in library, programs executed for answers."
+r5b26433b,method,A1;A2,"Corrector trained online with execution/constraint feedback to revise generations, including program synthesis."
+rfc590f9c,benchmark,,FOL-annotated reasoning dataset; inference engine only verifies annotations; models evaluated directly.
+rc361829b,benchmark,A2;A5,Puzzle suite with generators and rule-based verifiers used for RLVR training.
+r0a754dc8,method,A2;A3,Diversity filtering of tactics guides proof search checked by Lean environment.
+re63439d4,benchmark,,Travel-planning benchmark; constraints validate plans for grading only.
+r89c22d33,method,A5,"Symbolic solver labels generated adversarial examples, used for probing and training."
+r2fc3d9ee,method,A1;A2,Logic solver solves translated problems; solver feedback drives search for LLM commonsense assumptions.
+r3d46fcbb,method,A2,Validator checks data-flow facts and path-condition satisfiability to filter LLM bug reports.
+r3c7d5693,benchmark,,LTL-NL dataset built via model checking and grammar; models evaluated on translation.
+r026d5bf1,method,A1;A2;A5,Reasoning programs executed; execution checks filter distillation data; step-wise verified beam search.
+r0b0b3428,analysis,A1,Controlled study of ViperGPT where LLM-generated code is executed with vision modules.
+rb0ba00fc,method,A1;A2,LLM actions as Python code executed by interpreter; observations drive revision and self-debugging.
+rd1889b16,method,A1;A2;A4,"LLM synthesises reusable Python planners from PDDL domains, debugged via validation feedback."
+r6f1f5bbd,method,A1,LLM translates premises to FOL; external theorem prover performs deduction.
+raa091574,method,A1;A2,LLM writes OR models; solver outcome verification feeds preference training loop.
+r95cd948b,method,A7,LLM scores data attributes; linear programming solver assigns them to produce insights.
+ra142c48f,method,A1;A2;A4,"LLM makes Python tools validated on examples, cached and reused by tool-user LLM."
+rafb06f00,method,A2;A4,LLM evolves full algorithms as programs; execution feedback repairs and selects reusable solvers.
+r41c683e1,method,A1;A2;A3,"Graph-symbolic scheduling, symbolic numeric oracle, and simulation-feedback repair for testbench generation."
+rfd30bcab,method,A2,"Proof search with online training, checked by Metamath/Lean environments."
+r61cc1d1e,method,A1,LLM builds argumentation frameworks; formal argumentation semantics decide claim verification.
+r96d78357,benchmark,,Lean inequality benchmark; Lean only grades provers' outputs.
+r3d3c6a4d,method,A1,Adaptive reasoning switches to symbolic code/SQL execution over verbalised tables.
+r77508cf5,method,A2,LLM proposes ODE candidates; parameter fitting and evaluation scores select and guide search.
+r78551d99,method,A5,Code execution yields input-output training data and verifies predictions for CoT revision.
+r2b949c55,method,A2,"RL reward favours concise valid plans, validity checked symbolically."
+r36abe7f8,method,A3,LLM predicts specialised BNF grammar that constrains generation of DSL output.
+re0ae613c,analysis,A1;A3,Evaluates SMT autoformalisation failure modes; PCFG-based uncertainty signals gate selective verification.
+rf6071f3a,method,A7,LLM generates belief hypotheses; POMDP planner performs belief tracking and plans actions.
+r8e7dfae3,method,A1,LLM agents formulate safety-helpfulness game; LP solver computes equilibrium strategies.
+r204738e7,benchmark,,Prover-verified commonsense diagnostic dataset; LMs evaluated directly.
+r867b1f33,method,A1,Fine-tuned VLM generates procedural material Python programs executed to render materials.
+r9972c5b6,method,A2;A3,"Lean environment and data; retrieval-augmented prover with program-analysis premise filtering, Lean-checked search."
+r4a00d7ea,method,A3,Sequential Monte Carlo incorporates syntactic and semantic constraints to steer LM generation.
+r43da03b0,method,A5,AST-guided search synthesises verifiable decompositions as training data for preference learning.
+r40f32cd4,method,A1,Multi-agent spreadsheet reasoning with Python sandbox execution of generated code.
+rf885caa8,method,A1;A2,Code interpreter computes answers; code-based self-verification triggers amendment and weighted voting.
+re1446fe9,method,A3,Decomposition-guided premise retrieval from Mathlib supports Lean autoformalisation.
+r54a42677,method,A2;A4,Symbolic solver checks LLM-proposed decompositions; proven results added to reusable theorem database.
+r7abb32ad,benchmark,,CSP-formalised underspecification benchmark; LLMs choose questions directly.
+r7f2dec68,method,A3,Synchronous grammar parser gives inductive bias in training and constraints in CKY decoding.
+r6e462a44,method,A5,Logic-constrained data engine validates MLLM-proposed biomarkers to build training supervision.
+r6ef82f88,method,,"Proposes LaTeX disambiguation task, dataset and pretrained transformer translator; no symbolic engine in pipeline."
+r2ea36910,benchmark,,seL4 proof-generation benchmark; Isabelle verification only grades LLM proofs.
+r263c8b5d,method,A1,Theory-resolution reasoner integrates LLM commonsense axioms; logical inference derives verifiable answers.
+rdf6ace3c,benchmark,,Open-ended planning questions with symbolic validators used only for grading.
+rd8418077,method,A1;A2;A3,LLM writes solver programs with decomposed constraint retrieval and self-debugging on execution errors.
+rf127ea2d,method,A2;A3,Transformer premise retrieval feeds Isabelle proof automation; combined prover checked by proof assistant.
+r7ab95a4e,benchmark,A5,Symbolic-graph distractor benchmark; generator data used to train robust models.
+raa44c8be,method,A2,Agent interleaves informal reasoning with Lean-checked intermediate proofs to prevent drift.
+r54c1186a,method,A1,Geometry benchmark plus Geoformer generating programs/proof sequences executed symbolically.
+r5bbab863,benchmark,,Formal-verification instruction dataset and LLM evaluation; verifiers only grade.
+rd0e4be70,method,A1,Sub-question Python programs executed over tables ground the long-form answer.
+rc6f43b68,method,A1,Geometry MLLM generates formalised verifiable solutions executed by symbolic solver.
+r3cb07e7e,method,A1,LLM formalises puzzles in Logic.py DSL; constraint solver computes solutions.
+r1612bafd,method,A3,LLM proposes rules; Monte Carlo Bayesian inference updates beliefs and designs experiments.
+r62e620ca,benchmark,,Embodied decision-making benchmark; symbolic simulator and metrics only evaluate LLM modules.
+r5ea0716f,method,A2;A5,Self-supervised data extracted from Lean proof terms; Lean-instrumented prover searches checked proofs.
+r001c14b1,method,A1;A4,LLM builds and refines a rule system reused as a manual; planner codes executable plans.
+r24aed30a,benchmark,A5,Dataset of KG logical queries verbalised to train LMs for complex commonsense reasoning.
+r1e19fe7e,method,A1;A2,LLM writes solver code; semantic-anchor comparison detects mismatches driving iterative correction.
+r860cd506,method,A2;A4,"LLM pipeline mines lemmas with Lean-checked proofs, producing a reusable verified library."
+r6bbccaf3,method,A1;A2;A4,"LLM-generated spatial-relation code executed, evaluated and optimised automatically, reused across queries."
+re39dd720,method,A3,Symbolic logic rules constrain iterative multi-hop queries to neural commonsense KB.
+r690877a5,method,A2;A4,Logic tutor over safety ontology gives feedback for plan repair; LLM-synthesised safety knowledge base.
+r932616a7,method,A2;A7,MLN with FOL traffic rules verifies MLLM-predicted actions using recognised environmental attributes.
+red448e3e,benchmark,,Lean verifiable code-generation benchmark; Lean and tests only grade outputs.
+r0ca252d5,method,A2;A4,Code models extract executable preconditions reused to filter policy-sampled actions.
+rc8d2888b,method,A3,Hierarchy-based attention regularisation in training loss for formal proof generation.
+ra79fa313,method,A1;A5,ASP solver feedback selects LLM-generated programs for instruction tuning; solver executes generated ASP.
+ra8b9906a,method,A1;A2,LLM writes logic programs; solver errors drive Socratic iterative refinement.
+rcec7abc9,method,A2,Online RL with Lean verification reward and MCTS over Lean tactic states.
+r78dff49d,method,A1,LM generates explanation tree; logical relations solved as MAX-SAT to infer answer.
+r6e5fb3fd,benchmark,,Benchmark of LLMs as surrogate code executors; execution only provides ground truth.
+r07e1479f,method,A2,LLMs autoformalise competition problems; prover retrained on Isabelle-checked proofs of autoformalised theorems.
+rfb5ce0a8,method,A5,SQL queries executed to build pre-training data for tabular-answer generation model.
+r9d4e6c64,method,A3,Bi-level constrained generation restricts triplets to knowledge-base schema.
+rb45a4969,method,A2,Security verifier iteratively validates generated FHE code and feeds back corrections.
+rabbf7a51,method,A2;A4,"LLM-generated heuristic programs evaluated by execution fitness in evolutionary search, reused as solvers."
+rf03252fb,method,A4,LLM writes executable dense reward programs reused to train RL policies.
+refa20322,method,A1,LLM generates programs; Python interpreter computes answers.
+rde2a3082,method,A5,AST-based and LLM evolution of formal problems augments prover training data.
+rb304055a,analysis,A5,Symbolic engine generates derivation data; fine-tuned models evaluated under prompt interventions.
+r36bbb89f,method,A2,Parallel-tempering evolutionary search over LLM hypotheses selected by computational validators.
+rf7f17a35,method,A3,LLM proposes crossword answers; search enforces character and length grid constraints.
+r26369457,benchmark,A2,Solver-in-the-loop repair benchmark; solver-verified RLVR training of repair model.
+re5e49fe2,method,A2;A3,"Separation-logic benchmark plus LLM-friendly tactic library and staged workflow, Rocq-checked proofs."
+r3fd20b0c,method,A1,LLM interpreter writes FOL programs executed by differentiable executor with learned grounding modules.
+r2ac15ccd,method,A4;A5,LLM evolves reusable MILP class generators; solver-derived instances and labels train MILP model.
+rd7186c82,method,A3;A7,Neural outputs feed Python symbolic programs; probabilistic computations propagate gradients for training.
+re65725d0,method,A3,CFG-constrained decoding for diffusion LLMs via language intersection emptiness checks.
+rffe62927,method,A2;A4,Extracted policy rules stored as rule circuits; formal verification checks protected agents' actions.
+r2d498f4d,analysis,,Synthetic deduction dataset tests LLM OOD generalisation; symbolic only generates and grades.
+re33d530c,benchmark,A1,Algorithmic problem generator benchmark; evaluated models also run with tool use.
+r0c37875c,method,A1,Fine-tuned models interleave natural language with code executed by interpreter.
+rcb83998b,method,A4;A7,LLM-derived symbols and rules reused; visual symbols grounded and fuzzy logic reasons activities.
+rbecc6e76,method,A1;A3,Multimodal program synthesis of material graphs with static-correctness constrained tree search.
+r795e38a8,method,A1;A2,Ill-defined maths benchmark plus formal-language modelling with solver-checked variable-constraint search.
+rc4b6bb13,method,A7,Symbolic fusion of VLM and LLM judgements produces preference feedback for reward learning.
+r432f1077,analysis,A5,Studies TLMs trained on solver-labelled satisfiability problems across complexity classes.
+r56925bb2,benchmark,A1,Finance math benchmark evaluating LLMs including Program-of-Thought executed solutions.
+ra4657d5a,method,A2,Compiler techniques repair LLM code into intermediate language compiled to UCLID5.
+r0b495d33,method,A2,LLM-guided evolutionary program synthesis selects QMC construction code by computed discrepancy fitness.
+re961d8e7,method,A2,Mixture-of-Concepts diversifies hypotheses; executed hypotheses selected by fit to observations.
+ra9e59775,method,A2;A4,LLM evolves reusable heuristic programs selected by multi-objective evaluated performance.
+r85fbfe3b,method,A1,Cross-lingual program-aided prompting; generated programs executed for answers.
+r2c565e29,method,A1,MLLM perceives environment states; retrieval-augmented planner generates executable policy code.
+re13f719a,method,A2,Lean compiler and automated solvers isolate and repair failing sub-lemmas iteratively.
+r4795f41e,analysis,,Logic-program shortest proofs used to measure LM proof efficiency; evaluation only.
+r6f4e1362,method,A2;A4,MLLM generates programmatic control policies evolved by evaluated fitness and visual feedback.
+r53c8c482,method,A2;A3,Action-sequence-similarity exemplar selection; VAL validator iterates planning.
+rb032d6ad,method,A1;A5,LLM selects heuristic algorithms executed on combinatorial problems; trained with rewards from precomputed scores.
+r59fa2368,benchmark,A1,Threat-investigation benchmark; agents query SQL log environment to answer questions.
+ra264b2dd,method,A2;A3,Grammar-guided generation with backtracking triggered by semantic checks on partial outputs.
+r15f794f7,method,A1;A2,LLM plans via REPL that executes code and feeds back errors for correction.
+r7c99d329,method,A2;A4,Symbolic theory-formation environment; LLM evolves reusable interestingness programs scored in environment.
+rd2e57606,benchmark,,Context-dependent Lean theorem-proving benchmark; Lean only grades proofs.
+r2067f701,benchmark,,Putnam benchmark with programmatic variants; symbolic only generates test problems.
+r38f94f66,method,A3;A5,NeuroLogic constrained decoding steers generation of generics used for self-imitation distillation.
+rc1250f1e,method,A1,Fine-tuned LLMs write TikZ code compiled into scientific vector graphics.
+rb3e9d84c,method,A2;A4,"Generated temporal rules filtered and scored on KG, stored in rule base for reasoning."
+r8ddec13a,method,A1;A2,Switches among reasoning methods using external executor feedback to check answers.
+r56e37560,method,A2,Grammar-constraint verifier filters corrected CoTs into Error Notebook retrieved at inference.
+r8b27d7e6,method,A2;A4,"LLM writes reward-function code for RMAB policies, refined via simulation feedback."
+rf6977fbc,method,A2;A4,"LLM proposes cognitive model code fitted to data, refined via predictive-performance feedback."
+rf95295b4,analysis,A1,Meta-analysis of CoT; compares against tool-augmented LLMs using symbolic solvers.
+r357a037c,method,A7,VLM interprets instructions and counts; binary integer programming assigns mask labels.
+r396c252d,method,A2;A4,LLM agent evolves neighbourhood-selection heuristics evaluated on MILPs within LNS.
+r16666d21,analysis,,Logic-grid CSP benchmark analysing LLM scaling limits; solver only generates and grades.
+r00354623,benchmark,A5,Visual programming benchmark; emulator-driven feedback shapes curriculum for fine-tuning.
+r33ed8809,method,A2,Subgoal-based demonstrations improve LLM proof search verified by proof assistant.
+ref1a4a16,method,A2,GRPO with verifier reward plus unlikeliness reward for formal theorem proving.
+r30b97cdb,method,A3,Grammar-forced translation restricts valid output tokens at each step for NL-to-temporal-logic.
+r37bdfec4,analysis,A5,Investigates LLMs fine-tuned on code and grammar descriptions versus execution-generated examples.
+ra39f39fd,benchmark,,"Pathfinding puzzle benchmark; models solve directly, rules only grade."
+rea458d73,method,A7,Nightjar lets natural-language code read and write Python program state within executable programs.
+rd3fc62e4,method,A1;A2,"Agents write executable Manim code rendered to video, with error-scoped auto-fix."
+r56e47a0d,method,A7,No abstract; title suggests LVLM-grounded features feeding a neuro-symbolic explainable reasoning core.
+r0264cc27,benchmark,,Code semantic-reasoning benchmark; execution traces only provide ground truth.
+r9f5f9d32,method,A3,Rule-based extraction prunes CFG for grammar-constrained decoding of API calls.
+rd986a64e,benchmark,,Verification-condition theorem-proving benchmark; proof assistants only grade LLM proofs.
+rb5398a81,method,A1,RL-trained reasoning interleaves real-time code-interpreter execution for computation.
+r2b00fd98,method,A1;A3,LLM-MCTS generates solver-ready formulations with symbolic pruning of equivalent branches.
+r3b5fd577,method,A2,Checklist items scored by AI judges and verifier programs produce RL rewards.
+r690964dc,method,A2;A3,Enforces semantic constraints on probabilistic programs and resamples components when diagnostics fail.
+r405389b5,analysis,A2;A5,Theoretical analysis of verifier-checked proof search with offline value regression.
+r9faf5834,method,A1;A2;A3,Decomposed BC+ program generation with syntactic and executable verification for planning.
+rab64b6eb,benchmark,A1,Travel benchmark with DSL validation; evaluated neuro-symbolic agents translate requirements for symbolic solving.
+r42e78a64,method,A2;A5,Verifier filters synthesised Rust proofs for self-evolving fine-tuning and drives self-debugging.
+r1538bbd5,method,A1,LLM builds belief graph; formal constraint reasoner resolves contradictions to select answers.
+rcc2d7391,analysis,A5,Probes generalisation of Transformers trained on solver-labelled numerical satisfiability problems.
+r85105581,method,A1,LLM modules extract constraints and preferences; numerical solvers compute travel plans.
+r952489b8,method,A5,Probabilistic logic self-supervision produces labels training deep network via variational EM.
+ra06c0609,method,A3,Subword-aligned constrained decoding enforces formal language constraints during generation.
+r746d3aa3,method,A2,"Confidence-limiting training loss improves pass@N, including verifier-checked proof-tree search."
+rb6b49ed9,method,A3,Pasta-Lang annotations interpreted to drive asynchronous parallel decoding.
+r7b852e9f,method,A3,Dependency DAG structures lemma-based step-wise proof autoformalisation.
+ra86a93ca,method,A2,Calibrated tactic diversity and value adjustment in Lean-checked MCTS proof search.
+r36b9fd34,method,A2,Recursive function decomposition with execution-based functional consensus selecting candidates.
+rb1f7e919,method,A2,"Recursive decomposition with prover/reasoner LLMs, Lean verifier feedback refines proofs."
+r25d6452d,benchmark,A2,Cross-language vericoding benchmark; evaluated models use verifier-driven iterative repair.
+r832b7a75,method,A5;A7,Poker study; ToolPoker uses external GTO solvers for actions with LLM explanations.
+ra0652471,analysis,,Studies LLM static invariant prediction compared with dynamic analysis tools.
+rd23a2890,method,A1,LLM trained with SFT and RL to interleave code interpreter execution in reasoning.
+rdbc215a2,method,A2;A5,SFT on solver solutions and RL with feasibility/optimality rewards for direct CO solving.
+r59461901,method,A4;A7,"Online invention of neuro-symbolic predicates evaluated by VLM, used in abstract world-model planning."
+r217822ba,method,A1;A5,Instructions parsed to WebLang DSL executed in web runtime; synthetic grammar data augments training.
+rb911d2b6,method,A1;A2,Programmer generates executable programs; hard EM uses execution to find consistent programs.
+ra87e0258,benchmark,A5,Symbolic-engine derivation generation for evaluation; fine-tuned models trained on generated data.
+rbb173962,method,A1,Plans interleave SQL execution for structured retrieval with LLM semantic steps.
+r5fa5fe64,method,A2,LM proposes NL hypotheses; Bayesian prior and likelihood re-weight and select candidates.
+r34074b15,method,A1;A2,Translates to symbolic form for solver; solver verifies LLM-generated missing premises iteratively.
+r63158772,benchmark,A2,Formal Olympiad benchmark; GPT-f baseline proof search checked by proof assistant.
+rc450e789,method,A2,RL with rewards from static analyzers and unit tests.
+r86cfc988,method,A3,Few-shot semantic parser using constrained decoding and self-training.
+rcbbfcff5,method,A2,"Iterative code refinement using test-case feedback, bandit selection of programs."
+r6b8e53de,method,A1;A2,"LLM code-as-policies executed, with symbolic verification and interactive validation of generated code."
+r5f4be8d2,benchmark,,Synthetic temporal reasoning benchmark evaluating LLMs directly.
+rae33fe2f,method,A1;A2,Evolutionary program synthesis; execution checks candidates; programs compute ARC outputs; hindsight fine-tuning.
+r9ef2cbd8,method,A2,LLM agent proposes constructions verified by symbolic geometry engine with feedback; RL training.
+raae0bc6d,method,A5,"LM-generated puzzles and solutions filtered by interpreter, used for fine-tuning."
+r7bd71a09,method,A7,Regression planner over NL-PDDL makes decisions; LLM provides commonsense entailment.
+r57be21b8,benchmark,A3,Multimodal logic benchmark; LogiCAM framework applies formal rules to guide VLM reasoning.
+r0aa09102,method,A7,LM proposes cluster explanations and assignments; integer linear programming selects clusters.
+r72fadfed,method,A1;A2,LLM writes NuSMV model; model checker verifies; counterexamples drive repair.
+r1a74778f,method,A1,LLM translates task descriptions into optimization objectives solved by differentiable physics solver.
+r010070ef,method,A3,Stepwise self-evaluation guides stochastic beam search over reasoning chains.
+r9d8363e3,method,A1;A3,Agent generates logical forms executed on KB; MCTS guides exploration; fine-tuning on annotations.
+r3372249e,method,A1;A4,Tool-augmented agent retrieves and calls stored LLM-built tool functions executed in code.
+r605194c1,method,A1;A2,Interleaved code execution for math; agentic RL with execution feedback.
+rc8f0a551,benchmark,,Table analysis benchmark evaluating existing models.
+r804cd20b,analysis,,Analysis of chain-of-thought on Blocksworld planning problems.
+r6fbf3493,analysis,,Empirical study of premise-order sensitivity; R-GSM released for evaluation.
+r600a1210,method,A1;A7,LLM translates utterances to executable grounding code; symbolic planner chooses responses.
+r90e3d0ed,method,,Diagnostic model for autoformalization errors trained on synthetic annotations; no clear symbolic loop.
+r1b894e95,benchmark,A5,Programmatic math OOD benchmark; fine-tuning on generator-produced training data.
+r1d000af2,method,A1;A2;A3,Graph-guided code generation; execution failures induce symbolic constraints for refinement.
+r7cca0ca0,method,A1,LLM infers taint specifications; CodeQL static analysis detects vulnerabilities.
+ra1d40c28,method,A2;A5,LLM proofs filtered by Lean prover to synthesize data for fine-tuning.
+re2f26fb4,method,A2;A4,Prover checks proofs; verified lemmas stored in growing reusable skill library.
+r0fb6ebec,method,A1;A4,Skills stored as executable code and reused; sLM refactors execution bindings.
+r3229e1d7,benchmark,A5,Hard NL satisfiability dataset methodology; transformers trained on solver-labelled instances.
+r44d73521,benchmark,A3,Benchmark of constraint-integration methods; evaluated models use constraints in training or inference.
+rcafa340f,method,A1,NL translated to CNL then ASP code for solver; includes a dataset.
+r9acdeee6,method,A2;A4,Evolutionary LLM search for code reward functions scored on trajectories; reusable reward code.
+r94d6a563,method,A3,Proof-graph generation with global constraints in training and inference.
+rbe76e7da,method,A1;A4,"DSL programs composing jailbreak transformations synthesized, executed, and stored as reusable attacks."
+rc399552f,method,A3,Constrained resampling via tractable conditioning steers decoding to satisfy constraints.
+rc6ef1832,analysis,A2,Empirical study comparing self-critique with external sound verifier backprompting.
+r61c15866,method,A3;A5,DEL-structured belief updates; verifier trained on DEL-simulator data selects traces.
+r9813e5ff,method,A1,LLM writes declarative specification; automated theorem prover derives answer.
+r1bac9a05,method,A2;A3,LLM-proposed expressions scored and diagnosed by analytic tools; adaptive operators guide search.
+rf9d1b589,method,A5,Pre-training on programs and executor results; executor absent at inference.
+ra8538bd8,method,A2,LLM proposes equation programs; parameters fitted and evaluated against data in evolutionary loop.
+r3d84f159,method,,Instruction tuning on symbolic-task data collection; no symbolic engine in pipeline per abstract.
+rf81bf1d9,method,A1;A5,TableQA logical forms executed; generated topic-specific training data; logical-form reranker; also benchmarks.
+rcddfd23f,method,A1;A2,Sampled programs executed on ARC inputs; execution outputs relabel goals for online training.
+r958d318b,method,A1;A2;A4,"LM proposes planner operators verified by interaction, stored as reusable abstraction library for planner."
+rd1cdf2d2,method,A1,Fine-tuned LLM writes code executed by Python interpreter at inference.
+r77f1ac54,method,A3,Constrained semantic decoding enforces syntax and typing; target-similarity retrieval.
+rb51f1ace,method,A2;A3,Lean compiler and semantic checks feed iterative refinement; decomposition template structures formalization.
+r0b63ce19,method,A5,Grammar-generated FOL problems labelled by prover used to train small models.
+recc9142e,method,A1;A5,Fine-tuned on search traces; neuro-symbolic variant delegates hard subgoals to symbolic planner.
+r1afc3d79,method,A2,Lean verifies simplifications for RL training and iterative inference workflow.
+r6f7a087b,benchmark,,Physics process benchmark; symbolic formula matching only grades answers.
+r38c79cfe,benchmark,A3,Parsing benchmark whose evaluated models use grammar-constrained decoding.
+rea410058,method,A2;A4,LLM-evolved heuristic programs evaluated on tasks; elite programs transferred across tasks.
+r0e37ebda,method,A2,GRPO with rewards computed by deterministic temporal-trace verification primitives.
+rb24d901d,method,A1;A2,Programs executed; verifier uses execution results to rerank sampled programs.
+r9521135b,method,A7,Lifted regression planner decides; LLM infers objects and affordances.
+r44b969bf,analysis,A1,Probes LM symbolic-induction limits; tested remedies include LMs calling programs.
+r26b6774b,analysis,,Audit of Lean benchmark defects and evaluation failures with static checkers.
+rc06bef66,method,A3;A5,Address hierarchy logic rules softly constrain recognition; ontology-based augmentation creates training data.
+rd7f0e1f1,benchmark,A1,Spatiotemporal benchmark; models may answer via Python code interpreter.
+r13e19e17,method,A1;A2,LLM formalizes planning as SMT; solver solves; unsat cores drive query modification.
+radf94b79,method,A4,LLM-synthesized programmatic experts form reusable world model used for planning.
+rd16a5d6f,benchmark,,Rust verification chain-of-thought benchmark evaluating LLMs directly.
+r823909fa,method,A2;A4,LLM generates solver code refined by evolutionary evaluation; discovered algorithms reused across instances.
+r9a9fad08,method,A3;A5,Logical-equivalence atom extension augments data; path-structured attention models logical structure.
+r051b0a1e,method,A5,Program-generated synthetic logic corpus used to train LLMs.
+r05566fe9,method,A1,Agent decomposes modelling; formulations solved computationally with code; also MM-Bench.
+r8d84714f,method,A3,Regex-derived analytic score guides diffusion sampling toward syntactic validity.
+rc264b05c,method,A2,LM guesses transpilation; symbolic solver resolves and repairs semantic equivalence.
+r0cfab9a4,method,A1;A2,LLM formulates problems and solver code; self-correction from execution feedback.
+ra65cf286,method,A2;A3,DSL defines mapper search space; execution output interpreted as feedback for refinement.
+re7e46a6a,benchmark,,Fermi problem datasets with program solutions; evaluated fine-tuned LMs.
+r5019d570,method,A2;A5,Execution-trace anchors give stepwise supervision; RL rewards checked against executed runtime states.
+r70688c50,analysis,A1,Evaluation of LLMs reasoning with formal languages incl. program-of-thought; fine-tuning study.
+r610281c5,method,A2,LLM formalises explanations; theorem prover verifies validity and feeds refinement.
+r72b731d9,method,A3,Genetic programming searches symbolic pruning metrics applied to LLM weights.
+r5475f752,method,A1;A3,Text-to-SQL parser with grammar-constrained SQL decoder; queries executed on database.
+rb5019997,method,A2;A4,Evolutionary reward-code search using RL training feedback; reward functions reused for skill learning.
+r24638dca,method,A1;A2;A4,LLM builds reusable PDDL domain model corrected by validator feedback; planner solves tasks.
+r0483d3f4,method,A3,Formalizes preference losses as symbolic programs to derive new training losses.
+r78a681e5,method,A2,LLM proposes invariants checked by automated program verifiers in sound calculus.
+re8e105a9,method,A1,"Image to LaTeX, LLM writes Pyomo script, optimizer solves; plus dataset."
+r00510af9,method,A1;A2;A3,LLM writes CP models for solver; constraint-aware retrieval; guided self-correction.
+rb8890cb3,method,A3,Earley-based grammar-constrained decoding with dynamic pruning.
+rfff81209,benchmark,A2,Loop invariant benchmark; proposed LLM-SE uses symbolic execution and verifier checks.
+rf15138cf,method,A3;A5,Scene graphs ground MLLM agent perception; SGCLIP trained via neurosymbolic alignment pipeline.
+r476a6958,method,A1;A3,Parse-derived programs executed over neural and symbolic modules; RL from answer reward.
+r3142d9b0,method,A2,Evolved programs scored by evaluators; evaluator rewards drive test-time RL.
+r34501e93,method,A2;A4,LLM evolves code ordering strategies filtered by deterministic proxy; strategies generalize across designs.
+r38244d6e,benchmark,A5,LLM plus prover generate FOL dataset; fine-tuning on prover-generated training set.
+r66ce1dcb,method,A2;A5,Iterative autoformalisation with Lean feedback; prover judges synthetic data and supplies RL feedback.
+rc45c3000,benchmark,,FOL NLI diagnostic benchmark evaluating LMs directly.
+raef94006,method,A1,Synthesized code-interpreter solutions train models that call interpreter at inference.
+r8e0eb62d,method,A4;A7,LLM concept modules feed learned symbolic decision-rule programs that decide and are reused.
+ree2d9e8b,method,A3,MCTS with value model guides step-level search and generates process supervision.
+r1ff1c19f,method,A1;A3,Typed probabilistic programs combine adapted LLMs with deterministic logic; type compliance in training.
+r47c448cd,benchmark,,Logical consistency benchmark generated from logical graphs; LLMs evaluated directly.
+rbd43d9dd,method,A1,"LM generates Python programs composing visual model outputs, executed for answers."
+r195e1eaa,method,A2;A4,LLM synthesizes behavioral programs; probabilistic inference weights them against observations for prediction.
+ra14b1953,method,A1;A2,Environment executes symbolic outputs; feedback selects self-training data.
+r71e26edf,method,A2,Reflective autoformalization trained with position-specific rewards; iterative self-correction.
+r596cca2a,method,A3,Dependency retrieval from parsed formal libraries guides autoformalization; BEq metric and Con-NF benchmark.
+rb4bb0607,method,A1;A3,Claims decomposed into first-order predicates; generated Python tool programs answer sub-questions.
+r9fb81a0c,method,A1;A2;A3,LLM writes Prolog programs from suggested predicates; GRPO with execution-based and predicate rewards.
+ra1fa04f4,method,A4,LLM writes feature rules reused at inference with simple downstream model.
+rf1024aef,method,A1;A2;A4;A7,VLM-built symbolic world for classical planner; symbolic validation refines plans; evolving symbolic memory.
+r99ad3bbf,benchmark,A1,Causal-inference pitfalls benchmark; code-assisted protocol executes model-written analysis code.
+r935ce0b6,method,A2;A5,RL reward from planner-estimated action likelihood; deployed MLLM runs without planner.
+r297ead14,method,A4;A7,MLLM perception feeds learned causal graph used by planner; graph grows and is reused.
+r72b7629e,method,A2;A3,"Layout tree planning structures generation; judger enforces framework constraints to accept, reject, repair."
+rc17dc698,benchmark,,PDDL-grounded embodied safety benchmark evaluating LLM modules.
+rab20f8f2,method,A2;A4,"RL rewards from compiling, executing, and scoring solver operators; operators reused in HGS."
+r11025370,method,A2;A4,Evolutionary heuristic search with RL fine-tuning from heuristic quality; heuristics reused.
+ref1417ae,analysis,A1,Compares natural-language reasoning with code-execution pipelines on algorithmic tasks.
+rb66847eb,method,A1,Program-of-Thoughts learning: MLLM generates Python executed for numerical answers.
+r1048a4cd,method,A5,NL-FOL dataset filtered by FOL parsing; fine-tuned translator LogicLLaMA.
+r9c943530,method,A2;A7,LLM harvests formulas validated by code feedback loop; symbolic algorithm clusters and unifies them.
+r39d81df4,method,A3;A4,LLM-defined predicates; MCTS discovers logic rules stored and injected into prompts.
+r831587da,method,A1;A2,Task compiled to executable code plans validated against tool specifications and pre/postconditions.
+r9581f567,benchmark,,Obfuscated and generated grid-puzzle benchmark evaluating LLMs directly.
+rfffad286,method,A3;A4,LLM-augmented discovery of reusable symbolic utility functions guiding personalized semantic templates.
+r587a846d,method,A2;A4,LLM evolves benchmark programs scored by landscape and solver-differentiation objectives; programs reused.
+r790d4bfc,method,A1;A4,"Unified PDDL domain extracted from demonstrations, reused and fused for planner-based task planning."
+r75eaf601,method,A2;A3,Editable proof sketches decompose into subgoals; prover feedback drives localized edits.
+r40a7dd77,benchmark,A5,Logic-rule-based test generation for LLM reasoning; derived fine-tuning data improves models.
+r8a268c2e,method,A2;A4,LLM-evolved heuristic code evaluated on instances; best heuristics reused.
+rc3acba99,method,A2;A5,DSL-level scores as RL rewards; synthetic data engine trains translator; GeoPerceive benchmark.
+r071b9de9,benchmark,A1,Hybrid tabular QA benchmark; MT2Net executes symbolic reasoning over retrieved facts.
+r2d285226,method,A1;A2,Tool-integrated reasoning with code execution; RL from tool success; tool-feedback self-correction.
+r72a1c5d7,method,A3,Temporal logic induction modules structure LM reasoning about temporal concepts.
+rdf0ed85b,method,A2;A3,Symbolic execution traces ground invariant prediction; verifier feedback refines candidates.
+rdec717b7,analysis,A1,Analysis of discriminator accuracy in planning methods for text-to-SQL and math agents.
+r71d4ad74,method,A1;A2,Agents formulate models for solvers; verification and solver failures route feedback for refinement.
+r62b662a5,method,A3,Constraint programming generates constrained sentences; LLM perplexity curates outputs.
+r19ae4fa3,benchmark,A1,Law discovery benchmark with simulated systems; agents optionally use code interpreter.
+r0f5493a0,method,A3,LLM proposes route-level retrosynthesis plans within encoded search over valid reactions.
+rff5b35b6,method,A2,Adversarial RL of problem composer and prover with Lean verification rewards.
+rf5164d7c,method,A2;A3,LLM formal sketches decompose proofs; automated prover fills and checker verifies subgoals.
+rc3671b2c,method,A2;A3;A4,MCTS-guided code generation fixed with unit-test feedback; code world models reused for planning.
+ra804bbd4,method,A2;A3,LLM agent rewrites Lean proofs with error correction; symbolic Lean states guide.
+r8ec44e70,method,A3;A5,Constraint inference produces constraint data for training; relational constraints steer generation.
+rf74d94f3,benchmark,,Enterprise SQL debugging benchmark evaluating LLMs with execution-free grading.
+r06172ea1,benchmark,,Causal inference benchmark generated by oracle engine; CoT prompting evaluated.
+r3b85cca1,method,A2,LLM finds variable mappings; verification checks feasibility and optimality preservation.
+r5f005528,analysis,,Logic puzzle benchmark and trace-to-graph pipeline for analyzing reasoning structure.
+reb0ef720,benchmark,,Algebraic combinatorics conjecturing datasets; no evaluated symbolic pipeline described.
+rab5f1bcb,method,A2,LLM repair engine using compiler diagnostics for localization and candidate ranking.
+re9e67d00,method,A3,AST-structured partial programs define PAC prediction sets for code models.
+ra4243bf4,benchmark,,Planning reasoning benchmark synthesized from formal domains; LLMs evaluated directly.
+rb990cde0,benchmark,,Constructive-proof benchmark; automated verifiers only grade answers.
+r7df7f9a4,method,A7,MCTS planner decides; LLM supplies commonsense world-model prior and policy heuristic.
+r125d996b,method,A2;A3,KG-RAG guided hierarchical decomposition; symbolic validator checks plans and detects failures.
+re3325cde,method,A1;A2,VLM writes executable action code; jigsaw environment feedback drives RL.
+r25a48355,benchmark,,Text-to-PDDL benchmark; equivalence algorithm and planner only grade outputs.
+raccc7bc2,method,A1;A2;A3,MCTS builds operator graphs with syntax and solver feedback; solver computes policy; topology constrains search.
+r1c87c85f,method,A1,LLM augments instructions into grounded PDDL problems solved by planner.
+r870d8660,method,A3,Benchmark plus PosterAgent with tree layout planning and render-feedback loop.
+rd682920a,method,A5,SCFG-synthesized question-SQL pairs used for pre-training parser.
+rb5a2b99a,benchmark,A2,Isabelle verification environment and dataset; LLM proofs checked by Isabelle.
+r0aeb4906,benchmark,A1,Rubik's cube agent benchmark; diagnostic setting provides external solver tools.
+r6465edfe,analysis,,Formal analysis of CoT via PrOntoQA; parsing proofs only grades reasoning.
+r10c2acd2,method,A1;A3,SQL-based step-wise table extraction and symbolic reasoning support for quantitative questions.
+rbb57251a,method,A1;A3;A7,Video converted to symbolic memory queried by tools; MCTS planner schedules tool use.
+r5390b532,method,A2;A3,Operator-tree decomposition structures autoformalization; errors localized and repaired by sub-tree refinement.
+rf3eda214,method,A3;A4,A* search over toolpaths per subtask; LLM-mined subroutines stored and reused.
+r73041e10,method,A3,Static analysis splits programs into logic units for iterative LLM judging and refinement.
+r06b8d03f,method,A1;A2;A3,Rule and AST-template retrieval guides rewriting; symbolic FSM optimization; formal equivalence checks.
+r0743526e,method,A1;A3,Agents translate problems into multiple symbolic languages for solvers and debate.
+r9ec117bd,method,A2;A3,Progress predictor guides best-first Lean proof search verified by Lean.
+rcf704d95,analysis,,"Compares GPT models, program induction systems and humans on concept learning."
+r5fbc1849,method,A7,VLM recognizes concepts; compiled circuit executes logical rules exactly; robustness study.
+rd1ceb921,method,A1,In-context code generation produces FOL formulas for downstream logic tasks.
+r49db4138,method,A3;A7,Prolog-style backward-chaining proof search with LM-generated decompositions and dense retrieval.
+r7345147b,benchmark,,Dafny compositional specification benchmark; verifier only grades LLM outputs.
+r33e16ff8,benchmark,A2,Putnam formal benchmark evaluating neural provers checked by proof assistants.
+r76367fff,method,A2,Lean-checked tactic search; prover trained on trial-and-error search paths.
+r40247491,method,A1,"LM parses input into SQL/Python programs with LM API calls, then executed."
+rf1789243,method,A3,Symbolic ERG parser informs uncertain subgraphs during neural graph parsing.
+r494dde6f,method,A1;A5,LLM writes scenario scripts run by simulator; generated scenarios train motion planners.
+reba222b6,method,A7,Symbolic policy makes decisions; GPT-4 verbalises explanations of policies.
+r6759bc6d,method,A1;A2,LM translates to formal expressions evaluated by solver; RL from solver feedback.
+r42a18596,method,A2;A4,FunSearch evolves programs scored on behavioral data; discovered programs serve as cognitive models.
+rb797b231,method,A3,Grammar-constrained decoding augmented with reasoning rules.
+r0d1db21b,method,A2,TikZ program synthesis with MCTS refinement using compilation and rendering feedback.
+r1cc24273,method,A7,LM tracks dialog events; designer-written symbolic program executes policy and picks actions.
+rb17006b6,benchmark,,"New knights-and-knaves benchmark; LLMs evaluated directly, symbolic generation or grading only."
+rcddc76c4,method,A3;A5,Logic rules augment training data offline (A5); consistency regularizer shapes training loss (A3).
+r1b26c0f3,method,A2,"Spatial assertion Python codes verify intermediate steps against cognitive map, giving dense RL rewards."
+r28603980,method,A1;A3,Agent writes executable tool programs run by runtime; constraint-guided program construction.
+r58622aa9,method,A1,Neural module outputs counterfactual facts; operator-based symbolic arithmetic derives answer.
+r5dd09369,method,A1;A2,LLM translates instructions to executable Python; execution errors trigger re-planning.
+r64539e58,benchmark,,Procedural puzzle suite evaluating visual reasoning; no symbolic component in evaluated pipelines.
+rccbc020f,method,A3;A4,LLM synthesizes reusable error patterns; LLVM program analysis guides retrieval across codebase.
+rdf84b878,benchmark,,Game platform for LLM evaluation; games only generate and grade.
+rff597439,benchmark,,Framework generating counterfactual commonsense benchmarks; symbolic elements only generate problems.

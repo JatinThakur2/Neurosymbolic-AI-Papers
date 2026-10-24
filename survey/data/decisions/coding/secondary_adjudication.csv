@@ -1,0 +1,7 @@
+rid,contribution_type,rationale
+r8f982ce8,method,Equal dataset and SymTime model; tie resolves to method.
+r505e7df5,benchmark,Main contribution is an evaluation framework for compositional causal reasoning; no new method.
+r54c1186a,method,"Benchmark plus Geoformer and MEP pretraining; contributions equal, so method."
+r832b7a75,method,"Systematic study plus ToolPoker framework as the proposed solution; equal weight, so method."
+r5f005528,benchmark,Introduces scalable logic-puzzle benchmark and trace-to-graph pipeline as the main contribution.
+r6465edfe,analysis,Dataset only enables the formal analysis of chain-of-thought; title and findings centre on analysis.

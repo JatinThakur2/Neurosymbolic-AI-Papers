@@ -6,7 +6,8 @@ This is a PRISMA-ScR scoping review of how language models and explicit symbolic
 1. Upload the zip: *New Project → Upload Project*.
 2. Compiler: **pdfLaTeX**. Main file: `main.tex`. BibTeX runs automatically.
 3. `supplement.tex` is a separate document listing all 659 included studies with their codes. To compile it, set it as the main document in Overleaf (Menu → Main document), or compile it locally.
-4. One red **AUTHOR ACTION REQUIRED** box remains, in Section III-J. It disappears automatically once the human check below is done.
+4. One red **AUTHOR ACTION REQUIRED** box remains, in Section III-J. It disappears automatically once the human checks below are done.
+5. **Double-blind version:** set `\anonymoustrue` in `main.tex` and `supplement.tex`. Before that, create an anonymous mirror of the repository (for example at anonymous.4open.science) and put its URL in `\anonurl` in `main.tex`.
 
 ## Layout
 ```
@@ -22,7 +23,9 @@ data/decisions/             every reviewer decision; never written by the pipeli
   coding/                   two coders + adjudication
   webcheck/                 artifact-release web check (random sample + A7 census) and its design
   results/                  miniF2F results quoted from abstracts + comparability classification
-  human_check/              blinded 30% sheets for the human verification (to be filled by the author)
+  human_check/              blinded 30% sheets for the author and second_rater/ for the independent second rater
+  knownitem/                reference list of the independent survey used for the known-item check
+  fulltext_check/           full-text codes of the validation sample
   v1_pilot/                 decisions of the pilot version, kept for the pilot comparison
 data/derived/               GENERATED: screening log, included studies, entities, analyses, plot data
 docs/prompts/               the task prompts given to every LLM reviewer, verbatim, plus their viewers
@@ -45,15 +48,18 @@ The run checks that every record has exactly the decisions the procedure require
 | `s11_selection.py` | screening log, agreement, recall estimate, pilot comparison |
 | `s12_coding.py` | final codes, per-axis κ, entity agreement |
 | `s13_analysis.py` | associations, period shares, growth panels, terminology control, artifacts, faithfulness, miniF2F |
+| `search/stage2.py`, `search/knownitem.py` | revision 2: augmented query (stage 2); fresh known-item check |
+| `s16_sensitivity.py` | revision 2: constant-venue and venue-adjusted trends, growth rate ratios, F3 / methods-only / order sensitivity, full-text check, human-confirmed findings |
 | `s14_bib.py`, `s15_latex.py` | BibTeX; macros, tables, supplement rows, query listings |
 | `human_check.py` | `--make` draws the 30% samples; `--score` scores them |
 
 ## What you still have to do before submission
-1. **Human verification (required).** Every screening and coding decision was made by LLM agents. Fill the two sheets in `data/decisions/human_check/` yourself, applying `protocol_v2.md`, without looking at the LLM decisions:
-   - `screening_sheet.csv` (751 records): put `include` or `exclude` in `decision` and an exclusion code E1–E5 in `code`;
-   - `coding_sheet.csv` (198 studies): fill `architecture`, `check_strength`, `domain`, `formalism` and `faithfulness_reported`.
-   Then run `python code/human_check.py --score` followed by `python code/s15_latex.py`, or the full `run_all.py`. Once at least 90% of each sheet is filled, the abstract, Section III-J and Section X switch automatically to report human–LLM agreement, and the red box disappears. If agreement is poor, revise the decisions you disagree with in `data/decisions/` and re-run.
-2. **Push the replication package.** The Data Availability statement points to `https://github.com/JatinThakur2/Neurosymbolic-AI-Papers/tree/main/survey`. Merge the pull request that updates `survey/`.
-3. **Model versions.** The LLM reviewers' model versions were not recorded for every batch. The paper says so. If you can recover them, add them to Section III-I.
-4. **Venue.** The paper is journal length (about 14 pages plus references). Following the referee, TMLR, IEEE Access, *Artificial Intelligence Review* or the NeSy conference fit best. Check each venue's current policy on LLM-assisted reviewing before submitting.
-5. **Bibliography.** The background and method references were checked against Crossref. The 671 study entries are generated from proceedings metadata; spot-check a sample against the venue pages.
+1. **Your human check (required).** Fill the two sheets in `data/decisions/human_check/` yourself, applying `protocol_v2.md`, without looking at the AI decisions:
+   - `screening_sheet.csv` (751 records): `include` or `exclude` in `decision`, an exclusion code E1–E5 in `code`;
+   - `coding_sheet.csv` (198 studies): `architecture`, `check_strength`, `domain`, `formalism`, `faithfulness_reported`.
+   If you already filled them for the previous version, copy your filled sheets in: the records are the same.
+2. **Second rater (required for M2).** Give `data/decisions/human_check/second_rater/` (instructions, protocol, two sheets) to a colleague with no stake in the review. They fill the sheets and return them; copy them back into that folder unchanged apart from the filled columns. Put their name in `\secondratername` in `main.tex` if they agree to be acknowledged.
+3. **Re-run.** `python code/human_check.py --score`, `python code/s16_sensitivity.py`, `python code/s15_latex.py` (or the full `run_all.py`), then re-upload `tables/` and `data/derived/`. The abstract, Sections III-J, IV, V-B and X and the response letter fill in automatically.
+4. **Merge the pull request** that updates `survey/` in the repository.
+5. **Model versions.** If you can recover the Claude model versions used, add them to Section III-I.
+6. **Venue.** For a double-blind venue, use the anonymous build (see above). Check the venue's policy on LLM-assisted reviewing.

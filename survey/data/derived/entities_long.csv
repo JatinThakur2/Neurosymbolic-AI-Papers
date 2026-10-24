@@ -1,1165 +1,1297 @@
-rid,group,entity,label
-r47d55f71,benchmark,tabfact,TabFact
-r9a62e4ca,lm,BERT family,
-r9a62e4ca,benchmark,spider,Spider
-r9a62e4ca,benchmark,wikitablequestions,WikiTableQuestions
-rb911d2b6,lm,BERT family,
-rb911d2b6,engine,Python interpreter/executor,
-rb911d2b6,benchmark,drop,DROP
-rb911d2b6,benchmark,mathqa,MathQA
-r9029ce04,lm,T5 family,
-r44da8b7e,benchmark,closure,CLOSURE
-r44da8b7e,benchmark,geoquery,GeoQuery
-r44da8b7e,benchmark,scan,SCAN
-r24f1bc06,engine,"SAT/SMT (Z3, cvc5)",
-rc45c3000,lm,BERT family,
-rc45c3000,benchmark,logicnli,LogicNLI
-re7e46a6a,benchmark,fermiproblems,Fermi Problems
-r42bb8e33,lm,T5 family,
-r42bb8e33,benchmark,cosql,CoSQL
-r42bb8e33,benchmark,spider,Spider
-r52f1e169,lm,BERT family,
-rf81bf1d9,lm,BERT family,
-rf81bf1d9,lm,GPT-2 and earlier,
-rf81bf1d9,lm,T5 family,
-rf81bf1d9,benchmark,wikisql,WikiSQL
-rf81bf1d9,benchmark,wikisqlts,WikiSQL-TS
-rf81bf1d9,benchmark,wikitablequestions,WikiTableQuestions
-rf81bf1d9,benchmark,wikitablets,WikiTable-TS
-r204738e7,engine,Theorem provers (FOL),
-r204738e7,benchmark,winogradschemachallenge,Winograd Schema Challenge
-r204738e7,benchmark,winologic,WinoLogic
-rafb9a6d1,benchmark,clevr,CLEVR
-rafb9a6d1,benchmark,clevrhyp,CLEVR_HYP
-r217822ba,lm,BERT family,
-r217822ba,benchmark,russdataset,RUSS dataset
-rdf7ff99c,benchmark,geoquery,GeoQuery
-rdf7ff99c,benchmark,spider,Spider
-r5475f752,benchmark,spider,Spider
-red16313f,lm,"GPT-3/3.5, ChatGPT, Codex",
-red16313f,engine,Python interpreter/executor,
-red16313f,benchmark,p3,P3 (Python Programming Puzzles)
-rcf704d95,lm,"GPT-3/3.5, ChatGPT, Codex",
-r148485c2,benchmark,rocstorycloze,ROC Story Cloze
-r3229e1d7,engine,"SAT/SMT (Z3, cvc5)",
-r3229e1d7,benchmark,nlsat,NLSat
-r3229e1d7,benchmark,ruletaker,RuleTaker
-r476a6958,lm,BERT family,
-r476a6958,benchmark,drop,DROP
-r5aaa7eac,benchmark,nytcrosswordcorpus,NYT crossword corpus
-rbc584267,benchmark,hitab,HiTab
-r071b9de9,benchmark,multihiertt,MultiHiertt
-r0e853bba,benchmark,convfinqa,ConvFinQA
-raff04329,engine,"SAT/SMT (Z3, cvc5)",
-raff04329,benchmark,convqa,ConVQA
-r78dff49d,engine,"SAT/SMT (Z3, cvc5)",
-rba31435a,benchmark,contlog,CONTLOG
-rba31435a,benchmark,logicnlg,LOGICNLG
-re4ee31bb,benchmark,grailqa,GrailQA
-re4ee31bb,benchmark,webquestionssp,WebQuestionsSP
-r54c1186a,benchmark,unigeo,UniGeo
-r5ea0716f,engine,Lean,
-r3ff6a766,engine,Python interpreter/executor,
-r3ff6a766,benchmark,sqa,SQA
-r3ff6a766,benchmark,tabfact,TabFact
-r3ff6a766,benchmark,wikisql,WikiSQL
-r3ff6a766,benchmark,wikitablequestions,WikiTableQuestions
-r63158772,lm,"GPT-3/3.5, ChatGPT, Codex",
-r63158772,engine,Isabelle,
-r63158772,engine,Lean,
-r63158772,benchmark,aime,AIME
-r63158772,benchmark,amc,AMC
-r63158772,benchmark,imo,IMO
-r63158772,benchmark,minif2f,miniF2F
-r86cfc988,benchmark,overnight,Overnight
-r69f94571,lm,"GPT-3/3.5, ChatGPT, Codex",
-r69f94571,benchmark,overnight,Overnight
-r69f94571,benchmark,smcalflow,SMCalFlow
-ra0ff25e4,lm,T5 family,
-r07e1479f,engine,Isabelle,
-r07e1479f,benchmark,minif2f,MiniF2F
-rfd30bcab,engine,Lean,
-rfd30bcab,benchmark,metamath,Metamath
-rfd30bcab,benchmark,metamathheldoutset,Metamath held-out set
-rfd30bcab,benchmark,minif2fcurriculum,miniF2F-curriculum
-rd7bfffae,engine,Theorem provers (FOL),
-rd7bfffae,benchmark,minif2f,MiniF2F
-rd7bfffae,benchmark,pisa,PISA
-r44d73521,benchmark,gluecons,GLUECons
-r3c7effab,benchmark,tacred,TACRED
-rab5f1bcb,lm,"GPT-3/3.5, ChatGPT, Codex",
-r72a1c5d7,benchmark,timedial,TIMEDIAL
-r62710d49,benchmark,mathlib,Mathlib
-r62710d49,benchmark,pisa,PISA
-rfa8fe6c4,lm,"GPT-3/3.5, ChatGPT, Codex",
-r8c4ab443,lm,BERT family,
-r8c4ab443,lm,"GPT-3/3.5, ChatGPT, Codex",
-r26e072cc,benchmark,trac,TRAC
-r38f94f66,lm,GPT-2 and earlier,
-r38f94f66,lm,"GPT-3/3.5, ChatGPT, Codex",
-r38f94f66,benchmark,genatomic,Gen-A-tomic
-r918e50a0,benchmark,tomi,ToMi
-rbd43d9dd,benchmark,covr,COVR
-rbd43d9dd,benchmark,gqa,GQA
-r1cdd9f60,engine,Python interpreter/executor,
-r0b0b3428,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-r0acddc1f,engine,Python interpreter/executor,
-r0acddc1f,benchmark,crtqa,CRT-QA
-r0de13fa8,benchmark,calcx,Calc-X
-re9cc5a89,lm,"GPT-3/3.5, ChatGPT, Codex",
-re9cc5a89,engine,Python interpreter/executor,
-re9cc5a89,benchmark,hiddentables,HiddenTables
-re9cc5a89,benchmark,pyqtax,PyQTax
-r6f1f5bbd,lm,"GPT-3/3.5, ChatGPT, Codex",
-r6f1f5bbd,lm,GPT-4 family,
-r6f1f5bbd,benchmark,folio,FOLIO
-r6f1f5bbd,benchmark,proofwriter,ProofWriter
-rc06bef66,lm,"GPT-3/3.5, ChatGPT, Codex",
-r8ddec13a,engine,Python interpreter/executor,
-ra7dc92c7,benchmark,cogs,COGS
-ra7dc92c7,benchmark,slog,SLOG
-r600a1210,engine,Planners (PDDL),
-r600a1210,benchmark,onecommon,OneCommon
-re9ba9b68,lm,GPT-4 family,
-re9ba9b68,engine,Lean,
-re9ba9b68,benchmark,trigo,TRIGO
-r40247491,lm,"GPT-3/3.5, ChatGPT, Codex",
-r40247491,engine,Python interpreter/executor,
-r40247491,benchmark,tabfact,TabFact
-r40247491,benchmark,wikitablequestions,WikiTableQuestions
-rdfb101fb,benchmark,minif2f,miniF2F
-r6465edfe,lm,"GPT-3/3.5, ChatGPT, Codex",
-r6465edfe,benchmark,prontoqa,PrOntoQA
-raae0bc6d,engine,Python interpreter/executor,
-raae0bc6d,benchmark,programmingpuzzles,programming puzzles
-r59be65bf,engine,Python interpreter/executor,
-r59be65bf,benchmark,gsm8k,GSM8K
-r59be65bf,benchmark,mathqa,MathQA
-r6fb3f71a,lm,T5 family,
-rfcd51f39,benchmark,minecraft,Minecraft
-r3f6cb6bd,benchmark,fld,FLD
-re9e67d00,lm,"GPT-3/3.5, ChatGPT, Codex",
-re9e67d00,lm,T5 family,
-refa20322,lm,"GPT-3/3.5, ChatGPT, Codex",
-refa20322,lm,Gemini/PaLM/Bard,
-refa20322,engine,Python interpreter/executor,
-refa20322,benchmark,bigbenchhard,BIG-Bench Hard
-refa20322,benchmark,gsm8k,GSM8K
-r3c0238e9,lm,GPT-2 and earlier,
-r3c0238e9,benchmark,commongen,CommonGen
-r04ccb8d7,lm,GPT-2 and earlier,
-r04ccb8d7,benchmark,mnread,MNREAD
-re66c4b28,lm,BERT family,
-re66c4b28,lm,T5 family,
-r4eeb12bc,benchmark,shortestpath,shortest-path
-r4eeb12bc,benchmark,sudoku,Sudoku
-r90234048,benchmark,apps,APPS
-r90234048,benchmark,arc,ARC
-r90234048,benchmark,humaneval,HumanEval
-rec5b0aa1,benchmark,alfworld,ALFWorld
-rec5b0aa1,benchmark,miniwob++,MiniWoB++
-r44448bcd,lm,"GPT-3/3.5, ChatGPT, Codex",
-r44448bcd,lm,GPT-4 family,
-r44448bcd,benchmark,mabe2022,MABe 2022
-r38c79cfe,lm,"GPT-3/3.5, ChatGPT, Codex",
-r38c79cfe,benchmark,benchclamp,BenchCLAMP
-r06172ea1,benchmark,cladder,CLadder
-ra71d911c,engine,Planners (PDDL),
-ra71d911c,benchmark,alfred,ALFRED
-r36abe7f8,benchmark,geoquery,GeoQuery
-r36abe7f8,benchmark,overnight,Overnight
-r36abe7f8,benchmark,pddlplanning,PDDL planning
-r36abe7f8,benchmark,smcalflow,SMCalFlow
-r36abe7f8,benchmark,smiles,SMILES
-rcfb50a1a,lm,"GPT-3/3.5, ChatGPT, Codex",
-r7df7f9a4,lm,GPT-2 and earlier,
-r7df7f9a4,lm,"GPT-3/3.5, ChatGPT, Codex",
-r9972c5b6,lm,GPT-4 family,
-r9972c5b6,lm,Specialised provers,
-r9972c5b6,engine,Lean,
-r9972c5b6,benchmark,leandojobenchmark,LeanDojo Benchmark
-r24638dca,lm,GPT-4 family,
-r24638dca,engine,Planners (PDDL),
-r24638dca,benchmark,alfworld,ALFWorld
-r24638dca,benchmark,household,Household
-r24638dca,benchmark,ipcdomains,IPC domains
-r0a0602e5,benchmark,lora,LoRA
-r9eac6196,lm,"GPT-3/3.5, ChatGPT, Codex",
-r9eac6196,benchmark,apps,APPS
-r9eac6196,benchmark,humaneval,HumanEval
-r266b0bb7,lm,"GPT-3/3.5, ChatGPT, Codex",
-r266b0bb7,benchmark,qatch,QATCH
-r9813e5ff,engine,Theorem provers (FOL),
-r9813e5ff,benchmark,boardgameqa,BoardgameQA
-r9813e5ff,benchmark,gsm,GSM
-r9813e5ff,benchmark,lsat,LSAT
-r010070ef,lm,"GPT-3/3.5, ChatGPT, Codex",
-r010070ef,lm,Llama family,
-r010070ef,benchmark,aqua,AQuA
-r010070ef,benchmark,gsm8k,GSM8K
-r010070ef,benchmark,strategyqa,StrategyQA
-r3fd20b0c,engine,Python interpreter/executor,
-r09aef02b,lm,GPT-4 family,
-r09aef02b,benchmark,robustapi,RobustAPI
-r6759bc6d,benchmark,svamp,SVAMP
-rd1889b16,lm,"GPT-3/3.5, ChatGPT, Codex",
-rd1889b16,lm,GPT-4 family,
-rd1889b16,engine,Planners (PDDL),
-rd1889b16,engine,Python interpreter/executor,
-ree311595,lm,"GPT-3/3.5, ChatGPT, Codex",
-ree311595,lm,Gemini/PaLM/Bard,
-ree311595,benchmark,dopaminereceptord2,Dopamine Receptor D2
-ree311595,benchmark,januskinase2,Janus Kinase 2
-rcf40140f,lm,"GPT-3/3.5, ChatGPT, Codex",
-rcf40140f,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-rcf40140f,engine,"Logic programming (Prolog, ASP, Datalog)",
-ra1c2ff75,benchmark,bizbench,BizBench
-r24aed30a,benchmark,com2,COM2
-rf1f728de,benchmark,activitynetcaptions,ActivityNet Captions
-rf1f728de,benchmark,charadessta,Charades-STA
-r56925bb2,lm,GPT-4 family,
-r56925bb2,lm,Gemini/PaLM/Bard,
-r56925bb2,engine,Python interpreter/executor,
-r56925bb2,benchmark,financemath,FinanceMath
-r1048a4cd,lm,"GPT-3/3.5, ChatGPT, Codex",
-r1048a4cd,lm,GPT-4 family,
-r1048a4cd,lm,Llama family,
-r1048a4cd,benchmark,malls,MALLS
-r96e8617a,benchmark,llmerl,LLM-ERL
-r76367fff,engine,Lean,
-r9a9fad08,lm,"GPT-3/3.5, ChatGPT, Codex",
-r9a9fad08,lm,Gemini/PaLM/Bard,
-rd0e4be70,engine,Python interpreter/executor,
-rd0e4be70,benchmark,fetaqa,FeTaQA
-rd0e4be70,benchmark,qtsumm,QTSumm
-rd45f1e27,benchmark,minif2f,miniF2F
-r85fbfe3b,engine,Python interpreter/executor,
-rfc590f9c,lm,GPT-4 family,
-rfc590f9c,benchmark,folio,FOLIO
-r40a7dd77,lm,"GPT-3/3.5, ChatGPT, Codex",
-r40a7dd77,lm,GPT-4 family,
-r40a7dd77,benchmark,logicasker,LogicAsker
-rd1cdf2d2,lm,Llama family,
-rd1cdf2d2,engine,Python interpreter/executor,
-rd1cdf2d2,benchmark,gsm8k,GSM8K
-rd1cdf2d2,benchmark,math,MATH
-rb4bb0607,engine,Python interpreter/executor,
-rbb49cc85,lm,"GPT-3/3.5, ChatGPT, Codex",
-rbb49cc85,engine,Python interpreter/executor,
-r108ca371,benchmark,quite,QUITE
-r8e6dfc90,lm,GPT-4 family,
-r8e6dfc90,lm,Mistral/Mixtral,
-r0b63ce19,lm,BERT family,
-r0b63ce19,lm,GPT-4 family,
-r0b63ce19,benchmark,folio,FOLIO
-r3372249e,lm,"GPT-3/3.5, ChatGPT, Codex",
-r3372249e,lm,Llama family,
-r3372249e,benchmark,mathfunc,MathFunc
-r3372249e,benchmark,scitoolbench,SciToolBench
-r2080cdd7,lm,GPT-4 family,
-r2080cdd7,lm,Llama family,
-r2080cdd7,engine,Lean,
-r2080cdd7,benchmark,minif2f,MiniF2F-Test
-r2080cdd7,benchmark,openbootstrappedtheorems,Open Bootstrapped Theorems
-rb66847eb,lm,GPT-4 family,
-rb66847eb,engine,Python interpreter/executor,
-rb66847eb,benchmark,chartqa,ChartQA
-rb66847eb,benchmark,charttotable,Chart-to-Table
-rb66847eb,benchmark,charttotext,Chart-to-Text
-rb66847eb,benchmark,chartx,ChartX
-rb66847eb,benchmark,opencqa,OpenCQA
-r610281c5,engine,Theorem provers (FOL),
-rf9b66245,lm,GPT-4 family,
-r661890dc,lm,Gemini/PaLM/Bard,
-r661890dc,lm,T5 family,
-r661890dc,engine,Python interpreter/executor,
-r661890dc,benchmark,mind2web,Mind2Web
-r661890dc,benchmark,miniwob,MiniWoB
-rc1250f1e,lm,Claude,
-rc1250f1e,lm,GPT-4 family,
-rc1250f1e,lm,Llama family,
-rc1250f1e,benchmark,datikz,DaTikZ
-r6caabb12,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-r6caabb12,benchmark,bongardopenworld,Bongard-OpenWorld
-r8a87bae4,lm,"GPT-3/3.5, ChatGPT, Codex",
-r8a87bae4,lm,Gemini/PaLM/Bard,
-r8a87bae4,engine,Isabelle,
-r8a87bae4,benchmark,gsm8k,GSM8K
-r8a87bae4,benchmark,math,MATH
-r8a87bae4,benchmark,multiarith,MultiArith
-rb5019997,lm,GPT-4 family,
-rf9e4862e,benchmark,deepcoder,DeepCoder
-rf9e4862e,benchmark,robustfill,RobustFill
-r5b61b37f,engine,Python interpreter/executor,
-rfaf1d4ce,lm,GPT-4 family,
-rfaf1d4ce,lm,Llama family,
-rc264b05c,lm,GPT-4 family,
-rd562c497,engine,Python interpreter/executor,
-rd562c497,benchmark,1darc,1D-ARC
-rd562c497,benchmark,arc,ARC
-rd562c497,benchmark,sygus,SyGuS
-re2f26fb4,engine,Isabelle,
-re2f26fb4,benchmark,minif2f,miniF2F
-ra142c48f,lm,"GPT-3/3.5, ChatGPT, Codex",
-ra142c48f,lm,GPT-4 family,
-ra142c48f,benchmark,bigbench,Big-Bench
-r785313e9,lm,Gemini/PaLM/Bard,
-r785313e9,lm,Llama family,
-r785313e9,benchmark,math,MATH
-r785313e9,benchmark,proofpile2,Proof-Pile-2
-r1bc4b29c,lm,GPT-4 family,
-r1bc4b29c,engine,Python interpreter/executor,
-r1bc4b29c,benchmark,math,MATH
-r1bc4b29c,benchmark,mathinstruct,MathInstruct
-ra1d40c28,lm,Llama family,
-ra1d40c28,engine,Lean,
-ra1d40c28,benchmark,mustardsauce,MUSTARDSAUCE
-rf127ea2d,engine,Isabelle,
-rf127ea2d,benchmark,minif2f,miniF2F
-rf127ea2d,benchmark,pisa,PISA
-r0c37875c,lm,"GPT-3/3.5, ChatGPT, Codex",
-r0c37875c,lm,GPT-4 family,
-r0c37875c,lm,Gemini/PaLM/Bard,
-r0c37875c,engine,Python interpreter/executor,
-r0c37875c,benchmark,gsm8k,GSM8K
-r0c37875c,benchmark,math,MATH
-r0c37875c,benchmark,mathcodeinstruct,MathCodeInstruct
-r37d6a8c5,engine,Python interpreter/executor,
-rf885caa8,lm,GPT-4 family,
-rf885caa8,lm,Gemini/PaLM/Bard,
-rf885caa8,engine,Python interpreter/executor,
-rf885caa8,benchmark,math,MATH
-rf03252fb,benchmark,maniskill2,ManiSkill2
-rf03252fb,benchmark,metaworld,MetaWorld
-rf03252fb,benchmark,mujoco,MuJoCo
-r7dc50255,lm,GPT-4 family,
-r7dc50255,benchmark,math,MATH
-r6f24e47d,lm,GPT-4 family,
-r6f24e47d,engine,Lean,
-r6f24e47d,engine,"SAT/SMT (Z3, cvc5)",
-r6f24e47d,benchmark,leaneuclid,LeanEuclid
-r6f24e47d,benchmark,unigeo,UniGeo
-raaede5d8,lm,GPT-4 family,
-raaede5d8,lm,Llama family,
-raaede5d8,engine,Python interpreter/executor,
-raaede5d8,benchmark,cruxeval,CRUXEval
-raaede5d8,benchmark,humaneval,HumanEval
-r9bf8be45,engine,Python interpreter/executor,
-r9bf8be45,benchmark,bigbenchhard,BIG-Bench Hard
-rcddfd23f,benchmark,arc,ARC
-reba222b6,lm,GPT-4 family,
-reba222b6,benchmark,atari,Atari
-r8a268c2e,benchmark,onlinebinpacking,online bin packing
-rb0ba00fc,lm,Llama family,
-rb0ba00fc,lm,Mistral/Mixtral,
-rb0ba00fc,engine,Python interpreter/executor,
-rb0ba00fc,benchmark,apibank,API-Bank
-rb0ba00fc,benchmark,codeactinstruct,CodeActInstruct
-r0e774100,engine,Optimisation solvers (LP/MILP/CP),
-r0e774100,benchmark,nlp4lp,NLP4LP
-r6fbf3493,benchmark,gsm8k,GSM8K
-r6fbf3493,benchmark,rgsm,R-GSM
-r72b731d9,lm,Llama family,
-r698b51ae,lm,"GPT-3/3.5, ChatGPT, Codex",
-r698b51ae,lm,Llama family,
-r698b51ae,engine,Python interpreter/executor,
-r698b51ae,benchmark,datereasoning,Date reasoning
-r698b51ae,benchmark,logo,LOGO
-r698b51ae,benchmark,math,MATH
-r698b51ae,benchmark,tabmwp,TabMWP
-r698b51ae,benchmark,textcraft,TextCraft
-r33ed8809,benchmark,minif2f,miniF2F
-r62b662a5,engine,Optimisation solvers (LP/MILP/CP),
-r62b662a5,benchmark,radnersentences,RADNER sentences
-rd6ab748e,benchmark,geoqa,GeoQA
-rd6ab748e,benchmark,geoqa+,GeoQA+
-r49db4138,engine,"Logic programming (Prolog, ASP, Datalog)",
-rcafa340f,engine,"Logic programming (Prolog, ASP, Datalog)",
-ra87e0258,lm,BERT family,
-ra87e0258,lm,"GPT-3/3.5, ChatGPT, Codex",
-ra87e0258,lm,GPT-4 family,
-r97476a41,engine,"Logic programming (Prolog, ASP, Datalog)",
-r97476a41,engine,Python interpreter/executor,
-r97476a41,benchmark,gsm8k,GSM8K
-r546f708d,engine,Lean,
-r546f708d,benchmark,folio,FOLIO
-r546f708d,benchmark,proofwriter,ProofWriter
-r026d5bf1,lm,Llama family,
-r026d5bf1,engine,Python interpreter/executor,
-rc55bb913,lm,Llama family,
-rc55bb913,engine,Python interpreter/executor,
-r95cd948b,lm,Llama family,
-r95cd948b,engine,Optimisation solvers (LP/MILP/CP),
-r95cd948b,benchmark,dialogsum,DialogSum
-r9c6c0db2,benchmark,wikitablequestions,WikiTableQuestions
-r6b396b60,lm,GPT-2 and earlier,
-r6b396b60,lm,GPT-4 family,
-r6b396b60,benchmark,gsm,GSM
-ree2d9e8b,lm,GPT-4 family,
-ree2d9e8b,engine,Python interpreter/executor,
-rcee8d9a3,engine,Theorem provers (FOL),
-rcee8d9a3,benchmark,math,MATH
-rcee8d9a3,benchmark,minif2f,miniF2F
-rbaaacf5e,lm,GPT-4 family,
-rbaaacf5e,lm,Llama family,
-rc21396bd,benchmark,cold,COLD
-r804cd20b,benchmark,blocksworld,Blocksworld
-r9d99f611,benchmark,warfarin,Warfarin
-r9d99f611,benchmark,warfarinpharmacokineticdataset,Warfarin pharmacokinetic dataset
-r0d1db21b,lm,Claude,
-r0d1db21b,lm,GPT-4 family,
-r0d1db21b,benchmark,datikzv2,DaTikZv2
-r0d1db21b,benchmark,metafig,MetaFig
-r0d1db21b,benchmark,sketchfig,SketchFig
-refec56ac,benchmark,deivg,DeiVG
-r36b9fd34,lm,"GPT-3/3.5, ChatGPT, Codex",
-r36b9fd34,lm,GPT-4 family,
-r36b9fd34,benchmark,humaneval,HumanEval
-r36b9fd34,benchmark,math,MATH
-r36b9fd34,benchmark,mbpp,MBPP
-r36b9fd34,benchmark,xcodeeval,xCodeEval
-r1612bafd,benchmark,zendo,Zendo
-r62e620ca,benchmark,embodiedagentinterface,Embodied Agent Interface
-r051b0a1e,lm,Llama family,
-r051b0a1e,benchmark,bbh,BBH
-r051b0a1e,benchmark,fld,FLD
-r051b0a1e,benchmark,fld2,FLD×2
-rb5a2b99a,lm,Llama family,
-rb5a2b99a,lm,Mistral/Mixtral,
-rb5a2b99a,engine,Isabelle,
-rb5a2b99a,benchmark,code2inv,Code2Inv
-rb5a2b99a,benchmark,fveler,FVELER
-rb5a2b99a,benchmark,svcomp,SV-COMP
-rc3671b2c,benchmark,codeworldmodelsbenchmark,Code World Models Benchmark (CWMB)
-r9a70e448,engine,Theorem provers (FOL),
-r6e19b6fe,engine,Lean,
-r6e19b6fe,benchmark,imo,IMO
-r6e19b6fe,benchmark,leanworkbook,Lean Workbook
-r2dc08068,lm,GPT-4 family,
-r2dc08068,engine,Planners (PDDL),
-r70b0f3b6,lm,Llama family,
-r70b0f3b6,lm,Mistral/Mixtral,
-ra6f72f2f,lm,Llama family,
-raef94006,lm,GPT-4 family,
-raef94006,lm,Llama family,
-raef94006,lm,Mistral/Mixtral,
-raef94006,engine,Python interpreter/executor,
-raef94006,benchmark,gsm8k,GSM8K
-raef94006,benchmark,mammoth,MAmmoTH
-raef94006,benchmark,math,MATH
-raef94006,benchmark,metamathqa,MetaMathQA
-raef94006,benchmark,openmathinstruct1,OpenMathInstruct-1
-rb0ff4c85,engine,Isabelle,
-rb0ff4c85,benchmark,minif2f,miniF2F
-rb0ff4c85,benchmark,pisa,PISA
-r33e16ff8,engine,Coq/Rocq,
-r33e16ff8,engine,Isabelle,
-r33e16ff8,engine,Lean,
-r33e16ff8,benchmark,putnambench,PutnamBench
-rf20ecae4,benchmark,spreadsheetbench,SpreadsheetBench
-r4317b7f6,benchmark,feynmanequations,Feynman equations
-r29af79f6,benchmark,arcade,Arcade
-r29af79f6,benchmark,birdsql,BIRD-SQL
-rfff81209,lm,GPT-4 family,
-rfff81209,benchmark,ligmm,LIG-MM
-rfff81209,benchmark,sling,SLING
-rfff81209,benchmark,svcomp,SV-COMP
-r23bd7ed5,lm,GPT-4 family,
-r23bd7ed5,benchmark,ego4d,Ego4D
-r23bd7ed5,benchmark,teach,TEACh
-r23bd7ed5,benchmark,visualwebarena,VisualWebArena
-r9a65906c,engine,Planners (PDDL),
-r9a65906c,engine,Python interpreter/executor,
-ra4243bf4,lm,GPT-4 family,
-ra4243bf4,benchmark,acpbench,ACPBench
-r9e910ce8,engine,Python interpreter/executor,
-reaf641ba,lm,GPT-4 family,
-reaf641ba,benchmark,arc,ARC
-rb304055a,lm,"GPT-3/3.5, ChatGPT, Codex",
-rb304055a,lm,GPT-4 family,
-rb304055a,lm,Llama family,
-rb304055a,lm,T5 family,
-rb7db1232,engine,"SAT/SMT (Z3, cvc5)",
-r8e52c498,lm,GPT-4 family,
-r8e52c498,lm,Gemini/PaLM/Bard,
-r8e52c498,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-r8e52c498,benchmark,geoqa,GeoQA
-r8e52c498,benchmark,gns260k,GNS-260K
-r8e52c498,benchmark,mathverse,MathVerse
-r8e52c498,benchmark,mathvista,MathVista
-r1c87c85f,engine,Planners (PDDL),
-r30b45561,lm,Claude,
-r30b45561,lm,GPT-4 family,
-r30b45561,lm,Gemini/PaLM/Bard,
-r7f0629ef,benchmark,clevrcogent,CLEVR-CoGenT
-r7f0629ef,benchmark,clevrsyn,CLEVR-SYN
-r7f0629ef,benchmark,reascan,ReaSCAN
-re266a131,lm,"GPT-3/3.5, ChatGPT, Codex",
-re266a131,lm,GPT-4 family,
-rbba59ac8,engine,Planners (PDDL),
-r011d7456,engine,Python interpreter/executor,
-r011d7456,benchmark,blind,BLInD
-r218783b6,engine,Lean,
-r218783b6,benchmark,minif2f,MiniF2F
-r097b6972,benchmark,formalbench,FormalBench
-r16bb57d2,lm,GPT-4 family,
-r16bb57d2,benchmark,math,MATH
-r3c2b28df,lm,GPT-4 family,
-rae5718fd,engine,Theorem provers (FOL),
-rae5718fd,benchmark,esnli,e-SNLI
-rae5718fd,benchmark,qasc,QASC
-rae5718fd,benchmark,worldtree,WorldTree
-r5bbab863,lm,DeepSeek family,
-r5bbab863,lm,GPT-4 family,
-r5bbab863,engine,Coq/Rocq,
-r5bbab863,engine,Dafny/Verus/Why3/F*,
-r5bbab863,engine,Lean,
-rc8d2888b,benchmark,minif2f,miniF2F
-rc8d2888b,benchmark,proofnet,ProofNet
-r9581f567,benchmark,mysteryzebra,Mystery-Zebra
-rd92d8ed7,engine,Planners (PDDL),
-r9521135b,engine,Planners (PDDL),
-r85105581,benchmark,googlelocal,Google Local
-r85105581,benchmark,realtravel,RealTravel
-r85105581,benchmark,travelplanner,TravelPlanner
-r00354623,lm,GPT-4 family,
-r00354623,lm,Llama family,
-r00354623,benchmark,xlogoonline,XLogoOnline
-r7d61d023,engine,Lean,
-r7d61d023,benchmark,minif2f,miniF2F
-rc4d1bc76,lm,GPT-4 family,
-rc4d1bc76,lm,Llama family,
-rc4d1bc76,lm,Mistral/Mixtral,
-rc4d1bc76,benchmark,hitab,HiTab
-rc4d1bc76,benchmark,multihiertt,MultiHiertt
-r5e58413d,benchmark,rulearena,RuleArena
-ra8869ee2,engine,Lean,
-ra8869ee2,benchmark,formalstep,FormalStep
-r66ce1dcb,lm,Llama family,
-r66ce1dcb,lm,Mistral/Mixtral,
-r66ce1dcb,engine,Lean,
-r66ce1dcb,benchmark,aqua,AQUA
-r66ce1dcb,benchmark,multiarith,MultiArith
-r66ce1dcb,benchmark,svamp,SVAMP
-r71a25486,engine,Isabelle,
-r71a25486,benchmark,defarxiv,Def_ArXiv
-r71a25486,benchmark,defwiki,Def_Wiki
-r71a25486,benchmark,minif2f,miniF2F
-r00510af9,benchmark,induscp,IndusCP
-rdaf96b33,engine,Lean,
-r9f5f9d32,benchmark,apimixatis,APIMixATIS
-r9f5f9d32,benchmark,apimixsnips,APIMixSNIPS
-r9f5f9d32,benchmark,foodordering,FoodOrdering
-r7ab95a4e,benchmark,gsmdc,GSM-DC
-r6bbccaf3,benchmark,nr3d,Nr3D
-rcf10398e,benchmark,gracore,GraCoRe
-rcf10398e,benchmark,greal,G-REAL
-rcf10398e,benchmark,nlgraph,NLGraph
-r870ab859,benchmark,multilogicnmr,MultiLogicNMR
-r2e3069a4,lm,Llama family,
-r2e3069a4,engine,Lean,
-r9fb81a0c,lm,DeepSeek family,
-r9fb81a0c,engine,"Logic programming (Prolog, ASP, Datalog)",
-r9fb81a0c,benchmark,math,MATH
-r9fb81a0c,benchmark,prologmath,Prolog-MATH
-rfb94d02e,benchmark,convfinqa,ConvFinQA
-rfb94d02e,benchmark,finqa,FinQA
-r8265ef4f,engine,Lean,
-r8265ef4f,benchmark,proofnet,ProofNet#
-r8265ef4f,benchmark,proofnetverif,ProofNetVerif
-r8265ef4f,benchmark,rlm25,RLM25
-ref1a4a16,lm,DeepSeek family,
-ref1a4a16,benchmark,minif2f,miniF2F-test
-r31e46b7f,lm,GPT-4 family,
-r31e46b7f,engine,"SAT/SMT (Z3, cvc5)",
-r31e46b7f,benchmark,satbench,SATBench
-rc17dc698,engine,Planners (PDDL),
-rc17dc698,benchmark,embodyguard,EmbodyGuard
-rc17dc698,benchmark,safel,SAFEL
-rb425a47c,lm,DeepSeek family,
-rb425a47c,engine,Lean,
-r795e38a8,benchmark,pmc,PMC
-r12a060a4,lm,GPT-4 family,
-r21c6b045,engine,Lean,
-r21c6b045,benchmark,leandojo,Leandojo
-r21c6b045,benchmark,minif2f,miniF2F
-r42e78a64,lm,GPT-4 family,
-re2d8a330,benchmark,atari,Atari
-rbf1fa053,lm,Gemma,
-rbf1fa053,engine,Python interpreter/executor,
-rbf1fa053,benchmark,gsm8k,GSM8K
-rbf1fa053,benchmark,math,MATH
-ra86a93ca,benchmark,minif2f,miniF2F-test
-r1476b927,engine,Python interpreter/executor,
-r1476b927,benchmark,arc,ARC
-rc399552f,lm,GPT-4 family,
-rc399552f,lm,Gemini/PaLM/Bard,
-rcec7abc9,lm,DeepSeek family,
-rcec7abc9,engine,Lean,
-rcec7abc9,benchmark,minif2f,miniF2F
-rcec7abc9,benchmark,proofnet,ProofNet
-r7b7ccf8c,engine,"SAT/SMT (Z3, cvc5)",
-re0a00f6d,lm,GPT-4 family,
-re0a00f6d,engine,Python interpreter/executor,
-re0a00f6d,benchmark,dynamath,DynaMath
-r99a7d5e9,engine,Python interpreter/executor,
-r982a2b15,lm,GPT-4 family,
-r982a2b15,lm,Llama family,
-r982a2b15,benchmark,exploretom,ExploreToM
-r982a2b15,benchmark,tomi,ToMi
-r6b046c34,engine,Planners (PDDL),
-r6b046c34,benchmark,muse,MuSE
-re1b34ce5,benchmark,gsm8k,GSM8K
-re1b34ce5,benchmark,gsmsymbolic,GSM-Symbolic
-rc6f43b68,benchmark,geometry3k,Geometry3K
-rc6f43b68,benchmark,geoqa,GeoQA
-rc6f43b68,benchmark,pgps9k,PGPS9k
-rc6f43b68,benchmark,unigeo,UniGeo
-r6890f25f,lm,Llama family,
-r6890f25f,lm,Specialised provers,
-r6890f25f,engine,Lean,
-r6890f25f,benchmark,herald,Herald
-r6890f25f,benchmark,mathlib4,Mathlib4
-r6890f25f,benchmark,minif2f,miniF2F-test
-r7cca0ca0,lm,GPT-4 family,
-r7cca0ca0,benchmark,cwebenchjava,CWE-Bench-Java
-ra804bbd4,engine,Lean,
-r2962fbdc,benchmark,20bn,20BN
-r2962fbdc,benchmark,mugen,MUGEN
-r2962fbdc,benchmark,openpvsg,OpenPVSG
-r24fa22be,lm,"GPT-3/3.5, ChatGPT, Codex",
-r24fa22be,lm,Gemini/PaLM/Bard,
-r24fa22be,lm,Llama family,
-r24fa22be,lm,Mistral/Mixtral,
-r38244d6e,lm,Llama family,
-r38244d6e,benchmark,proverqa,ProverQA
-r8e0eb62d,benchmark,ilbench,IL-Bench
-rc9f8b9ed,engine,Lean,
-r209d7fc1,engine,Lean,
-rf832bdef,benchmark,mathgap,MathGAP
-r443beac1,benchmark,alfworld,ALFWorld
-r443beac1,benchmark,minecraft,Minecraft
-r443beac1,benchmark,rlbench,RLBench
-r443beac1,benchmark,virtualhome,VirtualHome
-rc6ef1832,lm,GPT-4 family,
-rc6ef1832,benchmark,gameof24,Game of 24
-rc6ef1832,benchmark,graphcoloring,Graph Coloring
-rc6ef1832,benchmark,stripsplanning,STRIPS planning
-r59c39e16,lm,GPT-4 family,
-r59c39e16,lm,Llama family,
-r59c39e16,benchmark,optibench,OptiBench
-r59c39e16,benchmark,resocratic29k,ReSocratic-29k
-r69c23c69,lm,Claude,
-r69c23c69,lm,GPT-4 family,
-rb21543ad,lm,Llama family,
-rb21543ad,benchmark,twinsafety,TwinSafety
-r596cca2a,benchmark,connf,Con-NF
-r596cca2a,benchmark,proofnet,ProofNet
-r5b626332,lm,GPT-4 family,
-r5b626332,engine,Python interpreter/executor,
-r59c99f02,benchmark,karel,Karel
-recc9142e,benchmark,blocksworld,Blocksworld
-recc9142e,benchmark,mazenavigation,Maze Navigation
-r5f4be8d2,benchmark,testoftime,Test of Time
-rf95295b4,engine,Python interpreter/executor,
-rf95295b4,benchmark,mmlu,MMLU
-rbe76e7da,lm,Claude,
-rbe76e7da,lm,"GPT-3/3.5, ChatGPT, Codex",
-rbe76e7da,lm,GPT-4 family,
-rbe76e7da,lm,Llama family,
-rd2e57606,engine,Lean,
-rd2e57606,benchmark,minictx,miniCTX
-rd2e57606,benchmark,minif2f,miniF2F
-r96f2cdc6,engine,Python interpreter/executor,
-r96f2cdc6,benchmark,cryptonite,Cryptonite
-r6048741f,lm,Llama family,
-r6048741f,benchmark,humaneval,HumanEval
-r6048741f,benchmark,mbpp,MBPP
-r2b00fd98,engine,Optimisation solvers (LP/MILP/CP),
-rb797b231,benchmark,folio,FOLIO
-rb797b231,benchmark,gsmsymbolic,GSM-symbolic
-r36baffd2,lm,Claude,
-r36baffd2,lm,DeepSeek family,
-r36baffd2,lm,"GPT-3/3.5, ChatGPT, Codex",
-r36baffd2,lm,GPT-4 family,
-r36baffd2,lm,Llama family,
-r36baffd2,lm,Mistral/Mixtral,
-r36baffd2,benchmark,symbench,SymBench
-rd7186c82,engine,"Logic programming (Prolog, ASP, Datalog)",
-r84c5c76d,benchmark,manytypes4py,ManyTypes4Py
-r3b85cca1,benchmark,equivaformulation,EquivaFormulation
-r30b97cdb,benchmark,cw,CW
-r30b97cdb,benchmark,gltl,GLTL
-r30b97cdb,benchmark,navi,Navi
-r9d8363e3,lm,"GPT-3/3.5, ChatGPT, Codex",
-r9d8363e3,lm,Llama family,
-r9d8363e3,benchmark,grailqa,GrailQA
-rb3c57dd0,benchmark,llmsrbench,LLM-SRBench
-rb3c57dd0,benchmark,lsrsynth,LSR-Synth
-rb3c57dd0,benchmark,lsrtransform,LSR-Transform
-r396c252d,engine,Optimisation solvers (LP/MILP/CP),
-rb6b49ed9,engine,Python interpreter/executor,
-rcefeacbc,lm,DeepSeek family,
-rcefeacbc,lm,Specialised provers,
-rcefeacbc,engine,Lean,
-rcefeacbc,benchmark,minif2f,miniF2F-test
-reb0ef720,benchmark,acdrepo,ACD Repo
-re0013edf,lm,"GPT-3/3.5, ChatGPT, Codex",
-r0422d6a3,lm,DeepSeek family,
-r0422d6a3,lm,Specialised provers,
-r0422d6a3,engine,Isabelle,
-r0422d6a3,engine,Lean,
-r0422d6a3,benchmark,minif2f,miniF2F
-r73041e10,benchmark,gsm8k,GSM8K
-r73041e10,benchmark,humaneval+,HumanEval+
-r73041e10,benchmark,math,MATH
-r73041e10,benchmark,mbpp+,MBPP+
-re742c2dc,engine,Isabelle,
-re742c2dc,engine,Lean,
-re742c2dc,benchmark,leanworkbook,LeanWorkbook
-re742c2dc,benchmark,minif2f,miniF2F-test
-re742c2dc,benchmark,proofnet,ProofNet-test
-re742c2dc,benchmark,putnambench,PutnamBench
-rae33fe2f,engine,Python interpreter/executor,
-rae33fe2f,benchmark,arcagi,ARC-AGI
-rffe62927,benchmark,shieldagentbench,ShieldAgent-Bench
-r16666d21,benchmark,zebralogic,ZebraLogic
-rd881ed06,benchmark,gameof24,Game of 24
-rd881ed06,benchmark,gameof28,Game of 28
-rd881ed06,benchmark,gameof30,Game of 30
-r10020723,lm,GPT-4 family,
-r10020723,engine,"Logic programming (Prolog, ASP, Datalog)",
-r10020723,benchmark,aspcompetitionsbaseddataset,ASP Competitions-based dataset
-r10020723,benchmark,aspcompetitionsproblems,ASP Competitions problems
-r2a0a856e,benchmark,std,STD
-r736ee6ed,lm,Claude,
-r736ee6ed,engine,Planners (PDDL),
-rf7f17a35,benchmark,newyorktimescrosswords,New York Times crosswords
-r13e19e17,lm,GPT-4 family,
-r13e19e17,engine,"SAT/SMT (Z3, cvc5)",
-r13e19e17,benchmark,travelplanner,TravelPlanner
-r25a48355,lm,GPT-4 family,
-r25a48355,engine,Planners (PDDL),
-r25a48355,benchmark,planetarium,Planetarium
-r823909fa,engine,Optimisation solvers (LP/MILP/CP),
-r823909fa,engine,"SAT/SMT (Z3, cvc5)",
-r0a754dc8,engine,Lean,
-r0a754dc8,benchmark,leandojo,LeanDojo
-r0a754dc8,benchmark,minif2f,miniF2F
-r89bf1f29,engine,Python interpreter/executor,
-re13f719a,lm,GPT-4 family,
-re13f719a,lm,Specialised provers,
-re13f719a,engine,Lean,
-re13f719a,benchmark,minif2f,miniF2F
-r3ab7ef65,lm,Llama family,
-r3ab7ef65,lm,Specialised provers,
-rf7949d7b,benchmark,atmosscibench,AtmosSci-Bench
-re8e105a9,lm,"GPT-3/3.5, ChatGPT, Codex",
-re8e105a9,lm,Gemini/PaLM/Bard,
-re8e105a9,engine,Optimisation solvers (LP/MILP/CP),
-re8e105a9,benchmark,autoopt11k,AutoOpt-11k
-rd7f0e1f1,lm,GPT-4 family,
-rd7f0e1f1,engine,Python interpreter/executor,
-rd7f0e1f1,benchmark,stark,STARK
-r9a191058,engine,Lean,
-r9a191058,benchmark,clever,CLEVER
-r3b5fd577,lm,Llama family,
-r3b5fd577,lm,Qwen family,
-r3b5fd577,benchmark,arenahard,Arena-Hard
-r3b5fd577,benchmark,followbench,FollowBench
-r3b5fd577,benchmark,infobench,InFoBench
-r3b5fd577,benchmark,wildchecklists,WildChecklists
-r37271d3d,benchmark,scope,SCOPE-Test
-r5f4af8c0,benchmark,cwq,CWQ
-r5f4af8c0,benchmark,kgqagen10k,KGQAGen-10k
-r5f4af8c0,benchmark,webqsp,WebQSP
-rf15138cf,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-rc361829b,lm,DeepSeek family,
-rc361829b,lm,GPT-4 family,
-rc361829b,lm,Qwen family,
-rc361829b,benchmark,aime,AIME
-rc361829b,benchmark,arcagi,ARC-AGI
-rc361829b,benchmark,arcagi2,ARC-AGI 2
-rc361829b,benchmark,beyondaime,BeyondAIME
-rc361829b,benchmark,enigmataeval,ENIGMATA-Eval
-rc361829b,benchmark,gpqa,GPQA
-r7ce7b370,benchmark,factoriolearningenvironment,Factorio Learning Environment
-re0ae613c,engine,"SAT/SMT (Z3, cvc5)",
-r96d78357,lm,DeepSeek family,
-r96d78357,lm,Specialised provers,
-r96d78357,engine,Lean,
-r96d78357,benchmark,ineqcomp,Ineq-Comp
-r54a42677,benchmark,olympiadinequalities,Olympiad inequalities (437 problems)
-rdbc215a2,lm,DeepSeek family,
-rdbc215a2,lm,GPT-4 family,
-r3cb07e7e,lm,Llama family,
-r3cb07e7e,benchmark,zebralogicbench,ZebraLogicBench
-r05566fe9,lm,GPT-4 family,
-r05566fe9,benchmark,mcmicm,MCM/ICM
-r05566fe9,benchmark,mmbench,MM-Bench
-r0b58eee0,benchmark,minif2f,miniF2F
-r0b58eee0,benchmark,proofnet,ProofNet
-r633d08ff,lm,Llama family,
-r633d08ff,engine,Optimisation solvers (LP/MILP/CP),
-r633d08ff,benchmark,complexor,ComplexOR
-r633d08ff,benchmark,nl4opt,NL4Opt
-r633d08ff,benchmark,nlp4lp,NLP4LP
-r974a9133,engine,Python interpreter/executor,
-r57be21b8,lm,GPT-4 family,
-r57be21b8,benchmark,muslr,MuSLR
-r7acba57d,engine,Planners (PDDL),
-r7acba57d,benchmark,alfworld,ALFWorld
-r7acba57d,benchmark,pddlgym,PDDLGym
-r7acba57d,benchmark,virtualhome,VirtualHome
-r1b894e95,lm,DeepSeek family,
-r1b894e95,lm,Qwen family,
-r1b894e95,benchmark,omega,OMEGA
-r34aac216,lm,Gemini/PaLM/Bard,
-r34aac216,engine,Python interpreter/executor,
-r34aac216,benchmark,bigbenchextrahard,Big Bench Extra Hard (BBEH)
-radf94b79,benchmark,ataripong,Atari Pong
-radf94b79,benchmark,montezumasrevenge,Montezuma's Revenge
-radf94b79,benchmark,pong,Pong
-re3a4cd40,benchmark,1darc,1D-ARC
-re3a4cd40,benchmark,mbpp+,MBPP+
-re3a4cd40,benchmark,minigrid,MiniGrid
-re3a4cd40,benchmark,playgol,Playgol
-r7abb32ad,benchmark,gsmeq,GSME-Q
-r7abb32ad,benchmark,gsmq,GSM-Q
-r7abb32ad,benchmark,logicq,Logic-Q
-r7abb32ad,benchmark,planningq,Planning-Q
-r7abb32ad,benchmark,questbench,QuestBench
-r12a103a9,lm,DeepSeek family,
-r12a103a9,lm,Specialised provers,
-r12a103a9,benchmark,minif2f,miniF2F
-r12a103a9,benchmark,proofnet,ProofNet
-r12a103a9,benchmark,putnambench,PutnamBench
-r5715c6fc,lm,DeepSeek family,
-r5715c6fc,engine,"SAT/SMT (Z3, cvc5)",
-r5715c6fc,benchmark,aime,AIME
-r5715c6fc,benchmark,livecodebench,LiveCodeBench
-r5715c6fc,benchmark,saturn26k,Saturn-2.6k
-r7cba4758,lm,DeepSeek family,
-r7cba4758,lm,GPT-4 family,
-r7cba4758,engine,Optimisation solvers (LP/MILP/CP),
-r51bd51a2,engine,Optimisation solvers (LP/MILP/CP),
-r72fadfed,engine,Model checkers / temporal logic,
-r06b8d03f,benchmark,rtlrewriter,RTL-Rewriter
-r97ae3996,lm,DeepSeek family,
-r97ae3996,lm,GPT-4 family,
-r97ae3996,engine,Python interpreter/executor,
-r6b8e53de,benchmark,rlbench,RLBench
-r790d4bfc,engine,Planners (PDDL),
-r2a248128,benchmark,alfworld,ALFWorld
-r2a248128,benchmark,mars,Mars
-r5877c953,engine,Lean,
-r5877c953,benchmark,minif2f,miniF2F
-r5877c953,benchmark,minif2fv2,miniF2F-v2
-r9ec117bd,lm,Specialised provers,
-r9ec117bd,engine,Lean,
-r9ec117bd,benchmark,leanworkbookplus,Lean Workbook Plus
-r9ec117bd,benchmark,mathlib4,Mathlib4
-ra79fa313,engine,"Logic programming (Prolog, ASP, Datalog)",
-r6975c90e,engine,"Logic programming (Prolog, ASP, Datalog)",
-r6975c90e,benchmark,sara,SARA
-r40f32cd4,lm,GPT-4 family,
-r40f32cd4,engine,Python interpreter/executor,
-r254fcd16,benchmark,coigcqia,COIG-CQIA
-r254fcd16,benchmark,smartypatbench,SmartyPat-Bench
-r40769616,benchmark,epla,EPLA
-r40769616,benchmark,minif2f,miniF2F
-r40769616,benchmark,proofnet,ProofNet
-rca8a5faa,benchmark,gsmperturbationbenchmarks,GSM perturbation benchmarks
-r9ef2cbd8,benchmark,imogeometryproblems,IMO geometry problems (2000-2024)
-r58786fe5,benchmark,beavertails,BeaverTails
-r58786fe5,benchmark,prontoqa,PrOntoQA
-r58786fe5,benchmark,proverqa,ProverQA
-r58786fe5,benchmark,rail2country,Rail2Country
-r605194c1,lm,Claude,
-r605194c1,lm,DeepSeek family,
-r605194c1,lm,GPT-4 family,
-r605194c1,lm,Gemini/PaLM/Bard,
-r605194c1,engine,Python interpreter/executor,
-r605194c1,benchmark,aime24,AIME24
-r605194c1,benchmark,aime25,AIME25
-r605194c1,benchmark,hmmt25,HMMT25
-r10e36dc2,engine,Lean,
-r10e36dc2,benchmark,fatex,FATE-X
-r10e36dc2,benchmark,proofnet,ProofNet
-r50ca5848,engine,Lean,
-r50ca5848,benchmark,advancedmath,AdvancedMath
-r50ca5848,benchmark,minif2f,miniF2F
-r50ca5848,benchmark,proofnet,ProofNet
-re33d530c,lm,GPT-4 family,
-re33d530c,lm,Gemini/PaLM/Bard,
-re33d530c,lm,Llama family,
-re33d530c,lm,Qwen family,
-re33d530c,benchmark,beyondbench,BeyondBench
-r232e4111,engine,"SAT/SMT (Z3, cvc5)",
-r04590057,lm,Claude,
-r04590057,lm,DeepSeek family,
-r04590057,lm,"GPT-3/3.5, ChatGPT, Codex",
-r04590057,lm,GPT-4 family,
-r04590057,lm,Gemini/PaLM/Bard,
-r04590057,lm,Llama family,
-r04590057,benchmark,cmtbenchmark,CMT-Benchmark
-rdabcbba2,benchmark,circuitsense,CircuitSense
-r0a224728,lm,Gemini/PaLM/Bard,
-r0a224728,engine,Python interpreter/executor,
-r7dc6cf73,benchmark,cogniload,CogniLoad
-r0aeb4906,benchmark,cubebench,CubeBench
-re1446fe9,lm,DeepSeek family,
-re1446fe9,lm,GPT-4 family,
-re1446fe9,engine,Lean,
-re1446fe9,benchmark,connf,ConNF
-re1446fe9,benchmark,minif2f,MiniF2F-test
-re1446fe9,benchmark,proofnet,ProofNet
-rc3acba99,benchmark,geoperceive,GeoPerceive
-r56e37560,lm,GPT-4 family,
-r56e37560,lm,Gemini/PaLM/Bard,
-r56e37560,lm,Qwen family,
-r56e37560,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
-rde2a3082,benchmark,formalmathlite,FormalMATH-Lite
-rde2a3082,benchmark,ineqcompseed,Ineq-Comp-Seed
-rde2a3082,benchmark,ineqcomptransformed,Ineq-Comp-Transformed
-rde2a3082,benchmark,minif2f,MiniF2F-Test
-r73af149f,engine,Lean,
-r73af149f,benchmark,fateh,FATE-H
-r73af149f,benchmark,fatex,FATE-X
-r8e5e1408,engine,Lean,
-r8e5e1408,benchmark,formalml,FormalML
-ra6a7aa23,benchmark,dimacs,DIMACS
-ra6a7aa23,benchmark,frontierco,FrontierCO
-ra6a7aa23,benchmark,tsplib,TSPLib
-rff5b35b6,lm,DeepSeek family,
-rff5b35b6,lm,Specialised provers,
-rff5b35b6,engine,Lean,
-rff5b35b6,benchmark,minif2f,MiniF2F-Test
-rff5b35b6,benchmark,proofnet,ProofNet-Test
-r9acdeee6,benchmark,androidworld,AndroidWorld
-r9acdeee6,benchmark,babyai,BabyAI
-r9acdeee6,benchmark,mujoco,MuJoCo
-r520c7235,lm,DeepSeek family,
-r520c7235,lm,Specialised provers,
-r520c7235,engine,Lean,
-r520c7235,benchmark,minif2f,MiniF2F
-r520c7235,benchmark,putnambench,PutnamBench
-rb1f7e919,lm,Specialised provers,
-rb1f7e919,engine,Lean,
-rb1f7e919,benchmark,minif2f,miniF2F
-rb1f7e919,benchmark,putnambench,PutnamBench
-r99ad3bbf,benchmark,causalpitfalls,CausalPitfalls
-rb51f1ace,engine,Lean,
-rb51f1ace,benchmark,putnambench,PutnamBench
-r7345147b,lm,Claude,
-r7345147b,lm,DeepSeek family,
-r7345147b,lm,"GPT-3/3.5, ChatGPT, Codex",
-r7345147b,lm,Gemini/PaLM/Bard,
-r7345147b,lm,Qwen family,
-r7345147b,engine,Dafny/Verus/Why3/F*,
-r7345147b,benchmark,dafnycomp,DafnyCOMP
-r47c448cd,benchmark,logiconbench,LogiConBench
-r5ed1e5a9,lm,GPT-4 family,
-r5ed1e5a9,engine,Theorem provers (FOL),
-r97819a7d,lm,DeepSeek family,
-r97819a7d,engine,Lean,
-r97819a7d,benchmark,gaokaoformal,Gaokao-Formal
-r97819a7d,benchmark,minif2f,MiniF2F
-r2f322bd6,benchmark,moleculariq,MolecularIQ
-r7bd71a09,engine,Planners (PDDL),
-r7bd71a09,benchmark,alfworld,ALFWorld
-r7bd71a09,benchmark,blocksworld,Blocksworld
-r5f46bb8d,engine,Python interpreter/executor,
-rd986a64e,engine,Coq/Rocq,
-rd986a64e,engine,Dafny/Verus/Why3/F*,
-rd986a64e,engine,Isabelle,
-rd986a64e,engine,Lean,
-rd986a64e,benchmark,ntp4vc,NTP4VC
-r19ae4fa3,engine,Python interpreter/executor,
-r19ae4fa3,benchmark,newtonbench,NewtonBench
-rd4a9e13f,engine,Planners (PDDL),
-r6f7a087b,benchmark,prismphysics,PRISM-Physics
-r9d3f97de,lm,DeepSeek family,
-r9d3f97de,engine,Lean,
-r9d3f97de,benchmark,minif2f,MiniF2F
-r9d3f97de,benchmark,proofnet,ProofNet
-rabf69c7a,lm,DeepSeek family,
-rabf69c7a,lm,GPT-4 family,
-rabf69c7a,lm,Gemini/PaLM/Bard,
-rabf69c7a,lm,Specialised provers,
-rabf69c7a,engine,Lean,
-rabf69c7a,benchmark,minif2ftestpf,miniF2F-Test-PF
-r1afc3d79,lm,Specialised provers,
-r1afc3d79,engine,Lean,
-r1afc3d79,benchmark,minif2f,miniF2F
-r1afc3d79,benchmark,putnambench,PutnamBench
-rd23a2890,lm,GPT-4 family,
-rd23a2890,lm,Qwen family,
-rd23a2890,engine,Python interpreter/executor,
-r71e26edf,benchmark,consistencycheck,ConsistencyCheck
-rb5398a81,lm,GPT-4 family,
-rb5398a81,engine,Python interpreter/executor,
-rb5398a81,benchmark,aime,AIME
-r690964dc,lm,GPT-4 family,
-rab20f8f2,lm,GPT-4 family,
-r0a572ee0,benchmark,llmsrbench,LLM-SRBench
-rdea26305,engine,Python interpreter/executor,
-rea458d73,engine,Python interpreter/executor,
-ra2c0bf92,benchmark,aime,AIME
-ra2c0bf92,benchmark,alebench,ALE-Bench
-ra2c0bf92,benchmark,circlepacking,circle packing
-r13f57eb5,engine,Planners (PDDL),
-rbea0e4b3,lm,Llama family,
-rbea0e4b3,engine,Python interpreter/executor,
-rbea0e4b3,benchmark,math,MATH
-r2d285226,engine,Python interpreter/executor,
-r3d3c6a4d,lm,GPT-4 family,
-r3d3c6a4d,benchmark,wikitq,WikiTQ
-r0185a5bf,lm,DeepSeek family,
-r0185a5bf,lm,Qwen family,
-raa04f2fb,lm,GPT-4 family,
-raa04f2fb,engine,Python interpreter/executor,
-rd998a870,benchmark,kb13,KB13
-rd998a870,benchmark,regexlib,RegexLib
-r1ff1c19f,lm,Gemma,
-r1ff1c19f,lm,Qwen family,
-r1ff1c19f,engine,"Computer algebra (SymPy, Mathematica)",
-r1ff1c19f,benchmark,finqa,FinQA
-r1ff1c19f,benchmark,mgsm,MGSM
-r1ff1c19f,benchmark,mgsmsympy,MGSM-SymPy
-r1ff1c19f,benchmark,musr,MuSR
-r3c7d5693,lm,Llama family,
-r3c7d5693,lm,T5 family,
-r3c7d5693,engine,Model checkers / temporal logic,
-r3c7d5693,benchmark,verify,VERIFY
-red448e3e,lm,GPT-4 family,
-red448e3e,engine,Lean,
-red448e3e,benchmark,verina,VERINA
-r73f1814f,benchmark,bioasq,BioASQ
-r73f1814f,benchmark,legalbench,LegalBench
-r73f1814f,benchmark,proofwriter,ProofWriter
-r4e5a66e9,engine,Dafny/Verus/Why3/F*,
-r4e5a66e9,benchmark,veriequivbench,VeriEquivBench
-r752d0cbb,engine,Lean,
-r0e2c4e07,lm,Claude,
-r0e2c4e07,lm,"GPT-3/3.5, ChatGPT, Codex",
-r0e2c4e07,benchmark,apebench,APE-Bench
-r9cba5b44,engine,"Computer algebra (SymPy, Mathematica)",
-r9cba5b44,benchmark,asymob,ASyMOB
-r296c3ace,benchmark,xbench,X-Bench
-ree89803d,lm,DeepSeek family,
-ree89803d,lm,Specialised provers,
-ree89803d,engine,Lean,
-ree89803d,benchmark,combibench,CombiBench
-ree89803d,benchmark,lci,LCI-Test
-ree89803d,benchmark,putnambenchcomb,PutnamBench-Comb
-r9eb18935,engine,Lean,
-r9eb18935,benchmark,formalmath500,FormalMath500
-r9eb18935,benchmark,minif2fsolving,MiniF2F-Solving
-r9eb18935,benchmark,putnambenchsolving,PutnamBench-Solving
-r794f5551,benchmark,cirbench,CIRBench
-rd16a5d6f,benchmark,vcotbench,VCoT-Bench
-rd3fc62e4,engine,Python interpreter/executor,
-rd3fc62e4,benchmark,mmmc,MMMC
-rd03c7afc,engine,Lean,
-rd03c7afc,benchmark,putnambench,PutnamBench
-r92b5842f,benchmark,miplib2017,MIPLIB 2017
-r92b5842f,benchmark,miplibnl,MIPLIB-NL
-rbf2428aa,benchmark,convexbench,ConvexBench
-r9faf5834,lm,GPT-4 family,
-r9faf5834,lm,Gemini/PaLM/Bard,
-r5390b532,engine,Lean,
-r5390b532,benchmark,prime,PRIME
-r1bac9a05,benchmark,llmsrbench,LLM-SRBench
-r4014d545,benchmark,humanoidbench,HumanoidBench
-r4014d545,benchmark,isaaclab,Isaac Lab
-r75eaf601,lm,DeepSeek family,
-r75eaf601,benchmark,formalmathlite,FormalMath-Lite
-ra905e9a3,benchmark,alfworld,ALFWorld
-ra905e9a3,benchmark,robotouilleasynchronous,Robotouille Asynchronous
-ra905e9a3,benchmark,robotouillesynchronous,Robotouille Synchronous
-r11bcdfdc,engine,Isabelle,
-r11bcdfdc,benchmark,minif2f,miniF2F
-r103820b4,engine,Dafny/Verus/Why3/F*,
-raccec608,lm,Qwen family,
-raccec608,engine,Python interpreter/executor,
-r26b6774b,engine,Lean,
-r3750b732,engine,Dafny/Verus/Why3/F*,
-r3750b732,engine,"SAT/SMT (Z3, cvc5)",
-r90e3d0ed,benchmark,formalrx,FormalRx-Test
-r1ead1843,engine,Lean,
-rc7b38fa9,engine,Model checkers / temporal logic,
-rc7b38fa9,benchmark,alfworld,ALFWorld
-rb083b075,lm,DeepSeek family,
-rb083b075,engine,Python interpreter/executor,
-rb083b075,benchmark,leetcode,LeetCode
-raa44c8be,engine,Lean,
-raa44c8be,benchmark,aime,AIME
-raa44c8be,benchmark,hardmath2,HARDMath2
-r96d2bfb9,engine,Coq/Rocq,
-r96d2bfb9,benchmark,humaneval,HumanEval
-r35dff64d,engine,"SAT/SMT (Z3, cvc5)",
-r35dff64d,benchmark,induction,INDUCTION
-r55b5226e,benchmark,llmsrbench,LLM-SRBench
-rbc712825,engine,Optimisation solvers (LP/MILP/CP),
-rdd6ec86a,benchmark,plsemanticsbench,PLSemanticsBench
-re0440fca,benchmark,rsrbench,RSR-Bench
-ra8b9906a,lm,GPT-4 family,
-rdf0ed85b,benchmark,ligmm+,LIG-MM+
-r860cd506,engine,Lean,
-r860cd506,benchmark,mathliblemma,MathlibLemma
-rbb0b9d05,engine,Python interpreter/executor,
-rbb0b9d05,benchmark,formalgeo7k,FormalGeo7k
-r764cc16d,lm,GPT-4 family,
-r764cc16d,lm,Llama family,
-r764cc16d,lm,Mistral/Mixtral,
-r764cc16d,lm,Qwen family,
-r764cc16d,benchmark,invbench,InvBench
-r0d87801a,engine,Optimisation solvers (LP/MILP/CP),
-r0d87801a,benchmark,optengine,OPT-Engine
-r26369457,benchmark,orbias,ORBias
-r26369457,benchmark,ordebug,ORDebug
-r26369457,benchmark,orloopbench,ORLoopBench
-r75dc134e,engine,Coq/Rocq,
-r49c87408,benchmark,c4,C4
-r49c87408,benchmark,codeparrot,CodeParrot
-r49c87408,benchmark,deepmindmath,DeepMind-Math
-r49c87408,benchmark,needleinahaystack,Needle-in-a-haystack
-rd3d4524a,engine,Dafny/Verus/Why3/F*,
-r56ca0cde,engine,"SAT/SMT (Z3, cvc5)",
-r1e19fe7e,engine,Optimisation solvers (LP/MILP/CP),
-r1e19fe7e,benchmark,complexlp,ComplexLP
-r162d22f6,lm,Claude,
-r162d22f6,lm,Gemini/PaLM/Bard,
-r162d22f6,benchmark,sedras,SEDRAS
-re5e49fe2,engine,Coq/Rocq,
-re5e49fe2,benchmark,slvc,SL-VC
-r8e7dfae3,engine,Optimisation solvers (LP/MILP/CP),
-rb6819abd,benchmark,minif2f,miniF2F
-rb6819abd,benchmark,proofnet,ProofNet
-r7767563b,engine,Python interpreter/executor,
-r7767563b,benchmark,nlqtsbench,NLQTSBench
-r6baa099a,lm,Gemini/PaLM/Bard,
-r6baa099a,engine,Lean,
-r6baa099a,benchmark,sorrydb,SorryDB
-r5019d570,lm,GPT-4 family,
-r5019d570,benchmark,cruxeval,CRUXEval
-r5019d570,benchmark,humaneval,HumanEval
-r5019d570,benchmark,livecodebench,LiveCodeBench
-r5019d570,benchmark,mbpp,MBPP
-r5019d570,benchmark,reval,REval
-r7dae1df3,benchmark,clrsdfs,CLRS-DFS
-r35472553,benchmark,geocode,GeoCode
-rc36311bf,engine,Optimisation solvers (LP/MILP/CP),
-r0e37ebda,benchmark,cgbenchreasoning,CG-Bench-Reasoning
-r0e37ebda,benchmark,videoholmes,Video-Holmes
-r0e37ebda,benchmark,vrbench,VRBench
-re63439d4,lm,GPT-4 family,
-re63439d4,benchmark,worldtravel,WorldTravel
-re63439d4,benchmark,worldtravelwebscape,WorldTravel-Webscape
-r9da32055,lm,Claude,
-r9da32055,engine,Dafny/Verus/Why3/F*,
-r9da32055,engine,"SAT/SMT (Z3, cvc5)",
-r9da32055,benchmark,minif2f,miniF2F
-r9da32055,benchmark,minif2fdafny,miniF2F-Dafny
-r56e47a0d,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",
+rid,group,entity,label,both
+rcddc76c4,lm,BERT family,,yes
+rcddc76c4,benchmark,hotpotqa,HotpotQA,yes
+rcddc76c4,benchmark,quarel,QuaRel,yes
+rcddc76c4,benchmark,wiqa,WIQA,yes
+r47d55f71,benchmark,tabfact,TabFact,yes
+r9a62e4ca,lm,BERT family,,yes
+r9a62e4ca,benchmark,spider,Spider,yes
+r9a62e4ca,benchmark,wikitablequestions,WikiTableQuestions,yes
+rb911d2b6,lm,BERT family,,yes
+rb911d2b6,engine,Python interpreter/executor,,no
+rb911d2b6,benchmark,drop,DROP,yes
+rb911d2b6,benchmark,mathqa,MathQA,yes
+r9029ce04,lm,T5 family,,yes
+r3af24b4d,lm,T5 family,,yes
+r3af24b4d,benchmark,opensquad,OpenSQuAD,yes
+r44da8b7e,benchmark,closure,CLOSURE,yes
+r44da8b7e,benchmark,geoquery,GeoQuery,yes
+r44da8b7e,benchmark,scan,SCAN,yes
+r24f1bc06,engine,"SAT/SMT (Z3, cvc5)",,yes
+rc45c3000,lm,BERT family,,yes
+rc45c3000,benchmark,logicnli,LogicNLI,yes
+re7e46a6a,benchmark,fermiproblems,Fermi Problems,no
+r42bb8e33,lm,T5 family,,yes
+r42bb8e33,benchmark,cosql,CoSQL,yes
+r42bb8e33,benchmark,spider,Spider,yes
+r52f1e169,lm,BERT family,,no
+rf81bf1d9,lm,BERT family,,yes
+rf81bf1d9,lm,GPT-2 and earlier,,yes
+rf81bf1d9,lm,T5 family,,yes
+rf81bf1d9,benchmark,wikisql,WikiSQL,yes
+rf81bf1d9,benchmark,wikisqlts,WikiSQL-TS,yes
+rf81bf1d9,benchmark,wikitablequestions,WikiTableQuestions,yes
+rf81bf1d9,benchmark,wikitablets,WikiTable-TS,yes
+r204738e7,engine,Theorem provers (FOL),,no
+r204738e7,benchmark,winogradschemachallenge,Winograd Schema Challenge,no
+r204738e7,benchmark,winologic,WinoLogic,yes
+rafb9a6d1,benchmark,clevr,CLEVR,yes
+rafb9a6d1,benchmark,clevrhyp,CLEVR_HYP,yes
+recb85cde,benchmark,openmultilingualwordnet,Open Multilingual WordNet,yes
+recb85cde,benchmark,wordnet,WordNet,yes
+r217822ba,lm,BERT family,,yes
+r217822ba,benchmark,russdataset,RUSS dataset,no
+rdf7ff99c,benchmark,geoquery,GeoQuery,yes
+rdf7ff99c,benchmark,spider,Spider,yes
+r5475f752,benchmark,spider,Spider,yes
+r8f982ce8,benchmark,matres,MATRES,yes
+r8f982ce8,benchmark,tracie,TRACIE,yes
+red16313f,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+red16313f,lm,"GPT-3/3.5, ChatGPT",,yes
+red16313f,engine,Python interpreter/executor,,no
+red16313f,benchmark,p3,P3 (Python Programming Puzzles),yes
+rcf704d95,lm,"GPT-3/3.5, ChatGPT",,yes
+r148485c2,benchmark,rocstorycloze,ROC Story Cloze,yes
+r3229e1d7,engine,"SAT/SMT (Z3, cvc5)",,no
+r3229e1d7,benchmark,nlsat,NLSat,no
+r3229e1d7,benchmark,ruletaker,RuleTaker,yes
+r476a6958,lm,BERT family,,no
+r476a6958,benchmark,drop,DROP,yes
+r5aaa7eac,benchmark,nytcrosswordcorpus,NYT crossword corpus,yes
+rbc584267,benchmark,hitab,HiTab,yes
+r58622aa9,benchmark,hqa,HQA,no
+r58622aa9,benchmark,tatqa,TAT-QA,yes
+r071b9de9,benchmark,multihiertt,MultiHiertt,yes
+r0e853bba,benchmark,convfinqa,ConvFinQA,yes
+raff04329,engine,"SAT/SMT (Z3, cvc5)",,yes
+raff04329,benchmark,convqa,ConVQA,yes
+ra406fbaf,benchmark,lila,LILA,yes
+r78dff49d,engine,"SAT/SMT (Z3, cvc5)",,no
+rba31435a,benchmark,contlog,CONTLOG,yes
+rba31435a,benchmark,logicnlg,LOGICNLG,yes
+re4ee31bb,benchmark,grailqa,GrailQA,yes
+re4ee31bb,benchmark,webquestionssp,WebQuestionsSP,yes
+r54c1186a,benchmark,unigeo,UniGeo,yes
+r5ea0716f,engine,Lean,,yes
+r77f1ac54,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r77f1ac54,lm,"GPT-3/3.5, ChatGPT",,yes
+r77f1ac54,benchmark,smcalflow,SMCalFlow,yes
+r3ff6a766,engine,Python interpreter/executor,,no
+r3ff6a766,benchmark,sqa,SQA,yes
+r3ff6a766,benchmark,tabfact,TabFact,yes
+r3ff6a766,benchmark,wikisql,WikiSQL,yes
+r3ff6a766,benchmark,wikitablequestions,WikiTableQuestions,yes
+r63158772,lm,"GPT-3/3.5, ChatGPT",,yes
+r63158772,engine,Isabelle,,yes
+r63158772,engine,Lean,,yes
+r63158772,benchmark,aime,AIME,no
+r63158772,benchmark,amc,AMC,no
+r63158772,benchmark,imo,IMO,no
+r63158772,benchmark,minif2f,miniF2F,yes
+r86cfc988,benchmark,overnight,Overnight,yes
+r69f94571,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r69f94571,lm,"GPT-3/3.5, ChatGPT",,yes
+r69f94571,benchmark,overnight,Overnight,yes
+r69f94571,benchmark,smcalflow,SMCalFlow,yes
+ra0ff25e4,lm,T5 family,,yes
+r07e1479f,engine,Isabelle,,yes
+r07e1479f,benchmark,minif2f,MiniF2F,yes
+rfd30bcab,engine,Lean,,yes
+rfd30bcab,benchmark,metamath,Metamath,no
+rfd30bcab,benchmark,metamathheldoutset,Metamath held-out set,no
+rfd30bcab,benchmark,minif2fcurriculum,miniF2F-curriculum,yes
+rd7bfffae,engine,Theorem provers (FOL),,no
+rd7bfffae,benchmark,minif2f,MiniF2F,yes
+rd7bfffae,benchmark,pisa,PISA,yes
+r44d73521,benchmark,gluecons,GLUECons,no
+r3c7effab,benchmark,tacred,TACRED,yes
+rab5f1bcb,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r72a1c5d7,benchmark,timedial,TIMEDIAL,yes
+r62710d49,benchmark,mathlib,Mathlib,yes
+r62710d49,benchmark,pisa,PISA,yes
+rfa8fe6c4,lm,"GPT-3/3.5, ChatGPT",,yes
+r8c4ab443,lm,BERT family,,yes
+r8c4ab443,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r26e072cc,benchmark,trac,TRAC,yes
+r38f94f66,lm,GPT-2 and earlier,,yes
+r38f94f66,lm,"GPT-3/3.5, ChatGPT",,yes
+r38f94f66,benchmark,genatomic,Gen-A-tomic,yes
+r918e50a0,benchmark,tomi,ToMi,yes
+rbd43d9dd,benchmark,covr,COVR,yes
+rbd43d9dd,benchmark,gqa,GQA,yes
+rfb5ce0a8,benchmark,atis,Atis,yes
+rfb5ce0a8,benchmark,geoquery,GeoQuery,yes
+rfb5ce0a8,benchmark,spider,Spider,yes
+r1cdd9f60,engine,Python interpreter/executor,,yes
+r0b0b3428,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,yes
+r1cc24273,benchmark,abcd,ABCD,yes
+r1cc24273,benchmark,multiwoz,MultiWOZ,yes
+r1cc24273,benchmark,sgd,SGD,yes
+r1cc24273,benchmark,star,STAR,yes
+r1cc24273,benchmark,starv2,STARv2,yes
+re56481df,benchmark,ambiqt,AmbiQT,yes
+re56481df,benchmark,kaggledbqa,Kaggle DBQA,yes
+re56481df,benchmark,spider,SPIDER,yes
+r0acddc1f,engine,Python interpreter/executor,,yes
+r0acddc1f,benchmark,crtqa,CRT-QA,yes
+r0de13fa8,benchmark,calcx,Calc-X,yes
+re9cc5a89,lm,"GPT-3/3.5, ChatGPT",,yes
+re9cc5a89,engine,Python interpreter/executor,,no
+re9cc5a89,benchmark,hiddentables,HiddenTables,no
+re9cc5a89,benchmark,pyqtax,PyQTax,yes
+r6f1f5bbd,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r6f1f5bbd,lm,"GPT-3/3.5, ChatGPT",,yes
+r6f1f5bbd,lm,GPT-4 family,,yes
+r6f1f5bbd,benchmark,folio,FOLIO,yes
+r6f1f5bbd,benchmark,proofwriter,ProofWriter,yes
+rc06bef66,lm,"GPT-3/3.5, ChatGPT",,yes
+r8ddec13a,engine,Python interpreter/executor,,no
+re2a5ce52,benchmark,fever,FEVER,yes
+ra7dc92c7,benchmark,cogs,COGS,yes
+ra7dc92c7,benchmark,slog,SLOG,yes
+r600a1210,engine,Planners (PDDL),,yes
+r600a1210,benchmark,onecommon,OneCommon,yes
+re9ba9b68,lm,GPT-4 family,,yes
+re9ba9b68,engine,Lean,,yes
+re9ba9b68,benchmark,trigo,TRIGO,yes
+r40247491,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r40247491,engine,Python interpreter/executor,,no
+r40247491,benchmark,tabfact,TabFact,yes
+r40247491,benchmark,wikitablequestions,WikiTableQuestions,yes
+rdfb101fb,benchmark,minif2f,miniF2F,yes
+r6465edfe,lm,"GPT-3/3.5, ChatGPT",,yes
+r6465edfe,benchmark,prontoqa,PrOntoQA,yes
+raae0bc6d,engine,Python interpreter/executor,,yes
+raae0bc6d,benchmark,programmingpuzzles,programming puzzles,no
+r59be65bf,engine,Python interpreter/executor,,no
+r59be65bf,benchmark,gsm8k,GSM8K,yes
+r59be65bf,benchmark,mathqa,MathQA,yes
+r6fb3f71a,lm,T5 family,,yes
+rfcd51f39,benchmark,minecraft,Minecraft,no
+rb24d901d,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r3f6cb6bd,benchmark,fld,FLD,yes
+re9e67d00,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+re9e67d00,lm,"GPT-3/3.5, ChatGPT",,no
+re9e67d00,lm,T5 family,,yes
+refa20322,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+refa20322,lm,Gemini/PaLM/Bard,,yes
+refa20322,engine,Python interpreter/executor,,yes
+refa20322,benchmark,bigbenchhard,BIG-Bench Hard,yes
+refa20322,benchmark,gsm8k,GSM8K,yes
+r3c0238e9,lm,GPT-2 and earlier,,yes
+r3c0238e9,benchmark,commongen,CommonGen,yes
+r04ccb8d7,lm,GPT-2 and earlier,,yes
+r04ccb8d7,benchmark,mnread,MNREAD,no
+re66c4b28,lm,BERT family,,yes
+re66c4b28,lm,T5 family,,yes
+r4eeb12bc,benchmark,shortestpath,shortest-path,no
+r4eeb12bc,benchmark,sudoku,Sudoku,yes
+r90234048,benchmark,apps,APPS,yes
+r90234048,benchmark,arc,ARC,yes
+r90234048,benchmark,humaneval,HumanEval,yes
+rec5b0aa1,benchmark,alfworld,ALFWorld,yes
+rec5b0aa1,benchmark,miniwob++,MiniWoB++,yes
+r44448bcd,lm,"GPT-3/3.5, ChatGPT",,yes
+r44448bcd,lm,GPT-4 family,,yes
+r44448bcd,benchmark,mabe2022,MABe 2022,yes
+r38c79cfe,lm,"GPT-3/3.5, ChatGPT",,yes
+r38c79cfe,benchmark,benchclamp,BenchCLAMP,yes
+r06172ea1,benchmark,cladder,CLadder,yes
+ra71d911c,engine,Planners (PDDL),,no
+ra71d911c,benchmark,alfred,ALFRED,yes
+r36abe7f8,benchmark,geoquery,GeoQuery,yes
+r36abe7f8,benchmark,overnight,Overnight,yes
+r36abe7f8,benchmark,pddlplanning,PDDL planning,no
+r36abe7f8,benchmark,smcalflow,SMCalFlow,yes
+r36abe7f8,benchmark,smiles,SMILES,no
+rcfb50a1a,lm,"GPT-3/3.5, ChatGPT",,yes
+r7df7f9a4,lm,GPT-2 and earlier,,yes
+r7df7f9a4,lm,"GPT-3/3.5, ChatGPT",,yes
+r9972c5b6,lm,GPT-4 family,,yes
+r9972c5b6,lm,"Prover fine-tunes (role, any base)",,no
+r9972c5b6,engine,Lean,,yes
+r9972c5b6,benchmark,leandojobenchmark,LeanDojo Benchmark,no
+r24638dca,lm,GPT-4 family,,yes
+r24638dca,engine,Planners (PDDL),,no
+r24638dca,benchmark,alfworld,ALFWorld,no
+r24638dca,benchmark,household,Household,yes
+r24638dca,benchmark,ipcdomains,IPC domains,yes
+r0a0602e5,benchmark,lora,LoRA,yes
+rdc7f8a05,lm,GPT-4 family,,yes
+r9eac6196,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r9eac6196,benchmark,apps,APPS,yes
+r9eac6196,benchmark,humaneval,HumanEval,yes
+rfdd3e1a1,benchmark,planbench,PlanBench,yes
+r266b0bb7,lm,"GPT-3/3.5, ChatGPT",,yes
+r266b0bb7,benchmark,qatch,QATCH,yes
+r9813e5ff,engine,Theorem provers (FOL),,no
+r9813e5ff,benchmark,boardgameqa,BoardgameQA,yes
+r9813e5ff,benchmark,gsm,GSM,yes
+r9813e5ff,benchmark,lsat,LSAT,yes
+r010070ef,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r010070ef,lm,Llama family,,yes
+r010070ef,benchmark,aqua,AQuA,yes
+r010070ef,benchmark,gsm8k,GSM8K,yes
+r010070ef,benchmark,strategyqa,StrategyQA,yes
+r3fd20b0c,engine,Python interpreter/executor,,no
+r09aef02b,lm,GPT-4 family,,yes
+r09aef02b,benchmark,robustapi,RobustAPI,yes
+r6759bc6d,benchmark,svamp,SVAMP,yes
+rd1889b16,lm,"GPT-3/3.5, ChatGPT",,yes
+rd1889b16,lm,GPT-4 family,,yes
+rd1889b16,engine,Planners (PDDL),,no
+rd1889b16,engine,Python interpreter/executor,,no
+ree311595,lm,"GPT-3/3.5, ChatGPT",,yes
+ree311595,lm,Gemini/PaLM/Bard,,yes
+ree311595,benchmark,dopaminereceptord2,Dopamine Receptor D2,yes
+ree311595,benchmark,januskinase2,Janus Kinase 2,yes
+rcf40140f,lm,"GPT-3/3.5, ChatGPT",,yes
+rcf40140f,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,yes
+rcf40140f,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+rc8f0a551,benchmark,text2analysis,Text2Analysis,yes
+ra1c2ff75,benchmark,bizbench,BizBench,yes
+r24aed30a,benchmark,com2,COM2,yes
+rf1f728de,benchmark,activitynetcaptions,ActivityNet Captions,yes
+rf1f728de,benchmark,charadessta,Charades-STA,yes
+r56925bb2,lm,GPT-4 family,,yes
+r56925bb2,lm,Gemini/PaLM/Bard,,yes
+r56925bb2,engine,Python interpreter/executor,,yes
+r56925bb2,benchmark,financemath,FinanceMath,yes
+r1048a4cd,lm,"GPT-3/3.5, ChatGPT",,yes
+r1048a4cd,lm,GPT-4 family,,yes
+r1048a4cd,lm,Llama family,,yes
+r1048a4cd,benchmark,malls,MALLS,yes
+r96e8617a,benchmark,llmerl,LLM-ERL,yes
+r76367fff,engine,Lean,,yes
+r9a9fad08,lm,"GPT-3/3.5, ChatGPT",,yes
+r9a9fad08,lm,Gemini/PaLM/Bard,,yes
+r2ea36910,lm,"GPT-3/3.5, ChatGPT",,yes
+r2ea36910,lm,GPT-4 family,,yes
+r2ea36910,benchmark,selene,Selene,yes
+rd0e4be70,engine,Python interpreter/executor,,yes
+rd0e4be70,benchmark,fetaqa,FeTaQA,yes
+rd0e4be70,benchmark,qtsumm,QTSumm,yes
+rd45f1e27,benchmark,minif2f,miniF2F,yes
+r85fbfe3b,engine,Python interpreter/executor,,no
+rfc590f9c,lm,GPT-4 family,,yes
+rfc590f9c,benchmark,folio,FOLIO,yes
+rb17006b6,lm,Llama family,,yes
+rb17006b6,lm,Mistral/Mixtral,,yes
+rb17006b6,benchmark,truthquest,TruthQuest,yes
+r40a7dd77,lm,"GPT-3/3.5, ChatGPT",,yes
+r40a7dd77,lm,GPT-4 family,,yes
+r40a7dd77,benchmark,logicasker,LogicAsker,no
+rd1cdf2d2,lm,Llama family,,yes
+rd1cdf2d2,engine,Python interpreter/executor,,yes
+rd1cdf2d2,benchmark,gsm8k,GSM8K,yes
+rd1cdf2d2,benchmark,math,MATH,yes
+rb4bb0607,engine,Python interpreter/executor,,no
+rbb49cc85,lm,"GPT-3/3.5, ChatGPT",,yes
+rbb49cc85,engine,Python interpreter/executor,,no
+r108ca371,benchmark,quite,QUITE,yes
+r8e6dfc90,lm,GPT-4 family,,yes
+r8e6dfc90,lm,Mistral/Mixtral,,yes
+r0b63ce19,lm,BERT family,,yes
+r0b63ce19,lm,GPT-4 family,,yes
+r0b63ce19,benchmark,folio,FOLIO,yes
+r3372249e,lm,"GPT-3/3.5, ChatGPT",,yes
+r3372249e,lm,Llama family,,yes
+r3372249e,benchmark,mathfunc,MathFunc,yes
+r3372249e,benchmark,scitoolbench,SciToolBench,yes
+r2080cdd7,lm,GPT-4 family,,yes
+r2080cdd7,lm,Llama family,,no
+r2080cdd7,engine,Lean,,yes
+r2080cdd7,benchmark,minif2f,MiniF2F-Test,yes
+r2080cdd7,benchmark,openbootstrappedtheorems,Open Bootstrapped Theorems,no
+rb66847eb,lm,GPT-4 family,,yes
+rb66847eb,engine,Python interpreter/executor,,yes
+rb66847eb,benchmark,chartqa,ChartQA,yes
+rb66847eb,benchmark,charttotable,Chart-to-Table,yes
+rb66847eb,benchmark,charttotext,Chart-to-Text,yes
+rb66847eb,benchmark,chartx,ChartX,yes
+rb66847eb,benchmark,opencqa,OpenCQA,yes
+r610281c5,engine,Theorem provers (FOL),,no
+rf9b66245,lm,GPT-4 family,,yes
+r661890dc,lm,Gemini/PaLM/Bard,,yes
+r661890dc,lm,T5 family,,yes
+r661890dc,engine,Python interpreter/executor,,no
+r661890dc,benchmark,mind2web,Mind2Web,yes
+r661890dc,benchmark,miniwob,MiniWoB,yes
+rc1250f1e,lm,Claude,,yes
+rc1250f1e,lm,GPT-4 family,,yes
+rc1250f1e,lm,Llama family,,yes
+rc1250f1e,benchmark,datikz,DaTikZ,yes
+r6caabb12,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,no
+r6caabb12,benchmark,bongardopenworld,Bongard-OpenWorld,yes
+r8a87bae4,lm,"GPT-3/3.5, ChatGPT",,yes
+r8a87bae4,lm,Gemini/PaLM/Bard,,yes
+r8a87bae4,engine,Isabelle,,yes
+r8a87bae4,benchmark,gsm8k,GSM8K,yes
+r8a87bae4,benchmark,math,MATH,yes
+r8a87bae4,benchmark,multiarith,MultiArith,yes
+rb5019997,lm,GPT-4 family,,yes
+rf9e4862e,benchmark,deepcoder,DeepCoder,yes
+rf9e4862e,benchmark,robustfill,RobustFill,yes
+r5b61b37f,engine,Python interpreter/executor,,no
+rfaf1d4ce,lm,GPT-4 family,,yes
+rfaf1d4ce,lm,Llama family,,yes
+rc264b05c,lm,GPT-4 family,,yes
+rd562c497,engine,Python interpreter/executor,,yes
+rd562c497,benchmark,1darc,1D-ARC,yes
+rd562c497,benchmark,arc,ARC,yes
+rd562c497,benchmark,sygus,SyGuS,yes
+reed5dbaa,lm,"GPT-3/3.5, ChatGPT",,yes
+re2f26fb4,engine,Isabelle,,no
+re2f26fb4,benchmark,minif2f,miniF2F,yes
+ra142c48f,lm,"GPT-3/3.5, ChatGPT",,yes
+ra142c48f,lm,GPT-4 family,,yes
+ra142c48f,benchmark,bigbench,Big-Bench,yes
+r958d318b,benchmark,alfred,ALFRED,yes
+r958d318b,benchmark,miniminecraft,Mini Minecraft,yes
+r785313e9,lm,Gemini/PaLM/Bard,,yes
+r785313e9,lm,Llama family,,yes
+r785313e9,benchmark,math,MATH,yes
+r785313e9,benchmark,proofpile2,Proof-Pile-2,yes
+r1bc4b29c,lm,GPT-4 family,,yes
+r1bc4b29c,engine,Python interpreter/executor,,no
+r1bc4b29c,benchmark,math,MATH,yes
+r1bc4b29c,benchmark,mathinstruct,MathInstruct,yes
+ra1d40c28,lm,Llama family,,yes
+ra1d40c28,engine,Lean,,yes
+ra1d40c28,benchmark,mustardsauce,MUSTARDSAUCE,yes
+rf127ea2d,engine,Isabelle,,yes
+rf127ea2d,benchmark,minif2f,miniF2F,yes
+rf127ea2d,benchmark,pisa,PISA,yes
+r0c37875c,lm,"GPT-3/3.5, ChatGPT",,yes
+r0c37875c,lm,GPT-4 family,,yes
+r0c37875c,lm,Gemini/PaLM/Bard,,yes
+r0c37875c,engine,Python interpreter/executor,,yes
+r0c37875c,benchmark,gsm8k,GSM8K,yes
+r0c37875c,benchmark,math,MATH,yes
+r0c37875c,benchmark,mathcodeinstruct,MathCodeInstruct,no
+r37d6a8c5,engine,Python interpreter/executor,,no
+rf885caa8,lm,GPT-4 family,,yes
+rf885caa8,lm,Gemini/PaLM/Bard,,yes
+rf885caa8,engine,Python interpreter/executor,,yes
+rf885caa8,benchmark,math,MATH,yes
+rf03252fb,benchmark,maniskill2,ManiSkill2,yes
+rf03252fb,benchmark,metaworld,MetaWorld,yes
+rf03252fb,benchmark,mujoco,MuJoCo,yes
+r7dc50255,lm,GPT-4 family,,yes
+r7dc50255,benchmark,math,MATH,yes
+r6f24e47d,lm,GPT-4 family,,yes
+r6f24e47d,engine,Lean,,yes
+r6f24e47d,engine,"SAT/SMT (Z3, cvc5)",,yes
+r6f24e47d,benchmark,leaneuclid,LeanEuclid,yes
+r6f24e47d,benchmark,unigeo,UniGeo,yes
+raaede5d8,lm,GPT-4 family,,yes
+raaede5d8,lm,Llama family,,yes
+raaede5d8,engine,Python interpreter/executor,,no
+raaede5d8,benchmark,cruxeval,CRUXEval,yes
+raaede5d8,benchmark,humaneval,HumanEval,yes
+r9bf8be45,engine,Python interpreter/executor,,yes
+r9bf8be45,benchmark,bigbenchhard,BIG-Bench Hard,yes
+rcddfd23f,benchmark,arc,ARC,yes
+reba222b6,lm,GPT-4 family,,yes
+reba222b6,benchmark,atari,Atari,yes
+r8a268c2e,benchmark,onlinebinpacking,online bin packing,yes
+rb0ba00fc,lm,Llama family,,yes
+rb0ba00fc,lm,Mistral/Mixtral,,yes
+rb0ba00fc,engine,Python interpreter/executor,,yes
+rb0ba00fc,benchmark,apibank,API-Bank,yes
+rb0ba00fc,benchmark,codeactinstruct,CodeActInstruct,no
+r0e774100,engine,Optimisation solvers (LP/MILP/CP),,yes
+r0e774100,benchmark,nlp4lp,NLP4LP,yes
+r6fbf3493,benchmark,gsm8k,GSM8K,yes
+r6fbf3493,benchmark,rgsm,R-GSM,yes
+r72b731d9,lm,Llama family,,yes
+r698b51ae,lm,"GPT-3/3.5, ChatGPT",,yes
+r698b51ae,lm,Llama family,,yes
+r698b51ae,engine,Python interpreter/executor,,no
+r698b51ae,benchmark,datereasoning,Date reasoning,yes
+r698b51ae,benchmark,logo,LOGO,yes
+r698b51ae,benchmark,math,MATH,yes
+r698b51ae,benchmark,tabmwp,TabMWP,yes
+r698b51ae,benchmark,textcraft,TextCraft,yes
+r2c565e29,benchmark,vima,VIMA,yes
+r33ed8809,benchmark,minif2f,miniF2F,yes
+r62b662a5,engine,Optimisation solvers (LP/MILP/CP),,no
+r62b662a5,benchmark,radnersentences,RADNER sentences,yes
+rd6ab748e,benchmark,geoqa,GeoQA,yes
+rd6ab748e,benchmark,geoqa+,GeoQA+,yes
+r49db4138,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+rcafa340f,engine,"Logic programming (Prolog, ASP, Datalog)",,no
+ra87e0258,lm,BERT family,,yes
+ra87e0258,lm,"GPT-3/3.5, ChatGPT",,yes
+ra87e0258,lm,GPT-4 family,,yes
+r97476a41,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+r97476a41,engine,Python interpreter/executor,,no
+r97476a41,benchmark,gsm8k,GSM8K,yes
+r546f708d,engine,Lean,,yes
+r546f708d,benchmark,folio,FOLIO,yes
+r546f708d,benchmark,proofwriter,ProofWriter,yes
+r026d5bf1,lm,Llama family,,yes
+r026d5bf1,engine,Python interpreter/executor,,no
+rc55bb913,lm,Llama family,,yes
+rc55bb913,engine,Python interpreter/executor,,no
+r95cd948b,lm,Llama family,,yes
+r95cd948b,engine,Optimisation solvers (LP/MILP/CP),,yes
+r95cd948b,benchmark,dialogsum,DialogSum,yes
+r9c6c0db2,benchmark,wikitablequestions,WikiTableQuestions,yes
+r3e3ad72d,lm,"GPT-3/3.5, ChatGPT",,yes
+r3e3ad72d,benchmark,tabfact,TabFact,yes
+r3e3ad72d,benchmark,wikitq,WikiTQ,yes
+r8b27d7e6,lm,Gemini/PaLM/Bard,,yes
+r6b396b60,lm,GPT-2 and earlier,,yes
+r6b396b60,lm,GPT-4 family,,yes
+r6b396b60,benchmark,gsm,GSM,yes
+ree2d9e8b,lm,GPT-4 family,,no
+ree2d9e8b,engine,Python interpreter/executor,,no
+r001c14b1,lm,"GPT-3/3.5, ChatGPT",,yes
+r001c14b1,lm,GPT-4 family,,yes
+r001c14b1,benchmark,alfworld,ALFWorld,yes
+rcee8d9a3,engine,Theorem provers (FOL),,no
+rcee8d9a3,benchmark,math,MATH,yes
+rcee8d9a3,benchmark,minif2f,miniF2F,yes
+rbaaacf5e,lm,GPT-4 family,,yes
+rbaaacf5e,lm,Llama family,,yes
+rc21396bd,benchmark,cold,COLD,yes
+r804cd20b,benchmark,blocksworld,Blocksworld,yes
+r9d99f611,benchmark,warfarin,Warfarin,no
+r9d99f611,benchmark,warfarinpharmacokineticdataset,Warfarin pharmacokinetic dataset,no
+r0d1db21b,lm,Claude,,yes
+r0d1db21b,lm,GPT-4 family,,yes
+r0d1db21b,benchmark,datikzv2,DaTikZv2,yes
+r0d1db21b,benchmark,metafig,MetaFig,yes
+r0d1db21b,benchmark,sketchfig,SketchFig,yes
+refec56ac,benchmark,deivg,DeiVG,yes
+r36b9fd34,lm,"GPT-3/3.5, ChatGPT",,yes
+r36b9fd34,lm,GPT-4 family,,yes
+r36b9fd34,benchmark,humaneval,HumanEval,yes
+r36b9fd34,benchmark,math,MATH,yes
+r36b9fd34,benchmark,mbpp,MBPP,yes
+r36b9fd34,benchmark,xcodeeval,xCodeEval,yes
+r1612bafd,benchmark,zendo,Zendo,no
+r62e620ca,benchmark,embodiedagentinterface,Embodied Agent Interface,yes
+r051b0a1e,lm,Llama family,,yes
+r051b0a1e,benchmark,bbh,BBH,yes
+r051b0a1e,benchmark,fld,FLD,no
+r051b0a1e,benchmark,fld2,FLD×2,no
+rb5a2b99a,lm,Llama family,,yes
+rb5a2b99a,lm,Mistral/Mixtral,,yes
+rb5a2b99a,engine,Isabelle,,yes
+rb5a2b99a,benchmark,code2inv,Code2Inv,yes
+rb5a2b99a,benchmark,fveler,FVELER,yes
+rb5a2b99a,benchmark,svcomp,SV-COMP,yes
+rc3671b2c,benchmark,codeworldmodelsbenchmark,Code World Models Benchmark (CWMB),yes
+r9a70e448,engine,Theorem provers (FOL),,yes
+r6e19b6fe,engine,Lean,,yes
+r6e19b6fe,benchmark,imo,IMO,no
+r6e19b6fe,benchmark,leanworkbook,Lean Workbook,yes
+r2dc08068,lm,GPT-4 family,,yes
+r2dc08068,engine,Planners (PDDL),,no
+r70b0f3b6,lm,Llama family,,yes
+r70b0f3b6,lm,Mistral/Mixtral,,yes
+ra6f72f2f,lm,Llama family,,yes
+raef94006,lm,GPT-4 family,,no
+raef94006,lm,Llama family,,yes
+raef94006,lm,Mistral/Mixtral,,yes
+raef94006,engine,Python interpreter/executor,,no
+raef94006,benchmark,gsm8k,GSM8K,yes
+raef94006,benchmark,mammoth,MAmmoTH,no
+raef94006,benchmark,math,MATH,yes
+raef94006,benchmark,metamathqa,MetaMathQA,no
+raef94006,benchmark,openmathinstruct1,OpenMathInstruct-1,no
+rb0ff4c85,engine,Isabelle,,yes
+rb0ff4c85,benchmark,minif2f,miniF2F,yes
+rb0ff4c85,benchmark,pisa,PISA,yes
+r33e16ff8,engine,Coq/Rocq,,yes
+r33e16ff8,engine,Isabelle,,yes
+r33e16ff8,engine,Lean,,yes
+r33e16ff8,benchmark,putnambench,PutnamBench,yes
+rf20ecae4,benchmark,spreadsheetbench,SpreadsheetBench,yes
+r4317b7f6,benchmark,feynmanequations,Feynman equations,yes
+r29af79f6,benchmark,arcade,Arcade,yes
+r29af79f6,benchmark,birdsql,BIRD-SQL,yes
+rfff81209,lm,GPT-4 family,,yes
+rfff81209,benchmark,ligmm,LIG-MM,yes
+rfff81209,benchmark,sling,SLING,yes
+rfff81209,benchmark,svcomp,SV-COMP,yes
+r23bd7ed5,lm,GPT-4 family,,yes
+r23bd7ed5,benchmark,ego4d,Ego4D,yes
+r23bd7ed5,benchmark,teach,TEACh,yes
+r23bd7ed5,benchmark,visualwebarena,VisualWebArena,yes
+r9a65906c,engine,Planners (PDDL),,no
+r9a65906c,engine,Python interpreter/executor,,no
+ra4243bf4,lm,GPT-4 family,,yes
+ra4243bf4,benchmark,acpbench,ACPBench,yes
+r9e910ce8,engine,Python interpreter/executor,,yes
+reaf641ba,lm,GPT-4 family,,yes
+reaf641ba,benchmark,arc,ARC,yes
+rb304055a,lm,"GPT-3/3.5, ChatGPT",,yes
+rb304055a,lm,GPT-4 family,,yes
+rb304055a,lm,Llama family,,yes
+rb304055a,lm,T5 family,,yes
+rb7db1232,engine,"SAT/SMT (Z3, cvc5)",,yes
+r8e52c498,lm,GPT-4 family,,yes
+r8e52c498,lm,Gemini/PaLM/Bard,,yes
+r8e52c498,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,yes
+r8e52c498,benchmark,geoqa,GeoQA,yes
+r8e52c498,benchmark,gns260k,GNS-260K,yes
+r8e52c498,benchmark,mathverse,MathVerse,yes
+r8e52c498,benchmark,mathvista,MathVista,yes
+r1c87c85f,engine,Planners (PDDL),,no
+r30b45561,lm,Claude,,yes
+r30b45561,lm,GPT-4 family,,yes
+r30b45561,lm,Gemini/PaLM/Bard,,yes
+ra9e59775,benchmark,onlinebinpacking,online Bin Packing,no
+ra9e59775,benchmark,onlinebinpackingproblem,online Bin Packing Problem,no
+ra9e59775,benchmark,travelingsalesmanproblem,Traveling Salesman Problem,no
+ra9e59775,benchmark,tsp,TSP,no
+r7f0629ef,benchmark,clevrcogent,CLEVR-CoGenT,yes
+r7f0629ef,benchmark,clevrsyn,CLEVR-SYN,yes
+r7f0629ef,benchmark,reascan,ReaSCAN,yes
+re266a131,lm,"GPT-3/3.5, ChatGPT",,yes
+re266a131,lm,GPT-4 family,,yes
+rbba59ac8,engine,Planners (PDDL),,no
+r011d7456,engine,Python interpreter/executor,,no
+r011d7456,benchmark,blind,BLInD,yes
+r218783b6,engine,Lean,,yes
+r218783b6,benchmark,minif2f,MiniF2F,yes
+r097b6972,benchmark,formalbench,FormalBench,yes
+r16bb57d2,lm,GPT-4 family,,yes
+r16bb57d2,benchmark,math,MATH,yes
+r3c2b28df,lm,GPT-4 family,,yes
+rae5718fd,engine,Theorem provers (FOL),,no
+rae5718fd,benchmark,esnli,e-SNLI,yes
+rae5718fd,benchmark,qasc,QASC,yes
+rae5718fd,benchmark,worldtree,WorldTree,yes
+r5bbab863,lm,DeepSeek family,,yes
+r5bbab863,lm,GPT-4 family,,yes
+r5bbab863,engine,Coq/Rocq,,yes
+r5bbab863,engine,Dafny/Verus/Why3/F*,,yes
+r5bbab863,engine,Lean,,yes
+rc8d2888b,benchmark,minif2f,miniF2F,yes
+rc8d2888b,benchmark,proofnet,ProofNet,yes
+r9581f567,benchmark,mysteryzebra,Mystery-Zebra,yes
+rd92d8ed7,engine,Planners (PDDL),,no
+r9521135b,engine,Planners (PDDL),,no
+r85105581,benchmark,googlelocal,Google Local,no
+r85105581,benchmark,realtravel,RealTravel,yes
+r85105581,benchmark,travelplanner,TravelPlanner,yes
+r00354623,lm,GPT-4 family,,yes
+r00354623,lm,Llama family,,yes
+r00354623,benchmark,xlogoonline,XLogoOnline,yes
+r7d61d023,engine,Lean,,yes
+r7d61d023,benchmark,minif2f,miniF2F,yes
+rc4d1bc76,lm,GPT-4 family,,yes
+rc4d1bc76,lm,Llama family,,yes
+rc4d1bc76,lm,Mistral/Mixtral,,yes
+rc4d1bc76,benchmark,hitab,HiTab,yes
+rc4d1bc76,benchmark,multihiertt,MultiHiertt,yes
+r5e58413d,benchmark,rulearena,RuleArena,yes
+ra8869ee2,engine,Lean,,yes
+ra8869ee2,benchmark,formalstep,FormalStep,yes
+r66ce1dcb,lm,Llama family,,yes
+r66ce1dcb,lm,Mistral/Mixtral,,yes
+r66ce1dcb,engine,Lean,,yes
+r66ce1dcb,benchmark,aqua,AQUA,yes
+r66ce1dcb,benchmark,multiarith,MultiArith,yes
+r66ce1dcb,benchmark,svamp,SVAMP,yes
+r71a25486,engine,Isabelle,,yes
+r71a25486,benchmark,defarxiv,Def_ArXiv,yes
+r71a25486,benchmark,defwiki,Def_Wiki,yes
+r71a25486,benchmark,minif2f,miniF2F,yes
+r00510af9,benchmark,induscp,IndusCP,yes
+rdaf96b33,engine,Lean,,yes
+r9f5f9d32,benchmark,apimixatis,APIMixATIS,yes
+r9f5f9d32,benchmark,apimixsnips,APIMixSNIPS,yes
+r9f5f9d32,benchmark,foodordering,FoodOrdering,yes
+r7ab95a4e,benchmark,gsmdc,GSM-DC,yes
+r6bbccaf3,benchmark,nr3d,Nr3D,yes
+rcf10398e,benchmark,gracore,GraCoRe,yes
+rcf10398e,benchmark,greal,G-REAL,yes
+rcf10398e,benchmark,nlgraph,NLGraph,yes
+r870ab859,benchmark,multilogicnmr,MultiLogicNMR,yes
+r2e3069a4,lm,Llama family,,yes
+r2e3069a4,engine,Lean,,yes
+r9fb81a0c,lm,DeepSeek family,,yes
+r9fb81a0c,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+r9fb81a0c,benchmark,math,MATH,yes
+r9fb81a0c,benchmark,prologmath,Prolog-MATH,no
+rfb94d02e,benchmark,convfinqa,ConvFinQA,yes
+rfb94d02e,benchmark,finqa,FinQA,yes
+r8265ef4f,engine,Lean,,yes
+r8265ef4f,benchmark,proofnet,ProofNet#,yes
+r8265ef4f,benchmark,proofnetverif,ProofNetVerif,yes
+r8265ef4f,benchmark,rlm25,RLM25,yes
+ref1a4a16,lm,DeepSeek family,,yes
+ref1a4a16,benchmark,minif2f,miniF2F-test,yes
+r31e46b7f,lm,GPT-4 family,,yes
+r31e46b7f,engine,"SAT/SMT (Z3, cvc5)",,yes
+r31e46b7f,benchmark,satbench,SATBench,yes
+ra39f39fd,lm,GPT-4 family,,yes
+ra39f39fd,benchmark,sparc,SPaRC,yes
+rc17dc698,engine,Planners (PDDL),,no
+rc17dc698,benchmark,embodyguard,EmbodyGuard,yes
+rc17dc698,benchmark,safel,SAFEL,no
+r6e5fb3fd,benchmark,surge,SURGE,yes
+r12b1939c,benchmark,birdsql,BIRD-SQL,yes
+r12b1939c,benchmark,wikitablequestion,WikiTableQuestion,yes
+rfca3f53b,benchmark,heteqa,HeteQA,yes
+rb425a47c,lm,DeepSeek family,,yes
+rb425a47c,engine,Lean,,yes
+r795e38a8,benchmark,pmc,PMC,yes
+r297ead14,benchmark,minecraft,Minecraft,yes
+r12a060a4,lm,GPT-4 family,,yes
+r21c6b045,engine,Lean,,no
+r21c6b045,benchmark,leandojo,Leandojo,yes
+r21c6b045,benchmark,minif2f,miniF2F,yes
+r42e78a64,lm,GPT-4 family,,yes
+re2d8a330,benchmark,atari,Atari,yes
+rbf1fa053,lm,Gemma,,yes
+rbf1fa053,engine,Python interpreter/executor,,yes
+rbf1fa053,benchmark,gsm8k,GSM8K,yes
+rbf1fa053,benchmark,math,MATH,yes
+ra86a93ca,benchmark,minif2f,miniF2F-test,yes
+r1476b927,engine,Python interpreter/executor,,no
+r1476b927,benchmark,arc,ARC,yes
+rc399552f,lm,GPT-4 family,,yes
+rc399552f,lm,Gemini/PaLM/Bard,,yes
+rcec7abc9,lm,DeepSeek family,,yes
+rcec7abc9,engine,Lean,,yes
+rcec7abc9,benchmark,minif2f,miniF2F,yes
+rcec7abc9,benchmark,proofnet,ProofNet,yes
+r7b7ccf8c,engine,"SAT/SMT (Z3, cvc5)",,no
+re0a00f6d,lm,GPT-4 family,,yes
+re0a00f6d,engine,Python interpreter/executor,,no
+re0a00f6d,benchmark,dynamath,DynaMath,yes
+r99a7d5e9,engine,Python interpreter/executor,,no
+r982a2b15,lm,GPT-4 family,,yes
+r982a2b15,lm,Llama family,,yes
+r982a2b15,benchmark,exploretom,ExploreToM,yes
+r982a2b15,benchmark,tomi,ToMi,yes
+r6b046c34,engine,Planners (PDDL),,no
+r6b046c34,benchmark,muse,MuSE,yes
+re1b34ce5,benchmark,gsm8k,GSM8K,yes
+re1b34ce5,benchmark,gsmsymbolic,GSM-Symbolic,yes
+rc6f43b68,benchmark,geometry3k,Geometry3K,yes
+rc6f43b68,benchmark,geoqa,GeoQA,yes
+rc6f43b68,benchmark,pgps9k,PGPS9k,yes
+rc6f43b68,benchmark,unigeo,UniGeo,yes
+r6890f25f,lm,Llama family,,yes
+r6890f25f,lm,"Prover fine-tunes (role, any base)",,yes
+r6890f25f,engine,Lean,,yes
+r6890f25f,benchmark,herald,Herald,no
+r6890f25f,benchmark,mathlib4,Mathlib4,no
+r6890f25f,benchmark,minif2f,miniF2F-test,yes
+r7cca0ca0,lm,GPT-4 family,,yes
+r7cca0ca0,benchmark,cwebenchjava,CWE-Bench-Java,yes
+ra804bbd4,engine,Lean,,yes
+r2962fbdc,benchmark,20bn,20BN,yes
+r2962fbdc,benchmark,mugen,MUGEN,yes
+r2962fbdc,benchmark,openpvsg,OpenPVSG,yes
+r24fa22be,lm,"GPT-3/3.5, ChatGPT",,yes
+r24fa22be,lm,Gemini/PaLM/Bard,,yes
+r24fa22be,lm,Llama family,,yes
+r24fa22be,lm,Mistral/Mixtral,,yes
+r38244d6e,lm,Llama family,,yes
+r38244d6e,benchmark,proverqa,ProverQA,yes
+r8e0eb62d,benchmark,ilbench,IL-Bench,yes
+rc9f8b9ed,engine,Lean,,yes
+r209d7fc1,engine,Lean,,yes
+rf832bdef,benchmark,mathgap,MathGAP,yes
+r443beac1,benchmark,alfworld,ALFWorld,yes
+r443beac1,benchmark,minecraft,Minecraft,yes
+r443beac1,benchmark,rlbench,RLBench,yes
+r443beac1,benchmark,virtualhome,VirtualHome,yes
+rc6ef1832,lm,GPT-4 family,,yes
+rc6ef1832,benchmark,gameof24,Game of 24,yes
+rc6ef1832,benchmark,graphcoloring,Graph Coloring,yes
+rc6ef1832,benchmark,stripsplanning,STRIPS planning,yes
+r59c39e16,lm,GPT-4 family,,yes
+r59c39e16,lm,Llama family,,yes
+r59c39e16,benchmark,optibench,OptiBench,yes
+r59c39e16,benchmark,resocratic29k,ReSocratic-29k,yes
+r69c23c69,lm,Claude,,yes
+r69c23c69,lm,GPT-4 family,,yes
+rb21543ad,lm,Llama family,,yes
+rb21543ad,benchmark,twinsafety,TwinSafety,yes
+r596cca2a,benchmark,connf,Con-NF,yes
+r596cca2a,benchmark,proofnet,ProofNet,yes
+r5b626332,lm,GPT-4 family,,yes
+r5b626332,engine,Python interpreter/executor,,yes
+r59c99f02,benchmark,karel,Karel,no
+recc9142e,benchmark,blocksworld,Blocksworld,yes
+recc9142e,benchmark,mazenavigation,Maze Navigation,yes
+r5f4be8d2,benchmark,testoftime,Test of Time,yes
+rf95295b4,engine,Python interpreter/executor,,no
+rf95295b4,benchmark,mmlu,MMLU,yes
+r2ac15ccd,benchmark,miplib,MIPLIB,yes
+rbe76e7da,lm,Claude,,yes
+rbe76e7da,lm,"GPT-3/3.5, ChatGPT",,yes
+rbe76e7da,lm,GPT-4 family,,yes
+rbe76e7da,lm,Llama family,,yes
+rd2e57606,engine,Lean,,yes
+rd2e57606,benchmark,minictx,miniCTX,yes
+rd2e57606,benchmark,minif2f,miniF2F,yes
+r96f2cdc6,engine,Python interpreter/executor,,yes
+r96f2cdc6,benchmark,cryptonite,Cryptonite,yes
+r6048741f,lm,Llama family,,yes
+r6048741f,benchmark,humaneval,HumanEval,yes
+r6048741f,benchmark,mbpp,MBPP,yes
+r2b00fd98,engine,Optimisation solvers (LP/MILP/CP),,no
+rb797b231,benchmark,folio,FOLIO,yes
+rb797b231,benchmark,gsmsymbolic,GSM-symbolic,yes
+r36baffd2,lm,Claude,,yes
+r36baffd2,lm,DeepSeek family,,yes
+r36baffd2,lm,"GPT-3/3.5, ChatGPT",,yes
+r36baffd2,lm,GPT-4 family,,yes
+r36baffd2,lm,Llama family,,yes
+r36baffd2,lm,Mistral/Mixtral,,yes
+r36baffd2,benchmark,symbench,SymBench,yes
+r505e7df5,lm,"GPT-3/3.5, ChatGPT",,yes
+r505e7df5,lm,GPT-4 family,,yes
+r505e7df5,lm,Llama family,,yes
+rd7186c82,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+r84c5c76d,benchmark,manytypes4py,ManyTypes4Py,yes
+r3b85cca1,benchmark,equivaformulation,EquivaFormulation,yes
+r30b97cdb,benchmark,cw,CW,yes
+r30b97cdb,benchmark,gltl,GLTL,yes
+r30b97cdb,benchmark,navi,Navi,yes
+r9d8363e3,lm,"GPT-3/3.5, ChatGPT",,yes
+r9d8363e3,lm,Llama family,,yes
+r9d8363e3,benchmark,grailqa,GrailQA,yes
+rb3c57dd0,benchmark,llmsrbench,LLM-SRBench,yes
+rb3c57dd0,benchmark,lsrsynth,LSR-Synth,yes
+rb3c57dd0,benchmark,lsrtransform,LSR-Transform,yes
+r396c252d,engine,Optimisation solvers (LP/MILP/CP),,yes
+rb6b49ed9,engine,Python interpreter/executor,,yes
+rcefeacbc,lm,DeepSeek family,,yes
+rcefeacbc,lm,"Prover fine-tunes (role, any base)",,yes
+rcefeacbc,engine,Lean,,yes
+rcefeacbc,benchmark,minif2f,miniF2F-test,yes
+reb0ef720,benchmark,acdrepo,ACD Repo,yes
+rb990cde0,benchmark,mathconstruct,MathConstruct,yes
+ra30b90aa,benchmark,mamo,MAMO,yes
+ra30b90aa,benchmark,nl4opt,NL4OPT,yes
+ra30b90aa,benchmark,optmath,OptMATH,yes
+r7dd3b9d1,benchmark,tddbenchverified,TDD-Bench-Verified,yes
+re0013edf,lm,"GPT-3/3.5, ChatGPT",,no
+r0422d6a3,lm,DeepSeek family,,yes
+r0422d6a3,lm,"Prover fine-tunes (role, any base)",,yes
+r0422d6a3,engine,Isabelle,,yes
+r0422d6a3,engine,Lean,,yes
+r0422d6a3,benchmark,minif2f,miniF2F,yes
+r2067f701,lm,GPT-4 family,,yes
+r2067f701,benchmark,putnamaxiom,Putnam-AXIOM,yes
+r2067f701,benchmark,putnamaxiomvariation,Putnam-AXIOM Variation,yes
+r73041e10,benchmark,gsm8k,GSM8K,yes
+r73041e10,benchmark,humaneval+,HumanEval+,yes
+r73041e10,benchmark,math,MATH,yes
+r73041e10,benchmark,mbpp+,MBPP+,yes
+re742c2dc,engine,Isabelle,,yes
+re742c2dc,engine,Lean,,yes
+re742c2dc,benchmark,leanworkbook,LeanWorkbook,yes
+re742c2dc,benchmark,minif2f,miniF2F-test,yes
+re742c2dc,benchmark,proofnet,ProofNet-test,yes
+re742c2dc,benchmark,putnambench,PutnamBench,yes
+rae33fe2f,engine,Python interpreter/executor,,no
+rae33fe2f,benchmark,arcagi,ARC-AGI,yes
+rffe62927,benchmark,shieldagentbench,ShieldAgent-Bench,yes
+r16666d21,benchmark,zebralogic,ZebraLogic,yes
+rd881ed06,benchmark,gameof24,Game of 24,yes
+rd881ed06,benchmark,gameof28,Game of 28,yes
+rd881ed06,benchmark,gameof30,Game of 30,yes
+r10020723,lm,GPT-4 family,,yes
+r10020723,engine,"Logic programming (Prolog, ASP, Datalog)",,yes
+r10020723,benchmark,aspcompetitionsbaseddataset,ASP Competitions-based dataset,no
+r10020723,benchmark,aspcompetitionsproblems,ASP Competitions problems,no
+rff597439,benchmark,accord,ACCORD,yes
+r2a0a856e,benchmark,std,STD,no
+r736ee6ed,lm,Claude,,yes
+r736ee6ed,engine,Planners (PDDL),,no
+rf7f17a35,benchmark,newyorktimescrosswords,New York Times crosswords,no
+r13e19e17,lm,GPT-4 family,,yes
+r13e19e17,engine,"SAT/SMT (Z3, cvc5)",,no
+r13e19e17,benchmark,travelplanner,TravelPlanner,yes
+r25a48355,lm,GPT-4 family,,yes
+r25a48355,engine,Planners (PDDL),,no
+r25a48355,benchmark,planetarium,Planetarium,yes
+r823909fa,engine,Optimisation solvers (LP/MILP/CP),,no
+r823909fa,engine,"SAT/SMT (Z3, cvc5)",,no
+r0a754dc8,engine,Lean,,no
+r0a754dc8,benchmark,leandojo,LeanDojo,yes
+r0a754dc8,benchmark,minif2f,miniF2F,yes
+r89bf1f29,engine,Python interpreter/executor,,no
+re13f719a,lm,GPT-4 family,,yes
+re13f719a,lm,"Prover fine-tunes (role, any base)",,yes
+re13f719a,engine,Lean,,yes
+re13f719a,benchmark,minif2f,miniF2F,yes
+r3ab7ef65,lm,Llama family,,yes
+r3ab7ef65,lm,"Prover fine-tunes (role, any base)",,no
+rf7949d7b,benchmark,atmosscibench,AtmosSci-Bench,yes
+re8e105a9,lm,"GPT-3/3.5, ChatGPT",,yes
+re8e105a9,lm,Gemini/PaLM/Bard,,yes
+re8e105a9,engine,Optimisation solvers (LP/MILP/CP),,yes
+re8e105a9,benchmark,autoopt11k,AutoOpt-11k,yes
+rd7f0e1f1,lm,GPT-4 family,,yes
+rd7f0e1f1,engine,Python interpreter/executor,,yes
+rd7f0e1f1,benchmark,stark,STARK,yes
+r9a191058,engine,Lean,,yes
+r9a191058,benchmark,clever,CLEVER,yes
+r3b5fd577,lm,Llama family,,yes
+r3b5fd577,lm,Qwen family,,yes
+r3b5fd577,benchmark,arenahard,Arena-Hard,yes
+r3b5fd577,benchmark,followbench,FollowBench,yes
+r3b5fd577,benchmark,infobench,InFoBench,yes
+r3b5fd577,benchmark,wildchecklists,WildChecklists,yes
+r37271d3d,benchmark,scope,SCOPE-Test,yes
+r5f4af8c0,benchmark,cwq,CWQ,yes
+r5f4af8c0,benchmark,kgqagen10k,KGQAGen-10k,yes
+r5f4af8c0,benchmark,webqsp,WebQSP,yes
+rf15138cf,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,yes
+rc361829b,lm,DeepSeek family,,yes
+rc361829b,lm,GPT-4 family,,yes
+rc361829b,lm,Qwen family,,yes
+rc361829b,benchmark,aime,AIME,yes
+rc361829b,benchmark,arcagi,ARC-AGI,yes
+rc361829b,benchmark,arcagi2,ARC-AGI 2,yes
+rc361829b,benchmark,beyondaime,BeyondAIME,yes
+rc361829b,benchmark,enigmataeval,ENIGMATA-Eval,yes
+rc361829b,benchmark,gpqa,GPQA,yes
+r7ce7b370,benchmark,factoriolearningenvironment,Factorio Learning Environment,yes
+re0ae613c,engine,"SAT/SMT (Z3, cvc5)",,no
+r96d78357,lm,DeepSeek family,,yes
+r96d78357,lm,"Prover fine-tunes (role, any base)",,yes
+r96d78357,engine,Lean,,yes
+r96d78357,benchmark,ineqcomp,Ineq-Comp,yes
+r54a42677,benchmark,olympiadinequalities,Olympiad inequalities (437 problems),no
+r357a037c,benchmark,earthinstruct,EarthInstruct,yes
+rdf84b878,benchmark,korbench,KOR-Bench,yes
+rdf84b878,benchmark,korgym,KORGym,yes
+rdbc215a2,lm,DeepSeek family,,yes
+rdbc215a2,lm,GPT-4 family,,yes
+r4d23bfab,lm,GPT-4 family,,yes
+r4d23bfab,benchmark,lexicon,LexiCon,yes
+r3cb07e7e,lm,Llama family,,yes
+r3cb07e7e,benchmark,zebralogicbench,ZebraLogicBench,yes
+r05566fe9,lm,GPT-4 family,,yes
+r05566fe9,benchmark,mcmicm,MCM/ICM,yes
+r05566fe9,benchmark,mmbench,MM-Bench,yes
+r0b58eee0,benchmark,minif2f,miniF2F,yes
+r0b58eee0,benchmark,proofnet,ProofNet,yes
+r633d08ff,lm,Llama family,,yes
+r633d08ff,engine,Optimisation solvers (LP/MILP/CP),,no
+r633d08ff,benchmark,complexor,ComplexOR,yes
+r633d08ff,benchmark,nl4opt,NL4Opt,yes
+r633d08ff,benchmark,nlp4lp,NLP4LP,yes
+r974a9133,engine,Python interpreter/executor,,no
+r57be21b8,lm,GPT-4 family,,yes
+r57be21b8,benchmark,muslr,MuSLR,yes
+rb032d6ad,lm,Llama family,,yes
+rb032d6ad,lm,Qwen family,,yes
+r7acba57d,engine,Planners (PDDL),,no
+r7acba57d,benchmark,alfworld,ALFWorld,yes
+r7acba57d,benchmark,pddlgym,PDDLGym,yes
+r7acba57d,benchmark,virtualhome,VirtualHome,yes
+r1b894e95,lm,DeepSeek family,,yes
+r1b894e95,lm,Qwen family,,yes
+r1b894e95,benchmark,omega,OMEGA,yes
+r34aac216,lm,Gemini/PaLM/Bard,,yes
+r34aac216,engine,Python interpreter/executor,,no
+r34aac216,benchmark,bigbenchextrahard,Big Bench Extra Hard (BBEH),yes
+r870d8660,lm,GPT-4 family,,yes
+r870d8660,benchmark,paper2poster,Paper2Poster,yes
+radf94b79,benchmark,ataripong,Atari Pong,no
+radf94b79,benchmark,montezumasrevenge,Montezuma's Revenge,yes
+radf94b79,benchmark,pong,Pong,no
+re3a4cd40,benchmark,1darc,1D-ARC,yes
+re3a4cd40,benchmark,mbpp+,MBPP+,yes
+re3a4cd40,benchmark,minigrid,MiniGrid,yes
+re3a4cd40,benchmark,playgol,Playgol,yes
+r7abb32ad,benchmark,gsmeq,GSME-Q,yes
+r7abb32ad,benchmark,gsmq,GSM-Q,yes
+r7abb32ad,benchmark,logicq,Logic-Q,yes
+r7abb32ad,benchmark,planningq,Planning-Q,yes
+r7abb32ad,benchmark,questbench,QuestBench,yes
+r746d3aa3,benchmark,math,MATH,yes
+r746d3aa3,benchmark,minif2f,MiniF2F,yes
+r12a103a9,lm,DeepSeek family,,yes
+r12a103a9,lm,"Prover fine-tunes (role, any base)",,yes
+r12a103a9,benchmark,minif2f,miniF2F,yes
+r12a103a9,benchmark,proofnet,ProofNet,yes
+r12a103a9,benchmark,putnambench,PutnamBench,yes
+r5715c6fc,lm,DeepSeek family,,yes
+r5715c6fc,engine,"SAT/SMT (Z3, cvc5)",,no
+r5715c6fc,benchmark,aime,AIME,yes
+r5715c6fc,benchmark,livecodebench,LiveCodeBench,yes
+r5715c6fc,benchmark,saturn26k,Saturn-2.6k,yes
+r7cba4758,lm,DeepSeek family,,yes
+r7cba4758,lm,GPT-4 family,,yes
+r7cba4758,engine,Optimisation solvers (LP/MILP/CP),,no
+r51bd51a2,engine,Optimisation solvers (LP/MILP/CP),,no
+r72fadfed,engine,Model checkers / temporal logic,,yes
+r06b8d03f,benchmark,rtlrewriter,RTL-Rewriter,yes
+r97ae3996,lm,DeepSeek family,,yes
+r97ae3996,lm,GPT-4 family,,yes
+r97ae3996,engine,Python interpreter/executor,,yes
+r6b8e53de,benchmark,rlbench,RLBench,yes
+r790d4bfc,engine,Planners (PDDL),,no
+r15637e1e,benchmark,birdsql,Bird-SQL,yes
+r15637e1e,benchmark,tabmwp,TabMWP,yes
+r15637e1e,benchmark,wikitq,WikiTQ,yes
+r2a248128,benchmark,alfworld,ALFWorld,yes
+r2a248128,benchmark,mars,Mars,yes
+r5877c953,engine,Lean,,yes
+r5877c953,benchmark,minif2f,miniF2F,yes
+r5877c953,benchmark,minif2fv2,miniF2F-v2,yes
+r9ec117bd,lm,"Prover fine-tunes (role, any base)",,yes
+r9ec117bd,engine,Lean,,yes
+r9ec117bd,benchmark,leanworkbookplus,Lean Workbook Plus,yes
+r9ec117bd,benchmark,mathlib4,Mathlib4,yes
+ra79fa313,engine,"Logic programming (Prolog, ASP, Datalog)",,no
+r6975c90e,engine,"Logic programming (Prolog, ASP, Datalog)",,no
+r6975c90e,benchmark,sara,SARA,yes
+r40f32cd4,lm,GPT-4 family,,yes
+r40f32cd4,engine,Python interpreter/executor,,yes
+r254fcd16,benchmark,coigcqia,COIG-CQIA,yes
+r254fcd16,benchmark,smartypatbench,SmartyPat-Bench,yes
+rdf6ace3c,benchmark,acpbenchhard,ACPBench Hard,yes
+r40769616,benchmark,epla,EPLA,yes
+r40769616,benchmark,minif2f,miniF2F,yes
+r40769616,benchmark,proofnet,ProofNet,yes
+rca8a5faa,benchmark,gsmperturbationbenchmarks,GSM perturbation benchmarks,no
+r9ef2cbd8,benchmark,imogeometryproblems,IMO geometry problems (2000-2024),yes
+r58786fe5,benchmark,beavertails,BeaverTails,yes
+r58786fe5,benchmark,prontoqa,PrOntoQA,yes
+r58786fe5,benchmark,proverqa,ProverQA,yes
+r58786fe5,benchmark,rail2country,Rail2Country,yes
+r605194c1,lm,Claude,,yes
+r605194c1,lm,DeepSeek family,,yes
+r605194c1,lm,GPT-4 family,,yes
+r605194c1,lm,Gemini/PaLM/Bard,,yes
+r605194c1,engine,Python interpreter/executor,,yes
+r605194c1,benchmark,aime24,AIME24,yes
+r605194c1,benchmark,aime25,AIME25,yes
+r605194c1,benchmark,hmmt25,HMMT25,yes
+r10e36dc2,engine,Lean,,yes
+r10e36dc2,benchmark,fatex,FATE-X,yes
+r10e36dc2,benchmark,proofnet,ProofNet,yes
+r50ca5848,engine,Lean,,yes
+r50ca5848,benchmark,advancedmath,AdvancedMath,yes
+r50ca5848,benchmark,minif2f,miniF2F,yes
+r50ca5848,benchmark,proofnet,ProofNet,yes
+re33d530c,lm,GPT-4 family,,yes
+re33d530c,lm,Gemini/PaLM/Bard,,yes
+re33d530c,lm,Llama family,,yes
+re33d530c,lm,Qwen family,,yes
+re33d530c,benchmark,beyondbench,BeyondBench,yes
+r232e4111,engine,"SAT/SMT (Z3, cvc5)",,yes
+r04590057,lm,Claude,,yes
+r04590057,lm,DeepSeek family,,yes
+r04590057,lm,"GPT-3/3.5, ChatGPT",,no
+r04590057,lm,GPT-4 family,,yes
+r04590057,lm,Gemini/PaLM/Bard,,yes
+r04590057,lm,Llama family,,yes
+r04590057,benchmark,cmtbenchmark,CMT-Benchmark,yes
+rab64b6eb,benchmark,chinatravel,ChinaTravel,yes
+rdabcbba2,benchmark,circuitsense,CircuitSense,yes
+r99577b6b,benchmark,alfworld,ALFWorld,yes
+r99577b6b,benchmark,nethack,NetHack,yes
+r99577b6b,benchmark,starcraftiiunitbuilding,StarCraft II Unit Building,yes
+r0a224728,lm,Gemini/PaLM/Bard,,yes
+r0a224728,engine,Python interpreter/executor,,no
+r0264cc27,benchmark,codesense,CodeSense,yes
+r7dc6cf73,benchmark,cogniload,CogniLoad,yes
+r0aeb4906,benchmark,cubebench,CubeBench,yes
+re1446fe9,lm,DeepSeek family,,yes
+re1446fe9,lm,GPT-4 family,,yes
+re1446fe9,engine,Lean,,no
+re1446fe9,benchmark,connf,ConNF,yes
+re1446fe9,benchmark,minif2f,MiniF2F-test,yes
+re1446fe9,benchmark,proofnet,ProofNet,yes
+rc3acba99,benchmark,geoperceive,GeoPerceive,yes
+r56e37560,lm,GPT-4 family,,yes
+r56e37560,lm,Gemini/PaLM/Bard,,yes
+r56e37560,lm,Qwen family,,yes
+r56e37560,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,yes
+rde2a3082,benchmark,formalmathlite,FormalMATH-Lite,yes
+rde2a3082,benchmark,ineqcompseed,Ineq-Comp-Seed,yes
+rde2a3082,benchmark,ineqcomptransformed,Ineq-Comp-Transformed,yes
+rde2a3082,benchmark,minif2f,MiniF2F-Test,yes
+r73af149f,engine,Lean,,no
+r73af149f,benchmark,fateh,FATE-H,yes
+r73af149f,benchmark,fatex,FATE-X,yes
+r8e5e1408,engine,Lean,,yes
+r8e5e1408,benchmark,formalml,FormalML,yes
+ra6a7aa23,benchmark,dimacs,DIMACS,yes
+ra6a7aa23,benchmark,frontierco,FrontierCO,yes
+ra6a7aa23,benchmark,tsplib,TSPLib,yes
+rff5b35b6,lm,DeepSeek family,,yes
+rff5b35b6,lm,"Prover fine-tunes (role, any base)",,yes
+rff5b35b6,engine,Lean,,yes
+rff5b35b6,benchmark,minif2f,MiniF2F-Test,yes
+rff5b35b6,benchmark,proofnet,ProofNet-Test,yes
+r9acdeee6,benchmark,androidworld,AndroidWorld,yes
+r9acdeee6,benchmark,babyai,BabyAI,yes
+r9acdeee6,benchmark,mujoco,MuJoCo,yes
+r520c7235,lm,DeepSeek family,,yes
+r520c7235,lm,"Prover fine-tunes (role, any base)",,yes
+r520c7235,engine,Lean,,yes
+r520c7235,benchmark,minif2f,MiniF2F,yes
+r520c7235,benchmark,putnambench,PutnamBench,yes
+rc8e2248d,benchmark,hardcorelogic,HardcoreLogic,yes
+r46e18dd8,benchmark,tdbench,TDBench,yes
+r23f447b9,lm,GPT-4 family,,yes
+r23f447b9,lm,Gemini/PaLM/Bard,,yes
+r23f447b9,benchmark,heurigym,HeuriGym,yes
+rb1f7e919,lm,"Prover fine-tunes (role, any base)",,no
+rb1f7e919,engine,Lean,,yes
+rb1f7e919,benchmark,minif2f,miniF2F,yes
+rb1f7e919,benchmark,putnambench,PutnamBench,yes
+r99ad3bbf,benchmark,causalpitfalls,CausalPitfalls,yes
+r43da03b0,lm,GPT-4 family,,yes
+rb51f1ace,engine,Lean,,yes
+rb51f1ace,benchmark,putnambench,PutnamBench,yes
+r7345147b,lm,Claude,,yes
+r7345147b,lm,DeepSeek family,,yes
+r7345147b,lm,"GPT-3/3.5, ChatGPT",,yes
+r7345147b,lm,Gemini/PaLM/Bard,,yes
+r7345147b,lm,Qwen family,,yes
+r7345147b,engine,Dafny/Verus/Why3/F*,,yes
+r7345147b,benchmark,dafnycomp,DafnyCOMP,yes
+r47c448cd,benchmark,logiconbench,LogiConBench,yes
+r5ed1e5a9,lm,GPT-4 family,,yes
+r5ed1e5a9,engine,Theorem provers (FOL),,yes
+r97819a7d,lm,DeepSeek family,,yes
+r97819a7d,engine,Lean,,no
+r97819a7d,benchmark,gaokaoformal,Gaokao-Formal,yes
+r97819a7d,benchmark,minif2f,MiniF2F,yes
+r2f322bd6,benchmark,moleculariq,MolecularIQ,yes
+r7bd71a09,engine,Planners (PDDL),,no
+r7bd71a09,benchmark,alfworld,ALFWorld,yes
+r7bd71a09,benchmark,blocksworld,Blocksworld,yes
+r5f46bb8d,engine,Python interpreter/executor,,no
+rd986a64e,engine,Coq/Rocq,,yes
+rd986a64e,engine,Dafny/Verus/Why3/F*,,yes
+rd986a64e,engine,Isabelle,,yes
+rd986a64e,engine,Lean,,yes
+rd986a64e,benchmark,ntp4vc,NTP4VC,yes
+r19ae4fa3,engine,Python interpreter/executor,,yes
+r19ae4fa3,benchmark,newtonbench,NewtonBench,yes
+rd4a9e13f,engine,Planners (PDDL),,no
+r6f7a087b,benchmark,prismphysics,PRISM-Physics,no
+r9d3f97de,lm,DeepSeek family,,yes
+r9d3f97de,engine,Lean,,yes
+r9d3f97de,benchmark,minif2f,MiniF2F,yes
+r9d3f97de,benchmark,proofnet,ProofNet,yes
+rabf69c7a,lm,DeepSeek family,,yes
+rabf69c7a,lm,GPT-4 family,,yes
+rabf69c7a,lm,Gemini/PaLM/Bard,,yes
+rabf69c7a,lm,"Prover fine-tunes (role, any base)",,yes
+rabf69c7a,engine,Lean,,yes
+rabf69c7a,benchmark,minif2ftestpf,miniF2F-Test-PF,yes
+r1afc3d79,lm,"Prover fine-tunes (role, any base)",,no
+r1afc3d79,engine,Lean,,yes
+r1afc3d79,benchmark,minif2f,miniF2F,yes
+r1afc3d79,benchmark,putnambench,PutnamBench,yes
+rd23a2890,lm,GPT-4 family,,yes
+rd23a2890,lm,Qwen family,,yes
+rd23a2890,engine,Python interpreter/executor,,yes
+r71e26edf,benchmark,consistencycheck,ConsistencyCheck,yes
+rb5398a81,lm,GPT-4 family,,yes
+rb5398a81,engine,Python interpreter/executor,,yes
+rb5398a81,benchmark,aime,AIME,yes
+r690964dc,lm,GPT-4 family,,yes
+rab20f8f2,lm,GPT-4 family,,yes
+r0a572ee0,benchmark,llmsrbench,LLM-SRBench,yes
+rdea26305,engine,Python interpreter/executor,,yes
+rea458d73,engine,Python interpreter/executor,,yes
+ra2c0bf92,benchmark,aime,AIME,yes
+ra2c0bf92,benchmark,alebench,ALE-Bench,yes
+ra2c0bf92,benchmark,circlepacking,circle packing,no
+r13f57eb5,engine,Planners (PDDL),,yes
+r9f4e642a,benchmark,sysmobench,SysMoBench,yes
+rbea0e4b3,lm,Llama family,,yes
+rbea0e4b3,engine,Python interpreter/executor,,yes
+rbea0e4b3,benchmark,math,MATH,yes
+r2d285226,engine,Python interpreter/executor,,no
+r3d3c6a4d,lm,GPT-4 family,,yes
+r3d3c6a4d,benchmark,wikitq,WikiTQ,yes
+r0185a5bf,lm,DeepSeek family,,yes
+r0185a5bf,lm,Qwen family,,yes
+raa04f2fb,lm,GPT-4 family,,no
+raa04f2fb,engine,Python interpreter/executor,,no
+rd998a870,benchmark,kb13,KB13,yes
+rd998a870,benchmark,regexlib,RegexLib,yes
+r1ff1c19f,lm,Gemma,,yes
+r1ff1c19f,lm,Qwen family,,yes
+r1ff1c19f,engine,"Computer algebra (SymPy, Mathematica)",,no
+r1ff1c19f,benchmark,finqa,FinQA,yes
+r1ff1c19f,benchmark,mgsm,MGSM,yes
+r1ff1c19f,benchmark,mgsmsympy,MGSM-SymPy,yes
+r1ff1c19f,benchmark,musr,MuSR,yes
+r3c7d5693,lm,Llama family,,yes
+r3c7d5693,lm,T5 family,,yes
+r3c7d5693,engine,Model checkers / temporal logic,,yes
+r3c7d5693,benchmark,verify,VERIFY,yes
+red448e3e,lm,GPT-4 family,,yes
+red448e3e,engine,Lean,,yes
+red448e3e,benchmark,verina,VERINA,yes
+r73f1814f,benchmark,bioasq,BioASQ,yes
+r73f1814f,benchmark,legalbench,LegalBench,yes
+r73f1814f,benchmark,proofwriter,ProofWriter,yes
+r4e5a66e9,engine,Dafny/Verus/Why3/F*,,yes
+r4e5a66e9,benchmark,veriequivbench,VeriEquivBench,yes
+r752d0cbb,engine,Lean,,yes
+r0e2c4e07,lm,Claude,,yes
+r0e2c4e07,lm,"Code-specialised (Codex, StarCoder, CodeGen)",,yes
+r0e2c4e07,benchmark,apebench,APE-Bench,yes
+r9cba5b44,engine,"Computer algebra (SymPy, Mathematica)",,yes
+r9cba5b44,benchmark,asymob,ASyMOB,yes
+r1b26c0f3,benchmark,mindcube,MindCube,yes
+r25d6452d,lm,Gemini/PaLM/Bard,,yes
+r25d6452d,engine,Dafny/Verus/Why3/F*,,yes
+r25d6452d,engine,Lean,,yes
+r25d6452d,benchmark,algoveri,AlgoVeri,yes
+r296c3ace,benchmark,xbench,X-Bench,yes
+ree89803d,lm,DeepSeek family,,yes
+ree89803d,lm,"Prover fine-tunes (role, any base)",,yes
+ree89803d,engine,Lean,,yes
+ree89803d,benchmark,combibench,CombiBench,yes
+ree89803d,benchmark,lci,LCI-Test,yes
+ree89803d,benchmark,putnambenchcomb,PutnamBench-Comb,yes
+rf74d94f3,lm,Claude,,yes
+rf74d94f3,benchmark,squirrel,Squirrel,no
+rf74d94f3,benchmark,squirrelbenchmark,Squirrel Benchmark,no
+rf74d94f3,benchmark,squirrelsemantic,Squirrel-Semantic,no
+rf74d94f3,benchmark,squirrelsyntax,Squirrel-Syntax,no
+r9eb18935,engine,Lean,,yes
+r9eb18935,benchmark,formalmath500,FormalMath500,yes
+r9eb18935,benchmark,minif2fsolving,MiniF2F-Solving,yes
+r9eb18935,benchmark,putnambenchsolving,PutnamBench-Solving,yes
+re0a99963,lm,DeepSeek family,,yes
+r794f5551,benchmark,cirbench,CIRBench,yes
+rd16a5d6f,benchmark,vcotbench,VCoT-Bench,yes
+rd3fc62e4,engine,Python interpreter/executor,,no
+rd3fc62e4,benchmark,mmmc,MMMC,yes
+rd03c7afc,engine,Lean,,no
+rd03c7afc,benchmark,putnambench,PutnamBench,yes
+r92b5842f,benchmark,miplib2017,MIPLIB 2017,yes
+r92b5842f,benchmark,miplibnl,MIPLIB-NL,yes
+rbf2428aa,benchmark,convexbench,ConvexBench,yes
+r9faf5834,lm,GPT-4 family,,yes
+r9faf5834,lm,Gemini/PaLM/Bard,,yes
+r5390b532,engine,Lean,,yes
+r5390b532,benchmark,prime,PRIME,yes
+r1bac9a05,benchmark,llmsrbench,LLM-SRBench,yes
+r4014d545,benchmark,humanoidbench,HumanoidBench,yes
+r4014d545,benchmark,isaaclab,Isaac Lab,yes
+r75eaf601,lm,DeepSeek family,,yes
+r75eaf601,benchmark,formalmathlite,FormalMath-Lite,yes
+ra905e9a3,benchmark,alfworld,ALFWorld,yes
+ra905e9a3,benchmark,robotouilleasynchronous,Robotouille Asynchronous,yes
+ra905e9a3,benchmark,robotouillesynchronous,Robotouille Synchronous,yes
+r11bcdfdc,engine,Isabelle,,yes
+r11bcdfdc,benchmark,minif2f,miniF2F,yes
+r59fa2368,benchmark,excytinbench,ExCyTIn-Bench,yes
+r103820b4,engine,Dafny/Verus/Why3/F*,,yes
+raccec608,lm,Qwen family,,yes
+raccec608,engine,Python interpreter/executor,,no
+r26b6774b,engine,Lean,,yes
+r3750b732,engine,Dafny/Verus/Why3/F*,,yes
+r3750b732,engine,"SAT/SMT (Z3, cvc5)",,yes
+r90e3d0ed,benchmark,formalrx,FormalRx-Test,yes
+r1ead1843,engine,Lean,,yes
+rc7b38fa9,engine,Model checkers / temporal logic,,no
+rc7b38fa9,benchmark,alfworld,ALFWorld,yes
+rb083b075,lm,DeepSeek family,,yes
+rb083b075,engine,Python interpreter/executor,,yes
+rb083b075,benchmark,leetcode,LeetCode,no
+raa44c8be,engine,Lean,,yes
+raa44c8be,benchmark,aime,AIME,yes
+raa44c8be,benchmark,hardmath2,HARDMath2,yes
+r96d2bfb9,engine,Coq/Rocq,,yes
+r96d2bfb9,benchmark,humaneval,HumanEval,yes
+r35dff64d,engine,"SAT/SMT (Z3, cvc5)",,yes
+r35dff64d,benchmark,induction,INDUCTION,yes
+r55b5226e,benchmark,llmsrbench,LLM-SRBench,yes
+rbc712825,engine,Optimisation solvers (LP/MILP/CP),,no
+rdd6ec86a,benchmark,plsemanticsbench,PLSemanticsBench,yes
+re0440fca,benchmark,rsrbench,RSR-Bench,yes
+ra8b9906a,lm,GPT-4 family,,yes
+rdf0ed85b,benchmark,ligmm+,LIG-MM+,yes
+r860cd506,engine,Lean,,yes
+r860cd506,benchmark,mathliblemma,MathlibLemma,yes
+r64539e58,benchmark,mentisoculi,MentisOculi,yes
+rc4867a9e,benchmark,ai2thor,AI2-THOR,yes
+rc4867a9e,benchmark,searchandrescue,search-and-rescue,yes
+rbb0b9d05,engine,Python interpreter/executor,,no
+rbb0b9d05,benchmark,formalgeo7k,FormalGeo7k,yes
+r764cc16d,lm,GPT-4 family,,yes
+r764cc16d,lm,Llama family,,yes
+r764cc16d,lm,Mistral/Mixtral,,yes
+r764cc16d,lm,Qwen family,,yes
+r764cc16d,benchmark,invbench,InvBench,yes
+re80c8fe2,lm,Claude,,yes
+re80c8fe2,engine,Lean,,yes
+re80c8fe2,benchmark,putnam2025,Putnam 2025,yes
+r0d87801a,engine,Optimisation solvers (LP/MILP/CP),,no
+r0d87801a,benchmark,optengine,OPT-Engine,yes
+r26369457,benchmark,orbias,ORBias,yes
+r26369457,benchmark,ordebug,ORDebug,yes
+r26369457,benchmark,orloopbench,ORLoopBench,yes
+r8e5e63eb,lm,Qwen family,,yes
+r06eea408,benchmark,circlepacking,Circle Packing,yes
+r06eea408,benchmark,gset,Gset,no
+r06eea408,benchmark,gset70,Gset70,no
+r34501e93,benchmark,ispd2005,ISPD 2005,yes
+r75dc134e,engine,Coq/Rocq,,yes
+raf8e4e91,benchmark,proopfb,ProOPF-B,yes
+raf8e4e91,benchmark,proopfd,ProOPF-D,yes
+r49c87408,benchmark,c4,C4,yes
+r49c87408,benchmark,codeparrot,CodeParrot,yes
+r49c87408,benchmark,deepmindmath,DeepMind-Math,yes
+r49c87408,benchmark,needleinahaystack,Needle-in-a-haystack,yes
+rd3d4524a,engine,Dafny/Verus/Why3/F*,,yes
+r56ca0cde,engine,"SAT/SMT (Z3, cvc5)",,no
+r1e19fe7e,engine,Optimisation solvers (LP/MILP/CP),,no
+r1e19fe7e,benchmark,complexlp,ComplexLP,yes
+r162d22f6,lm,Claude,,yes
+r162d22f6,lm,Gemini/PaLM/Bard,,yes
+r162d22f6,benchmark,sedras,SEDRAS,yes
+re5e49fe2,engine,Coq/Rocq,,yes
+re5e49fe2,benchmark,slvc,SL-VC,yes
+r8e7dfae3,engine,Optimisation solvers (LP/MILP/CP),,yes
+rb6819abd,benchmark,minif2f,miniF2F,yes
+rb6819abd,benchmark,proofnet,ProofNet,yes
+r7767563b,engine,Python interpreter/executor,,no
+r7767563b,benchmark,nlqtsbench,NLQTSBench,yes
+r6baa099a,lm,Gemini/PaLM/Bard,,yes
+r6baa099a,engine,Lean,,yes
+r6baa099a,benchmark,sorrydb,SorryDB,yes
+r5019d570,lm,GPT-4 family,,yes
+r5019d570,benchmark,cruxeval,CRUXEval,yes
+r5019d570,benchmark,humaneval,HumanEval,yes
+r5019d570,benchmark,livecodebench,LiveCodeBench,yes
+r5019d570,benchmark,mbpp,MBPP,yes
+r5019d570,benchmark,reval,REval,yes
+r7dae1df3,benchmark,clrsdfs,CLRS-DFS,yes
+r35472553,benchmark,geocode,GeoCode,yes
+r3142d9b0,lm,DeepSeek family,,yes
+r3142d9b0,benchmark,circlepacking,circle packing,yes
+r3142d9b0,benchmark,firstautocorrelationinequality,first auto-correlation inequality,yes
+rc36311bf,engine,Optimisation solvers (LP/MILP/CP),,no
+r0e37ebda,benchmark,cgbenchreasoning,CG-Bench-Reasoning,yes
+r0e37ebda,benchmark,videoholmes,Video-Holmes,yes
+r0e37ebda,benchmark,vrbench,VRBench,yes
+re63439d4,lm,GPT-4 family,,yes
+re63439d4,benchmark,worldtravel,WorldTravel,yes
+re63439d4,benchmark,worldtravelwebscape,WorldTravel-Webscape,yes
+r9da32055,lm,Claude,,yes
+r9da32055,engine,Dafny/Verus/Why3/F*,,yes
+r9da32055,engine,"SAT/SMT (Z3, cvc5)",,no
+r9da32055,benchmark,minif2f,miniF2F,yes
+r9da32055,benchmark,minif2fdafny,miniF2F-Dafny,no
+r56e47a0d,lm,"Vision-language (LLaVA, CLIP, BLIP, ...)",,no

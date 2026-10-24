@@ -1,0 +1,2 @@
+rid,decision,code,evidence,rationale
+r5a1c91eb,exclude,E3,web: https://openreview.net/pdf?id=r5IXBlTCGc,E3 (R3): questions and logical relations generated and checked by LLMs; arbitrage metric numeric; no formal engine generates problems or certifies answers.

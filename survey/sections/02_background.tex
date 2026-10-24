@@ -10,7 +10,7 @@ Pretrained language models bring three capabilities that earlier neurosymbolic s
 \subsection{Related surveys and the gap addressed here}
 Table~\ref{tab:related} compares this review with the closest secondary studies. Surveys that focus on language models and symbolic reasoning~\cite{yang2025neuro,cheng2025empowering,rani2025advancing} are narrative: they report neither a search protocol nor a study count, so their coverage cannot be audited. Yang et al.~\cite{yang2025neuro} organise methods into Symbolic$\rightarrow$LLM, LLM$\rightarrow$Symbolic and LLM+Symbolic perspectives; our architectures refine these (Section~\ref{sec:taxonomy-relations}). Systematic reviews of neurosymbolic AI exist~\cite{colelough2025neurosymbolic,delvecchio2025neuro}, but neither isolates the integration of language models, and broad surveys of neurosymbolic computing~\cite{wang2025data,lamb2020graph,deraedt2020statistical} predate or do not centre on the language-model era.
 
-Our review also uses LLMs as reviewers. Evaluations of GPT-4 for screening and data extraction report performance that varies with task and domain and recommend human oversight~\cite{khraisha2024can}. We therefore treat LLM-based screening as a design choice that must be disclosed, measured with independent double assessment, and checked by a human sample (Section~\ref{sec:method-ai}).
+Our review also uses LLMs as reviewers. Evaluations of LLM-based title and abstract screening report high but variable sensitivity and specificity that depend on the prompt, the model and the review topic~\cite{guo2024automated,tran2024sensitivity,dennstadt2024title}, and evaluations of GPT-4 for screening and data extraction recommend human oversight~\cite{khraisha2024can}. Most of these studies are in biomedicine, where eligibility criteria are well established; evidence for technical computer-science topics with fuzzy boundaries is scarce. We therefore treat LLM-based screening as a design choice that must be disclosed, measured with independent double assessment, and checked against human decisions on random samples (Sections~\ref{sec:method-ai} and \ref{sec:method-human}).
 
 \begin{table*}[t]
 \centering
@@ -30,7 +30,7 @@ Cheng et al.~\cite{cheng2025empowering} & IJCAI 2025 & -- & \checkmark & Logical
 Yang et al.~\cite{yang2025neuro} & IJCAI 2025 & -- & \checkmark & Neurosymbolic methods for LLM reasoning: Symbolic$\rightarrow$LLM, LLM$\rightarrow$Symbolic, LLM+Symbolic \\
 Rani et al.~\cite{rani2025advancing} & arXiv 2025 & -- & \checkmark & Symbolic integration in LLMs: lifecycle stage, coupling, architecture, application \\
 \midrule
-\textbf{This review} & -- & \checkmark & \checkmark & PRISMA-ScR; \cnt{sourceb} abstracts searched + curated corpus + snowballing; recall audit; \cnt{included} studies (2020--2026); double-coded architecture, check strength, domain and formalism; executable replication package \\
+\textbf{This review} & -- & \checkmark & \checkmark & PRISMA-ScR; two-stage search of \cnt{sourceb} abstracts + curated corpus + snowballing + known-item check; double-screened recall audit; \cnt{included} studies (2020--2026); double-coded architecture, check strength, contribution type, domain and formalism; human check; executable replication package \\
 \bottomrule
 \end{tabularx}
 \end{table*}

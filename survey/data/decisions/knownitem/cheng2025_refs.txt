@@ -1,0 +1,33 @@
+Logic-guided data augmentation and regularization for consistent question answering | ACL | 2020
+Abstract Meaning Representation-based logic-driven data augmentation for logical reasoning | ACL | 2024
+Graph of thoughts: Solving elaborate problems with large language models | AAAI | 2024
+Logically consistent language models via neuro-symbolic integration | ICLR | 2025
+Transformers as soft reasoners over language | IJCAI | 2021
+Language models can be deductive solvers | NAACL | 2024
+Logical consistency of large language models in fact-checking | ICLR | 2025
+FOLIO: Natural language reasoning with first-order logic | EMNLP | 2024
+Conditional and modal reasoning in large language models | ACL | 2024
+Consistency analysis of ChatGPT | EMNLP | 2023
+Exploring self-supervised logic-enhanced training for large language models | NAACL | 2024
+Maieutic prompting: Logically consistent reasoning with recursive explanations | EMNLP | 2022
+BeliefBank: Adding memory to a pre-trained language model for a systematic notion of belief | EMNLP | 2021
+Language models with rationality | EMNLP | 2023
+LogiQA: a challenge dataset for machine reading comprehension with logical reasoning | IJCAI | 2021
+Enhancing self-consistency and performance of pre-trained language models through natural language inference | EMNLP | 2022
+Enhancing reasoning capabilities of LLMs via principled synthetic logic corpus | NeurIPS | 2024
+LINC: A neurosymbolic approach for logical reasoning by combining language models with first-order logic provers | EMNLP | 2023
+Consistency checks for language model forecasters | ICLR | 2025
+LogicBench: Towards systematic evaluation of logical reasoning ability of large language models | ACL | 2024
+Divide and translate: Compositional first-order logic translation and verification for complex logical reasoning | ICLR | 2025
+DetermLR: Augmenting LLM-based logical reasoning from indeterminacy to determinacy | ACL | 2024
+Entailer: Answering questions with faithful and truthful chains of reasoning | EMNLP | 2022
+Diagnosing the first-order logical reasoning ability through logicnli | EMNLP | 2021
+LogicAsker: Evaluating and improving the logical reasoning ability of large language models | EMNLP | 2024
+Logic-driven context extension and data augmentation for logical reasoning of text | ACL | 2022
+Chain-of-thought prompting elicits reasoning in large language models | NeurIPS | 2022
+Symbol-LLM: Towards foundational symbol-centric interface for large language models | ACL | 2024
+Faithful logical reasoning via symbolic chain-of-thought | ACL | 2024
+Tree of thoughts: Deliberate problem solving with large language models | NeurIPS | 2024
+SatLM: Satisfiability-aided language models using declarative prompting | NeurIPS | 2023
+ReClor: A reading comprehension dataset requiring logical reasoning | ICLR | 2020
+Analytical reasoning of text | NAACL | 2022

@@ -25,6 +25,8 @@ def main():
     allb = {}
     for line in open(WORK / "search" / "source_b.jsonl", encoding="utf-8"):
         r = json.loads(line)
+        if r.get("r2_added"):
+            continue            # stage 1 (v2) population; revision-2 additions are handled by stage2.py
         allb.setdefault(norm_title(r["title"]), r)
     hits = {}
     for line in open(WORK / "search" / "hits_b.jsonl", encoding="utf-8"):

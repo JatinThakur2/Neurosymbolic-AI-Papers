@@ -3,23 +3,24 @@
 \centering
 \begin{tikzpicture}[
   font=\scriptsize,
-  box/.style={draw, rounded corners=1.5pt, align=left, text width=40mm, inner sep=3pt, minimum height=9mm},
-  side/.style={draw, rounded corners=1.5pt, align=left, text width=38mm, inner sep=3pt, fill=black!3},
-  oth/.style={draw, rounded corners=1.5pt, align=left, text width=40mm, inner sep=3pt, fill=nsblue!4},
+  box/.style={draw, rounded corners=1.5pt, align=left, text width=41mm, inner sep=3pt, minimum height=9mm},
+  side/.style={draw, rounded corners=1.5pt, align=left, text width=37mm, inner sep=3pt, fill=black!3},
+  oth/.style={draw, rounded corners=1.5pt, align=left, text width=39mm, inner sep=3pt, fill=nsblue!4},
   inc/.style={box, draw=nsblue, fill=nsblue!8, line width=0.7pt},
   stage/.style={fill=nsblue!75, text=white, font=\tiny\bfseries, minimum height=3.5mm, inner sep=1pt, rotate=90, anchor=center},
   arr/.style={-{Stealth[length=1.5mm]}, line width=0.5pt}]
 % identification via databases
-\node[box] (srcA) {\textbf{Source A} curated corpus~\cite{thakur2026repo}\\ $n=\cnt{corpusrecords}$ records\\ 7 venues, title keywords, 2020--2026};
-\node[box, right=6mm of srcA] (srcB) {\textbf{Source B} proceedings metadata\\ $n=\cnt{sourceb}$ accepted papers with abstracts\\ abstract-level query: $n=\cnt{queryhits}$ retrieved};
-\node[side, right=6mm of srcB] (dup) {Removed before screening:\\ duplicates in Source A $n=\cnt{corpusdup}$\\ in both sources (merged) $n=\cnt{overlap}$};
-\node[box, below=7mm of $(srcA.south)!0.5!(srcB.south)$] (union) {\textbf{Records screened} (title + abstract)\\ $n=\cnt{union}$, two independent LLM screeners;\\ \cnt{adjunion} sent to adjudication};
-\node[side, right=6mm of union, xshift=20mm] (ex) {Excluded $n=\cnt{unionexcl}$\\ (reasons pooled with snowballing:\\ E1 \cnt{exclE1}, E2 \cnt{exclE2}, E3 \cnt{exclE3},\\ E4 \cnt{exclE4}, E5 \cnt{exclE5})};
-\node[box, below=7mm of union] (inu) {Included from databases\\ $n=\cnt{unionincl}$};
+\node[box] (srcA) {\textbf{Source A} curated corpus~\corpuscite{}\\ $n=\cnt{corpusrecords}$ records\\ 7 venues, title keywords, 2020--2026};
+\node[box, right=5mm of srcA] (srcB) {\textbf{Source B} proceedings metadata\\ $n=\cnt{sourceb}$ accepted papers with abstracts\\ stage-1 query: $n=\cnt{queryhits}$ retrieved\\ stage-2 query: $n=\cnt{searchtwo}$ further records};
+\node[side, right=5mm of srcB] (dup) {Removed before screening:\\ duplicates in Source A $n=\cnt{corpusdup}$\\ in both sources (merged) $n=\cnt{overlap}$};
+\node[box, below=7mm of $(srcA.south)!0.5!(srcB.south)$] (union) {\textbf{Records screened} (title + abstract)\\ stage 1: $n=\cnt{union}$; stage 2: $n=\cnt{searchtwo}$\\ two independent LLM screeners;\\ \cnt{adjunion} + \cnt{adjsearchtwo} sent to adjudication};
+\node[side, right=5mm of union, xshift=18mm] (ex) {Excluded $n=\cnt{unionexcl}+\cnt{searchtwoexcl}$\\ (reasons pooled over all routes:\\ E1 \cnt{exclE1}, E2 \cnt{exclE2}, E3 \cnt{exclE3},\\ E4 \cnt{exclE4}, E5 \cnt{exclE5})};
+\node[box, below=7mm of union] (inu) {Included from database searches\\ $n=\cnt{unionincl}+\cnt{searchtwoincl}$};
 % other methods
-\node[oth, below=7mm of srcA, xshift=-46mm] (snow) {\textbf{Backward snowballing}\\ references of \cnt{snowseeds} included studies\\ candidates screened $n=\cnt{snowcand}$\\ (two LLM screeners; \cnt{adjsnow} adjudicated)};
-\node[oth, below=4mm of snow] (aud) {\textbf{Recall audit} of non-retrieved\\ Source B records (stratified)\\ screened $n=\cnt{auditscreened}$};
-\node[oth, below=4mm of aud] (oi) {Included from other methods\\ snowball $n=\cnt{snowincl}$, audit $n=\cnt{auditincl}$};
+\node[oth, below=7mm of srcA, xshift=-46mm] (snow) {\textbf{Backward snowballing}\\ references of \cnt{snowseeds} included studies\\ candidates screened $n=\cnt{snowcand}$};
+\node[oth, below=3mm of snow] (aud) {\textbf{Recall audit} of non-retrieved\\ Source B records (stratified, double-\\screened): $n=\cnt{auditscreened}+\cnt{auditextn}$};
+\node[oth, below=3mm of aud] (ki) {\textbf{Known-item check}: \cnt{kiref} references\\ of an independent survey; unscreened\\ ones screened: $n=\cnt{kiscreened}$};
+\node[oth, below=3mm of ki] (oi) {Included from other methods\\ snowball $n=\cnt{snowincl}$, audit $n=\cnt{auditinclall}$,\\ known-item $n=\cnt{kiincl}$};
 \node[inc, below=8mm of inu] (all) {\textbf{Studies included in the review}\\ $n=\cnt{included}$, double-coded by two LLM coders;\\ \cnt{adjcoding} adjudicated};
 \draw[arr] (srcA.south) -- ++(0,-2mm) -| ([xshift=-6mm]union.north);
 \draw[arr] (srcB.south) -- ++(0,-2mm) -| ([xshift=6mm]union.north);
@@ -28,12 +29,13 @@
 \draw[arr] (union) -- (inu);
 \draw[arr] (inu) -- (all);
 \draw[arr] (snow) -- (aud);
-\draw[arr] (aud) -- (oi);
-\draw[arr] (oi.east) -| ([xshift=-8mm]all.north);
+\draw[arr] (aud) -- (ki);
+\draw[arr] (ki) -- (oi);
+\draw[arr] (oi.east) -- ++(4mm,0) |- (all.west);
 \node[stage, minimum width=12mm] at ($(srcA.west)+(-3.5mm,0)$) {Identification};
 \node[stage, minimum width=24mm] at ($($(union.west)!0.5!(inu.west)$)+(-3.5mm,0)$) {Screening};
 \node[stage, minimum width=12mm] at ($(all.west)+(-3.5mm,0)$) {Included};
 \end{tikzpicture}
-\caption{PRISMA-ScR flow of evidence sources. Source A is the curated corpus (title-keyword collection); Source B is the accepted-paper metadata of eight venues, searched on title and abstract. All screening and coding decisions were made by LLM-based reviewers under protocol v2 (Section~\ref{sec:method-ai}).}
+\caption{PRISMA-ScR flow of evidence sources. Source A is the curated corpus (title-keyword collection); Source B is the accepted-paper metadata of eight venues, searched on title and abstract in two stages. All screening and coding decisions were made by LLM-based reviewers (Section~\ref{sec:method-ai}) \ifhumancheck and checked against human decisions on random samples\else; human checks of random samples are prepared\fi{} (Section~\ref{sec:method-human}).}
 \label{fig:prisma}
 \end{figure*}

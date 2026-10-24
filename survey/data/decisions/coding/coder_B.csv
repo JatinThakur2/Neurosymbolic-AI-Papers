@@ -658,3 +658,107 @@ rfaf1d4ce,A4,none,D5,F3,GPT4; Code Llama,,,n/a,low,LLM writes simulation task pr
 rb24d901d,A2,empirical,D3,F3,code-davinci-002,,,n/a,high,Learned verifier uses execution results to rerank and prune sampled programs.
 re66c4b28,A6,empirical,D2,F1,BERT; T5,,,n/a,low,Study of learning logical reasoning on a space with exact logic-defined ground truth; evaluation-oriented.
 ra142c48f,A4,none,D8,F3,GPT-4; GPT-3.5,,Big-Bench,n/a,high,LLM writes Python utility tools that are cached and reused across later requests.
+r297ead14,A7,none,D5,F6,,,Minecraft,n/a,medium,Multimodal LLM perception module grounds observations; learned causal graph with planner drives task decomposition and execution.
+ra1406824,A2,empirical,D4,F3,,,,n/a,high,LLM-evolved heuristic code is executed on optimization benchmarks; fitness evaluation selects candidates in evolutionary search.
+r06eea408,A2,empirical,D4,F3,,,Circle Packing; Gset70,no,medium,"Candidate formulations/heuristics in DAG search are evaluated by executed verification code, which grounds selection and refinement."
+r34501e93,A2,empirical,D4,F3,,,ISPD 2005,n/a,high,LLM evolves ordering-strategy code; deterministic greedy proxy evaluation filters and selects candidates.
+rb327ee1d,A6,empirical,D2,F1,,,,n/a,medium,"Probing study; datasets automatically constructed via model-checking semantics of generalised quantifiers, labels certify answers."
+r9f4e642a,A6,exact,D1,F2,,TLA+,SysMoBench,n/a,high,"Benchmark of LLM-written TLA+ models, scored by automated syntactic, runtime, conformance and invariant checks."
+r0f5493a0,A2,empirical,D4,F7,,,,n/a,low,LLM proposes encoded retrosynthesis routes within constrained route-level search; validity of reactions presumably filters candidates; abstract vague.
+rfb5ce0a8,A5,none,D3,F7,,,Spider; Atis; GeoQuery,n/a,high,Executed SQL queries produce pretraining data of tabular answers; deployed model answers without SQL execution.
+rbd73b381,A2,empirical,D4,F3,,,,n/a,high,LLM-assisted evolutionary search generates algorithms evaluated by execution; fitness selects candidates.
+r989f4240,A2,empirical,D3,F3,,Trace; PyTorch,,n/a,medium,Workflow executed; execution traces and feedback returned to LLM optimizer that iteratively updates parameters/code.
+r357a037c,A7,none,D6,F1,,SAM2,EarthInstruct,n/a,medium,VLM interprets instructions and counts; binary integer program makes final mask-label assignment decision.
+rc8e2248d,A6,empirical,D2,F1,,,HardcoreLogic,n/a,medium,"Benchmark of systematically transformed logic puzzles, including unsolvable ones, with rule-based answer certification."
+rc4867a9e,A2,empirical,D5,F1,,,AI2-THOR; search-and-rescue,n/a,low,"ILP allocates LLM-proposed actions each step, enforcing feasibility and coordination constraints, filtering conflicting actions."
+rc450e789,A2,empirical,D3,F7,,,,n/a,high,RL rewards from static analyzers and unit tests on generated code during online training.
+rb7fa09b7,A3,none,D8,F7,,Gram2Token,,n/a,high,Grammar-constrained decoding masks tokens to steer generation; no verdict on final output.
+r37df01f4,A2,empirical,D5,F6,,,,n/a,medium,LLM-generated heuristic code evaluated with greedy best-first search on training tasks; best is selected; planner guarantees plans.
+ra264b2dd,A3,none,D3,F7,,IterGen,,n/a,medium,"Grammar-guided decoding library with symbol-level backtracking steers generation; checks are user-defined, mainly structural."
+rf74d94f3,A6,empirical,D3,F7,Claude-4-Sonnet,,Squirrel Benchmark; Squirrel-Syntax; Squirrel-Semantic,n/a,medium,Benchmark built by automated AST-based bug injection with execution-free automated evaluation of LLM SQL debugging.
+r0264cc27,A6,empirical,D3,F3,,,CodeSense,n/a,high,Benchmark whose ground truth comes from executing tests and collecting execution traces of real code.
+rb990cde0,A6,empirical,D7,F3,,,MathConstruct,n/a,high,Benchmark with automated verifiers that check constructed objects and generate problem variations.
+r405389b5,A2,exact,D1,F2,,,,n/a,medium,Theoretical analysis of verifier-in-the-loop proof search; proof assistant gives deterministic verdicts on proofs.
+r8f982ce8,A1,none,D8,F5,,,TRACIE; MATRES,n/a,low,Neural model predicts start times and durations; temporal rules compute end times and relations.
+reed5dbaa,A1,none,D6,F7,GPT,,,no,medium,GPT-based model writes visual programs of vision modules that are executed for image translation.
+r6a442be7,A7,none,D3,F7,,UQE; UQL,,n/a,medium,Query engine with compiler-based orchestration executes SQL-dialect queries; LLM handles unstructured-data judgments as operators.
+r15f794f7,A2,empirical,D5,F3,,REPL,,n/a,high,LLM interacts with REPL that executes code; execution results and errors drive iterative correction.
+r505e7df5,A6,empirical,D2,F5,Llama; Phi; GPT; o1,,,n/a,medium,Evaluation framework where causal quantities composed over graphs provide ground truth for scoring LMs.
+r72b7629e,A2,empirical,D3,F7,,,,n/a,medium,Judger enforces rule-based framework constraints to accept or reject code updates and trigger bounded repairs.
+r23f447b9,A6,empirical,D4,F3,GPT-o4-mini-high; Gemini-2.5-Pro,,HeuriGym,n/a,high,Benchmark of LLM-crafted heuristics evaluated by code execution and objective scoring.
+r7dd3b9d1,A2,empirical,D3,F7,,,TDD-Bench-Verified,n/a,high,Rule-based analysis checks and repairs LLM-generated tests.
+r917f522d,A1,none,D5,F1,,,,no,low,LLM planner generates spatial constraints that a solver turns into motions for demonstration data; MCTS aids planning.
+r2067f701,A6,empirical,D7,F4,o1-preview,,Putnam-AXIOM; Putnam-AXIOM Variation,n/a,high,Benchmark with programmatically perturbed variable/constant variants generating new problems with computed answers.
+r15637e1e,A1,none,D3,F3,,,WikiTQ; TabMWP; Bird-SQL,no,low,SLM generates data-analysis code executed for answers; distilled teacher trajectories stored in memory; no clear checking loop.
+r3af24b4d,A1,none,D3,F7,T5-base,,OpenSQuAD,no,high,"Model generates SQL queries executed on databases to obtain final answers, single pass."
+r2b949c55,A2,empirical,D5,F6,,,,n/a,low,RL reward favors concise valid plans; validity presumably checked symbolically during online training.
+r6e5fb3fd,A6,empirical,D3,F3,,,SURGE,n/a,high,Benchmark scoring LLM predictions of execution outputs against real execution results.
+ra9e59775,A2,empirical,D4,F3,,,online Bin Packing Problem; Traveling Salesman Problem,n/a,high,LLM-generated heuristics evaluated by execution on multiple objectives; dominance-based selection.
+r43da03b0,A5,none,D3,F7,GPT-4,,,n/a,medium,AST-guided search synthesises verifiable decompositions as training data; deployed LLM generates SQL without the search.
+r2ac15ccd,A2,empirical,D8,F1,,,MIPLIB,n/a,low,"LLM evolutionary framework generates MILP class code, executed and filtered, to synthesise training data for MILP models."
+red2c2e6f,A1,none,D3,F7,,,,no,high,"LLM generates SQL over retrieved tables; execution results ground the final answer, no checking loop."
+rdd704f79,A2,exact,D5,F6,,,,n/a,low,LLM signal proposes model edits combined with combinatorial search whose planning check validates candidate edits.
+r055cb4be,A2,empirical,D4,F3,,,,n/a,high,LLM refines meta-optimizer code; heuristics evaluated by execution on COPs select candidates.
+rdf6ace3c,A6,exact,D5,F6,,,ACPBench Hard,n/a,high,Benchmark of planning questions with symbolic validation algorithms certifying LLM answers.
+recb85cde,A7,none,D8,F5,,,WordNet; Open Multilingual WordNet,n/a,medium,LM scores parent-child pairs; maximum spanning tree graph optimization decides taxonomy structure.
+r8b27d7e6,A2,empirical,D5,F3,Gemini Pro,,,n/a,high,LLM proposes reward-function code iteratively refined using feedback from grounded RMAB simulations.
+r2b5b3cf1,A2,empirical,D4,F3,,FunSearch,,n/a,high,"FunSearch-style evolution: LLM-written acquisition functions evaluated on objective functions, best selected."
+rc8f0a551,A6,empirical,D3,F3,,,Text2Analysis,n/a,low,Table-analysis benchmark with query-result pairs; answers scored against executed results.
+rfca3f53b,A1,none,D3,F7,,,HeteQA,no,medium,"LLM writes SQL executed over tables within decomposition steps; execution computes intermediate answers, no checking loop."
+raf8e4e91,A6,empirical,D7,F1,,,ProOPF-D; ProOPF-B,n/a,medium,Main contribution is an OPF optimization-modeling dataset and benchmark; executable ground-truth code evaluates model formulations end to end.
+ra30b90aa,A5,none,D7,F1,,,OptMATH; NL4OPT; MAMO,n/a,medium,Solver-backed forward modeling and rejection sampling build training data offline; trained models deployed without the synthesis loop.
+r53c8c482,A2,empirical,D5,F6,,VAL,,n/a,medium,GRASE-DC*+VAL iteratively applies a plan validator whose verdicts drive repeated exemplar selection and plan regeneration.
+r93d7b991,A2,empirical,D3,F7,,,,n/a,medium,Database and query signals detect semantic errors in generated SQL and guide correction of the queries.
+rbb173962,A1,none,D3,F7,,,,n/a,medium,LLM writes a plan interleaving SQL steps executed by the database to compute the table QA answer; no checking loop.
+r4d23bfab,A6,empirical,D5,F6,GPT-5; o3; R1,,LexiCon,n/a,high,Benchmark generates temporally constrained planning problems automatically and evaluates LLM plans against them.
+r3e8a03b3,A2,empirical,D3,F3,,,,n/a,medium,LLM-generated heuristics are executed on optimization problems; evaluation scores select candidates in an evolutionary search.
+rf9d1b589,A5,none,D2,F3,,,,n/a,high,Program executors produce pre-training data (programs plus execution results); deployed LM reasons without the executor.
+r958d318b,A4,none,D5,F6,,,Mini Minecraft; ALFRED,n/a,medium,LM proposes planner-compatible action abstractions stored in a reusable library used by a hierarchical planner across tasks.
+r11025370,A2,empirical,D3,F3,,,,n/a,high,Generated heuristics are evaluated by execution; quality scores select candidates and provide RL reward to the LLM online.
+r07efbd27,A3,none,D8,F7,,,,n/a,high,Finite-automaton constraints shape proposals for SMC constrained decoding; no verdict on the final output.
+r870d8660,A2,empirical,D6,F3,GPT-4o,,Paper2Poster,n/a,low,Painter-Commenter loop executes rendering code and uses rendered results with VLM feedback to repair panels; verdict partly neural.
+r66c4c1cf,A1,none,D3,F7,,,,n/a,medium,Query agent writes SQL executed against the database to answer generated questions; results verbalised as insights.
+r99577b6b,A4,none,D5,F3,,,ALFWorld; NetHack; StarCraft II Unit Building,n/a,medium,LLM generates reusable planning programs that produce plans across episodes; a learned neural selector picks candidates.
+r2ea36910,A6,exact,D1,F2,GPT-3.5-turbo; GPT-4,,Selene,n/a,high,Benchmark of seL4 proof generation with a verification environment that certifies LLM-generated proofs.
+r494dde6f,A1,none,D5,F7,,CARLA,,no,medium,"LLM translates text into scenario scripts that the simulator executes to produce scenarios, used as planner training data."
+r746d3aa3,A2,exact,D1,F2,,,MATH; MiniF2F,n/a,medium,"Theorem proving via search over proof trees with pass@N, where proof checking accepts proofs; main contribution is training loss."
+r3142d9b0,A2,empirical,D4,F3,DeepSeek-R1-0528-Qwen3-8B,,circle packing; first auto-correlation inequality,n/a,high,Evolved programs are evaluated on open problems; scores select programs and serve as test-time RL reward.
+r46e18dd8,A6,empirical,D8,F7,,,TDBench,n/a,high,Benchmark constructs time-sensitive QA pairs from temporal databases using temporal SQL and dependencies.
+r34f3b46a,A2,empirical,D3,F3,,,,n/a,high,"LLM-evolutionary program search: heuristics executed and scored, scores select candidates via harmony search and GA."
+re80c8fe2,A2,exact,D1,F2,Claude Opus 4.5,Lean; Numina-Lean-MCP,Putnam 2025,n/a,high,"Coding agent interacts with Lean, which checks and accepts proofs during agentic proof search."
+ra39f39fd,A6,empirical,D2,F1,o4-mini,,SPaRC,n/a,medium,Benchmark of rule-constrained pathfinding puzzles whose solutions are validated against rules; evaluates LLM reasoning.
+rfdd3e1a1,A6,empirical,D5,F6,,,PlanBench,n/a,high,Planning benchmark built from IPC-style domains; symbolic planning tools generate problems and validate plans.
+rab64b6eb,A6,empirical,D5,F7,,,ChinaTravel,n/a,high,Travel-planning benchmark with a DSL that automatically validates feasibility and constraint satisfaction of agent plans.
+r4fdcc1f8,A6,exact,D1,F2,,,,n/a,low,"Evaluation study of attention spectral signatures, using compiler/proof-checker acceptance as ground truth for reasoning validity."
+r25d6452d,A6,exact,D1,F2,Gemini-3 Flash; Gemini-3; GPT-OSS,Dafny; Verus; Lean,AlgoVeri,n/a,high,"Vericoding benchmark where Dafny, Verus and Lean verifiers certify generated verified code."
+r935ce0b6,A5,none,D5,F6,,,,n/a,medium,Planner-estimated action likelihood rewards MLLM during training; deployed model performs single-pass inference without planner.
+rb032d6ad,A2,empirical,D2,F3,Qwen 7B; Llama 3-8B,,,n/a,low,LLM selects heuristic algorithms whose execution outcomes provide GRPO rewards during online training.
+rb5ae1c3b,A6,empirical,D3,F7,,,,n/a,low,"Controlled evaluation study of table QA comparing SQL-based, LLM and hybrid methods on a diagnostic benchmark."
+r77f1ac54,A3,none,D3,F7,GPT-3; Codex,,SMCalFlow,n/a,high,"Constrained Semantic Decoding enforces syntax, scoping and typing rules during sampling; no verdict on final output."
+re0a99963,A2,empirical,D7,F1,DeepSeek-R1-0528,,,no,medium,"Model writes solver code, runs it, inspects output and revises; trained via corrective SFT and RL."
+r3e3ad72d,A3,none,D3,F7,gpt-3.5-turbo,,WikiTQ; TabFact,n/a,medium,"Generated SQL decomposes tables into sub-tables that the LLM then reasons over; SQL steers retrieval, no verdict."
+rdc7f8a05,A6,empirical,D5,F6,GPT-4,,,n/a,medium,Systematic evaluation on generated IPC-style planning instances with plan validation; also heuristic and verifier-backprompting modes.
+re2a5ce52,A1,none,D2,F1,,,FEVER,yes,medium,LM predicts natural logic operators via QA; a deterministic natural-logic inference system computes the verdict.
+r59fa2368,A6,empirical,D3,F5,,,ExCyTIn-Bench,n/a,medium,Benchmark questions and ground-truth answers generated from investigation graphs over SQL security logs.
+rf6071f3a,A1,none,D5,F6,,,,no,medium,LLM generates structured belief hypotheses; open-ended POMDP planner tracks belief and computes the plan.
+ra406fbaf,A6,empirical,D7,F3,BHASKARA,,LILA,n/a,medium,Math reasoning benchmark with Python-program solutions that compute answers; evaluation is main contribution.
+r2c565e29,A1,none,D5,F3,,,VIMA,n/a,low,MLLM planner generates policy programs (retrieved code demonstrations) executed by the robot; no symbolic checking.
+rea410058,A2,empirical,D3,F3,,,,n/a,high,LLM-guided evolution of metaheuristics and programs; execution scores on optimization problems select candidates.
+r001c14b1,A4,empirical,D5,F5,GPT-4-turbo; GPT-3.5-turbo,,ALFWorld,n/a,medium,Builder agent maintains a structured rule system and manual reused across tasks; planner codes plans executed in environment.
+r4a00d7ea,A3,none,D8,F7,,,,n/a,medium,SMC controlled generation with syntactic/semantic constraint potentials steering decoding across domains.
+r12b1939c,A3,none,D3,F3,,,WikiTableQuestion; BIRD-SQL,n/a,low,"Tool agent manipulates tables to retrieve information for LLM answer generation; tool use steers retrieval, no verdict."
+r0aa09102,A7,none,D8,F1,,,,n/a,low,LM proposes and assigns cluster explanations; an integer linear program makes the final cluster selection.
+r8e5e63eb,A1,none,D7,F1,Qwen3-8B,,,no,low,Agent writes optimization models solved by a solver; contributions are tree-guided data synthesis and RL training.
+re56481df,A3,none,D3,F7,,,AmbiQT; SPIDER; Kaggle DBQA,n/a,medium,LogicalBeam uses plan-based SQL templates and constrained infilling to steer decoding; no verdict on output.
+r5ca89abb,A1,none,D7,F1,,,,no,medium,LLM writes optimization models solved by a solver; modeling tree guides decomposition; no checking loop described.
+r1cc24273,A7,none,D8,F7,,,STAR; ABCD; SGD; MultiWOZ; STARv2,n/a,medium,LM tracks dialog events/state; designer-written symbolic policy program executes to choose actions; LM acts as interface to symbolic core.
+rb17006b6,A6,empirical,D2,F1,Llama 3; Mixtral-8x7B,,TruthQuest,n/a,medium,Main contribution is a knights-and-knaves logic benchmark; logical puzzle structure presumably generates problems and certifies answers.
+rcddc76c4,A5,none,D8,F1,RoBERTa,,WIQA; QuaRel; HotpotQA,n/a,high,Logic rules used offline for training-data augmentation and consistency regularizer; deployed RoBERTa model runs without the symbolic rules.
+r1b26c0f3,A2,empirical,D6,F3,,,MindCube,no,medium,Python Spatial Assertion Codes executed against the cognitive map verify reasoning steps and supply dense rewards during reinforcement finetuning (online reward).
+r28603980,A1,none,D5,F7,,WebAssembly,,n/a,low,"LLM writes an effect-typed executable tool program that the runtime executes; constraint-guided construction, no checking loop on outputs described."
+r58622aa9,A1,none,D3,F7,,,TAT-QA,n/a,medium,TAGOP-style NDR model predicts evidence and discrete operators that a symbolic executor applies to compute the numeric answer; single pass.
+r5dd09369,A2,empirical,D5,F3,,,,n/a,medium,"Agent writes executable Python GUI actions; execution feedback and exceptions drive state-machine error handling and re-planning, repairing outputs."
+r64539e58,A6,empirical,D6,F7,,,MentisOculi,n/a,high,Main contribution is a procedurally generated benchmark suite evaluating multimodal models; generator produces problems and ground-truth answers.
+rccbc020f,A4,none,D3,F7,,LLVM,,n/a,low,"LLM synthesizes abstract error patterns from one patch, reused with LLVM program analysis to scan whole codebases for recurring bugs."
+rdf84b878,A6,empirical,D2,F6,,,KORGym; KOR-Bench,n/a,high,Evaluation platform of rule-based games whose environments generate problems and score LLM/VLM answers interactively.
+rff597439,A6,empirical,D2,F1,,,ACCORD,n/a,high,Benchmark suite that automatically generates formally controlled multi-hop counterfactual reasoning problems with known answers to evaluate LLMs.

@@ -1,18 +1,20 @@
-% Share of architectures per period (data/derived/plot_arch_share.csv), stacked to 100%.
-\pgfplotstableread[col sep=comma]{data/derived/plot_arch_share.csv}\archsharetable
+% Share of architectures per period, all venues and the constant-venue ICLR+ICML panel
+% (data/derived/plot_arch_share_panels.csv, written by code/s16_sensitivity.py).
+\pgfplotstableread[col sep=comma]{data/derived/plot_arch_share_panels.csv}\archsharetable
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-  width=\columnwidth, height=52mm,
-  xbar stacked, bar width=9pt, xmin=0, xmax=100,
+  width=0.80\columnwidth, height=72mm,
+  xbar stacked, bar width=7pt, xmin=0, xmax=100,
   xlabel={Share of studies in period (\%)}, xlabel style={font=\scriptsize},
-  ytick=data, yticklabels from table={\archsharetable}{period}, y dir=reverse,
-  yticklabel style={font=\scriptsize}, xticklabel style={font=\scriptsize},
-  legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, legend columns=7, draw=none,
+  ytick=data, yticklabels from table={\archsharetable}{label}, y dir=reverse,
+  yticklabel style={font=\tiny}, xticklabel style={font=\scriptsize},
+  legend style={font=\tiny, at={(0.5,1.02)}, anchor=south, legend columns=7, draw=none,
                 /tikz/every even column/.append style={column sep=2pt}},
   legend image code/.code={\draw[#1, draw=none] (0cm,-0.08cm) rectangle (0.22cm,0.12cm);},
-  axis lines*=left, enlarge y limits=0.17,
+  axis lines*=left, enlarge y limits=0.07,
+  extra y ticks={4.5}, extra y tick labels={}, extra y tick style={grid=major, major grid style={black!40, dashed}},
 ]
 \addplot[fill=A1c, draw=none] table[x=A1, y expr=\coordindex] {\archsharetable};
 \addplot[fill=A2c, draw=none] table[x=A2, y expr=\coordindex] {\archsharetable};
@@ -24,6 +26,6 @@
 \legend{A1,A2,A3,A4,A5,A6,A7}
 \end{axis}
 \end{tikzpicture}
-\caption{Architecture mix by period ($n=\cnt{earlyn}$, \cnt{ythreen}, \cnt{yfourn}, \cnt{yfiven}, \cnt{ysixn}). Checker-in-the-loop designs (A2) rise from \cnt{earlyAtwo}\% [95\% CI \cnt{earlyAtwolo}--\cnt{earlyAtwohi}] of studies in 2020--2022 to \cnt{ysixAtwo}\% [\cnt{ysixAtwolo}--\cnt{ysixAtwohi}] in 2026, while symbolic guidance without a verdict (A3) falls from \cnt{earlyAthree}\% to \cnt{ysixAthree}\%. 2026 covers only venues held by October 2026.}
+\caption{Architecture mix by period, for all venues (top) and for the constant-venue ICLR+ICML panel (bottom). The all-venue comparison is confounded by venue mix, because the NLP venues contribute no 2026 studies. On the panel, checker-in-the-loop designs (A2) account for \cnt{ptwythreeAtwo}\% [95\% CI \cnt{ptwythreeAtwolo}--\cnt{ptwythreeAtwohi}] of studies in 2023 and \cnt{ptwysixAtwo}\% [\cnt{ptwysixAtwolo}--\cnt{ptwysixAtwohi}] in 2026; the panel's 2020--2022 bar rests on \cnt{ptwearlyn} studies. The 2026 studies are almost all from ICLR and ICML.}
 \label{fig:archperiod}
 \end{figure}

@@ -229,3 +229,32 @@ rff5b35b6,A2,exact,D1,F2,n/a,abstract,"Prover writes Lean proofs for given forma
 rffe62927,A1,none,D5,F5,unclear,web: https://arxiv.org/html/2503.22738v2,"Inference: LLM assigns predicate values, MLN rule circuits compute verdict; no loop checking LLM output. A1 precedes A4. Extraction accuracy not visible."
 rfff81209,A6,exact,D1,F1,n/a,abstract,"Benchmark with verifier-certified invariants; invariants are separation-logic assertions, not proof-assistant code. Faithfulness n/a for A6."
 rfffad286,A2,empirical,D4,F4,n/a,abstract,Symbolic discovery of utility functions implies candidates selected by data fit; A2 precedes A4 in the tree.
+r297ead14,A7,none,D5,F6,n/a,abstract,"Learned causal graph of environment dynamics drives planning; a symbolic world model, so F6 over F5."
+ra1406824,A2,empirical,D3,F3,n/a,abstract,"Heuristic design for combinatorial optimisation is program search scored by execution, not scientific discovery: D3."
+r06eea408,A2,empirical,D7,F3,no,abstract,"Headline results are optimisation-formulation benchmarks (NL problems to models), so D7; heuristic discovery secondary."
+r34501e93,A2,empirical,D3,F3,n/a,abstract,"Evolving placement-ordering code evaluated by execution is program synthesis (D3), not scientific discovery."
+rbd73b381,A2,empirical,D3,F3,n/a,abstract,"LLM evolutionary algorithm discovery for optimisation problems: program search scored by execution, D3."
+rc4867a9e,A2,empirical,D5,F1,n/a,web: https://www.alphaxiv.org/abs/2607.09603.md,"LLM proposes candidate actions; ILP feasibility constraints filter and select one per agent: verdict selects candidates, A2; feasibility from estimated state, empirical."
+r8f982ce8,A7,none,D8,F5,n/a,abstract,"Model predicts start times and durations, not a formal representation; temporal rules decide relations: A7, not A1."
+reed5dbaa,A1,none,D6,F7,n/a,abstract,"Visual programs of vision modules are executable programs, not formal statements; faithfulness n/a."
+r23f447b9,A6,empirical,D3,F3,n/a,abstract,"Benchmark of LLM-written heuristic programs scored by execution: program synthesis, D3."
+r917f522d,A5,empirical,D5,F1,n/a,web: https://arxiv.org/html/2507.00833v2,"Framework only generates demonstrations to train diffusion policies, deployed without it (A5, first in tree); simulated success filters demonstrations: empirical."
+r15637e1e,A1,none,D3,F3,n/a,abstract,At inference SLM writes code executed for the answer; no checking loop evident; Python code so faithfulness n/a.
+ra9e59775,A2,empirical,D3,F3,n/a,abstract,Multi-objective heuristic program search scored by execution: D3.
+r2ac15ccd,A2,empirical,D2,F1,n/a,abstract,"Main evaluation is MILP tasks (integrality gap, branching), i.e. constraint/optimisation problems: D2 over D8."
+rdd704f79,A2,exact,D5,F6,no,abstract,"Candidate model edits validated by planning check (solvability/plan validity), a sound verdict: exact. LLM writes model edits; no separate faithfulness: no."
+r055cb4be,A2,empirical,D3,F3,n/a,abstract,LLM-evolved heuristic-optimiser code scored by execution on COPs: D3.
+r2b5b3cf1,A2,empirical,D3,F3,n/a,abstract,FunSearch-style program search for acquisition functions scored by execution: D3.
+raf8e4e91,A6,empirical,D7,F1,n/a,abstract,"NL operational requirements to optimisation models: optimisation-modelling word problems, D7."
+ra30b90aa,A1,none,D7,F1,no,abstract,"Deployed model still writes formulations a solver solves, so A5 fails; single-pass translate-and-solve A1. Optimisation modelling: D7."
+r93d7b991,A2,empirical,D3,F7,n/a,abstract,"SQL queries treated as executable queries, not formalisations; faithfulness n/a."
+rbb173962,A1,none,D3,F7,n/a,abstract,"SQL steps are executable queries, not formal statements; faithfulness n/a."
+r870d8660,A1,none,D6,F3,n/a,abstract,"Rendering code executed; repair verdicts come from VLM commenter, not a symbolic checker, so not A2; check none."
+r66c4c1cf,A1,none,D3,F7,n/a,abstract,"SQL used as executable query tool, not formal statement; faithfulness n/a."
+r494dde6f,A5,none,D5,F7,n/a,abstract,Simulator used only to create training scenarios offline; deployed motion planner runs without it: A5 precedes A1. Faithfulness n/a.
+re0a99963,A2,empirical,D7,F1,no,abstract,Optimisation modelling from NL problems with solver code: D7.
+r59fa2368,A6,empirical,D3,F5,n/a,abstract,"Agents query SQL log tables (structured data, D3); oracle is investigation graph generating questions and answers (F5)."
+r001c14b1,A4,empirical,D5,F5,n/a,abstract,"Planner code executed in ALFWorld; environment outcomes validate and update rules: simulator-based check, empirical."
+r12b1939c,A1,none,D3,F3,n/a,abstract,Tool agent's executed code computes table information for the answer; no symbolic verdict; consistent with Weaver as A1.
+r8e5e63eb,A2,empirical,D7,F1,no,abstract,"R-GRPO on optimisation modelling needs execution-based answer reward during online training: A2, empirical. D7 optimisation modelling."
+r5ca89abb,A1,none,D7,F1,no,abstract,Optimisation modelling from NL problems: D7.

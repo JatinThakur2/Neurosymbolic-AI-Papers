@@ -1,0 +1,1 @@
+model[- ]check(ing|ers?)|\bNuSMV\b|\bDafny\b|\bVerus\b|\bDatalog\b|\bplanners?\b|planning (domains?|languages?|problems?|tasks?)|automated planning|\bMILP\b|mixed[- ]integer|(integer|linear) programm?ing|optimi[sz]ation (modell?ing|models?|problems?|formulations?)|\bPyomo\b|\bGurobi\b|\bproofs?\b|\bSQL\b|execution traces?|\bTLA\+|\bAlloy\b

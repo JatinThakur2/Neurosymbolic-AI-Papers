@@ -18,17 +18,17 @@ Table~\ref{tab:prismachecklist} maps each of the 22 PRISMA-ScR items~\cite{tricc
 3 & Rationale & Sections~\ref{sec:intro} and \ref{sec:background}; Table~\ref{tab:related} \\
 4 & Objectives & Section~\ref{sec:intro} (\RQ{1}--\RQ{4}) \\
 \multicolumn{3}{@{}l}{\textit{Methods}} \\
-5 & Protocol and registration & Section~\ref{sec:method}; protocol v2 released in the replication package; not registered in advance; changes from the pilot in Section~\ref{sec:method-changes} \\
+5 & Protocol and registration & Section~\ref{sec:method}; protocol v2 and its revision amendments released in the replication package; not registered in advance; all changes in Section~\ref{sec:method-changes} \\
 6 & Eligibility criteria & Section~\ref{sec:method-eligibility}; Table~\ref{tab:criteria}; rules R1--R6 \\
 7 & Information sources & Section~\ref{sec:method-sources}; Table~\ref{tab:sources}; source commits in Appendix~\ref{app:replication} \\
-8 & Search & Section~\ref{sec:method-search}; full query in Appendix~\ref{app:query} \\
-9 & Selection of sources of evidence & Section~\ref{sec:method-selection} (double screening, adjudication, snowballing, recall audit); Sections~\ref{sec:method-ai} and \ref{sec:method-human} (LLM reviewers and human sample) \\
-10 & Data charting process & Section~\ref{sec:method-coding} (double coding with adjudication); Section~\ref{sec:method-indicators} \\
+8 & Search & Section~\ref{sec:method-search}; both query stages in Appendix~\ref{app:query} \\
+9 & Selection of sources of evidence & Section~\ref{sec:method-selection} (double screening, adjudication, snowballing, recall audit, known-item check); Sections~\ref{sec:method-ai} and \ref{sec:method-human} (LLM reviewers, human checks) \\
+10 & Data charting process & Section~\ref{sec:method-coding} (double coding with adjudication, supplementary coding, full-text check); Section~\ref{sec:method-indicators} \\
 11 & Data items & Table~\ref{tab:codebook}; Section~\ref{sec:method-indicators} \\
 12 & Critical appraisal of individual sources & Not performed (optional in PRISMA-ScR); Section~\ref{sec:method-synthesis} \\
 13 & Synthesis of results & Section~\ref{sec:method-synthesis} \\
 \multicolumn{3}{@{}l}{\textit{Results}} \\
-14 & Selection of sources of evidence & Fig.~\ref{fig:prisma}; Tables~\ref{tab:exclusions} and \ref{tab:agreement}; Section~\ref{sec:selection} \\
+14 & Selection of sources of evidence & Fig.~\ref{fig:prisma}; Tables~\ref{tab:exclusions} and \ref{tab:agreement}; Section~\ref{sec:selection} (including recall and the human checks) \\
 15 & Characteristics of sources of evidence & Sections~\ref{sec:selection}--\ref{sec:domains}; per-study list in the supplementary document \\
 16 & Critical appraisal within sources & Not performed (item 12) \\
 17 & Results of individual sources & Supplementary document (domain, architecture, check strength and formalism per study); released \texttt{included\_studies.csv} \\
@@ -38,39 +38,62 @@ Table~\ref{tab:prismachecklist} maps each of the 22 PRISMA-ScR items~\cite{tricc
 20 & Limitations & Section~\ref{sec:validity} \\
 21 & Conclusions & Section~\ref{sec:conclusion} \\
 \multicolumn{3}{@{}l}{\textit{Funding}} \\
-22 & Funding & Acknowledgment (no specific funding); Competing Interests \\
+22 & Funding & \ifanonymous No specific funding; competing interests declared to the editor\else Acknowledgment (no specific funding); Competing Interests\fi \\
 \bottomrule
 \end{tabularx}
 \end{table*}
 
 \section{Search Query}
 \label{app:query}
-The query is applied to the title and abstract of every Source B record, case-insensitively, as Python regular expressions (\texttt{code/search/query.py}). A record is retrieved when it matches at least one alternative of each block. The listings are exported from the code.
+The query is applied to the title and abstract of every Source B record, case-insensitively, as Python regular expressions (\texttt{code/search/query.py}). A record is retrieved when it matches at least one alternative of each block. Stage~1 used the blocks of protocol v2; stage~2 used each block extended by the additions below. The listings are exported from the code.
 
-\noindent\textbf{Language-model block:}
+\noindent\textbf{Language-model block (stage 1):}
 \lstinputlisting{tables/query_lm.txt}
 
-\noindent\textbf{Symbolic block:}
+\noindent\textbf{Additions to the language-model block (stage 2):}
+\lstinputlisting{tables/query_lm_add.txt}
+
+\noindent\textbf{Symbolic block (stage 1):}
 \lstinputlisting{tables/query_sym.txt}
 
-The recall audit (Section~\ref{sec:method-selection}) stratifies the records not retrieved by which of the two blocks they match.
+\noindent\textbf{Additions to the symbolic block (stage 2):}
+\lstinputlisting{tables/query_sym_add.txt}
+
+The recall audit (Section~\ref{sec:method-selection}) stratifies the records retrieved by neither stage by which of the two blocks they match.
+
+\section{A Reporting Checklist for Language-Model--Symbolic Systems}
+\label{app:checklist}
+The review shows that results in this area are hard to compare because studies report different things (Sections~\ref{sec:evaluation} and \ref{sec:challenges}). We propose the following minimal checklist. Each item corresponds to a gap we observed.
+\begin{enumerate}
+  \item \textbf{Architecture.} Which pattern (A1--A7 or a combination) the system uses, and where the symbolic component sits: before, inside or after generation, at training or at inference.
+  \item \textbf{Models.} Model name, version or checkpoint, size, and whether it was fine-tuned; for proprietary models, the access date.
+  \item \textbf{Symbolic engine.} Name and version of the solver, prover, planner or interpreter, and the library version (for example, the Mathlib commit).
+  \item \textbf{Check strength.} Whether the symbolic side gives a sound verdict on the final output (exact), a test- or data-based check (empirical), or no check; and what can pass the check while being wrong.
+  \item \textbf{Formalisation faithfulness.} When the model writes formal statements: how faithfulness was measured (gold formalisations, round-trip translation, equivalence checking, human judgement), on how many items, and the result, reported separately from end-task accuracy.
+  \item \textbf{Budget.} Number of samples per problem, number of checker or solver calls, wall-clock time and, where possible, cost; the pass@$k$ definition used.
+  \item \textbf{Benchmark version.} Benchmark name, split, version or commit, and known defects or exclusions applied (for example, corrected miniF2F statements).
+  \item \textbf{Baselines.} A model-only baseline with the same budget, and a symbolic-only baseline where one exists.
+  \item \textbf{Artifacts.} Links to code, prompts, formal statements produced by the model and checker logs.
+\end{enumerate}
 
 \section{Replication Package}
 \label{app:replication}
-\texttt{code/search/fetch\_sources.sh} retrieves the sources at fixed commits: the Neurosymbolic-AI-Papers corpus at \texttt{9a42645}, Paper Copilot \texttt{paperlists} at \texttt{9fcfd12} (ICLR 2025 and 2026 from blobs \texttt{d4c51fa} and \texttt{33f9884}) and the ACL Anthology at \texttt{73f3b3a}. Running \texttt{python code/run\_all.py --sources <dir>} then regenerates every derived file, table and macro in this paper. The package contains the following.
+\texttt{code/search/fetch\_sources.sh} retrieves the sources at fixed commits: the Neurosymbolic-AI-Papers corpus at \texttt{9a42645}, Paper Copilot \texttt{paperlists} at \texttt{9fcfd12} (ICLR 2025 and 2026 from blobs \texttt{d4c51fa} and \texttt{33f9884}) and the ACL Anthology at \texttt{73f3b3a}. It also reads the ACL Anthology main volumes of ACL 2021--2025, EMNLP 2021--2024 and NAACL 2021--2025 at the same commit. Running \texttt{python code/run\_all.py --sources <dir>} then regenerates every derived file, table and macro in this paper from the decision files. The package contains the following.
 \begin{itemize}
   \item \texttt{data/decisions/}: every decision made by a reviewer, never written by the pipeline.
   \begin{itemize}
-    \item \texttt{protocol\_v2.md}: the protocol.
-    \item \texttt{screening/}: both screeners' decisions on the union and the snowball candidates, all adjudications with their evidence, the audit sample and its decisions.
-    \item \texttt{coding/}: both coders' charting of all included studies and the adjudications.
+    \item \texttt{protocol\_v2.md}: the protocol with its revision amendments.
+    \item \texttt{screening/}: both screeners' decisions and all adjudications, with evidence, for the stage-1 union, stage 2, the snowball candidates, the recall audit and its extension, and the known-item check.
+    \item \texttt{coding/}: both coders' charting of all included studies and the adjudications; the supplementary coding (contribution type and mechanisms).
+    \item \texttt{knownitem/}: the reference list of the independent survey used for the known-item check.
+    \item \texttt{fulltext\_check/}: the full-text codes of the validation sample and its sampling design.
     \item \texttt{webcheck/}: the artifact web check with evidence URLs and its sampling design.
     \item \texttt{results/}: the extracted miniF2F results with supporting quotes, and their comparability classification.
-    \item \texttt{human\_check/}: the blinded 30\% sheets for the human verification.
+    \item \texttt{human\_check/}: the blinded sheets for the author's check and for the independent second rater.
     \item \texttt{v1\_pilot/}: the decisions of the pilot version, kept for comparison.
   \end{itemize}
-  \item \texttt{docs/prompts/}: the task prompts given to the screeners, adjudicators, coders, web checkers and result extractor.
-  \item \texttt{data/derived/}: files generated by the pipeline, including \texttt{screening\_log.csv} (one row per record, with every decision), \texttt{included\_studies.csv}, \texttt{entities\_long.csv} and the JSON summaries and plot data.
-  \item \texttt{code/}: the search (\texttt{search/}) and the pipeline stages s10--s15, \texttt{human\_check.py} and \texttt{run\_all.py}.
+  \item \texttt{docs/prompts/}: the task prompts given to every LLM reviewer.
+  \item \texttt{data/derived/}: files generated by the pipeline, including \texttt{screening\_log.csv} (one row per record, with every decision), \texttt{included\_studies.csv}, \texttt{entities\_long.csv}, \texttt{sensitivity.json} and the plot data.
+  \item \texttt{code/}: the search (\texttt{search/}: Source B, both query stages, snowballing, audit sampling, known-item matching), the pipeline stages s10--s16, \texttt{human\_check.py} and \texttt{run\_all.py}.
   \item \texttt{tables/}, \texttt{figures/}: generated \LaTeX{} fragments and the TikZ/pgfplots figure sources.
 \end{itemize}

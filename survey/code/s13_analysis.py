@@ -193,7 +193,7 @@ def main():
     studies_b = {e["rid"] for e in b}
     out["benchmarks"] = {"studies_naming": len(studies_b), "distinct": len(bc),
                          "singletons": sum(1 for v in bc.values() if v == 1),
-                         "top": bc.most_common(12),
+                         "top": bc.most_common(30),
                          "named_by_5plus": sum(1 for v in bc.values() if v >= 5)}
     for g in ("lm", "engine"):
         e = [x for x in ents if x["group"] == g]

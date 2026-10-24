@@ -8,6 +8,9 @@ Sources (all fetched with git from GitHub; record the commit used):
        commits d4c51fa and 33f9884.)
   * ACL Anthology               https://github.com/acl-org/acl-anthology
       ACL 2020, EMNLP 2020 and EMNLP 2025 (main conference volumes).
+      Revision 2: the Anthology main volumes of ACL 2021-2025, EMNLP 2021-2024 and NAACL 2021-2025
+      are also read, and papers missing from the Paper Copilot lists are added (EMNLP 2023 and 2024
+      and NAACL 2025 lists were incomplete). Added papers are marked r2_added.
 
 Only accepted papers in archival research tracks are kept (see TRACK RULES below).
 
@@ -36,7 +39,10 @@ def keep(venue, rec):
     if venue == "NeurIPS":
         return track in ("main", "datasets & benchmarks", "none", "")
     if venue == "AAAI":
-        return track == "main"                       # technical track only
+        # technical track and peer-reviewed special research tracks (added in revision 2 for
+        # consistency with IJCAI special tracks); IAAI, EAAI, demos, student and senior-member
+        # programmes, doctoral consortium and journal track are excluded
+        return track in ("main", "aaai technical track focus area", "aaai special track")
     if venue == "IJCAI":
         return track in ("main", "survey track", "ai for good", "human-centred ai",
                          "ai and arts", "ai, arts & creativity", "multi-year track on ai and social good",
@@ -70,6 +76,9 @@ def from_paperlists(root):
                 "authors": clean(r.get("author")).replace(";", "; "),
                 "url": r.get("site") or r.get("openreview") or r.get("pdf") or "",
                 "github": clean(r.get("github")), "bibtex": r.get("bibtex") or "",
+                # records admitted by the revision-2 track rule (AAAI special tracks); the v2 recall
+                # audit was drawn before they were added and skips them when it reproduces the draw
+                "r2_added": venue == "AAAI" and str(r.get("track") or "").strip().lower() != "main",
             }
 
 
@@ -99,6 +108,34 @@ def from_anthology(root, files):
                 }
 
 
+ANTHOLOGY_V2 = ["2020.acl.xml", "2020.emnlp.xml", "2025.emnlp.xml"]
+ANTHOLOGY_R2 = [f"{y}.{v}.xml" for v, ys in (("acl", (2021, 2022, 2023, 2024, 2025)),
+                                             ("emnlp", (2021, 2022, 2023, 2024)),
+                                             ("naacl", (2021, 2022, 2024, 2025))) for y in ys]
+
+
+def norm(t):
+    return re.sub(r"[^a-z0-9]", "", t.lower())
+
+
+def anthology_completion(root, have):
+    """Anthology main-volume papers that the Paper Copilot lists lack (revision 2).
+
+    A paper counts as present when its normalised title matches a Source B title of the same
+    venue-year exactly, or closely (difflib ratio >= 0.9, catching punctuation and casing variants)."""
+    import difflib
+    for rec in from_anthology(root, ANTHOLOGY_R2):
+        if rec["source_id"].endswith(".0") or not rec["title"]:       # front matter
+            continue
+        k = (rec["venue"], rec["year"])
+        t = norm(rec["title"])
+        pool = have.get(k, set())
+        if t in pool or difflib.get_close_matches(t, pool, n=1, cutoff=0.9):
+            continue
+        rec["r2_added"] = True
+        yield rec
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--paperlists", required=True)
@@ -107,8 +144,11 @@ def main():
     a = ap.parse_args()
     seen, n = set(), 0
     with open(a.out, "w", encoding="utf-8") as out:
-        for rec in list(from_paperlists(a.paperlists)) + list(
-                from_anthology(a.anthology, ["2020.acl.xml", "2020.emnlp.xml", "2025.emnlp.xml"])):
+        base = list(from_paperlists(a.paperlists)) + list(from_anthology(a.anthology, ANTHOLOGY_V2))
+        have = {}
+        for rec in base:
+            have.setdefault((rec["venue"], rec["year"]), set()).add(norm(rec["title"]))
+        for rec in base + list(anthology_completion(a.anthology, have)):
             key = (rec["venue"], rec["year"], re.sub(r"[^a-z0-9]", "", rec["title"].lower()))
             if not rec["title"] or key in seen:
                 continue

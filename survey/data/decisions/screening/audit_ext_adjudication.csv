@@ -1,0 +1,12 @@
+rid,decision,code,evidence,rationale
+r18b1f272,exclude,E3,abstract,E3 (R3): RSA is a probabilistic Bayesian pragmatics model combined with LLMs; no explicit formal engine manipulating rules.
+r1b26c0f3,include,,abstract,"VLM writes Python spatial assertion codes executed against cognitive map; verification gives dense RL rewards (R4 vehicle, A2)."
+r28603980,include,,web: https://arxiv.org/pdf/2606.19992,"LLM (Qwen3-Max) writes Rust tool programs; rustc type checks, structural/effect checks drive repair before execution; programs are agent vehicle (R4)."
+r58622aa9,include,,web: https://aclanthology.org/2022.acl-long.5.pdf,RoBERTa-based TAGOP predicts operators/operands executed by discrete arithmetic executor for table QA; L2I feeds derived counterfactuals (R4 vehicle).
+r5dd09369,include,,abstract,LLM agent writes executable Python for GUI control; execution feedback and state machine drive re-planning; agents acting through programs (R4).
+r62c99f1f,exclude,E3,web: https://aclanthology.org/2025.acl-long.258.pdf,E3 (R3): 'regexes' are start/end anchors located by edit-distance alignment; no formal engine interacts with the model.
+r64539e58,include,,web: https://arxiv.org/html/2602.02465v1,"Procedural generators with BFS solver create puzzles and certify minimal solutions; simulators verify answers (R2 evaluation clause, A6)."
+rc22a2d1c,exclude,E3,abstract,"E3 (R3): RNNG and LSTM LMs compared on reading times; syntax learned neurally, no explicit external grammar or engine."
+rccbc020f,include,,abstract,LLVM-based static program analysis combined with LLM to synthesize error patterns and find recurring bugs (R3 static analysis).
+rdf84b878,include,,web: https://arxiv.org/html/2505.14552v2,"Rule-based game environments generate seeded instances and verify/score LLM actions (Sudoku, Sokoban, Hanoi); symbolic oracle evaluation (A6)."
+rff597439,include,,web: https://aclanthology.org/2025.naacl-long.193.pdf,Benchmark generated from formal reasoning trees with reduction rules over ConceptNet relations; gold answers certified algorithmically (A6).

@@ -1,14 +1,14 @@
-% Included studies per 1,000 accepted papers at venue-years fully covered by Source B.
+% Included studies per 1,000 accepted papers (top) and per 1,000 language-model papers (bottom),
+% at venue-years fully covered by Source B (data/derived/plot_growth.csv, plot_growth_lm.csv).
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-  width=\columnwidth, height=50mm,
+  name=top, width=\columnwidth, height=42mm,
   xmin=2019.6, xmax=2026.4, ymin=0,
-  xtick={2020,2021,2022,2023,2024,2025,2026},
-  xticklabel style={font=\scriptsize, /pgf/number format/1000 sep={}},
+  xtick={2020,2021,2022,2023,2024,2025,2026}, xticklabels={},
   yticklabel style={font=\scriptsize},
-  ylabel={Included per 1{,}000 accepted}, ylabel style={font=\scriptsize},
+  ylabel={per 1{,}000 accepted}, ylabel style={font=\scriptsize},
   axis lines*=left, ymajorgrids, grid style={black!10},
   legend style={font=\tiny, at={(0.02,0.98)}, anchor=north west, draw=none, fill=white, fill opacity=0.85, text opacity=1},
   legend cell align=left,
@@ -17,9 +17,24 @@
   table[col sep=comma, x=year, y=panel5_per1000, restrict x to domain=2020:2025] {data/derived/plot_growth.csv};
 \addplot[nsgrey, line width=0.8pt, dashed, mark=square*, mark size=1.4pt]
   table[col sep=comma, x=year, y=panel2_per1000] {data/derived/plot_growth.csv};
-\legend{ICLR, ICML, NeurIPS, ACL, EMNLP (2020--25), ICLR and ICML (2020--26)}
+\legend{{Five venues: ICLR, ICML, NeurIPS, ACL, EMNLP (2020--25)}, {Two venues: ICLR, ICML (2020--26)}}
+\end{axis}
+\begin{axis}[
+  at={(top.south west)}, anchor=north west, yshift=-3mm,
+  width=\columnwidth, height=36mm,
+  xmin=2019.6, xmax=2026.4, ymin=0,
+  xtick={2020,2021,2022,2023,2024,2025,2026},
+  xticklabel style={font=\scriptsize, /pgf/number format/1000 sep={}},
+  yticklabel style={font=\scriptsize},
+  ylabel={per 1{,}000 LM papers}, ylabel style={font=\scriptsize},
+  axis lines*=left, ymajorgrids, grid style={black!10},
+]
+\addplot[nsblue, line width=1pt, mark=*, mark size=1.6pt]
+  table[col sep=comma, x=year, y=p5_per1000_lm, restrict x to domain=2020:2025] {data/derived/plot_growth_lm.csv};
+\addplot[nsgrey, line width=0.8pt, dashed, mark=square*, mark size=1.4pt]
+  table[col sep=comma, x=year, y=p2_per1000_lm] {data/derived/plot_growth_lm.csv};
 \end{axis}
 \end{tikzpicture}
-\caption{Growth normalised by the number of accepted papers at the same venue-years (Source B). The five-venue panel rises from \cnt{pfive2020} per 1{,}000 accepted papers in 2020 to \cnt{pfive2025} in 2025; the ICLR+ICML panel reaches \cnt{ptwo2026} in 2026. Only \cnt{nesytitle} of the \cnt{included} included studies (\cnt{nesytitlepct}\%) use ``neurosymbolic'' or ``neural-symbolic'' in their title, so the trend is not driven by adoption of the term.}
+\caption{Growth of included studies, normalised by all accepted papers (top) and by accepted papers that match the language-model block of the query (bottom), at venue-years fully covered by Source B. Between 2020 and 2025 the five-venue rate rises \cnt{rr}-fold (95\% CI \cnt{rrlo}--\cnt{rrhi}) relative to all papers and \cnt{rrlm}-fold (\cnt{rrlmlo}--\cnt{rrlmhi}) relative to language-model papers. The 2020 values rest on \cnt{rrkone} studies.}
 \label{fig:trend}
 \end{figure}

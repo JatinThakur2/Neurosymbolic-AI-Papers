@@ -1,0 +1,652 @@
+rid,decision,code,rationale
+r380aaf0f,exclude,E1,Domain generalization data augmentation; no language model.
+r629fcde2,exclude,E3,E3 (R3) LLM feeds Gaussian-process Bayesian optimization; no formal symbolic component.
+rfa89186c,exclude,E3,E3 (R3) speculative decoding efficiency via LP relaxation; no formal knowledge or reasoning component.
+r6971b596,exclude,E5,Position/philosophical paper on LLM effects on language without new evidence.
+rae82a94e,exclude,E3,E3 (R3) interpretability of retrieval mechanisms; no symbolic component.
+r297ead14,unsure,,MLLM perception feeds learned causal graph used by planner; unclear whether formal symbolic reasoning.
+rccb63f19,exclude,E3,E3 (R3) LLM assumptions organized into scored decision tree; no formal engine.
+r5c59dd85,exclude,E3,E3 (R5) SPARQL/SQL queries retrieve facts to ground rationales; retrieval only.
+re0516465,exclude,E3,E3 (R3) probing LLM world representations; no symbolic component.
+rbc2ee8d7,exclude,E3,E3 (R3) LLM-based grader for natural-language proofs; no formal checker.
+ra1406824,include,,LLM-guided evolutionary heuristic program search evaluated on combinatorial optimization.
+rb1107ebb,exclude,E1,E1 (R1) transformer trained from scratch on grid pathfinding data; no language pretraining.
+r952990e5,exclude,E2,Conformal prediction method; LLM QA is only one evaluation task.
+r8e401cbf,exclude,E1,Video representation with frozen visual encoders; no language model.
+r17e0ba2d,exclude,E3,E3 (R3) retrieval-based demonstration decomposition for VLM planner; no symbolic component.
+r06eea408,include,,LLM writes optimization formulations and heuristic programs; DAG program search with executable verification.
+r97bf30a1,exclude,E1,"E1 (R1) genomic DNA language model, not natural-language/code corpora; no symbolic component."
+re333182d,exclude,E3,E3 (R3) training-system data scheduling for LLM fine-tuning.
+r12f3aa9c,exclude,E3,E3 (R2) ILP chooses classifier portfolio; portfolio selection does not count.
+rc2c5bc93,exclude,E3,E3 (R3) multi-turn jailbreak framework; no symbolic component.
+r8ae608ab,exclude,E3,E3 (R3) evolutionary search over multi-agent configurations; no formal engine.
+r791d84a5,exclude,E1,Diffusion planner for offline RL; no pretrained language model.
+r74f45d8b,exclude,E3,E3 (R3) pixel-perturbation prompt injection against web agents.
+r52982a3f,exclude,E3,E3 (R3) LLM weight compression; no symbolic component.
+r9c1f287a,exclude,E1,Vision transformer dynamics; no language model.
+r96615d6e,exclude,E3,E3 (R3) MLLM safety alignment; no symbolic component.
+r794b0451,exclude,E2,Text-guided video planner; language model only as frozen text embedding.
+r4441325d,exclude,E3,E3 (R4) text-to-SQL prompting; execution only.
+r34501e93,include,,"LLM evolves code-level placement ordering strategies, evaluated by deterministic greedy probe; program search."
+rdc1b8fb4,exclude,E3,E3 (R3) token-level preference optimization.
+r785ac5e9,exclude,E3,E3 (R4) text-to-SQL fine-tuning judged by execution accuracy.
+r0019b83c,exclude,E3,E3 (R4) LLM SQL UPDATE generation; no additional symbolic checker described.
+r1010a764,exclude,E3,E3 (R3) zeroth-order optimizer for LLM fine-tuning.
+rdbfefdc4,exclude,E3,E3 (R3) VLM planning benchmark with human-executed trajectories; no symbolic oracle.
+rc8edeada,exclude,E3,"E3 (R3) FSM is descriptive abstraction of CoT states for activation steering, not formal engine."
+r22e65b44,exclude,E1,Neural approximation of convex portfolio optimization; no language model.
+rf5b78c43,exclude,E3,E3 (R3) VLM similarity plus matching optimization; no formal symbolic reasoning.
+r9aa22efd,exclude,E3,E3 (R3) calibrated decoding for LVLM hallucination.
+r801eb5ed,exclude,E3,E3 (R6) generic parallel function-calling orchestration.
+r01760324,exclude,E3,E3 (R4) text-to-SQL schema linking.
+r16df8e55,exclude,E3,E3 (R3) model-merging optimizer.
+r6f0afde6,exclude,E1,Masked prediction pretraining for offline RL; no language model.
+rd8ec9b45,exclude,E3,E3 (R4) text-to-SQL confidence calibration; no additional symbolic checker.
+re38dad16,exclude,E3,E3 (R3) model extraction attack; no symbolic component.
+rc9f7d397,exclude,E1,Theoretical representational analysis of attention; no pretrained language model.
+ra18d1da3,exclude,E1,Ride-hailing pricing optimization; no language model.
+r32cc987d,exclude,E3,E3 (R3) low-rank continual adaptation.
+rf725e83d,exclude,E3,"E3 (R3) LP-based instruction data selection; numerical optimization, no formal reasoning component."
+rb8b13d24,exclude,E1,"E1 (R1) theory of transformers pretrained on game trajectories, not language."
+r5de24fd3,exclude,E1,ViT compression; no language model.
+r9353eff8,exclude,E3,E3 (R3) DPO-based dialogue clarification training.
+rb327ee1d,include,,Probing LMs on quantifiers via logically defined model-checking task; datasets generated/labelled symbolically.
+r8843962d,exclude,E3,E3 (R4) text-to-SQL self-correction guidelines via agents.
+r6098b5c3,exclude,E3,E3 (R3) CoT annotation dataset for 3D-LLMs.
+r9f4e642a,include,,"Benchmark of LLMs writing TLA+ specifications checked for syntax, runtime, invariants."
+re2c7a263,exclude,E3,E3 (R3) introspection adapter for weight diffs.
+r7a46795a,exclude,E3,E3 (R3) watermarking and speculative sampling trade-off.
+r0f5493a0,unsure,,LLM retrosynthesis route search; unclear whether reaction-rule or template validity checker interacts.
+rda7c4c53,exclude,E3,E3 (R3) inference acceleration for convolution sequence models.
+re37488cd,exclude,E3,E3 (R3) VLM textual memory for embodied planning; no formal planner.
+rd0323b7c,exclude,E3,E3 (R4) text-to-SQL confidence estimation.
+rf2251bf6,exclude,E3,E3 (R3) preference optimization method.
+r1893e12e,exclude,E3,E3 (R4) text-to-SQL multitask tuning and prompting.
+rbcdad1bb,exclude,E3,E3 (R3) LLM-sampled plans aggregated into action tree; no formal planner.
+r11e0e2a0,exclude,E3,E3 (R3) inference-aware alignment via GRPO.
+rdf61404a,exclude,E1,Diffusion planners for offline RL; no language model.
+rfb5ce0a8,unsure,,Seq2seq table QA pretrained on SQL-executed answers; unclear whether this counts as symbolic training signal.
+r9bb947fa,exclude,E3,E3 (R3) cross-modal synergistic training.
+rb8116407,exclude,E3,E3 (R3) leakage detection via alignment optimization; no symbolic component.
+rf2e76181,exclude,E3,E3 (R3) latent adversarial attacks for hallucination.
+r1ac81c64,exclude,E1,Theoretical universal approximation of transformers; no pretrained language model.
+r79efa5c0,exclude,E3,E3 (R3) constrained prompt attacks for hallucination.
+r2b440a98,exclude,E3,E3 (R3) recurrent-depth latent reasoning LM.
+rd9f796b9,exclude,E1,E1 (R1) Turing-completeness theory; transformers trained from scratch on formal languages.
+rd0d32240,exclude,E3,E3 (R3) structured gradient optimizer.
+r20c8726f,exclude,E3,E3 (R4) conversational text-to-SQL with PLMs.
+ref568ec0,exclude,E5,Conceptual theoretical essay on mental proof and AI; no new empirical evidence.
+r2a437ec9,exclude,E3,E3 (R3) constrained-optimization LLM alignment.
+r279d324d,exclude,E1,Differentiable sparse top-k operator; no language model as core.
+r3f77c294,exclude,E3,E3 (R6) VLM driving agent invoking generic visual tools.
+rd3a6e066,exclude,E1,Concept erasure in text-to-video diffusion; no language model as core.
+r8198b8ce,exclude,E3,E3 (R3) prompting LLMs for Toulmin argument components; no formal system
+re4c659d8,exclude,E1,Dataset distillation with latent diffusion models; no language model
+r4a1513b3,exclude,E3,E3 (R3) Elo-based arena evaluation of LLMs; no symbolic component
+r45dbe373,exclude,E1,Transformer meta-learned for EA configuration; no language pretraining
+r09329056,exclude,E3,E3 (R4) text-to-SQL with execution feedback only
+rfe55ca9c,exclude,E3,E3 (R3) parallel LLM verifiers in natural language; no formal checker
+rf71d3b69,exclude,E3,E3 (R3) efficient structured weight transform; no symbolic component
+r2ae9227e,exclude,E3,E3 (R4) code generation for optimization contests scored only by test runs
+r1d6cc446,exclude,E3,E3 (R5) knowledge editing benchmark from Wikidata facts; no logical inference
+r4dd29f09,exclude,E3,E3 (R4) LLM-based evaluation metric for text-to-SQL
+r0f103b13,exclude,E1,Theoretical analysis of self-attention matrices; no trained language model
+rb957c788,unsure,,Text-to-SQL with MCTS over SQL construction actions; unclear if symbolic search over partial programs (R4)
+r5d872771,exclude,E3,E3 (R3) expert iteration RL for LLM reasoning; no formal system
+ra5a84889,exclude,E3,E3 (R4) text-to-SQL benchmark judged by execution
+r4b32ba15,exclude,E3,E3 (R3) VLM planner plus diffusion policy; no symbolic component
+r38f99f6d,exclude,E3,E3 (R3) RL clipping method for LLMs; no symbolic component
+r43423d27,exclude,E3,E3 (R3) PLM quantization; no symbolic component
+r80245d3a,exclude,E1,Transformer generator-evaluator for ad auctions; no language model
+r3860c080,exclude,E3,E3 (R3) preference optimization mimicking tree search; no formal system
+rbd73b381,include,,LLM-guided evolutionary program search for algorithm discovery (FunSearch-like)
+r7136908e,exclude,E3,E3 (R3) sub-quadratic LM architecture; no symbolic component
+r830a7f0e,exclude,E3,E3 (R3) LLM hierarchical hypothesis search with LLM judges; no formal system
+re576bdd3,exclude,E3,E3 (R3) tensor-compressed training efficiency; no symbolic component
+r681969b6,exclude,E3,E3 (R3) LLM planner outputs contact chains to learned controller; no formal engine
+r4c023d83,exclude,E3,E3 (R3) suffix-tree caching for speculative decoding; not a formal reasoning component
+rd22223e5,exclude,E3,E3 (R4) UI-to-code generation with rendering feedback only
+r0a23e0da,exclude,E3,E3 (R3) 3D multimodal benchmark and instruction data; no symbolic component
+ra2b3aef6,exclude,E3,E3 (R3) LLM ranks numerically encoded architectures for NAS; no formal system
+r82593806,exclude,E3,E3 (R3) attacks on latent-space LLM monitors; no symbolic component
+ra02f7cd6,exclude,E3,E3 (R3) agent self-awareness training; no symbolic component
+r989f4240,unsure,,LLM optimizer using execution traces of workflows/code; unclear if generic or formal interpreter interaction
+r357a037c,include,,VLM-estimated counts become constraints of binary integer program for mask-label assignment
+rc8e2248d,unsure,,Logic puzzle benchmark for LRMs; unclear if solver generates or certifies puzzles
+rc4867a9e,include,,LLM multi-agent planning with ILP enforcing feasibility and coordination constraints
+r88872309,exclude,E3,E3 (R3) RAG chunk planning; retrieval is not symbolic
+r94224e01,exclude,E3,E3 (R3) LM plan-act-correct-verify with environment feedback; no formal planner
+rc450e789,include,,RL for code generation with static analyzer rewards beyond unit tests (R4 additional analysis)
+r65e212ea,exclude,E3,E3 (R3) position on medical LLM benchmark validity; no symbolic component
+r4a85c5b8,exclude,E3,E3 (R4) coding agent RL with execution feedback only
+r3dc893af,exclude,E1,General learning-dynamics theory; no language model as core component
+r6c97476d,exclude,E3,E3 (R3) LLM fingerprinting with cryptographic hashing; no formal reasoning component
+r48340b2e,exclude,E3,E3 (R3) inference-time alignment with reward thresholds; no symbolic component
+rb7fa09b7,include,,Grammar-constrained decoding compiled to token-level transitions constraining LLM output
+r5b89ce8b,exclude,E3,E3 (R3) adversarial text attacks; no symbolic component
+rd0e79460,exclude,E3,E3 (R3) matrix sign method for Muon optimizer; no symbolic component
+rea930b3f,exclude,E3,E3 (R3) game-theoretic preference optimization; no symbolic component
+r5af18e4d,exclude,E1,Transformer trained on routing benchmark; no evident language pretraining or formal interaction
+rb6aaa2ed,exclude,E3,E3 (R3) optimal-transport speculative decoding; no symbolic component
+rf6d19373,exclude,E3,E3 (R2) routing between LLM judges via robust optimization; no symbolic interaction
+re677950f,exclude,E1,Temporal KG path reasoning model; no language model
+rf44b6938,exclude,E3,E3 (R3) neural proof generation over textual rules; no formal engine
+r758465f6,exclude,E3,E3 (R5) retrieving procedure-graph directives into reasoning; no logical inference
+raefad200,exclude,E3,E3 (R2) MIP used only to select compressed architecture; no interaction with model outputs
+r37df01f4,include,,LLM writes Python heuristic functions used by greedy best-first classical planner
+rdc7e6f7d,exclude,E3,E3 (R4) text-to-SQL schema linking study
+r79e82443,exclude,E3,E3 (R3) RAG with memory stack state control; no formal reasoning engine
+r6fafcd02,exclude,E3,E3 (R3) self-refining LM planner; no formal planner or checker
+r00f441a5,exclude,E3,E3 (R3) MCTS with neural critics for LLM self-improvement; no formal system
+r981b6add,exclude,E3,E3 (R3) submodular pretraining data selection; no symbolic component
+rb8ecfbaa,exclude,E3,E3 (R3) constrained alignment via DPO; no symbolic component
+ra264b2dd,include,,Grammar-guided LLM generation with backtracking over grammar symbols
+r340629a2,exclude,E3,E3 (R3) guardrail model for agent plans; no symbolic component
+r2cd0ac42,exclude,E1,Video diffusion model; no language model as core component
+r42596666,exclude,E3,E3 (R3) constrained multilingual fine-tuning; no symbolic component
+rf741cddc,exclude,E3,E3 (R6) agent environment with generic search and KG tools
+r27a3b7b8,exclude,E3,E3 (R3) plan-first post-training for reasoning; no formal system
+rf74d94f3,unsure,,SQL debugging benchmark with AST-based bug injection; unclear if symbolic generation/check beyond execution
+ra63f423f,exclude,E3,E3 (R3) transformer training dynamics on multi-step tasks; no symbolic component
+rc0f91fce,exclude,E3,E3 (R3) hierarchical LLM agent with cognitive map; no formal engine
+rc51b55a6,exclude,E3,E3 (R3) synthetic data and model collapse; no symbolic component
+r89e0df91,exclude,E3,E3 (R6) generic multi-tool composition planner
+rf48e18ed,exclude,E3,E3 (R3) parameter-based fingerprint with ZKP; no symbolic reasoning interaction
+r945e7fea,exclude,E3,E3 (R3) multi-objective LLM pruning; no symbolic component
+r0264cc27,unsure,,Code reasoning benchmark with execution-trace ground truth; unclear if counts as symbolic oracle
+rda417756,exclude,E3,E3 (R2) ILP only allocates quantization bits; no interaction with model outputs
+r24af29ad,exclude,E3,E3 (R3) RL-trained LLM auditor; no symbolic component
+r295216f2,exclude,E1,Autoregressive transformer trained on driving states; no language model
+r280670ff,exclude,E1,Analog in-memory training theory; no language model
+rde68efdf,exclude,E3,E3 (R3) LLM hints for RL driving; no formal component
+rae05cff2,exclude,E1,Theory of success conditioning in policy improvement; no language model core
+r3561479b,exclude,E3,E3 (R3) visual backdoors in VLM agents; no symbolic component
+r32774c24,exclude,E3,E3 (R3) decoding-time alignment; no formal symbolic component.
+rb990cde0,include,,LLM benchmark; automated programmatic verifiers certify constructive proofs and generate variants (R2 evaluation).
+r50fafcf8,exclude,E3,E3 (R3) routing preference annotations; no symbolic component.
+r405389b5,include,,Theory of LLM agentic provers with proof-assistant verifier feedback; primary analysis.
+ra0fd21b0,exclude,E3,E3 (R3) efficient LLM benchmarking via sparse optimisation; no symbolic component.
+ra9c75f7b,exclude,E1,E1 (R1) continuum transformers for PDE operators; not a language model.
+rc3ef7158,exclude,E3,E3 (R4) program repair judged by tests; execution traces only symbolic part.
+r69713d4c,unsure,,Documentation search for coding agents via unit tests; dependency-DAG analysis may count as static analysis.
+rd107f474,exclude,E1,E1 microservice latency prediction; no language model.
+rb7139d58,exclude,E1,E1 RL graph optimiser for ML compilers; no language model.
+ra3e083d6,exclude,E3,E3 (R3) prompt optimisation for diffusion models; no symbolic component.
+red933ea4,exclude,E3,E3 (R3) episodic memory controller in Minecraft; no formal symbolic component.
+r8f982ce8,unsure,,Temporal rules combine durations; unclear whether neural model is pretrained LM.
+reed5dbaa,include,,GPT orchestrates visual programs executed by modules for image translation (visual programming).
+r9c6aab19,exclude,E3,E3 (R3) structured LLM proof search in natural language; heuristics not formal system.
+rad7a4eb9,exclude,E3,E3 (R3) LLM pruning via dynamic programming; no symbolic reasoning component.
+r438b0207,exclude,E3,E3 (R3) GPT-2 data augmentation guided by MCTS; no formal component.
+r76787a2a,exclude,E3,E3 (R3) homomorphic-encryption-friendly LLM architecture; no symbolic component.
+r9adc11d5,exclude,E3,E3 (R3) math benchmarks graded by LLM autograders; no formal checker.
+r818adc0b,exclude,E3,E3 (R3) translating CNN activations to language; no symbolic component.
+rd2151fad,exclude,E3,E3 (R6) search-integrated reasoning with RL; generic search tool.
+r6a442be7,include,,SQL-dialect query engine compiles plans that orchestrate LLM calls over unstructured data.
+r303d7506,exclude,E3,E3 (R3) federated MoE language modelling; no symbolic component.
+r15f794f7,include,,LLM writes code executed in REPL for planning tasks; program as vehicle.
+r8a0da9bf,exclude,E1,E1 GNN predicts Lagrangian multipliers for MILPs; no language model.
+r78c3c463,exclude,E3,E3 (R3) MLLM planner for regional diffusion; no formal symbolic component.
+r39694169,exclude,E3,E3 (R4) conversational text-to-SQL dataset; execution only.
+r50d8dcff,exclude,E3,E3 (R3) adversarial self-play RL for dialogue strategy; no formal component.
+r500f3503,exclude,E3,E3 (R3) RL recipe search plus multimodal agent summarisation; no formal component.
+rbf110e2b,exclude,E2,E2 economic analysis of GenAI platforms; LM only background.
+r505e7df5,unsure,,Causal-graph composition may symbolically generate/certify answers for LM evaluation; unclear.
+rd0fb442b,exclude,E1,E1 mirror descent optimisation theory; no language model.
+r72b7629e,unsure,,"Front-end code generation; Judger enforces framework constraints, unclear whether rule-based checker or LLM."
+r8c8adfe4,exclude,E3,E3 (R3) neural reasoning module trained on synthetic regression; no symbolic component.
+re3524067,exclude,E3,E3 (R3) verifiable training replication; no symbolic component interacting with LM.
+rae81385f,exclude,E3,E3 (R4) backdoor attacks on text-to-SQL parsers.
+ra6c4a68e,exclude,E3,E3 (R6) LLM agent with generic external tools for VQA.
+rf375a28c,unsure,,LLM generates CAD command sequences; unclear whether CAD kernel executes/checks them.
+r28653b6c,exclude,E3,E3 (R3) MCTS over agent workflows; no formal symbolic component.
+r8cc956b3,exclude,E1,E1 sparse adversarial attacks on vision models; no language model.
+rc7612d04,exclude,E1,E1 (R1) one-layer transformer trained on synthetic linear tasks; no LM pretraining.
+r23f447b9,include,,LLMs write heuristics for combinatorial optimisation; executed and scored with iterative feedback.
+r1fdd7870,exclude,E3,E3 (R4) text-to-SQL parser with graph layers; no additional checker.
+r58697d3f,exclude,E3,E3 (R4) jq query generation judged by execution on examples.
+r7cdcbd4c,exclude,E3,E3 (R3) multilingual pretraining data allocation; no symbolic component.
+r91da5417,exclude,E1,E1 RL transformer for multi-agent combinatorial optimisation; not a language model.
+r7dd3b9d1,include,,"LLM test generation with rule-based analysis checking and repairing outputs (additional checker, R4)."
+r917f522d,unsure,,LLM generates spatial constraints for manipulation; unclear if solved by constraint solver.
+rc92bedf8,exclude,E3,E3 (R3) attention sparsity analysis in BERT; no symbolic component.
+ra8b1c67f,exclude,E3,E3 (R3) proof principles as natural-language planning; no formal system.
+rd3aee3c8,exclude,E3,E3 (R4) schema retrieval for text-to-SQL; no formal checker.
+rb3e4fcef,exclude,E5,E5 position paper on video generation.
+rba2064bd,exclude,E3,E3 (R3) mechanistic circuit analysis of GPT-2; no symbolic component.
+ra24d9205,exclude,E3,E3 (R6) multi-LLM generic tool learning.
+rddad7054,exclude,E3,E3 (R3) cognitive-bias attacks on LLM recommenders; no symbolic component.
+rc90c64cf,exclude,E3,E3 (R3) KV cache eviction; no symbolic component.
+r5e54214c,exclude,E3,E3 (R3) data mixing for preference optimisation; no symbolic component.
+r1bd828a8,exclude,E3,E3 (R6) multi-agent MLLM with generic visual tools.
+r2067f701,unsure,,Programmatically perturbed problem variants; unclear whether symbolic system generates/certifies answers.
+r3ea9b361,exclude,E3,E3 (R6) backdoor attacks on agent skills; generic tool use.
+rbcd1121b,exclude,E3,E3 (R3) LLM task planners evaluated in simulators; no formal planner or checker.
+rfd8cd4ea,unsure,,Data-science code benchmark; unclear if execution is vehicle for data task or plain code-gen tests.
+r73c9593d,unsure,,GNN-transformer planner; LLM data generation with 'planning verification' of unclear nature.
+r05ca565f,exclude,E3,E3 (R3) VLM predicts scene graphs and plans; no rule-based symbolic engine.
+r6df20643,exclude,E3,E3 (R3) LLM unlearning optimisation; no symbolic component.
+rd93f7e39,exclude,E3,E3 (R4) NL-to-formula spreadsheet generation; execution-only check.
+r15637e1e,include,,"LLM/SLM writes code executed for table QA (WikiTQ, TabMWP); program as vehicle."
+r71bca4e6,exclude,E3,E3 (R3) sampling-aware adversarial attacks; no symbolic component.
+rc935fe03,exclude,E3,E3 (R3) circuit discovery via edge pruning; no symbolic component interacting.
+r3265c733,exclude,E3,E3 (R4) analysis of T5 text-to-SQL linearisation.
+r2971f0ee,exclude,E3,E3 (R5) graph retrieval into LLM prompt; no logical inference.
+r053aea9e,exclude,E3,E3 (R3) MoE LLM compression with LP bit allocation; not symbolic reasoning interaction.
+r6a4e96a4,exclude,E3,E3 (R6) generic multi-tool planning.
+re861538a,exclude,E3,E3 (R3) sparsity and quantization theory; no symbolic component.
+r3af24b4d,include,,T5 generates SQL executed over tables for open-domain QA; SQL as vehicle.
+racf7a8d5,exclude,E3,E3 (R3) math competition benchmark with human grading; no formal checker.
+rb58eb43d,exclude,E3,E3 (R3) LLM multi-agent constraint management; no formal solver.
+r0d5e4c92,exclude,E3,E3 (R3) LLM-as-judge proof verification in natural language; no formal checker.
+rbb84db06,exclude,E3,E3 (R3) adversarial alignment attacks; no symbolic component.
+rdea95eee,exclude,E3,E3 (R3) multimodal reasoning dataset with neural verifier; no symbolic component.
+r2fed04be,unsure,,Rule-based validator with JSON-schema checklists constrains agent; unclear if formal checker or LLM.
+r02c235c9,exclude,E3,E3 (R3) token pricing and incentives; no symbolic component
+rd907da17,exclude,E3,E3 (R3) jailbreak via game-theoretic optimization; no formal symbolic system
+r61e5d72c,exclude,E3,E3 (R3) planning tokens in LM training; no symbolic component
+r444453be,exclude,E3,E3 (R3) training data extraction tricks; no symbolic component
+r9af22c6c,exclude,E3,E3 (R3) bandit-based jailbreak sequences; no symbolic component
+r7c75797e,exclude,E3,E3 (R4) text-to-SQL with prompting and execution consistency only
+r280d3a25,exclude,E3,E3 (R3) multi-source medical retrieval; retrieval stores not symbolic
+r2bd0fbde,exclude,E3,E3 (R3) mechanistic interpretability of LLM planning
+rea6d8b2c,exclude,E3,E3 (R3) ILP only allocates quantization precision; no symbolic interaction with model reasoning
+rdb00035f,exclude,E2,BERT only an example workload for MILP-based edge training scheduling
+r33847bc6,exclude,E3,E3 (R4) text-to-SQL dataset; execution only
+rf8c75719,exclude,E3,E3 (R4) multi-agent SQL repair; no additional symbolic checker
+r4c820f1d,unsure,,VLM keypoints feed motion planner; unclear whether planner is rule-based symbolic
+rd430e143,exclude,E3,E3 (R4) text-to-SQL help-seeking evaluation
+r5a2fe6ce,exclude,E3,E3 (R3) activation intervention; no symbolic component
+r4f56bde3,exclude,E3,E3 (R3) LLM-based identity fusion metric; no symbolic component
+r2b949c55,unsure,,LLM planning with RL reward for valid plans; unclear if a plan validator gives reward
+r5b150155,exclude,E3,E3 (R3) informal counterexample proofs; no formal checker
+rea0ac954,exclude,E3,"E3 (R3) LM + diffusion + GNN search; all neural, no formal system"
+r6fdc795b,exclude,E1,Discrete neural sampler; no language model
+r9b279492,exclude,E3,E3 (R6) generic tool-selection agent for visual generation
+rf4d09f40,exclude,E3,E3 (R4) interactive text-to-SQL benchmark with execution tests
+rc942263b,exclude,E3,E3 (R3) structured weight matrices for training efficiency
+r6e5fb3fd,include,,LLMs predict execution; real execution and proof verification certify gold answers (R2 evaluation)
+ra9e59775,include,,"LLM-guided evolutionary program search for heuristics, evaluated by execution"
+rb7324500,exclude,E3,E3 (R3) PSO adversarial attack with sememe substitution; LMs only victims
+rb68db152,exclude,E3,E3 (R3) model editing via embedding alignment
+r43da03b0,include,,NL2SQL with AST-guided symbolic search over decompositions beyond execution (R4 additional component)
+r94d31fc5,exclude,E3,E3 (R4) text-to-SQL via ORM code parsed to SQL; execution/translation only
+r16e2448a,exclude,E3,E3 (R3) OR question-answering benchmark; no solver involved
+r2ac15ccd,include,,LLM evolves MILP generator code executed/solved to produce training data
+r44a2a0aa,exclude,E1,Pathology image MIL transformer; no language model
+red2c2e6f,include,,LLM writes SQL executed over tables for open-domain table QA (vehicle task)
+r16e77c49,exclude,E3,E3 (R3) code-style prompting for summarization; no execution or formal system
+r51a1bc26,exclude,E3,E3 (R4) noise analysis of text-to-SQL benchmark
+r36146f6e,exclude,E3,E3 (R3) demonstration selection policy; no symbolic component
+r2e3b560d,exclude,E3,E3 (R3) RLVR divergence choice; answer-matching rewards only
+r53cf0612,exclude,E3,E3 (R3) bandit strategy optimization for social agents
+rbd02d1d6,exclude,E1,Pan-sharpening unfolding network; no language model
+r987875c8,exclude,E3,E3 (R3) multi-objective alignment via reward conditioning
+r29889490,exclude,E3,E3 (R3) LLM planner/executor for web agents; no formal planner
+rc2a3f194,exclude,E3,E3 (R3) convex-optimization pruning of LLMs
+r0f7a6c47,exclude,E5,Survey of LLM planning
+rcbdd63d7,exclude,E3,E3 (R3) Bayesian exemplar search; no symbolic component
+r573780c9,exclude,E3,E3 (R4) text-to-SQL model simplification; no additional symbolic checker stated
+r05c60157,exclude,E3,E3 (R3) logit fusion weak-to-strong; no symbolic component
+r98c32616,exclude,E3,E3 (R3) mechanistic study of factual recall
+r059e2f3c,exclude,E1,DNN parallelization planner; no language model as component
+rdd704f79,include,,LLM edits planning models combined with combinatorial search over planning models
+r055cb4be,include,,LLM-driven meta-optimization evolving heuristic programs evaluated on COPs
+r943250c2,exclude,E3,E3 (R3) LLM robot task planning with vague instructions; no formal planner
+rf9bc3d6e,exclude,E2,LMs only workloads for recomputation heuristic
+r19873d93,exclude,E3,E3 (R3) theory of context as weight patches
+rbdd2d67a,exclude,E1,Flow-matching driving planner; no language model
+r0a877e91,exclude,E1,Transformer world model for Atari; no language model
+r379cefe0,exclude,E3,E3 (R3) VLM plus diffusion planner; neural only
+ra57db942,exclude,E3,E3 (R3) GRPO analysis; no symbolic component
+rdf2872ae,exclude,E3,E3 (R3) parameter-efficient fine-tuning method
+rdf6ace3c,include,,Planning benchmark with symbolic validators certifying LLM answers (R2 evaluation)
+r10a13c4e,exclude,E3,E3 (R3) LLMs as policies/reward models via AI feedback; no formal system
+rdb84c2a0,exclude,E3,E3 (R3) ADMM sparsification of pretrained transformers
+recb85cde,unsure,,LM parent scores reconciled by maximum spanning tree; unclear if counts as symbolic constraint
+refa460e5,exclude,E3,E3 (R3) momentum in sparse mixture of experts
+rc66b7adc,exclude,E3,E3 (R6) generic tool delegation across agentic domains
+r440c5e4a,exclude,E3,E3 (R3) test-time instruction and weight co-adaptation
+r358c3370,exclude,E1,Pruning of vision networks; no language model
+r7281d300,exclude,E3,E3 (R3) datamodel-based dataset selection
+r74b70e58,exclude,E3,E3 (R3) metric-based decoding optimization
+r55823948,exclude,E2,Conformal prediction method; LLM only one evaluation domain
+rc96f7a64,exclude,E3,E3 (R3) dynamical-system hardware for LLMs
+r8b27d7e6,include,,LLM writes reward-function code executed in RMAB simulation with iterative feedback
+rf2ce460d,exclude,E2,Zeroth-order ranking optimization; LLMs only background motivation
+r2b5b3cf1,include,,"FunSearch-style LLM program search for acquisition functions, evaluated by execution"
+r2f4106e1,exclude,E3,E3 (R3) exam benchmark graded by humans and LLM judges
+rf402479f,exclude,E3,E3 (R3) natural-language rule memory for LLM agents; no formal system
+rdefccecf,exclude,E3,E3 (R3) l0-penalized pruning of LLMs
+r26508092,exclude,E3,E3 (R4) text-to-SQL in-context example generation
+r635e172a,exclude,E3,E3 (R3) listener-aware calibration finetuning
+r8c2709d8,exclude,E3,E3 (R3) unmasking scheduler for diffusion LMs
+r5ac6a9ed,exclude,E1,DRL transformer for TSP trained from scratch; no language model
+rc8f0a551,unsure,,Table analysis benchmark; unclear whether code execution or solver certifies answers
+rfcae7777,exclude,E3,E3 (R3) MCTS experience collection and distillation; no formal symbolic component
+r8d772a50,exclude,E3,E3 (R3) attention architecture change; no symbolic component
+r273a9412,exclude,E1,NTK theory for generic architectures; no language model
+rfca3f53b,include,,LLM writes SQL executed over tables for heterogeneous document QA; table QA vehicle (R4)
+r1e9f948f,exclude,E3,E3 (R3) LLM in-context dynamics prediction; no symbolic component
+r2903337a,exclude,E3,E3 (R3) speculative decoding efficiency; no symbolic component
+rb8e15c5a,exclude,E1,Transformer trained for QAP optimisation; no language model
+r1324ffa1,exclude,E3,E3 (R3) VLM captioning with preference optimisation; no symbolic component
+r59d47591,exclude,E3,E3 (R6) multimodal agent benchmark for generic data tools and GUI; task-metric evaluation
+ra7971074,exclude,E3,E3 (R3) VLM prompt learning for domain adaptation
+r274e6690,exclude,E3,E3 (R3) watermark optimisation; no symbolic component
+r075fa1dc,exclude,E3,E3 (R3) LLM optimiser with simulator feedback; simulators not formal symbolic engines
+rbf664705,exclude,E1,"Video generation model, not a language model under R1"
+r78d9764f,exclude,E3,E3 (R3) LoRA layer selection; no symbolic component
+r6891217c,exclude,E3,E3 (R3) TNN-to-SSM conversion; no symbolic component
+r6b40d8be,exclude,E3,E3 (R4) text-to-SQL DPO with CoT; execution only
+r6cb5819e,exclude,E3,E3 (R3) kernel comparison of VL representations
+r6c2881b7,exclude,E3,E3 (R4) distributional PPO for LLMs; math and text-to-SQL rewards only
+rfc418e27,exclude,E1,E1 (R1) transformers trained from scratch on chess data
+r8833a06a,exclude,E3,E3 (R3) sparse CLIP training; no symbolic component
+rb6389767,exclude,E3,E3 (R4) social bias in text-to-SQL models
+racc70989,exclude,E1,E1 (R1) shallow transformer trained from scratch; theory of training dynamics
+r0bdbde8c,exclude,E3,E3 (R3) VLM navigation via RL in abstract physics environments; no formal engine
+rd19c7fa0,exclude,E3,E3 (R3) multi-level CoT planner/executor; natural-language reasoning
+r05da616f,exclude,E3,E3 (R3) LLM game-play evaluation; no formal symbolic engine evident
+r92c65b5c,exclude,E3,E3 (R3) speculative sampling via convex optimisation
+raf8e4e91,include,,LLMs translate NL into executable OPF optimisation models; optimisation modelling vehicle (R4)
+rb257f9ae,exclude,E3,E3 (R3) VLM driving CoT with RL; no symbolic component
+r2aba1aec,exclude,E3,E3 (R4) code security benchmark judged by tests and PoC execution
+r9f71ca14,exclude,E5,Position paper on neologisms for interpretability
+rc6fe4728,exclude,E3,E3 (R3) parameter-efficient finetuning method
+r2b719f88,exclude,E3,E3 (R3) data scheduling for LLM training
+r650b08c0,exclude,E3,E3 (R3) RL fine-tuning of diffusion LM with answer rewards only
+r21c4edc8,exclude,E1,Graph prompting theory for GNNs; no language model
+rc8e3024d,exclude,E3,E3 (R3) LLM unlearning via constrained optimisation
+r9dcd6554,exclude,E3,E3 (R3) NL strategy planning for satisfaction estimation
+r99de435e,exclude,E3,E3 (R3) LLM compression; no symbolic component
+ra30b90aa,include,,LLM optimisation-modelling data synthesis with solver-based forward modelling and rejection sampling
+ree4ec241,exclude,E3,E3 (R3) LLM self-generated counterfactual explanations
+r9de6d46e,exclude,E3,E3 (R3) LM learning rare syntax; no symbolic component interacts
+r9872d980,exclude,E3,E3 (R4) table understanding benchmark; no symbolic engine interacting beyond answer matching
+r64055b5c,exclude,E3,E3 (R5) graph prompting and RAG over disease network
+r55361360,exclude,E3,E3 (R3) hyperparameter transfer
+rb1904e71,exclude,E3,E3 (R3) parametric world knowledge model for agent planning
+r754b1264,exclude,E3,E3 (R4) text-to-SQL workflow RL; execution only
+r301cdf3e,exclude,E1,E1 (R1) models trained on synthetic path-star graph task
+r733941e9,exclude,E3,E3 (R3) positional attention design
+r741d662d,exclude,E1,Protein docking transformer; no language model
+r53c8c482,include,,LLM planning on classical planning with VAL validator in iterative loop
+r93d7b991,unsure,,Text-to-SQL error detection; unclear whether database signals include static query analysis beyond execution (R4)
+r134e716c,exclude,E3,E3 (R3) culturally aware LLM pretraining
+re63f918a,exclude,E3,E3 (R3) cheating LLM-judge benchmarks
+rd1a76658,exclude,E3,E3 (R3) theory of LLM planner in POMDP; no symbolic component
+r5adab586,exclude,E3,E3 (R3) diffusion LM decoding order
+r2fdc620b,exclude,E3,E3 (R3) LLM watermark calibration
+r71eda26a,exclude,E1,Graph transformer for combinatorial optimisation; no language model
+rdee311d3,exclude,E3,E3 (R5) memory graph retrieval for agents
+r8f7c9ace,exclude,E3,E3 (R3) data filtering for text-to-image DPO
+rda278797,exclude,E3,E3 (R3) VLM adversary selection and video generation
+r26a0ea36,exclude,E3,E3 (R3) LLM-seeded evolutionary search for safety violations; no formal symbolic component
+rbb173962,include,,LLM plans interleave SQL execution with LLM steps for table QA (R4 vehicle)
+r808fc59f,exclude,E3,E3 (R3) LLM workflow induction via textual gradients
+r8d25529f,exclude,E3,E3 (R6) failure attribution in multi-agent systems
+rd663319d,exclude,E3,E3 (R3) cognitive-map planning evaluation via prompts
+r71fadedd,exclude,E3,E3 (R3) natural-language proof structures via ICL
+r2bb5ed72,exclude,E1,Time-lag regression for solar wind; no language model
+rb79cb238,exclude,E1,Circuit complexity of relational nets for planning; no pretrained LM
+r68dff69e,exclude,E3,E3 (R3) differentiable attribute constraints in decoding; not formal
+r56242368,exclude,E3,E3 (R3) MCTS over prompts; no formal symbolic component
+r4d23bfab,include,,Benchmark: planning problems with auto-generated temporal constraints; symbolic generation/validation of plans
+r4c816b62,exclude,E1,Tabular ICL foundation model with SQL encoder; no language model
+rf11b841c,exclude,E3,E3 (R3) Bayesian ToM planner with LM likelihoods; no formal symbolic engine
+r3e8a03b3,include,,LLM-guided evolutionary heuristic program search for combinatorial optimisation; programs executed and evaluated
+ra871f6bc,exclude,E1,Bilevel optimisation theory; no language model
+re22028b1,exclude,E3,E3 (R3) GAN discriminator rewards LLM malcode generator; neural only
+rb5695bb1,exclude,E3,E3 (R5) KGQA path search with MCTS; no logical inference
+r69b746a7,exclude,E3,E3 (R3) semantic caching for LLMs
+r14a812c1,exclude,E3,E3 (R3) transformer initialisation for MT
+r8b83e0d3,exclude,E3,E3 (R3) representational alignment via optimal transport
+r24a2a1a4,exclude,E3,E3 (R3) LLM quantisation
+ra2179a00,exclude,E3,E3 (R3) in-context non-text representations for LLMs
+r5bf7e410,exclude,E3,E3 (R3) workflow benchmark scored by graph matching; no formal engine interacting with LLM
+rf9d1b589,include,,"LM pretrained on programs plus executor results (SQL, math, logic); executor supplies training signal"
+r737897a2,exclude,E1,Multi-task transformer trained on combinatorial optimisation instances; no language model
+r373aa1c7,exclude,E3,E3 (R3) activation steering for diversity; no symbolic component
+r958d318b,include,,LM proposes planner-compatible action abstractions used by hierarchical symbolic planner
+reb0bf27c,exclude,E3,E3 (R3) inference budget allocation; no symbolic component
+r5f267c58,exclude,E3,E3 (R6) generic tool-library agent learning for QA
+r4962d1f4,exclude,E3,E3 (R3) agents judging code-generation agents; no formal checker
+ra50eef7f,exclude,E3,E3 (R3) learned neural discriminator scores LLM actions; no symbolic component
+ra09eca30,exclude,E3,E3 (R6) defense for generic tool-use agents
+re27e4412,exclude,E3,E3 (R3) agentic long-video QA with MLLM; no formal component
+r19d975f5,exclude,E3,E3 (R3) pretraining data-mixture optimisation; no symbolic component
+r234cdc12,exclude,E1,Spatial planning transformer trained on maps; no language model
+recaa2642,exclude,E3,E3 (R3) self-generated in-context trajectories for agents; no formal engine
+r6f30b300,exclude,E3,E3 (R3) prompting strategies under majority voting; no symbolic component
+r7c8f8e9e,exclude,E3,E3 (R3) VLM scene graph plus optimal-transport planner and RL; no formal reasoning engine
+r11025370,include,,"LLM inside evolutionary heuristic (program) search, RL-tuned on evaluated heuristic quality"
+r0dbd5e00,exclude,E3,E3 (R4) SQL debugging judged by execution; no additional symbolic component
+re098cea0,exclude,E3,E3 (R3) foundation models for VLN waypoint planning; no formal engine
+r3978f1ec,exclude,E1,"Trajectory predictor trained on driving data, not a language-pretrained model"
+re21c4924,exclude,E3,E3 (R3) data selection via optimal transport for finetuning
+r84d64bb1,exclude,E3,E3 (R3) RL for MLLM active perception; no symbolic component
+rd7256eed,exclude,E3,E3 (R3) Bayesian optimisation visual search with MLLM; no formal symbolic system
+r95a3cde2,exclude,E1,Topology of narrow networks; no pretrained language model
+rf5e84c57,exclude,E1,In-context RL transformer trained on trajectories; no language model
+r42f25aee,exclude,E3,E3 (R3) curriculum ordering via gradient geometry; no symbolic component
+r3ea3cb03,exclude,E3,E3 (R3) data mixing optimisation for LM training
+r07efbd27,include,,Finite-automaton constraints tensorized to guide LLM decoding via SMC proposals
+r870d8660,unsure,,Poster agent executes rendering code with VLM feedback; unclear if interpreter counts as symbolic component
+rdf13108a,exclude,E3,E3 (R6) planning and tool-learning benchmark with app APIs
+r7eb08765,exclude,E3,E3 (R4) text-to-SQL pretraining; no additional symbolic component
+r701a691d,exclude,E3,E3 (R3) LLM mutation/crossover in molecular evolutionary search; no formal engine
+r51c8e81b,exclude,E3,E3 (R3) LLM discriminator rewards reasoning steps; no symbolic checker
+rf2f5cccc,exclude,E3,E3 (R4) EHR text-to-SQL agent benchmark; execution only
+r202c5cc7,exclude,E1,Diffusion policies for continuous control; no language model
+raacbb623,exclude,E3,E3 (R3) data attribution and unlearning for RLHF
+raf2bdd7f,exclude,E3,E3 (R3) MCTS over NL reasoning for sycophancy; no formal system
+r46f282f6,exclude,E3,E3 (R3) LLM evaluation augmented with machine metrics
+recab9ac7,exclude,E3,E3 (R3) neural content planner guiding LM; no formal representation
+rc42f166b,exclude,E3,E3 (R3) step-level credit assignment for RL; no symbolic component
+rd7d792df,exclude,E3,E3 (R4) text-to-Cypher data synthesis; query execution only
+rfca53293,exclude,E1,Theory of small transformers on synthetic in-context task; no language model
+r8481ad28,exclude,E3,"E3 (R3) planning over prompting actions; program solving incidental, not focus"
+r093afa6a,exclude,E3,E3 (R3) distributed training method; no symbolic component
+r34560d26,exclude,E3,E3 (R3) RL on unverifiable data via ELBO; no symbolic checker
+r8829bf0e,exclude,E3,E3 (R4) text-to-SQL self-correction with SLMs; no additional symbolic component
+ra93c75a7,exclude,E3,E3 (R4) SQL dialect translation benchmark; execution or matching only
+r66c4c1cf,unsure,,LLM writes SQL to answer generated hypotheses for insights; unclear if SQL is vehicle or text-to-SQL
+r9ca7d8d7,exclude,E3,"E3 (R3) optimiser; LSTM LM only as test workload, no symbolic component"
+r67d9eaf2,exclude,E1,Graph attention for node classification; no language model
+rad25a14c,exclude,E3,E3 (R3) adversarial unlearning for LLMs
+rdbbf957e,exclude,E1,CNN vision models only; no language model
+r39126d35,exclude,E3,E3 (R3) hypertree NL planning outlines; no formal engine
+rf16707b2,exclude,E3,E3 (R3) weight preprocessing for quantization
+r7c0da257,exclude,E3,E3 (R3) grounded planning benchmark with action sets; no planner or formal checker
+r99577b6b,include,,LLM writes planning programs executed to produce candidate plans for embodied tasks
+r0ba0902e,exclude,E3,E3 (R3) bilevel data reweighting for LLMs
+rca7029ed,exclude,E5,Position paper on data-driven discovery with proof-of-concept only
+r3bb8d6ec,exclude,E3,E3 (R4) zero-shot text-to-SQL with meta-learning
+r2ea36910,include,,LLM proof generation for seL4 checked in verification environment (Isabelle)
+r494dde6f,unsure,,LLM writes scenario scripts executed by CARLA simulator; unclear if simulator script counts as symbolic
+r4458b284,exclude,E3,E3 (R4) NL2SQL RL with execution rewards
+r49561da0,exclude,E3,E3 (R3) AOV-graph workflow refinement for multi-agent LLMs; no formal engine
+r7e33714a,exclude,E3,E3 (R3) RAG questionnaire completion; no formal component
+r746d3aa3,include,,"Training loss evaluated with proof-tree search on MiniF2F, implying proof-assistant checking"
+rf0749419,exclude,E3,E3 (R3) social learning model with LLM simulations; no symbolic engine interacting
+r76a4c0b3,exclude,E3,E3 (R4) text-to-SQL prompting by query partitioning
+r4a7b64ce,exclude,E3,E3 (R3) LLM-enhanced video procedure planning; neural only
+r3242fde5,exclude,E3,E3 (R4) CoT prompting for text-to-SQL
+rad5f309d,exclude,E3,E3 (R3) LLM embodied planning with visual replanning; no formal planner
+r79273613,exclude,E3,E3 (R3) adversarial robustness of LVLMs
+r24730a74,exclude,E3,E3 (R3) speculative decoding theory; no symbolic component
+r89ed1576,exclude,E3,E3 (R3) defending web content from LLM retrieval
+r580f62f6,exclude,E3,E3 (R4) text-to-SQL data synthesis and preference learning
+r15103a8e,exclude,E3,E3 (R3) classifier on attribution graphs; no formal system
+rbcf29cc8,exclude,E3,E3 (R4) data agent benchmark scored by execution and LLM judge
+r76c47ad3,exclude,E3,E3 (R6) MCTS tool planning over generic tools
+ra757d2c0,exclude,E3,E3 (R3) reinitialization method; LM only as one test domain
+r4a497fe8,exclude,E3,E3 (R3) discrete optimization to audit LLMs; no symbolic component
+rd84d2c6b,exclude,E3,E3 (R4) text-to-SQL schema linking via Steiner tree; no checker on SQL
+ra0cfdffc,exclude,E3,E3 (R3) linguistic steganography with diffusion LM
+rd5cc28e4,exclude,E1,Decision Transformer for offline RL; no language model.
+r49fcaceb,exclude,E3,E3 (R3) Bayesian data selection for LLM fine-tuning; no symbolic component.
+r3142d9b0,include,,LLM-driven evolutionary program search with program evaluation on open math optimisation problems.
+rc9acf0b5,exclude,E1,Set-to-sequence transformer architecture; no pretrained language model.
+re8d3ff44,exclude,E3,E3 (R3) MCTS over demonstration order for ICL; no formal symbolic system.
+r46e18dd8,include,,Temporal databases and temporal SQL generate QA pairs to evaluate LLMs (symbolic problem generator).
+r34f3b46a,include,,LLM-based evolutionary program search for heuristic design.
+rec702225,exclude,E1,"Tabular foundation models, not language models."
+r1ef51dd4,exclude,E3,E3 (R3) evolutionary search for LLM compression; no symbolic interaction.
+r1da7f698,exclude,E3,E3 (R3) DPO with token-level rewards; no symbolic component.
+rfe11d1ef,exclude,E3,E3 (R3) robust preference optimisation; no symbolic component.
+r6728f9f5,exclude,E3,E3 (R3) LLM writes layouts consumed by neural image generator; no rule-based engine.
+r53b25c5e,exclude,E3,E3 (R3) MLLM embodied planner; no formal planner or checker.
+rec36fa72,exclude,E3,E3 (R3) LLM realignment via optimisation; no symbolic component.
+re80c8fe2,include,,Coding agent interacts with Lean proof assistant for formal theorem proving.
+ra39f39fd,unsure,,Puzzle benchmark with rule-based path validity; unclear if solver generates or certifies puzzles.
+rfdd3e1a1,include,,IPC-style planning benchmark; plans generated by LLMs validated against formal planning domains.
+r8f16213a,exclude,E3,E3 (R3) factuality DPO; no symbolic component.
+r2a6f635d,exclude,E1,Theory of linear RNN expressivity; no language model.
+r2c88f6ba,exclude,E3,E3 (R3) data mixing optimisation for SFT; no symbolic component.
+rab64b6eb,include,,Travel planning benchmark with DSL-based constraint validation; neuro-symbolic agents evaluated.
+r86835277,exclude,E3,E3 (R3) LLM layer pruning via zero-order optimisation; no symbolic component.
+r10a5ea94,exclude,E3,E3 (R3) multi-agent RL for LLMs with environment rewards; no formal engine.
+racf79cb9,exclude,E3,E3 (R3) inference-time compute tricks with reward models; no symbolic component.
+r5195562a,exclude,E1,Vision transformer image compression; no language model.
+rd10fb8c0,exclude,E1,Decision Transformer multi-task RL; no language model.
+r3c7d464f,exclude,E3,E3 (R2) MILP schedules LLM serving deployment; does not interact with model outputs.
+r9d475f61,exclude,E3,"E3 (R3) learned causal representation world model is neural, not explicit formal system."
+r2ca74c32,exclude,E3,E3 (R4) interactive code/SQL/Bash generation judged only by execution feedback.
+r30d56231,exclude,E3,E3 (R3) prompt optimisation for alignment; no symbolic component.
+re6b435e5,exclude,E1,Theoretical transformer Turing machine simulation; no pretrained language model.
+r5c8b7540,exclude,E3,E3 (R3) graph-based LLM routing with RL; no formal symbolic engine.
+rf430916b,exclude,E3,E3 (R3) multi-objective preference alignment; no symbolic component.
+rbbb330ef,exclude,E3,E3 (R3) jailbreak optimisation; no symbolic component.
+rd3f5f42f,exclude,E3,E3 (R3) weighted low-rank compression of LMs; no symbolic component.
+r7ce7aef0,exclude,E3,E3 (R3) spectral analysis of FFN width; no symbolic component.
+rc7f4a6c1,unsure,,Diffusion LM driving planner; unclear if safety local search is rule-based symbolic checker.
+r0f0e6e94,exclude,E3,E3 (R3) social media study of ChatGPT; no symbolic component.
+r4fdcc1f8,unsure,,Spectral validity signal vs Lean compiler acceptance in proof search; unclear symbolic role.
+r25d6452d,include,,"Vericoding benchmark: LLM code verified in Dafny, Verus and Lean."
+rbbd46666,exclude,E3,E3 (R2) LP for tensor offloading in inference engine; no interaction with outputs.
+r336a6df3,exclude,E3,E3 (R4) coding agents edit harness code judged by execution/evaluation only.
+r08484b46,exclude,E3,E3 (R5) LLM summarise-retrieve framework over biological knowledge; no logical inference.
+r094dbdda,exclude,E3,E3 (R3) LLM prior regularises RL policy; no symbolic component.
+red617888,exclude,E1,Robotic world model; no language model.
+r260f07e0,exclude,E3,E3 (R3) federated LoRA fine-tuning; no symbolic component.
+rf0740363,exclude,E1,Pruning at initialisation for CNNs/ViTs; no language model.
+rcdadde93,exclude,E3,E3 (R3) LVLM preference learning with tree search exploration; no formal planner.
+rce7f9562,exclude,E3,E3 (R3) survival bandit theory of agent risk; no symbolic component with LM.
+r5e5fa0ee,exclude,E3,E3 (R2) online LP for request routing; no interaction with model outputs.
+r935ce0b6,unsure,,MLLM rewarded via planner-estimated action likelihood; unclear whether planner is symbolic.
+rbfc5327f,exclude,E3,"E3 (R3) diffusion LM denoising planners are sampling strategies, not formal systems."
+r64742587,exclude,E3,E3 (R3) LLM commonsense for object search with deep RL; no formal engine.
+rb032d6ad,unsure,,LLM selects heuristic algorithms for combinatorial optimisation; unclear if formal engine integration.
+rb5ae1c3b,include,,"Controlled table QA study comparing SQL-based, LLM and hybrid methods; SQL execution as vehicle."
+rb52b76e5,exclude,E3,E3 (R3) memory-augmented LLM agent planning; no formal component.
+r2a1a8129,exclude,E1,Vision diffusion model architecture; no language model.
+r77f1ac54,include,,"Constrained semantic decoding enforces grammar, scoping and type rules on LM-generated code."
+r15f51dd7,exclude,E1,MNL bandit assortment algorithms; no language model.
+r6d7d1ac9,exclude,E3,E3 (R3) information-theoretic rubrics for LLM evaluation; no formal system.
+r9c8cac97,unsure,,Video QA benchmark with programs on situation hypergraphs; unclear if pretrained LM is core.
+ra79a6995,exclude,E1,Fuzzy logic sequential recommendation; no language model.
+r420dd822,exclude,E3,E3 (R3) constrained data selection for LLM annealing; no symbolic component.
+re0a99963,include,,LRM writes and runs solver code for optimisation modelling; solver computes answers.
+r9f71ca5f,exclude,E3,E3 (R3) next-token prediction pitfalls on planning task; no symbolic component interacts.
+r3e3ad72d,include,,LLM generates SQL to decompose tables for table QA/fact verification (vehicle task).
+r81937268,exclude,E3,E3 (R3) hashing scheme for verifiable inference; not formal reasoning over model outputs.
+re72a1dad,exclude,E3,E3 (R4) text-to-SQL with demonstration retrieval; execution only symbolic part.
+r52cbafc4,exclude,E3,E3 (R3) multi-objective RLHF; no symbolic component.
+rdc7f8a05,include,,"LLMs on IPC planning domains, as heuristic for sound planners, with plan verifier feedback."
+rdef3c3a2,exclude,E3,E3 (R5) knowledge editing evaluation over KG-structured data; no logical inference engine.
+re2a5ce52,include,,LM predicts natural logic operators executed by deterministic natural logic inference system.
+r2ee9243a,exclude,E3,E3 (R3) prompt attribution via combinatorial search; no formal system.
+r58f734a3,exclude,E3,E3 (R4) multi-turn text-to-SQL with extractive modules; execution accuracy only.
+re8bf55d2,exclude,E3,E3 (R3) data mixture bi-level optimisation; no symbolic component.
+r59fa2368,unsure,,LLM agents query SQL logs for threat investigation; unclear beyond R4/R6 SQL tool use.
+r22c6ac6d,exclude,E3,E3 (R3) memorization isolation in LLM training; no symbolic component.
+r67009460,exclude,E3,E3 (R3) LLM navigation planner with memory retrieval; no formal engine.
+r68b3e689,exclude,E1,Theoretical constructions of transformers for hierarchical languages; no pretrained LM.
+r2f9c0f45,exclude,E3,E3 (R3) BERT early exit optimisation; no symbolic component.
+rbb9b9f2d,exclude,E3,E3 (R6) tool-call caching for agent RL; generic tool use.
+r8fcefd36,exclude,E1,"E1 (R1) small transformer trained from scratch on Max-of-K; proofs about it, no pretrained LM"
+r7ca073b3,exclude,E1,"E1 (R1) transformer Q-learner for Bayesian optimisation, not a language model"
+rd79a45d5,exclude,E3,E3 (R3) graph message-passing world model; no formal symbolic engine
+ra3efc18d,unsure,,LLM abductions aligned with Bayesian network inference; unclear whether BN counts as symbolic component under R3
+r19a88b8f,exclude,E3,E3 (R3) GFlowNet post-training for LM-based TTS; no symbolic component
+r39270207,exclude,E3,E3 (R3) RLHF reward uncertainty; no symbolic component
+r415034ac,exclude,E3,E3 (R3) adversarial masking for MLM via relaxation and DP; no symbolic engine interacting
+r48fe9d3a,exclude,E3,E3 (R4) text-to-SQL schema linking judged by execution accuracy only
+rc1af6cf6,exclude,E3,E3 (R3) multimodal agent jailbreak study; no symbolic component
+r39b608d8,exclude,E3,E3 (R3) watermark scrubbing attack via constrained optimisation; no formal symbolic system
+ra00ea542,exclude,E3,E3 (R2) MILP schedules GPU serving; does not interact with model outputs
+r9cdc4b55,exclude,E3,E3 (R4) text-to-query benchmark (SQL/Cypher/SPARQL) judged by execution only
+rf6071f3a,include,,LLM generates belief hypotheses; explicit POMDP planner plans over them for robot task planning
+redae2537,exclude,E3,E3 (R3) VLM-guided image optimisation; no symbolic component
+ra406fbaf,include,,Math benchmark with Python program solutions; LM generates programs executed for answers (vehicle task)
+ra7dff4cc,exclude,E3,E3 (R4) code generation resampling judged only by unit tests
+r90daf51e,exclude,E1,"E1 (R1) diffusion transformer planner for driving, not a language model"
+r6ae9e71e,exclude,E3,E3 (R3) genetic algorithm for benchmark compression; no formal symbolic system
+r2c565e29,unsure,,MLLM planner retrieves policies for VIMA manipulation; unclear whether generated code policies are executed
+re1b8b09d,exclude,E3,E3 (R3) LLM-guided evolutionary molecule search; no formal symbolic engine or program search
+r5cbd875d,exclude,E3,E3 (R4) text-to-SQL candidate critiquing; no additional formal checker
+r99ffbfb6,exclude,E3,E3 (R3) structured pruning optimisation incl. BERT; no symbolic component
+r8baa5864,exclude,E3,E3 (R3) neural key-value memory layers; no symbolic component
+rea410058,include,,LLM-guided evolutionary program search co-designing metaheuristics and heuristic programs
+r99746cc4,exclude,E3,E3 (R3) MCTS over LLM agent rollouts; no formal symbolic system
+r001c14b1,include,,LLM planner writes code plans executed in ALFWorld; rule system updated from execution
+r62a3ebe3,exclude,E3,E3 (R3) interpretability of latent planning in LLMs; no symbolic component
+rb08585b2,exclude,E3,E3 (R3) critic-guided MCTS planning with retrieval; no formal engine
+ra9b8514d,exclude,E3,E3 (R3) LVLM embodied planning via curriculum learning; no symbolic component
+r021bc015,exclude,E3,E3 (R3) preference optimisation for dubbing MT; no symbolic component
+rd155a5af,exclude,E3,E3 (R4) LLM code agents on security tasks judged by execution/reproduction only
+rba30eaae,exclude,E3,E3 (R4) text-to-SQL re-evaluation study; no additional formal checker
+r403112c6,exclude,E1,E1 (R1) theoretical analysis of transformers learning plan verification; no pretrained LM
+r47d7e238,exclude,E3,E3 (R2) MILP only tunes ensemble weights for majority voting; no formal task representation
+r7d117a8b,exclude,E3,E3 (R3) structured transformers for extractive summarisation; no symbolic component
+rb32401a5,exclude,E1,"E1 (R1) model-based RL world models, not language models"
+r1568db82,exclude,E3,E3 (R3) genetic algorithm for data subset selection; no formal symbolic engine
+r4a00d7ea,include,,"SMC controlled LM generation with syntactic/semantic constraints (grammars, checkers) for code, SQL, molecules"
+r7b1d90fd,exclude,E3,E3 (R3) LLM travel planning with agent-based simulation evaluation; no formal planner
+rb319abc6,exclude,E1,E1 (R1) token merging for diffusion image models; no language model
+r4e533220,exclude,E3,E3 (R3) nested learning optimisation paradigm; no symbolic component
+rcd676760,exclude,E3,E3 (R4) text-to-SQL robustness benchmark; execution only
+rf99de981,exclude,E3,E3 (R6) generic multi-agent tool-calling framework on GAIA
+r9023c0fc,exclude,E3,E3 (R3) MCTS with VLM agents on web tasks; no formal engine
+r601ba8bc,exclude,E3,E3 (R3) answer-level fine-tuning game; answer matching only
+r32677a8d,exclude,E3,E3 (R3) position on agent alignment with WebShop experiments; no symbolic component
+r2b89a94a,exclude,E3,E3 (R2) ILP only allocates quantisation bit-widths; no interaction with model outputs
+r0ee7ac97,exclude,E3,E3 (R3) informal inequality proofs judged by LLM judges and answer matching
+r99a289a4,exclude,E3,E3 (R3) causal-guided active learning for debiasing; no formal symbolic system
+rd6a950f8,exclude,E3,E3 (R3) RL for diffusion LLMs with answer-checking rewards only
+r23ed6b65,exclude,E3,E3 (R3) LLM-centric embodied agent analysis; no formal symbolic component
+re1a9b025,exclude,E3,E3 (R3) mechanistic analysis of attention sinks; no symbolic component
+rfb07f54b,exclude,E3,E3 (R6) LLM agent selecting generic scene generation tools
+r21da09cd,exclude,E3,E3 (R3) visual adversarial noise for LVM hallucination; no symbolic component
+rc97d0ca3,exclude,E3,E3 (R3) continuous prompt optimisation; no symbolic component
+r12b1939c,unsure,,Table QA via tool agent manipulating tables; unclear whether model writes executed code/SQL
+r4fdb4217,exclude,E3,E3 (R3) LLM layout planning with vision refinement and physics optimisation; no formal engine
+r3df54320,exclude,E3,E3 (R3) tunable LM dialogue policy planner with RL; no symbolic component
+rc7d46874,exclude,E3,E3 (R3) RL unlearning with refusal rewards; no symbolic component
+rdb969beb,exclude,E3,E3 (R3) calibration of LLM judges via order-preserving algorithm; no formal system
+r04b9c5de,exclude,E3,E3 (R6) financial agent with generic domain tool library and DAG planner
+r3bbe8648,exclude,E3,E3 (R3) MLLM spatial planning benchmark in Minecraft; no formal checker evident
+r0aa09102,unsure,,"LLM proposes cluster explanations, ILP selects clusters; unclear if ILP counts as interacting symbolic solver"
+rac2aeb9a,exclude,E3,E3 (R3) robust controlled decoding via convex optimisation; no symbolic component
+r7e87588f,exclude,E3,E3 (R3) test-time feedback optimiser; no formal symbolic system
+r43d583fa,exclude,E3,E3 (R3) evolutionary model merging; no symbolic component
+rd0035cf6,exclude,E1,"E1 (R1) EEG spiking/transformer classifier, not a language model"
+r4012aab0,exclude,E3,E3 (R3) PAC-Bayes fine-tuning of PLMs; no symbolic component
+r5431d0b0,exclude,E3,E3 (R3) determinantal beam search decoding; no formal symbolic system
+rf4ac9ada,exclude,E3,E3 (R3) batch-size/learning-rate scheduling for pretraining; no symbolic component
+rd9d6d218,exclude,E3,E3 (R3) tri-level optimisation for LLM time-series OOD; no symbolic component
+re1df4db3,exclude,E3,E3 (R3) planner-executor RAG multi-hop QA evaluation; no logical inference engine
+r648a5264,exclude,E3,E3 (R3) distributed training gradient compression; no symbolic component
+r8e5e63eb,include,,LLM agent formulates optimisation models (optimisation modelling vehicle task) solved by solver
+re56481df,unsure,,Text-to-SQL; LogicalBeam plan templates with constrained infilling may be symbolic search over partial programs
+r5ca89abb,include,,LLM optimisation modelling for OR problems; formal models solved by solver (vehicle task)
+r3241766c,exclude,E3,E3 (R3) fine-tuned strategy planner for psychological dialogue; no symbolic component
+r354512f6,exclude,E3,E3 (R3) fallacy reconstruction dataset evaluating LLMs; no formal system
+r5fa8cfd2,exclude,E3,E3 (R3) bilevel data selection for pretraining; no symbolic component
+rb9b9c243,exclude,E3,E3 (R3) visual context design for video MLLMs; no symbolic component
+r1c89d43c,exclude,E3,E3 (R3) multi-LLM Bayesian Nash equilibrium coordination; no formal engine
+r14dc58c0,unsure,,"T5 finetuned to output temporal logic; abstract mentions no checker, monitor or solver interacting with the model."
+r1cc24273,include,,Pretrained LM tracks dialog events; executed symbolic dialog-policy program decides actions; explicitly neuro-symbolic.
+rb17006b6,unsure,,Knights-and-knaves benchmark; unclear whether a logic solver generates or certifies problems; otherwise E3 (R3).

@@ -2503,403 +2503,1560 @@ r39563628,snowball,Language Models can Solve Computer Tasks,NeurIPS,2023,no,no,e
 r10329c70,snowball,LAMBADA: Backward Chaining for Automated Reasoning in Natural Language,ACL,2023,no,no,exclude,exclude,,abstract,exclude,E3
 rafa0fd29,snowball,CLIPScore: A Reference-free Evaluation Metric for Image Captioning,EMNLP,2021,no,no,exclude,exclude,,abstract,exclude,E3
 r07927734,snowball,Decoupling Features in Hierarchical Propagation for Video Object Segmentation,NeurIPS,2022,no,no,exclude,exclude,,abstract,exclude,E1
-r8f364092,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rfd8b9d96,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r11e3ed43,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r8aa3fa51,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r9ae601cb,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r49fb2aa1,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rfbed9718,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r9c228d40,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rc63dc221,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r16e2335d,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r61377961,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r1bff0a27,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r9021d369,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r4ddec05d,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-ra0dd1fe6,audit:neither,,,,no,no,unsure,,exclude,abstract (adjudicated by the orchestrating assistant),exclude,E1
-rbba70127,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r7135eda7,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rcf461a9c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd0a0e4be,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd71b58e1,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rc5b0fea0,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rf7f4722b,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rb3313cfa,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r083fe8fa,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r254b65f6,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r3d4ce5f6,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r2fbcb4de,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rc6397b91,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r4eaabb68,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rb944d8e7,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r744ffdff,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-raa246b31,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r64e56ca3,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r726a9c4f,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r18e418af,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd403af22,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r60f0888c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rdf5e5d62,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-radc252e9,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r1171a30d,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rd48155a0,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r711e8515,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r54b15a74,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rd83260e8,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r40741722,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r4d5dc896,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r1cf0624f,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-reb47d21d,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rf759823b,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rafe58b4c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r9790cec6,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rdadedf73,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r23dbc643,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rb6731cdc,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r15652056,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd8610b43,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rc5ff8a3c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r11c3ebf9,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r07e7b1fd,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r78508447,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r8fb8b333,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd850591c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rb2770e67,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r9bfa2ac2,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r0247fb76,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r79583ea8,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r19657170,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r2229027f,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r8e6c0e82,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r572e8613,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rcc053e37,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r1193e1d8,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r1f87296e,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r903ccbb3,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rd30ee0f5,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rb53016b8,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rbe12b5cc,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r0a6e3e6a,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r2a991d06,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r79ad1ad8,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r2d52d420,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r7e025b06,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rcd78d829,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-ra740c8ed,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rfd1ec7e6,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rad40786c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-rc3fdfa86,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r4486a34c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-raf32a617,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r6b6e0d6c,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r4d5cdce0,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r86b371f2,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rf2dcc548,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r4aa9882e,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r02072801,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r7a457943,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r21ed6e75,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-rb5a204b6,audit:neither,,,,no,no,exclude,,,abstract,exclude,E3
-r2c563dc9,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r2ce19ca9,audit:neither,,,,no,no,exclude,,,abstract,exclude,E1
-r8c143942,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r57332121,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r49ed5e69,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r030e3edd,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rfe0a6624,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rfa4d5dda,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r397e6e88,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r2314882c,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r1265206b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r98a69c0b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r5140e677,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r1a36f835,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra9926680,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r8f7a4e32,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r72fadfed,audit:sym_only,,,,no,no,include,,include,abstract,include,
-r6a5e0877,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc6d14bcf,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbc943eb4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rb060db85,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-refae2898,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rfd3aedbb,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r0d89e99a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r66e37ebc,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r18e2f09f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r8a675090,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r34f822f2,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb76a99c7,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-raa1b797e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r0d49738c,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbfc3ac54,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4bcebe08,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4a182424,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rb741f8bc,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r61c1505c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rda3f2f67,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r903d87ae,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r86c08553,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r2a2732e8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r2ab1c46c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r7f18ec4a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb87afbf1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r0ceafe03,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rab3b685f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r969d2631,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r2d363490,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf81ac833,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc6f3abef,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r3a9e9216,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r802a837a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd8be4298,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-ra4673d70,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbe7c9f74,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4bb0d97a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rc21955dd,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r8fe23094,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd88b5db1,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r5019d570,audit:lm_only,,,,no,no,unsure,,include,web: https://arxiv.org/pdf/2605.11922,include,
-raf896d09,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r68a9c9dc,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r0d2238e8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rbb09b1ec,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r111911f2,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb2b2001f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6c54bedf,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r754eda94,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r027b343e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rec74a063,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r8d34cf61,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb3bc8781,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r066b016d,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbd61228a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r24097408,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra380792a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd888bb63,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf6393e2f,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rce7109bf,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r381f8001,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r14e12466,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ree20a425,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r25ecec63,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rf341d4e1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd02da50f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra3876a27,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4fbfb44b,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-re8e105a9,audit:lm_only,,,,no,no,include,,include,abstract,include,
-rae047400,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rde142dd1,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4b397bed,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r227269e9,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r85a0c94e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4e6e63dc,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r63583a6e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd98ceebe,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r9804a5f3,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6aa8dfae,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7976eccf,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r49df6f1c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7e24ca4b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r13814792,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd40c1968,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r5f207553,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E2
-r7763c531,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6ee9bdde,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd2dd8eb4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r72626b00,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r919eedb2,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E2
-r8148796b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3c45bf55,audit:lm_only,,,,no,no,unsure,,exclude,web: https://icml.cc/virtual/2026/poster/63484,exclude,E3
-r356a8074,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r180b5690,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r55b41f56,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r2395c6a8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7858448b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4150dc24,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r602167bc,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r28e2a779,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf125ef29,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb02ea26a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra8394757,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rf5306085,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rba8cad1b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r26462c11,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4094278d,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ree59f3c8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbf3515c5,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rfafebba8,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r1bdd51db,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r9d95f503,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r26d14e08,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r3969628f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rdcd2426e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r15800855,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf0e84b74,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-raae5d83f,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra7390a4d,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r72ab2945,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-ra65b2d5e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r7ddce905,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r12718bff,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r16fa6028,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf73251a4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3c6ab00f,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r5de167d1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r73cf287f,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r01c07dc2,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E5
-r6fdfaf42,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd1d1b890,audit:sym_only,,,,no,no,unsure,,exclude,web: https://arxiv.org/pdf/2305.08953,exclude,E1
-r3816dd69,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rbb9a42f9,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r265fbeac,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r405a523d,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7eecd005,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rbf053204,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4de3b615,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r31832b2f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-raaf49013,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r85e89f00,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-re6545913,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r14862c29,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r523e32b7,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc38677ee,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r5d3c917a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd0aa62e5,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra7dc7a6f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r25129aa2,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r8da1ae7c,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-reff55f2e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3a53c159,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r752c40ad,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7d9dc36f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rdd6f6c65,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r89e7e119,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rfbbeea62,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r9135be5e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r57f95482,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rbeacd768,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rbad5d64c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r6eb0fffb,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r9eaa4c4c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r5f27aa88,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r7bd92815,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r66765f88,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf395e061,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3a17acf4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf39dc880,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd4b2b9cf,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-ra79f46f4,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r3a418c30,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r684c7ddd,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r93789999,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r71539f89,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r2ae19326,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-ra8f87d76,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc240d388,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r3a29f30b,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rb6dd7894,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6b0db337,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rb4fe8bcc,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r96e8617a,audit:lm_only,,,,no,no,unsure,,include,web: https://aclanthology.org/2024.acl-long.512.pdf,include,
-r48524239,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r1055b6d1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd694d3d0,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6204a91d,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r51146f8b,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd62eaf37,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3c860b56,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r9d2d97ac,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r79819165,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r10ebb8cf,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r99b5d7dd,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r64dc21c8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rab239baa,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7c01e7e4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r5b7d067d,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r873f017e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd5e1b3f5,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc049857d,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc2712528,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r4eb88be1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r65ed3eb6,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r755d1573,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r33cb97e2,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r5ec32b43,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r4dab73b5,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r032dec8a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r4a9b673f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf4c4a359,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r39e0c0b7,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r18bc6af3,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rf2e8c041,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rce9cbc77,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r4235cb3f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r0b5e8aee,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r34a34d65,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r8a2d5b51,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r341e0ad9,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r584d8e1b,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r13d8780e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3551502a,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r31aac7b1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc190d698,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-ra5753aed,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r16d7cec8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r01e3e165,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r2adcead4,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r80a3f904,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-rd571fc5a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r5e5859d0,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r88d4893c,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r0aa3956b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rfb0aeedf,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r876d0e50,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-ra1f78bd2,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r735afb95,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rde3b34bc,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r3ca1d24a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6b1a3019,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rff6430ea,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r2431cd89,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rdbc1f2f8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r2bc3e0a0,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd0b0a443,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r273ae680,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r80d94ceb,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rc0de281b,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r4693bfbf,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r466e89a1,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-re96ee426,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rdad41873,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r862e58ce,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r786a94b2,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r7422bcea,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r55f18605,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4a52336f,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r34eb82a6,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r6330986e,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-rbb792a57,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r7f0e6248,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r72f1cf84,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r531f71ad,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r93b23aff,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r76097bd6,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6a18b84e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6817bab0,audit:sym_only,,,,no,no,unsure,,exclude,web: https://aclanthology.org/2021.acl-short.22.pdf,exclude,E1
-r4df4a10a,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rb0d704ef,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r96b44743,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-re8ac241e,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r99b13dd8,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r1536e90d,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r1b933419,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r24958690,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rf49ed1ba,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E1
-r02ef67a0,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rd0de7f99,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r6653d112,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r3f8fd3f6,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-r0c8db4e7,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
-rce112577,audit:sym_only,,,,no,no,exclude,,,abstract,exclude,E1
-r4a889134,audit:lm_only,,,,no,no,exclude,,,abstract,exclude,E3
+r380aaf0f,search2,Foresee What You Will Learn: Data Augmentation for Domain Generalization in Non-stationary Environment,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r629fcde2,search2,LILO: Bayesian Optimization with Natural Language Feedback,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rfa89186c,search2,SpecHub: Provable Acceleration to Multi-Draft Speculative Decoding,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r6971b596,search2,Large Language Models Threaten Language’s Epistemic and Communicative Foundations,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E5
+rae82a94e,search2,Look Before You Leap: Universal Emergent Mechanism for Retrieval in Language Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r297ead14,search2,ADAM: An Embodied Causal Agent in Open-World Environments,ICLR,2025,no,yes,unsure,unsure,include,web: https://arxiv.org/html/2410.22194v1,include,
+rccb63f19,search2,From Assumptions to Actions: Turning LLM Reasoning into Uncertainty-Aware Planning for Embodied Agents,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5c59dd85,search2,Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+re0516465,search2,Do LLMs Build World Representations? Probing Through the Lens of State Abstraction,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rbc2ee8d7,search2,Reliable Fine-Grained Evaluation of Natural Language Math Proofs,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra1406824,search2,RefineEvo: Planning-Guided Heuristic Evolution with Bidirectional Experience,ICML,2026,no,yes,include,include,,abstract,include,
+rb1107ebb,search2,TransPath: Learning Heuristics for Grid-Based Pathfinding via Transformers,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r952990e5,search2,Conformal Inference under High-Dimensional Covariate Shifts via Likelihood-Ratio Regularization,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E2
+r8e401cbf,search2,VEDIT: Latent Prediction Architecture For Procedural Video Representation Learning,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r17e0ba2d,search2,RDD: Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r06eea408,search2,OptMaster: A DAG-Based Framework for Formulation and Heuristic Discovery in Optimization,ICML,2026,no,yes,include,include,,abstract,include,
+r97bf30a1,search2,Ctrl-DNA: Controllable Cell-Type-Specific Regulatory DNA Design via Constrained RL,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+re333182d,search2,Skrull: Towards Efficient Long Context Fine-tuning through Dynamic Data Scheduling,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r12f3aa9c,search2,OCCAM: Towards Cost-Efficient and Accuracy-Aware Classification Inference,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc2c5bc93,search2,PLAGUE: Plug-and-play Framework for Lifelong Adaptive Generation of Multi-turn Exploits,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r8ae608ab,search2,EvoMAS: Evolutionary Generation of Multi-Agent Systems,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r791d84a5,search2,Diffusion Model is an Effective Planner and Data Synthesizer for Multi-Task Reinforcement Learning,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r74f45d8b,search2,WebInject: Prompt Injection Attack to Web Agents,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r52982a3f,search2,Compressing Large Language Models using Low Rank and Low Precision Decomposition,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r9c1f287a,search2,Block Recurrent Dynamics in Vision Transformers,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r96615d6e,search2,Safe RLHF-V: Safe Reinforcement Learning from Multi-modal Human Feedback,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r794b0451,search2,Learning Universal Policies via Text-Guided Video Generation,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E2
+r4441325d,search2,CoE-SQL: In-Context Learning for Multi-Turn Text-to-SQL with Chain-of-Editions,NAACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r34501e93,search2,Order Matters: Unveiling the Hidden Impact of Macro Placement Sequences via Proxy-Guided LLM Evolution,ICML,2026,no,yes,include,include,,abstract,include,
+rdc1b8fb4,search2,Selective Preference Optimization via Token-Level Reward Function Estimation,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r785ac5e9,search2,JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r0019b83c,search2,Castle: Causal Cascade Updates in Relational Databases with Large Language Models,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1010a764,search2,Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rdbfefdc4,search2,RoboCerebra: A Large-scale Benchmark for Long-horizon Robotic Manipulation Evaluation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc8edeada,search2,Modeling Hierarchical Thinking in Large Reasoning Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r22e65b44,search2,Learning the Efficient Frontier,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+rf5b78c43,search2,Enhancing Textbooks with Visuals from the Web for Improved Learning,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r9aa22efd,search2,Grounding Language with Vision: A Conditional Mutual Information Calibrated Decoding Strategy for Reducing Hallucinations in LVLMs,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r801eb5ed,search2,An LLM Compiler for Parallel Function Calling,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r01760324,search2,LinkAlign: Scalable Schema Linking for Real-World Large-Scale Multi-Database Text-to-SQL,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r16df8e55,search2,MergOPT: A Merge-Aware Optimizer for Robust Model Merging,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r6f0afde6,search2,Learning Versatile Skills with Curriculum Masking,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+rd8ec9b45,search2,Calibrating LLMs for Text-to-SQL Parsing by Leveraging Sub-clause Frequencies,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re38dad16,search2,Marich: A Query-efficient Distributionally Equivalent Model Extraction Attack,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rc9f7d397,search2,Representational Strengths and Limitations of Transformers,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+ra18d1da3,search2,Real-Time Pricing Optimization for Ride-Hailing Quality of Service,IJCAI,2021,no,yes,exclude,exclude,,abstract,exclude,E1
+r32cc987d,search2,Spectral Imbalance Causes Forgetting in Low-Rank Continual Adaptation,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf725e83d,search2,Beyond IID: Optimizing Instruction Finetuning from the Perspective of Instruction Interaction and Dependency,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb8b13d24,search2,Transformers as Game Players: Provable In-context Game-playing Capabilities of Pre-trained Models,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r5de24fd3,search2,Unified Visual Transformer Compression,ICLR,2022,no,yes,exclude,exclude,,abstract,exclude,E1
+r9353eff8,search2,Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb327ee1d,search2,Not all quantifiers are equal: Probing Transformer-based language models' understanding of generalised quantifiers,EMNLP,2023,no,yes,include,include,,abstract,include,
+r8843962d,search2,MAGIC: Generating Self-Correction Guideline for In-Context Text-to-SQL,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6098b5c3,search2,SCoT: Teaching 3D-LLMs to Think Spatially with Million-scale CoT Annotations,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r9f4e642a,search2,SysMoBench: Evaluating AI on Formally Specifying Complex Real-World Systems,ICLR,2026,no,yes,include,include,,abstract,include,
+re2c7a263,search2,Learning to Interpret Weight Differences in Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r7a46795a,search2,Break the Trade-off Between Watermark Strength and Speculative Sampling Efficiency for Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r0f5493a0,search2,LLM-Augmented Chemical Synthesis and Design Decision Programs,ICML,2025,no,yes,unsure,unsure,include,web: https://arxiv.org/pdf/2505.07027v1,include,
+rda7c4c53,search2,Flash Inference: Near Linear Time Inference for Long Convolution Sequence Models and Beyond,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re37488cd,search2,Planning with an Embodied Learnable Memory,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd0323b7c,search2,Confidence Estimation for Error Detection in Text-to-SQL Systems,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rf2251bf6,search2,Self-Improving Robust Preference Optimization,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1893e12e,search2,ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rbcdad1bb,search2,Tree-Planner: Efficient Close-loop Task Planning with Large Language Models,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r11e0e2a0,search2,Inference-Aware Meta-Alignment of LLMs via Non-Linear GRPO,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rdf61404a,search2,What Makes a Good Diffusion Planner for Decision Making?,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rfb5ce0a8,search2,MultiTabQA: Generating Tabular Answers for Multi-Table Question Answering,ACL,2023,no,yes,unsure,unsure,include,abstract,include,
+r9bb947fa,search2,Can One Modality Model Synergize Training of Other Modality Models?,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb8116407,search2,Personal Information Leakage Detection in Conversations,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+rf2e76181,search2,REALISTA: Realistic Latent Adversarial Attacks that Elicit LLM Hallucinations,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r1ac81c64,search2,Are Transformers universal approximators of sequence-to-sequence functions?,ICLR,2020,no,yes,exclude,exclude,,abstract,exclude,E1
+r79efa5c0,search2,SECA: Semantically Equivalent and Coherent Attacks for Eliciting LLM Hallucinations,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2b440a98,search2,Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd9f796b9,search2,Softmax Transformers are Turing-Complete,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+rd0d32240,search2,ASGO: Adaptive Structured Gradient Optimization,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r20c8726f,search2,MIGA: A Unified Multi-Task Generation Framework for Conversational Text-to-SQL,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+ref568ec0,search2,Undermining Mental Proof: How AI Can Make Cooperation Harder by Making Thinking Easier,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E5
+r2a437ec9,search2,L3Ms — Lagrange Large Language Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r279d324d,search2,"Fast, Differentiable and Sparse Top-k: a Convex Analysis Perspective",ICML,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r3f77c294,search2,DriveAgent-R1: Advancing VLM-based Autonomous Driving with Active Perception and Hybrid Thinking,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd3a6e066,search2,Where Concept Erasure Should Occur: Concept–Layer Alignment in Text-to-Video Diffusion Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r8198b8ce,search2,Harnessing Toulmin’s theory for zero-shot argument explication,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+re4c659d8,search2,Dataset Distillation as Pushforward Optimal Quantization,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r4a1513b3,search2,am-ELO: A Stable Framework for Arena-based LLM Evaluation,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r45dbe373,search2,ConfigX: Modular Configuration for Evolutionary Algorithms via Multitask Reinforcement Learning,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r09329056,search2,MARS-SQL: A Multi-Agent Reinforcement Learning Framework For Text-To-SQL,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rfe55ca9c,search2,Pessimistic Verification for Open-Ended Math Questions,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf71d3b69,search2,SS1: Accelerating Inference with Fast and Expressive Sketch Structured Transform,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r2ae9227e,search2,ALE-Bench: A Benchmark for Long-Horizon Objective-Driven Algorithm Engineering,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1d6cc446,search2,WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r4dd29f09,search2,FLEX: Expert-level False-Less EXecution Metric for Text-to-SQL Benchmark,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r0f103b13,search2,On the Expressive Flexibility of Self-Attention Matrices,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+rb957c788,search2,Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search,ICML,2025,no,yes,unsure,unsure,exclude,abstract,exclude,E3
+r5d872771,search2,Automatic Curriculum Expert Iteration for Reliable LLM Reasoning,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra5a84889,search2,Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r4b32ba15,search2,"Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-Language Navigation",ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r38f99f6d,search2,BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r43423d27,search2,Zero-shot Sharpness-Aware Quantization for Pre-trained Language Models,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r80245d3a,search2,GenAuction: A Generative Auction for Online Advertising,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r3860c080,search2,Language Models as Implicit Tree Search,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rbd73b381,search2,Partition to Evolve: Niching-enhanced Evolution with LLMs for Automated Algorithm Discovery,NeurIPS,2025,no,yes,include,include,,abstract,include,
+r7136908e,search2,Monarch Mixer: A Simple Sub-Quadratic GEMM-Based Architecture,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r830a7f0e,search2,MOOSE-Chem2: Exploring LLM Limits in Fine-Grained Scientific Hypothesis Discovery via Hierarchical Search,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re576bdd3,search2,CoMERA: Computing- and Memory-Efficient Training via Rank-Adaptive Tensor Optimization,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r681969b6,search2,Unified Human-Scene Interaction via Prompted Chain-of-Contacts,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r4c023d83,search2,SuffixDecoding: Extreme Speculative Decoding for Emerging AI Applications,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd22223e5,search2,UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r0a23e0da,search2,3DBench: A Scalable 3D Benchmark and Instruction-Tuning Dataset,IJCAI,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra2b3aef6,search2,LM-Searcher: Cross-domain Neural Architecture Search with LLMs via Unified Numerical Encoding,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r82593806,search2,Obfuscated Activations Bypass LLM Latent-Space Defenses,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra02f7cd6,search2,Agentic Knowledgeable Self-awareness,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r989f4240,search2,"Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",NeurIPS,2024,no,yes,unsure,unsure,include,abstract,include,
+r357a037c,search2,InstructSAM: A Training-free Framework for Instruction-Oriented Remote Sensing Object Recognition,NeurIPS,2025,no,yes,include,include,,abstract,include,
+rc8e2248d,search2,HardcoreLogic: Challenging Large Reasoning Models with Long-tail Logic Puzzle Games,ICLR,2026,no,yes,unsure,unsure,include,web: https://arxiv.org/html/2510.12563v2,include,
+rc4867a9e,search2,Mosaic: Runtime-Efficient Multi-Agent Embodied Planning,ICML,2026,no,yes,include,include,,abstract,include,
+r88872309,search2,SmartChunk Retrieval: Query-Aware Chunk Compression with Planning for Efficient Document RAG,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r94224e01,search2,Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rc450e789,search2,Training Language Models to Generate Quality Code with Program Analysis Feedback,NeurIPS,2025,no,yes,include,include,,abstract,include,
+r65e212ea,search2,Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r4a85c5b8,search2,Group Verification-based Policy Optimization for Interactive Coding Agents,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r3dc893af,search2,Neural Thermodynamics: Entropic Forces in Deep and Universal Representation Learning,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r6c97476d,search2,"Hey, That's My Model! Introducing Chain & Hash, An LLM Fingerprinting Technique",ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r48340b2e,search2,Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb7fa09b7,search2,Gram2Token: Enabling Run-time GPU-Native Grammar-Constrained Decoding for LLMs,ICML,2026,no,yes,include,include,,abstract,include,
+r5b89ce8b,search2,TextHoaxer: Budgeted Hard-Label Adversarial Attacks on Text,AAAI,2022,no,yes,exclude,exclude,,abstract,exclude,E3
+rd0e79460,search2,The Polar Express: Optimal Matrix Sign Methods and their Application to the Muon Algorithm,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rea930b3f,search2,Stackelberg Learning from Human Feedback: Preference Optimization as a Sequential Game,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5af18e4d,search2,Semantic Routing via Autoregressive Modeling,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+rb6aaa2ed,search2,SpecTr: Fast Speculative Decoding via Optimal Transport,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rf6d19373,search2,Reasoning Is Not Free: Robust Adaptive Cost-Efficient Routing for LLM-as-a-Judge,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+re677950f,search2,A Unified Temporal Knowledge Graph Reasoning Model Towards Interpolation and Extrapolation,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+rf44b6938,search2,Interpretable Proof Generation via Iterative Backward Reasoning,NAACL,2022,no,yes,exclude,exclude,,abstract,exclude,E3
+r758465f6,search2,TG-RAG: A Retrieval-Augmented Framework for Reasoning Guidance in Specialized Domains,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+raefad200,search2,Puzzle: Distillation-Based NAS for Inference-Optimized LLMs,ICML,2025,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r37df01f4,search2,Classical Planning with LLM-Generated Heuristics: Challenging the State of the Art with Python Code,NeurIPS,2025,no,yes,include,include,,abstract,include,
+rdc7e6f7d,search2,Re-examining the Role of Schema Linking in Text-to-SQL,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+r79e82443,search2,TC–RAG: Turing–Complete RAG’s Case study on Medical LLM Systems,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6fafcd02,search2,Closed-Loop Long-Horizon Robotic Planning via Equilibrium Sequence Modeling,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r00f441a5,search2,"Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing",NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r981b6add,search2,Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb8ecfbaa,search2,Stepwise Alignment for Constrained Language Model Policy Optimization,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra264b2dd,search2,IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking,ICLR,2025,no,yes,include,include,,abstract,include,
+r340629a2,search2,Building a Foundational Guardrail for General Agentic Systems via Synthetic Data,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2cd0ac42,search2,Target-Aware Video Diffusion Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r42596666,search2,Less-forgetting Multi-lingual Fine-tuning,NeurIPS,2022,no,yes,exclude,exclude,,abstract,exclude,E3
+rf741cddc,search2,SocioDojo: Building Lifelong Analytical Agents with Real-world Text and Time Series,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r27a3b7b8,search2,PLANTAIN: Plan-Answer Interleaved Reasoning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf74d94f3,search2,Beyond Text-to-SQL: Can LLMs Really Debug Enterprise ETL SQL?,ICML,2026,no,yes,unsure,unsure,include,web: https://arxiv.org/html/2601.18119v1,include,
+ra63f423f,search2,Eureka-Moments in Transformers: Multi-Step Tasks Reveal Softmax Induced Optimization Problems,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rc0f91fce,search2,CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc51b55a6,search2,How to Synthesize Text Data without Model Collapse?,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r89e0df91,search2,Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rf48e18ed,search2,HuRef: HUman-REadable Fingerprint for Large Language Models,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r945e7fea,search2,Multi-Objective One-Shot Pruning for Large Language Models,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r0264cc27,search2,CodeSense: a Real-World Benchmark and Dataset for Code Semantic Reasoning,ICLR,2026,no,yes,unsure,unsure,include,abstract,include,
+rda417756,search2,Principled SVD-based Delta Compression via Quantization Error Minimization,ICML,2026,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r24af29ad,search2,CALM: Curiosity-Driven Auditing for Large Language Models,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r295216f2,search2,DriveGPT: Scaling Autoregressive Behavior Models for Driving,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r280670ff,search2,Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rde68efdf,search2,HCRMP: An LLM-Hinted Contextual Reinforcement Learning Framework for Autonomous Driving,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rae05cff2,search2,Success-Conditioning as Policy Improvement: The Optimization Problem Solved by Imitating Success,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r3561479b,search2,BEAT: Visual Backdoor Attacks on VLM-based Embodied Agents via Contrastive Trigger Learning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r32774c24,search2,On-the-fly Preference Alignment via Principle-Guided Decoding,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb990cde0,search2,MathConstruct: Challenging LLM Reasoning with Constructive Proofs,ICML,2025,no,yes,include,unsure,include,abstract,include,
+r50fafcf8,search2,Hybrid Preferences: Learning to Route Instances for Human vs. AI Feedback,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r405389b5,search2,Why Agentic Theorem Prover Works: A Statistical Provability Theory of Mathematical Reasoning Models,ICML,2026,no,yes,include,include,,abstract,include,
+ra0fd21b0,search2,SparseEval: Efficient Evaluation of Large Language Models by Sparse Optimization,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra9c75f7b,search2,Continuum Transformers Perform In-Context Learning by Operator Gradient Descent,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+rc3ef7158,search2,NExT: Teaching Large Language Models to Reason about Code Execution,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r69713d4c,search2,Escaping Whack-a-Mole: Optimizing Documentation as Repo-Specific Playbooks for Coding Agents,ICML,2026,no,yes,unsure,exclude,exclude,abstract,exclude,E3
+rd107f474,search2,FastPERT: Towards Fast Microservice Application Latency Prediction via Structural Inductive Bias over PERT Networks,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rb7139d58,search2,Transferable Graph Optimizers for ML Compilers,NeurIPS,2020,no,yes,exclude,exclude,,abstract,exclude,E1
+ra3e083d6,search2,On Discrete Prompt Optimization for Diffusion Models,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+red933ea4,search2,MrSteve: Instruction-Following Agents in Minecraft with What-Where-When Memory,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r8f982ce8,search2,Temporal Reasoning on Implicit Events from Distant Supervision,NAACL,2021,no,yes,unsure,unsure,include,abstract,include,
+reed5dbaa,search2,Image Translation as Diffusion Visual Programmers,ICLR,2024,no,yes,include,include,,abstract,include,
+r9c6aab19,search2,LogicTree: Structured Proof Exploration for Coherent and Rigorous Logical Reasoning with Large Language Models,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rad7a4eb9,search2,GAP: a Global Adaptive Pruning Method for Large Language Models,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r438b0207,search2,Textual Data Augmentation for Efficient Active Learning on Tiny Datasets,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+r76787a2a,search2,Encryption-Friendly LLM Architecture,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9adc11d5,search2,Towards Robust Mathematical Reasoning,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r818adc0b,search2,Neurons to Words: A Novel Method for Automated Neural Network Interpretability and Alignment,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd2151fad,search2,Search-R2: Enhancing Search-Integrated Reasoning via Actor-Refiner Collaboration,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r6a442be7,search2,UQE: A Query Engine for Unstructured Databases,NeurIPS,2024,no,yes,include,include,,abstract,include,
+r303d7506,search2,On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r15f794f7,search2,Interactive and Expressive Code-Augmented Planning with Large Language Models,ACL,2025,no,yes,include,include,,abstract,include,
+r8a0da9bf,search2,Predicting Lagrangian Multipliers for Mixed Integer Linear Programs,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r78c3c463,search2,"Mastering Text-to-Image Diffusion: Recaptioning, Planning, and Generating with Multimodal LLMs",ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r39694169,search2,PRACTIQ: A Practical Conversational Text-to-SQL dataset with Ambiguous and Unanswerable Queries,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r50d8dcff,search2,Battling against Tough Resister: Strategy Planning with Adversarial Game for Non-collaborative Dialogues,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r500f3503,search2,Intelligent OPC Engineer Assistant for Semiconductor Manufacturing,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rbf110e2b,search2,Braess’s Paradox of Generative AI,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E2
+r505e7df5,search2,Compositional Causal Reasoning Evaluation in Language Models,ICML,2025,no,yes,unsure,unsure,include,web: https://arxiv.org/html/2503.04556v4,include,
+rd0fb442b,search2,Mirror Descent Under Generalized Smoothness,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r72b7629e,search2,MulFCoder: Framework-conditioned Multi-agent for MLLM-based Multi-framework Front-end Code Generation,ICML,2026,no,yes,unsure,unsure,include,abstract,include,
+r8c8adfe4,search2,TART: A plug-and-play Transformer module for task-agnostic reasoning,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+re3524067,search2,Optimistic Verifiable Training by Controlling Hardware Nondeterminism,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rae81385f,search2,TrojanSQL: SQL Injection against Natural Language Interface to Database,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+ra6c4a68e,search2,AVIS: Autonomous Visual Information Seeking with Large Language Model Agent,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rf375a28c,search2,Plan then Act: Bi-level CAD Command Sequence Generation,ICLR,2026,no,yes,unsure,unsure,exclude,abstract,exclude,E3
+r28653b6c,search2,AgentXRay: White-Boxing Agentic Systems via Workflow Reconstruction,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r8cc956b3,search2,QUERY EFFICIENT DECISION BASED SPARSE ATTACKS AGAINST BLACK-BOX DEEP LEARNING MODELS,ICLR,2022,no,yes,exclude,exclude,,abstract,exclude,E1
+rc7612d04,search2,In-context Convergence of Transformers,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r23f447b9,search2,HeuriGym: An Agentic Benchmark for LLM-Crafted Heuristics in Combinatorial Optimization,ICLR,2026,no,yes,include,include,,abstract,include,
+r1fdd7870,search2,Graphix-T5: Mixing Pre-trained Transformers with Graph-Aware Layers for Text-to-SQL Parsing,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r58697d3f,search2,jqBench: a benchmark for reading and editing JSON from natural language and/or examples,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r7cdcbd4c,search2,Exploring Polyglot Harmony: On Multilingual Data Allocation for Large Language Models Pretraining,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r91da5417,search2,PARCO: Parallel AutoRegressive Models for Multi-Agent Combinatorial Optimization,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r7dd3b9d1,search2,Otter: Generating Tests from Issues to Validate SWE Patches,ICML,2025,no,yes,include,include,,abstract,include,
+r917f522d,search2,HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM Reasoning,NeurIPS,2025,no,yes,unsure,include,include,abstract,include,
+rc92bedf8,search2,SparseBERT: Rethinking the Importance Analysis in Self-attention,ICML,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+ra8b1c67f,search2,Prove Your Point!: Bringing Proof-Enhancement Principles to Argumentative Essay Generation,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rd3aee3c8,search2,CRUSH4SQL: Collective Retrieval Using Schema Hallucination For Text2SQL,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rb3e4fcef,search2,Position: Video as the New Language for Real-World Decision Making,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E5
+rba2064bd,search2,Circuit Component Reuse Across Tasks in Transformer Language Models,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra24d9205,search2,Small LLMs Are Weak Tool Learners: A Multi-LLM Agent,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rddad7054,search2,Bias Beware: The Impact of Cognitive Biases on LLM-Driven Product Recommendations,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc90c64cf,search2,ReST-KV: Robust KV Cache Eviction with Layer-wise Output Reconstruction and Spatial-Temporal Smoothing,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5e54214c,search2,AutoMixAlign: Adaptive Data Mixing for Multi-Task Preference Optimization in LLMs,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1bd828a8,search2,PixelCraft: A Multi-Agent system for High-Fidelity Visual Reasoning on Structured Images,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2067f701,search2,Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs,ICML,2025,no,yes,unsure,unsure,include,web: https://arxiv.org/pdf/2508.08292,include,
+r3ea9b361,search2,SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rbcd1121b,search2,LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rfd8cd4ea,search2,DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models,EMNLP,2024,no,yes,unsure,exclude,exclude,abstract,exclude,E3
+r73c9593d,search2,GNN-Transformer Task Planning Enhanced with Semantic-Driven Data Augmentation,AAAI,2025,no,yes,unsure,unsure,exclude,web: https://ojs.aaai.org/index.php/AAAI/article/view/33598/35753,exclude,E3
+r05ca565f,search2,MomaGraph: State-Aware Unified Scene Graphs with Vision-Language Models for Embodied Task Planning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r6df20643,search2,Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd93f7e39,search2,Sheetpedia: A 300K-Spreadsheet Corpus for Spreadsheet Intelligence and LLM Fine-Tuning,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r15637e1e,search2,Unlocking SLM Potential for Data Analysis Code Generation via Non-Parametric Knowledge Distillation,NeurIPS,2025,no,yes,include,include,,abstract,include,
+r71bca4e6,search2,Sampling-aware Adversarial Attacks Against Large Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rc935fe03,search2,Finding Transformer Circuits With Edge Pruning,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r3265c733,search2,On Linearizing Structured Data in Encoder-Decoder Language Models: Insights from Text-to-SQL,NAACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r2971f0ee,search2,G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r053aea9e,search2,Mixture Compressor for Mixture-of-Experts LLMs Gains More,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6a4e96a4,search2,Tool-Planner: Task Planning with Clusters across Multiple Tools,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re861538a,search2,Effective Interplay between Sparsity and Quantization: From Theory to Practice,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r3af24b4d,search2,Dual Reader-Parser on Hybrid Textual and Tabular Evidence for Open Domain Question Answering,ACL,2021,no,yes,include,include,,abstract,include,
+racf7a8d5,search2,MathArena: Evaluating LLMs on Uncontaminated Math Competitions,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb58eb43d,search2,ATLAS: Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r0d5e4c92,search2,Scaling Generative Verifiers For Natural Language Mathematical Proof Verification And Selection,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rbb84db06,search2,Are aligned neural networks adversarially aligned?,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rdea95eee,search2,BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning Dataset,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2fed04be,search2,DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents,NeurIPS,2025,no,yes,unsure,unsure,exclude,web: https://arxiv.org/html/2506.12104v2,exclude,E3
+r02c235c9,search2,"Is Your LLM Overcharging You? Tokenization, Transparency, and Incentives",ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd907da17,search2,Automatic Dialectic Jailbreak: A Framework for Generating Effective Jailbreak Strategies,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r61e5d72c,search2,Semformer: Transformer Language Models with Semantic Planning,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r444453be,search2,Bag of Tricks for Training Data Extraction from Language Models,ICML,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r9af22c6c,search2,EFFICIENT JAILBREAK ATTACK SEQUENCES ON LARGE LANGUAGE MODELS VIA MULTI-ARMED BANDIT-BASED CONTEXT SWITCHING,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r7c75797e,search2,CogSQL: A Cognitive Framework for Enhancing Large Language Models in Text-to-SQL Translation,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r280d3a25,search2,Towards Omni-RAG: Comprehensive Retrieval-Augmented Generation for Large Language Models in Medical Applications,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2bd0fbde,search2,Unlocking the Future: Exploring Look-Ahead Planning Mechanistic Interpretability in Large Language Models,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rea6d8b2c,search2,CoCoQuant: Breaking the Bandwidth Wall via Co-Optimized Communication and Computation Quantization,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rdb00035f,search2,POET: Training Neural Networks on Tiny Devices with Integrated Rematerialization and Paging,ICML,2022,no,yes,exclude,exclude,,abstract,exclude,E2
+r33847bc6,search2,BookSQL: A Large Scale Text-to-SQL Dataset for Accounting Domain,NAACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rf8c75719,search2,SQLFixAgent: Towards Semantic-Accurate Text-to-SQL Parsing via Consistency-Enhanced Multi-Agent Collaboration,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r4c820f1d,search2,Bird's-eye-view Informed Reasoning Driver,ICLR,2026,no,yes,unsure,exclude,exclude,abstract,exclude,E3
+rd430e143,search2,I Need Help! Evaluating LLM’s Ability to Ask for Users’ Support: A Case Study on Text-to-SQL Generation,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r5a2fe6ce,search2,Probe-Free Low-Rank Activation Intervention,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r4f56bde3,search2,Cognitive Linguistic Identity Fusion Score (CLIFS): A Scalable Cognition‐Informed Approach to Quantifying Identity Fusion from Text,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2b949c55,search2,LLMs Can Reason Faster Only If We Let Them,ICML,2025,no,yes,unsure,unsure,include,web: https://par.nsf.gov//servlets/purl/10616009,include,
+r5b150155,search2,"One Example Shown, Many Concepts Known! Counterexample-Driven Conceptual Reasoning in Mathematical LLMs",ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rea0ac954,search2,Generative Hierarchical Materials Search,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r6fdc795b,search2,Discrete Neural Flow Samplers with Locally Equivariant Transformer,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r9b279492,search2,PerfGuard: A Performance-Aware Agent for Visual Content Generation,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf4d09f40,search2,BIRD-INTERACT: Re-imagining Text-to-SQL Evaluation via Lens of Dynamic Interactions,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rc942263b,search2,Monarch: Expressive Structured Matrices for Efficient and Accurate Training,ICML,2022,no,yes,exclude,exclude,,abstract,exclude,E3
+r6e5fb3fd,search2,Surge: On the Potential of Large Language Models as General-Purpose Surrogate Code Executors,EMNLP,2025,no,yes,include,unsure,include,abstract,include,
+ra9e59775,search2,Multi-Objective Evolution of Heuristic Using Large Language Model,AAAI,2025,no,yes,include,include,,abstract,include,
+rb7324500,search2,Word-level Textual Adversarial Attacking as Combinatorial Optimization,ACL,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+rb68db152,search2,EAMET: ROBUST MASSIVE MODEL EDITING VIA EMBEDDING ALIGNMENT OPTIMIZATION,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r43da03b0,search2,LearNAT: Learning NL2SQL with AST-guided Task Decomposition for Large Language Models,ICLR,2026,no,yes,include,include,,abstract,include,
+r94d31fc5,search2,Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r16e2448a,search2,Evaluating LLM Reasoning in the Operations Research Domain with ORQA,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2ac15ccd,search2,Towards Foundation Models for Mixed Integer Linear Programming,ICLR,2025,no,yes,include,unsure,include,abstract,include,
+r44a2a0aa,search2,TransMIL: Transformer based Correlated Multiple Instance Learning for Whole Slide Image Classification,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E1
+red2c2e6f,search2,OpenTab: Advancing Large Language Models as Open-domain Table Reasoners,ICLR,2024,no,yes,include,include,,abstract,include,
+r16e77c49,search2,Language Models of Code Are Few-Shot Planners and Reasoners for Multi-Document Summarization with Attribution,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r51a1bc26,search2,Understanding the Effects of Noise in Text-to-SQL: An Examination of the BIRD-Bench Benchmark,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r36146f6e,search2,Auto-regressive In-context Demonstration Selection,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2e3b560d,search2,The Choice of Divergence: A Neglected Key to Mitigating Diversity Collapse in Reinforcement Learning with Verifiable Reward,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r53cf0612,search2,ALSO: Adversarial Online Strategy Optimization for Social Agents,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rbd02d1d6,search2,Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening,IJCAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r987875c8,search2,Rewards-in-Context: Multi-objective Alignment of Foundation Models with Dynamic Preference Adjustment,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r29889490,search2,Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc2a3f194,search2,FISTAPruner: Layer-wise Post-training Pruning for Large Language Models,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r0f7a6c47,search2,PlanGenLLMs: A Modern Survey of LLM Planning Capabilities,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E5
+rcbdd63d7,search2,COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r573780c9,search2,DuoRAT: Towards Simpler Text-to-SQL Models,NAACL,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r05c60157,search2,On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r98c32616,search2,Characterizing Mechanisms for Factual Recall in Language Models,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r059e2f3c,search2,Piper: Multidimensional Planner for DNN Parallelization,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E1
+rdd704f79,search2,Can LLMs Fix Issues with Reasoning Models? Towards More Likely Models for AI Planning,AAAI,2024,no,yes,include,include,,abstract,include,
+r055cb4be,search2,Generalizable Heuristic Generation Through LLMs with Meta-Optimization,ICLR,2026,no,yes,include,include,,abstract,include,
+r943250c2,search2,REI-Bench: Can Embodied Agents Understand Vague Human Instructions in Task Planning?,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf9bc3d6e,search2,A fast heuristic to optimize time-space tradeoff for large models,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E2
+r19873d93,search2,Equivalence of Context and Parameter Updates in Modern Transformer Blocks,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rbdd2d67a,search2,Flow Matching-Based Autonomous Driving Planning with Advanced Interactive Behavior Modeling,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r0a877e91,search2,Learning to Play Atari in a World of Tokens,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r379cefe0,search2,ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra57db942,search2,GRPO is Secretly a Process Reward Model,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rdf2872ae,search2,RoSA: Accurate Parameter-Efficient Fine-Tuning via Robust Adaptation,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rdf6ace3c,search2,"ACPBench Hard: Unrestrained Reasoning about Action, Change, and Planning",ICLR,2026,no,yes,include,include,,abstract,include,
+r10a13c4e,search2,On the Modeling Capabilities of Large Language Models for Sequential Decision Making,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rdb84c2a0,search2,NxMTransformer: Semi-Structured Sparsification for Natural Language Understanding via ADMM,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+recb85cde,search2,Constructing Taxonomies from Pretrained Language Models,NAACL,2021,no,yes,unsure,unsure,include,abstract,include,
+refa460e5,search2,MomentumSMoE: Integrating Momentum into Sparse Mixture of Experts,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rc66b7adc,search2,The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r440c5e4a,search2,Words & Weights: Streamlining Multi-Turn Interactions via Co-Adaptation,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r358c3370,search2,Preserving Deep Representations in One-Shot Pruning: A Hessian-Free Second-Order Optimization Framework,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r7281d300,search2,DsDm: Model-Aware Dataset Selection with Datamodels,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r74b70e58,search2,Language Model Decoding as Direct Metrics Optimization,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r55823948,search2,Singleton-Optimized Conformal Prediction,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E2
+rc96f7a64,search2,DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r8b27d7e6,search2,A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health,NeurIPS,2024,no,yes,include,include,,abstract,include,
+rf2ce460d,search2,Zeroth-Order Optimization Meets Human Feedback: Provable Learning via Ranking Oracles,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E2
+r2b5b3cf1,search2,FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch,ICML,2025,no,yes,include,include,,abstract,include,
+r2f4106e1,search2,SciEx: Benchmarking Large Language Models on Scientific Exams with Human Expert Grading and Automatic Grading,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rf402479f,search2,Great Minds Think Alike: Contextual Tacit Communication for Decentralized LLM-Agent Cooperation,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rdefccecf,search2,An Efficient Pruner for Large Language Model with Theoretical Guarantee,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r26508092,search2,SAFE-SQL: Self-Augmented In-Context Learning with Fine-grained Example Selection for Text-to-SQL,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r635e172a,search2,LACIE: Listener-Aware Finetuning for Calibration in Large Language Models,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r8c2709d8,search2,Plan for Speed: Dilated Scheduling for Masked Diffusion Language Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5ac6a9ed,search2,Pointerformer: Deep Reinforced Multi-Pointer Transformer for the Traveling Salesman Problem,AAAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+rc8f0a551,search2,Text2Analysis: A Benchmark of Table Question Answering with Advanced Data Analysis and Unclear Queries,AAAI,2024,no,yes,unsure,unsure,include,web: https://arxiv.org/pdf/2312.13671,include,
+rfcae7777,search2,Growing Through Experience: Scaling Episodic Grounding in Language Models,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r8d772a50,search2,KV Shifting Attention Enhances Language Modeling,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r273a9412,search2,Tensor Programs IIb: Architectural Universality Of Neural Tangent Kernel Training Dynamics,ICML,2021,no,yes,exclude,exclude,,abstract,exclude,E1
+rfca3f53b,search2,TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning,EMNLP,2025,no,yes,include,include,,abstract,include,
+r1e9f948f,search2,Zero-shot Model-based Reinforcement Learning using Large Language Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2903337a,search2,Speculative Streaming: Efficient and Scalable Speculative Decoding with Multi-Stream Attention,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb8e15c5a,search2,Learning Solution-Aware Transformers for Efficiently Solving Quadratic Assignment Problem,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r1324ffa1,search2,Image Difference Captioning via Adversarial Preference Optimization,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r59d47591,search2,Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra7971074,search2,Enhancing Domain Adaptation through Prompt Gradient Alignment,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r274e6690,search2,Optimizing Watermarks for Large Language Models,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r075fa1dc,search2,Exploiting Edited Large Language Models as General Scientific Optimizers,NAACL,2025,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+rbf664705,search2,ReaForest: Fostering Generative Video Reasoning for Spatial Planning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r78d9764f,search2,Flexora: Flexible Low-Rank Adaptation for Large Language Models,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6891217c,search2,Accelerating Toeplitz Neural Network with Constant-time Inference Complexity,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r6b40d8be,search2,Uncovering the Impact of Chain-of-Thought Reasoning for Direct Preference Optimization: Lessons from Text-to-SQL,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6cb5819e,search2,KODA: Contrastive Representation Comparison and Alignment for Vision-Language Foundation Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r6c2881b7,search2,DisPPO: Quantile-Based Distributional Reinforcement Learning for Large Language Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rfc418e27,search2,Amortized Planning with Large-Scale Transformers: A Case Study on Chess,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r8833a06a,search2,Sparse CLIP: Co-Optimizing Interpretability and Performance in Contrastive Learning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rb6389767,search2,Uncovering and Categorizing Social Biases in Text-to-SQL,ACL,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+racc70989,search2,Training Dynamics of Transformers to Recognize Word Co-occurrence via Gradient Flow Analysis,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r0bdbde8c,search2,"Plan in Sandbox, Navigate in Open Worlds: Learning Physics-Grounded Abstracted Experience for Embodied Navigation",ICML,2026,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+rd19c7fa0,search2,Enhancing Language Model Reasoning with Structured Multi-Level Modeling,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r05da616f,search2,clembench: Using Game Play to Evaluate Chat-Optimized Language Models as Conversational Agents,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r92c65b5c,search2,Global Resolution: Optimal Multi-Draft Speculative Sampling via Convex Optimization,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+raf8e4e91,search2,ProOPF: Benchmarking and Improving LLMs for Professional-Grade Power Systems Optimization Modeling,ICML,2026,no,yes,include,include,,abstract,include,
+rb257f9ae,search2,$AutoDrive\text{-}P^3$: Unified Chain of Perception–Prediction–Planning Thought via Reinforcement Fine-Tuning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2aba1aec,search2,SECODEPLT: A Unified Benchmark for Evaluating the Security Risks and Capabilities of Code GenAI,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9f71ca14,search2,Position: We Can’t Understand AI Using our Existing Vocabulary,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E5
+rc6fe4728,search2,LAVA: A Unified Framework for Finetuning Language and Vision Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2b719f88,search2,D$^3$: Dynamic Directional Graph-Constrained Data Scheduling for LLM Training,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r650b08c0,search2,Discrete Tilt Matching,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r21c4edc8,search2,Does Graph Prompt Work? A Data Operation Perspective with Theoretical Analysis,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rc8e3024d,search2,Constrained Entropic Unlearning: A Primal-Dual Framework for Large Language Models,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9dcd6554,search2,LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r99de435e,search2,Compress Large Language Models via Collaboration Between Learning and Matrix Approximation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra30b90aa,search2,OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling,ICML,2025,no,yes,include,include,,abstract,include,
+ree4ec241,search2,Can LLMs Explain Themselves Counterfactually?,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9de6d46e,search2,Language Models Learn Rare Phenomena from Less Rare Phenomena: The Case of the Missing AANNs,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r9872d980,search2,MMTU: A Massive Multi-Task Table Understanding and Reasoning Benchmark,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r64055b5c,search2,Can Large Language Models Enhance Predictions of Disease Progression? Investigating Through Disease Network Link Prediction,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r55361360,search2,"Completed Hyperparameter Transfer across Modules, Width, Depth, Batch and Duration",ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rb1904e71,search2,Agent Planning with World Knowledge Model,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r754b1264,search2,Beyond Static Pipelines: Learning Dynamic Workflows for Text-to-SQL,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r301cdf3e,search2,The Mystery of the Pathological Path-star Task for Language Models,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r733941e9,search2,The Case for Translation-Invariant Self-Attention in Transformer-Based Language Models,ACL,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r741d662d,search2,Injecting Multimodal Information into Rigid Protein Docking via Bi-level Optimization,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r53c8c482,search2,Improving Large Language Model Planning with Action Sequence Similarity,ICLR,2025,no,yes,include,include,,abstract,include,
+r93d7b991,search2,SQLens: An End-to-End Framework for Error Detection and Correction in Text-to-SQL,NeurIPS,2025,no,yes,unsure,unsure,include,web: https://arxiv.org/html/2506.04494v1,include,
+r134e716c,search2,NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re63f918a,search2,Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd1a76658,search2,From Words to Actions: Unveiling the Theoretical Underpinnings of LLM-Driven Autonomous Systems,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r5adab586,search2,Early Decisions Matter: Proximity Bias and Initial Trajectory Shaping in Non-Autoregressive Diffusion Language Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2fdc620b,search2,Beyond Heuristic Tuning: Power-Calibrated LLM Watermarking,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r71eda26a,search2,OPTFM: A Scalable Multi-View Graph Transformer for Hierarchical Pre-Training in Combinatorial Optimization,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rdee311d3,search2,REMem: Reasoning with Episodic Memory in Language Agent,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r8f7c9ace,search2,Automated Filtering of Human Feedback Data for Aligning Text-to-Image Diffusion Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rda278797,search2,SMD: Multi-view Safety-Critical Driving Video Generation in the Real-world Domain,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r26a0ea36,search2,An LLM-Empowered Adaptive Evolutionary Algorithm for Multi-Component Deep Learning Systems,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rbb173962,search2,Weaver: Interweaving SQL and LLM for Table Reasoning,EMNLP,2025,no,yes,include,include,,abstract,include,
+r808fc59f,search2,FlowBot: Inducing LLM Workflows with Bilevel Optimization and Textual Gradients,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r8d25529f,search2,AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd663319d,search2,Evaluating Cognitive Maps and Planning in Large Language Models with CogEval,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r71fadedd,search2,Exploring the Role of Reasoning Structures for Constructing Proofs in Multi-Step Natural Language Reasoning with Large Language Models,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r2bb5ed72,search2,Dynamic Time Lag Regression: Predicting What & When,ICLR,2020,no,yes,exclude,exclude,,abstract,exclude,E1
+rb79cb238,search2,What Planning Problems Can A Relational Neural Network Solve?,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r68dff69e,search2,Controlled Text Generation as Continuous Optimization with Multiple Constraints,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r56242368,search2,PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r4d23bfab,search2,LexiCon: a Benchmark for Planning under Temporal Constraints in Natural Language,NeurIPS,2025,no,yes,include,include,,abstract,include,
+r4c816b62,search2,No Need to Train Your RDB Foundation Model,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+rf11b841c,search2,Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning: A Scalable Bayesian Planner,ICML,2025,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r3e8a03b3,search2,PathWise: Planning through World Model for Automated Heuristic Design via Self-Evolving LLMs,ICML,2026,no,yes,include,include,,abstract,include,
+ra871f6bc,search2,Generalized Smooth Bilevel Optimization with Nonconvex Lower-Level,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+re22028b1,search2,Learning from Few Samples: A Novel Approach for High-Quality Malcode Generation,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb5695bb1,search2,DAMR: Efficient and Adaptive Context-Aware Knowledge Graph Question Answering with LLM-Guided MCTS,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r69b746a7,search2,MVR-cache: Optimizing Semantic Caching via Multi-Vector Retrieval and Learned Prompt Segmentation,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r14a812c1,search2,Improving Transformer Optimization Through Better Initialization,ICML,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+r8b83e0d3,search2,Representational Alignment Across Model Layers and Brain Regions with Hierarchical Optimal Transport,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r24a2a1a4,search2,VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra2179a00,search2,Can LLMs Reason Over Non-Text Modalities in a Training-Free Manner? A Case Study with In-Context Representation Learning,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r5bf7e410,search2,Benchmarking Agentic Workflow Generation,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rf9d1b589,search2,Reasoning Like Program Executors,EMNLP,2022,no,yes,include,include,,abstract,include,
+r737897a2,search2,GOAL: A Generalist Combinatorial Optimization Agent Learner,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r373aa1c7,search2,Exploring Diverse Generation Paths via Inference-time Stiefel Activation Steering,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r958d318b,search2,Learning Grounded Action Abstractions from Language,ICLR,2024,no,yes,include,include,,abstract,include,
+reb0bf27c,search2,The Shadow Price of Reasoning: Economic Perspective on Optimal Budget Allocation for LLMs,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5f267c58,search2,AutoAct: Automatic Agent Learning from Scratch for QA via Self-Planning,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r4962d1f4,search2,Agent-as-a-Judge: Evaluate Agents with Agents,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra50eef7f,search2,Discriminator-Guided Embodied Planning for LLM Agent,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra09eca30,search2,Think Twice Before You Act: Protecting LLM Agents Against Tool Description Poisoning via Isolated Planning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+re27e4412,search2,VideoSEAL: Mitigating Evidence Misalignment in Agentic Long Video Understanding by Decoupling Answer Authority,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r19d975f5,search2,GRAPE: Optimize Data Mixture for Group Robust Multi-target Adaptive Pretraining,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r234cdc12,search2,Differentiable Spatial Planning using Transformers,ICML,2021,no,yes,exclude,exclude,,abstract,exclude,E1
+recaa2642,search2,Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6f30b300,search2,Rethinking the Role of Prompting Strategies in LLM Test-Time Scaling: A Perspective of Probability Theory,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r7c8f8e9e,search2,Hierarchical Semantic-Augmented Navigation: Optimal Transport and Graph-Driven Reasoning for Vision-Language Navigation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r11025370,search2,CALM: Co-evolution of Algorithms and Language Model for Automatic Heuristic Design,ICLR,2026,no,yes,include,include,,abstract,include,
+r0dbd5e00,search2,SWE-SQL: Illuminating LLM Pathways to Solve User SQL Issues in Real-World Applications,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re098cea0,search2,Affordances-Oriented Planning Using Foundation Models for Continuous Vision-Language Navigation,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r3978f1ec,search2,Plan-R1: Safe and Feasible Trajectory Planning as Language Modeling,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+re21c4924,search2,TSDS: Data Selection for Task-Specific Model Finetuning,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r84d64bb1,search2,ACTIVE-o3 : Empowering MLLMs with Active Perception via Pure Reinforcement Learning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd7256eed,search2,BVS: Bayesian Visual Search with Multimodal Large Language Model for Fine-grained Perception,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r95a3cde2,search2,Low-dimensional topology of deep neural networks,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+rf5e84c57,search2,In-context Exploration-Exploitation for Reinforcement Learning,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r42f25aee,search2,The Geometry of Sequential Learning: Lie-Bracket Prediction of Transfer Order,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r3ea3cb03,search2,Aioli: A Unified Optimization Framework for Language Model Data Mixing,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r07efbd27,search2,Mitigating Bias in Locally Constrained Decoding via Tractable Proposals,ICML,2026,no,yes,include,include,,abstract,include,
+r870d8660,search2,Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers,NeurIPS,2025,no,yes,unsure,exclude,include,abstract,include,
+rdf13108a,search2,PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r7eb08765,search2,Multitask Pretraining with Structured Knowledge for Text-to-SQL Generation,ACL,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r701a691d,search2,Efficient Evolutionary Search Over Chemical Space with Large Language Models,ICLR,2025,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r51c8e81b,search2,Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf2f5cccc,search2,From Conversation to Query Execution: Benchmarking User and Tool Interactions for EHR Database Agents,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r202c5cc7,search2,Aligning Diffusion Behaviors with Q-functions for Efficient Continuous Control,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+raacbb623,search2,Explainable Reinforcement Learning from Human Feedback to Improve Alignment,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+raf2bdd7f,search2,Sycophancy Mitigation Through Reinforcement Learning with Uncertainty-Aware Adaptive Reasoning Trajectories,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r46f282f6,search2,Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+recab9ac7,search2,Plan ahead: Self-Supervised Text Planning for Paragraph Completion Task,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+rc42f166b,search2,SSVPO: Effective Step-Level Credit Assignment for RL Training of Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd7d792df,search2,Auto-Cypher: Improving LLMs on Cypher generation via LLM-supervised generation-verification framework,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rfca53293,search2,How Transformers Learn Causal Structure with Gradient Descent,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r8481ad28,search2,DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r093afa6a,search2,CO2: Efficient Distributed Training with Full Communication-Computation Overlap,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r34560d26,search2,Beyond Verifiable Rewards: Scaling Reinforcement Learning in Language Models to Unverifiable Data,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r8829bf0e,search2,SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra93c75a7,search2,PARROT: A Benchmark for Evaluating LLMs in Cross-System SQL Translation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r66c4c1cf,search2,An LLM-Based Approach for Insight Generation in Data Analysis,NAACL,2025,no,yes,unsure,exclude,include,abstract,include,
+r9ca7d8d7,search2,Stochastic Anderson Mixing for Nonconvex Stochastic Optimization,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r67d9eaf2,search2,Tailoring Self-Attention for Graph via Rooted Subtrees,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+rad25a14c,search2,Towards Robust Knowledge Unlearning: An Adversarial Framework for Assessing and Improving Unlearning Robustness in Large Language Models,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rdbbf957e,search2,Alignment of CNN and Human Judgments of Geometric and Topological Concepts,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r39126d35,search2,HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rf16707b2,search2,MagR: Weight Magnitude Reduction for Enhancing Post-Training Quantization,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r7c0da257,search2,Open Grounded Planning: Challenges and Benchmark Construction,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r99577b6b,search2,Code Driven Planning with Domain-Adaptive Selector,ICLR,2026,no,yes,include,include,,abstract,include,
+r0ba0902e,search2,ScaleBiO: Scalable Bilevel Optimization for LLM Data Reweighting,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rca7029ed,search2,Position: Data-driven Discovery with Large Generative Models,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E5
+r3bb8d6ec,search2,Leveraging Table Content for Zero-shot Text-to-SQL with Meta-Learning,AAAI,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r2ea36910,search2,Selene: Pioneering Automated Proof in Software Verification,ACL,2024,no,yes,include,include,,abstract,include,
+r494dde6f,search2,Generating Traffic Scenarios via In-Context Learning to Learn Better Motion Planner,AAAI,2025,no,yes,unsure,include,include,abstract,include,
+r4458b284,search2,SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r49561da0,search2,Flow: Modularized Agentic Workflow Automation,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r7e33714a,search2,Are LLMs effective psychological assessors? Leveraging adaptive RAG for interpretable mental health screening through psychometric practice,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r746d3aa3,search2,Rethinking Fine-Tuning when Scaling Test-Time Compute: Limiting Confidence Improves Mathematical Reasoning,NeurIPS,2025,no,yes,include,unsure,include,abstract,include,
+rf0749419,search2,Steering the Herd: A Framework for LLM-based Control of Social Learning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r76a4c0b3,search2,PTD-SQL: Partitioning and Targeted Drilling with LLMs in Text-to-SQL,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r4a7b64ce,search2,PlanLLM: Video Procedure Planning with Refinable Large Language Models,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r3242fde5,search2,Exploring Chain of Thought Style Prompting for Text-to-SQL,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rad5f309d,search2,Multi-Modal Grounded Planning and Efficient Replanning for Learning Embodied Agents with a Few Examples,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r79273613,search2,AdPO: Enhancing the Adversarial Robustness of Large Vision-Language Models with Preference Optimization,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r24730a74,search2,polybasic Speculative Decoding Through a Theoretical Perspective,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r89ed1576,search2,Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r580f62f6,search2,Synthesizing Text-to-SQL Data from Weak and Strong LLMs,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r15103a8e,search2,Verifying Chain-of-Thought Reasoning via Its Computational Graph,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rbcf29cc8,search2,DAComp: Benchmarking Data Agents across the Full Data Intelligence Lifecycle,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r76c47ad3,search2,ToolTree: Efficient LLM Tool Planning via Dual-Feedback Monte Carlo Tree Search and Bidirectional Pruning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra757d2c0,search2,FIRE: Frobenius-Isometry Reinitialization for Balancing the Stability–Plasticity Tradeoff,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r4a497fe8,search2,Automatically Auditing Large Language Models via Discrete Optimization,ICML,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rd84d2c6b,search2,Graph-Link: Bridging the Semantic-Structural Gap in Text-to-SQL via Constrained Subgraph Induction,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+ra0cfdffc,search2,STEAD: Robust Provably Secure Linguistic Steganography with Diffusion Language Model,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd5cc28e4,search2,Towards Long-delayed Sparsity: Learning a Better Transformer through Reward Redistribution,IJCAI,2023,no,yes,exclude,exclude,,abstract,exclude,E1
+r49fcaceb,search2,A Bayesian Approach to Data Point Selection,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r3142d9b0,search2,ThetaEvolve: Test-time Learning on Open Problems,ICML,2026,no,yes,include,include,,abstract,include,
+rc9acf0b5,search2,Set Interdependence Transformer: Set-to-Sequence Neural Networks for Permutation Learning and Structure Prediction,IJCAI,2022,no,yes,exclude,exclude,,abstract,exclude,E1
+re8d3ff44,search2,DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r46e18dd8,search2,Harnessing Temporal Databases for Systematic Evaluation of Factual Time-Sensitive Question-Answering in LLMs,ICLR,2026,no,yes,include,include,,abstract,include,
+r34f3b46a,search2,HSEvo: Elevating Automatic Heuristic Design with Diversity-Driven Harmony Search and Genetic Algorithm Using LLMs,AAAI,2025,no,yes,include,include,,abstract,include,
+rec702225,search2,Is One Layer Enough? Understanding Inference Dynamics in Tabular Foundation Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r1ef51dd4,search2,EvoPress: Accurate Dynamic Model Compression via Evolutionary Search,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1da7f698,search2,TGDPO: Harnessing Token-Level Reward Guidance for Enhancing Direct Preference Optimization,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rfe11d1ef,search2,ROPO: Robust Preference Optimization for Large Language Models,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r6728f9f5,search2,LayoutGPT: Compositional Visual Planning and Generation with Large Language Models,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r53b25c5e,search2,OmniEVA: Embodied Versatile Planner via Task-Adaptive 3D-Grounded and Embodiment-aware Reasoning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rec36fa72,search2,The Realignment Problem: When Right becomes Wrong in LLMs,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+re80c8fe2,search2,Numina-Lean-Agent: An Open and General Agentic Reasoning System for Formal Mathematics,ICML,2026,no,yes,include,include,,abstract,include,
+ra39f39fd,search2,SPaRC: A Spatial Pathfinding Reasoning Challenge,EMNLP,2025,no,yes,unsure,unsure,include,web: https://aclanthology.org/2025.emnlp-main.526.pdf,include,
+rfdd3e1a1,search2,PlanBench: An Extensible Benchmark for Evaluating Large Language Models on Planning and Reasoning about Change,NeurIPS,2023,no,yes,include,include,,abstract,include,
+r8f16213a,search2,Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2a6f635d,search2,Universality of Linear Recurrences Followed by Non-linear Projections: Finite-Width Guarantees and Benefits of Complex Eigenvalues,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r2c88f6ba,search2,Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rab64b6eb,search2,ChinaTravel: An Open-Ended Travel Planning Benchmark with Compositional Constraint Validation for Language Agents,ICLR,2026,no,yes,include,include,,abstract,include,
+r86835277,search2,GPTailor: Large Language Model Pruning Through Layer Cutting and Stitching,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r10a5ea94,search2,Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+racf79cb9,search2,Bag of Tricks for Inference-time Computation of LLM Reasoning,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r5195562a,search2,Towards End-to-End Image Compression and Analysis with Transformers,AAAI,2022,no,yes,exclude,exclude,,abstract,exclude,E1
+rd10fb8c0,search2,HarmoDT: Harmony Multi-Task Decision Transformer for Offline Reinforcement Learning,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r3c7d464f,search2,Cascadia: An Efficient Cascade Serving System for Large Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r9d475f61,search2,Language Agents Meet Causality -- Bridging LLMs and Causal World Models,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2ca74c32,search2,InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback,NeurIPS,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r30d56231,search2,Align-Pro: A Principled Approach to Prompt Optimization for LLM Alignment,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re6b435e5,search2,Efficient Turing Machine Simulation with Transformers,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r5c8b7540,search2,GraphPlanner: Graph-Based Agentic Routing for LLMs,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rf430916b,search2,Panacea: Pareto Alignment via Preference Adaptation for LLMs,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rbbb330ef,search2,Functional Homotopy: Smoothing Discrete Optimization via Continuous Parameters for LLM Jailbreak Attacks,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd3f5f42f,search2,Numerical Optimizations for Weighted Low-rank Estimation on Language Models,EMNLP,2022,no,yes,exclude,exclude,,abstract,exclude,E3
+r7ce7aef0,search2,Spectral Scaling Laws in Language Models: emphHow Effectively Do Feed-Forward Networks Use Their Latent Space?,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc7f4a6c1,search2,Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving,ICLR,2026,no,yes,unsure,unsure,exclude,web: https://arxiv.org/html/2509.20109v1,exclude,E3
+r0f0e6e94,search2,Three Years of r/ChatGPT: Societal Impact Evaluations from Social Media Data,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r4fdcc1f8,search2,Geometry of Reason: Spectral Signatures of Valid Mathematical Reasoning,ICML,2026,no,yes,unsure,unsure,include,abstract,include,
+r25d6452d,search2,AlgoVeri: An Aligned Benchmark for Verified Code Generation on Classical Algorithms,ICML,2026,no,yes,include,include,,abstract,include,
+rbbd46666,search2,FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU,ICML,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r336a6df3,search2,VeRO: A Harness for Agents to Optimize Agents,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r08484b46,search2,Contextualizing biological perturbation experiments through language,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r094dbdda,search2,Language Instructed Reinforcement Learning for Human-AI Coordination,ICML,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+red617888,search2,DDP-WM: Disentangled Dynamics Prediction for Efficient World Models,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r260f07e0,search2,Robust Federated Finetuning of LLMs via Alternating Optimization of LoRA,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rf0740363,search2,DPaI: Differentiable Pruning at Initialization with Node-Path Balance Principle,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rcdadde93,search2,World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rce7f9562,search2,Emergent Risk Awareness in Rational Agents under Resource Constraints,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r5e5fa0ee,search2,Online Linear Programming for Multi-Objective Routing in LLM Serving,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r935ce0b6,search2,MindZero: Learning Online Mental Reasoning With Zero Annotations,ICML,2026,no,yes,unsure,unsure,include,web: https://arxiv.org/pdf/2606.00240,include,
+rbfc5327f,search2,Planner Aware Path Learning in Diffusion Language Models Training,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r64742587,search2,Task Planning for Visual Room Rearrangement under Partial Observability,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rb032d6ad,search2,NaDRO: Leveraging Dual-Reward Strategies for LLMs Training on Noisy Data,NeurIPS,2025,no,yes,unsure,unsure,include,abstract,include,
+rb5ae1c3b,search2,"Same Content, Different Representations: A Controlled Study for Table QA",ICLR,2026,no,yes,include,include,,abstract,include,
+rb52b76e5,search2,Coarse-to-Fine Grounded Memory for LLM Agent Planning,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r2a1a8129,search2,Neural Residual Diffusion Models for Deep Scalable Vision Generation,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r77f1ac54,search2,Synchromesh: Reliable Code Generation from Pre-trained Language Models,ICLR,2022,no,yes,include,include,,abstract,include,
+r15f51dd7,search2,Finally Rank-Breaking Conquers MNL Bandits: Optimal and Efficient Algorithms for MNL Assortment,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r6d7d1ac9,search2,Beyond Drift: Stabilizing Subjective LLM Evaluation with Information-Theoretic Rubrics,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r9c8cac97,search2,STAR: A Benchmark for Situated Reasoning in Real-World Videos,NeurIPS,2021,no,yes,unsure,unsure,exclude,abstract,exclude,E2
+ra79a6995,search2,Fuzzy Collaborative Reasoning,AAAI,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r420dd822,search2,Towards Efficient LLMs Annealing with Principled Sample Selection,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+re0a99963,search2,CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling,ICML,2026,no,yes,include,include,,abstract,include,
+r9f71ca5f,search2,The Pitfalls of Next-Token Prediction,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r3e3ad72d,search2,TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition,NAACL,2024,no,yes,include,include,,abstract,include,
+r81937268,search2,TOPLOC: A Locality Sensitive Hashing Scheme for Trustless Verifiable Inference,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re72a1dad,search2,DCG-SQL: Enhancing In-Context Learning for Text-to-SQL with Deep Contextual Schema Link Graph,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r52cbafc4,search2,Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rdc7f8a05,search2,On the Planning Abilities of Large Language Models - A Critical Investigation,NeurIPS,2023,no,yes,include,include,,abstract,include,
+rdef3c3a2,search2,KnowledgeSmith: Uncovering Knowledge Updating in LLMs with Model Editing and Unlearning,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+re2a5ce52,search2,QA-NatVer: Question Answering for Natural Logic-based Fact Verification,EMNLP,2023,no,yes,include,include,,abstract,include,
+r2ee9243a,search2,JoPA: Explaining Large Language Model’s Generation via Joint Prompt Attribution,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r58f734a3,search2,Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+re8bf55d2,search2,TANDEM: Bi-Level Data Mixture Optimization with Twin Networks,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r59fa2368,search2,ExCyTIn-Bench: Evaluating LLM agents on Cyber Threat Investigation,ICML,2026,no,yes,unsure,unsure,include,abstract,include,
+r22c6ac6d,search2,Memorization Sinks: Isolating Memorization during LLM Training,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r67009460,search2,EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r68b3e689,search2,Theoretical Analysis of Hierarchical Language Recognition and Generation by Transformers without Positional Encoding,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r2f9c0f45,search2,LeeBERT: Learned Early Exit for BERT with cross-level optimization,ACL,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+rbb9b9f2d,search2,Tvcache: A Tool-Value Cache for Post-Training LLM Agents,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r8fcefd36,search2,Compact Proofs of Model Performance via Mechanistic Interpretability,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E1
+r7ca073b3,search2,BOFormer: Learning to Solve Multi-Objective Bayesian Optimization via Non-Markovian RL,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+rd79a45d5,search2,Graph World Model,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra3efc18d,search2,BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models,ICLR,2025,no,yes,unsure,unsure,exclude,abstract,exclude,E3
+r19a88b8f,search2,Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r39270207,search2,Mitigating Reward Overoptimization via Lightweight Uncertainty Estimation,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r415034ac,search2,Effective Unsupervised Domain Adaptation with Adversarially Trained Language Models,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+r48fe9d3a,search2,GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL,EMNLP,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc1af6cf6,search2,Agent Smith: A Single Image Can Jailbreak One Million Multimodal LLM Agents Exponentially Fast,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r39b608d8,search2,B4: A Black-Box Scrubbing Attack on LLM Watermarks,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra00ea542,search2,Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9cdc4b55,search2,SM3-Text-to-Query: Synthetic Multi-Model Medical Text-to-Query Benchmark,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rf6071f3a,search2,Tru-POMDP: Task Planning Under Uncertainty via Tree of Hypotheses and Open-Ended POMDPs,NeurIPS,2025,no,yes,include,unsure,include,abstract,include,
+redae2537,search2,Referee Can Play: An Alternative Approach to Conditional Generation via Model Inversion,ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+ra406fbaf,search2,LILA: A Unified Benchmark for Mathematical Reasoning,EMNLP,2022,no,yes,include,include,,abstract,include,
+ra7dff4cc,search2,The Limits of Inference Scaling Through Resampling,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r90daf51e,search2,Diffusion-Based Planning for Autonomous Driving with Flexible Guidance,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r6ae9e71e,search2,Rethinking LLM Evaluation: Can We Evaluate LLMs with 200× Less Data?,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r2c565e29,search2,RoboMP$^2$: A Robotic Multimodal Perception-Planning Framework with Multimodal Large Language Models,ICML,2024,no,yes,unsure,exclude,include,web: https://openreview.net/pdf/c28b6e15acaae2a0445aee5fe01553ae01a97911.pdf,include,
+re1b8b09d,search2,MCCE: A Framework for Multi-LLM Collaborative Search in Discrete Spaces with Similarity-Filtered Preference Learning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r5cbd875d,search2,MSc-SQL: Multi-Sample Critiquing Small Language Models For Text-To-SQL Translation,NAACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r99ffbfb6,search2,Only Train Once: A One-Shot Neural Network Training And Pruning Framework,NeurIPS,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+r8baa5864,search2,Memory Layers at Scale,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rea410058,search2,Hierarchical Representations for Cross-task Automated Heuristic Design using LLMs,ICML,2026,no,yes,include,include,,abstract,include,
+r99746cc4,search2,SYMPHONY: Synergistic Multi-agent Planning with Heterogeneous Language Model Assembly,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r001c14b1,search2,AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning,NeurIPS,2024,no,yes,include,include,,abstract,include,
+r62a3ebe3,search2,Latent Planning Emerges with Scale,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rb08585b2,search2,Can We Further Elicit Reasoning in LLMs? Critic-Guided Planning with Retrieval-Augmentation for Solving Challenging Tasks,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+ra9b8514d,search2,World-aware Planning Narratives Enhance Large Vision-Language Model Planner,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r021bc015,search2,Fine-grained Video Dubbing Duration Alignment with Segment Supervised Preference Optimization,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rd155a5af,search2,SEC-bench: Automated Benchmarking of LLM Agents on Real-World Software Security Tasks,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rba30eaae,search2,Evaluating Cross-Domain Text-to-SQL Models and Benchmarks,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r403112c6,search2,On the Ability of Transformers to Verify Plans,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E1
+r47d7e238,search2,Best-of-Infinity: Asymptotic Performance of Test-Time Compute,ICLR,2026,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r7d117a8b,search2,Stepwise Extractive Summarization and Planning with Structured Transformers,EMNLP,2020,no,yes,exclude,exclude,,abstract,exclude,E3
+rb32401a5,search2,Improving Model-Based Reinforcement Learning by Converging to Flatter Minima,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r1568db82,search2,Learning to Correct for QA Reasoning with Black-box LLMs,EMNLP,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r4a00d7ea,search2,Syntactic and Semantic Control of Large Language Models via Sequential Monte Carlo,ICLR,2025,no,yes,include,include,,abstract,include,
+r7b1d90fd,search2,Wide-Horizon Thinking and Simulation-Based Evaluation for Real-World LLM Planning with Multifaceted Constraints,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rb319abc6,search2,ToMA: Token Merge with Attention for Diffusion Models,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E1
+r4e533220,search2,Nested Learning: The Illusion of Deep Learning Architectures,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rcd676760,search2,Dr.Spider: A Diagnostic Evaluation Benchmark towards Text-to-SQL Robustness,ICLR,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+rf99de981,search2,OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r9023c0fc,search2,ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r601ba8bc,search2,Distributional Alignment Games for Answer-Level Fine-Tuning,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r32677a8d,search2,"Position: Towards Unified Alignment Between Agents, Humans, and Environment",ICML,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r2b89a94a,search2,LQ-LoRA: Low-rank plus Quantized Matrix Decomposition for Efficient Language Model Finetuning,ICLR,2024,no,yes,exclude,unsure,exclude,abstract,exclude,E3
+r0ee7ac97,search2,Solving Inequality Proofs with Large Language Models,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r99a289a4,search2,Causal-Guided Active Learning for Debiasing Large Language Models,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rd6a950f8,search2,Principled RL for Diffusion LLMs Emerges from a Sequence-Level Perspective,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r23ed6b65,search2,OPEx: A Component-Wise Analysis of LLM-Centric Agents in Embodied Instruction Following,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+re1a9b025,search2,"The Structural Origin of Attention Sink: Variance Discrepancy, Super Neurons, and Dimension Disparity",ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rfb07f54b,search2,SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r21da09cd,search2,Poison as Cure: Visual Noise for Mitigating Object Hallucinations in LVMs,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rc97d0ca3,search2,Direct Prompt Optimization with Continuous Representations,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r12b1939c,search2,TALON: A Multi-Agent Framework for Long-Table Exploration and Question Answering,EMNLP,2025,no,yes,unsure,unsure,include,web: https://aclanthology.org/2025.emnlp-main.1393.pdf,include,
+r4fdb4217,search2,Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r3df54320,search2,Plug-and-Play Policy Planner for Large Language Model Powered Dialogue Agents,ICLR,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+rc7d46874,search2,RULE: Reinforcement UnLEarning Achieves Forget-retain Pareto Optimality,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+rdb969beb,search2,CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r04b9c5de,search2,"Towards Professional-Grade Financial Agents: Benchmarking, Tooling, and Structured Reasoning",ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r3bbe8648,search2,MineAnyBuild: Benchmarking Spatial Planning for Open-world AI Agents,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r0aa09102,search2,Goal-Driven Explainable Clustering via Language Descriptions,EMNLP,2023,no,yes,unsure,include,include,abstract,include,
+rac2aeb9a,search2,Robust Multi-Objective Controlled Decoding of Large Language Models,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+r7e87588f,search2,Learning to Reason from Feedback at Test-Time,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r43d583fa,search2,OPIC: Enhancing Language Model Merging via Optimizing In-Context Capability,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd0035cf6,search2,Multi-Tier Platform for Cognizing Massive Electroencephalogram,IJCAI,2022,no,yes,exclude,exclude,,abstract,exclude,E1
+r4012aab0,search2,PAC-tuning: Fine-tuning Pre-trained Language Models with PAC-driven Perturbed Gradient Descent,EMNLP,2023,no,yes,exclude,exclude,,abstract,exclude,E3
+r5431d0b0,search2,Determinantal Beam Search,ACL,2021,no,yes,exclude,exclude,,abstract,exclude,E3
+rf4ac9ada,search2,Seesaw: Accelerating Training by Balancing Batch Size and Learning Rate Scheduling,ICLR,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rd9d6d218,search2,Tri-Level Navigator: LLM-Empowered Tri-Level Learning for Time Series OOD Generalization,NeurIPS,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+re1df4db3,search2,Beyond the Answer: Advancing Multi-Hop QA with Fine-Grained Graph Reasoning and Evaluation,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r648a5264,search2,DUO: No Compromise to Accuracy Degradation,NeurIPS,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r8e5e63eb,search2,Opt-Miner: Empowering Information-Seeking Agent with Tree-Guided Data Synthesis for Optimization Modeling,ICML,2026,no,yes,include,include,,abstract,include,
+re56481df,search2,Benchmarking and Improving Text-to-SQL Generation under Ambiguity,EMNLP,2023,no,yes,unsure,unsure,include,web: https://openreview.net/pdf?id=a0yFO9gKc5,include,
+r5ca89abb,search2,OptiTree: Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling,NeurIPS,2025,no,yes,include,include,,abstract,include,
+r3241766c,search2,PsyAdvisor: A Plug-and-Play Strategy Advice Planner with Proactive Questioning in Psychological Conversations,ACL,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r354512f6,search2,Missci: Reconstructing Fallacies in Misrepresented Science,ACL,2024,no,yes,exclude,exclude,,abstract,exclude,E3
+r5fa8cfd2,search2,BLISS: A Lightweight Bilevel Influence Scoring Method for Data Selection in Language Model Pretraining,ICML,2026,no,yes,exclude,exclude,,abstract,exclude,E3
+rb9b9c243,search2,Exploring the Design Space of Visual Context Representation in Video MLLMs,ICLR,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r1c89d43c,search2,From Debate to Equilibrium: Belief‑Driven Multi‑Agent LLM Reasoning via Bayesian Nash Equilibrium,ICML,2025,no,yes,exclude,exclude,,abstract,exclude,E3
+r14dc58c0,search2,NL2TL: Transforming Natural Languages to Temporal Logics using Large Language Models,EMNLP,2023,no,yes,unsure,unsure,exclude,web: https://aclanthology.org/2023.emnlp-main.985.pdf,exclude,E3
+r1cc24273,search2,AnyTOD: A Programmable Task-Oriented Dialog System,EMNLP,2023,no,yes,include,include,,abstract,include,
+rb17006b6,search2,"Liar, Liar, Logical Mire: A Benchmark for Suppositional Reasoning in Large Language Models",EMNLP,2024,no,yes,unsure,unsure,include,web: https://aclanthology.org/2024.emnlp-main.404.pdf,include,
+r2bf5e844,knownitem,DetermLR: Augmenting LLM-based Logical Reasoning from Indeterminacy to Determinacy,ACL,2024,no,no,exclude,exclude,,abstract,exclude,E3
+rd615e533,knownitem,Conditional and Modal Reasoning in Large Language Models,EMNLP,2024,no,no,exclude,exclude,,abstract,exclude,E3
+r5a1c91eb,knownitem,Consistency Checks for Language Model Forecasters,ICLR,2025,no,no,exclude,unsure,exclude,web: https://openreview.net/pdf?id=r5IXBlTCGc,exclude,E3
+rb784dedc,knownitem,Exploring Self-supervised Logic-enhanced Training for Large Language Models,NAACL,2024,no,no,exclude,exclude,,abstract,exclude,E3
+rcddc76c4,knownitem,Logic-Guided Data Augmentation and Regularization for Consistent Question Answering,ACL,2020,no,no,include,include,,abstract,include,
+rcfd664bd,knownitem,Consistency Analysis of ChatGPT,EMNLP,2023,no,no,exclude,exclude,,abstract,exclude,E3
+r8f364092,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfd8b9d96,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r11e3ed43,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8aa3fa51,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9ae601cb,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r49fb2aa1,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfbed9718,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9c228d40,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc63dc221,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r16e2335d,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r61377961,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1bff0a27,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9021d369,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4ddec05d,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra0dd1fe6,audit:neither,,,,no,no,unsure,unsure,exclude,abstract (adjudicated by the orchestrating assistant),exclude,E1
+rbba70127,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7135eda7,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcf461a9c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd0a0e4be,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd71b58e1,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc5b0fea0,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf7f4722b,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb3313cfa,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r083fe8fa,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r254b65f6,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3d4ce5f6,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2fbcb4de,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc6397b91,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4eaabb68,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb944d8e7,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r744ffdff,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raa246b31,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r64e56ca3,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r726a9c4f,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r18e418af,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd403af22,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r60f0888c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdf5e5d62,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+radc252e9,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1171a30d,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd48155a0,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r711e8515,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r54b15a74,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd83260e8,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r40741722,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4d5dc896,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1cf0624f,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+reb47d21d,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf759823b,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rafe58b4c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9790cec6,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdadedf73,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r23dbc643,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb6731cdc,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r15652056,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd8610b43,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc5ff8a3c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r11c3ebf9,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r07e7b1fd,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r78508447,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8fb8b333,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd850591c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb2770e67,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9bfa2ac2,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0247fb76,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r79583ea8,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r19657170,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2229027f,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8e6c0e82,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r572e8613,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcc053e37,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1193e1d8,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1f87296e,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r903ccbb3,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd30ee0f5,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb53016b8,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbe12b5cc,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0a6e3e6a,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2a991d06,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r79ad1ad8,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2d52d420,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7e025b06,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcd78d829,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra740c8ed,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfd1ec7e6,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rad40786c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc3fdfa86,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4486a34c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raf32a617,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6b6e0d6c,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4d5cdce0,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r86b371f2,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf2dcc548,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4aa9882e,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r02072801,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7a457943,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r21ed6e75,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb5a204b6,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2c563dc9,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2ce19ca9,audit:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8c143942,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r57332121,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r49ed5e69,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r030e3edd,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfe0a6624,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfa4d5dda,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r397e6e88,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2314882c,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1265206b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r98a69c0b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5140e677,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1a36f835,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra9926680,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8f7a4e32,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r72fadfed,audit:sym_only,,,,no,no,include,include,include,abstract,include,
+r6a5e0877,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc6d14bcf,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbc943eb4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb060db85,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+refae2898,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfd3aedbb,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0d89e99a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r66e37ebc,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r18e2f09f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8a675090,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r34f822f2,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb76a99c7,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+raa1b797e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0d49738c,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbfc3ac54,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4bcebe08,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4a182424,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb741f8bc,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r61c1505c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rda3f2f67,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r903d87ae,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r86c08553,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2a2732e8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2ab1c46c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7f18ec4a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb87afbf1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0ceafe03,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rab3b685f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r969d2631,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2d363490,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf81ac833,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc6f3abef,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3a9e9216,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r802a837a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd8be4298,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra4673d70,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbe7c9f74,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4bb0d97a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc21955dd,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8fe23094,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd88b5db1,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5019d570,audit:lm_only,,,,no,no,unsure,exclude,include,web: https://arxiv.org/pdf/2605.11922,include,
+raf896d09,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r68a9c9dc,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0d2238e8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbb09b1ec,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r111911f2,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb2b2001f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6c54bedf,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r754eda94,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r027b343e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rec74a063,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8d34cf61,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb3bc8781,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r066b016d,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbd61228a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r24097408,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra380792a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd888bb63,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf6393e2f,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rce7109bf,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r381f8001,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14e12466,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ree20a425,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r25ecec63,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf341d4e1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd02da50f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra3876a27,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4fbfb44b,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re8e105a9,audit:lm_only,,,,no,no,include,include,include,abstract,include,
+rae047400,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rde142dd1,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4b397bed,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r227269e9,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r85a0c94e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4e6e63dc,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r63583a6e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd98ceebe,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r9804a5f3,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6aa8dfae,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7976eccf,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r49df6f1c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7e24ca4b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r13814792,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd40c1968,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5f207553,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E2
+r7763c531,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6ee9bdde,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd2dd8eb4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r72626b00,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r919eedb2,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E2
+r8148796b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3c45bf55,audit:lm_only,,,,no,no,unsure,exclude,exclude,web: https://icml.cc/virtual/2026/poster/63484,exclude,E3
+r356a8074,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r180b5690,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r55b41f56,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2395c6a8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7858448b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4150dc24,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r602167bc,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r28e2a779,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf125ef29,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb02ea26a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra8394757,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf5306085,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rba8cad1b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r26462c11,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4094278d,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ree59f3c8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbf3515c5,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfafebba8,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1bdd51db,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9d95f503,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r26d14e08,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3969628f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdcd2426e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r15800855,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf0e84b74,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+raae5d83f,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra7390a4d,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r72ab2945,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra65b2d5e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7ddce905,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r12718bff,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r16fa6028,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf73251a4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3c6ab00f,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5de167d1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r73cf287f,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r01c07dc2,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E5
+r6fdfaf42,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd1d1b890,audit:sym_only,,,,no,no,unsure,unsure,exclude,web: https://arxiv.org/pdf/2305.08953,exclude,E1
+r3816dd69,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbb9a42f9,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r265fbeac,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r405a523d,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7eecd005,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbf053204,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4de3b615,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r31832b2f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raaf49013,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r85e89f00,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re6545913,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14862c29,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r523e32b7,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc38677ee,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5d3c917a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd0aa62e5,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra7dc7a6f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r25129aa2,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8da1ae7c,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+reff55f2e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3a53c159,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r752c40ad,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7d9dc36f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdd6f6c65,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r89e7e119,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfbbeea62,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9135be5e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r57f95482,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbeacd768,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbad5d64c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6eb0fffb,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r9eaa4c4c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5f27aa88,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7bd92815,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r66765f88,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf395e061,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3a17acf4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf39dc880,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd4b2b9cf,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra79f46f4,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3a418c30,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r684c7ddd,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r93789999,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r71539f89,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2ae19326,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra8f87d76,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc240d388,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3a29f30b,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb6dd7894,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6b0db337,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb4fe8bcc,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r96e8617a,audit:lm_only,,,,no,no,unsure,unsure,include,web: https://aclanthology.org/2024.acl-long.512.pdf,include,
+r48524239,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1055b6d1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd694d3d0,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6204a91d,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r51146f8b,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd62eaf37,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3c860b56,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r9d2d97ac,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r79819165,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r10ebb8cf,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r99b5d7dd,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r64dc21c8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rab239baa,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7c01e7e4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5b7d067d,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r873f017e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd5e1b3f5,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc049857d,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc2712528,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4eb88be1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r65ed3eb6,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r755d1573,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r33cb97e2,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5ec32b43,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4dab73b5,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r032dec8a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4a9b673f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf4c4a359,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r39e0c0b7,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r18bc6af3,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf2e8c041,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rce9cbc77,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4235cb3f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0b5e8aee,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r34a34d65,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8a2d5b51,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r341e0ad9,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r584d8e1b,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r13d8780e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3551502a,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r31aac7b1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc190d698,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra5753aed,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r16d7cec8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r01e3e165,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2adcead4,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r80a3f904,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd571fc5a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5e5859d0,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r88d4893c,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0aa3956b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfb0aeedf,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r876d0e50,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra1f78bd2,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r735afb95,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rde3b34bc,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3ca1d24a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6b1a3019,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rff6430ea,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2431cd89,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdbc1f2f8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2bc3e0a0,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd0b0a443,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r273ae680,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r80d94ceb,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc0de281b,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4693bfbf,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r466e89a1,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re96ee426,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdad41873,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r862e58ce,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r786a94b2,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7422bcea,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r55f18605,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4a52336f,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r34eb82a6,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6330986e,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbb792a57,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7f0e6248,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r72f1cf84,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r531f71ad,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r93b23aff,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r76097bd6,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6a18b84e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6817bab0,audit:sym_only,,,,no,no,unsure,unsure,exclude,web: https://aclanthology.org/2021.acl-short.22.pdf,exclude,E1
+r4df4a10a,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb0d704ef,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r96b44743,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re8ac241e,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r99b13dd8,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1536e90d,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1b933419,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r24958690,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf49ed1ba,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r02ef67a0,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd0de7f99,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6653d112,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3f8fd3f6,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0c8db4e7,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rce112577,audit:sym_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4a889134,audit:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r00bb8134,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r01dac990,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r02115793,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r025d8dd6,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r02638584,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r02a565ce,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r035ea160,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0381db5c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r038ea88b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r055e9a76,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r05987bbd,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0669243d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r06694320,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r076a09d9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0803d26b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r087e6aa6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r09950f56,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0b1b54ce,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0b38b232,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0b950275,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0bbdd8ab,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0c33bb0e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0cb891a9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0ce16ea0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0cf6f150,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0d7858b0,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0db6a5d9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0dc639e2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r0ec5b947,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r0ff9943f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r109f6f71,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r10eee195,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r134f343e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1365e4cb,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r13c9dae9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14068f75,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14ac6da3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14bca266,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14c71361,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r14fe9c98,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r16761fd3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r16d60b1c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1749d68c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r175b0c8d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r17d8b66c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r18b1f272,audit_ext:lm_only,,,,no,no,unsure,exclude,exclude,abstract,exclude,E3
+r1924da6a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1953a0ee,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r19f83ba1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1b26c0f3,audit_ext:lm_only,,,,no,no,include,include,include,abstract,include,
+r1baec7e4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1c0663df,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r1c30936a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r1e9c61f8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r20cf76d3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r211f8d05,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2145cf0a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r21c332ec,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r21c67c52,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r226b3c02,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r231b94a3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r249a1655,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r24d71a8f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r25909a38,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2636ed32,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r273b02bb,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r27c875b8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r28603980,audit_ext:lm_only,,,,no,no,unsure,unsure,include,web: https://arxiv.org/pdf/2606.19992,include,
+r28648d35,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r286617b5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r29a174c9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r29f35de0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2a8c1bdb,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2b2427b2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2b594746,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2b6e2ede,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2b7e8615,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2be9197f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2c2a4a76,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2c48705c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2ceea1be,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2d0e11ce,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2dbf8186,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r2de0cdf5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2e53e512,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r2f6ec8b0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r301f8ea0,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r31ab0f2c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r32265184,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r34148def,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3507f671,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r35693bb5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r35eb9b10,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r36b7abea,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r373e9258,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r37aee8fb,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r37b03653,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r386191f9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3876d674,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r387fff67,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3887ea1b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3909c4dc,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3948e657,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3aa90865,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3af07525,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3b7c1cb6,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3ba186d5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3c22e3ef,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3c311c62,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3cfd4293,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3d1ba136,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3da62256,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3dc67e10,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r3dfb6174,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3f8eca21,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r3fcfa73c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4067f266,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r406cee90,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r40834cda,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r408835ba,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r41c5b35d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r42c71deb,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r43845a69,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r44817891,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r44bfea5e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r45a01a8c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r45b2cdfd,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r45cc6d63,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r461e360e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r46a89c33,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r47861801,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r479a30e7,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r47b2b407,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r48826f2f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r490da1e1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r49f92191,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4c1c862d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4c5199f4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4c52e94c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4eda48e7,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r4fb7c449,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r4ffe5a23,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r517824e9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r530d76f1,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r537ef833,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r53806c5d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r53ac41c6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r53b32c71,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r53bf4998,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r555aacd9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r55957816,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5595cf28,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r55e2e94c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r55f19ae1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r56177995,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r564849f0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5665682c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r56920552,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5711f25c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r577978a0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r579e9ab8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r57b9af4b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r58622aa9,audit_ext:neither,,,,no,no,unsure,unsure,include,web: https://aclanthology.org/2022.acl-long.5.pdf,include,
+r58ae0362,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r592ba3fc,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5a5a8265,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5a7e67e8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5abe7cbf,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5ad48194,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5b82a764,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5c2522fd,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5d8fe200,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5dd09369,audit_ext:lm_only,,,,no,no,unsure,unsure,include,abstract,include,
+r5e542ec8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r5e5787e5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5e5e119f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5f172614,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r5f71b88d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r613e7f6b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r61530b5a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r61da4aef,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r62c99f1f,audit_ext:lm_only,,,,no,no,unsure,exclude,exclude,web: https://aclanthology.org/2025.acl-long.258.pdf,exclude,E3
+r64275ab5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r64539e58,audit_ext:lm_only,,,,no,no,exclude,unsure,include,web: https://arxiv.org/html/2602.02465v1,include,
+r6480aac9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r650dccfe,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r65969879,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r665e97c8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r66976f69,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r67aff659,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r67cbf92f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r685f553d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r686a2660,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r68a674d2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r68cb296e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6cc97ec4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6d350403,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6dd34686,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6e18f9c5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6eed1d34,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6eef2f29,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r6f1151e6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r6f95d0ba,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r70b1da7f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7300da50,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r73395486,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r73c9c7b3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r75081134,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7535a0ee,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r763e10d3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7652ca31,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7663a8f8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r76685199,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r778f1515,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r77936bd4,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7794fbce,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r77e01629,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r784d5d3f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r78caef2d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r78d298c9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r78df4ad4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r791e78b3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7aa129b8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7ae00fe3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7b53c45d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7b86219d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7be6a849,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7c450ead,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7c5b81aa,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7c87bfdf,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7c907911,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7cb5b95d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7d5cbc15,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r7e3c4a6f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r7f4d7c68,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r805850f2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r805a3157,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r808ba9ba,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8121e2b5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r81b76b17,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r81d0ce15,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r81e8715f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r81ea6958,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r82106812,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8228c031,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r82405521,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r825a107b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r829e92c4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r82f996a0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8360c1c4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8456a322,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r846d3a6e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r84dc24a4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r85ab47a3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r86417ea2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r866e118c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8714cb7a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r87b0c1c2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r87e07e5c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8804ee0d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r885a140a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8869e114,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E5
+r88b417d8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r88c587d2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r89256a79,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8945bfd3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8b6bb1f5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8ca2b048,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8d67ae68,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8da7cb53,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8dcf1ba0,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8decc7a5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8e74bdf5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8e9862a5,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r8ef0aa40,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8f74f115,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8fd272ae,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r8feaaa55,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r903421a9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r909c5d27,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r90d39964,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r91af817d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r921e133b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r933d7c7c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r93722f1c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r939b9c46,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r94185e46,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r94414492,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r94a0e82b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r94d79f21,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r95547d69,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r95e659f6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9691e0e4,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r96fb0a8e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r97dc0010,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r98127af5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9822495f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r98813a8a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r98a14d16,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r98dbf849,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r98fc3435,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r9969a8df,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+r99cc8df0,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9a690f80,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9ac00c99,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9b09d4d3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9b65e61e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9bc935df,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9c1006f7,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9c6e8099,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9c9ea502,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9ce857a8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9d17b8be,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+r9e7513f3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra03c0e14,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra0779401,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra087363b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra1251cff,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra276d169,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra281349f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra2b93f8f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra2d38c7e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra3a9126c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra3da10f8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra3e0f79e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra4333701,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E5
+ra4a1b83b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra4cf2dd5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra4dfb9d1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra58c1335,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra58e3595,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra591ce0e,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra5983346,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra5e29009,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra62f7178,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra7f1fd77,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra877f23f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra886dc54,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+ra921b4fe,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ra96637b6,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raacff025,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rab12a5c1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rab4ef3ff,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rab6d122d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rab779174,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rab92d2b1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rad23832b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rad349db3,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+radbaad4c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+radc473d8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+radcb8269,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rae7c1407,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+raedff612,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raefbbb53,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raefcfcea,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+raf972cd5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rafedb3da,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb0d12c6b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb11f4ee8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb15ccd93,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E5
+rb16ee6ac,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb1c57129,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb237e53a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb3137b97,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb31a2d72,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb4772c2f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb4e7c1ca,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb50bee16,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb5ef2c86,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rb6aed68c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb71435ab,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb79dfdc1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb7d4b7f2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rb928a7cf,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rba91a7f5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbb0dfbdf,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbba1e6a9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbbb4a8d6,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbe30e59c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rbec13f5a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rbeec1910,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc0bba550,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc0c45cba,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc22a2d1c,audit_ext:lm_only,,,,no,no,unsure,exclude,exclude,abstract,exclude,E3
+rc26baa45,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc291b10f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc2e9c1e6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc3562d21,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc37de345,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc39e29ca,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc3b52089,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc440a3bd,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc45dc168,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc4610ea5,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc4739a13,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc479ab2a,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc4d8451a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc56f5e63,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc5d5dc4f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc67eb3c2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc785bab0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc7a41ef9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc892ea6c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc8a817a9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc8b2b8f8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc9eb7755,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rc9edc5f0,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rc9f3f28d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rca60099d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcaae9656,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rcb6db550,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rccbc020f,audit_ext:lm_only,,,,no,no,include,include,include,abstract,include,
+rcd0a5efc,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcd48b9d8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcdc49603,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rce68ab83,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rcea79c19,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rcf327121,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcf3ae1d8,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rcfa4240b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd0dfabce,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd287c364,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd3718fc0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd3aea937,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd40a5b44,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd47b3251,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd6b64133,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd746f36f,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rd7755d06,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd85604bd,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd96c8e76,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rd9d81afe,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rda5f0cc9,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rda74897d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rda817bc0,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdab22bb6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdac78435,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdb3b9142,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdb3d8dfa,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdb5f821c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rdb648629,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdb7c2d7a,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rddcae3f2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rddcebbed,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rde4d77b9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rde6f072d,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdf0a8abf,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rdf84b878,audit_ext:lm_only,,,,no,no,unsure,unsure,include,web: https://arxiv.org/html/2505.14552v2,include,
+re1c916c1,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re1e1919a,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re266c762,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re27658d4,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re2acdb4b,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re3b1e239,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re5a739b2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re5ecc0e9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re66215c9,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re6665aca,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+re7bf51c2,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re839726a,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+re907f1bd,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rea5b8fd2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+reba92de1,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rec65d8a6,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rec6981b3,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+ree027f4d,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf0cc46d1,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf1e5ee47,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf23d30bf,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf254c818,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf25fdee1,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf34b731c,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf40b6882,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf4112a31,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf4123b57,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf46bb970,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf485afc7,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf48e267a,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf5644bac,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf5b9d366,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf5c64019,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf5e88e15,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf63443f2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf7676c43,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf77be5bb,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf796ae0f,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf7a2487b,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf950f1fa,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rf959b052,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf97db597,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf97eb242,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rf9d1df8c,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfa34817e,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfb8286c8,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfbb57df2,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfbbb8fdf,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfbf2d4ae,audit_ext:lm_only,,,,no,no,exclude,exclude,,abstract,exclude,E3
+rfc1916ff,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rfeca62c7,audit_ext:neither,,,,no,no,exclude,exclude,,abstract,exclude,E1
+rff597439,audit_ext:lm_only,,,,no,no,unsure,unsure,include,web: https://aclanthology.org/2025.naacl-long.193.pdf,include,

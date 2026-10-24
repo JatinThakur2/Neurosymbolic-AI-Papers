@@ -1,0 +1,7 @@
+rid,decision,code,rationale
+r2bf5e844,exclude,E3,E3 (R3): prompting-level premise organisation and memory; no formal system or solver.
+rd615e533,exclude,E3,E3 (R3): behavioural probing of LLMs on conditionals; no explicit symbolic system interacts.
+r5a1c91eb,unsure,,Logical consistency checks over forecasts generate evaluation; unclear whether this is an explicit formal component.
+rb784dedc,exclude,E3,E3 (R3): self-supervised 'logic' training; abstract names no explicit formal system.
+rcddc76c4,include,,Logic rules augment data and give consistency regularizer training signal for RoBERTa models.
+rcfd664bd,exclude,E3,E3 (R3) behavioural logical-consistency evaluation of ChatGPT; no formal symbolic system generates or certifies items

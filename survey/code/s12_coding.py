@@ -81,7 +81,7 @@ def main():
             route = s["route"].split(":")[0]
             rows.append({"rid": k, "title": m["title"], "venue": m["venue"], "year": m["year"],
                          "authors": m.get("authors", ""), "url": m.get("url", ""), "route": route,
-                         "in_corpus": m.get("in_corpus", "no"),
+                         "in_corpus": m.get("in_corpus", "no"), "in_search": s.get("in_search", "no"),
                          **{f: fin[f] for f in AXES},
                          "adjudicated": "yes" if k in J else "no"})
             fa.write(json.dumps({"rid": k, "title": m["title"], "abstract": m.get("abstract", ""),
@@ -89,20 +89,24 @@ def main():
                                  "venue": m["venue"], "year": m["year"], "url": m.get("url", "")},
                                 ensure_ascii=False) + "\n")
             for group, (field, table) in ENTITY.items():
-                for fam in sorted(families(A[k][field], table) | families(B[k][field], table)):
-                    ents.append({"rid": k, "group": group, "entity": fam})
+                fa_, fb_ = families(A[k][field], table), families(B[k][field], table)
+                for fam in sorted(fa_ | fb_):
+                    ents.append({"rid": k, "group": group, "entity": fam, "both": "yes" if fam in fa_ & fb_ else "no"})
             bench = {norm_benchmark(x): x.strip() for x in (A[k]["benchmarks_named"] + ";"
                                                             + B[k]["benchmarks_named"]).split(";") if x.strip()}
+            ba = {norm_benchmark(x) for x in A[k]["benchmarks_named"].split(";") if x.strip()}
+            bb = {norm_benchmark(x) for x in B[k]["benchmarks_named"].split(";") if x.strip()}
             for key, name in sorted(bench.items()):
                 if key:
-                    ents.append({"rid": k, "group": "benchmark", "entity": key, "label": name})
+                    ents.append({"rid": k, "group": "benchmark", "entity": key, "label": name,
+                                 "both": "yes" if key in ba & bb else "no"})
 
     with (DERIVED / "included_studies.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
     with (DERIVED / "entities_long.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["rid", "group", "entity", "label"])
+        w = csv.DictWriter(f, fieldnames=["rid", "group", "entity", "label", "both"])
         w.writeheader()
         w.writerows(ents)
 

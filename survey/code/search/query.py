@@ -27,11 +27,28 @@ SYMBOLIC_BLOCK = (
     r"domain[- ]specific language|\bDSL\b|logical form|semantic pars|declarative|computer algebra|SymPy|"
     r"equation discovery"
 )
-LM_RE = re.compile(LM_BLOCK, re.I)
-SYM_RE = re.compile(SYMBOLIC_BLOCK, re.I)
+# Revision 2 (second referee report, M5): terms added to both blocks. The v2 blocks above are kept
+# unchanged; the review's search is the union of the v2 query and this augmented query.
+LM_BLOCK_ADD = r"\bQwen|\bMistral\b|\bGemini\b|\bDeepSeek|\bClaude\b|\bGPT\b|reasoning models?|language agents?"
+SYMBOLIC_BLOCK_ADD = (
+    r"model[- ]check(ing|ers?)|\bNuSMV\b|\bDafny\b|\bVerus\b|\bDatalog\b|\bplanners?\b|"
+    r"planning (domains?|languages?|problems?|tasks?)|automated planning|\bMILP\b|mixed[- ]integer|"
+    r"(integer|linear) programm?ing|optimi[sz]ation (modell?ing|models?|problems?|formulations?)|\bPyomo\b|\bGurobi\b|"
+    r"\bproofs?\b|\bSQL\b|execution traces?|\bTLA\+|\bAlloy\b"
+)
+LM_RE_V2 = re.compile(LM_BLOCK, re.I)
+SYM_RE_V2 = re.compile(SYMBOLIC_BLOCK, re.I)
+LM_RE = re.compile(LM_BLOCK + "|" + LM_BLOCK_ADD, re.I)
+SYM_RE = re.compile(SYMBOLIC_BLOCK + "|" + SYMBOLIC_BLOCK_ADD, re.I)
+
+
+def matches_v2(title, abstract):
+    text = f"{title} {abstract}"
+    return bool(LM_RE_V2.search(text)) and bool(SYM_RE_V2.search(text))
 
 
 def matches(title, abstract):
+    """Augmented query (revision 2); every v2 hit is also a hit here."""
     text = f"{title} {abstract}"
     return bool(LM_RE.search(text)) and bool(SYM_RE.search(text))
 
@@ -40,13 +57,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--records", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--v2", action="store_true", help="apply the frozen v2 query only")
     a = ap.parse_args()
+    match = matches_v2 if a.v2 else matches
     n = k = 0
     with open(a.out, "w", encoding="utf-8") as out:
         for line in open(a.records, encoding="utf-8"):
             r = json.loads(line)
+            if a.v2 and r.get("r2_added"):
+                continue        # added to Source B in revision 2; screened in stage 2 (stage2.py)
             n += 1
-            if matches(r["title"], r["abstract"]):
+            if match(r["title"], r["abstract"]):
                 k += 1
                 out.write(line)
     print(f"[query] {k} of {n} records retrieved -> {a.out}")

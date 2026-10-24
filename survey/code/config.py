@@ -122,7 +122,8 @@ CLASSICAL_THEMES = {
 # ---------------------------------------------------------------------------
 LM_FAMILY_V2 = {
     "GPT-4 family": r"gpt-?4|gpt-?4o|\bo[134](-mini|-preview)?\b|openai[- ]o[134]|gpt-?5",
-    "GPT-3/3.5, ChatGPT, Codex": r"gpt-?3|chatgpt|codex|text-davinci|instructgpt|\bgpt\b$",
+    "Code-specialised (Codex, StarCoder, CodeGen)": r"codex|code-?davinci|starcoder|codegen|santacoder",
+    "GPT-3/3.5, ChatGPT": r"gpt-?3|chatgpt|text-davinci|instructgpt|\bgpt\b$",
     "GPT-2 and earlier": r"gpt-?2|gpt-?1\b",
     "Llama family": r"llama|vicuna|alpaca",
     "DeepSeek family": r"deepseek",
@@ -133,7 +134,7 @@ LM_FAMILY_V2 = {
     "Gemma": r"gemma",
     "T5 family": r"\bt5\b|flan-t5|codet5|byt5",
     "BERT family": r"bert|roberta|deberta|electra",
-    "Specialised provers": r"prover|kimina|goedel|internlm.*(step|math)|lean-?star|theoremllama",
+    "Prover fine-tunes (role, any base)": r"prover|kimina|goedel|internlm.*(step|math)|lean-?star|theoremllama",
     "Vision-language (LLaVA, CLIP, BLIP, ...)": r"llava|clip|blip|gpt-?4v|vision|vlm|qwen-?vl|internvl",
 }
 ENGINE_FAMILY_V2 = {

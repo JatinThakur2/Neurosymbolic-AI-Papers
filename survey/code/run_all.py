@@ -37,19 +37,24 @@ def main():
     # Source B: proceedings metadata, abstract-level query, merge with Source A
     run("search/build_source_b.py", "--paperlists", src / "paperlists", "--anthology", src / "acl-anthology",
         "--out", work / "source_b.jsonl")
-    run("search/query.py", "--records", work / "source_b.jsonl", "--out", work / "hits_b.jsonl")
+    # stage 1 uses the frozen v2 query; stage 2 (below) applies the augmented query of revision 2
+    run("search/query.py", "--v2", "--records", work / "source_b.jsonl", "--out", work / "hits_b.jsonl")
     run("search/merge_sources.py")
     # screening of the union, then snowballing from included studies and the recall audit
     run("s10_screen_union.py")
     run("search/snowball.py", "--repo", corpus)
     run("search/audit_sample.py")
+    # revision 2: augmented query (stage 2) and the fresh known-item check
+    run("search/stage2.py")
+    run("search/knownitem.py")
     run("s11_selection.py")
     # charting, analyses, bibliography, LaTeX
     run("s12_coding.py")
     run("s13_analysis.py")
+    run("human_check.py", "--score")
+    run("s16_sensitivity.py")
     run("s14_bib.py")
     run("s15_latex.py")
-    run("human_check.py", "--score")
 
 
 if __name__ == "__main__":

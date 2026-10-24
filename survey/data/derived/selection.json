@@ -31,13 +31,464 @@
       "x": 0
     }
   },
-  "included_total": 659,
+  "search2_screened": 651,
+  "search2_included": 95,
+  "knownitem_screened": 6,
+  "knownitem_included": 1,
+  "knownitem": {
+    "references": 33,
+    "in_source_b": 29,
+    "eligible": 16,
+    "found_by_search": 15,
+    "missed": [
+      "Logic-guided data augmentation and regularization for consistent question answering"
+    ],
+    "rows": [
+      {
+        "title": "Logic-guided data augmentation and regularization for consistent question answering",
+        "venue": "ACL",
+        "year": "2020",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "include",
+        "found_by_search": false
+      },
+      {
+        "title": "Abstract Meaning Representation-based logic-driven data augmentation for logical reasoning",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": false,
+        "routes": [],
+        "final": "",
+        "found_by_search": false
+      },
+      {
+        "title": "Graph of thoughts: Solving elaborate problems with large language models",
+        "venue": "AAAI",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "snowball"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Logically consistent language models via neuro-symbolic integration",
+        "venue": "ICLR",
+        "year": "2025",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Transformers as soft reasoners over language",
+        "venue": "IJCAI",
+        "year": "2021",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Language models can be deductive solvers",
+        "venue": "NAACL",
+        "year": "2024",
+        "in_source_b": false,
+        "routes": [],
+        "final": "",
+        "found_by_search": false
+      },
+      {
+        "title": "Logical consistency of large language models in fact-checking",
+        "venue": "ICLR",
+        "year": "2025",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "FOLIO: Natural language reasoning with first-order logic",
+        "venue": "EMNLP",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Conditional and modal reasoning in large language models",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Consistency analysis of ChatGPT",
+        "venue": "EMNLP",
+        "year": "2023",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Exploring self-supervised logic-enhanced training for large language models",
+        "venue": "NAACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Maieutic prompting: Logically consistent reasoning with recursive explanations",
+        "venue": "EMNLP",
+        "year": "2022",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "BeliefBank: Adding memory to a pre-trained language model for a systematic notion of belief",
+        "venue": "EMNLP",
+        "year": "2021",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Language models with rationality",
+        "venue": "EMNLP",
+        "year": "2023",
+        "in_source_b": true,
+        "routes": [
+          "snowball"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "LogiQA: a challenge dataset for machine reading comprehension with logical reasoning",
+        "venue": "IJCAI",
+        "year": "2021",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Enhancing self-consistency and performance of pre-trained language models through natural language inference",
+        "venue": "EMNLP",
+        "year": "2022",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Enhancing reasoning capabilities of LLMs via principled synthetic logic corpus",
+        "venue": "NeurIPS",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "LINC: A neurosymbolic approach for logical reasoning by combining language models with first-order logic provers",
+        "venue": "EMNLP",
+        "year": "2023",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Consistency checks for language model forecasters",
+        "venue": "ICLR",
+        "year": "2025",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "LogicBench: Towards systematic evaluation of logical reasoning ability of large language models",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Divide and translate: Compositional first-order logic translation and verification for complex logical reasoning",
+        "venue": "ICLR",
+        "year": "2025",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "DetermLR: Augmenting LLM-based logical reasoning from indeterminacy to determinacy",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "knownitem"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Entailer: Answering questions with faithful and truthful chains of reasoning",
+        "venue": "EMNLP",
+        "year": "2022",
+        "in_source_b": true,
+        "routes": [
+          "snowball"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Diagnosing the first-order logical reasoning ability through logicnli",
+        "venue": "EMNLP",
+        "year": "2021",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "LogicAsker: Evaluating and improving the logical reasoning ability of large language models",
+        "venue": "EMNLP",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Logic-driven context extension and data augmentation for logical reasoning of text",
+        "venue": "ACL",
+        "year": "2022",
+        "in_source_b": false,
+        "routes": [],
+        "final": "",
+        "found_by_search": false
+      },
+      {
+        "title": "Chain-of-thought prompting elicits reasoning in large language models",
+        "venue": "NeurIPS",
+        "year": "2022",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Symbol-LLM: Towards foundational symbol-centric interface for large language models",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "Faithful logical reasoning via symbolic chain-of-thought",
+        "venue": "ACL",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Tree of thoughts: Deliberate problem solving with large language models",
+        "venue": "NeurIPS",
+        "year": "2024",
+        "in_source_b": true,
+        "routes": [
+          "snowball"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "SatLM: Satisfiability-aided language models using declarative prompting",
+        "venue": "NeurIPS",
+        "year": "2023",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "include",
+        "found_by_search": true
+      },
+      {
+        "title": "ReClor: A reading comprehension dataset requiring logical reasoning",
+        "venue": "ICLR",
+        "year": "2020",
+        "in_source_b": true,
+        "routes": [
+          "union"
+        ],
+        "final": "exclude",
+        "found_by_search": false
+      },
+      {
+        "title": "Analytical reasoning of text",
+        "venue": "NAACL",
+        "year": "2022",
+        "in_source_b": false,
+        "routes": [],
+        "final": "",
+        "found_by_search": false
+      }
+    ]
+  },
+  "included_total": 763,
+  "audit_ext_screened": 500,
+  "audit_ext_included": 8,
+  "audit_strata_r2": {
+    "neither": {
+      "N": 51087,
+      "n": 400,
+      "n_v2": 100,
+      "n_ext": 300,
+      "x": 1
+    },
+    "lm_only": {
+      "N": 25639,
+      "n": 393,
+      "n_v2": 193,
+      "n_ext": 200,
+      "x": 8
+    },
+    "sym_only": {
+      "N": 3165,
+      "n": 99,
+      "n_v2": 99,
+      "n_ext": 0,
+      "x": 1
+    }
+  },
+  "recall_r2": {
+    "missed_point": 682,
+    "missed_median": 763,
+    "missed_lo": 390,
+    "missed_hi": 1350,
+    "recall_point": 0.5195260434067472,
+    "recall_median": 0.4913441065754113,
+    "recall_lo": 0.35306211423421013,
+    "recall_hi": 0.6542208950806775
+  },
+  "recall_r2_without_assistant_decisions": {
+    "missed_point": 809,
+    "missed_median": 889,
+    "missed_lo": 465,
+    "missed_hi": 1545,
+    "recall_point": 0.47661600834452417,
+    "recall_median": 0.45321355607821806,
+    "recall_lo": 0.3229669317163712,
+    "recall_hi": 0.6133799406133126
+  },
+  "assistant_audit_decisions": [
+    "ra0dd1fe6"
+  ],
+  "recall_r2_without_neither": {
+    "missed_point": 554,
+    "missed_median": 581,
+    "missed_lo": 286,
+    "missed_hi": 1034,
+    "recall_point": 0.5709269511913654,
+    "recall_median": 0.5591564237245462,
+    "recall_lo": 0.4160921629505693,
+    "recall_hi": 0.7201328843549475
+  },
+  "found_in_source_b_r2": 737,
+  "audit_retrieved_by_augmented_query": 8,
+  "accounting": {
+    "records": 82957,
+    "r2_added": 293,
+    "duplicate_title": 1,
+    "id_collision": 1,
+    "in_union": 2025,
+    "snowball_candidate": 374,
+    "v2_hit_not_in_union": 0,
+    "audit_population": 80263
+  },
+  "stage2": {
+    "augmented_hits": 2511,
+    "v2_hits_within": 1829,
+    "new_hits": 682,
+    "r2_added_screened": 3,
+    "new_in_v2_union": 3,
+    "new_snowball_candidates": 24,
+    "new_in_audit_sample": 8,
+    "duplicate_titles": 0,
+    "screened_in_stage2": 651
+  },
   "exclusion_reasons": {
-    "E1": 577,
-    "E2": 23,
-    "E3": 1197,
+    "E1": 663,
+    "E2": 31,
+    "E3": 1658,
     "E4": 27,
-    "E5": 25
+    "E5": 31
   },
   "agreement": {
     "union": {
@@ -46,6 +497,9 @@
       "kappa3": 0.8502152256737707,
       "agree_incl": 0.9666666666666667,
       "kappa_incl": 0.9030155413699031,
+      "both_unsure": 128,
+      "agree3_wo_both_unsure": 0.9245754245754245,
+      "kappa3_wo_both_unsure": 0.8171838762446441,
       "adjudicated": 279,
       "included": 596,
       "unsure_any": 275,
@@ -57,10 +511,54 @@
       "kappa3": 0.8154084798345398,
       "agree_incl": 0.9705882352941176,
       "kappa_incl": 0.7975991341139426,
+      "both_unsure": 27,
+      "agree3_wo_both_unsure": 0.9394812680115274,
+      "kappa3_wo_both_unsure": 0.700074086269345,
       "adjudicated": 48,
       "included": 59,
       "unsure_any": 45,
       "adj_include": 35
+    },
+    "search2": {
+      "n": 651,
+      "agree3": 0.9662058371735791,
+      "kappa3": 0.8824929029717268,
+      "agree_incl": 0.9877112135176651,
+      "kappa_incl": 0.9316373946601558,
+      "both_unsure": 31,
+      "agree3_wo_both_unsure": 0.964516129032258,
+      "kappa3_wo_both_unsure": 0.8378583995054917,
+      "adjudicated": 53,
+      "included": 95,
+      "unsure_any": 53,
+      "adj_include": 34
+    },
+    "knownitem": {
+      "n": 6,
+      "agree3": 0.8333333333333334,
+      "kappa3": 0.6000000000000001,
+      "agree_incl": 1.0,
+      "kappa_incl": 1.0,
+      "both_unsure": 0,
+      "agree3_wo_both_unsure": 0.8333333333333334,
+      "kappa3_wo_both_unsure": 0.6000000000000001,
+      "adjudicated": 1,
+      "included": 1,
+      "unsure_any": 1,
+      "adj_include": 0
+    },
+    "audit": {
+      "agree3": 0.995,
+      "kappa3": 0.8551774076755974,
+      "n": 400,
+      "adjudicated": 8
+    },
+    "audit_ext": {
+      "agree3": 0.992,
+      "kappa3": 0.7744700045105993,
+      "n": 500,
+      "adjudicated": 11,
+      "included": 8
     }
   },
   "recall": {

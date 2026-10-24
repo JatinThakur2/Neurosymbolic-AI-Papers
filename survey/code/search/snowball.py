@@ -52,6 +52,8 @@ def main():
     cands, seen = {}, set()
     for line in open(WORK / "search" / "source_b.jsonl", encoding="utf-8"):
         rec = json.loads(line)
+        if rec.get("r2_added"):
+            continue            # stage-1 population only; revision-2 additions are screened in stage 2 or audited
         k = norm_title(rec["title"])
         if len(k) < MIN_LEN or k in seen:
             continue

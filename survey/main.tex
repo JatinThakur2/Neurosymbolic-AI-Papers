@@ -7,7 +7,7 @@
 %%  `python code/run_all.py --sources <dir>`. The full list of included studies
 %%  is in supplement.tex (a separate document).
 %% ============================================================================
-\documentclass[conference]{IEEEtran}
+\documentclass[journal]{IEEEtran}
 \IEEEoverridecommandlockouts
 
 \usepackage[T1]{fontenc}
@@ -44,6 +44,14 @@
 \newcommand{\pendingbox}[1]{\fbox{\parbox{0.95\linewidth}{\raggedright\color{red}\footnotesize\textbf{AUTHOR ACTION REQUIRED:} #1}}}
 \newcommand{\RQ}[1]{\textbf{RQ#1}}
 
+% ---- Anonymous build for double-blind review: set \anonymoustrue. This hides the author block,
+% replaces the replication URL by \anonurl and cites the curated corpus anonymously.
+\newif\ifanonymous \anonymousfalse
+\newcommand{\anonurl}{https://anonymous.4open.science/r/nesy-llm-review}   % set after creating the anonymous copy
+\newcommand{\repourl}{\ifanonymous\url{\anonurl}\else\url{https://github.com/JatinThakur2/Neurosymbolic-AI-Papers/tree/main/survey}\fi}
+\newcommand{\secondratername}{[name of the second rater]}   % AUTHOR: fill in once the second rater agrees to be named
+\newcommand{\corpuscite}{\ifanonymous\cite{anon2026corpus}\else\cite{thakur2026repo}\fi}
+
 \lstset{basicstyle=\ttfamily\scriptsize, breaklines=true, breakatwhitespace=false, columns=fullflexible,
         frame=single, rulecolor=\color{nsgrey}, keepspaces=true, backgroundcolor=\color{nslight!40}}
 
@@ -52,10 +60,14 @@
 \title{Language Models Meet Symbolic Reasoning:\\
 A Scoping Review of Neurosymbolic Integration at Top-Tier AI and NLP Venues (2020--2026)}
 
-\author{\IEEEauthorblockN{Jatin Thakur}
-\IEEEauthorblockA{\textit{Jaypee University of Information Technology (JUIT)}\\
-Waknaghat, Solan, Himachal Pradesh, India\\
-jatinthakur3333@gmail.com}}
+\ifanonymous
+\author{Anonymous Authors}
+\else
+\author{Jatin~Thakur%
+\thanks{J. Thakur is with the Jaypee University of Information Technology (JUIT), Waknaghat, Solan, Himachal Pradesh, India (e-mail: jatinthakur3333@gmail.com).}}
+\fi
+\markboth{Language Models Meet Symbolic Reasoning: A Scoping Review}%
+{Language Models Meet Symbolic Reasoning: A Scoping Review}
 
 \maketitle
 

@@ -1,0 +1,61 @@
+rid,check_strength,faithfulness_reported,source,quote
+r4b908b19,exact,n/a,https://arxiv.org/html/2406.14219,"AIPS integrates with the symbolic computation system SymPy... If one of the new subgoals is true, indicating that the inequality holds, then the theorem is proved."
+r989f4240,empirical,n/a,https://arxiv.org/html/2406.16218,Any execution error is also treated as feedback; see Appendix D.
+r33ed8809,exact,n/a,https://ar5iv.labs.arxiv.org/html/2305.16366,the capacity of the interactive theorem prover Isabelle to authenticate the corresponding formal statement with the proof
+rc450e789,empirical,n/a,https://arxiv.org/pdf/2505.22704,we follow prior work and use unit tests as a verifiable reward signal for functionality; detectors rely on heuristic approximations
+ra86a93ca,exact,n/a,https://proceedings.iclr.cc/paper_files/paper/2025/file/69dbaf03f7f37a7ccad9ccc92875a44d-Paper-Conference.pdf,Verified tactics that pass in Lean are calibrated and expanded into the search tree.
+rc3671b2c,empirical,n/a,https://arxiv.org/html/2405.15383v1,we make use of the suite of unit tests provided by APPS to evaluate the accuracy of a generated program
+r56e37560,none,n/a,https://openreview.net/pdf/7e04fa2add9898c16441d18e5e194d46342ba20c.pdf,"GC verifier is a deterministic verifier that inspects each corrected reasoning trace, ensuring the corrected trajectories included in the Error Notebook are logically well-formed (not applied at inference)."
+rc6f43b68,empirical,n/a,https://arxiv.org/html/2412.11863v1,"the solution is fed into the symbolic solver, which performs step-by-step operations to predict the final answer"
+rccac804b,empirical,no,https://preview.aclanthology.org/moar-dois/2022.acl-long.35.pdf,"After decoding, we use a shift-reduce method to check the logical form sequence and delete or correct wrong placeholders."
+r42a18596,empirical,n/a,https://www.biorxiv.org/content/10.1101/2025.02.05.636732.full.pdf,for evaluation we optimize the parameters per-subject and score the model by cross-validating across sessions.
+refa20322,empirical,n/a,https://ar5iv.labs.arxiv.org/html/2211.10435,"offloads the solution step to a runtime such as a Python interpreter ... a single, post-hoc, execution"
+r96f2cdc6,empirical,no,https://arxiv.org/pdf/2506.04824v1,"Successful executions are taken as proof that the original answer was correct ... since wordplay is so flexible, it is difficult to evaluate it for accuracy"
+ree88c68b,exact,yes,https://arxiv.org/html/2405.07474v2,the syntax checker evaluates whether the output forms a WFF ... IA is the fraction of goals that are equivalent to the ground truth.
+ra8869ee2,empirical,yes,https://arxiv.org/html/2506.04592v1,combine the retrospective score from the state aggregator with the prospective score [of a PRM]; Appendix G: 80.9% of formalised statements rated Good for semantic alignment
+rd7c735fb,empirical,n/a,https://arxiv.org/pdf/2408.08435,The generated agent is evaluated using validation data from the target domain.
+r218783b6,exact,n/a,https://arxiv.org/html/2502.03438v3,LeanDojo then executes these sampled tactics in Lean4 compiler and returns their outcomes.
+r832b7a75,empirical,n/a,https://www.alphaxiv.org/abs/2602.00528.md,checks whether the model's final action matches the CFR solver's action
+r4317b7f6,empirical,n/a,https://arxiv.org/html/2409.09359v3,We abstractly define the fitness of a hypothesis [as the likelihood of the data given the hypothesis]
+rff5b35b6,exact,no,https://arxiv.org/html/2510.11769v2,The set of candidate proofs is then passed to the Lean4 verifier to check correctness. The formalized statement is then passed to Lean4 for compilation check.
+r1476b927,empirical,n/a,https://arxiv.org/pdf/2411.02272,"which are filtered by (xtrain, ytrain), and finally used to predict ytest = f(xtest)."
+rfa8fe6c4,exact,n/a,https://arxiv.org/pdf/2212.10029,"MaxSAT layer with hard clauses: ""any constraint violation results in an extremely high penalty""; it ""produces perfectly consistent mental models for all LMs with respect to the imposed constraints"""
+r7145390a,empirical,n/a,https://arxiv.org/html/2511.05849v2,"""Each candidate expression is evaluated based on its fitness on the training dataset."" (NMSE)"
+r2b00fd98,empirical,yes,https://arxiv.org/pdf/2411.01679,"accuracy = ""proportion of problems where the discovered formulation yielded optimal objective values""; expert review: ""82% agreement between the expert's judgments and our objective-value proxy"""
+rbc584267,empirical,yes,https://arxiv.org/pdf/2108.06712,"""manually annotate logical forms for 150 random samples in dev set""; spurious rate: ""the percentage that incorrect logical forms produce correct answer"""
+rc1250f1e,empirical,n/a,https://arxiv.org/pdf/2310.00367,"""If an error arises during compilation, we analyze the logfile to identify its source."" Compilation-driven resampling only"
+r10c2acd2,none,n/a,https://arxiv.org/html/2407.05952v2,"""The output from this SQL-based evaluation E_v serves as additional evidence, supporting the final reasoning step"" (LLM gives final answer)"
+r195e1eaa,empirical,n/a,https://arxiv.org/html/2510.01272v1,"Python behavioural programs run on observed history and scored by likelihood: ""inference directly over the space of likely decision-making processes encoded as Python programs"""
+r0cfab9a4,empirical,no,https://arxiv.org/html/2410.13213v2,"""the solver's running logs, including output results and errors, are analyzed""; metrics only Execution Rate, Solving Accuracy, Average Solving Times"
+rb5019997,empirical,n/a,https://arxiv.org/pdf/2310.12931,"Reward code sampled and scored in simulation: ""s1 = F(R1), ..., sK = F(RK)"" (task fitness of RL policies)"
+rbba59ac8,exact,no,https://arxiv.org/html/2409.15915v1,"Solvability ""verified by leveraging the completeness feature of modern symbolic planners""; authors note ""the lack of direct evaluation methods for assessing the quality of generated action schema sets"""
+rabcc2a78,empirical,yes,https://arxiv.org/pdf/2605.29556,"""Opt-Verifier executes the solver code and obtains the optimal solution""; LLM verifiers. ""manually inspect the modeling logic for all methods"" (Modeling ACC, Table 15)"
+r0de13fa8,none,n/a,https://arxiv.org/pdf/2305.15017,"""the model's generated text is extended with the output of the sympy calculator"" (intermediate steps only; final answer by model)"
+r30b45561,exact,yes,https://arxiv.org/html/2501.00830v2,"BC+ reasoner executes queries; programs producing correct answers ""rises from 16.6% (5/30) before Self-Revision to 50% (15/30) afterward"""
+rcee8d9a3,exact,yes,https://arxiv.org/html/2410.20936v1,"""Check the logical equivalence ... using ATPs"" (Isabelle, Z3, CVC5); for MATH ""we manually check each formalization result"""
+rb45a4969,empirical,n/a,https://iclr.cc/media/iclr-2026/Slides/10011569.pdf (ICLR slides; full paper not reachable; earlier arXiv 2503.12217 lacks verifier),"Secure only if it ""uses only TFHE/CKKS APIs"", ""passes LWE parameter bounds"", ""encrypts all inputs before use""; plus compilation and unit tests"
+ra4657d5a,exact,yes,https://arxiv.org/pdf/2406.03636,"""fraction of outputs that pass all compiler checks""; ""Semantic correctness is manually assessed by one author"""
+ra8538bd8,empirical,n/a,https://arxiv.org/html/2404.18400v1,"LLM-SR ""evaluates their fit on the data using off-the-shelf optimizers"""
+r55b5226e,empirical,n/a,https://arxiv.org/pdf/2605.29184,"""The 'reward' signal used to evaluate nodes is the negative validation MSE of the discovered equation."""
+rfb94d02e,empirical,n/a,https://arxiv.org/html/2510.13157v1,"Python code ""executed by an external interpreter to obtain the final results""; no further check"
+rd7bfffae,exact,n/a,https://arxiv.org/pdf/2205.10893,"""external ATPs serve as relevance filters of premises rather than trusted oracles""; proof steps applied and checked in Isabelle"
+r54c1186a,empirical,n/a,https://aclanthology.org/2022.emnlp-main.218.pdf,Top-K accuracy computes the percentage where the ground-truth proof is among the top K generated proving sequence.
+ra8b9906a,exact,no,abstract only,[abstract only; full text unavailable] a rigorous symbolic validator (System 2)... treats solver feedback... to iteratively refine logic programs and resolve semantic ambiguities.
+reaf641ba,empirical,n/a,https://arxiv.org/html/2412.07322v1,evaluator is simply a pixel-wise comparison between the predicted output grid and solution output grid
+r5402cb8c,empirical,n/a,https://arxiv.org/html/2406.08527v2,Change the rule into executable Python code. [Rule selected by the prediction model's validation score on data.]
+r7767563b,empirical,n/a,https://arxiv.org/html/2602.17001v1,"execution-grounded validation and computation; This stage handles runtime failures (e.g., SQL returning empty results or Python syntax errors)."
+r71d4ad74,empirical,no,https://arxiv.org/pdf/2605.02289,based on executable numerical and constraint verification with final confirmation by human experts rather than any LLM-based scoring
+rc264b05c,empirical,n/a,https://arxiv.org/pdf/2309.14396,"System performance is measured by execution output match... We have no formal proof of equivalence, only checking on a small finite set of inputs."
+rc4867a9e,empirical,n/a,https://www.alphaxiv.org/abs/2607.09603.md,"By enforcing feasibility before execution, ILP proactively prevents conflicts and invalid actions. Success is fraction of episodes in which all tasks are completed."
+r5715c6fc,exact,n/a,https://arxiv.org/pdf/2505.16368v4,an answer is considered correct if it passes a verifier and represents a full satisfying assignment
+r0a572ee0,empirical,n/a,abstract only,[abstract only; full text unavailable] uses boosting to identify unexplained signals and guide an LLM toward targeted corrections... achieves lower error and higher accuracy
+rd68cad81,empirical,n/a,https://icml.cc/media/icml-2026/Slides/62313.pdf,"[slides only] reusability of execution-validated functions. On runtime exceptions, generate only the corrected span while preserving the prefix and suffix."
+r34aac216,empirical,n/a,https://arxiv.org/html/2510.22849v1,E is a program evaluator which checks various properties of code based on static and dynamic analysis.
+r9d3f97de,exact,n/a,https://arxiv.org/pdf/2606.20068,g(Y) = 1 if Y passes the Lean verifier and 0 otherwise
+r9acdeee6,empirical,n/a,https://arxiv.org/html/2510.02180v2,A fitness of 1.0 corresponds to assigning higher values to all expert states than to negative states.
+r5390b532,exact,yes,https://arxiv.org/pdf/2604.19000,perform syntax checks using the Lean 4 compiler; evaluate the semantic alignment between the NL statement and FL statement
+rb5a2b99a,exact,no,https://arxiv.org/html/2406.14408v2,"If proof is passed by Isabelle proving environment, we consider it a successful verification. [No metric for lemma-statement faithfulness.]"
+r6bbccaf3,empirical,n/a,https://arxiv.org/html/2502.01401v3,we design unit test suites to select the plausible relation encoders from multiple LLM responses.
+r97ae3996,empirical,n/a,https://arxiv.org/html/2510.20342v1,extract the final answer from each model response and compare it directly to the ground truth using Math-Verify
+rd3d4524a,exact,no,https://arxiv.org/html/2512.18160v1,"if the verifier accepts the program, then the program is guaranteed to satisfy its specification for all inputs"
+r61cc1d1e,none,no,https://arxiv.org/html/2405.02079v2,the final decision outputted by ArgLLMs is faithfully determined by the arguments and the argumentation semantics
